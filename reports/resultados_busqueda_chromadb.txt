@@ -1,0 +1,2730 @@
+REPORTE DE BÚSQUEDA SEMÁNTICA CON CHROMADB
+====================================================================================================
+Ubicación de la base vectorial: C:\Users\Julie\Equipo_PP2-HRRG-2-2026\vectorstore
+Colección: manuales_hrrg
+Cantidad de chunks almacenados: 26
+====================================================================================================
+
+
+COMPARACIÓN CON n_results = 1
+====================================================================================================
+
+====================================================================================================
+PREGUNTA: ¿Qué herramientas tecnológicas se utilizarán en el proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.7307
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el objetivo general del proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0686
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice el documento sobre la arquitectura RAG?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.9495
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cómo se organizará la base de conocimiento documental?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.7171
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué limitaciones tiene el prototipo académico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 15
+Distancia: 0.8551
+----------------------------------------------------------------------------------------------------
+bilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Por qué es importante la trazabilidad de las respuestas?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 0.9275
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El sistema permite identificar equipos mediante QR?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 16
+Distancia: 0.9365
+----------------------------------------------------------------------------------------------------
+● Alcance académico del prototipo, que no reemplaza sistemas institucionales 
+formales ni decisiones técnicas profesionales.  
+● Limitaciones de infraestructura, conectividad o capacidad de procesamiento 
+disponibles para el equipo.  
+● Necesidad de resguardar información institucional y evitar la incorporación de 
+datos sensibles o no autorizados.  
+● Validación pendiente de funcionalidades adicionales, como identificación de 
+equipos mediante QR.  
+ 
+ 
+Interfaces 
+El sistema podrá contemplar las siguientes interfaces iniciales: 
+● Interfaz de usuario: entorno web para ingresar consultas en lenguaje natural y 
+visualizar respuestas. 
+● Interfaz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+C
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El asistente puede reemplazar al criterio profesional del técnico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.8529
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice sobre sensores de oxígeno?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2089
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el protocolo de calibración de un respirador neonatal?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.2179
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué repuestos necesita una bomba de infusión?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 1.2230
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+
+COMPARACIÓN CON n_results = 2
+====================================================================================================
+
+====================================================================================================
+PREGUNTA: ¿Qué herramientas tecnológicas se utilizarán en el proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.7307
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 0.7630
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el objetivo general del proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0686
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.1032
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice el documento sobre la arquitectura RAG?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.9495
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0444
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cómo se organizará la base de conocimiento documental?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.7171
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 0.7234
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué limitaciones tiene el prototipo académico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 15
+Distancia: 0.8551
+----------------------------------------------------------------------------------------------------
+bilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.9209
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Por qué es importante la trazabilidad de las respuestas?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 0.9275
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.9404
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El sistema permite identificar equipos mediante QR?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 16
+Distancia: 0.9365
+----------------------------------------------------------------------------------------------------
+● Alcance académico del prototipo, que no reemplaza sistemas institucionales 
+formales ni decisiones técnicas profesionales.  
+● Limitaciones de infraestructura, conectividad o capacidad de procesamiento 
+disponibles para el equipo.  
+● Necesidad de resguardar información institucional y evitar la incorporación de 
+datos sensibles o no autorizados.  
+● Validación pendiente de funcionalidades adicionales, como identificación de 
+equipos mediante QR.  
+ 
+ 
+Interfaces 
+El sistema podrá contemplar las siguientes interfaces iniciales: 
+● Interfaz de usuario: entorno web para ingresar consultas en lenguaje natural y 
+visualizar respuestas. 
+● Interfaz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+C
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0395
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El asistente puede reemplazar al criterio profesional del técnico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.8529
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.9280
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice sobre sensores de oxígeno?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2089
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 1.2726
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el protocolo de calibración de un respirador neonatal?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.2179
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 6
+Distancia: 1.2283
+----------------------------------------------------------------------------------------------------
+Contexto y Problemática 
+El área de Ingeniería Clínica requiere consultar de manera frecuente información técnica 
+contenida en manuales de equipos médicos, guías de mantenimiento, parámetros de 
+calibración, instrucciones de uso, recomendaciones del fabricante y procedimientos ante 
+fallas. 
+Actualmente, la dispersión de la documentación técnica y la necesidad de búsqueda 
+manual pueden dificultar el acceso rápido a información precisa. Esto puede generar 
+demoras en la resolución de problemas técnicos, dependencia de la experiencia individual 
+de cada técnico y menor trazabilidad en los procesos de consulta. 
+La propuesta asignada identifica como problemática central la falta de una herramienta 
+digital integral y trazable para gestionar información relacionada con el ciclo de vida de 
+l
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué repuestos necesita una bomba de infusión?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 1.2230
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2523
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+
+COMPARACIÓN CON n_results = 3
+====================================================================================================
+
+====================================================================================================
+PREGUNTA: ¿Qué herramientas tecnológicas se utilizarán en el proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.7307
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 0.7630
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.8147
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el objetivo general del proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0686
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.1032
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 1.1082
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice el documento sobre la arquitectura RAG?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.9495
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0444
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.0969
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cómo se organizará la base de conocimiento documental?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.7171
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 0.7234
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 15
+Distancia: 0.7363
+----------------------------------------------------------------------------------------------------
+bilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué limitaciones tiene el prototipo académico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 15
+Distancia: 0.8551
+----------------------------------------------------------------------------------------------------
+bilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.9209
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 3
+Distancia: 0.9633
+----------------------------------------------------------------------------------------------------
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conocimientos 
+relacionados con aprendizaje automático, procesamiento de lenguaje natural, desarrollo 
+de aplicaciones, análisis de datos, arquitectura de sistemas y herramientas de gestión de 
+proyectos. Estos saberes nos permiten abordar una propuesta orientada al desarrollo de 
+un asistente inteligente que facilite el acceso a información técnica confiable. 
+El sistema propuesto consiste en un asistente de IA especializado para Ingeniería Clínica, 
+desarrollado como un prototipo funcional académico basado en Python y Flask, con una 
+arquitectura RAG - Generación Aumentada por Recuperación - y uso de modelos de 
+lenguaje. La base de conocimiento
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Por qué es importante la trazabilidad de las respuestas?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 0.9275
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.9404
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 1.0042
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El sistema permite identificar equipos mediante QR?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 16
+Distancia: 0.9365
+----------------------------------------------------------------------------------------------------
+● Alcance académico del prototipo, que no reemplaza sistemas institucionales 
+formales ni decisiones técnicas profesionales.  
+● Limitaciones de infraestructura, conectividad o capacidad de procesamiento 
+disponibles para el equipo.  
+● Necesidad de resguardar información institucional y evitar la incorporación de 
+datos sensibles o no autorizados.  
+● Validación pendiente de funcionalidades adicionales, como identificación de 
+equipos mediante QR.  
+ 
+ 
+Interfaces 
+El sistema podrá contemplar las siguientes interfaces iniciales: 
+● Interfaz de usuario: entorno web para ingresar consultas en lenguaje natural y 
+visualizar respuestas. 
+● Interfaz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+C
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0395
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 4
+Tipo de documento: documento_de_prueba
+Chunk: 10
+Distancia: 1.0461
+----------------------------------------------------------------------------------------------------
+● Implementar un prototipo que permita realizar consultas en lenguaje natural sobre 
+mantenimiento, fallas frecuentes y parámetros técnicos de los equipos médicos.  
+● Garantizar que las respuestas del asistente se basen en la documentación oficial 
+incorporada, reduciendo el riesgo de respuestas no fundamentadas.  
+● Evaluar el funcionamiento del prototipo mediante pruebas con consultas 
+representativas del área.  
+● Documentar el proceso de desarrollo, las decisiones técnicas y las limitaciones del 
+sistema.  
+ 
+ 
+Requerimientos Funcionales y Técnicos 
+Requerimientos funcionales 
+● Permitir la carga o incorporación de manuales técnicos oficiales de equipos 
+médicos.  
+● Procesar la documentación técnica para construir una base de conocimiento 
+consultable.  
+● Permitir al usuario realiza
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El asistente puede reemplazar al criterio profesional del técnico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.8529
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.9280
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 0.9394
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice sobre sensores de oxígeno?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2089
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 1.2726
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 9
+Distancia: 1.2755
+----------------------------------------------------------------------------------------------------
+y organizar los manuales técnicos oficiales que conformarán la base 
+inicial de conocimiento del asistente.  
+● Diseñar una arquitectura modular basada en Python, Flask y RAG para permitir 
+la recuperación de información relevante.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el protocolo de calibración de un respirador neonatal?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.2179
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 6
+Distancia: 1.2283
+----------------------------------------------------------------------------------------------------
+Contexto y Problemática 
+El área de Ingeniería Clínica requiere consultar de manera frecuente información técnica 
+contenida en manuales de equipos médicos, guías de mantenimiento, parámetros de 
+calibración, instrucciones de uso, recomendaciones del fabricante y procedimientos ante 
+fallas. 
+Actualmente, la dispersión de la documentación técnica y la necesidad de búsqueda 
+manual pueden dificultar el acceso rápido a información precisa. Esto puede generar 
+demoras en la resolución de problemas técnicos, dependencia de la experiencia individual 
+de cada técnico y menor trazabilidad en los procesos de consulta. 
+La propuesta asignada identifica como problemática central la falta de una herramienta 
+digital integral y trazable para gestionar información relacionada con el ciclo de vida de 
+l
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 14
+Distancia: 1.2346
+----------------------------------------------------------------------------------------------------
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar información relevante ante consultas frecuentes del área.  
+● Brindar respuestas comprensibles en pocos segundos, dependiendo de la 
+infraestructura disponible.  
+● Mantener una estructura modular que permita incorporar nuevos manuales o 
+equipos en etapas posteriores.  
+ 
+ 
+ 
+Restricciones 
+El desarrollo del proyecto estará condicionado por los siguientes aspectos: 
+● Disponibilidad de manuales técnicos oficiales provistos o validados por el área de 
+Ingeniería Clínica.  
+● Calidad, formato y legibilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué repuestos necesita una bomba de infusión?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 1.2230
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2523
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 1.2604
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+
+COMPARACIÓN CON n_results = 5
+====================================================================================================
+
+====================================================================================================
+PREGUNTA: ¿Qué herramientas tecnológicas se utilizarán en el proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.7307
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 0.7630
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.8147
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 0.8298
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 0.8388
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el objetivo general del proyecto?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0686
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.1032
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 1.1082
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 1.1228
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 7
+Distancia: 1.1648
+----------------------------------------------------------------------------------------------------
+a como problemática central la falta de una herramienta 
+digital integral y trazable para gestionar información relacionada con el ciclo de vida de 
+los equipos médicos en el Ministerio de Salud. Frente a esta necesidad, se propone el 
+desarrollo de un asistente de IA que permita realizar consultas en lenguaje natural y 
+obtener respuestas basadas exclusivamente en documentación técnica oficial.  
+El proyecto busca aportar una solución académica aplicada que colabore con la 
+optimización de la toma de decisiones técnicas, la reducción de tiempos de reparación y 
+el fortalecimiento de la seguridad del paciente. 
+ 
+ 
+Objetivo General y Específicos 
+Objetivo General 
+Diseñar y desarrollar un prototipo funcional de asistente de Inteligencia Artificial para el 
+área de Ingeniería Clínica del Ho
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice el documento sobre la arquitectura RAG?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.9495
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0444
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.0969
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 9
+Tipo de documento: documento_de_prueba
+Chunk: 25
+Distancia: 1.1035
+----------------------------------------------------------------------------------------------------
+● Python: lenguaje principal previsto para el desarrollo del prototipo.  
+ 
+● Flask: framework para construir una interfaz web simple y modular.  
+ 
+● RAG: arquitectura de recuperación aumentada por generación para responder con 
+base en documentación oficial.  
+ 
+● LLM: modelo de lenguaje utilizado para interpretar consultas y generar 
+respuestas.  
+ 
+● Base de conocimiento documental: conjunto de manuales técnicos oficiales de 
+equipos médicos.  
+ 
+● GitHub: repositorio complementario del proyecto, con README obligatorio.  
+ 
+● Google Drive: espacio principal de almacenamiento de documentación, minutas, 
+entregables y evidencias.  
+ 
+● Trello: herramienta de gestión y seguimiento de tareas.  
+ 
+● Google Meet: herramienta para reuniones virtuales del equipo.  
+ 
+● WhatsApp: canal de comun
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 1.1095
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cómo se organizará la base de conocimiento documental?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 0.7171
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 0.7234
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 15
+Distancia: 0.7363
+----------------------------------------------------------------------------------------------------
+bilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 13
+Distancia: 0.7643
+----------------------------------------------------------------------------------------------------
+● Organización de documentos técnicos en una base de conocimiento.  
+● Implementación de una arquitectura RAG que permita recuperar 
+información relevante desde los manuales técnicos oficiales mediante una 
+base vectorial o mecanismo de indexación semántica, y utilizar esa 
+información como contexto para generar respuestas precisas y 
+fundamentadas. 
+ 
+ 
+Rendimiento 
+Para esta primera etapa, al tratarse de un prototipo académico, se espera que el sistema 
+pueda responder consultas simples y representativas en un tiempo razonable para el 
+usuario, priorizando la precisión y trazabilidad de la información por sobre el volumen 
+de procesamiento. 
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar inf
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 4
+Tipo de documento: documento_de_prueba
+Chunk: 11
+Distancia: 0.8676
+----------------------------------------------------------------------------------------------------
+iales de equipos 
+médicos.  
+● Procesar la documentación técnica para construir una base de conocimiento 
+consultable.  
+● Permitir al usuario realizar preguntas en lenguaje natural.  
+● Recuperar fragmentos relevantes de los manuales técnicos.  
+● Generar respuestas claras, útiles y basadas en la documentación disponible.  
+● Informar, cuando corresponda, que la información solicitada no se encuentra en 
+la base documental incorporada.  
+● Registrar o documentar las consultas realizadas durante las pruebas del prototipo.  
+Requerimientos técnicos 
+● Desarrollo del prototipo en Python.  
+● Uso de Flask para la construcción del entorno web o interfaz básica.  
+● Utilización de modelos de lenguaje para la interpretación de consultas y 
+generación de respuestas.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué limitaciones tiene el prototipo académico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 15
+Distancia: 0.8551
+----------------------------------------------------------------------------------------------------
+bilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.9209
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 3
+Distancia: 0.9633
+----------------------------------------------------------------------------------------------------
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conocimientos 
+relacionados con aprendizaje automático, procesamiento de lenguaje natural, desarrollo 
+de aplicaciones, análisis de datos, arquitectura de sistemas y herramientas de gestión de 
+proyectos. Estos saberes nos permiten abordar una propuesta orientada al desarrollo de 
+un asistente inteligente que facilite el acceso a información técnica confiable. 
+El sistema propuesto consiste en un asistente de IA especializado para Ingeniería Clínica, 
+desarrollado como un prototipo funcional académico basado en Python y Flask, con una 
+arquitectura RAG - Generación Aumentada por Recuperación - y uso de modelos de 
+lenguaje. La base de conocimiento
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 14
+Distancia: 0.9742
+----------------------------------------------------------------------------------------------------
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar información relevante ante consultas frecuentes del área.  
+● Brindar respuestas comprensibles en pocos segundos, dependiendo de la 
+infraestructura disponible.  
+● Mantener una estructura modular que permita incorporar nuevos manuales o 
+equipos en etapas posteriores.  
+ 
+ 
+ 
+Restricciones 
+El desarrollo del proyecto estará condicionado por los siguientes aspectos: 
+● Disponibilidad de manuales técnicos oficiales provistos o validados por el área de 
+Ingeniería Clínica.  
+● Calidad, formato y legibilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 1.0204
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Por qué es importante la trazabilidad de las respuestas?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 7
+Tipo de documento: documento_de_prueba
+Chunk: 19
+Distancia: 0.9275
+----------------------------------------------------------------------------------------------------
+● Documentar las limitaciones del prototipo.  
+● Resguardar la información institucional y evitar la carga de datos sensibles 
+innecesarios.  
+● Validar 
+las 
+respuestas 
+mediante 
+pruebas 
+funcionales 
+con 
+consultas 
+representativas.  
+Desde el punto de vista ético, el proyecto debe respetar principios de transparencia, 
+responsabilidad, seguridad y supervisión humana. El sistema no deberá tomar decisiones 
+autónomas sobre reparación, baja, calibración o uso clínico de equipos, sino brindar 
+información de apoyo para que el personal técnico evalúe cada situación. 
+ 
+Roles y Responsabilidades 
+La asignación detallada de roles por integrante y por sprint será establecida 
+en el Diagrama de Gantt del proyecto, donde se consignarán las tareas, 
+responsables, fechas y estado de avance. En est
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.9404
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 1.0042
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 1.0824
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0920
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El sistema permite identificar equipos mediante QR?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 16
+Distancia: 0.9365
+----------------------------------------------------------------------------------------------------
+● Alcance académico del prototipo, que no reemplaza sistemas institucionales 
+formales ni decisiones técnicas profesionales.  
+● Limitaciones de infraestructura, conectividad o capacidad de procesamiento 
+disponibles para el equipo.  
+● Necesidad de resguardar información institucional y evitar la incorporación de 
+datos sensibles o no autorizados.  
+● Validación pendiente de funcionalidades adicionales, como identificación de 
+equipos mediante QR.  
+ 
+ 
+Interfaces 
+El sistema podrá contemplar las siguientes interfaces iniciales: 
+● Interfaz de usuario: entorno web para ingresar consultas en lenguaje natural y 
+visualizar respuestas. 
+● Interfaz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+C
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.0395
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 4
+Tipo de documento: documento_de_prueba
+Chunk: 10
+Distancia: 1.0461
+----------------------------------------------------------------------------------------------------
+● Implementar un prototipo que permita realizar consultas en lenguaje natural sobre 
+mantenimiento, fallas frecuentes y parámetros técnicos de los equipos médicos.  
+● Garantizar que las respuestas del asistente se basen en la documentación oficial 
+incorporada, reduciendo el riesgo de respuestas no fundamentadas.  
+● Evaluar el funcionamiento del prototipo mediante pruebas con consultas 
+representativas del área.  
+● Documentar el proceso de desarrollo, las decisiones técnicas y las limitaciones del 
+sistema.  
+ 
+ 
+Requerimientos Funcionales y Técnicos 
+Requerimientos funcionales 
+● Permitir la carga o incorporación de manuales técnicos oficiales de equipos 
+médicos.  
+● Procesar la documentación técnica para construir una base de conocimiento 
+consultable.  
+● Permitir al usuario realiza
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 1.0804
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 14
+Distancia: 1.0877
+----------------------------------------------------------------------------------------------------
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar información relevante ante consultas frecuentes del área.  
+● Brindar respuestas comprensibles en pocos segundos, dependiendo de la 
+infraestructura disponible.  
+● Mantener una estructura modular que permita incorporar nuevos manuales o 
+equipos en etapas posteriores.  
+ 
+ 
+ 
+Restricciones 
+El desarrollo del proyecto estará condicionado por los siguientes aspectos: 
+● Disponibilidad de manuales técnicos oficiales provistos o validados por el área de 
+Ingeniería Clínica.  
+● Calidad, formato y legibilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿El asistente puede reemplazar al criterio profesional del técnico?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 0.8529
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 0.9280
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 0.9394
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 14
+Distancia: 0.9531
+----------------------------------------------------------------------------------------------------
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar información relevante ante consultas frecuentes del área.  
+● Brindar respuestas comprensibles en pocos segundos, dependiendo de la 
+infraestructura disponible.  
+● Mantener una estructura modular que permita incorporar nuevos manuales o 
+equipos en etapas posteriores.  
+ 
+ 
+ 
+Restricciones 
+El desarrollo del proyecto estará condicionado por los siguientes aspectos: 
+● Disponibilidad de manuales técnicos oficiales provistos o validados por el área de 
+Ingeniería Clínica.  
+● Calidad, formato y legibilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 4
+Tipo de documento: documento_de_prueba
+Chunk: 10
+Distancia: 0.9641
+----------------------------------------------------------------------------------------------------
+● Implementar un prototipo que permita realizar consultas en lenguaje natural sobre 
+mantenimiento, fallas frecuentes y parámetros técnicos de los equipos médicos.  
+● Garantizar que las respuestas del asistente se basen en la documentación oficial 
+incorporada, reduciendo el riesgo de respuestas no fundamentadas.  
+● Evaluar el funcionamiento del prototipo mediante pruebas con consultas 
+representativas del área.  
+● Documentar el proceso de desarrollo, las decisiones técnicas y las limitaciones del 
+sistema.  
+ 
+ 
+Requerimientos Funcionales y Técnicos 
+Requerimientos funcionales 
+● Permitir la carga o incorporación de manuales técnicos oficiales de equipos 
+médicos.  
+● Procesar la documentación técnica para construir una base de conocimiento 
+consultable.  
+● Permitir al usuario realiza
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué dice sobre sensores de oxígeno?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2089
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 1.2726
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 9
+Distancia: 1.2755
+----------------------------------------------------------------------------------------------------
+y organizar los manuales técnicos oficiales que conformarán la base 
+inicial de conocimiento del asistente.  
+● Diseñar una arquitectura modular basada en Python, Flask y RAG para permitir 
+la recuperación de información relevante.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 16
+Distancia: 1.3210
+----------------------------------------------------------------------------------------------------
+● Alcance académico del prototipo, que no reemplaza sistemas institucionales 
+formales ni decisiones técnicas profesionales.  
+● Limitaciones de infraestructura, conectividad o capacidad de procesamiento 
+disponibles para el equipo.  
+● Necesidad de resguardar información institucional y evitar la incorporación de 
+datos sensibles o no autorizados.  
+● Validación pendiente de funcionalidades adicionales, como identificación de 
+equipos mediante QR.  
+ 
+ 
+Interfaces 
+El sistema podrá contemplar las siguientes interfaces iniciales: 
+● Interfaz de usuario: entorno web para ingresar consultas en lenguaje natural y 
+visualizar respuestas. 
+● Interfaz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+C
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 14
+Distancia: 1.3243
+----------------------------------------------------------------------------------------------------
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar información relevante ante consultas frecuentes del área.  
+● Brindar respuestas comprensibles en pocos segundos, dependiendo de la 
+infraestructura disponible.  
+● Mantener una estructura modular que permita incorporar nuevos manuales o 
+equipos en etapas posteriores.  
+ 
+ 
+ 
+Restricciones 
+El desarrollo del proyecto estará condicionado por los siguientes aspectos: 
+● Disponibilidad de manuales técnicos oficiales provistos o validados por el área de 
+Ingeniería Clínica.  
+● Calidad, formato y legibilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Cuál es el protocolo de calibración de un respirador neonatal?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 5
+Distancia: 1.2179
+----------------------------------------------------------------------------------------------------
+uncionamiento y resolución de fallas. 
+La disponibilidad y correcto funcionamiento del equipamiento médico impacta 
+directamente en la continuidad de los servicios asistenciales, la calidad de atención y la 
+seguridad del paciente. Por ello, resulta relevante fortalecer las herramientas de consulta 
+y soporte técnico disponibles para el personal del área. 
+El referente institucional para el desarrollo del proyecto será el Ing. Juan Francisco 
+Navoni, quien orientará al equipo respecto de las necesidades específicas del área, la 
+documentación técnica disponible y los requerimientos iniciales del prototipo.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 6
+Distancia: 1.2283
+----------------------------------------------------------------------------------------------------
+Contexto y Problemática 
+El área de Ingeniería Clínica requiere consultar de manera frecuente información técnica 
+contenida en manuales de equipos médicos, guías de mantenimiento, parámetros de 
+calibración, instrucciones de uso, recomendaciones del fabricante y procedimientos ante 
+fallas. 
+Actualmente, la dispersión de la documentación técnica y la necesidad de búsqueda 
+manual pueden dificultar el acceso rápido a información precisa. Esto puede generar 
+demoras en la resolución de problemas técnicos, dependencia de la experiencia individual 
+de cada técnico y menor trazabilidad en los procesos de consulta. 
+La propuesta asignada identifica como problemática central la falta de una herramienta 
+digital integral y trazable para gestionar información relacionada con el ciclo de vida de 
+l
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 5
+Tipo de documento: documento_de_prueba
+Chunk: 14
+Distancia: 1.2346
+----------------------------------------------------------------------------------------------------
+Como criterio inicial de rendimiento, se espera que el asistente pueda: 
+● Procesar una base inicial acotada de manuales técnicos.  
+● Recuperar información relevante ante consultas frecuentes del área.  
+● Brindar respuestas comprensibles en pocos segundos, dependiendo de la 
+infraestructura disponible.  
+● Mantener una estructura modular que permita incorporar nuevos manuales o 
+equipos en etapas posteriores.  
+ 
+ 
+ 
+Restricciones 
+El desarrollo del proyecto estará condicionado por los siguientes aspectos: 
+● Disponibilidad de manuales técnicos oficiales provistos o validados por el área de 
+Ingeniería Clínica.  
+● Calidad, formato y legibilidad de la documentación técnica disponible.  
+● Tiempo limitado de desarrollo, organizado en tres sprints.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 1.2438
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 8
+Distancia: 1.2676
+----------------------------------------------------------------------------------------------------
+cos 
+Objetivo General 
+Diseñar y desarrollar un prototipo funcional de asistente de Inteligencia Artificial para el 
+área de Ingeniería Clínica del Hospital Regional Río Grande, que permita consultar 
+información técnica de equipos médicos mediante lenguaje natural, utilizando una 
+arquitectura RAG alimentada por manuales oficiales, con el fin de mejorar el acceso a 
+información confiable y optimizar los procesos de mantenimiento y soporte técnico. 
+Objetivos Específicos 
+● Relevar junto al referente institucional las necesidades principales del área de 
+Ingeniería Clínica en relación con la consulta de documentación técnica.  
+● Identificar y organizar los manuales técnicos oficiales que conformarán la base 
+inicial de conocimiento del asistente.  
+● Diseñar una arquitectura modular basad
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PREGUNTA: ¿Qué repuestos necesita una bomba de infusión?
+====================================================================================================
+
+RESULTADO 1
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 2
+Tipo de documento: documento_de_prueba
+Chunk: 2
+Distancia: 1.2230
+----------------------------------------------------------------------------------------------------
+Presentación del Proyecto 
+Somos un grupo de estudiantes de la Tecnicatura Superior en Ciencia de Datos e 
+Inteligencia Artificial del Centro Politécnico Superior “Malvinas Argentinas”. En el 
+marco de la materia Práctica Profesionalizante II, desarrollaremos un proyecto aplicado 
+en articulación con el Hospital Regional Río Grande, específicamente con el área de 
+Ingeniería Clínica. 
+Este proyecto tiene como finalidad aplicar los conocimientos adquiridos durante la 
+formación académica en un entorno real de trabajo, mediante el diseño de una solución 
+basada en Inteligencia Artificial que contribuya a optimizar procesos técnicos vinculados 
+a la gestión, mantenimiento y consulta de información sobre equipamiento médico. 
+A lo largo de nuestra trayectoria académica hemos incorporado conoci
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 2
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 8
+Tipo de documento: documento_de_prueba
+Chunk: 24
+Distancia: 1.2523
+----------------------------------------------------------------------------------------------------
+entos, 
+enlaces y 
+evidencias antes 
+de la entrega 
+Todo el equipo 09/05/2026 10/05/2026 En proceso 
+ 
+ 
+ 
+ 
+Herramientas Tecnológicas
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 3
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 17
+Distancia: 1.2604
+----------------------------------------------------------------------------------------------------
+faz de administrador: panel de gestión para ingesta y actualización de 
+documentos, registro de consultas y estadísticas básicas del sistema. 
+ 
+ 
+ 
+Confiabilidad y ética 
+El asistente deberá ser concebido como una herramienta de apoyo técnico, no como 
+reemplazo del criterio profesional del personal de Ingeniería Clínica. 
+Para fortalecer la confiabilidad del sistema, se deberán considerar los siguientes criterios: 
+● Utilizar exclusivamente documentación técnica oficial o validada por el referente 
+institucional.  
+● Evitar respuestas que no estén respaldadas por la base de conocimiento 
+incorporada.  
+● Indicar explícitamente cuando una respuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 4
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 6
+Tipo de documento: documento_de_prueba
+Chunk: 18
+Distancia: 1.2917
+----------------------------------------------------------------------------------------------------
+spuesta no pueda ser generada con la 
+información disponible.  
+● Mantener trazabilidad sobre los documentos utilizados como fuente.
+----------------------------------------------------------------------------------------------------
+
+RESULTADO 5
+----------------------------------------------------------------------------------------------------
+Fuente: ambito_desarrollo.pdf
+Página aproximada: 3
+Tipo de documento: documento_de_prueba
+Chunk: 8
+Distancia: 1.2955
+----------------------------------------------------------------------------------------------------
+cos 
+Objetivo General 
+Diseñar y desarrollar un prototipo funcional de asistente de Inteligencia Artificial para el 
+área de Ingeniería Clínica del Hospital Regional Río Grande, que permita consultar 
+información técnica de equipos médicos mediante lenguaje natural, utilizando una 
+arquitectura RAG alimentada por manuales oficiales, con el fin de mejorar el acceso a 
+información confiable y optimizar los procesos de mantenimiento y soporte técnico. 
+Objetivos Específicos 
+● Relevar junto al referente institucional las necesidades principales del área de 
+Ingeniería Clínica en relación con la consulta de documentación técnica.  
+● Identificar y organizar los manuales técnicos oficiales que conformarán la base 
+inicial de conocimiento del asistente.  
+● Diseñar una arquitectura modular basad
+----------------------------------------------------------------------------------------------------

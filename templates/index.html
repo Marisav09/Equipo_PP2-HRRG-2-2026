@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Asistente IA - Ingeniería Clínica HRRG</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #1f2933;
+            font-size: 34px;
+        }
+
+        .subtitle {
+            color: #52606d;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 110px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #bcccdc;
+            border-radius: 8px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 22px;
+            font-size: 16px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .response-box {
+            margin-top: 35px;
+            padding: 25px;
+            background-color: #f8fafc;
+            border-left: 5px solid #2563eb;
+            border-radius: 8px;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            background-color: #ffffff;
+            padding: 18px;
+            border-radius: 8px;
+            border: 1px solid #d9e2ec;
+            overflow-x: auto;
+        }
+
+        .footer-note {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Asistente IA para Ingeniería Clínica - HRRG</h1>
+
+        <p class="subtitle">
+            Prototipo académico con recuperación semántica mediante ChromaDB.
+        </p>
+
+        <form method="POST">
+            <label for="question">Ingrese su consulta técnica:</label>
+
+            <textarea 
+                id="question"
+                name="question" 
+                placeholder="Ej: ¿Cuál es el procedimiento de mantenimiento preventivo?"
+            >{{ question if question else "" }}</textarea>
+
+            <button type="submit">Consultar</button>
+        </form>
+
+        {% if answer %}
+            <div class="response-box">
+                <h2>Respuesta</h2>
+
+                <p class="question">
+                    Pregunta: {{ question }}
+                </p>
+
+                <div class="answer">{{ answer }}</div>
+            </div>
+        {% endif %}
+
+        <p class="footer-note">
+            Este prototipo muestra fragmentos documentales recuperados desde la base vectorial. 
+            La generación final con LLM será incorporada en una etapa posterior.
+        </p>
+    </div>
+</body>
+</html>
