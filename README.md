@@ -97,7 +97,7 @@ Como el asistente opera en un ámbito crítico, el desarrollo se rige por los si
 
 ## Contacto
 
-Nancy Julieta Cassano: doctoracassano@gmail.com
-Darío Agustín García Barquet: barquetdarioo@gmail.com
-Marisa Mercedes Velasquez: marisav3009@gmail.com
-Ana María Ramos Orcko: iacienciadedatos@gmail.com
+Nancy Julieta Cassano: doctoracassano@gmail.com  
+Darío Agustín García Barquet: barquetdarioo@gmail.com  
+Marisa Mercedes Velasquez: marisav3009@gmail.com  
+Ana María Ramos Orcko: iacienciadedatos@gmail.com  
