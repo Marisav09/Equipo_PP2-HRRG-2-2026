@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Ingeniería Clínica - HRRG</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #005088;
+            --secondary: #f0f4f8;
+            --accent: #11caa0;
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: var(--secondary); display: flex; height: 100vh; }
+        .sidebar { width: 300px; background: var(--primary); color: white; padding: 20px; display: flex; flex-direction: column; }
+        .main-chat { flex: 1; display: flex; flex-direction: column; position: relative; }
+        .chat-header { padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; align-items: center; }
+        .chat-messages { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; }
+        .message { max-width: 80%; padding: 12px 18px; border-radius: 20px; line-height: 1.5; font-size: 15px; }
+        .user-msg { align-self: flex-end; background: var(--primary); color: white; }
+        .bot-msg { align-self: flex-start; background: white; border: 1px solid #ddd; color: var(--text); }
+        .chat-input-area { padding: 20px; background: white; display: flex; gap: 10px; border-top: 1px solid #ddd; }
+        input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 25px; outline: none; }
+        button { background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; font-weight: bold; }
+        button:hover { opacity: 0.9; }
+        .loader { display: none; margin-left: 10px; color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2><i class="fa-solid fa-microchip"></i> HRRG</h2>
+        <p>Asistente IA de Ingeniería Clínica</p>
+        <hr style="width:100%; opacity: 0.2;">
+        <div style="margin-top: 20px; font-size: 13px;">
+            <p><i class="fa-solid fa-circle-info"></i> El asistente responde basándose exclusivamente en los manuales técnicos cargados.</p>
+        </div>
+    </div>
+    <div class="main-chat">
+        <div class="chat-header">
+            <h3 style="margin:0; color: var(--primary);">Consultas Técnicas</h3>
+        </div>
+        <div class="chat-messages" id="chatBox">
+            <div class="message bot-msg">¡Hola! Soy el asistente de Ingeniería Clínica. ¿En qué puedo ayudarte con el equipamiento hoy?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="userInput" placeholder="Escribe tu consulta aquí..." onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+            <div id="loader" class="loader"><i class="fa-solid fa-spinner fa-spin"></i> Pensando...</div>
+        </div>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('userInput');
+            const chatBox = document.getElementById('chatBox');
+            const loader = document.getElementById('loader');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            // Agregar mensaje usuario
+            chatBox.innerHTML += `<div class="message user-msg">${text}</div>`;
+            input.value = '';
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Mostrar loader
+            loader.style.display = 'block';
+
+            try {
+                const response = await fetch('/consultar', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ pregunta: text })
+                });
+                const data = await response.json();
+                
+                // Agregar respuesta bot
+                chatBox.innerHTML += `<div class="message bot-msg">${data.respuesta}</div>`;
+            } catch (error) {
+                chatBox.innerHTML += `<div class="message bot-msg" style="color:red">Error de conexión. Asegúrate de que el servidor Flask esté corriendo.</div>`;
+            } finally {
+                loader.style.display = 'none';
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
