@@ -14,6 +14,10 @@ app = Flask(__name__)
 llm = OllamaLLM(model="llama3:8b")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
+# Reemplazos temporales para que Flask no explote al iniciar:
+#llm = None
+#embeddings = None
+
 # 2. Ruta para mostrar la interfaz web
 @app.route('/')
 def home():
