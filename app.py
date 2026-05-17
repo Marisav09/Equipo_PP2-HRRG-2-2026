@@ -4,10 +4,10 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
 import os
+import time
 
 
 # Cargar variables desde .env si existe
@@ -37,9 +37,96 @@ def home():
     return render_template("index.html")
 
 
-# 4. Ruta para procesar y guardar el PDF en ChromaDB
+# 4. Funciones auxiliares
+def format_docs(docs):
+    """
+    Une el contenido de los documentos recuperados para enviarlo como contexto al LLM.
+    """
+    return "\n\n".join(doc.page_content for doc in docs)
+
+
+def format_fallback_response(docs):
+    """
+    Construye una respuesta útil cuando el LLM está desactivado o falla.
+    Devuelve fragmentos recuperados directamente desde ChromaDB.
+    """
+    if not docs:
+        return (
+            "No se encontraron fragmentos relevantes en la base documental. "
+            "Probá reformular la consulta o verificar que el manual haya sido ingerido correctamente."
+        )
+
+    bloques = []
+
+    for i, doc in enumerate(docs, start=1):
+        metadata = doc.metadata or {}
+        pagina = metadata.get("page", None)
+        fuente = metadata.get("source", "manual")
+
+        encabezado = f"Fragmento {i}"
+        if pagina is not None:
+            encabezado += f" | página {pagina + 1}"
+        if fuente:
+            encabezado += f" | fuente: {fuente}"
+
+        bloques.append(
+            f"{encabezado}\n"
+            f"{doc.page_content.strip()}"
+        )
+
+    return (
+        "No se pudo generar una respuesta con el modelo de lenguaje. "
+        "Se muestran los fragmentos más relevantes recuperados del manual:\n\n"
+        + "\n\n---\n\n".join(bloques)
+    )
+
+
+def build_rag_prompt():
+    """
+    Define el prompt del asistente técnico.
+    """
+    system_prompt = (
+        "Eres un asistente técnico para Ingeniería Clínica. "
+        "Usa ÚNICAMENTE los siguientes fragmentos de contexto recuperado "
+        "para responder la pregunta. "
+        "Si la respuesta no está en el contexto, di exactamente: "
+        "'La información no se encuentra en el manual'. "
+        "No inventes datos, valores, procedimientos ni recomendaciones. "
+        "Responde en español, de forma clara, breve y útil para personal técnico. "
+        "\n\n"
+        "Contexto: {context}"
+    )
+
+    return ChatPromptTemplate.from_messages([
+        ("system", system_prompt),
+        ("human", "{input}"),
+    ])
+
+
+def generar_respuesta_llm(pregunta, docs):
+    """
+    Genera una respuesta con el LLM usando únicamente los documentos ya recuperados.
+    Esta función NO vuelve a consultar ChromaDB. Usa el contexto recibido.
+    """
+    prompt = build_rag_prompt()
+    contexto = format_docs(docs)
+
+    chain = (
+        prompt
+        | llm
+        | StrOutputParser()
+    )
+
+    return chain.invoke({
+        "context": contexto,
+        "input": pregunta
+    })
+
+
+# 5. Ruta para procesar y guardar el PDF en ChromaDB
 @app.route("/ingestar", methods=["POST"])
 def ingestar_pdf():
+    inicio = time.perf_counter()
     ruta_pdf = MANUAL_PATH
 
     if not os.path.exists(ruta_pdf):
@@ -62,18 +149,26 @@ def ingestar_pdf():
         persist_directory=CHROMA_DIR
     )
 
+    tiempo_total = round(time.perf_counter() - inicio, 2)
+
     return jsonify({
         "mensaje": (
             f"PDF procesado exitosamente. "
             f"Se crearon {len(fragmentos)} fragmentos "
             f"y se guardaron en ChromaDB."
-        )
+        ),
+        "manual_path": MANUAL_PATH,
+        "chroma_dir": CHROMA_DIR,
+        "fragmentos": len(fragmentos),
+        "tiempo_segundos": tiempo_total
     })
 
 
-# 5. Ruta para hacerle preguntas al manual
+# 6. Ruta para hacerle preguntas al manual
 @app.route("/consultar", methods=["POST"])
 def consultar_manual():
+    inicio_total = time.perf_counter()
+
     data = request.json or {}
     pregunta = data.get("pregunta", "").strip()
 
@@ -99,53 +194,47 @@ def consultar_manual():
         search_kwargs={"k": RETRIEVER_K}
     )
 
-    system_prompt = (
-        "Eres un asistente técnico para Ingeniería Clínica. "
-        "Usa ÚNICAMENTE los siguientes fragmentos de contexto recuperado "
-        "para responder la pregunta. "
-        "Si la respuesta no está en el contexto, di exactamente: "
-        "'La información no se encuentra en el manual'. "
-        "Responde en español, de forma clara, breve y útil para personal técnico. "
-        "\n\n"
-        "Contexto: {context}"
-    )
+    # 1) Recuperación documental
+    inicio_retrieval = time.perf_counter()
+    docs = retriever.invoke(pregunta)
+    tiempo_retrieval = round(time.perf_counter() - inicio_retrieval, 2)
 
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        ("human", "{input}"),
-    ])
+    modo_respuesta = "fallback"
+    error_llm = None
 
-    def format_docs(docs):
-        return "\n\n".join(doc.page_content for doc in docs)
-
-    # Arquitectura RAG con LCEL:
-    # pregunta -> retriever -> contexto -> prompt -> LLM -> respuesta
-    rag_chain = (
-        {"context": retriever | format_docs, "input": RunnablePassthrough()}
-        | prompt
-        | llm
-        | StrOutputParser()
-    )
-
-    # Por ahora USE_LLM queda preparado para el modo híbrido.
-    # En el próximo paso vamos a implementar el fallback cuando USE_LLM=false
-    # o cuando Ollama falle/tarde demasiado.
+    # 2) Intento de respuesta con LLM
     if USE_LLM:
-        respuesta = rag_chain.invoke(pregunta)
+        try:
+            inicio_llm = time.perf_counter()
+            respuesta = generar_respuesta_llm(pregunta, docs)
+            tiempo_llm = round(time.perf_counter() - inicio_llm, 2)
+            modo_respuesta = "llm"
+
+        except Exception as error:
+            error_llm = str(error)
+            tiempo_llm = None
+            respuesta = format_fallback_response(docs)
+            modo_respuesta = "fallback"
     else:
-        docs = retriever.invoke(pregunta)
-        respuesta = (
-            "Modo LLM desactivado. Se muestran los fragmentos recuperados:\n\n"
-            + format_docs(docs)
-        )
+        tiempo_llm = None
+        respuesta = format_fallback_response(docs)
+        modo_respuesta = "fallback"
+
+    tiempo_total = round(time.perf_counter() - inicio_total, 2)
 
     return jsonify({
         "pregunta": pregunta,
         "respuesta": respuesta,
+        "modo": modo_respuesta,
         "modelo": OLLAMA_MODEL,
         "embedding_model": EMBEDDING_MODEL,
         "use_llm": USE_LLM,
-        "retriever_k": RETRIEVER_K
+        "retriever_k": RETRIEVER_K,
+        "chunks_recuperados": len(docs),
+        "tiempo_retrieval_segundos": tiempo_retrieval,
+        "tiempo_llm_segundos": tiempo_llm,
+        "tiempo_total_segundos": tiempo_total,
+        "error_llm": error_llm
     })
 
 
