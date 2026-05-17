@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 import time
+import json
+import re
+import unicodedata
 
 
 # ============================================================
@@ -38,6 +41,12 @@ MANUAL_PATH = os.getenv("MANUAL_PATH", "manual.pdf")
 CHROMA_DIR = os.getenv("CHROMA_DIR", "./chroma_db")
 RETRIEVER_K = int(os.getenv("RETRIEVER_K", "5"))
 
+# Archivo textual usado para fallback 2 cuando falla Ollama/embeddings/Chroma
+CHUNKS_JSON_PATH = os.getenv(
+    "CHUNKS_JSON_PATH",
+    "./data/processed/chunks_manual.json"
+)
+
 
 print("CONFIGURACION CARGADA:")
 print(f"ENV_PATH = {ENV_PATH}")
@@ -48,6 +57,7 @@ print(f"EMBEDDING_MODEL = {EMBEDDING_MODEL}")
 print(f"MANUAL_PATH = {MANUAL_PATH}")
 print(f"CHROMA_DIR = {CHROMA_DIR}")
 print(f"RETRIEVER_K = {RETRIEVER_K}")
+print(f"CHUNKS_JSON_PATH = {CHUNKS_JSON_PATH}")
 
 
 # ============================================================
@@ -68,7 +78,7 @@ def home():
 
 
 # ============================================================
-# 5. Funciones auxiliares
+# 5. Funciones auxiliares generales
 # ============================================================
 
 def format_docs(docs):
@@ -78,10 +88,134 @@ def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
 
+def normalizar_texto(texto):
+    """
+    Normaliza texto para búsquedas simples:
+    - pasa a minúsculas
+    - quita tildes
+    - deja solo letras, números y espacios
+    """
+    texto = texto.lower()
+    texto = unicodedata.normalize("NFD", texto)
+    texto = "".join(
+        caracter for caracter in texto
+        if unicodedata.category(caracter) != "Mn"
+    )
+    texto = re.sub(r"[^a-z0-9\s]", " ", texto)
+    texto = re.sub(r"\s+", " ", texto).strip()
+    return texto
+
+
+def extraer_terminos_busqueda(pregunta):
+    """
+    Extrae términos útiles de la consulta para fallback textual.
+    Evita palabras muy cortas y conectores comunes.
+    """
+    stopwords = {
+        "que", "como", "para", "con", "del", "los", "las", "una", "uno",
+        "unos", "unas", "por", "sin", "sobre", "cual", "cuales", "son",
+        "hacer", "realizar", "indica", "dice", "manual", "service",
+        "servicio", "equipo", "necesarias", "necesarios", "necesario",
+        "necesaria", "el", "la", "de", "y", "o", "a", "en", "un"
+    }
+
+    texto = normalizar_texto(pregunta)
+    terminos = [
+        termino for termino in texto.split()
+        if len(termino) >= 3 and termino not in stopwords
+    ]
+
+    return terminos
+
+
+def guardar_chunks_json(fragmentos):
+    """
+    Guarda una copia textual simple de los chunks del manual.
+    Esto permite fallback 2 si Ollama, embeddings o ChromaDB fallan.
+    """
+    ruta_json = BASE_DIR / CHUNKS_JSON_PATH
+    ruta_json.parent.mkdir(parents=True, exist_ok=True)
+
+    chunks = []
+
+    for i, doc in enumerate(fragmentos, start=1):
+        metadata = doc.metadata or {}
+
+        chunks.append({
+            "id": i,
+            "texto": doc.page_content,
+            "metadata": {
+                "source": metadata.get("source", MANUAL_PATH),
+                "page": metadata.get("page", None)
+            }
+        })
+
+    with open(ruta_json, "w", encoding="utf-8") as archivo:
+        json.dump(chunks, archivo, ensure_ascii=False, indent=2)
+
+    return ruta_json, len(chunks)
+
+
+def cargar_chunks_json():
+    """
+    Carga los chunks textuales guardados durante la ingesta.
+    """
+    ruta_json = BASE_DIR / CHUNKS_JSON_PATH
+
+    if not ruta_json.exists():
+        return []
+
+    with open(ruta_json, "r", encoding="utf-8") as archivo:
+        return json.load(archivo)
+
+
+def busqueda_textual_simple(pregunta, limite=5):
+    """
+    Fallback 2:
+    Busca coincidencias simples por palabras clave dentro de chunks_manual.json.
+    No depende de Ollama, embeddings ni ChromaDB.
+    """
+    chunks = cargar_chunks_json()
+
+    if not chunks:
+        return []
+
+    terminos = extraer_terminos_busqueda(pregunta)
+    pregunta_normalizada = normalizar_texto(pregunta)
+
+    resultados = []
+
+    for chunk in chunks:
+        texto_original = chunk.get("texto", "")
+        texto_normalizado = normalizar_texto(texto_original)
+
+        score = 0
+
+        # Coincidencia por términos individuales
+        for termino in terminos:
+            score += texto_normalizado.count(termino)
+
+        # Pequeño refuerzo si aparece una frase relevante completa
+        if pregunta_normalizada and pregunta_normalizada in texto_normalizado:
+            score += 5
+
+        if score > 0:
+            resultados.append({
+                "score": score,
+                "id": chunk.get("id"),
+                "texto": texto_original,
+                "metadata": chunk.get("metadata", {})
+            })
+
+    resultados.sort(key=lambda item: item["score"], reverse=True)
+
+    return resultados[:limite]
+
+
 def format_fallback_response(docs):
     """
-    Construye una respuesta útil cuando el LLM está desactivado o falla.
-    Devuelve fragmentos recuperados directamente desde ChromaDB.
+    Construye una respuesta útil cuando el LLM está desactivado o falla,
+    pero ChromaDB sí pudo recuperar documentos.
     """
     if not docs:
         return (
@@ -112,6 +246,47 @@ def format_fallback_response(docs):
         "[MODO FALLBACK DOCUMENTAL]\n\n"
         "El modelo de lenguaje está desactivado o no pudo generar una respuesta. "
         "Se muestran los fragmentos más relevantes recuperados directamente del manual:\n\n"
+        + "\n\n---\n\n".join(bloques)
+    )
+
+
+def format_fallback_textual_response(resultados):
+    """
+    Construye la respuesta del fallback 2.
+    Este modo no depende de Ollama ni de ChromaDB.
+    """
+    if not resultados:
+        return (
+            "[MODO FALLBACK TEXTUAL]\n\n"
+            "No se pudo usar la búsqueda vectorial y tampoco se encontraron "
+            "coincidencias textuales suficientes en los chunks guardados. "
+            "Probá reformular la consulta o verificar que el manual haya sido ingerido."
+        )
+
+    bloques = []
+
+    for i, item in enumerate(resultados, start=1):
+        metadata = item.get("metadata", {})
+        pagina = metadata.get("page", None)
+        fuente = metadata.get("source", "manual")
+        score = item.get("score", 0)
+
+        encabezado = f"Coincidencia textual {i}"
+        if pagina is not None:
+            encabezado += f" | página {pagina + 1}"
+        if fuente:
+            encabezado += f" | fuente: {fuente}"
+        encabezado += f" | score: {score}"
+
+        bloques.append(
+            f"{encabezado}\n"
+            f"{item.get('texto', '').strip()}"
+        )
+
+    return (
+        "[MODO FALLBACK TEXTUAL]\n\n"
+        "No se pudo utilizar la búsqueda vectorial con embeddings. "
+        "Se realizó una búsqueda textual simple sobre los chunks guardados del manual:\n\n"
         + "\n\n---\n\n".join(bloques)
     )
 
@@ -159,7 +334,7 @@ def generar_respuesta_llm(pregunta, docs):
 
 
 # ============================================================
-# 6. Ruta para procesar y guardar el PDF en ChromaDB
+# 6. Ruta para procesar y guardar el PDF
 # ============================================================
 
 @app.route("/ingestar", methods=["POST"])
@@ -181,23 +356,29 @@ def ingestar_pdf():
     )
     fragmentos = text_splitter.split_documents(documentos)
 
+    # 1) Guardar en ChromaDB para búsqueda vectorial
     Chroma.from_documents(
         documents=fragmentos,
         embedding=embeddings,
         persist_directory=CHROMA_DIR
     )
 
+    # 2) Guardar copia textual simple para fallback 2
+    ruta_chunks_json, cantidad_chunks_json = guardar_chunks_json(fragmentos)
+
     tiempo_total = round(time.perf_counter() - inicio, 2)
 
     return jsonify({
         "mensaje": (
             f"PDF procesado exitosamente. "
-            f"Se crearon {len(fragmentos)} fragmentos "
-            f"y se guardaron en ChromaDB."
+            f"Se crearon {len(fragmentos)} fragmentos, "
+            f"se guardaron en ChromaDB y también en JSON textual."
         ),
         "manual_path": MANUAL_PATH,
         "chroma_dir": CHROMA_DIR,
+        "chunks_json_path": str(ruta_chunks_json),
         "fragmentos": len(fragmentos),
+        "fragmentos_json": cantidad_chunks_json,
         "tiempo_segundos": tiempo_total
     })
 
@@ -218,47 +399,73 @@ def consultar_manual():
             "respuesta": "No se recibió ninguna pregunta para consultar."
         }), 400
 
-    if not os.path.exists(CHROMA_DIR):
-        return jsonify({
-            "respuesta": (
-                "La base de datos está vacía. "
-                "Por favor, ejecuta la ingesta del manual primero."
-            )
-        }), 400
-
-    vector_store = Chroma(
-        persist_directory=CHROMA_DIR,
-        embedding_function=embeddings
-    )
-
-    retriever = vector_store.as_retriever(
-        search_kwargs={"k": RETRIEVER_K}
-    )
-
-    # 1) Recuperación documental
-    inicio_retrieval = time.perf_counter()
-    docs = retriever.invoke(pregunta)
-    tiempo_retrieval = round(time.perf_counter() - inicio_retrieval, 2)
-
-    modo_respuesta = "fallback"
+    docs = []
+    error_retrieval = None
     error_llm = None
+    tiempo_retrieval = None
     tiempo_llm = None
+    modo_respuesta = "fallback_textual"
 
-    # 2) Intento de respuesta con LLM o fallback documental
-    if USE_LLM:
-        try:
-            inicio_llm = time.perf_counter()
-            respuesta = generar_respuesta_llm(pregunta, docs)
-            tiempo_llm = round(time.perf_counter() - inicio_llm, 2)
-            modo_respuesta = "llm"
+    # ========================================================
+    # 1) Intentar búsqueda vectorial con ChromaDB + embeddings
+    # ========================================================
 
-        except Exception as error:
-            error_llm = str(error)
+    try:
+        if not os.path.exists(CHROMA_DIR):
+            raise FileNotFoundError(
+                "La base ChromaDB no existe. Se intentará fallback textual."
+            )
+
+        vector_store = Chroma(
+            persist_directory=CHROMA_DIR,
+            embedding_function=embeddings
+        )
+
+        retriever = vector_store.as_retriever(
+            search_kwargs={"k": RETRIEVER_K}
+        )
+
+        inicio_retrieval = time.perf_counter()
+        docs = retriever.invoke(pregunta)
+        tiempo_retrieval = round(time.perf_counter() - inicio_retrieval, 2)
+
+        # ====================================================
+        # 2) Si ChromaDB funcionó, intentar LLM o fallback 1
+        # ====================================================
+
+        if USE_LLM:
+            try:
+                inicio_llm = time.perf_counter()
+                respuesta = generar_respuesta_llm(pregunta, docs)
+                tiempo_llm = round(time.perf_counter() - inicio_llm, 2)
+                modo_respuesta = "llm"
+
+            except Exception as error:
+                error_llm = str(error)
+                respuesta = format_fallback_response(docs)
+                modo_respuesta = "fallback_documental"
+
+        else:
             respuesta = format_fallback_response(docs)
-            modo_respuesta = "fallback"
-    else:
-        respuesta = format_fallback_response(docs)
-        modo_respuesta = "fallback"
+            modo_respuesta = "fallback_documental"
+
+    except Exception as error:
+        # ====================================================
+        # 3) Si falla ChromaDB / embeddings / Ollama completo:
+        #    fallback 2 textual sobre chunks_manual.json
+        # ====================================================
+
+        error_retrieval = str(error)
+
+        inicio_retrieval = time.perf_counter()
+        resultados_textuales = busqueda_textual_simple(
+            pregunta,
+            limite=RETRIEVER_K
+        )
+        tiempo_retrieval = round(time.perf_counter() - inicio_retrieval, 2)
+
+        respuesta = format_fallback_textual_response(resultados_textuales)
+        modo_respuesta = "fallback_textual"
 
     tiempo_total = round(time.perf_counter() - inicio_total, 2)
 
@@ -276,7 +483,9 @@ def consultar_manual():
         "tiempo_retrieval_segundos": tiempo_retrieval,
         "tiempo_llm_segundos": tiempo_llm,
         "tiempo_total_segundos": tiempo_total,
-        "error_llm": error_llm
+        "error_retrieval": error_retrieval,
+        "error_llm": error_llm,
+        "chunks_json_path": str(BASE_DIR / CHUNKS_JSON_PATH)
     })
 
 
