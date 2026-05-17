@@ -37,7 +37,13 @@ USE_LLM = USE_LLM_RAW.strip().lower() == "true"
 LLM_TIMEOUT_SECONDS = int(os.getenv("LLM_TIMEOUT_SECONDS", "8"))
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
+
+# Por compatibilidad, se mantiene MANUAL_PATH para pruebas con un único PDF.
 MANUAL_PATH = os.getenv("MANUAL_PATH", "manual.pdf")
+
+# Nueva carpeta para futura ingesta de múltiples manuales.
+MANUALS_DIR = os.getenv("MANUALS_DIR", "./data/manuales")
+
 CHROMA_DIR = os.getenv("CHROMA_DIR", "./chroma_db")
 RETRIEVER_K = int(os.getenv("RETRIEVER_K", "5"))
 
@@ -55,6 +61,7 @@ print(f"USE_LLM = {USE_LLM}")
 print(f"OLLAMA_MODEL = {OLLAMA_MODEL}")
 print(f"EMBEDDING_MODEL = {EMBEDDING_MODEL}")
 print(f"MANUAL_PATH = {MANUAL_PATH}")
+print(f"MANUALS_DIR = {MANUALS_DIR}")
 print(f"CHROMA_DIR = {CHROMA_DIR}")
 print(f"RETRIEVER_K = {RETRIEVER_K}")
 print(f"CHUNKS_JSON_PATH = {CHUNKS_JSON_PATH}")
@@ -375,6 +382,7 @@ def ingestar_pdf():
             f"se guardaron en ChromaDB y también en JSON textual."
         ),
         "manual_path": MANUAL_PATH,
+        "manuals_dir": MANUALS_DIR,
         "chroma_dir": CHROMA_DIR,
         "chunks_json_path": str(ruta_chunks_json),
         "fragmentos": len(fragmentos),
@@ -478,6 +486,8 @@ def consultar_manual():
         "use_llm": USE_LLM,
         "use_llm_raw": USE_LLM_RAW,
         "env_path": str(ENV_PATH),
+        "manual_path": MANUAL_PATH,
+        "manuals_dir": MANUALS_DIR,
         "retriever_k": RETRIEVER_K,
         "chunks_recuperados": len(docs),
         "tiempo_retrieval_segundos": tiempo_retrieval,
