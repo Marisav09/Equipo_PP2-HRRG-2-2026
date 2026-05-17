@@ -11,7 +11,7 @@ import os
 app = Flask(__name__)
 
 # 1. Configuración de Modelos
-llm = OllamaLLM(model="llama3:8b")
+llm = OllamaLLM(model="llama3.2:3b")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
 # 2. Ruta para mostrar la interfaz web
