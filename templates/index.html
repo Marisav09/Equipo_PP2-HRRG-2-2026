@@ -1,90 +1,111 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA Ingeniería Clínica - HRRG</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #005088;
-            --secondary: #f0f4f8;
-            --accent: #11caa0;
-            --text: #333;
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: var(--secondary); display: flex; height: 100vh; }
-        .sidebar { width: 300px; background: var(--primary); color: white; padding: 20px; display: flex; flex-direction: column; }
-        .main-chat { flex: 1; display: flex; flex-direction: column; position: relative; }
-        .chat-header { padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; align-items: center; }
-        .chat-messages { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; }
-        .message { max-width: 80%; padding: 12px 18px; border-radius: 20px; line-height: 1.5; font-size: 15px; }
-        .user-msg { align-self: flex-end; background: var(--primary); color: white; }
-        .bot-msg { align-self: flex-start; background: white; border: 1px solid #ddd; color: var(--text); }
-        .chat-input-area { padding: 20px; background: white; display: flex; gap: 10px; border-top: 1px solid #ddd; }
-        input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 25px; outline: none; }
-        button { background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; font-weight: bold; }
-        button:hover { opacity: 0.9; }
-        .loader { display: none; margin-left: 10px; color: var(--primary); }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asistente RAG | Ingenieria Clinica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="sidebar">
-        <h2><i class="fa-solid fa-microchip"></i> HRRG</h2>
-        <p>Asistente IA de Ingeniería Clínica</p>
-        <hr style="width:100%; opacity: 0.2;">
-        <div style="margin-top: 20px; font-size: 13px;">
-            <p><i class="fa-solid fa-circle-info"></i> El asistente responde basándose exclusivamente en los manuales técnicos cargados.</p>
-        </div>
+    <div class="app-shell">
+        <aside class="tool-sidebar" aria-label="Menu de configuracion">
+            <button class="icon-button active" type="button" aria-label="Configuracion" title="Configuracion">
+                <span aria-hidden="true">⚙</span>
+            </button>
+
+            <label class="icon-button file-action" aria-label="Ingesta de archivos PDF" title="Ingesta de archivos PDF">
+                <span aria-hidden="true">↥</span>
+                <input type="file" accept="application/pdf" aria-label="Cargar PDF">
+            </label>
+
+            <button class="icon-button" type="button" aria-label="Nuevo chat" title="Nuevo chat" id="new-chat-button">
+                <span aria-hidden="true">＋</span>
+            </button>
+        </aside>
+
+        <aside class="history-panel" aria-label="Historial de chats">
+            <div class="panel-header">
+                <h1 class="history-heading">Historial</h1>
+            </div>
+
+            <nav class="chat-history">
+                {% for chat in chats %}
+                    <button class="history-card {% if loop.first %}selected{% endif %}" type="button">
+                        <span class="history-title">{{ chat.title }}</span>
+                        <span class="history-equipment">{{ chat.equipment }}</span>
+                        <span class="history-preview">{{ chat.preview }}</span>
+                    </button>
+                {% endfor %}
+            </nav>
+        </aside>
+
+        <main class="chat-panel" aria-label="Ventana de chat">
+            <header class="chat-header">
+                <div>
+                    <p class="eyebrow">Equipo consultado</p>
+                    <h2 id="active-equipment">{{ active_equipment }}</h2>
+                </div>
+                <div class="header-logo" aria-label="HRRG">
+                    <span class="logo-muted">HR</span><span class="logo-accent">RG</span>
+                </div>
+            </header>
+
+            <section class="chat-messages" id="chat-messages" aria-live="polite">
+                <article class="message assistant">
+                    <div class="bubble">
+                        Hola. Soy el asistente de Ingenieria Clinica. Puedes consultar fallas, mantenimiento, seguridad o informacion tecnica del equipo seleccionado.
+                    </div>
+                </article>
+                <article class="message user">
+                    <div class="bubble">
+                        Necesito revisar una alarma de oclusion distal.
+                    </div>
+                </article>
+                <article class="message assistant">
+                    <div class="bubble">
+                        Para comenzar, valida linea de infusion, clamp, permeabilidad del cateter y presion configurada. Luego contrasta el evento con el manual tecnico del equipo.
+                    </div>
+                </article>
+            </section>
+
+            <form class="chat-composer" id="chat-form">
+                <input
+                    id="message-input"
+                    name="message"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Escribe una consulta tecnica..."
+                    aria-label="Mensaje para el asistente"
+                    required
+                >
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
     </div>
-    <div class="main-chat">
-        <div class="chat-header">
-            <h3 style="margin:0; color: var(--primary);">Consultas Técnicas</h3>
-        </div>
-        <div class="chat-messages" id="chatBox">
-            <div class="message bot-msg">¡Hola! Soy el asistente de Ingeniería Clínica. ¿En qué puedo ayudarte con el equipamiento hoy?</div>
-        </div>
-        <div class="chat-input-area">
-            <input type="text" id="userInput" placeholder="Escribe tu consulta aquí..." onkeypress="if(event.key==='Enter') sendMessage()">
-            <button onclick="sendMessage()">Enviar <i class="fa-solid fa-paper-plane"></i></button>
-            <div id="loader" class="loader"><i class="fa-solid fa-spinner fa-spin"></i> Pensando...</div>
-        </div>
+
+    <div class="modal-overlay" id="equipment-modal" aria-hidden="true">
+        <section class="equipment-modal" role="dialog" aria-modal="true" aria-labelledby="equipment-modal-title">
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">Nuevo chat</p>
+                    <h2 id="equipment-modal-title">Seleccionar equipo</h2>
+                </div>
+                <button class="modal-close" type="button" id="close-equipment-modal" aria-label="Cerrar ventana">x</button>
+            </div>
+
+            <div class="equipment-list">
+                <button type="button" class="equipment-option" data-equipment="Bomba de infusion">Bomba de infusion</button>
+                <button type="button" class="equipment-option" data-equipment="Monitor multiparametrico">Monitor multiparametrico</button>
+                <button type="button" class="equipment-option" data-equipment="Ventilador mecanico">Ventilador mecanico</button>
+                <button type="button" class="equipment-option" data-equipment="Desfibrilador">Desfibrilador</button>
+                <button type="button" class="equipment-option" data-equipment="Incubadora neonatal">Incubadora neonatal</button>
+                <button type="button" class="equipment-option" data-equipment="Autoclave">Autoclave</button>
+                <button type="button" class="equipment-option" data-equipment="Ecografo">Ecografo</button>
+                <button type="button" class="equipment-option general" data-equipment="Busqueda general">Busqueda general</button>
+            </div>
+        </section>
     </div>
 
-    <script>
-        async function sendMessage() {
-            const input = document.getElementById('userInput');
-            const chatBox = document.getElementById('chatBox');
-            const loader = document.getElementById('loader');
-            const text = input.value.trim();
-
-            if (!text) return;
-
-            // Agregar mensaje usuario
-            chatBox.innerHTML += `<div class="message user-msg">${text}</div>`;
-            input.value = '';
-            chatBox.scrollTop = chatBox.scrollHeight;
-
-            // Mostrar loader
-            loader.style.display = 'block';
-
-            try {
-                const response = await fetch('/consultar', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ pregunta: text })
-                });
-                const data = await response.json();
-                
-                // Agregar respuesta bot
-                chatBox.innerHTML += `<div class="message bot-msg">${data.respuesta}</div>`;
-            } catch (error) {
-                chatBox.innerHTML += `<div class="message bot-msg" style="color:red">Error de conexión. Asegúrate de que el servidor Flask esté corriendo.</div>`;
-            } finally {
-                loader.style.display = 'none';
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
-        }
-    </script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
 </body>
 </html>
