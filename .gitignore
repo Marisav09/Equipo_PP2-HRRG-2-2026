@@ -6,6 +6,10 @@ __pycache__/
 .vscode/
 vectorstore/
 data/processed/
+data/chroma/
+data/audit/
+data/tickets/
+logs/
 # Entornos virtuales
 venv/
 env/
