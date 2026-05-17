@@ -41,7 +41,7 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
 # Por compatibilidad, se mantiene MANUAL_PATH para pruebas con un único PDF.
 MANUAL_PATH = os.getenv("MANUAL_PATH", "manual.pdf")
 
-# Nueva carpeta para futura ingesta de múltiples manuales.
+# Carpeta para ingesta de múltiples manuales.
 MANUALS_DIR = os.getenv("MANUALS_DIR", "./data/manuales")
 
 CHROMA_DIR = os.getenv("CHROMA_DIR", "./chroma_db")
@@ -135,10 +135,44 @@ def extraer_terminos_busqueda(pregunta):
     return terminos
 
 
+def generar_manual_id(ruta_pdf):
+    """
+    Genera un identificador simple a partir del nombre del archivo PDF.
+    Ejemplo: monitor_hr1000.pdf -> monitor_hr1000
+    """
+    nombre = Path(ruta_pdf).stem
+    nombre = normalizar_texto(nombre)
+    nombre = nombre.replace(" ", "_")
+    return nombre
+
+
+def obtener_pdfs_a_ingestar():
+    """
+    Busca PDFs dentro de MANUALS_DIR.
+    Si no encuentra ninguno, usa MANUAL_PATH como compatibilidad con el modo anterior.
+    """
+    ruta_manuales = BASE_DIR / MANUALS_DIR
+    pdfs = []
+
+    if ruta_manuales.exists():
+        pdfs = sorted(ruta_manuales.glob("*.pdf"))
+
+    if pdfs:
+        return pdfs, "multiple"
+
+    ruta_manual_unico = BASE_DIR / MANUAL_PATH
+
+    if ruta_manual_unico.exists():
+        return [ruta_manual_unico], "unico"
+
+    return [], "ninguno"
+
+
 def guardar_chunks_json(fragmentos):
     """
-    Guarda una copia textual simple de los chunks del manual.
-    Esto permite fallback 2 si Ollama, embeddings o ChromaDB fallan.
+    Guarda una copia textual simple de los chunks.
+    Sirve para fallback 2 si Ollama, embeddings o ChromaDB fallan.
+    Incluye metadata para distinguir manuales distintos.
     """
     ruta_json = BASE_DIR / CHUNKS_JSON_PATH
     ruta_json.parent.mkdir(parents=True, exist_ok=True)
@@ -152,6 +186,8 @@ def guardar_chunks_json(fragmentos):
             "id": i,
             "texto": doc.page_content,
             "metadata": {
+                "manual_id": metadata.get("manual_id", "manual_unico"),
+                "archivo_origen": metadata.get("archivo_origen", MANUAL_PATH),
                 "source": metadata.get("source", MANUAL_PATH),
                 "page": metadata.get("page", None)
             }
@@ -236,9 +272,11 @@ def format_fallback_response(docs):
     for i, doc in enumerate(docs, start=1):
         metadata = doc.metadata or {}
         pagina = metadata.get("page", None)
-        fuente = metadata.get("source", "manual")
+        fuente = metadata.get("archivo_origen") or metadata.get("source", "manual")
+        manual_id = metadata.get("manual_id", "manual")
 
         encabezado = f"Fragmento {i}"
+        encabezado += f" | manual_id: {manual_id}"
         if pagina is not None:
             encabezado += f" | página {pagina + 1}"
         if fuente:
@@ -275,10 +313,12 @@ def format_fallback_textual_response(resultados):
     for i, item in enumerate(resultados, start=1):
         metadata = item.get("metadata", {})
         pagina = metadata.get("page", None)
-        fuente = metadata.get("source", "manual")
+        fuente = metadata.get("archivo_origen") or metadata.get("source", "manual")
+        manual_id = metadata.get("manual_id", "manual")
         score = item.get("score", 0)
 
         encabezado = f"Coincidencia textual {i}"
+        encabezado += f" | manual_id: {manual_id}"
         if pagina is not None:
             encabezado += f" | página {pagina + 1}"
         if fuente:
@@ -341,51 +381,81 @@ def generar_respuesta_llm(pregunta, docs):
 
 
 # ============================================================
-# 6. Ruta para procesar y guardar el PDF
+# 6. Ruta para procesar y guardar PDF(s)
 # ============================================================
 
 @app.route("/ingestar", methods=["POST"])
 def ingestar_pdf():
     inicio = time.perf_counter()
-    ruta_pdf = MANUAL_PATH
 
-    if not os.path.exists(ruta_pdf):
+    rutas_pdf, modo_ingesta = obtener_pdfs_a_ingestar()
+
+    if not rutas_pdf:
         return jsonify({
-            "error": f"No se encontró el archivo {ruta_pdf} en la carpeta."
+            "error": (
+                "No se encontraron manuales PDF para ingerir. "
+                f"Verificá la carpeta {MANUALS_DIR} o el archivo {MANUAL_PATH}."
+            )
         }), 400
-
-    loader = PyPDFLoader(ruta_pdf)
-    documentos = loader.load()
 
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000,
         chunk_overlap=200
     )
-    fragmentos = text_splitter.split_documents(documentos)
+
+    todos_los_fragmentos = []
+    manuales_procesados = []
+
+    for ruta_pdf in rutas_pdf:
+        manual_id = generar_manual_id(ruta_pdf)
+
+        loader = PyPDFLoader(str(ruta_pdf))
+        documentos = loader.load()
+
+        # Agregar metadata del manual antes de fragmentar
+        for doc in documentos:
+            doc.metadata = doc.metadata or {}
+            doc.metadata["manual_id"] = manual_id
+            doc.metadata["archivo_origen"] = ruta_pdf.name
+            doc.metadata["source"] = str(ruta_pdf)
+
+        fragmentos = text_splitter.split_documents(documentos)
+
+        todos_los_fragmentos.extend(fragmentos)
+
+        manuales_procesados.append({
+            "manual_id": manual_id,
+            "archivo": ruta_pdf.name,
+            "paginas": len(documentos),
+            "fragmentos": len(fragmentos)
+        })
 
     # 1) Guardar en ChromaDB para búsqueda vectorial
     Chroma.from_documents(
-        documents=fragmentos,
+        documents=todos_los_fragmentos,
         embedding=embeddings,
         persist_directory=CHROMA_DIR
     )
 
     # 2) Guardar copia textual simple para fallback 2
-    ruta_chunks_json, cantidad_chunks_json = guardar_chunks_json(fragmentos)
+    ruta_chunks_json, cantidad_chunks_json = guardar_chunks_json(todos_los_fragmentos)
 
     tiempo_total = round(time.perf_counter() - inicio, 2)
 
     return jsonify({
         "mensaje": (
-            f"PDF procesado exitosamente. "
-            f"Se crearon {len(fragmentos)} fragmentos, "
+            f"Ingesta completada en modo {modo_ingesta}. "
+            f"Se procesaron {len(manuales_procesados)} manual(es), "
+            f"se crearon {len(todos_los_fragmentos)} fragmentos, "
             f"se guardaron en ChromaDB y también en JSON textual."
         ),
+        "modo_ingesta": modo_ingesta,
         "manual_path": MANUAL_PATH,
         "manuals_dir": MANUALS_DIR,
         "chroma_dir": CHROMA_DIR,
         "chunks_json_path": str(ruta_chunks_json),
-        "fragmentos": len(fragmentos),
+        "manuales_procesados": manuales_procesados,
+        "fragmentos": len(todos_los_fragmentos),
         "fragmentos_json": cantidad_chunks_json,
         "tiempo_segundos": tiempo_total
     })
