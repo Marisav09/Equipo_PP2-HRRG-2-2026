@@ -6,18 +6,31 @@ from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
+from pathlib import Path
 import os
 import time
 
 
-# Cargar variables desde .env si existe
-load_dotenv()
+# ============================================================
+# 1. Carga explícita de configuración
+# ============================================================
+
+BASE_DIR = Path(__file__).resolve().parent
+ENV_PATH = BASE_DIR / ".env"
+
+# Carga el .env de la carpeta del proyecto y pisa variables previas si existen
+load_dotenv(dotenv_path=ENV_PATH, override=True)
 
 app = Flask(__name__)
 
 
-# 1. Configuración general desde variables de entorno
-USE_LLM = os.getenv("USE_LLM", "true").lower() == "true"
+# ============================================================
+# 2. Configuración general desde variables de entorno
+# ============================================================
+
+USE_LLM_RAW = os.getenv("USE_LLM", "true")
+USE_LLM = USE_LLM_RAW.strip().lower() == "true"
+
 LLM_TIMEOUT_SECONDS = int(os.getenv("LLM_TIMEOUT_SECONDS", "8"))
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
@@ -26,18 +39,38 @@ CHROMA_DIR = os.getenv("CHROMA_DIR", "./chroma_db")
 RETRIEVER_K = int(os.getenv("RETRIEVER_K", "5"))
 
 
-# 2. Configuración de modelos
+print("CONFIGURACION CARGADA:")
+print(f"ENV_PATH = {ENV_PATH}")
+print(f"USE_LLM_RAW = {USE_LLM_RAW}")
+print(f"USE_LLM = {USE_LLM}")
+print(f"OLLAMA_MODEL = {OLLAMA_MODEL}")
+print(f"EMBEDDING_MODEL = {EMBEDDING_MODEL}")
+print(f"MANUAL_PATH = {MANUAL_PATH}")
+print(f"CHROMA_DIR = {CHROMA_DIR}")
+print(f"RETRIEVER_K = {RETRIEVER_K}")
+
+
+# ============================================================
+# 3. Configuración de modelos
+# ============================================================
+
 llm = OllamaLLM(model=OLLAMA_MODEL)
 embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
 
 
-# 3. Ruta para mostrar la interfaz web
+# ============================================================
+# 4. Ruta para mostrar la interfaz web
+# ============================================================
+
 @app.route("/")
 def home():
     return render_template("index.html")
 
 
-# 4. Funciones auxiliares
+# ============================================================
+# 5. Funciones auxiliares
+# ============================================================
+
 def format_docs(docs):
     """
     Une el contenido de los documentos recuperados para enviarlo como contexto al LLM.
@@ -52,6 +85,7 @@ def format_fallback_response(docs):
     """
     if not docs:
         return (
+            "[MODO FALLBACK DOCUMENTAL]\n\n"
             "No se encontraron fragmentos relevantes en la base documental. "
             "Probá reformular la consulta o verificar que el manual haya sido ingerido correctamente."
         )
@@ -75,8 +109,9 @@ def format_fallback_response(docs):
         )
 
     return (
-        "No se pudo generar una respuesta con el modelo de lenguaje. "
-        "Se muestran los fragmentos más relevantes recuperados del manual:\n\n"
+        "[MODO FALLBACK DOCUMENTAL]\n\n"
+        "El modelo de lenguaje está desactivado o no pudo generar una respuesta. "
+        "Se muestran los fragmentos más relevantes recuperados directamente del manual:\n\n"
         + "\n\n---\n\n".join(bloques)
     )
 
@@ -123,7 +158,10 @@ def generar_respuesta_llm(pregunta, docs):
     })
 
 
-# 5. Ruta para procesar y guardar el PDF en ChromaDB
+# ============================================================
+# 6. Ruta para procesar y guardar el PDF en ChromaDB
+# ============================================================
+
 @app.route("/ingestar", methods=["POST"])
 def ingestar_pdf():
     inicio = time.perf_counter()
@@ -164,7 +202,10 @@ def ingestar_pdf():
     })
 
 
-# 6. Ruta para hacerle preguntas al manual
+# ============================================================
+# 7. Ruta para hacerle preguntas al manual
+# ============================================================
+
 @app.route("/consultar", methods=["POST"])
 def consultar_manual():
     inicio_total = time.perf_counter()
@@ -201,8 +242,9 @@ def consultar_manual():
 
     modo_respuesta = "fallback"
     error_llm = None
+    tiempo_llm = None
 
-    # 2) Intento de respuesta con LLM
+    # 2) Intento de respuesta con LLM o fallback documental
     if USE_LLM:
         try:
             inicio_llm = time.perf_counter()
@@ -212,11 +254,9 @@ def consultar_manual():
 
         except Exception as error:
             error_llm = str(error)
-            tiempo_llm = None
             respuesta = format_fallback_response(docs)
             modo_respuesta = "fallback"
     else:
-        tiempo_llm = None
         respuesta = format_fallback_response(docs)
         modo_respuesta = "fallback"
 
@@ -229,6 +269,8 @@ def consultar_manual():
         "modelo": OLLAMA_MODEL,
         "embedding_model": EMBEDDING_MODEL,
         "use_llm": USE_LLM,
+        "use_llm_raw": USE_LLM_RAW,
+        "env_path": str(ENV_PATH),
         "retriever_k": RETRIEVER_K,
         "chunks_recuperados": len(docs),
         "tiempo_retrieval_segundos": tiempo_retrieval,
