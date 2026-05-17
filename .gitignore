@@ -6,3 +6,13 @@ __pycache__/
 .vscode/
 vectorstore/
 data/processed/
+# Entornos virtuales
+venv/
+env/
+.venv/
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Base de datos vectorial (no se sube, se genera localmente)
+chroma_db/
