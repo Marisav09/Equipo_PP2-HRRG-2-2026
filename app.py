@@ -212,11 +212,12 @@ def cargar_chunks_json():
         return json.load(archivo)
 
 
-def busqueda_textual_simple(pregunta, limite=5):
+def busqueda_textual_simple(pregunta, limite=5, manual_id=None):
     """
     Fallback 2:
     Busca coincidencias simples por palabras clave dentro de chunks_manual.json.
     No depende de Ollama, embeddings ni ChromaDB.
+    Si recibe manual_id, limita la búsqueda a ese manual.
     """
     chunks = cargar_chunks_json()
 
@@ -225,10 +226,17 @@ def busqueda_textual_simple(pregunta, limite=5):
 
     terminos = extraer_terminos_busqueda(pregunta)
     pregunta_normalizada = normalizar_texto(pregunta)
+    manual_id_normalizado = manual_id.strip() if manual_id else ""
 
     resultados = []
 
     for chunk in chunks:
+        metadata = chunk.get("metadata", {}) or {}
+
+        if manual_id_normalizado:
+            if metadata.get("manual_id") != manual_id_normalizado:
+                continue
+
         texto_original = chunk.get("texto", "")
         texto_normalizado = normalizar_texto(texto_original)
 
@@ -247,7 +255,7 @@ def busqueda_textual_simple(pregunta, limite=5):
                 "score": score,
                 "id": chunk.get("id"),
                 "texto": texto_original,
-                "metadata": chunk.get("metadata", {})
+                "metadata": metadata
             })
 
     resultados.sort(key=lambda item: item["score"], reverse=True)
@@ -264,7 +272,8 @@ def format_fallback_response(docs):
         return (
             "[MODO FALLBACK DOCUMENTAL]\n\n"
             "No se encontraron fragmentos relevantes en la base documental. "
-            "Probá reformular la consulta o verificar que el manual haya sido ingerido correctamente."
+            "Probá reformular la consulta, verificar el manual seleccionado "
+            "o confirmar que los manuales hayan sido ingeridos correctamente."
         )
 
     bloques = []
@@ -305,7 +314,8 @@ def format_fallback_textual_response(resultados):
             "[MODO FALLBACK TEXTUAL]\n\n"
             "No se pudo usar la búsqueda vectorial y tampoco se encontraron "
             "coincidencias textuales suficientes en los chunks guardados. "
-            "Probá reformular la consulta o verificar que el manual haya sido ingerido."
+            "Probá reformular la consulta, verificar el manual seleccionado "
+            "o confirmar que los manuales hayan sido ingeridos."
         )
 
     bloques = []
@@ -471,6 +481,7 @@ def consultar_manual():
 
     data = request.json or {}
     pregunta = data.get("pregunta", "").strip()
+    manual_id = data.get("manual_id", "").strip()
 
     if not pregunta:
         return jsonify({
@@ -499,8 +510,13 @@ def consultar_manual():
             embedding_function=embeddings
         )
 
+        search_kwargs = {"k": RETRIEVER_K}
+
+        if manual_id:
+            search_kwargs["filter"] = {"manual_id": manual_id}
+
         retriever = vector_store.as_retriever(
-            search_kwargs={"k": RETRIEVER_K}
+            search_kwargs=search_kwargs
         )
 
         inicio_retrieval = time.perf_counter()
@@ -538,7 +554,8 @@ def consultar_manual():
         inicio_retrieval = time.perf_counter()
         resultados_textuales = busqueda_textual_simple(
             pregunta,
-            limite=RETRIEVER_K
+            limite=RETRIEVER_K,
+            manual_id=manual_id if manual_id else None
         )
         tiempo_retrieval = round(time.perf_counter() - inicio_retrieval, 2)
 
@@ -549,6 +566,7 @@ def consultar_manual():
 
     return jsonify({
         "pregunta": pregunta,
+        "manual_id_solicitado": manual_id or None,
         "respuesta": respuesta,
         "modo": modo_respuesta,
         "modelo": OLLAMA_MODEL,
