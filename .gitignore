@@ -11,3 +11,6 @@ chroma_db/
 # Datos y vectorstores generados localmente
 data/
 vectorstore/
+
+# Configuracion local
+.env
