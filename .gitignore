@@ -5,7 +5,10 @@ __pycache__/
 .DS_Store
 .vscode/
 vectorstore/
-data/processed/
+data/processed/*
+!data/processed/
+!data/processed/pdf_name_manifest.csv
+data/raw_original/
 data/chroma/
 data/audit/
 data/tickets/
