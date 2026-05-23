@@ -356,6 +356,18 @@ async function useChromaNow(query) {
     }
 }
 
+function getSpeechText(answer) {
+    if (!answer) {
+        return "";
+    }
+
+    return answer
+        .split("\n\nFuentes")[0]
+        .split("\nFuentes")[0]
+        .split("Fuentes")[0]
+        .trim();
+}
+
 async function sendQuestion(query, options = {}) {
     lastQuestion = query;
 
@@ -378,7 +390,11 @@ async function sendQuestion(query, options = {}) {
             regenerable: true,
         });
         setStatus(`Modo de respuesta: ${data.mode}`);
-        speak(data.answer);
+
+        const speechText = getSpeechText(data.answer);
+        if (speechText) {
+            speak(speechText);
+        }
     } catch (error) {
         if (activeLoadingMessage) {
             activeLoadingMessage.remove();
@@ -400,7 +416,7 @@ async function sendQuestion(query, options = {}) {
 function openEquipmentModal() {
     // Si es operador, bloqueamos la apertura del modal
     if (currentRole === 'operador') return;
-    
+
     equipmentModal.classList.add("visible");
     equipmentModal.setAttribute("aria-hidden", "false");
     if (equipmentOptions.length > 0) {
@@ -411,7 +427,7 @@ function openEquipmentModal() {
 function closeEquipmentModal() {
     equipmentModal.classList.remove("visible");
     equipmentModal.setAttribute("aria-hidden", "true");
-    if(newChatButton) newChatButton.focus();
+    if (newChatButton) newChatButton.focus();
 }
 
 async function clearServerMemory() {
@@ -424,7 +440,7 @@ async function clearServerMemory() {
 
 async function selectEquipment(equipment) {
     if (currentRole === 'operador') return; // Seguridad extra
-    
+
     selectedEquipment = equipment;
     activeEquipmentTitle.textContent = equipment;
     chatMessages.innerHTML = "";
@@ -500,7 +516,7 @@ function initializeApp() {
                 e.preventDefault();
                 const passField = document.querySelector("#password");
                 const pass = passField ? passField.value.trim() : "";
-                
+
                 // Validación frontend de prototipo
                 if (pass === "tecnico-hrrg") {
                     loginModal.classList.remove("visible");
@@ -514,30 +530,30 @@ function initializeApp() {
         }
     } else if (currentRole === 'operador') {
         // Ocultar modal de login si existiera
-        if(loginModal) {
+        if (loginModal) {
             loginModal.classList.remove("visible");
             loginModal.setAttribute("aria-hidden", "true");
         }
 
         // Ocultar botones de la barra lateral
-        if(newChatButton) newChatButton.style.display = 'none';
-        if(ingestButton) ingestButton.style.display = 'none';
-        
+        if (newChatButton) newChatButton.style.display = 'none';
+        if (ingestButton) ingestButton.style.display = 'none';
+
         // Ocultar la barra lateral completamente
         const toolSidebar = document.querySelector('.tool-sidebar');
-        if(toolSidebar) toolSidebar.style.display = 'none';
+        if (toolSidebar) toolSidebar.style.display = 'none';
 
         // --- MAGIA RESPONSIVA PARA PC ---
         const appShell = document.querySelector('.app-shell');
-        if(appShell) {
+        if (appShell) {
             appShell.style.display = 'flex';
             appShell.style.justifyContent = 'center';
             // Se quita la grilla (grid) predeterminada para que el panel tome el control
-            appShell.style.gridTemplateColumns = '1fr'; 
+            appShell.style.gridTemplateColumns = '1fr';
         }
-        
+
         const chatPanel = document.querySelector('.chat-panel');
-        if(chatPanel) {
+        if (chatPanel) {
             chatPanel.style.width = '100%';
             chatPanel.style.maxWidth = '900px'; // Centrado y de lectura cómoda
             chatPanel.style.margin = '0 auto';
@@ -545,7 +561,7 @@ function initializeApp() {
         }
 
         // Mensaje de bienvenida adaptado a Primera Línea
-        chatMessages.innerHTML = ''; 
+        chatMessages.innerHTML = '';
         createMessage("assistant", `**Asistencia Clínica de Primera Línea**\n\nEstás operando el equipo: **${selectedEquipment}**.\n\nEscribe o dicta el síntoma o la alarma que presenta el equipo para recibir instrucciones. Recuerda que si hay riesgo, debes contactar a Ingeniería Clínica inmediatamente.`);
     }
 }
