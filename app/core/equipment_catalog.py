@@ -9,6 +9,9 @@ GENERAL_EQUIPMENT_LABEL = "Busqueda general"
 UNCLASSIFIED_EQUIPMENT_LABEL = "Sin clasificar"
 
 
+# IMPORTANTE:
+# El orden importa. Las reglas más específicas deben ir antes que las generales.
+# Evitar alias de marca solos cuando puedan capturar equipos distintos.
 EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
     "Bomba de infusion": (
         "bomba_de_infusion",
@@ -18,41 +21,107 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
         "infusomat space",
     ),
 
+    "Bilirrubinometro Drager JM-105": (
+        "bilirrubinometro_drager_jm105",
+        "bilirrubinometro",
+        "bilirrubinómetro",
+        "drager jm 105",
+        "drager jm-105",
+        "drager_jm105",
+        "drager_jm_105",
+        "dräger jm 105",
+        "dräger jm-105",
+        "draeger jm 105",
+        "draeger jm-105",
+        "jm-105",
+        "jm 105",
+        "jm105",
+        "jm_105",
+        "checklist bilirrubinometro",
+        "manual tecnico bilirrubinometro",
+        "manual de usuario bilirrubinometro",
+        "material educativo bilirrubinometro",
+    ),
+
+    "Desfibrilador Mindray BeneHeart D3": (
+        "desfibrilador_mindray_beneheart",
+        "desfibrilador",
+        "desfibrilador mindray",
+        "mindray beneheart",
+        "beneheart",
+        "beneheart d3",
+        "beneheart d2",
+        "beneheart d3 d2",
+        "d3 d2",
+        "d3d2",
+        "defib",
+        "new defib",
+        "monitor beneheart",
+        "desfibrilador monitor beneheart",
+        "manual de servicio desfibrilador monitor beneheart",
+    ),
+
+    "Maquina de dialisis Fresenius 4008": (
+        "fresenius_4008",
+        "fresenius",
+        "fressenius",
+        "fresenius 4008",
+        "fresenius 4008s",
+        "fresenius 4008b",
+        "4008",
+        "4008s",
+        "4008b",
+        "dialisis",
+        "diálisis",
+        "hemodialisis",
+        "hemodiálisis",
+        "maquina de dialisis",
+        "máquina de diálisis",
+        "service manual fresenius",
+        "fresenius service manual",
+    ),
+
     "Monitor multiparametrico": (
         "monitor_multiparametrico",
         "monitor multiparametrico",
         "monitor multiparámetro",
         "monitor multiparametro",
         "multiparametrico",
+        "multiparamétrico",
+        "multiparametro",
+        "multiparámetro",
         "epm series",
         "imec",
         "pm-9000",
         "pm 9000",
+        "compact monitor",
     ),
 
     "Respirador Drager VN500": (
         "drager_vn500",
         "drager vn500",
         "draeger vn500",
+        "dräger vn500",
         "draguer respirador",
+        "respirador drager vn500",
+        "respirador draeger vn500",
         "vn500",
         "v500",
         "ps500",
+        "ps 500",
         "gs500",
+        "gs 500",
         "babyflow",
+        "baby flow",
         "babylog",
+        "baby log",
         "evita v300",
         "volume guarantee",
         "volumeguarantee",
-    ),
-
-    "Ventilador mecanico": (
-        "ventilador_mecanico",
-        "ventilador mecanico",
-        "ventilador mecánico",
-        "respirador",
-        "respiradores",
-        "respimeradores",
+        "recarga soft",
+        "entrar en servicio",
+        "training gs500",
+        "training ps500",
     ),
 
     "Ventilador Neumovent GraphNet": (
@@ -65,6 +134,7 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
         "nv-graph",
         "tecme graphnet",
         "manualtecnico bebe",
+        "respimeradores",
     ),
 
     "Ventilador Maquet Servo-i": (
@@ -73,6 +143,7 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
         "servo i",
         "servo-i",
         "maquet servo",
+        "maquet servo i",
     ),
 
     "Ventilador Engstrom": (
@@ -122,17 +193,6 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
         "flujo",
     ),
 
-    "Desfibrilador Mindray BeneHeart D3": (
-        "desfibrilador_mindray_beneheart",
-        "desfibrilador",
-        "mindray",
-        "beneheart",
-        "beneheart d3",
-        "beneheart d2",
-        "d3d2",
-        "defib",
-    ),
-
     "Incubadora Medix": (
         "incubadora_medix",
         "incubadora",
@@ -142,15 +202,7 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
         "tr306",
         "tr 306",
         "natal care",
-    ),
-
-    "Bilirrubinometro Drager JM-105": (
-        "bilirrubinometro_drager_jm105",
-        "bilirrubinometro",
-        "bilirrubinómetro",
-        "jm-105",
-        "jm 105",
-        "jm105",
+        "natalcare",
     ),
 
     "Electrobisturi": (
@@ -167,23 +219,11 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
         "electrosurgical generator",
     ),
 
-    "Maquina de dialisis Fresenius 4008": (
-        "fresenius_4008",
-        "fresenius",
-        "fressenius",
-        "4008",
-        "4008s",
-        "4008b",
-        "dialisis",
-        "diálisis",
-        "hemodialisis",
-        "hemodiálisis",
-    ),
-
     "Esterilizadora Sterrad 100": (
         "sterrad_100",
         "sterrad",
         "sterrad 100",
+        "sterrad 100s",
         "esterilizadora",
         "esterilizador",
         "sterilization system",
@@ -191,14 +231,27 @@ EQUIPMENT_ALIASES: dict[str, tuple[str, ...]] = {
 
     "Procesador Leica TP1020": (
         "leica_tp1020",
-        "leica",
+        "leica tp1020",
+        "leica tp 1020",
         "tp1020",
         "tp 1020",
+        "tp-1020",
         "procesador de tejidos",
+        "procesador de tejido",
+        "tissue processor",
+    ),
+
+    "Microtomo Leica RM2125": (
+        "leica_rm2125",
+        "leica rm2125",
+        "leica rm 2125",
+        "rm2125",
+        "rm 2125",
+        "rm2125 rts",
         "microtomo",
         "micrótomo",
-        "rm2125",
-        "rm2125 rts",
+        "microtomo de rotacion",
+        "micrótomo de rotación",
     ),
 
     "Cama electronica": (
