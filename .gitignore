@@ -20,3 +20,7 @@ __pycache__/
 
 # Base de datos vectorial (no se sube, se genera localmente)
 chroma_db/
+
+data/raw_original_unicos/
+
+data/downloads_originales/
