@@ -1,0 +1,143 @@
+# Informe de auditoría de calidad textual de PDFs
+
+## Proyecto
+
+Asistente IA para Ingeniería Clínica - HRRG  
+Rama de trabajo: `curaduria-corpus-completo-julieta`
+
+## Objetivo
+
+Evaluar la calidad del texto extraíble de los PDFs cargados en `data/raw`, con el fin de identificar qué documentos pueden utilizarse directamente en el flujo RAG y cuáles requieren revisión u OCR previo.
+
+La auditoría no modifica los archivos originales. Solo analiza el texto extraíble de cada PDF y genera una clasificación preliminar.
+
+## Resumen general
+
+| Indicador | Cantidad |
+|---|---:|
+| Total de PDFs auditados | 72 |
+| OK | 60 |
+| REVISAR | 7 |
+| REQUIERE_OCR | 5 |
+| ERROR | 0 |
+
+## Criterios utilizados
+
+La clasificación se realizó a partir de la cantidad total de caracteres extraídos y del promedio de caracteres por página.
+
+| Estado | Interpretación |
+|---|---|
+| OK | El PDF tiene texto extraíble suficiente para ingesta textual directa. |
+| REVISAR | El PDF tiene texto extraíble parcial o bajo. Puede ser útil, pero conviene revisarlo manualmente. |
+| REQUIERE_OCR | El PDF tiene texto insuficiente o nulo. Probablemente requiere OCR o tratamiento especial. |
+| ERROR | El PDF no pudo abrirse o falló la extracción. |
+
+## PDFs que requieren OCR
+
+| Archivo | Páginas | Caracteres extraídos | Promedio caracteres/página | Estado | Observación |
+|---|---:|---:|---:|---|---|
+| `drager_vn500_entrar_en_servicio_y_copiar_log_errores_recarga_soft.pdf` | 2 | 116 | 58.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
+| `drager_vn500_manual_usuario_vn500_es.pdf` | 344 | 0 | 0.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
+| `ventilador_crossvent_manual_de_servicio_crossvent_biomed_devices_crossvent_4.pdf` | 47 | 0 | 0.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
+| `ventilador_leistung_luft3_6_nivel_3_terapia_fallas_frecuentes_presion_1.pdf` | 1 | 274 | 274.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
+| `ventilador_maquet_servo_i_maquet_servo_i_service_manual_2_of_2.pdf` | 32 | 0 | 0.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
+
+
+## PDFs a revisar manualmente
+
+| Archivo | Páginas | Caracteres extraídos | Promedio caracteres/página | Estado | Observación |
+|---|---:|---:|---:|---|---|
+| `bilirrubinometro_drager_jm105_checklist_bilirrubinometro_drager_jm_105.pdf` | 1 | 1657 | 1657.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `dinan_af500_mu_sm500_manual_de_usuario_v1_0_2024_09_09.pdf` | 7 | 2177 | 311.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `drager_vn500_pdf1805_ad_babylog_vn500_spanisch_30112009_k2.pdf` | 1 | 1121 | 1121.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `tp_100_plano_electrico_tp_100new.pdf` | 1 | 923 | 923.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `ventilador_engstrom_manual_de_usuario_engstrom_carestation_anexo_es.pdf` | 2 | 2563 | 1281.5 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `ventilador_leistung_luft3_5_nivel_3_terapia_fallas_frecuentes_fuga_1.pdf` | 1 | 1140 | 1140.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `ventilador_leistung_luft3_7_nivel_3_terapia_fallas_frecuentes_flujo_2.pdf` | 1 | 1227 | 1227.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+
+
+## PDFs con texto extraíble suficiente
+
+| Archivo | Páginas | Caracteres extraídos | Promedio caracteres/página | Estado | Observación |
+|---|---:|---:|---:|---|---|
+| `agitador_presvac_ae500_manual_tecnico_y_de_mantenimiento_agitador_presvac_ae_500_a.pdf` | 44 | 40939 | 930.43 | OK | Texto extraíble suficiente para ingesta textual. |
+| `bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105.pdf` | 130 | 158856 | 1221.97 | OK | Texto extraíble suficiente para ingesta textual. |
+| `bilirrubinometro_drager_jm105_manual_tecnico_bilirrubinometro_drager_jm_105_espanol.pdf` | 6 | 7496 | 1249.33 | OK | Texto extraíble suficiente para ingesta textual. |
+| `bilirrubinometro_drager_jm105_material_educativo_bilirrubinometro_drager_jm_105_ingles.pdf` | 7 | 7919 | 1131.29 | OK | Texto extraíble suficiente para ingesta textual. |
+| `cabina_bioseguridad_manual_de_servicio_cabina_microbiologica_euroclone_safemate_ez_ing.pdf` | 3 | 5521 | 1840.33 | OK | Texto extraíble suficiente para ingesta textual. |
+| `cama_electronica_manual_de_usuario_y_tecnico_cama_linet_eleganza_1.pdf` | 67 | 105511 | 1574.79 | OK | Texto extraíble suficiente para ingesta textual. |
+| `cama_electronica_manual_tecnico_cama_pardo_hitech_act.pdf` | 4 | 8575 | 2143.75 | OK | Texto extraíble suficiente para ingesta textual. |
+| `cama_electronica_manual_tecnico_cama_pardo_komplet.pdf` | 2 | 4505 | 2252.5 | OK | Texto extraíble suficiente para ingesta textual. |
+| `desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles.pdf` | 117 | 158603 | 1355.58 | OK | Texto extraíble suficiente para ingesta textual. |
+| `dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27.pdf` | 47 | 67301 | 1431.94 | OK | Texto extraíble suficiente para ingesta textual. |
+| `dinan_af500_mu_af_500_dr_version_v05_manual_de_usuario_v1_0_2024_09_09.pdf` | 14 | 20201 | 1442.93 | OK | Texto extraíble suficiente para ingesta textual. |
+| `dinan_af500_mu_dr_console_af_500_manual_de_usuario_v1_0_2024_09_09.pdf` | 24 | 18894 | 787.25 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_1_3_training_gs500_en_01_2017.pdf` | 19 | 6931 | 364.79 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_2_1_training_ps500_withm7_3plus_en_06_2017.pdf` | 33 | 14344 | 434.67 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_3_9054521_01_erg_ga_v_vn_ps500_batt_en.pdf` | 4 | 3753 | 938.25 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_9066667_babyflow_es_finit.pdf` | 4 | 6141 | 1535.25 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_abreviaturas_y_simbolos_evita_v300_vn500.pdf` | 8 | 15948 | 1993.5 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_cc_other_br_9066227_es.pdf` | 8 | 10303 | 1287.88 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_cc_other_br_9066343_es.pdf` | 4 | 11426 | 2856.5 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_cc_other_br_9066364_en.pdf` | 2 | 6726 | 3363.0 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_cc_other_br_9066465_es.pdf` | 2 | 6849 | 3424.5 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_other_volumeguarantee_interview_dr_m_keszler_en.pdf` | 2 | 6074 | 3037.0 | OK | Texto extraíble suficiente para ingesta textual. |
+| `electrobisturi_dispo_8155_14_manual_kairos.pdf` | 45 | 78859 | 1752.42 | OK | Texto extraíble suficiente para ingesta textual. |
+| `electrobisturi_leep_system_1000.pdf` | 25 | 38642 | 1545.68 | OK | Texto extraíble suficiente para ingesta textual. |
+| `electrobisturi_leep_user_manual.pdf` | 196 | 496870 | 2535.05 | OK | Texto extraíble suficiente para ingesta textual. |
+| `electrobisturi_minicomp_kairos_m_x_esu_service_manual_2_es_1.pdf` | 74 | 72005 | 973.04 | OK | Texto extraíble suficiente para ingesta textual. |
+| `electrobisturi_valleylab_force_fx_8c_electrosurgical_generator_service_manual.pdf` | 218 | 298578 | 1369.62 | OK | Texto extraíble suficiente para ingesta textual. |
+| `electrobisturi_valleylab_force_fx_c_esu_service_manual.pdf` | 214 | 280548 | 1310.97 | OK | Texto extraíble suficiente para ingesta textual. |
+| `fresenius_4008_service_manual.pdf` | 595 | 468005 | 786.56 | OK | Texto extraíble suficiente para ingesta textual. |
+| `incubadora_medix_manual_de_usuario_incubadora_medix_tr200.pdf` | 87 | 96087 | 1104.45 | OK | Texto extraíble suficiente para ingesta textual. |
+| `incubadora_medix_manual_tecnico_incubadora_medix_natal_care_st_mx_lx.pdf` | 92 | 78568 | 854.0 | OK | Texto extraíble suficiente para ingesta textual. |
+| `incubadora_medix_manual_tecnico_incubadora_medix_tr306.pdf` | 92 | 131978 | 1434.54 | OK | Texto extraíble suficiente para ingesta textual. |
+| `leica_rm2125_manual_de_usuario_microtomo_de_rotacion_leica_rm2125_rts.pdf` | 70 | 85018 | 1214.54 | OK | Texto extraíble suficiente para ingesta textual. |
+| `leica_tp1020_manual_de_servicio_procesador_de_tejidos_leica_tp_1020_ingles.pdf` | 320 | 317095 | 990.92 | OK | Texto extraíble suficiente para ingesta textual. |
+| `monitor_multiparametrico_epm_series_compact_monitor_service_manual_v1_0_en.pdf` | 193 | 235621 | 1220.83 | OK | Texto extraíble suficiente para ingesta textual. |
+| `monitor_multiparametrico_imec_service_manual_v4_0_en.pdf` | 140 | 196677 | 1404.84 | OK | Texto extraíble suficiente para ingesta textual. |
+| `monitor_multiparametrico_pm_9000_service_manual.pdf` | 80 | 95791 | 1197.39 | OK | Texto extraíble suficiente para ingesta textual. |
+| `rodantes_mac_gmm_hd_67_troubleshooting_equipos_rodantes_mac_gmm_v2.pdf` | 14 | 12823 | 915.93 | OK | Texto extraíble suficiente para ingesta textual. |
+| `sterrad_100_manual_de_servicio_esterilizadora_sterrad_100_ing.pdf` | 309 | 362813 | 1174.15 | OK | Texto extraíble suficiente para ingesta textual. |
+| `tp_100_fg_tp_80.pdf` | 41 | 22998 | 560.93 | OK | Texto extraíble suficiente para ingesta textual. |
+| `tp_100_manual_tp_100_castellano_v2.pdf` | 40 | 25455 | 636.38 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_crossvent_ifu_globe_trotter_gt5400_crossvent_2i_mu21764.pdf` | 108 | 259493 | 2402.71 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_crossvent_manual_crossvent_3.pdf` | 22 | 60086 | 2731.18 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_engstrom_guia_rapida_para_enfermeras.pdf` | 14 | 11877 | 848.36 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_engstrom_manual_de_usuario_engstrom_carestation_es.pdf` | 274 | 390708 | 1425.94 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol.pdf` | 326 | 464956 | 1426.25 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_engstrom_manual_tecnico_ventilador_ge_engstrom_aleman.pdf` | 202 | 267681 | 1325.15 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_engstrom_ventilacion_no_invasiva.pdf` | 6 | 9307 | 1551.17 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_leistung_luft3_l3apnmu_b_manual_de_usuario_luft3apn_ap_1.pdf` | 105 | 153387 | 1460.83 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_maquet_servo_i_maquet_servo_i_service_manual.pdf` | 84 | 133207 | 1585.8 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_manual_de_calibracion_neumovent_graph.pdf` | 22 | 10075 | 457.95 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_manual_de_usuario_neumovent_advance_ts_neo.pdf` | 135 | 417945 | 3095.89 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_manual_tecnico_nv_graph_rev_03.pdf` | 100 | 130263 | 1302.63 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_manual_tecnico_ventilador_neumovent_graphnet_neo_ts.pdf` | 154 | 161035 | 1045.68 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_manualtecnico_bebe_rev_01.pdf` | 28 | 51725 | 1847.32 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free.pdf` | 102 | 112212 | 1100.12 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_respimeradores.pdf` | 12 | 31542 | 2628.5 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_neumovent_tecme_graphnet_ventilator_service_manual_es.pdf` | 89 | 113517 | 1275.47 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_newport_ht70_introduccion_newport_ht_70_plus.pdf` | 68 | 18852 | 277.24 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_newport_ht70_newport_ht_70_ventilator_service_manual.pdf` | 146 | 150730 | 1032.4 | OK | Texto extraíble suficiente para ingesta textual. |
+
+
+## PDFs con error de lectura
+
+_Sin registros._
+
+
+## Conclusión preliminar
+
+La auditoría muestra que la mayoría de los PDFs del corpus tienen texto extraíble suficiente para funcionar dentro del flujo RAG. Sin embargo, se identificaron documentos con bajo o nulo texto extraíble que deberían tratarse con OCR o revisión manual antes de considerarlos plenamente válidos para recuperación semántica.
+
+El OCR no debería aplicarse de forma masiva sobre los 72 PDFs, sino únicamente sobre los documentos marcados como `REQUIERE_OCR` y, si corresponde, sobre algunos casos `REVISAR` luego de evaluación manual.
+
+## Próximos pasos sugeridos
+
+1. Revisar manualmente los PDFs marcados como `REQUIERE_OCR`.
+2. Confirmar si son documentos relevantes para el alcance del MVP.
+3. Aplicar OCR solo a los PDFs necesarios.
+4. Reingestar el corpus corregido.
+5. Repetir la validación de recuperación por equipo.
+6. Repetir la validación de calidad de respuestas LLM.
