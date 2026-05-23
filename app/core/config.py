@@ -38,8 +38,7 @@ class Settings:
     base_dir: Path = BASE_DIR
     raw_documents_dir: Path = Path(os.getenv("RAW_DOCUMENTS_DIR", BASE_DIR / "data" / "raw"))
     vectorstore_dir: Path = Path(os.getenv("VECTORSTORE_DIR", BASE_DIR / "data" / "chroma"))
-    audit_db_path: Path = Path(os.getenv("AUDIT_DB_PATH", BASE_DIR / "data" / "audit" / "queries.sqlite3"))
-    tickets_db_path: Path = Path(os.getenv("TICKETS_DB_PATH", BASE_DIR / "data" / "tickets" / "tickets.sqlite3"))
+    memory_db_path: Path = Path(os.getenv("MEMORY_DB_PATH", BASE_DIR / "data" / "memory" / "conversation.sqlite3"))
     logs_dir: Path = Path(os.getenv("LOGS_DIR", BASE_DIR / "logs"))
     collection_name: str = os.getenv("COLLECTION_NAME", "manuales_hrrg")
     ollama_base_url: str = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
@@ -54,14 +53,12 @@ class Settings:
     ollama_health_timeout_seconds: float = _get_float("OLLAMA_HEALTH_TIMEOUT_SECONDS", 3.0)
     enable_ocr: bool = _get_bool("ENABLE_OCR", False)
     technical_user_password: str = os.getenv("TECHNICAL_USER_PASSWORD", "tecnico-hrrg")
-    admin_user_password: str = os.getenv("ADMIN_USER_PASSWORD", "admin-hrrg")
 
     def ensure_directories(self) -> None:
         for directory in (
             self.raw_documents_dir,
             self.vectorstore_dir,
-            self.audit_db_path.parent,
-            self.tickets_db_path.parent,
+            self.memory_db_path.parent,
             self.logs_dir,
         ):
             directory.mkdir(parents=True, exist_ok=True)

@@ -8,14 +8,29 @@ const closeEquipmentModalButton = document.querySelector("#close-equipment-modal
 const equipmentOptions = document.querySelectorAll(".equipment-option");
 const ingestButton = document.querySelector("#ingest-button");
 const voiceButton = document.querySelector("#voice-button");
-const ticketButton = document.querySelector("#ticket-button");
 const statusStrip = document.querySelector("#status-strip");
 const submitButton = chatForm.querySelector(".send-button");
+
+// --- ELEMENTOS DE LOGIN ---
+const loginModal = document.querySelector("#login-modal");
+const loginForm = document.querySelector("#login-form");
+const loginError = document.querySelector("#login-error");
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const speechSynthesisAvailable = "speechSynthesis" in window;
 
-let selectedEquipment = activeEquipmentTitle.textContent.trim();
+// --- LECTURA DE CÓDIGO QR Y ROLES ---
+const urlParams = new URLSearchParams(window.location.search);
+const urlEquipment = urlParams.get('equipo');
+const urlRole = urlParams.get('rol') || 'tecnico'; // Por defecto es técnico
+const currentRole = urlRole.toLowerCase() === 'operador' ? 'operador' : 'tecnico';
+
+// Inicializar el equipo activo (priorizando la URL si viene del QR)
+let selectedEquipment = urlEquipment || activeEquipmentTitle.textContent.trim();
+if (urlEquipment) {
+    activeEquipmentTitle.textContent = selectedEquipment;
+}
+
 let recognition = null;
 let isListening = false;
 let activeRequestController = null;
@@ -163,17 +178,22 @@ function createLoadingMessage(query) {
     const actions = document.createElement("div");
     actions.className = "message-actions";
 
-    const chromaButton = document.createElement("button");
-    chromaButton.className = "inline-action chroma-action";
-    chromaButton.type = "button";
-    chromaButton.textContent = "Usar ChromaDB ahora";
-    chromaButton.addEventListener("click", async () => {
-        await useChromaNow(query);
-    });
+    // Solo mostrar el botón de forzar ChromaDB si es técnico
+    if (currentRole === 'tecnico') {
+        const chromaButton = document.createElement("button");
+        chromaButton.className = "inline-action chroma-action";
+        chromaButton.type = "button";
+        chromaButton.textContent = "Usar ChromaDB ahora";
+        chromaButton.addEventListener("click", async () => {
+            await useChromaNow(query);
+        });
+        actions.appendChild(chromaButton);
+    }
 
-    actions.appendChild(chromaButton);
     contentWrapper.appendChild(bubble);
-    contentWrapper.appendChild(actions);
+    if (currentRole === 'tecnico') {
+        contentWrapper.appendChild(actions);
+    }
     message.appendChild(createAvatar());
     message.appendChild(contentWrapper);
     chatMessages.appendChild(message);
@@ -298,6 +318,7 @@ async function requestAnswer(query, options = {}) {
             equipment: selectedEquipment,
             force_fallback: Boolean(options.forceFallback),
             request_id: requestId,
+            user_role: currentRole // Enviamos el rol al backend
         }),
     });
 
@@ -356,7 +377,7 @@ async function sendQuestion(query, options = {}) {
             sources: data.sources,
             regenerable: true,
         });
-        setStatus(`Modo de respuesta: ${data.mode}${data.ticket_id ? ` | Ticket #${data.ticket_id}` : ""}`);
+        setStatus(`Modo de respuesta: ${data.mode}`);
         speak(data.answer);
     } catch (error) {
         if (activeLoadingMessage) {
@@ -377,15 +398,20 @@ async function sendQuestion(query, options = {}) {
 }
 
 function openEquipmentModal() {
+    // Si es operador, bloqueamos la apertura del modal
+    if (currentRole === 'operador') return;
+    
     equipmentModal.classList.add("visible");
     equipmentModal.setAttribute("aria-hidden", "false");
-    equipmentOptions[0].focus();
+    if (equipmentOptions.length > 0) {
+        equipmentOptions[0].focus();
+    }
 }
 
 function closeEquipmentModal() {
     equipmentModal.classList.remove("visible");
     equipmentModal.setAttribute("aria-hidden", "true");
-    newChatButton.focus();
+    if(newChatButton) newChatButton.focus();
 }
 
 async function clearServerMemory() {
@@ -397,6 +423,8 @@ async function clearServerMemory() {
 }
 
 async function selectEquipment(equipment) {
+    if (currentRole === 'operador') return; // Seguridad extra
+    
     selectedEquipment = equipment;
     activeEquipmentTitle.textContent = equipment;
     chatMessages.innerHTML = "";
@@ -416,42 +444,29 @@ chatForm.addEventListener("submit", async (event) => {
     }
 });
 
-ingestButton.addEventListener("click", async () => {
-    setStatus("Indexando PDFs desde data/raw...");
-    try {
-        const response = await fetch("/ingest", {method: "POST"});
-        const data = await response.json();
-        setStatus(`${data.message} Archivos: ${data.processed_files}. Chunks: ${data.indexed_chunks}.`);
-        if (data.errors && data.errors.length > 0) {
-            createMessage("assistant", `Ingesta finalizada con errores:\n${data.errors.join("\n")}`, {error: true});
+// Verificación defensiva por si el botón fue ocultado/eliminado
+if (ingestButton) {
+    ingestButton.addEventListener("click", async () => {
+        setStatus("Indexando PDFs desde data/raw...");
+        try {
+            const response = await fetch("/ingest", {method: "POST"});
+            const data = await response.json();
+            setStatus(`${data.message} Archivos: ${data.processed_files}. Chunks: ${data.indexed_chunks}.`);
+            if (data.errors && data.errors.length > 0) {
+                createMessage("assistant", `Ingesta finalizada con errores:\n${data.errors.join("\n")}`, {error: true});
+            }
+        } catch (error) {
+            setStatus(`No se pudo ejecutar la ingesta: ${error.message}`);
         }
-    } catch (error) {
-        setStatus(`No se pudo ejecutar la ingesta: ${error.message}`);
-    }
-});
-
-ticketButton.addEventListener("click", async () => {
-    const question = messageInput.value.trim() || "Solicitud manual del tecnico sin detalle adicional.";
-    const response = await fetch("/tickets", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            question,
-            equipment: selectedEquipment,
-            reason: "Ticket manual generado desde la interfaz tecnica.",
-        }),
     });
-    const data = await response.json();
-    if (response.ok) {
-        setStatus(`Ticket manual #${data.ticket_id} creado.`);
-    } else {
-        setStatus(data.error || "No se pudo crear el ticket.");
-    }
-});
+}
 
-voiceButton.addEventListener("click", toggleVoiceCapture);
-newChatButton.addEventListener("click", openEquipmentModal);
-closeEquipmentModalButton.addEventListener("click", closeEquipmentModal);
+if (voiceButton) {
+    voiceButton.addEventListener("click", toggleVoiceCapture);
+}
+
+if (newChatButton) newChatButton.addEventListener("click", openEquipmentModal);
+if (closeEquipmentModalButton) closeEquipmentModalButton.addEventListener("click", closeEquipmentModal);
 
 equipmentOptions.forEach((option) => {
     option.addEventListener("click", async () => {
@@ -471,4 +486,70 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
+// --- LÓGICA DE INICIO (LOGIN Y RESTRICCIONES VISUALES) ---
+function initializeApp() {
+    if (currentRole === 'tecnico') {
+        // Bloquear pantalla con el login si el modal existe en el HTML
+        if (loginModal && loginForm) {
+            loginModal.classList.add("visible");
+            loginModal.setAttribute("aria-hidden", "false");
+            const userField = document.querySelector("#username");
+            if (userField) userField.focus();
+
+            loginForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const passField = document.querySelector("#password");
+                const pass = passField ? passField.value.trim() : "";
+                
+                // Validación frontend de prototipo
+                if (pass === "tecnico-hrrg") {
+                    loginModal.classList.remove("visible");
+                    loginModal.setAttribute("aria-hidden", "true");
+                    if (loginError) loginError.style.display = "none";
+                    openEquipmentModal(); // Obligamos a elegir el equipo
+                } else {
+                    if (loginError) loginError.style.display = "block";
+                }
+            });
+        }
+    } else if (currentRole === 'operador') {
+        // Ocultar modal de login si existiera
+        if(loginModal) {
+            loginModal.classList.remove("visible");
+            loginModal.setAttribute("aria-hidden", "true");
+        }
+
+        // Ocultar botones de la barra lateral
+        if(newChatButton) newChatButton.style.display = 'none';
+        if(ingestButton) ingestButton.style.display = 'none';
+        
+        // Ocultar la barra lateral completamente
+        const toolSidebar = document.querySelector('.tool-sidebar');
+        if(toolSidebar) toolSidebar.style.display = 'none';
+
+        // --- MAGIA RESPONSIVA PARA PC ---
+        const appShell = document.querySelector('.app-shell');
+        if(appShell) {
+            appShell.style.display = 'flex';
+            appShell.style.justifyContent = 'center';
+            // Se quita la grilla (grid) predeterminada para que el panel tome el control
+            appShell.style.gridTemplateColumns = '1fr'; 
+        }
+        
+        const chatPanel = document.querySelector('.chat-panel');
+        if(chatPanel) {
+            chatPanel.style.width = '100%';
+            chatPanel.style.maxWidth = '900px'; // Centrado y de lectura cómoda
+            chatPanel.style.margin = '0 auto';
+            chatPanel.style.borderLeft = 'none';
+        }
+
+        // Mensaje de bienvenida adaptado a Primera Línea
+        chatMessages.innerHTML = ''; 
+        createMessage("assistant", `**Asistencia Clínica de Primera Línea**\n\nEstás operando el equipo: **${selectedEquipment}**.\n\nEscribe o dicta el síntoma o la alarma que presenta el equipo para recibir instrucciones. Recuerda que si hay riesgo, debes contactar a Ingeniería Clínica inmediatamente.`);
+    }
+}
+
+// Ejecutar inicialización al cargar
+initializeApp();
 scrollToLatestMessage();

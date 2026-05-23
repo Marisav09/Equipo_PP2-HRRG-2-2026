@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime
 from typing import Any
 from urllib.parse import quote
 
@@ -47,21 +46,10 @@ class AssistantResponse:
     answer: str
     sources: list[SourceCitation] = field(default_factory=list)
     mode: str = "llm"
-    ticket_id: int | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "answer": self.answer,
             "sources": [source.to_dict() for source in self.sources],
             "mode": self.mode,
-            "ticket_id": self.ticket_id,
         }
-
-
-@dataclass(frozen=True)
-class TicketRecord:
-    question: str
-    reason: str
-    equipment: str | None = None
-    status: str = "abierto"
-    created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat())

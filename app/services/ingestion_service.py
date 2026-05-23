@@ -9,6 +9,11 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from app.core.config import settings
+from app.core.equipment_catalog import (
+    UNCLASSIFIED_EQUIPMENT_LABEL,
+    infer_equipment_from_path,
+    infer_equipment_from_text,
+)
 from app.core.exceptions import DocumentIngestionError
 from app.services.vectorstore_service import VectorstoreService
 
@@ -26,7 +31,7 @@ class IngestionService:
     def ingest_directory(self, directory: Path | None = None) -> dict[str, object]:
         source_dir = directory or settings.raw_documents_dir
         source_dir.mkdir(parents=True, exist_ok=True)
-        pdf_files = sorted(source_dir.glob("*.pdf"))
+        pdf_files = sorted(source_dir.rglob("*.pdf"))
 
         if not pdf_files:
             return {
@@ -38,15 +43,32 @@ class IngestionService:
 
         indexed_chunks = 0
         errors: list[str] = []
+        skipped_files: list[str] = []
 
         for pdf_path in pdf_files:
             try:
-                documents = self._load_pdf_as_documents(pdf_path)
+                documents = self._load_pdf_as_documents(pdf_path, source_dir)
+                equipment = documents[0].metadata.get("equipo")
+                if equipment == UNCLASSIFIED_EQUIPMENT_LABEL:
+                    self.vectorstore.delete_source(pdf_path.name)
+                    skipped_files.append(
+                        f"{pdf_path.name}: no se pudo inferir el equipo desde la ruta, nombre o contenido."
+                    )
+                    continue
+
                 chunks = self.text_splitter.split_documents(documents)
                 for chunk_index, chunk in enumerate(chunks, start=1):
                     chunk.metadata["chunk_id"] = f"{pdf_path.stem}-{chunk_index}"
+                    chunk.metadata["equipo"] = equipment
+
+                self.vectorstore.delete_source(pdf_path.name)
                 indexed_chunks += self.vectorstore.add_documents(chunks)
-                logger.info("PDF indexado: %s (%s chunks)", pdf_path.name, len(chunks))
+                logger.info(
+                    "PDF indexado: %s | equipo=%s (%s chunks)",
+                    pdf_path.name,
+                    equipment,
+                    len(chunks),
+                )
             except DocumentIngestionError as exc:
                 logger.exception("Error controlado durante la ingesta de %s", pdf_path)
                 errors.append(str(exc))
@@ -55,19 +77,22 @@ class IngestionService:
                 errors.append(f"{pdf_path.name}: {exc}")
 
         return {
-            "processed_files": len(pdf_files) - len(errors),
+            "processed_files": len(pdf_files) - len(errors) - len(skipped_files),
             "indexed_chunks": indexed_chunks,
             "errors": errors,
+            "skipped_files": skipped_files,
             "message": "Ingesta finalizada.",
         }
 
-    def _load_pdf_as_documents(self, pdf_path: Path) -> list[Document]:
+    def _load_pdf_as_documents(self, pdf_path: Path, source_dir: Path) -> list[Document]:
         try:
             pdf = fitz.open(pdf_path)
         except Exception as exc:
             raise DocumentIngestionError(f"No se pudo abrir el PDF {pdf_path.name}: {exc}") from exc
 
         documents: list[Document] = []
+        equipment = infer_equipment_from_path(pdf_path, source_dir)
+        detection_text: list[str] = []
 
         try:
             for page_index, page in enumerate(pdf, start=1):
@@ -86,10 +111,17 @@ class IngestionService:
                 if not text:
                     continue
 
+                if page_index <= 3:
+                    detection_text.append(text)
+
+                if not equipment:
+                    equipment = infer_equipment_from_text("\n".join(detection_text))
+
                 documents.append(
                     Document(
                         page_content=text,
                         metadata={
+                            "equipo": equipment or UNCLASSIFIED_EQUIPMENT_LABEL,
                             "source_file": pdf_path.name,
                             "page": page_index,
                             "document_type": "manual_tecnico",
@@ -106,6 +138,10 @@ class IngestionService:
             raise DocumentIngestionError(
                 f"No se pudo extraer texto util del PDF {pdf_path.name}."
             )
+
+        final_equipment = equipment or UNCLASSIFIED_EQUIPMENT_LABEL
+        for document in documents:
+            document.metadata["equipo"] = final_equipment
 
         return documents
 

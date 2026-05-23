@@ -8,7 +8,7 @@ from app.core.config import settings
 
 
 class MemoryService:
-    def __init__(self, db_path=settings.audit_db_path) -> None:
+    def __init__(self, db_path=settings.memory_db_path) -> None:
         self.db_path = db_path
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._initialize()

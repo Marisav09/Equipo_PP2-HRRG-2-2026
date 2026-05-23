@@ -15,29 +15,9 @@
             <button class="icon-button" type="button" id="ingest-button" aria-label="Indexar manuales" title="Indexar manuales">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
             </button>
-            <button class="icon-button" type="button" id="ticket-button" aria-label="Crear ticket" title="Crear ticket">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg>
-            </button>
             <button class="icon-button" type="button" id="new-chat-button" aria-label="Nuevo chat" title="Nuevo chat">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
             </button>
-        </aside>
-
-        <aside class="history-panel" aria-label="Historial de chats">
-            <div class="panel-header">
-                <p class="eyebrow">Ingenieria Clinica</p>
-                <h1 class="history-heading">Historial</h1>
-            </div>
-
-            <nav class="chat-history">
-                {% for chat in chats %}
-                    <button class="history-card {% if loop.first %}selected{% endif %}" type="button">
-                        <span class="history-title">{{ chat.title }}</span>
-                        <span class="history-equipment">{{ chat.equipment }}</span>
-                        <span class="history-preview">{{ chat.preview }}</span>
-                    </button>
-                {% endfor %}
-            </nav>
         </aside>
 
         <main class="chat-panel" aria-label="Ventana de chat">
@@ -61,9 +41,9 @@
             <section class="chat-messages" id="chat-messages" aria-live="polite">
                 <article class="message assistant">
                     <div class="avatar" aria-hidden="true">AI</div>
-                    <div class="bubble">
-                        Hola. Soy el asistente de Ingenieria Clinica. Puedo consultar manuales cargados, citar fuentes y crear tickets cuando la informacion no alcance.
-                    </div>
+                <div class="bubble">
+                        Hola. Soy el asistente de Ingeniería Clínica. Puedo consultar manuales cargados, citar fuentes y activar fallback documental si el modelo local no responde.
+                </div>
                 </article>
             </section>
 
@@ -90,6 +70,29 @@
         </main>
     </div>
 
+    <div class="modal-overlay" id="login-modal" aria-hidden="true">
+        <section class="equipment-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">Acceso Restringido</p>
+                    <h2 id="login-modal-title">Ingreso Técnico</h2>
+                </div>
+            </div>
+            <form id="login-form" style="padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" id="username" placeholder="Usuario" required 
+                       style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: inherit; width: 100%;">
+                <input type="password" id="password" placeholder="Contraseña (ej: tecnico-hrrg)" required 
+                       style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.2); color: inherit; width: 100%;">
+                <button type="submit" class="send-button" style="justify-content: center; margin-top: 10px; width: 100%;">
+                    <span>Ingresar</span>
+                </button>
+                <p id="login-error" style="color: #ff6b6b; font-size: 0.85rem; display: none; margin: 0; text-align: center;">
+                    Credenciales incorrectas.
+                </p>
+            </form>
+        </section>
+    </div>
+
     <div class="modal-overlay" id="equipment-modal" aria-hidden="true">
         <section class="equipment-modal" role="dialog" aria-modal="true" aria-labelledby="equipment-modal-title">
             <div class="modal-header">
@@ -103,30 +106,16 @@
             </div>
 
             <div class="equipment-list">
-                <button type="button" class="equipment-option" data-equipment="Bomba de infusion">
-                    <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8v6H8z"/><path d="M12 9v12"/><path d="M7 21h10"/><path d="M16 12h3a2 2 0 0 1 2 2v2"/></svg></span>
-                    <span>Bomba de infusion</span>
-                </button>
-                <button type="button" class="equipment-option" data-equipment="Monitor multiparametrico">
-                    <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z"/><path d="M8 20h8"/><path d="M12 16v4"/><path d="m7 11 3 0 2-4 2 8 2-4h2"/></svg></span>
-                    <span>Monitor multiparametrico</span>
-                </button>
-                <button type="button" class="equipment-option" data-equipment="Ventilador mecanico">
-                    <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12v8H6z"/><path d="M9 15v4M15 15v4"/><path d="M4 19h16"/><path d="M10 11h4"/></svg></span>
-                    <span>Ventilador mecanico</span>
-                </button>
-                <button type="button" class="equipment-option" data-equipment="Desfibrilador">
-                    <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="m13 6-4 7h4l-2 5 5-8h-4z"/></svg></span>
-                    <span>Desfibrilador</span>
-                </button>
-                <button type="button" class="equipment-option" data-equipment="Incubadora neonatal">
-                    <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0v5H4z"/><path d="M8 19v2M16 19v2"/><path d="M9 10h6"/></svg></span>
-                    <span>Incubadora neonatal</span>
-                </button>
-                <button type="button" class="equipment-option general" data-equipment="Busqueda general">
-                    <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 19a8 8 0 1 1 5.7-2.4L21 21"/><path d="M8 11h6M11 8v6"/></svg></span>
-                    <span>Busqueda general</span>
-                </button>
+                {% if equipments %}
+                    {% for equipment in equipments %}
+                        <button type="button" class="equipment-option" data-equipment="{{ equipment }}">
+                            <span class="equipment-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z"/><path d="M8 20h8"/><path d="M12 16v4"/><path d="m7 11 3 0 2-4 2 8 2-4h2"/></svg></span>
+                            <span>{{ equipment }}</span>
+                        </button>
+                    {% endfor %}
+                {% else %}
+                    <p class="empty-equipment">No hay equipos indexados. Ejecuta la ingesta de manuales.</p>
+                {% endif %}
             </div>
         </section>
     </div>
