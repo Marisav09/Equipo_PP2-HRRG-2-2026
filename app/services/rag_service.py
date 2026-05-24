@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import concurrent.futures
 import logging
+import re
 from typing import Callable
 
 from app.core.config import settings
@@ -135,7 +136,7 @@ class RagService:
                 }
 
             if chat_request.role == "tecnico":
-                answer = self._ensure_sources_section(answer, chunks)
+                answer = self._strip_source_lines(answer)
             else:
                 answer = self._strip_operator_citations(answer)
 
@@ -155,6 +156,7 @@ class RagService:
                     chunks,
                     role=chat_request.role,
                     reason=f"Ollama supero el timeout de {settings.llm_timeout_seconds} segundos.",
+                    translate_english=chat_request.role == "tecnico",
                 ),
                 "mode": "fallback_timeout",
                 "sources": self._sources_for_role(chat_request.role, chunks),
@@ -170,6 +172,7 @@ class RagService:
                     chunks,
                     role=chat_request.role,
                     reason=f"Falla del LLM local: {exc}",
+                    translate_english=chat_request.role == "tecnico",
                 ),
                 "mode": "fallback_llm_error",
                 "sources": self._sources_for_role(chat_request.role, chunks),
@@ -243,16 +246,6 @@ Respuesta:""".strip()
             for chunk in chunks
         )
 
-    def _ensure_sources_section(self, answer: str, chunks: list[RetrievedChunk]) -> str:
-        if "Fuentes" in answer:
-            return answer
-
-        sources = "\n".join(
-            f"Fuente: {chunk.citation.source_file}, pag. {chunk.citation.page}"
-            for chunk in chunks
-        )
-        return f"{answer}\n\n{sources}"
-
     def _build_fallback_answer(
         self,
         question: str,
@@ -266,7 +259,7 @@ Respuesta:""".strip()
 
         extracts = []
         for index, chunk in enumerate(chunks, start=1):
-            raw_text = chunk.text.strip()[:900]
+            raw_text = self._compact_extract_text(chunk.text.strip())[:900]
             is_english = self._is_likely_english(raw_text)
             extract_label = "Extracto traducido" if is_english and translate_english else "Extracto literal"
             display_text = (
@@ -274,16 +267,11 @@ Respuesta:""".strip()
                 if is_english and translate_english
                 else raw_text
             )
-            image_note = (
-                "\nNota visual: esta pagina contiene imagenes o diagramas; revise el PDF original."
-                if chunk.citation.has_images
-                else ""
-            )
             extracts.append(
                 (
+                    f"Fuente: {chunk.citation.source_file}, pag. {chunk.citation.page}\n"
                     f"{extract_label} {index}\n"
-                    f"Fuente: {chunk.citation.source_file}, pagina {chunk.citation.page}\n"
-                    f"{display_text}{image_note}"
+                    f"{display_text}"
                 )
             )
 
@@ -338,6 +326,20 @@ Respuesta:""".strip()
                 continue
             if "pagina " in normalized or "pag." in normalized or "manual" in normalized:
                 continue
+            lines.append(line)
+        return "\n".join(lines).strip() or answer.strip()
+
+    def _strip_source_lines(self, answer: str) -> str:
+        lines = []
+        skipping_sources = False
+        for line in answer.splitlines():
+            normalized = line.strip().lower()
+            if normalized.startswith("fuente:") or normalized.startswith("fuentes:"):
+                skipping_sources = True
+                continue
+            if skipping_sources and normalized.startswith("- fuente:"):
+                continue
+            skipping_sources = False
             lines.append(line)
         return "\n".join(lines).strip() or answer.strip()
 
@@ -397,6 +399,12 @@ Respuesta:""".strip()
         while lines and not lines[0]:
             lines.pop(0)
         return "\n".join(lines).strip() or text.strip()
+
+    def _compact_extract_text(self, text: str) -> str:
+        normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+        normalized = "\n".join(line.rstrip() for line in normalized.splitlines())
+        normalized = re.sub(r"\n[ \t]*\n(?:[ \t]*\n)+", "\n\n", normalized)
+        return normalized.strip()
 
     def _has_enough_operator_context(self, chunks: list[RetrievedChunk]) -> bool:
         clean_chunks = [

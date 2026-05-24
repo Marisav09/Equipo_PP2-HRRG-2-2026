@@ -111,7 +111,9 @@ def test_technician_response_gets_sources_when_model_omits_them():
     response = service.answer_question(_request(role="tecnico"), "session", should_cancel=lambda: False)
 
     assert response["mode"] == "llm"
-    assert "Fuente: manual_sterrad.pdf, pag. 10" in response["answer"]
+    assert response["answer"] == "Diagnostico tecnico."
+    assert response["sources"][0]["source_file"] == "manual_sterrad.pdf"
+    assert response["sources"][0]["page"] == 10
 
 
 def test_rag_falls_back_to_chromadb_when_llm_fails():
@@ -122,6 +124,40 @@ def test_rag_falls_back_to_chromadb_when_llm_fails():
     assert response["mode"] == "fallback_llm_error"
     assert "Respuesta directa desde la base documental local" in response["answer"]
     assert "ollama offline" in response["answer"]
+
+
+def test_fallback_compacts_visual_gaps_and_uses_thumbnail_fallback():
+    class VisualPdfVectorstore:
+        def retrieve(self, question: str, equipment_name: str | None, k=None):
+            return [
+                RetrievedChunk(
+                    text="Linea inicial.\n\n\n\n\n\nCP5 S73\nCP1 S73",
+                    citation=SourceCitation(
+                        source_file="HD-67 Troubleshooting equipos rodantes MAC GMM V2.pdf",
+                        page=12,
+                        chunk_id="visual",
+                        equipment_name="Rodantes MAC GMM",
+                        has_images=True,
+                        image_count=1,
+                    ),
+                )
+            ]
+
+    request = ChatRequest(
+        query="tiene luz roja",
+        equipment_id="rodantes-mac-gmm",
+        equipment_name="Rodantes MAC GMM",
+        role="tecnico",
+        force_fallback=True,
+        request_id="test",
+    )
+    service = _service(vectorstore=VisualPdfVectorstore())
+
+    response = service.answer_question(request, "session", should_cancel=lambda: False)
+
+    assert "\n\n\n" not in response["answer"]
+    assert "Nota visual" not in response["answer"]
+    assert response["sources"][0]["images"][0]["url"].startswith("/manual-thumbnails/")
 
 
 def test_force_fallback_labels_english_extract_as_translated():

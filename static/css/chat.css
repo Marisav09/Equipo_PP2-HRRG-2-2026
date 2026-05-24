@@ -25,9 +25,7 @@
     width: 174px;
     height: 70px;
     object-fit: contain;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.68);
-    padding: 8px;
+    filter: drop-shadow(0 10px 14px rgba(15, 47, 67, 0.18));
 }
 
 .sidebar-actions {
@@ -51,7 +49,6 @@
     font-weight: 950;
 }
 
-.icon-button,
 .round-button {
     display: grid;
     width: 46px;
@@ -60,13 +57,48 @@
     border-radius: 15px;
 }
 
-.icon-button {
-    color: var(--muted);
+.sidebar .icon-button {
+    display: grid !important;
+    grid-template-columns: 40px minmax(0, 1fr) !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 54px;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.74);
+    color: #2b4a63;
+    font-weight: 850;
+    text-align: left;
+    box-shadow: 0 8px 18px rgba(20, 45, 62, 0.07);
 }
 
-.icon-button:hover,
-.icon-button.active {
+.sidebar .icon-button:hover,
+.sidebar .icon-button.active {
     color: var(--accent);
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.sidebar .icon-button svg {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border: 1px solid rgba(7, 150, 168, 0.22);
+    border-radius: 7px;
+    color: var(--accent);
+}
+
+.sidebar .icon-button span {
+    display: block !important;
+    min-width: 0;
+    overflow: hidden;
+    font-size: 0.97rem;
+    line-height: 1.2;
+    opacity: 1 !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    visibility: visible !important;
 }
 
 .workspace {
@@ -87,6 +119,30 @@
     backdrop-filter: none;
 }
 
+[data-role="operador"] .sidebar {
+    background: rgba(224, 246, 253, 0.64);
+}
+
+[data-role="operador"] .workspace {
+    background: linear-gradient(135deg, rgba(235, 249, 253, 0.78), rgba(244, 252, 255, 0.52));
+}
+
+[data-role="operador"] .topbar,
+[data-role="operador"] .composer,
+[data-role="operador"] .status-strip {
+    background: rgba(235, 249, 253, 0.72);
+}
+
+[data-role="operador"] .icon-button {
+    border-color: rgba(80, 177, 214, 0.24);
+    color: #25516a;
+}
+
+[data-role="operador"] .icon-button:hover,
+[data-role="operador"] .icon-button.active {
+    color: #117da8;
+}
+
 .topbar {
     display: flex;
     align-items: center;
@@ -101,7 +157,7 @@
 
 .topbar h1 {
     margin: 0;
-    font-size: 1.35rem;
+    font-size: 1.58rem;
     line-height: 1.2;
 }
 
@@ -116,24 +172,28 @@
     gap: 6px;
     width: 100%;
     color: var(--muted);
-    font-size: 0.78rem;
+    font-size: 0.92rem;
     font-weight: 850;
 }
 
 .equipment-select-label span {
-    color: var(--accent);
+    color: #7b8791;
     text-transform: uppercase;
 }
 
 .equipment-select-label strong,
 .equipment-line strong {
-    color: var(--text);
+    color: #05698d;
+    font-family: "Arial Black", Impact, Inter, "Segoe UI", Arial, sans-serif;
+    font-size: 1.18em;
+    font-weight: 950;
     text-transform: none;
 }
 
 .equipment-line {
     margin: 7px 0 0;
     color: var(--muted);
+    font-size: 1.02rem;
     font-weight: 800;
 }
 
@@ -149,6 +209,14 @@
     font-size: 1.08rem;
     font-weight: 800;
     box-shadow: 0 10px 24px rgba(20, 45, 62, 0.06);
+}
+
+[data-role="tecnico"] .equipment-select-label select {
+    display: none;
+}
+
+[data-role="tecnico"] .equipment-select-label {
+    font-size: 1rem;
 }
 
 .hrrg-logo {
@@ -317,7 +385,7 @@
 }
 
 [data-role="operador"] .avatar {
-    background: #7c8a92;
+    background: linear-gradient(135deg, #78cef0, #1698ca);
 }
 
 .bubble {
@@ -341,8 +409,14 @@
 }
 
 [data-role="operador"] .message.assistant .bubble {
-    background: #f1f4f5;
+    border-color: rgba(80, 177, 214, 0.28);
+    background: #e8f7fd;
     color: var(--text);
+}
+
+[data-role="operador"] .message.user .bubble {
+    background: linear-gradient(135deg, #8edaf4, #31a9d3);
+    color: #062536;
 }
 
 [data-role="tecnico"] .message.assistant .bubble {
@@ -403,12 +477,27 @@
 
 .composer input {
     min-width: 0;
-    height: 46px;
-    border: 1px solid var(--line);
+    height: 50px;
+    border: 2px solid rgba(7, 150, 168, 0.36);
     border-radius: 16px;
-    padding: 0 15px;
+    padding: 0 17px;
     outline: none;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.72), 0 10px 24px rgba(7, 150, 168, 0.08);
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.composer input::placeholder {
+    color: #526575;
+    font-weight: 750;
+    opacity: 0.9;
+}
+
+.composer input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(7, 150, 168, 0.12), 0 12px 26px rgba(7, 150, 168, 0.12);
 }
 
 .send-button {
@@ -500,6 +589,18 @@
     place-items: center;
     border-radius: 999px;
     background: rgba(7, 150, 168, 0.12);
+}
+
+.fallback-source-link {
+    color: var(--accent);
+    font-size: 0.88rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.fallback-source-link:hover,
+.source-chip:hover {
+    text-decoration: underline;
 }
 
 .image-list {

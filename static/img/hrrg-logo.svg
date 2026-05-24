@@ -1,7 +1,22 @@
 <svg width="180" height="72" viewBox="0 0 180 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
     <title id="title">HRRG</title>
-    <rect width="180" height="72" rx="4" fill="#F3F4F6"/>
-    <text x="14" y="49" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" letter-spacing="-2">
-        <tspan fill="#B8B8B8">HR</tspan><tspan fill="#2EA7D6">RG</tspan>
+    <defs>
+        <filter id="depth" x="-15%" y="-25%" width="130%" height="155%">
+            <feDropShadow dx="0" dy="4" stdDeviation="2.1" flood-color="#0F2F43" flood-opacity="0.24"/>
+            <feDropShadow dx="1.5" dy="1.5" stdDeviation="0.25" flood-color="#6B7880" flood-opacity="0.22"/>
+        </filter>
+        <linearGradient id="hrrg-gray" x1="16" y1="14" x2="86" y2="54" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#D8DEE3"/>
+            <stop offset="0.52" stop-color="#9EA7AE"/>
+            <stop offset="1" stop-color="#707A82"/>
+        </linearGradient>
+        <linearGradient id="hrrg-blue" x1="94" y1="13" x2="162" y2="55" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#35BEE8"/>
+            <stop offset="0.5" stop-color="#119ACB"/>
+            <stop offset="1" stop-color="#08769F"/>
+        </linearGradient>
+    </defs>
+    <text x="14" y="49" filter="url(#depth)" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="900" letter-spacing="-2">
+        <tspan fill="url(#hrrg-gray)">HR</tspan><tspan fill="url(#hrrg-blue)">RG</tspan>
     </text>
 </svg>

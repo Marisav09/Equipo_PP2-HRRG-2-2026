@@ -34,6 +34,7 @@ let recognition = null;
 let activeLoadingMessage = null;
 let activeRequestCancelled = false;
 let speechMuted = localStorage.getItem("hrrgSpeechMuted") === "1";
+let conversationMessages = [];
 
 function modeLabel(mode) {
     const labels = {
@@ -109,6 +110,52 @@ function createImageList(sources = []) {
     return wrapper;
 }
 
+function isFallbackMode(mode) {
+    return String(mode || "").startsWith("fallback");
+}
+
+function stripSourceLines(content) {
+    return String(content || "")
+        .split("\n")
+        .filter((line) => {
+            const normalized = line.trim().toLowerCase();
+            return !normalized.startsWith("fuente:") && !normalized.startsWith("fuentes:");
+        })
+        .join("\n")
+        .trim();
+}
+
+function appendTextWithBreaks(container, text) {
+    String(text || "").split("\n").forEach((line, index) => {
+        if (index > 0) container.appendChild(document.createElement("br"));
+        container.appendChild(document.createTextNode(line));
+    });
+}
+
+function renderFallbackBubble(bubble, content, sources = []) {
+    let sourceIndex = 0;
+    const lines = String(content || "").split("\n");
+    lines.forEach((line, index) => {
+        if (index > 0) bubble.appendChild(document.createElement("br"));
+        const normalized = line.trim().toLowerCase();
+        if (normalized.startsWith("fuente:")) {
+            const source = sources[sourceIndex] || sources[sources.length - 1];
+            sourceIndex += 1;
+            if (source?.url) {
+                const link = document.createElement("a");
+                link.className = "fallback-source-link";
+                link.href = source.url;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = line;
+                bubble.appendChild(link);
+                return;
+            }
+        }
+        bubble.appendChild(document.createTextNode(line));
+    });
+}
+
 function createRegenerateAction() {
     if (!lastQuery) return null;
 
@@ -147,28 +194,9 @@ function createSpeechAction(content) {
     return button;
 }
 
-function createDirectSourceAction(sources = []) {
-    if (shell.dataset.role !== "tecnico") return null;
-    const firstSource = sources[0];
-    const link = document.createElement("a");
-    link.className = "direct-source-card";
-    link.textContent = "Directo a Fuente";
-    if (firstSource?.url) {
-        link.href = firstSource.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-    } else {
-        link.href = "#";
-        link.addEventListener("click", async (event) => {
-            event.preventDefault();
-            if (!lastQuery) return;
-            await ask(lastQuery, {forceFallback: true, repeatUserMessage: false});
-        });
-    }
-    return link;
-}
-
 function addMessage(role, content, options = {}) {
+    const mode = options.mode || "";
+    const fallbackMode = isFallbackMode(mode);
     const message = document.createElement("article");
     message.className = `message ${role}`;
     if (role === "assistant") {
@@ -181,24 +209,26 @@ function addMessage(role, content, options = {}) {
     contentWrapper.className = "message-content";
     const bubble = document.createElement("div");
     bubble.className = "bubble";
-    bubble.textContent = content;
+    const visibleContent = role === "assistant" && shell.dataset.role === "tecnico" && !fallbackMode
+        ? stripSourceLines(content)
+        : content;
+    if (role === "assistant" && fallbackMode) {
+        renderFallbackBubble(bubble, visibleContent, options.sources || []);
+    } else {
+        appendTextWithBreaks(bubble, visibleContent);
+    }
     contentWrapper.appendChild(bubble);
-
-    const sources = createSourceList(options.sources);
-    if (sources) contentWrapper.appendChild(sources);
 
     const images = createImageList(options.sources);
     if (images) contentWrapper.appendChild(images);
 
-    if (role === "assistant" && options.regenerable) {
-        const directSource = createDirectSourceAction(options.sources || []);
-        if (directSource) contentWrapper.appendChild(directSource);
-    }
+    const sources = !fallbackMode ? createSourceList(options.sources) : null;
+    if (sources) contentWrapper.appendChild(sources);
 
     if (role === "assistant" && options.regenerable) {
         const actions = document.createElement("div");
         actions.className = "message-actions";
-        actions.appendChild(createSpeechAction(content));
+        actions.appendChild(createSpeechAction(visibleContent));
         const regenerate = createRegenerateAction();
         if (regenerate?.firstChild) actions.appendChild(regenerate.firstChild);
         contentWrapper.appendChild(actions);
@@ -207,6 +237,16 @@ function addMessage(role, content, options = {}) {
     message.appendChild(contentWrapper);
     chatMessages.appendChild(message);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+    if (options.track !== false) {
+        conversationMessages.push({
+            role,
+            content,
+            options: {
+                mode: options.mode || "",
+                sources: options.sources || [],
+            },
+        });
+    }
     return message;
 }
 
@@ -369,6 +409,7 @@ async function startNewChat() {
     }
     await window.hrrgApi.postJson("/api/chat/memory/clear", {});
     chatMessages.innerHTML = "";
+    conversationMessages = [];
     lastQuery = "";
     activeQuery = "";
     removeLoadingMessage();
@@ -389,6 +430,7 @@ async function selectEquipment(equipmentId, equipmentName) {
     }
     await window.hrrgApi.postJson("/api/chat/memory/clear", {});
     chatMessages.innerHTML = "";
+    conversationMessages = [];
     lastQuery = "";
     activeQuery = "";
     addMessage("assistant", `Nuevo chat iniciado para ${selectedEquipmentName}.`);
@@ -398,7 +440,8 @@ async function selectEquipment(equipmentId, equipmentName) {
 
 function loadHistory() {
     try {
-        return JSON.parse(localStorage.getItem("hrrgChatHistory") || "[]");
+        const entries = JSON.parse(localStorage.getItem("hrrgChatHistory") || "[]");
+        return Array.isArray(entries) ? entries : [];
     } catch {
         return [];
     }
@@ -406,19 +449,74 @@ function loadHistory() {
 
 function saveHistoryEntry(equipmentName) {
     if (!equipmentName) return;
-    const entries = loadHistory().filter((item) => item.equipmentName !== equipmentName);
-    entries.unshift({
+    const role = shell?.dataset.role || "tecnico";
+    const previousEntries = loadHistory().filter(
+        (item) => !(item.equipmentName === equipmentName && (item.role || role) === role),
+    );
+    const currentEntry = {
+        role,
+        equipmentId: selectedEquipmentId,
         equipmentName,
         createdAt: new Date().toLocaleString("es-AR", {dateStyle: "short", timeStyle: "short"}),
-    });
-    localStorage.setItem("hrrgChatHistory", JSON.stringify(entries.slice(0, 5)));
+        messages: conversationMessages.slice(-30),
+    };
+    const sameRoleEntries = previousEntries.filter((entry) => (entry.role || role) === role).slice(0, 4);
+    const otherRoleEntries = previousEntries.filter((entry) => (entry.role || role) !== role);
+    localStorage.setItem("hrrgChatHistory", JSON.stringify([currentEntry, ...sameRoleEntries, ...otherRoleEntries]));
     renderHistory();
+}
+
+function restoreHistoryEntry(entry) {
+    const messages = Array.isArray(entry.messages) ? entry.messages : [];
+    if (!messages.length) {
+        setStatus("Este historial no tiene mensajes guardados. Las nuevas conversaciones si se podran abrir desde aqui.");
+        return;
+    }
+
+    selectedEquipmentId = entry.equipmentId || selectedEquipmentId;
+    selectedEquipmentName = entry.equipmentName || selectedEquipmentName;
+    if (activeEquipmentTitle && selectedEquipmentName) {
+        activeEquipmentTitle.textContent = selectedEquipmentName;
+    }
+    if (equipmentSelect && selectedEquipmentId && equipmentSelect.value !== selectedEquipmentId) {
+        equipmentSelect.value = selectedEquipmentId;
+    }
+
+    removeLoadingMessage();
+    activeRequestId = null;
+    activeQuery = "";
+    activeRequestCancelled = false;
+    setBusy(false);
+    chatMessages.innerHTML = "";
+    conversationMessages = [];
+    messages.forEach((message) => {
+        addMessage(message.role, message.content, {
+            ...(message.options || {}),
+            regenerable: false,
+            track: false,
+        });
+    });
+    conversationMessages = messages.map((message) => ({
+        role: message.role,
+        content: message.content,
+        options: {
+            mode: message.options?.mode || "",
+            sources: message.options?.sources || [],
+        },
+    }));
+    const lastUserMessage = [...conversationMessages].reverse().find((message) => message.role === "user");
+    lastQuery = lastUserMessage?.content || "";
+    setStatus(`Historial cargado: ${selectedEquipmentName}.`);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 function renderHistory() {
     if (!historyList) return;
     historyList.innerHTML = "";
-    const entries = loadHistory().slice(0, 5);
+    const role = shell?.dataset.role || "tecnico";
+    const entries = loadHistory()
+        .filter((entry) => !entry.role || entry.role === role)
+        .slice(0, 5);
     if (!entries.length) {
         const empty = document.createElement("p");
         empty.className = "history-empty";
@@ -436,6 +534,7 @@ function renderHistory() {
         date.textContent = entry.createdAt;
         card.appendChild(name);
         card.appendChild(date);
+        card.addEventListener("click", () => restoreHistoryEntry(entry));
         historyList.appendChild(card);
     });
 }
@@ -462,6 +561,7 @@ async function ask(query, options = {}) {
         removeLoadingMessage();
         addMessage("assistant", data.answer, {
             sources: shell.dataset.role === "tecnico" ? data.sources : [],
+            mode: data.mode,
             regenerable: true,
         });
         saveHistoryEntry(selectedEquipmentName);

@@ -51,6 +51,16 @@ class SourceCitation:
         return f"/manuals/{encoded_name}{page_fragment}"
 
     def to_dict(self) -> dict[str, Any]:
+        images = list(self.images)
+        if self.has_images and not images and str(self.source_file).lower().endswith(".pdf"):
+            encoded_name = quote(self.source_file)
+            images.append(
+                {
+                    "url": f"/manual-thumbnails/{encoded_name}/page/{self.page}.png",
+                    "page": self.page,
+                    "label": f"Vista previa pagina {self.page}",
+                }
+            )
         return {
             "source_file": self.source_file,
             "page": self.page,
@@ -60,7 +70,7 @@ class SourceCitation:
             "image_count": self.image_count,
             "label": self.label(),
             "url": self.document_url(),
-            "images": list(self.images),
+            "images": images,
         }
 
 
