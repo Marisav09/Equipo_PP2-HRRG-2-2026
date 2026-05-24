@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+logs/
+data/chroma/
+data/memory/*.sqlite3
+data/processed/
+static/img/qr/*.png

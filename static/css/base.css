@@ -1,0 +1,150 @@
+:root {
+    color-scheme: light;
+    --bg: #eef5f7;
+    --surface: rgba(255, 255, 255, 0.72);
+    --surface-strong: rgba(255, 255, 255, 0.9);
+    --line: rgba(104, 132, 147, 0.24);
+    --text: #17212b;
+    --muted: #667584;
+    --accent: #0796a8;
+    --accent-2: #22b573;
+    --danger: #d83b45;
+    --shadow: 0 22px 70px rgba(20, 45, 62, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(circle at 15% 12%, rgba(7, 150, 168, 0.16), transparent 32%),
+        radial-gradient(circle at 85% 18%, rgba(34, 181, 115, 0.12), transparent 28%),
+        linear-gradient(135deg, #f8fcfd, var(--bg));
+    color: var(--text);
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 850;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.primary-button,
+.secondary-button,
+.round-button,
+.icon-button {
+    border: 1px solid var(--line);
+    transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.primary-button {
+    min-height: 46px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: white;
+    font-weight: 850;
+    box-shadow: 0 16px 34px rgba(7, 150, 168, 0.24);
+}
+
+.secondary-button,
+.abort-button,
+.round-button,
+.icon-button {
+    background: rgba(255, 255, 255, 0.66);
+    color: var(--text);
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.round-button:hover,
+.icon-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(20, 45, 62, 0.12);
+}
+
+@keyframes abortPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(216, 59, 69, 0.26); }
+    50% { box-shadow: 0 0 0 9px rgba(216, 59, 69, 0); }
+}
+
+.login-screen {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 24px;
+}
+
+.login-panel {
+    width: min(460px, 100%);
+    padding: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    border-radius: 26px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(22px);
+}
+
+.login-form {
+    display: grid;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.login-form label {
+    display: grid;
+    gap: 8px;
+    color: var(--muted);
+    font-weight: 750;
+}
+
+.login-form input {
+    height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 0 14px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.76);
+}
+
+.form-error {
+    color: var(--danger);
+    font-weight: 750;
+}

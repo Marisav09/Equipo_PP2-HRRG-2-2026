@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Operador | HRRG{% endblock %}
+
+{% block content %}
+<main class="app-shell operator-shell" data-role="operador" data-equipment-id="{{ equipment.id if equipment else '' }}" data-equipment-name="{{ equipment.name if equipment else '' }}">
+    <aside class="sidebar">
+        <img class="sidebar-logo" src="{{ url_for('static', filename='img/hrrg-logo.svg') }}" alt="HRRG">
+        <nav class="sidebar-actions" aria-label="Acciones operador">
+            <button class="icon-button active" type="button" id="new-chat-button" title="Nueva consulta" aria-label="Nueva consulta">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8M8 13h5"/></svg>
+            </button>
+        </nav>
+        <section class="history-panel" aria-label="Historial">
+            <h2>Historial</h2>
+            <p>Ultimos 5 chats</p>
+            <div class="history-list" id="history-list"></div>
+        </section>
+    </aside>
+    <section class="workspace operator-workspace">
+        <header class="topbar">
+            <div>
+                <h1>Asistente IA para Ingenieria Clinica HRRG</h1>
+                <p class="equipment-line">Equipo: <strong id="active-equipment">{{ equipment.name if equipment else "Equipo no reconocido" }}</strong></p>
+            </div>
+            <button class="exit-button" type="button" id="logout-button" aria-label="Salir">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+                <span>Salir</span>
+            </button>
+        </header>
+
+        {% include "partials/chat_panel.html" %}
+    </section>
+</main>
+{% endblock %}
