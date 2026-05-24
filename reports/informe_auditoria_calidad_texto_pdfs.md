@@ -16,9 +16,9 @@ La auditoría no modifica los archivos originales. Solo analiza el texto extraí
 | Indicador | Cantidad |
 |---|---:|
 | Total de PDFs auditados | 72 |
-| OK | 60 |
-| REVISAR | 7 |
-| REQUIERE_OCR | 5 |
+| OK | 63 |
+| REVISAR | 8 |
+| REQUIERE_OCR | 1 |
 | ERROR | 0 |
 
 ## Criterios utilizados
@@ -37,10 +37,6 @@ La clasificación se realizó a partir de la cantidad total de caracteres extra�
 | Archivo | Páginas | Caracteres extraídos | Promedio caracteres/página | Estado | Observación |
 |---|---:|---:|---:|---|---|
 | `drager_vn500_entrar_en_servicio_y_copiar_log_errores_recarga_soft.pdf` | 2 | 116 | 58.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
-| `drager_vn500_manual_usuario_vn500_es.pdf` | 344 | 0 | 0.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
-| `ventilador_crossvent_manual_de_servicio_crossvent_biomed_devices_crossvent_4.pdf` | 47 | 0 | 0.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
-| `ventilador_leistung_luft3_6_nivel_3_terapia_fallas_frecuentes_presion_1.pdf` | 1 | 274 | 274.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
-| `ventilador_maquet_servo_i_maquet_servo_i_service_manual_2_of_2.pdf` | 32 | 0 | 0.0 | REQUIERE_OCR | Texto insuficiente; posible PDF escaneado o con bajo texto extraíble. |
 
 
 ## PDFs a revisar manualmente
@@ -53,6 +49,7 @@ La clasificación se realizó a partir de la cantidad total de caracteres extra�
 | `tp_100_plano_electrico_tp_100new.pdf` | 1 | 923 | 923.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
 | `ventilador_engstrom_manual_de_usuario_engstrom_carestation_anexo_es.pdf` | 2 | 2563 | 1281.5 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
 | `ventilador_leistung_luft3_5_nivel_3_terapia_fallas_frecuentes_fuga_1.pdf` | 1 | 1140 | 1140.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
+| `ventilador_leistung_luft3_6_nivel_3_terapia_fallas_frecuentes_presion_1.pdf` | 1 | 521 | 521.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
 | `ventilador_leistung_luft3_7_nivel_3_terapia_fallas_frecuentes_flujo_2.pdf` | 1 | 1227 | 1227.0 | REVISAR | Texto extraíble parcial o bajo; conviene revisar calidad. |
 
 
@@ -81,6 +78,7 @@ La clasificación se realizó a partir de la cantidad total de caracteres extra�
 | `drager_vn500_cc_other_br_9066343_es.pdf` | 4 | 11426 | 2856.5 | OK | Texto extraíble suficiente para ingesta textual. |
 | `drager_vn500_cc_other_br_9066364_en.pdf` | 2 | 6726 | 3363.0 | OK | Texto extraíble suficiente para ingesta textual. |
 | `drager_vn500_cc_other_br_9066465_es.pdf` | 2 | 6849 | 3424.5 | OK | Texto extraíble suficiente para ingesta textual. |
+| `drager_vn500_manual_usuario_vn500_es.pdf` | 344 | 551408 | 1602.93 | OK | Texto extraíble suficiente para ingesta textual. |
 | `drager_vn500_other_volumeguarantee_interview_dr_m_keszler_en.pdf` | 2 | 6074 | 3037.0 | OK | Texto extraíble suficiente para ingesta textual. |
 | `electrobisturi_dispo_8155_14_manual_kairos.pdf` | 45 | 78859 | 1752.42 | OK | Texto extraíble suficiente para ingesta textual. |
 | `electrobisturi_leep_system_1000.pdf` | 25 | 38642 | 1545.68 | OK | Texto extraíble suficiente para ingesta textual. |
@@ -103,6 +101,7 @@ La clasificación se realizó a partir de la cantidad total de caracteres extra�
 | `tp_100_manual_tp_100_castellano_v2.pdf` | 40 | 25455 | 636.38 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_crossvent_ifu_globe_trotter_gt5400_crossvent_2i_mu21764.pdf` | 108 | 259493 | 2402.71 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_crossvent_manual_crossvent_3.pdf` | 22 | 60086 | 2731.18 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_crossvent_manual_de_servicio_crossvent_biomed_devices_crossvent_4.pdf` | 47 | 91606 | 1949.06 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_engstrom_guia_rapida_para_enfermeras.pdf` | 14 | 11877 | 848.36 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_engstrom_manual_de_usuario_engstrom_carestation_es.pdf` | 274 | 390708 | 1425.94 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol.pdf` | 326 | 464956 | 1426.25 | OK | Texto extraíble suficiente para ingesta textual. |
@@ -110,6 +109,7 @@ La clasificación se realizó a partir de la cantidad total de caracteres extra�
 | `ventilador_engstrom_ventilacion_no_invasiva.pdf` | 6 | 9307 | 1551.17 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_leistung_luft3_l3apnmu_b_manual_de_usuario_luft3apn_ap_1.pdf` | 105 | 153387 | 1460.83 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_maquet_servo_i_maquet_servo_i_service_manual.pdf` | 84 | 133207 | 1585.8 | OK | Texto extraíble suficiente para ingesta textual. |
+| `ventilador_maquet_servo_i_maquet_servo_i_service_manual_2_of_2.pdf` | 32 | 46926 | 1466.44 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_neumovent_manual_de_calibracion_neumovent_graph.pdf` | 22 | 10075 | 457.95 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_neumovent_manual_de_usuario_neumovent_advance_ts_neo.pdf` | 135 | 417945 | 3095.89 | OK | Texto extraíble suficiente para ingesta textual. |
 | `ventilador_neumovent_manual_tecnico_nv_graph_rev_03.pdf` | 100 | 130263 | 1302.63 | OK | Texto extraíble suficiente para ingesta textual. |
