@@ -26,3 +26,6 @@ data/raw_original_unicos/
 data/downloads_originales/
 
 data/raw_pre_fix_aliases/
+
+data/ocr_output/
+data/raw_pre_ocr_backup/
