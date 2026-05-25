@@ -1,1 +1,1 @@
-"""Rutas HTTP del asistente."""
+"""HTTP route modules for the HRRG assistant."""

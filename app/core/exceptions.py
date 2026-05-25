@@ -1,14 +1,21 @@
+from __future__ import annotations
+
+
 class AssistantError(Exception):
-    """Base para errores controlados del asistente."""
+    """Base exception for controlled assistant failures."""
 
 
 class VectorstoreNotReadyError(AssistantError):
-    """La base vectorial no existe o no tiene documentos cargados."""
+    """Raised when ChromaDB has no indexed documents."""
 
 
-class LLMUnavailableError(AssistantError):
-    """Ollama o el modelo local no estan disponibles."""
+class EquipmentScopeError(AssistantError):
+    """Raised when a request cannot be safely scoped to one equipment."""
 
 
 class DocumentIngestionError(AssistantError):
-    """Un documento no pudo procesarse correctamente."""
+    """Raised when a PDF cannot be safely converted into chunks."""
+
+
+class LLMUnavailableError(AssistantError):
+    """Raised when the local language model cannot produce an answer."""

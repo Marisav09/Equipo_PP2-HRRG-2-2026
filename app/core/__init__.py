@@ -1,1 +1,1 @@
-"""Configuracion y utilidades transversales."""
+"""Core configuration, prompts, guardrails and catalog modules."""

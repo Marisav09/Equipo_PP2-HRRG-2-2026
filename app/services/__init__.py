@@ -1,1 +1,1 @@
-"""Servicios de dominio del asistente RAG."""
+"""Application service layer."""

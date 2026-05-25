@@ -1,0 +1,28 @@
+<section class="status-strip" id="status-strip" aria-live="polite">
+    <span>Sistema listo. Las respuestas clinicas se habilitaran solo con contexto documental y equipo exacto.</span>
+</section>
+
+<section class="chat-messages" id="chat-messages" aria-live="polite">
+    <article class="message assistant">
+        <div class="avatar">AI</div>
+        <div class="message-content">
+            <div class="bubble">
+                Seleccione un equipo o consulte desde el QR del equipo. El sistema no mezclara manuales.
+            </div>
+        </div>
+    </article>
+</section>
+
+<form class="composer" id="chat-form">
+    <input id="message-input" name="message" type="text" autocomplete="off" placeholder="Escribe o dicta la consulta..." required>
+    <button class="round-button" type="button" id="voice-button" title="Entrada por voz" aria-label="Entrada por voz">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
+    </button>
+    <button class="stop-button" type="button" id="abort-button" title="Detener generacion" aria-label="Detener generacion" disabled>
+        <span aria-hidden="true"></span>
+        <em>Detener</em>
+    </button>
+    <button class="primary-button send-button" type="submit" title="Enviar" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+    </button>
+</form>

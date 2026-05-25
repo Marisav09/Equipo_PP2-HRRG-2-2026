@@ -1,1 +1,1 @@
-"""Modelos tipados de intercambio interno."""
+"""Shared request and response models."""
