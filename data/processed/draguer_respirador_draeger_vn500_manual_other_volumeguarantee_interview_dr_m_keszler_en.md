@@ -26,13 +26,3 @@ tially useful. The Leak Compensation fea- ture is very attractive.  The correcte
 
 (Volutrauma). Using Volume Guarantee brings that transparency to the field of Neonatology. So, the concept of allowing the inspiratory pressure to adjust while maintaining the set tidal volume helps the clinician move towards a new com- fort zone. There has also been a paucity of good data to guide appropriate choice of tidal volume – something that my group has been addressing with a series of stu- dies aimed at filling that knowledge gap. How intensively is this method taught at medical schools in the United States? It is not taught at the medial school stage – clinical training is hospital-based, but even there it does not get much exposure, reflecting the relatively infrequent use. Ventilator management is not taught very effectively in many residency programs; to some degree this reflects the reliance on Respiratory Care Practitioners (RCPs) for ventilation management. What are your own experiences with VG? When did you first start to use it? I have used VG since shortly after its intro- duction and have conducted many of the clinical studies that document its bene- fits.*** I have written and lectured exten- sively about the advantages of volume targeted ventilation in general and VG in particular. My early experiences illustra- te the fact that there is a definite learning curve to any new approach to ventilati- on. In those days, there was a fair amount of trial and error in figuring out how to best use this great new technology. With time, the comfort level increases and the necessary data are generated to inform the appropriate choice of tidal volume, the key factor in making VG work.
 
-```metadata
-pagina: 1
-imagen: data/images/draguer_respirador_draeger_vn500_manual_other_volumeguarantee_interview_dr_m_keszler_en/P1_I1.png
-contexto: 
-```
-
-![Imagen página 1 - 1](data/images/draguer_respirador_draeger_vn500_manual_other_volumeguarantee_interview_dr_m_keszler_en/P1_I1.png)
-
-
-

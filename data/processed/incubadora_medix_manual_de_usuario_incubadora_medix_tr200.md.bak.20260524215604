@@ -1,0 +1,2082 @@
+# Página 1
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 1
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P1_I0.png
+contexto: 
+```
+
+![Imagen página 1 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P1_I0.png)
+
+```metadata
+pagina: 1
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P1_I1.png
+contexto: 
+```
+
+![Imagen página 1 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P1_I1.png)
+
+INCUBADORA DE TRANSPORTE MODELO MEDIX TR-200
+
+MODULO CARGADOR DE BATERIAS MODELO TR-50 D
+
+VOLTAJE ENTRADA 220 V – 50 Hz (110 V – 60 Hz) a pedido otros: a pedido 12 VDC POTENCIA INCUBADORA TR-200 1 A @ 220V 2 A @ 110V MODULO TR-50 Máximo 40watt FUSIBLES INCUBADORA TR-200 1 A @ 220V 2 A @ 110V 10 A @ 12 VDC MODULO TR-50 10 A CLASIFICACION SEGUN NORMA IEC-60601-1 / IEC 60601-2-20
+
+PROTECCION ELECTRICA CLASE I
+
+PROTECION CONTRA INGRESO DE LIQUIDOS IPX0
+
+EQUIPO NO APTO PARA USO EN PRESENCIA DE MEZCLAS ANESTÉSICAS INFLAMABLES CON AIRE, CON OXIGENO O CON OXIDO NITROSO
+
+MEDIX TR-200 PC
+
+2
+
+# Página 2
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+8
+
+Resumen de advertencias, precauciones y notas.
+
+Se recomienda leer con atención las siguientes ADVERTENCIAS, PRECAUCIONES y NOTAS, las que se encuentran dentro del texto de este manual, antes de comenzar a utilizar la Incubadora MEDIX TR-200
+
+ADVERTENCIA
+
+Para el funcionamiento seguro de la incubadora, se recomienda el recambio de este pack interno de baterías cada 2 años. Consultar con el Servicio Técnico Autorizado
+
+El mantenimiento, instalación y/o reparación deben ser realizadas únicamente por personal técnico especializado. Para la reparación y solicitud de repuestos remitirse al manual de servicio del equipo.
+
+El fabricante asume la responsabilidad respecto de la seguridad, confiabilidad y funcionamiento del equipo si: 1. las operaciones de instalación, modificaciones o reparaciones son llevadas a cabo por personal técnico autorizado por medix i.c.s.a., utilizando exclusivamente elementos, repuestos o partes de recambio provistos por medix i.c.s.a.. 2. a instalación eléctrica y su habilitación pertinente responden a normas locales de seguridad. 3. el equipo se utiliza de acuerdo a las instrucciones de empleo detalladas en este manual
+
+La temperatura de control debe ser determinada por el MEDICO para cada niño en función de su peso, edad y condiciones generales. La utilización del equipo sin la supervisión de personal calificado, puede ocasionar graves daños en la salud del paciente
+
+Se deberá usar un analizador de oxígeno siempre que se suministre O 2   al bebé dentro de la incubadora
+
+El cable de alimentación deberá conectarse a un tomacorriente apropiado con toma a tierra.No utilice cables prolongadores ni fichas adaptadoras
+
+Se requiere atención constante de personal médico calificado siempre que haya un paciente en la Incubadora, por dos razones: 1) Algunas situaciones de mal funcionamiento requieren acciones correctivas inmediatas. 2) Una alarma, o una combinación de alarmas no asegura advertencia total de alguno o de todos los casos de mal funcionamiento del sistema de la Incubadora. Una INCUBADORA DE TRANSPORTE debe ser usada sólo por personal entrenado apropiadamente y bajo la dirección de personal médico calificado e informado con los riesgos actualmente conocidos y los beneficios del uso de una INCUBADORA DE TRANSPORTE
+
+La temperatura de control deben ser determinados por el médico en función del peso, edad gestacional y condiciones generales de paciente
+
+ALIMENTACION DE ENERGIA: El cable de alimentación deberá conectarse a un tomacorriente apropiado con toma de tierra. No utilizar cables prolongadores ni fichas adaptadoras
+
+# Página 3
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+9
+
+OXIGENO: el uso de oxígeno incrementa el riesgo de incendio. No se debe incorporar a la INCUBADORA DE TRANSPORTE equipos auxiliares que pudieran producir chispas
+
+Aún pequeñas cantidades de agentes inflamables tales como eter y alcohol dejados en la INCUBADORA DE TRANSPORTE pueden causar fuego en contacto con oxígeno. No utilice el equipo en presencia de anestésicos inflamables
+
+Cuando se conectan al paciente equipos auxiliares (ej.: monitores, bombas infusoras, etc.) deberá asegurarse que estos equipos sean eléctricamente seguros
+
+El suministro de oxigeno puede incrementar el nivel de ruido dentro del habitáculo de la incubadora de transporte
+
+Para evitar la proliferación de gérmenes, debe utilizarse agua destilada y esterilizada
+
+El equipo no funciona correctamente si las tapas del filtro de aire no están en su posición correcta
+
+LA CALIBRACION Y REPARACION DEL GRUPO MOTOR SOLO DEBE SER REALIZADA POR PERSONAL TECNICO CALIFICADO
+
+PRECAUCIÓN
+
+El mantenimiento, instalación y/o reparación de este equipo debe ser realizado únicamente por personal técnico especializado
+
+Ante la ocurrencia de la alarma de falla circuital el equipo no se encuentra en condiciones de operar normalmente. Se sugiere verificar el correcto funcionamiento del motor ventilador externo. En caso que el motor ventilador externo esté funcionando normalmente, se sugiere apagar la incubadora y volverla a encender para permitirle al microprocesador una nueva reinicialización.Si la alarma se activa nuevamente, se recomienda apagar el equipo y llamar al SERVICIO TECNICO AUTORIZADO
+
+Ante la ocurrencia de la alarma de falla de energía se recomienda realizar los siguientes pasos: 1. Verificar que la ficha tomacorriente del equipo esté bien conectada al tomacorriente de alimentación de la red 2. Verificar la existencia de tensión de red en el tomacorriente donde está conectado el equipo 3. Verificar el estado de los fusibles del equipo. 4. Si los pasos anteriores no solucionan la falla se deberá apagar la Incubadora con la llave de encendido y llamar al SERVICIO TECNICO AUTORIZADO.
+
+Evitar la luz de sol directa, las fuentes de energía radiante y las corrientes de aire frío, ya que estos factores pueden alterar el BALANCE TERMICO del paciente, el funcionamiento normal de la Incubadora e incluso accionar algunas alarmas
+
+En caso de reemplazo verifique que el fusible de repuesto sea del mismo tipo y valor que el reemplazado
+
+Resulta aconsejable realizar esta prueba de funcionamiento cada vez que se realice la limpieza y desinfección de la Incubadora descriptas en la SECCION 7
+
+# Página 4
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+10 10
+
+UBICACION: Evite la luz solar directa, las fuentes de energía radiante y las corrientes de aire. Estos factores pueden alterar el balance térmico del paciente y/o el funcionamiento normal del equipo e incluso generar situaciones de alarma
+
+TEMPERATURA AMBIENTE Verifique que la temperatura donde opera la Incubadora se encuentre entre 20 y 30ºC
+
+Humedézcase la esponja fuera de la incubadora. Se debe evitar verter agua directamente en la incubadora pues se corre el riesgo de que fluya agua por el tubo de entrada de aire y afectar así el sistema de control
+
+Si la falla persiste (alarma falla circuital), llame al SERVICIO TECNICO AUTORIZADO
+
+Los productos a utilizar deberán ser de reconocida calidad y deberán emplearse siguiendo las instrucciones del fabricante de los mismos
+
+ NOTA :
+
+CONDICIONES AMBIENTALES PARA FUNCIONAMIENTO NORMAL TEMPERATURA: 20-30ºC PRESION BAROMETRICA: 86-106 Kpa(648-795mmHg) HUMEDAD RELATIVA: 50+/-5% VELOCIDAD DE AIRE: 6-8 m/min
+
+El modo AIRE es el único modo de operación del equipo.
+
+La Alarma Acústica <39°C NO PUEDE SER SILENCIADA oprimiendo la tecla RESET ALARMA
+
+La Alarma Acústica de Falla Circuital NO PUEDE SER SILENCIADA oprimiendo la tecla RESET ALARMA
+
+La alarma acústica de Falla de Energía NO se puede silenciar oprimiendo la tecla RESET ALARMA del panel frontal
+
+La alarma acústica (Falla de sensor) se puede silenciar por 15 minutos oprimiendo la tecla RESET ALARMA del panel frontal mientras se procede al reemplazo del sensor defectuoso. Transcurridos los 15 minutos y si la condición de alarma no desapareció, la alarma acústica se activará nuevamente
+
+La alarma acústica (Temperatura de Aire) se puede silenciar por 15 minutos oprimiendo la tecla RESET ALARMA del panel frontal. Transcurridos los 15 minutos y si la condición de alarma no desapareció, la alarma acústica se activará nuevamente.
+
+La alarma acústica (Temperatura de Aire) se silencia los primeros 45 minutos durante el precalentamiento del equipo, en el caso que la temperatura de aire sea inferior a la temperatura de control seleccionada
+
+La alarma acústica (Falla circulación de Aire) se puede silenciar por 15 minutos oprimiendo la tecla RESET ALARMA del panel frontal. Transcurridos los 15 minutos y si la condición de alarma no desapareció, la alarma acústica se activará nuevamente
+
+# Página 5
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+11
+
+La incubadora funciona con corriente alterna en caso que el cargador TR-50 vinculado a la incubadora esté conectado a la línea de corriente alterna y solamente conmutará automáticamente a modo batería en caso de desconexión del módulo TR-50 de la alimentación de corriente alterna
+
+La Incubadora de transporte MEDIX TR-200 está diseñada y construida para facilitar su higiene y desinfección. Todos los lugares asociados con el ámbito del paciente son fácilmente accesibles y sus superficies de fácil limpieza
+
+# Página 6
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+Símbolos utilizados En la siguiente tabla se listan los símbolos que pueden ser ubicados en el equipo o en este manual y el significado de cada uno:
+
+Símbolos eléctricos internacionales:
+
+Símbolo Descripción
+
+OFF / APAGADO
+
+ON / ENCENDIDO
+
+LEER MANUAL DEL USUARIO
+
+PELIGRO – ALTA TENSION
+
+PUESTA A TIERRA
+
+SUPERFICIE CALIENTE
+
+BATERIA FUSIBLES
+
+Símbolos almacenamiento y embalaje:
+
+Símbolo Descripción
+
+FRAGIL, MANIPULAR CON CUIDADO
+
+POSICION VERTICAL
+
+MANTENER SECO
+
+LIMITACION DE TEMPERATURA 4ºC (40ºF) – 43ºC(110ºF)
+
+NO ENGANCHAR
+
+NO VOLCAR
+
+12 12
+
+# Página 7
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 7
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P7_I0.png
+contexto: 
+```
+
+![Imagen página 7 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P7_I0.png)
+
+Advertencias adheridas al equipo
+
+13
+
+# Página 8
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 8
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P8_I0.png
+contexto: 
+```
+
+![Imagen página 8 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P8_I0.png)
+
+```metadata
+pagina: 8
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P8_I1.png
+contexto: 
+```
+
+![Imagen página 8 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P8_I1.png)
+
+14 14
+
+# Página 9
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+1. INTRODUCCIÓN
+
+1-A Descripción
+
+La Incubadora de Transporte MEDIX TR-200, diseñada en concordancia con las más recientes normas y exigencias internacionales, proporciona al recién nacido un ambiente adecuado y seguro para su traslado. Funciona con corriente alternada (CA) o con corriente continua (CC) de 12V con su propia batería (opcional) o la del vehículo. La conmutación de CA a CC o/y la carga de batería es automática. El circuito de control de temperatura del aire interior es microprocesado del tipo PID , con compensación por temperatura ambiente, es decir que entrega la cantidad de calor necesaria para compensar las variaciones de temperatura ocasionadas por apertura de puerta, cambios ambientales, etc. Un conjunto de seis alarmas aseguran un elevado índice de seguridad. La capota de acrílico de doble pared le confiere aislación térmica y total visibilidad. Con doble puerta de acceso, dos portillos , portillo lateral y pasacánulas. Cuna acrílica extraíble para facilitar el manejo del bebé, con colchón tipo nido. Base de alta resistencia y doble pared con aislación térmica. Sistema de renovación de aire microfiltrado y humidificado. El módulo de soporte vital (opcional) con batería y uno o dos tanques para oxígeno y/o aire le confiere total autonomía durante el traslado. La incubadora y el módulo de soporte vital se completan con un carro rodante plegable (opcional) para su traslado y carga en ambulancias.
+
+1-B Características
+
+- Control por microprocesador - Autochequeo permanente del funcionamiento del microprocesador - Indicador digital de la temperatura de aire Resolución: 0,1 °C Precisión: +/- 0,3 °C Rango de medición: 20 a 42°C - Indicador digital de la temperatura de control: Resolución: 0,1 °C Rango de control: 20 a 38°C - Indicador de potencia del calefactor Rango: 0 – 100% en 8 pasos discretos - Panel frontal a prueba de salpicaduras - Teclado al tacto de fácil operación y alta confiabilidad - Completo sistema de alarmas acústicas y visuales:
+
+• Alarma temperatura de aire
+
+• Alarma >39ºC
+
+• Alarma de falla de sensor
+
+• Alarma de falla circuital
+
+• Alarma de falla de energía eléctrica
+
+• Alarma de falla de circulación de aire - Reset de alarma para silenciamiento por 15 minutos de alarmas acústicas - Prueba general de alarmas para verificación del sistema de alarmas e indicadores - Autocalibración permanente del sistema de medición de temperatura de aire - Autochequeo permanente del microprocesador y su operación - Inicialización automática en el encendido 34.0°C de Temperatura de Control - Memoria de la Temperatura de Control de aire y modo de operación ante un corte eventual de energía eléctrica. - Colchón tipo nido
+
+15
+
+# Página 10
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 10
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P10_I0.png
+contexto: 
+```
+
+![Imagen página 10 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P10_I0.png)
+
+- Luz de examen - Humidificación con paño húmedo involcable - Todos los elementos mecánicos, incluido el módulo de Control son desarmables, sin necesidad de herramientas especiales - Todos los materiales utilizados son inalterables e inoxidables - Carro de transporte - Módulo cargador de batería TR-50 - Tubos de oxígeno con regulador de presión c/manómetro y flujómetro - Mástil para venoclisis
+
+1-C Equipamiento Básico
+
+La Incubadora de Transporte TR-200 se provee con el siguiente equipamiento básico: - Módulo de control electrónico desmontable - Display de temperatura de aire y de temperatura de control - Capota de acrílico de doble pared con puerta frontal, dos portillos, portillo lateral y pasacánulas. - Cuna de acrílico con colchón tipo nido. - Paragolpe periférico con asas para transporte
+
+MODULO DE AUTONOMIA (OPCIONAL) Soporte metálico para batería con cargador y dos cilindros de oxígeno tipo E (opcionales) Batería involcable con autonomía de 4 horas de funcionamiento a plena potencia y 6 horas de autonomía con incubadora precalentada y cargador electrónico automático (opcional TR-50) Uno o dos cilindros para oxígeno/aire tipo E con reductor y cuenta litros (opcional)
+
+CARRO DE TRANSPORTE PLEGABLE (opcional) Permite el uso de la incubadora a una altura habitual y su traslado sobre ruedas. En caso necesario se pliega a su mínima expresión y para el transporte en vehículos de poca altura interior. Ruedas con freno.
+
+CAT Nº MODELO TR-200 Incubadora TR-200 (sin opcionales) TR-200 PC Incubadora TR-200 con carro plegable, batería, cargador automático, portatanques de oxígeno y mástil para venoclisis . NO INCLUYE TANQUES DE OXIGENO NI REDUCTORES
+
+Figura 1: Incubadora de transporte MEDIX TR-200 PC
+
+16 16
+
+# Página 11
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 11
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P11_I0.png
+contexto: 
+```
+
+![Imagen página 11 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P11_I0.png)
+
+1-D Accesorios Opcionales
+
+CODIGO DESCRIPCION (ACCESORIOS OPCIONALES) TR-51/2 Soporte para dos tanques tipo E, batería y cargador (NO INCLUYE TANQUES NI BATERIA CARGADOR)
+
+Soporte modular fijado a la incubadora, que permite el transporte de dos tubos de oxígeno y/o aire tipo E junto con el cargador de baterías TR-50
+
+TR-43 Carro rodante fijo para nursery TR-52 Carro rodante plegable para TR-200
+
+Figura 2: MEDIX TR-200 PC (todos los accesorios opcionales incluídos)
+
+con carro plegado
+
+TR-45 Mástil para venoclisis TR-53 Mástil soporte para respirador/bomba, etc. SMC-11 Cilindro de oxígeno tamaño E TR-47E Regulador de presión con manómetro para SMC-11 TR-50 D Batería recargable de 12VDC, involcable, con cargador automático y alarma de baja batería
+
+Ver manual de uso y Servicio Técnico del cargador de baterías TR-50
+
+TR-54 Luz de examen
+
+Luz de procedimientos incorporada
+
+TR-72 Estante porta monitores - Carga máxima admitida 25kg TR-73 Monitor de temperatura de piel
+
+17
+
+# Página 12
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+1-E Partes De Reemplazo
+
+CODIGO DESCRIPCION TR-60 Cable de alimentación de CA (Especificar 220V o 110V) TR-61 Cable de alimentación de CC TR-62 Porta colchón de acrílico TR-63 Colchón lavable tipo nido TR-68 Esponja de humidificación (paquete de 4 unidades) TR-69 Microfiltro de aire (paquete x 4 unidades) DIR-17 Pasacánulas (paquete por 2 unidades) TR-66 Batería 12VDC DIR-20 Diafragma de portillos (paquete de 20 unidades) DIR-06 Manga iris (paquete de 100 unidades)
+
+1-F Especificaciones Técnicas
+
+Alimentación Eléctrica : 220/240 VAC - 50/60 Hz 110/120 VAC - 60/50 Hz (a pedido del cliente) 12VDC Batería propia o la del vehículo Consumo De Energía Consumo EQUIPO BASICO 110/127 VAC – 50/60Hz 2A 220/240VAC-50/60Hz 1A MODULO TR-50 Máximo 40 watts
+
+Protección Eléctrica INCUBADORA TR-200 filtro de linea reductor de interferencias 12VCC fusible: 10A 220/240VAC – 50/60Hz, fusible: 1A 110/127VAC – 60/50Hz fusible: 2A MODULO TR-50 fusible: 10 A
+
+Operación Modo Aire Rango de Control: 20 A 38°C (en pasos de 0,1°C) Temperatura De Aire Rango de medición 20 a 42°C Resolución +/- 0,1°C Precisión +/- 0,3°C
+
+Nivel de Ruido < 55dB
+
+Alarmas ALARMA DE TEMPERATURA DE AIRE Cuando la temperatura de aire difiere en mas
+
+de + 1°C / -3ºC de la temperatura de control seleccionada. Silenciada por 45 minutos durante período de precalentamiento inicial ALARMA DE FALLA DE SENSOR Cuando se desconecta, cortocircuita o abre el
+
+sensor de temperatura de aire
+
+18 18
+
+# Página 13
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+ALARMA DE FALLA DE CIRCUITO: Si el microprocesador no ejecuta
+
+correctamente el programa de control ALARMA DE FALLA DE ENERGIA ELECTRICA Alimentada por baterías recargables de Ni-Cd ALARMA >39°C Alarma de sobretemperatura con circuito independiente. Se activa si la temperatura del aire supera los 39ºC ALARMA DE FALLA DE AIRE Se activa si falla la circulación de aire
+
+Pack Batería interna (módulo de control) Alarma audible por falla de energía eléctrica y memorización de parámetros
+
+NiMH 4,8V-320mAh
+
+ADVERTENCIA Para el funcionamiento seguro de la incubadora, se recomienda el recambio de
+
+este pack interno de baterías cada 2 años. Consultar con el Servicio Técnico
+
+Autorizado
+
+Alarma Acústica
+
+Nivel de ruido < 65 dBA Silenciamiento temporizado 15 min Para alarma de : temperatura de aire, falla de
+
+sensor, alarma paciente Potencia Del Calefactor PASOS DISCRETOS 12,5%,25%, 37,5% 50%, 62,5%, 75%, 87,5% 100%
+
+Tiempo de precalentamiento 35 minutos
+
+CAPACIDAD TERMICA 30ºC sobre temperatura ambiente
+
+Aire y oxígeno Circulación de aire forzado con microfiltro de 0,5 micrones.
+
+Humidificación Con paño húmedo involcable Hasta 85% HR
+
+Módulo TR-50 6 horas de autonomía con incubadora precalentada
+
+Máxima concentración de CO 2 <<0,5% (según ensayo IEC60601-2-20- cláusula 50.105)
+
+Oxígeno 21% a 75%
+
+Características Mecánicas
+
+DIMENSIONES EXTERNAS: TR-200 (Equipo básico) 93 x 45 x 45 cm TR-200 PC 130 x 54 x 115cm (altura máxima) 130 x 54 x 87 cm ( con carro plegado) CUNA: ancho x largo 59 x 39 x 10 cm
+
+19
+
+# Página 14
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 14
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P14_I0.png
+contexto: 
+```
+
+![Imagen página 14 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P14_I0.png)
+
+COLCHON: ancho x largo 55 x 25 x 5 cm
+
+DIMENSIONES INTERNAS (Habitáculo del bebé) 61 x 34 x 26 cm
+
+PESO: TR-200 (EQUIPO BASICO) 21 Kg TR-200 PC 72 Kg
+
+TR-50 14 Kg Dimensiones 53,5 x 20 x 15 cm
+
+MODLULO TR-50
+
+CORRIENTE CONTINUA: 12 VCC/10 A BATERIAS: 2 x 12VCC, 24Ah ALARMA BAJA BATERIA
+
+Embalaje y almacenamiento
+
+Equipo médico – Frágil – No apilar Condiciones ambientales: Mantener en lugar seco.
+
+20 20
+
+# Página 15
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 15
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P15_I0.png
+contexto: 
+```
+
+![Imagen página 15 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P15_I0.png)
+
+```metadata
+pagina: 15
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P15_I1.png
+contexto: 
+```
+
+![Imagen página 15 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P15_I1.png)
+
+```metadata
+pagina: 15
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P15_I2.png
+contexto: 
+```
+
+![Imagen página 15 - 2](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P15_I2.png)
+
+ADVERTENCIA El mantenimiento, instalación y/o reparación deben ser realizadas únicamente por
+
+personal técnico especializado. Para la reparación y solicitud de repuestos
+
+remitirse al manual de servicio del equipo .
+
+NOTA CONDICIONES AMBIENTALES PARA FUNCIONAMIENTO NORMAL TEMPERATURA: 20-30ºC PRESION BAROMETRICA: 86-106 Kpa(648-795mmHg) HUMEDAD RELATIVA: 50+/-5% VELOCIDAD DE AIRE: 6-8 m/min
+
+1-G Descripción de los diferentes accesos a la incubadora y elementos auxiliares. 1.G.1 Accesos Standard 1.G.1.1Acceso General
+
+.
+
+21
+
+# Página 16
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 16
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P16_I0.png
+contexto: 
+```
+
+![Imagen página 16 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P16_I0.png)
+
+```metadata
+pagina: 16
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P16_I1.png
+contexto: 
+```
+
+![Imagen página 16 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P16_I1.png)
+
+```metadata
+pagina: 16
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P16_I2.png
+contexto: 
+```
+
+![Imagen página 16 - 2](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P16_I2.png)
+
+1G.1.3 Accesos por portillos automáticos
+
+La cúpula posee dos portillos de apertura automática que son los utilizados para los procedimientos de rutina a realizar con el niño. Para evitar la contaminación de las manos, antes de ingresarlas al habitáculo, estos portillos pueden abrirse oprimiendo el pestillo con el codo, como se indica en la figura.
+
+Figura 3: Portillos automáticos
+
+PRECAUCIÓN Para evitar roturas se debe abrir el portillo simplemente presionando las trabas
+
+portillo (PUSH) como se indica en la figura
+
+ADVERTENCIA Por la seguridad del bebé se recomienda siempre tener colocadas las mangas
+
+portillo y las mangas iris mientras la incubadora esté en uso.
+
+1.G.1.4 Accesos menores
+
+La incubadora posee otros accesos para facilitar la introducción de elementos. Para la introducción de líneas de suero, cables paciente, etc. pueden utilizarse los pasacánulas, que permiten desplazar o retirar al niño sin desconectarlo.
+
+1.G.1.5 Acceso Iris
+
+Este acceso permite por su configuración el pasaje de tubuladuras y cables que por
+
+sus dimensiones no pueden pasarse por los accesos menores (Ej. circuitos de paciente de un ventilador).
+
+22 22
+
+# Página 17
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 17
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P17_I0.png
+contexto: 
+```
+
+![Imagen página 17 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P17_I0.png)
+
+```metadata
+pagina: 17
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P17_I1.png
+contexto: 
+```
+
+![Imagen página 17 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P17_I1.png)
+
+Al cerrar, la manga plástica abraza a los conductores y permite mantener cerrado el habitáculo.
+
+Estas mangas plásticas son de fácil recambio, práctica que se recomienda para su higiene.
+
+ADVERTENCIA Nunca dejar al bebé desatendido mientras esté abierta la puerta de cuidados intensivos, los portillos o los portillos iris.
+
+1.H Otros Equipos adicionales Además de los accesorios opcionales específicos para cada equipo Medix cuenta con una importante gama de equipamiento que pueden ser solicitado e instalado de acuerdo a las necesidades del usuario y a las prestaciones que se deseen dar con el equipo. 1.H.1 Sistema de aspiración Sistema venturi con manguera de aspiración, reloj, manovacuómetro, recipiente de plástico irrompible, graduado en centímetros cúbicos, desarmable para favorecer su fácil limpieza. 1.H.2 Sistema de aspiración y reanimación Consultar 1.H.3 Monitor de oximetría y frecuencia cardíaca, con o sin alarmas MEDIX OXI-3, MEDIX 3301, MEDIX 3303 1.H.4 Monitor de Fi0 2 (fracción inspirada de oxígeno) Ej.: "Handy", "Teledyne.-TED 60 – TED191”
+
+1.H.5 Bomba de infusión Ej. MEDIX A-99, Graseby
+
+1.H.6 Respirador Ej.: “MVP-10” Biomed, Crossvent 2i Biomed.
+
+23
+
+# Página 18
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 18
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P18_I0.png
+contexto: 
+```
+
+![Imagen página 18 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P18_I0.png)
+
+```metadata
+pagina: 18
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P18_I1.png
+contexto: 
+```
+
+![Imagen página 18 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P18_I1.png)
+
+```metadata
+pagina: 18
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P18_I2.png
+contexto: 
+```
+
+![Imagen página 18 - 2](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P18_I2.png)
+
+2. DESEMBALAJE E INSTALACION
+
+ PRECAUCIÓN: El mantenimiento, instalación y/o reparación de este equipo debe ser realizado únicamente
+
+por personal técnico especializado
+
+2-A Verificación Previa Al desembalar el equipo verifique que todas sus partes constitutivas se encuentren en buen estado. En caso contrario avise inmediatamente las anormalidades detectadas a su proveedor o agente de ventas.
+
+LA INCUBADORA SOBRE EL CARRO DE TRANSPORTE DEBE SER MONTADA COMO INDICAN LAS FOTOGRAFIAS: EL PANEL DE MANDO DEL MISMO LADO QUE EL ACCIONAMIENTO DE DESCENSO DEL CARRO .
+
+2-B Limpieza general Efectúe una limpieza general del equipo según se detalla en la sección 7 de este manual.
+
+2-C Conexión Conecte el cable de alimentación correspondiente según se detalla en la sección 3 de este manual
+
+25
+
+# Página 19
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+2. Desembalaje e instalación
+
+ADVERTENCIA El cable de alimentación deberá conectarse a un tomacorriente apropiado
+
+con toma de tierra. No utilice cables prolongadores ni fichas adaptadoras.
+
+ADVERTENCIA Este equipo es no apto para uso en presencia de gases anestésicos.
+
+ADVERTENCIA Antes de la puesta en marcha del equipo, verificar que todo el material protector de embalaje haya sido retirado, inclusive el plástico protector del colchón
+
+ADVERTENCIA El fabricante asume la responsabilidad respecto de la seguridad,
+
+confiabilidad y funcionamiento del equipo si:
+
+• las operaciones de instalación, modificaciones o reparaciones son llevadas a cabo por personal técnico autorizado por medix i.c.s.a., utilizando exclusivamente elementos, repuestos o partes de recambio provistos por medix i.c.s.a..
+
+• la instalación eléctrica y su habilitación pertinente responden a normas locales de seguridad.
+
+• el equipo se utiliza de acuerdo a las instrucciones de empleo detalladas en este manual .
+
+26 26
+
+# Página 20
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+3. DESCRIPCIÓN DE FUNCIONAMIENTO
+
+3.A Modo de Funcionamiento
+
+La Incubadora de Transporte TR-200 con microprocesador opera en modo aire conectada a la línea de corriente alternada o con batería de 12VDC (propia o de la ambulancia).
+
+En el modo AIRE el objetivo es mantener la temperatura del aire en un valor constante preestablecido por el médico.
+
+La temperatura de control de aire se establece en forma apropiada utilizando el teclado del panel frontal del equipo. El procedimiento consiste en fijar el valor de temperatura de aire a controlar. En estas condiciones la incubadora de transporte mide en forma permanente la temperatura del aire circulante dentro de la incubadora y le suministra el calor necesario para que la misma sea constante y coincida con el valor de temperatura de control preestablecido.
+
+El valor de temperatura pre-establecido o de consigna se indica en el display digital TEMPERATURA CONTROL ubicado en el panel frontal. Mientras que simultáneamente el display TEMPERATURA DE AIRE exhibe la temperatura del AIRE en forma permanente. El rango de control de temperatura de aire permitido varía entre 20°C y 38°C
+
+El display POTENCIA CALEFACTOR indica en todo momento la potencia entregada al calefactor por el sistema de control.
+
+NOTA El modo AIRE es el único modo de operación del equipo.
+
+ADVERTENCIA La temperatura de control debe ser determinada por el MEDICO para cada niño en función de su peso, edad y condiciones generales. La utilización del equipo sin la supervisión de personal calificado, puede
+
+ocasionar graves daños en la salud del paciente
+
+27
+
+# Página 21
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+3. Descripción del Funcionamiento
+
+3.B Sistemas De Seguridad 3.B.1 Alarma De Sobretemperatura de Aire(>39ºC) Esta alarma se activa si la temperatura del aire en el interior de la incubadora excede el valor de 39ºC. El circuito electrónico de esta alarma está implementado en forma independiente al circuito del microprocesador para aumentar la confiabilidad del sistema. Su función primordial es proteger al niño ante una falla del control de temperatura y el resto de las alarmas controladas por el microprocesador. Cuando la alarma de sobretemperatura de aire se activa, ocurre lo siguiente:
+
+I) Suena la alarma acústica en forma intermitente II) Se enciende en forma intermitente el indicador de alarma >39ºC III) Se interrumpe la potencia en el calefactor a través de un circuito de relé IV) Dado que la alarma está implementada con un circuito electrónico independiente del microprocesador, no se debe tener en cuenta el valor de potencia expresado en el indicador POTENCIA CALEFACTOR
+
+Si una incubadora en situación de alarma queda desatendida, al cabo de un tiempo se enfriará por debajo de los 39ºC debido a que el calefactor se encuentra desactivado. A un determinado valor de temperatura, la alarma se desactiva automáticamente y se restablece la potencia en el calefactor. Si la falla que originó la alarma persiste, la incubadora volverá a superar los 39ºC y la alarma se activará nuevamente. Se recomienda ver sección 3.D de este manual para solucionar el inconveniente. Si el problema continúa, el equipo no puede operar normalmente hasta tanto no se corrija la falla. Se recomienda en este caso llamar al SERVICIO TECNICO AUTORIZADO.
+
+NOTA La Alarma Acústica <39°C NO PUEDE SER SILENCIADA oprimiendo la tecla RESET ALARMA
+
+3.B.2 Alarma De Falla Circuital Esta alarma se activa si se produce una alteración en la secuencia lógica de operación del microprocesador o bien si el motor ventilador externo se detuvo Cuando la alarma de falla circuital se activa, ocurre lo siguiente: i) Suena la alarma acústica en forma intermitente ii) Se enciende en forma intermitente el indicador de alarma FALLA CIRCUITO V) Se interrumpe la potencia en el calefactor a través de un circuito de relé. , no se debe tener en cuenta el valor de potencia expresado en el indicador POTENCIA CALEFACTOR iii) En caso que la Alarma de Falla Circuital se active debido a falla en el motor ventilador externo (localizado en el panel lateral izquierdo, próximo a la tapa del filtro), el display indicará  Err 005
+
+NOTA La Alarma Acústica de Falla Circuital NO PUEDE SER SILENCIADA oprimiendo la tecla RESET
+
+ALARMA
+
+28 28
+
+# Página 22
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+3. Descripción del funcionamiento
+
+ PRECAUCIÓN: Ante la ocurrencia de la alarma de falla circuital el equipo no se encuentra en condiciones
+
+de operar normalmente. Se sugiere verificar el correcto funcionamiento del motor ventilador externo. En caso que el motor ventilador externo esté funcionando normalmente, se sugiere apagar la incubadora y volverla a encender para permitirle al microprocesador
+
+una nueva reinicialización.Si la alarma se activa nuevamente, se recomienda apagar el
+
+equipo y llamar al SERVICIO TECNICO AUTORIZADO.
+
+3.B.3 Alarma De Falla De Energía Esta alarma se activa si se produce una interrupción en la red de suministro de energía, una falla en los fusibles o en el circuito de entrada de potencia, o una desconexión accidental. Cuando la alarma de falla de energía se activa ocurre lo siguiente: i) Suena la alarma acústica en forma intermitente ii) Se enciende en forma intermitente el indicador FALLA ENERGIA
+
+NOTA La alarma acústica de Falla de Energía NO se puede silenciar oprimiendo la tecla RESET ALARMA
+
+del panel frontal.
+
+PRECAUCIÓN: Ante la ocurrencia de la alarma de falla de energía se recomienda realizar los siguientes pasos: 5. Verificar que la ficha tomacorriente del equipo esté bien conectada al tomacorriente de alimentación de la red 6. Verificar la existencia de tensión de red en el tomacorriente donde está conectado el equipo 7. Verificar el estado de los fusibles del equipo. 8. Si los pasos anteriores no solucionan la falla se deberá apagar la Incubadora con la llave de encendido y llamar al SERVICIO TECNICO AUTORIZADO.
+
+Ante un eventual corte de alimentación, el equipo memoriza el modo de trabajo y la temperatura de control seleccionada. Estos valores se restablecen automáticamente al restaurar la energía eléctrica.
+
+3.B.4 Alarma De Falla De Sensor Esta alarma se activa si se produce una falla en el sensor de temperatura de aire. Se consideran condiciones de falla si el sensor de aire o su cable se pone en cortocircuito, circuito abierto o se desconecta. Cuando se activa la alarma de falla de sensor ocurre lo siguiente: i) Suena la alarma acústica en forma intermitente ii) Se enciende en forma intermitente el indicador de alarma FALLA SENSOR
+
+29
+
+# Página 23
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+3. Descripción del Funcionamiento
+
+iii) Se interrumpe la potencia en el calefactor vía un circuito de relay (el indicador POTENCIA CALEFACTOR permanece apagado) iv) El display indica Op  o  Sh
+
+NOTA La alarma acústica (Falla de sensor) se puede silenciar por 15 minutos oprimiendo la tecla RESET ALARMA del panel frontal mientras se procede al reemplazo del sensor defectuoso. Transcurridos los 15 minutos y si la condición de alarma no desapareció, la alarma acústica se
+
+activará nuevamente.
+
+Mientras la alarma de falla de sensor esté activa, el módulo de control no entregará potencia al calefactor
+
+3.B.5 Alarma De Temperatura De Aire Esta alarma se activa si la temperatura de aire dentro de la incubadora es superada en 1°C o es inferior en 3°C respecto de la temperatura preseleccionada de control de aire.
+
+Cuando se activa la alarma de temperatura de aire ocurre lo siguiente:
+
+i) Suena la alarma acústica en forma intermitente ii) Se enciende en forma intermitente el indicador de alarma TEMP. AIRE (señal roja en el panel frontal) iii) En el caso de que la alarma de temperatura de aire se active por superar 1°C la temperatura preseleccionada, el control no entrega potencia al calefactor (el indicador POTENCIA CALEFACTOR permanece apagado) iv) El display de TEMPERATURA DE AIRE indica el valor de temperatura de aire
+
+NOTA La alarma acústica (Temperatura de Aire) se puede silenciar por 15 minutos oprimiendo la tecla RESET ALARMA del panel frontal. Transcurridos los 15 minutos y si la condición de alarma no desapareció, la alarma acústica se activará nuevamente.
+
+Además, si se trata de una alarma de baja temperatura (temperatura del paciente inferior en 3°C a la de control) al oprimir RESET se restablece la potencia en el calefactor (se iluminan los segmentos del indicador POTENCIA CALEFACTOR).
+
+NOTA La alarma acústica (Temperatura de Aire) se silencia los primeros 45 minutos durante el precalentamiento del equipo, en el caso que la temperatura de aire sea inferior a la temperatura de control seleccionada
+
+30 30
+
+# Página 24
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+3. Descripción del funcionamiento
+
+3.B.6 Alarma de Falla de Circulación de Aire
+
+Esta alarma se activa si se produce una falla en el sistema de circulación de aire forzado en el interior de la incubadora. Cuando la alarma de falla de circulación de aire se activa, ocurre lo siguiente:
+
+I) Suena la alarma acústica en forma intermitente II) Se enciende en forma intermitente el indicador de alarma FALLA AIRE III) Se interrumpe la potencia en el calefactor (El indicador POTENCIA CALEFACTOR permanece apagado)
+
+NOTA La alarma acústica (Falla circulación de Aire) se puede silenciar por 15 minutos oprimiendo la tecla
+
+RESET ALARMA del panel frontal. Transcurridos los 15 minutos y si la condición de alarma no
+
+desapareció, la alarma acústica se activará nuevamente.
+
+El equipo no puede operar normalmente hasta tanto no se corrija la falla. Se recomienda en este caso llamar al SERVICIO TECNICO AUTORIZADO
+
+3.C Seguridad – Advertencias muy importantes
+
+ADVERTENCIA Se deberá usar un analizador de oxígeno siempre que se suministre O 2  al
+
+bebé dentro de la incubadora
+
+ PRECAUCIÓN Evitar la luz de sol directa, las fuentes de energía radiante y las corrientes de aire frío, ya
+
+que estos factores pueden alterar el BALANCE TERMICO del paciente, el funcionamiento
+
+normal de la Incubadora e incluso accionar algunas alarmas.
+
+ADVERTENCIA El cable de alimentación deberá conectarse a un tomacorriente apropiado con toma a tierra. No utilice cables prolongadores ni fichas adaptadoras
+
+ADVERTENCIA El uso de oxígeno incrementa el riesgo de incendio en el equipo.
+
+31
+
+# Página 25
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+3. Descripción del Funcionamiento
+
+ADVERTENCIA Pequeñas cantidades de agentes inflamables, tales como alcohol o éter dentro de la incubadora, incrementan el riesgo de incendio en presencia
+
+de oxígeno .
+
+ADVERTENCIA Verifique periódicamente la temperatura del paciente y el funcionamiento de
+
+los indicadores del equipo.
+
+ADVERTENCIA Prestar especial atención en que los equipos auxiliares conectados al paciente sean eléctricamente seguros.
+
+ADVERTENCIA Prestar especial atención en limitar los movimientos del bebé dentro de la
+
+incubadora de transporte durante el transporte. Usar el colchón tipo nido
+
+con faja de seguridad provisto con el equipo.
+
+3.D Comentarios sobre compatibilidad electromagnética La incubadora MEDIX TR-200 ha sido diseñada según los requisitos de la norma IEC60601-1-2: “Compatibilidad Electromagnética” 3.D.1 Emisiones Según las pruebas efectuadas, el equipo no emite radiaciones de radiofrecuencia (RF), de baja frecuencia o de campos magnéticos) que generen riesgo para la seguridad al interferir a otros equipos (según CISPR11) 3.D.2 Inmunidad Ante campos electromagnéticos de radiofrecuencia, el equipo se comporta cumpliendo lo indicado por la norma IEC-60601-2-20 (cláusula 36.202):
+
+- continúa realizando su función prevista, según lo descrito en el capítulo 3 de este manual, hasta el nivel de 3 V/m, para el intervalo de frecuencias de 26MHz a 1GHz - continúa realizando su función prevista, según lo descrito en el capítulo 3 de este manual, o bien aborta sin crear por ello un riesgo de la seguridad a un nivel inferior o igual a 10 V/m, para el intervalo de frecuencias de 26MHz a 1GHz 3.D.3 Descarga Electrostática El equipo cumple con la norma CEI 801-2:1991, Compatibilidad Electromagnética para equipos de medida y control de procesos industriales, Parte2: Requisitos relativos a las descargas electrostáticas 3.D.4 Bibliografía “Guidance on Electromagnetic Compatibility of Medical Devices for Clinical/Biomedical Engineers- Part1: Radiated Radio-Frequency Electromagnetic Energy”, AAMI TIR No.18-1997
+
+32 32
+
+# Página 26
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 26
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P26_I0.png
+contexto: 
+```
+
+![Imagen página 26 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P26_I0.png)
+
+```metadata
+pagina: 26
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P26_I1.png
+contexto: 
+```
+
+![Imagen página 26 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P26_I1.png)
+
+4. DESCRIPCIÓN DEL MÓDULO DE CONTROL
+
+En la presente sección se describen específicamente los controles e indicadores del Módulo de Control de la Incubadora de Transporte TR-200
+
+4.A Indicadores y Controles del Panel Frontal La descripción está referida a la Figura 3
+
+15
+
+14
+
+13
+
+12
+
+16
+
+11
+
+10
+
+9
+
+8
+
+7
+
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+Figura 4: Panel de Control 1. Display digital TEMPERATURA DE AIRE Exhibe en forma permanente la temperatura de aire de la incubadora
+
+2.. Display de  POTENCIA CALEFACTOR
+
+Exhibe en forma permanente la potencia que el servocontrol entrega al calefactor. La indicación de potencia se expresa en 8 intervalos discretos de 1/8, ¼, 3/8, ½, 5/8,¾ ,7/8 y 1. Si el indicador está apagado, significa que no se está entregando potencia al calefactor. Si los
+
+33
+
+# Página 27
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+4. Descripción del Modulo de control
+
+segmentos del indicador están todos encendidos, significa que se está entregando plena potencia al calefactor
+
+3. Indicador ENERGIA - LINEA Se enciende cuando el equipo está conectado a la red de alimentación y se acciona la llave principal de encendido
+
+4 Indicador ENERGIA - BATERIA Se enciende cuando el equipo está conectado a una batería externa (TR-50) y se acciona la llave principal de encendido
+
+5. Indicador de alarma FALLA ENERGIA Se enciende en forma intermitente si se produce una interrupción en la red de suministro de energía, una falla en los fusibles, en el circuito de entrada de potencia o una desconexión accidental
+
+6 Indicador de alarma TEMP.AIRE Se enciende en forma intermitente cuando se presenta una condición de alarma de temperatura de aire: la temperatura del aire se encuentra 1°C por encima o 3°C por debajo de la temperatura de control establecida.
+
+7 Indicador de alarma FALLA AIRE Se enciende en forma intermitente cuando se detecta una falla en el sistema de circulación de aire forzado
+
+8 Indicador de alarma >39ºC Se enciende en forma intermitente cuando se activa la alarma de sobretemperatura (la temperatura del aire de la incubadora supera los 39°C)
+
+9 Indicador de alarma FALLA SENSOR Se enciende en forma intermitente si se produce una falla (cortocircuito, abierto o desconexión) del sensor de temperatura de aire.
+
+10 Indicador de alarma FALLA CIRCUITO Se enciende en forma intermitente si se produce una alteración en la secuencia lógica de operación del microprocesador
+
+11 Tecla  RESET ALARMA Al oprimirla se silencia durante 15 minutos el tono de audio en los siguientes casos: a) Alarma de Temperatura de Aire b) Alarma de falla de Aire c) Alarma de falla de Sensor En el caso particular de la alarma de temperatura de aire, restablece la potencia en el calefactor si se trata de una alarma de baja temperatura. La alarma audible volverá a activarse después de los 15 minutos en caso de persistir la condición de alarma o bien en caso de presentarse una nueva condición de alarma.
+
+12 Tecla  TEST ALARMA Al ser oprimida en forma continua se deberá observar lo siguiente: a) El display TEMPERATURA DE AIRE (1) debe indicar: :88.8 b) El display TEMPERATURA DE CONTROL (16) debe indicar: 88.8
+
+34 34
+
+# Página 28
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 28
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P28_I0.png
+contexto: 
+```
+
+![Imagen página 28 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P28_I0.png)
+
+4. Descripción del Módulo de Control
+
+c) El indicador luminoso POTENCIA CALEFACTOR (2) debe mostrar todos sus segmentos
+
+encendidos d) El indicador luminoso ENERGIA (3 ó 4) y TODOS LOS INDICADORES DE ALARMA deben permanecer encendidos. e) La alarma acústica sonará en forma continua
+
+13 Tecla ▼ REDUCE Al ser oprimida junto con la tecla CONTROL TEMP AIRE (14) permite reducir la TEMPERATURA DE CONTROL
+
+14 Tecla  CONTROL TEMP AIRE Al ser oprimida junto con la tecla REDUCE (13) o INCREMENTA (14) permite reducir o incrementar la temperatura de control de aire respectivamente.
+
+15 Tecla ▲  AUMENTA Al ser oprimida junto con la tecla TEMPERATURA DE AIRE (14) permite aumentar la TEMPERATURA DE CONTROL
+
+16 Display digital TEMPERATURA DE CONTROL Exhibe en forma permanente la temperatura de control seleccionada
+
+4.B Controles y Conectores Del Panel Lateral Derecho La descripción está referida a la Figura 4 :
+
+5 6 2 3 4 1
+
+Figura 5: Panel lateral derecho 1 Llave de encendido luz de examen 2 Fusible para 12VCC - Batería 3 Fusible para corriente alterna 4 Fusible para corriente alterna 5 Conector para cable de alimentación 6 Llave de encendido principal de la incubadora
+
+35
+
+# Página 29
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 29
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P29_I0.png
+contexto: 
+```
+
+![Imagen página 29 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P29_I0.png)
+
+```metadata
+pagina: 29
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P29_I1.png
+contexto: 
+```
+
+![Imagen página 29 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P29_I1.png)
+
+4. Descripción del Modulo de control
+
+PRECAUCIÓN En caso de reemplazo verifique que el fusible de repuesto sea del mismo tipo y valor que el
+
+reemplazado
+
+4.C Conector En Panel Lateral Izquierdo La descripción está referida a la Figura 5
+
+Figura 6: Panel lateral izquierdo
+
+36 36
+
+# Página 30
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+4. Descripción del Módulo de Control
+
+4-D Prueba De Funcionamiento
+
+En la presente sección se describe una prueba básica de funcionamiento. Recomendamos especialmente que se realice esta prueba una vez concluido el desembalaje y ensamble inicial (descriptos en la SECCION 2) y antes de poner en servicio la Incubadora.
+
+ PRECAUCIÓN : Resulta aconsejable realizar esta prueba de funcionamiento cada vez que se realice la
+
+limpieza y desinfección de la Incubadora descriptas en la SECCION 7.
+
+4-D-1 Procedimiento De Prueba
+
+4-D-1.1 Encendido
+
+Al encender el equipo verificar que el módulo de control muestra las siguientes indicaciones:
+
+- Ind. ENERGIA LINEA ó BATERIA (según corresponda)(3 ó 4 ) :prendido --Disp. TEMPERATURA DE AIRE (1) :indica temperatura - Disp. TEMP. CONTROL (16) :34,0°C - ALARMA ACUSTICA :apagada
+
+4-D-1.2Test De Alarmas
+
+Al oprimir la tecla TEST verificar que el módulo de control muestra las siguientes indicaciones :
+
+- Ind. ENERGIA (3 ó 4) :prendido - Disp. TEMP.AIRE (1) :88,8 - Ind. POT. CALEFACTOR (2) :todo prendido - Disp. TEMP. CONTROL (16) :88,8 - Ind. TEMP.AIRE (6) :prendido - Ind. FALLA DE SENSOR (9) :prendido - Ind. FALLA AIRE (7) :prendido - Ind.FALLA CIRCUITO(10) :prendido - Ind. FALLA ENERGIA (5) :prendido - Ind. >39°C (8) :prendido - ALARMA ACUSTICA :suena en forma continua
+
+4-D-1.3 Funcionamiento
+
+Verificar que el módulo de control muestre las siguientes indicaciones :
+
+- Ind. ENERGIA (3 ó 4) :prendido - Disp. TEMPERAT. AIRE (1) :indica temperatura de aire actual - Ind. POT. CALEFACTOR (2) :TODO ENCENDIDO - Disp. TEMP. CONTROL (16) :34,0 °C - ALARMA ACUSTICA :SILENCIADA
+
+37
+
+# Página 31
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+4. Descripción del Modulo de control
+
+4-D-1..4 Potencia Calefactor
+
+Para verificar que en estas condiciones el Calefactor está entregando potencia y el sensor de Temperatura de Aire está funcionando, comprobar que la indicación del display de Temperatura de Aire va aumentando lentamente
+
+4-D-1.5 Variar Temperatura De Control
+
+Verificar que se puede variar la Temperatura de Control.
+
+4-D-1.6 Baterías de Ni-Cd
+
+Verificar la carga de las baterías auxiliares. Para ello, con la llave de encendido en la posición ON, desenchufar el equipo de su alimentación (línea o batería). La alarma de falla de potencia deberá sonar en forma clara y fuerte. Recordar que, en caso de tener el equipo conectado al módulo TR- 50 para la verificación de baterías Ni-Cd deberá desconectar el cable que vincula la incubadora con el TR-50.
+
+4-D-2 Problemas Si alguno de los resultados obtenidos no coincide con los aquí indicados se sugiere leer la SECCION 6 del presente manual.
+
+Si aún así no es posible solucionar los inconvenientes se recomienda llamar al SERVICIO TECNICO AUTORIZADO
+
+38 38
+
+# Página 32
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+5. INSTRUCCIONES DE OPERACION
+
+En la presente sección se detallan las instrucciones sugeridas para la operación de la incubadora de transporte MEDIX TR-200 . Los números que figuran entre paréntesis después del nombre de cada comando se refieren a la figura de la SECCION 4 – MODULO DE CONTROL Antes de comenzar a utilizar la Incubadora se recomienda especialmente tener en cuenta las advertencias que se detallan a continuación  :
+
+5-A Recomendaciones Importantes
+
+ADVERTENCIA Se requiere atención constante de personal médico calificado siempre que
+
+haya un paciente en la Incubadora, por dos razones: 1) Algunas situaciones de mal funcionamiento requieren acciones correctivas inmediatas. 2) Una alarma, o una combinación de alarmas no asegura advertencia total de alguno o de todos los casos de mal funcionamiento del sistema de la Incubadora. Una INCUBADORA DE TRANSPORTE debe ser usada sólo por personal entrenado apropiadamente y bajo la dirección de personal médico calificado e informado con los riesgos actualmente conocidos y los beneficios del uso de una INCUBADORA DE TRANSPORTE
+
+!  ADVERTENCIA La temperatura de control deben ser determinados por el médico en función
+
+del peso, edad gestacional y condiciones generales de paciente
+
+!  ADVERTENCIA ALIMENTACION DE ENERGIA: El cable de alimentación deberá conectarse a un tomacorriente apropiado con toma de tierra. No utilizar cables
+
+prolongadores ni fichas adaptadoras
+
+PRECAUCIÓN UBICACION: Evite la luz solar directa, las fuentes de energía radiante y las corrientes de aire. Estos factores pueden alterar el balance térmico del paciente y/o el funcionamiento normal del equipo e incluso generar situaciones de alarma
+
+39
+
+# Página 33
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+!  ADVERTENCIA OXIGENO: el uso de oxígeno incrementa el riesgo de incendio. No se debe incorporar a la INCUBADORA DE TRANSPORTE equipos auxiliares que
+
+pudieran producir chispas
+
+!  ADVERTENCIA Aún pequeñas cantidades de agentes inflamables tales como éter y alcohol
+
+dejados en la INCUBADORA DE TRANSPORTE pueden causar fuego en
+
+contacto con oxígeno. No utilice el equipo en presencia de anestésicos inflamables
+
+!  ADVERTENCIA Cuando se conectan al paciente equipos auxiliares (ej.: monitores, bombas
+
+infusoras, etc.) deberá asegurarse que estos equipos sean eléctricamente
+
+seguros
+
+!  ADVERTENCIA El suministro de oxigeno puede incrementar el nivel de ruido dentro del
+
+habitáculo de la incubadora de transporte
+
+!  ADVERTENCIA El accesorio COLCHON TIPO NIDO permite posicionar al bebé y fijarlo en su posición mediante cinturón de seguridad que limita los movimientos durante
+
+el transporte .
+
+5B Operación del equipo
+
+5.B.1 Conexión a la fuente de energía eléctrica La incubadora MEDIX TR-200 puede funcionar con corriente alterna (220/240V-50/60Hz ó 110/127V-50/60Hz) o con corriente continua de 12V (batería propia o batería del automóvil). Lo único a considerar para utilizar una fuente de energía u otra es usar el cable de alimentación correspondiente.
+
+5.B.2 Conexión para 220/240V-50/60Hz (110/127V-50/60Hz) Se utiliza el cable de alimentación con ficha convencional para enchufar en el tomacorriente de la pared
+
+40 40
+
+# Página 34
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 34
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P34_I0.png
+contexto: 
+```
+
+![Imagen página 34 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P34_I0.png)
+
+```metadata
+pagina: 34
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P34_I1.png
+contexto: 
+```
+
+![Imagen página 34 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P34_I1.png)
+
+```metadata
+pagina: 34
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P34_I2.png
+contexto: 
+```
+
+![Imagen página 34 - 2](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P34_I2.png)
+
+5.B.3 Conexión para 12VCC Se utiliza el cable de alimentación que posee conector para la batería del automóvil. El equipo también puede funcionar conectándose a su propio sistema de batería (opcional TR-50), utilizando el cable provisto para tal fin.
+
+NOTA La incubadora funciona con corriente alterna en caso que el cargador TR-50 vinculado a la incubadora esté conectado a la línea de corriente alterna y solamente conmutará automáticamente a modo batería en caso de desconexión del módulo TR-50 de la alimentación de corriente alterna.
+
+CABLES DE CONEXION A LA INCUBADORA TR-200
+
+NOTA: EL CABLE DE 220VAC PUEDE CONECTARSE DIRECTAMENTE A LA INCUBADORA
+
+ASIMISMO, LA INCUBADORA PUEDE UTILIZARSE CON 12VDC PROVENIENTES DE BATERIA DE AMBULANCIA INSTALANDO EL CABLE PROVISTO CON EL EQUIPO.
+
+5.B.4 Cambiando la Temperatura De Control
+
+Encender el equipo y el mismo comenzará a funcionar automáticamente con una Temperatura de Control de 34°C Ver la Figura del Panel Frontal en la Sección 4. El rango de Temperatura de Control para la incubadora de transporte TR-200 va desde 20°C hasta 38°C y la temperatura de control seleccionada se indica en el display TEMPERATURA DE
+
+41
+
+# Página 35
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+CONTROL (16) en el panel frontal. Recordar que la selección de la temperatura de control deberá ser hecha por personal médico especializado. Para cambiar la Temperatura de Control:
+
+1) Oprimir y mantener presionadas SIMULTANEAMENTE   las teclas CONTROL TEMP AIRE (14)
+
+e INCREMENTAR (15) para establecer una temperatura de control más alta que la actual.
+
+2) Oprimir y mantener presionadas SIMULTANEAMENTE  las teclas CONTROL TEMP AIRE (14)
+
+y DECREMENTAR (13) para establecer una temperatura de control más baja que la actual
+
+5.C Esponja Humidificadora Cuando se desee humidificar el aire que entra en el habitáculo debe humedecerse la esponja, que se encuentra debajo de la cuna .De acuerdo a la cantidad de agua que contenga la esponja, será mayor o menor la humidificación.
+
+!  ADVERTENCIA Para evitar la proliferación de gérmenes, debe utilizarse agua destilada y
+
+esterilizada
+
+PRECAUCIÓN Humedézcase la esponja fuera de la incubadora. Se debe evitar verter agua directamente en la incubadora pues se corre el riesgo de que fluya agua por el tubo de entrada de aire y afectar así el sistema de control
+
+5.D Oxigeno La incubadora tiene una entrada para oxígeno ubicada en el panel lateral izquierdo. Ver descripción en la Sección 4 de este manual.
+
+!  ADVERTENCIA Siempre que se suministre oxígeno al bebé se debe utilizar un monitor de
+
+concentración de oxígeno.
+
+5.E Filtro De Aire El filtro de aire se encuentra cubierto con una tapa en el lateral izquierdo de la incubadora. Este filtro debe reemplazarse cada tres meses o cuando se lo observe sucio y su duración dependerá del lugar de trabajo de la incubadora. Para cambiarlo debe retirarse la tapa, desatornillando los dos tornillos manuales que están a ambos lados de la misma
+
+!  ADVERTENCIA El equipo no funciona correctamente si las tapas del filtro de aire no están
+
+en su posición correcta
+
+42 42
+
+# Página 36
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+5.F Sugerencias a tener en Cuenta en Casos de Alarma
+
+Se presentan a continuación algunos procedimientos como guía para la solución de casos de alarma.
+
+5.F.1 Alarma De Falla Circuital
+
+Sugerencia: Verifique el normal funcionamiento del motor ventilador externo colocado próximo a la tapa de filtro. En caso que el motor ventilador externo esté detenido, es posible silenciar la alarma de falla circuital por 10 minutos apagando y volviendo a prender el equipo usando la llave principal de encendido. Al cabo de los 10 minutos, la alarma acústica volverá a activarse. LA INCUBADORA NO FUNCIONA NORMALMENTE EN ESTAS CONDICIONES. Si el motor está detenido llame al SERVICIO TECNICO AUTORIZADO.
+
+Si el motor ventilador externo está funcionando normalmente y aún sigue sonando la alarma, apague el equipo con la llave principal de encendido y vuélvalo a conectar al cabo de unos segundos, permitiendo así una reinicialización del microprocesador.
+
+Si la Incubadora restablece su operación normal, reajuste el valor de temperatura de control de aire deseada.
+
+En caso contrario, intente un nuevo apagado y posterior encendido.
+
+PRECAUCIÓN :
+
+Si la falla persiste (alarma falla circuital), llame al SERVICIO TECNICO AUTORIZADO .
+
+43
+
+# Página 37
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+5.F.2 Alarma De Falla De Energía
+
+Sugerencia: a) Verifique el estado del tomacorriente de línea b) Verifique si hay tensión en la línea c) Verifique y reemplace, si es necesario, los fusibles del equipo. d) Verifique batería – TR-50
+
+5.F.3 Alarma De Falla De Sensor
+
+Sugerencia : a) Si el display muestra Op , verificar primero si la temperatura dentro de la incubadora es mayor
+
+a 15°C. Si la temperatura es más baja que 15°C, dejar que la incubadora caliente. b) Si el display muestra Op  y la temperatura es mayor que 15°C, o si el display muestra Sh
+
+verificar que el sensor está conectado al módulo de control llamando al SERVICIO TECNICO AUTORIZADO
+
+5.F.4 Alarma De Temperatura de Aire Sugerencia: a) Verificar el estado del paciente y ajustar la temperatura de control de aire si fuera necesario b) Verificar las condiciones de trabajo del equipo: no colocarlo en corrientes de aire, cerca de
+
+ventanas, acondicionadores de aire, radiadores u otras fuentes de calor. Recordar que la temperatura ambiente de trabajo recomendada es entre los 20°C y los 30°C
+
+5.G Carro de transporte plegable – Carga y descarga en ambulancia
+
+El carro rodante TR-52 es de fácil accionamiento y para su operación segura necesita al menos dos personas sosteniendo los extremos
+
+La persona que sostiene el extremo izquierdo debe destrabar el carro. Para ello debe accionar las manijas provistas para tal fin mientras la otra persona sostiene el otro extremo del carro para evitar una caída brusca. Una vez destrabado, el carro se pliega automáticamente.
+
+Para volver el carro a su posición ambas personas tiran hacia arriba hasta que el carro accione automáticamente la traba.
+
+44 44
+
+# Página 38
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 38
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P38_I0.png
+contexto: 
+```
+
+![Imagen página 38 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P38_I0.png)
+
+```metadata
+pagina: 38
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P38_I1.png
+contexto: 
+```
+
+![Imagen página 38 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P38_I1.png)
+
+6. PROBLEMAS – SUS SOLUCIONES
+
+En la presente sección se ofrecen una serie de recomendaciones que pueden contribuir a agilizar la solución de problemas comunes .
+
+Alarmas
+
+Ante la activación de cualquier alarma lo primero que debe hacerse es controlar las condiciones en las que se encuentra el paciente. Luego de controlado el paciente, según el tipo de alarma de que se trate, se recomienda:
+
+ALARMA/DISPLAY POSIBLE CAUSA SOLUCION Temperatura De Aire La temperatura de Aire de la incubadora difiere en +1°C /
+
+-3°C de la Temperatura de Control preestablecida
+
+- Verificar el estado del paciente - Verificar que la temperatura de la sala esté entre 20 y 30°C - Controlar las condiciones de la sala, evitando colocar la Incubadora en zonas de corriente de aire, cerca de ventanas abiertas, acondicionadores de aire, estufas, etc. Oprima RESET(8) y se reestablecerá la operación según lo expresado en la SECCION 3 Falla de Sensor Se activa cuando el sensor de temperatura de aire (o su cable) se pone en cortocircuito, circuito abierto, o se desconecta
+
+- Verificar si el sensor está conectado a la Incubadora - Reconectar el sensor o reemplazarlo por otro en buen estado - Una vez solucionada la FALLA DE SENSOR oprimir RESET para continuar el tratamiento Falla de circuito La alarma se activa cuando se produce una alteración en la secuencia lógica del microprocesador que comanda al módulo de control
+
+La alarma también se activa si dejó de funcionar el motor ventilador externo. En este caso el display muestra Err005
+
+- Apagar el equipo accionando la LLAVE DE ENCENDIDO y volver a encenderlo accionando la misma llave. - Verificar que el motor ventilador externo esté funcionando como extractor - Si el equipo comienza a operar normalmente debe reajustarse la temperatura de control (al reiniciar su operación, la temperatura de control volvió a su valor primitivo, 34,0°C - En caso que vuelva a producirse una nueva alarma de FALLA DE CIRCUITO debe apagarse el equipo y llamar al SERVICIO TECNICO AUTORIZADO
+
+45
+
+# Página 39
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 39
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P39_I0.png
+contexto: 
+```
+
+![Imagen página 39 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P39_I0.png)
+
+ALARMA/DISPLAY POSIBLE CAUSA SOLUCION Falla de Energía Esta alarma se activa cuando se produce una interrupción en el suministro de energía
+
+- Verificar el estado del tomacorriente - Verificar si hay tensión en la red de alimentación de energía - Verificar los fusibles en el módulo de comando - Verificar el estado de las baterías en caso de trabajar en modo batería.
+
+Códigos de ERROR en Display Err 001 a Err 009
+
+Falla de Hardware Apagar la incubadora y después
+
+de 5 segundos volver a encenderla usando la llave de encendido principal. Si el código de error en el display persiste, llame al SERVICIO TECNICO AUTORIZADO
+
+Err 005 El motor ventilador externo está fallando
+
+- Apagar la incubadora y volverla a encender luego de 5 segundos. Esta operación le dará 10 minutos de funcionamiento sin motor ventilador externo. Transcurridos los 10 minutos, la alarma acústica volverá a activarse - Llamar al SERVICIO TECNICO AUTORIZADO Display Lo
+
+Baja temperatura de aire La temperatura dentro de la incubadora está entre 15°C y 18°C (fuera del rango de medición)
+
+- Dejar calentar la incubadora. Después de 20 minutos, si el display aún muestra Lo, llamar al SERVICIO TECNICO AUTORIZADO Display Hi
+
+Alta temperatura de aire. La temperatura de aire dentro de la incubadora está fuera del rango de medición (>42°C)
+
+- Apagar la incubadora - Abrir todas las puertas de la incubadora para permitir el enfriado. - Volver a encender la incubadora Si el problema persiste, llamar al SERVICIO TECNICO AUTORIZADO Display Op
+
+El sensor de temperatura de aire está abierto , o La temperatura de aire dentro de la incubadora es menor a 15°C
+
+- Verificar la temperatura dentro de la incubadora utilizando un termómetro auxiliar - Si la temperatura medida es menor a 15°C, prender la incubadora y esperar hasta que la temperatura suba - En caso que la temperatura interior sea superior a 15°C y siga sonando la alarma, llamar al SERVICIO TECNICO AUTORIZADO -
+
+46 46
+
+# Página 40
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 40
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P40_I0.png
+contexto: 
+```
+
+![Imagen página 40 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P40_I0.png)
+
+ALARMA/DISPLAY POSIBLE CAUSA SOLUCION Display Sh
+
+El sensor de aire está en cortocircuito
+
+- Llamar al SERVICIO TECNICO AUTORIZADO
+
+Display Aju
+
+El equipo entró accidentalmente en modo ajuste de calibración
+
+Apagar el equipo unos segundos y volver a encenderlo utilizando la llave principal de encendido. Si la falla persiste, llamar al SERVICIO TECNICO AUTORIZADO.
+
+47
+
+# Página 41
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 41
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P41_I0.png
+contexto: 
+```
+
+![Imagen página 41 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P41_I0.png)
+
+```metadata
+pagina: 41
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P41_I1.png
+contexto: 
+```
+
+![Imagen página 41 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P41_I1.png)
+
+```metadata
+pagina: 41
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P41_I2.png
+contexto: 
+```
+
+![Imagen página 41 - 2](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P41_I2.png)
+
+7. HIGIENE Y DESINFECCION
+
+7-A Introducción
+
+La higiene y desinfección son de fundamental importancia para brindar al paciente un tratamiento seguro y apropiado.
+
+NOTA La Incubadora de transporte MEDIX TR-200 está diseñada y construida para facilitar su
+
+higiene y desinfección. Todos los lugares asociados con el ámbito del paciente son
+
+fácilmente accesibles y sus superficies de fácil limpieza.
+
+7-B Periodicidad
+
+Debe procederse a una limpieza y desinfección integral cada vez que se cambia de paciente, o al menos una vez por semana.
+
+7-C Productos
+
+7-C-1 Productos Recomendados
+
+Para la limpieza se recomienda el uso de detergentes neutros e inodoros. Para la desinfección productos a base de amonio cuaternario.
+
+ PRECAUCIÓN : Los productos a utilizar deberán ser de reconocida calidad y deberán emplearse siguiendo
+
+las instrucciones del fabricante de los mismos .
+
+7-C-2 Productos Desaconsejados
+
+Se recomienda  NO  utilizar Io siguiente :
+
+- Solventes derivados del petróleo. - Alcohol, acetona o solventes orgánicos para limpiar las partes plásticas. - No esterilizar por autoclave o gas ninguna parte del equipo.
+
+7-D Procedimiento
+
+Antes de comenzar la limpieza, apagar la Incubadora y desconectarla de la red de alimentación de energía.
+
+49
+
+# Página 42
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+7-D-1 Desarmado
+
+- Retirar la capota de acrílico, que se quita junto con la doble pared, destrabando los soportes laterales.
+
+- Retirar la cuna de acrílico y la chapa separadora para descubrir el calefactor.
+
+7-D-2 Limpieza
+
+Limpiar toda la Incubadora, especialmente aquellas partes que están en más intimo contacto con el paciente, con un paño embebido en detergente neutro e inodoro.
+
+7-D-3 Secado
+
+Secar todas las superficies recién limpiadas con un paño limpio y seco, o con papel toalla.
+
+7-D-4 Desinfección
+
+Desinfectar, con un paño embebido en desinfectante a base de amonio cuaternario, toda la Incubadora, y  muy especialmente aquellas partes que estén en más intimo contacto con el paciente
+
+7-D-5 Secado
+
+Secar todas las superficies recién desinfectadas con un paño limpio y seco, o con papel toalla.
+
+7-D-6 Colchón
+
+Al realizar la limpieza y desinfección del colchón (con los mismos métodos y productos) evaluar la posibilidad, según su estado, de reemplazarlo por uno nuevo.
+
+7-D-7 Armado
+
+Proceder en el orden inverso al seguido durante el desarmado.
+
+7-E Prueba De Funcionamiento
+
+Una vez concluida la limpieza y desinfección de la Incubadora se recomienda, luego de verificar que todo el equipo está seco y limpio, conectarlo a la red de alimentación y proceder a realizar una prueba de funcionamiento, tal como se detalla en la SECCION 4-D.
+
+50 50
+
+# Página 43
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 43
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P43_I0.png
+contexto: 
+```
+
+![Imagen página 43 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P43_I0.png)
+
+```metadata
+pagina: 43
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P43_I1.png
+contexto: 
+```
+
+![Imagen página 43 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P43_I1.png)
+
+8. SERVICIO TECNICO
+
+ADVERTENCIA LA CALIBRACION Y REPARACION DEL GRUPO MOTOR SOLO DEBE SER REALIZADA POR PERSONAL TECNICO CALIFICADO
+
+8.A Descripción de las plaquetas electrónicas Ver diagramas y listados en la SECCION 9 de este manual
+
+8.B Calibración del Grupo Motor
+
+La única calibración electrónica que presenta el equipo, corresponde a la alarma de sobretemperatura (>39°C) Dicha calibración se debe realizar o verificar en intervalos de tiempo no mayores de 6 meses, o cada vez que se realiza alguna reparación del equipo:
+
+a) Apagar el equipo usando la llave principal . Oprimir y mantener oprimidas
+
+SIMULTANEAMENTE las teclas RESET (11), TEST ALARMA (12) y CONTROL TEMP AIRE (14). Encender el equipo sin soltar las tres teclas mencionadas y mantenerlas oprimidas durante algunos segundos. Al soltar las teclas el display deberá indicar  Aju
+
+b) En estas condiciones, el calefactor recibirá máxima potencia acelerando el calentamiento de la incubadora hasta 39,4°C. En ese momento, comenzará a sonar la alarma acústica de sobretemperatura (>39°C). Verificar que la alarma se apaga cuando la temperatura alcanza los 39,5°C y la alarma se vuelve a activar entre los 39,6°C y 39,7°C
+
+c) En caso que el paso anterior no se verifique, ajustar el potenciómetro de ajuste de alarma 39°C
+
+que se encuentra en la plaqueta del microprocesador (en sentido horario disminuye el límite y en sentido antihorario lo aumenta). Apagar el equipo y dejar enfriar. Repetir el paso b) y verificar.
+
+8.C. CONEXIONADO DEL MOTOR:
+
+ADVERTENCIA MUY IMPORTANTE
+
+• NUNCA CONECTAR EL MOTOR CON LA INCUBADORA ENCENDIDA.
+
+• VERIFICAR QUE LOS TRES CABLES DEL MOTOR ESTEN FIRMEMENTE CONECTADOS A LA PLAQUETA DE POTENCIA. VERIFICAR LOS CABLES DE LOS CONECTORES.
+
+EN CASO DE NO SEGUIR LAS INSTRUCCIONES ARRIBA MENCIONADAS ES ALTAMENTE PROBABLE QUE SE QUEMEN LOS DIODOS ZENER PROVOCANDO QUE EL MOTOR SE QUEME. SI UNO DE LOS CABLES NEGROS DEL MOTOR NO ESTÁ CORRECTAMENTE CONECTADO Y LA INCUBADORA ESTÁ ENCENDIDA O SE ENCIENDE EN ESE MOMENTO, EL DIODO ZENER SE QUEMA.
+
+51
+
+# Página 44
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 44
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P44_I0.png
+contexto: 
+```
+
+![Imagen página 44 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P44_I0.png)
+
+```metadata
+pagina: 44
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P44_I1.png
+contexto: 
+```
+
+![Imagen página 44 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P44_I1.png)
+
+8. Servicio Técnico
+
+8.C Indicación del Diagnóstico de Fallas
+
+Las fallas diagnosticadas por software son exhibidas en los displays de TEMP.DE AIRE Y TEMP.DE CONTROL presentados en la siguiente forma:
+
+CODIFICACION DESCRIPCION Err 001 ERROR, PATRON DE 25°C FUERA DE RANGO Err 002 ERROR, PATRON DE 40°C FUERA DE RANGO Err 003 ERROR, EN CHEQUEO EPROM Err 004 ERRO, EN CHEQUEO RAM Err 005 ERROR, MOTOR EXTRACTOR Err 006 ERROR, PATRON DE 25°C EN CORTO Err 007 ERROR, PATRON DE 25°C ABIERTO Err 008 ERROR, PATRON DE 40°C EN CORTO Err 009 ERROR, PATRON DE 40°C ABIERTO Hi TEMPERATURA ALTA FUERA DE RANGO ( >42°C) Lo TEMPERATURA BAJA – ( ENTRE 15°C Y 18°C ) Op SENSOR DE AIRE ABIERTO, ó TEMPERATURA DE AIRE EN LA INCUBADORA MENOR A 15°C Sh SENSOR DE AIRE EN CORTO
+
+52 52
+
+# Página 45
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 45
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P45_I0.png
+contexto: 
+```
+
+![Imagen página 45 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P45_I0.png)
+
+9.Planos y Listados
+
+Conjunto Filtro
+
+CONJUNTO FILTRO
+
+ITEM CODIGO DESCRIPCION 1 13135 A TAPA FILTRO TR-200 2 30405 B NIPLE BSP 1/8” A MANGUERA ¼” 3 25259 A CUERPO DOSIFICADOR DE OXIGENO 4 31813 B PERILLA DE FIJACION 5 66001 D ANILLO DE SEGURIDAD SEEGER 6 26414 A DIFUSOR DE AIRE 7 13136 A CONJUNTO FILTRO ENCAPSULADO 8 20615 A ALOJAMIENTO FILTRO 9 24456 B CARCAZA CARACOL 10 40432 AIRFLOW SWITCH WARREN 11 49384 A TURBINA EJE Φ 6 12 30318 MOTOR TR-200 – 12VDC
+
+55
+
+# Página 46
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 46
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P46_I0.png
+contexto: 
+```
+
+![Imagen página 46 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P46_I0.png)
+
+```metadata
+pagina: 46
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P46_I1.png
+contexto: 
+```
+
+![Imagen página 46 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P46_I1.png)
+
+9.Planos y Listados
+
+Conjunto Capota
+
+CONJUNTO CAPOTA ITEM CODIGO DESCRIPCION 1 11503 A CAPOTA TR-200 (acrílico solamente) 2 32826 A PUERTA PCI (acrílico solamente) 3 28461 A GUIA BISAGRA 4 36024 A SUPLEMENTO BISAGRA ACRILICO 5 26626 A EJE SOPORTE ACRILICO LARGO 6 22222 A BISAGRA PARA PUERTA DOBLE PARED (DERECHA) 7 22223 A BISAGRA PARA PUERTA DOBLE PARED (IZQUIERDA) 8 25408 B CUERPO GIRATORIO PORTILLO IRIS 9 20103 A MANGA PORTILLO IRIS 10 22403 A BOTON SUJETA CAPOTA 11 21002 E ARO SUJECION IRIS 12 25560 B PASACANULAS CRISTAL 13 30007 C MANIJA CAPOTA 14 12116 A BISAGRA PORTILLO CONJUNTO 15 12113 A TRABA PORTILLO CONJUNTO 16 32823 A PORTILLO ACRILICO 17 20157 A MANGA PORTILLO OVAL 18 23450 A Burlete portillo 19 25407 A Cuerpo principal portillo iris
+
+56 56
+
+# Página 47
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 47
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P47_I0.png
+contexto: 
+```
+
+![Imagen página 47 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P47_I0.png)
+
+```metadata
+pagina: 47
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P47_I1.png
+contexto: 
+```
+
+![Imagen página 47 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P47_I1.png)
+
+9.Planos y Listados
+
+Conjunto Doble pared
+
+CONJUNTO DOBLE PARED
+
+ITEM CODIGO DESCRIPCION 1 24115 B PUERTA DOBLE PARED 2 29236 C LATERAL DOBLE PARED IZQUIERDA 3 29235 C LATERAL DOBLE PARED DERECHA 4 24108 B CUERPO DOBLE PARED 5 22404 B TRABA DOBLE PARED (x 6) – BOTON DE ENGANCHE
+
+57
+
+# Página 48
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 48
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P48_I0.png
+contexto: 
+```
+
+![Imagen página 48 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P48_I0.png)
+
+```metadata
+pagina: 48
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P48_I1.png
+contexto: 
+```
+
+![Imagen página 48 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P48_I1.png)
+
+9.Planos y Listados
+
+Conjunto Base
+
+CONJUNTO BASE ITEM CODIGO DESCRIPCION 1 13119 A COLCHON 2 39015 E CUNA DE ACRILICO 3 21248 A BANDEJA PINTADA
+
+4 TR-54 71628 LUZ DE EXAMEN COMPLETA LAMPARA HALOGENA 5 36597 B TAPA RADIANTE 6 37044 A TRABA METALICA (colocar espagueti D:3mm, #49026) 7 25260 B ESPONJA HUMIDIFICADORA 8 13134 A RADIANTE ARMADO 9 24803 B CONDUCTO DE AIRE 10 45324 B SENSOR TEMPERATURA DE AIRE
+
+58 58
+
+# Página 49
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 49
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P49_I0.png
+contexto: 
+```
+
+![Imagen página 49 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P49_I0.png)
+
+```metadata
+pagina: 49
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P49_I1.png
+contexto: 
+```
+
+![Imagen página 49 - 1](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P49_I1.png)
+
+9.Planos y Listados
+
+Conjunto tapa lateral
+
+CONJUNTO TAPA LATERAL
+
+ITEM CODIGO DESCRIPCION 1 47464 Interruptor luz de examen 2 48282 A Porta fusible 20x5 3 45140 Cable de alimentación (220VCA) 45326 A Cable de alimentación (12VCC) 4 47465 Llave de encendido principal, 4 polos 5 48380 A Porta fusible 30x6
+
+59
+
+# Página 50
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 50
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P50_I0.png
+contexto: 
+```
+
+![Imagen página 50 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P50_I0.png)
+
+9.Planos y Listados
+
+60 60
+
+# Página 51
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 51
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P51_I0.png
+contexto: 
+```
+
+![Imagen página 51 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P51_I0.png)
+
+9.Planos y Listados
+
+61
+
+# Página 52
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 52
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P52_I0.png
+contexto: 
+```
+
+![Imagen página 52 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P52_I0.png)
+
+9.Planos y Listados
+
+62 62
+
+# Página 53
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 53
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P53_I0.png
+contexto: 
+```
+
+![Imagen página 53 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P53_I0.png)
+
+9.Planos y Listados
+
+63
+
+# Página 54
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 54
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P54_I0.png
+contexto: 
+```
+
+![Imagen página 54 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P54_I0.png)
+
+9.Planos y Listados
+
+64 64
+
+# Página 55
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 55
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P55_I0.png
+contexto: 
+```
+
+![Imagen página 55 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P55_I0.png)
+
+9.Planos y Listados
+
+65
+
+# Página 56
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 56
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P56_I0.png
+contexto: 
+```
+
+![Imagen página 56 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P56_I0.png)
+
+9.Planos y Listados
+
+66 66
+
+# Página 57
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 57
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P57_I0.png
+contexto: 
+```
+
+![Imagen página 57 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P57_I0.png)
+
+9.Planos y Listados
+
+67
+
+# Página 58
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 58
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P58_I0.png
+contexto: 
+```
+
+![Imagen página 58 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P58_I0.png)
+
+9.Planos y Listados
+
+68 68
+
+# Página 59
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 59
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P59_I0.png
+contexto: 
+```
+
+![Imagen página 59 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P59_I0.png)
+
+9.Planos y Listados
+
+69
+
+# Página 60
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 60
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P60_I0.png
+contexto: 
+```
+
+![Imagen página 60 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P60_I0.png)
+
+9.Planos y Listados
+
+70 70
+
+# Página 61
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 61
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P61_I0.png
+contexto: 
+```
+
+![Imagen página 61 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P61_I0.png)
+
+9.Planos y Listados
+
+71
+
+# Página 62
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 62
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P62_I0.png
+contexto: 
+```
+
+![Imagen página 62 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P62_I0.png)
+
+9.Planos y Listados
+
+72 72
+
+# Página 63
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+PLAQUETA 40180
+
+CANTIDAD REFERENCIA TIPO VALOR CODIGO 1 CN2 BORNERA 12Vac 46129 1 CN7 BORNERA MOTOR 46129 1 CN1 BORNERA 12Vcc 46130 1 CN5 BORNERA CALEFACTOR 46130 1 CN4 BORNERA LUZ EXAMEN 46130 2 C3,C4 CAPACITOR .1uF 41038 1 C5 CAPACITOR 22 nF 41044 2 C1,C2 CAPACITOR ELECTROLITICO 4700 uF 25V 41016 1 CN3 CONECTOR CONN04 41555 1 CN6 CONECTOR PW8S 41561 1 D3 DIODO 1N4007 42404 2 DZ1,DZ2 DIODO ZENER 47 V 1W 42447 2 D1,D2 DIODOS MBR2035CT 42448 1 DIS1 DISIPADOR ZD-21 75 mm 26413A 1 U2 INTEGRADO CD4047 40422 1 U1 REGULADOR LM317T 40424 1 K1 RELAY ISKRA_TRM3013 43000 2 R5,R6 RESISTENCIA 47 43100 2 R1,R3 RESISTENCIA 1 K 43101 2 R8,R9 RESISTENCIA 10 K 43114 1 R2 RESISTENCIA 47 K 43126 1 R4 RESISTENCIA 470 43183 1 R7 RESISTENCIA 1% 237 K 1% 43743 1 R11 RESISTENCIA 1% 220 1% 43757 1 R10 RESISTENCIA 1% 1200 1% 43768 2 Q2,Q3 TRANSISTOR TIP-122 44211 1 Q4 TRANSISTOR BC337-25 44212 1 Q1 TRANSISTOR IRFZ46N 44222 1 40759 CIRCUITO IMPRESO REGULADORES 40759 1 FT1 POLYSWITCH RUE300 47249
+
+73
+
+# Página 64
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+9.Planos y Listados
+
+PLAQUETAS 40181 Y 40182
+
+CANT. REFERENCIA TIPO VALOR CODIGO
+
+17 C3,C5aC7,C13aC15,C21a23,C28,C30aC35 CAPACITOR .1uF 41038 1 C11 CAPACITOR 33 nF 41040 1 C17 CAPACITOR 4.7 nF 41041 3 C10,C18,C19 CAPACITOR 10 nF 41042 1 C12 CAPACITOR 1 nF 41082 2 C8,C9 CAPACITOR 22 pF 41087 4 C20,C24,C27,C29 CAPACITOR ELECTROLITICO 10 uF 41083 2 C1,C2 CAPACITOR ELECTROLITICO 100uF 16V 41084 1 C4 CAPACITOR ELECTROLITICO 220uF 16V 41085 1 C25 CAPACITOR ELECTROLITICO 4.7 uF 41086 1 C26 CAPACITOR ELECTROLITICO 2.2 uF 41088 2 CN2,CN3 CONECTOR WF4S 41452 1 CN4 CONECTOR FPC8S 41560 1 CN1 CONECTOR PW8S 41561 1 CN5 CONECTOR WF3S 41562 1 CN7 CONECTOR CONN08 71813 1 X1 CRISTAL XTAL3 44515 4 D2,D3,D13,D14 DIODO 1N4148 42401 1 D1 DIODO 1N4004 42411 1 DZ2 DIODO ZENER 4.7 V 0.5W 42402 1 DZ1 DIODO ZENER 5.6 V 0.5W 42405 3 DP4,DP5,DP6 DISPLAY SC52-11GWA 42608 3 DP1,DP2,DP3 DISPLAY SC08-11SRWA 42610 1 U5 INTEGRADO LM334Z 40436 1 U9 INTEGRADO CD4093 40444 1 U3 INTEGRADO 4N26 40447 1 U10 INTEGRADO CD4081 40471 1 U7 INTEGRADO MAX7221CNG 40483 1 U13 INTEGRADO MC33202 40484 1 U4 INTEGRADO LM331 40486 1 U6 INTEGRADO CD4052 40488 1 U12 INTEGRADO DS1820 44012 1 U8 INTEGRADO LM339 40415 6 D4,D5,D6,D7,D8,D9 LED LED_ROJO 42439 2 D10,D11 LED L53GT[VERDE] 42440 1 D12 LED ARRAY DC-10GWA 42446 1 U11 MICROPROCESADOR HC908GP32CP 40485 1 ADJ1 PRESET 500 42935 1 U1 REGULADOR LM7805 40426 1 U2 REGULADOR LM78L05 40487 9 R41,R42,R43,R44,R45,R46,R47,R60,R83 RESISTENCIA 47 43100 3 R24,R63,R64 RESISTENCIA 1 K 43101
+
+74 74
+
+# Página 65
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+9.Planos y Listados
+
+CANT. REFERENCIA TIPO VALOR CODIGO
+
+3 R2,R7,R18 RESISTENCIA 4.7 K 43103 8 R12,R13,R20,R56,R67,R74,R81,R82 RESISTENCIA 100 K 43105 3 R48,R49,R69 RESISTENCIA 100 43107 3 R29,R61,R71 RESISTENCIA 2.2 K 43112 1 R25 RESISTENCIA 6.8 K 43113
+
+19 R1,R3,R11,R14aR17,R23,R32,R33,R37aR40,R55,R65,R66, R75,R77 RESISTENCIA 10 K 43114 1 R54 RESISTENCIA 1 M 43122 5 R6,R8,R62,R73,R78 RESISTENCIA 47 K 43126 1 R10 RESISTENCIA 10 M 43133 1 R4 RESISTENCIA 390 43154 1 R68 RESISTENCIA 270 K 43166 1 R9 RESISTENCIA 330 K 43167 3 R57,R58,R59 RESISTENCIA 270 43168 1 R76 RESISTENCIA 470 43183 2 R70,R72 RESISTENCIA 2.2 M 43187 1 R5 RESISTENCIA 33 1/2W 43193 1 R19 RESISTENCIA 680 43201 1 R26 RESISTENCIA 0.1% 5327 0.1% 43732 1 R27 RESISTENCIA 0.1% 10 K 0.1% 43733 1 R80 RESISTENCIA 1% 100 K 1% 43716 1 R53 RESISTENCIA 1% 10 K 1% 43724 3 R28,R50,R51 RESISTENCIA 1% 15 K 1% 43725 1 R36 RESISTENCIA 1% 11 K 1% 43729 3 R22,R30,R31 RESISTENCIA 1% 20 K 1% 43748 1 R79 RESISTENCIA 1% 42.2 K 1% 43759 1 R52 RESISTENCIA 1% 15.4 K 1% 43765 1 R21 RESISTENCIA 1% 12 K 1% 43766 1 R34 RESISTENCIA 1% 6.8 K 1% 43767 1 R35 RESISTENCIA 1% 1200 1% 43768 8 TP1,TP2,TP3,TP4,TP5,TP6,TP7,TP8 TEST POINT TP 71813 2 Q2,Q5 TRANSISTOR BC337 44212 4 Q1,Q3,Q4,Q6 TRANSISTOR BC327 44213 1 40760 CIRCUITO IMPRESO FRENTE 40760
+
+1 40761 CIRCUITO IMPRESO REGULADORES 40761
+
+75
+
+# Página 66
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+10. INSTRUCCIONES PARA SOLICITAR REPUESTOS Y SERVICIO TECNICO
+
+A efectos de eliminar inconvenientes en el suministro de repuestos a nuestros estimados clientes y agentes, les indicamos a continuación tres puntos básicos a seguir para la correcta solicitud de los mismos:
+
+a) Observe en la placa correspondiente el No. de Serie del equipo
+
+b) Ubique la pieza a solicitar en el conjunto correspondiente o cualquier otro sub-conjunto en los
+
+que está dividido este CATALOGO DE REPUESTOS; luego de localizar dicha pieza en la ilustración, retenga el No. de item, y de acuerdo a éste, observe en el listado el No. de Código. Tome nota del mismo y de su correspondiente denominación
+
+Verifique qué cantidad de piezas va a solicitar
+
+Con los datos antedichos, o sea: No.de Serie, No.de Código, Denominación y Cantidad del mismo, dirija su pedido a nuestra fábrica o a nuestra Distribuidora. A efectos de acelerar el trámite de requisición de repuestos se aconseja utilizar nuestro No.de FAX
+
+c) Mencione con claridad, nombre y lugar donde debe remitirse el o los repuestos, indicando
+
+empresa y medio de transporte para su despacho a:
+
+medix i.c.s.a.
+
+FABRICA, VENTAS , ADMINISTRACION Y SERVICIO TECNICO
+
+Calle 89 Jóse Arias 293 TEL.: +54-11-4754 5555 (1672) Villa Lynch - San Martín FAX: +54-11-4754 1713 Buenos Aires e-mail: medix@medix.com.ar ARGENTINA http://www.medix.com.ar
+
+76
+
+# Página 67
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+Anexo 1: Cargador automático de batería modelo TR-50
+
+A.ESPECIFICACIONES TECNICAS
+
+a) BATERIA De plomo ácido con electrolítico sólido gelatinoso – Excenta de mantenimiento. Completamente hermética – Recargable – Involcable b) TENSION 12 VCC (nominal) c) CAPACIDAD 24 Ah d) METODO DE CARGA Cargador automático de doble modo: uso cíclico y mantenimiento. El cargador opera cuando está conectado a la red principal de alimentación e) TIEMPO DE CARGA 10 horas en carga rápida ( 75% de la carga) f) ALIMENTACION EXTERNA 220 V / 240 V CA – 50/60 Hz
+
+110V – 120 V CA – 50/60 Hz (opcional) g) CONSUMO Máximo: 40W h) INDICADORES
+
+1) “INCUBADORA CONECTADA”
+
+2) “CARGA”
+
+3) “BAJA BATERIA”
+
+4) “BATERIA CARGADA”
+
+Se ilumina cuando la incubadora en uso se conecta exclusivamente al cargador de batería.
+
+Se ilumina cuando el cargador de batería está conectado a la red de alimentación principal.
+
+Se ilumina cuando la tensión de la batería es inferior a 10,4V y queda fijo hasta que se conecte el cargador a la tensión de línea.
+
+Se ilumina al final del ciclo de carga rápida
+
+i) FUSIBLES 1) 220V/240 VCA – 2 x 0.5 A (interno 2) 110V/120 VCA – 2 x 1 A (interno) 3) Salida 12 VCC – 8A j) COMMANDOS Reset alarma
+
+77
+
+# Página 68
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 68
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P68_I0.png
+contexto: 
+```
+
+![Imagen página 68 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P68_I0.png)
+
+B.DESCRIPCION DE FUNCIONAMIENTO DEL CIRCUITO ELECTRONICO
+
+A efectos de simplificar la explicación se ilustra el diagrama de bloques del CARGADOR AUTOMATICO DE BATERIA (Figura 2.1)
+
+El transformador de alimentación TI1 se puede configurar en el lado del primario para funcionar con 220/240VCA-50/60Hz ó 110/120VCA-50/60Hz (opcional)
+
+La salida del mismo tiene un valor aproximado de 16V y alimenta al rectificador (D5-D6) y filtro (C4) del sistema electrónico de control y al rectificador (D1-D4) y filtro (C1) de potencia. La tensión rectificada por D5-D6 es luego regulada por U6 a un valor de 12V.
+
+Para alnalizar en detalle el funcionamiento de las restantes etapas del cargador podemos considerar dos modos distintos de operación del equipo:
+
+(a) Cargador conectado a la red de alimentación de C.A. (b) Cargador desconectado de la red de alimentación de C.A.
+
+En el primer caso (a) el detector de cargador enchufado entrega un “1” y la lógica de control desconecta la batería del CONECTOR DE LA INCUBADORA a través de la llave electrónica (Q2) (La incubadora conectada al cargador no recibe energía de la batería, sino directamente de la tensión de línea) y la batería recibe corriente a través del regulador (U5), en un primer momento 2.25A y luego que la batería alcanza 14.4V comienza un ciclo de carga proporcional para mantenimiento.
+
+78 78
+
+# Página 69
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 69
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P69_I0.png
+contexto: 
+```
+
+![Imagen página 69 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P69_I0.png)
+
+En el segundo caso (b) el detector de cargador enchufado entrega un “0” y.la lógica de control conecta la batería al conector de incubadora a través de la llave electrónica (Q2).
+
+Cuando la tensión de la batería baja hasta 10.4V, la lógica de control dispara la alarma sonora y enciende el led rojo de baja batería, y después de 1 minuto (o al presionar el pulsador) corta la alarma sonora y la llave electrónica (Q2) evitando que la batería se siga descargando.
+
+Figura 2.1: Diagrama de bloques TR-50C
+
+79
+
+# Página 70
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+C.CALIBRACION
+
+El circuito electrónico no presenta ningún preset de calibración lo cual elimina la necesidad de ajustes periódicos..
+
+C.1 MANTENIMIENTO
+
+Las características especiales de la batería de Gel utilizada permiten una operación segura del equipo SIN MANTENIMIENTO EXTERNO.
+
+No obstante se recomiendo mantener en carga la batería la mayor cantidad de tiempo posible, conectando para ello el cargador automático a la red. La electrónica del cargador regulará la cantidad de corriente de carga en función del estado de la batería.
+
+IMPORTANTE Si el cargador no se utiliza en forma permanente se debe proceder a ciclar la batería cada 30
+
+días (descarga y carga)
+
+80 80
+
+# Página 71
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+D. LISTADOS Y PLANOS
+
+COMPONENTES DEL CARGADOR DE BATERIA TR50C
+
+Item CODIGO Cant DESCRIPCION REFERENCIA 1 41431 2 Carcaza plástico para pala hembra 2 41442 1 Carcaza plástico 3 41544 1 Conector Berg macho 3 posiciones 4 41552 1 Conector hembra paso 3.96 3 vías p/ 0.5mm 2 5 41559 2 Conector hembra paso 3.96 3 vías p/1mm 2 6 47921 4 Terminal 7 47927B 2 Pin hembra para conector Berg macho 8 49147 6 Terminal 9 40168A 1 Plaqueta TR50C (con componentes) 10 40169A 1 Plaqueta bornera 2 fuses 220V(con componentes) 11 41426 1 CN Naza hembra para chasis 12 41430 1 CN Naza macho para chasis 13 42412 1 Led verde 14 42420 1 Neon AC externo 15 42442 1 Led LEL53SRD/G 16 42443 1 Led LEL53YD 17 42163 1 R 560ohms 18 48764 1 Pulsador 19 49267 1 Trafo 220 o 110 V 5A 20 49649 1 Batería 12V 24Ah 21 52051A 1 Tornillo 1/8 x 3/8 c/fresada 22 52054B 11 Tornillo c/fresada 1/8 1/8 x ¼ AC cincado 23 53200A 6 Tornillo 5/32 c/fresada 24 54058A 8 Tornillo 1/8 x 3/16 25 55769K 14 Tornillo Parker 26 58400A 2 Tornillo ¼ x 1 27 60415A 4 Tuerca hexagonal 1/8 latón niquelado 28 60445B 6 Tuerca hexagonal 5/32 acero cincado 29 67200H 4 Arandela Grover 30 40755A 4 Circuito impreso bornera 2 fuses 220V 220V 31 48284 2 Porta fusible para plaqueta 32 71826 0.25 Postes premontados rectos paso 3.96 x 24vías 33 26412A 1 Disipador terminado DIS1 34 40415 1 CI LM339 U1 35 40416 1 CI 14013 U4 36 40442 1 CI 14001 U3 37 40445 1 CI 14541 U2 38 40480 1 CI LM350T U5 39 40481 1 CI LM78L12 U6 40 40482 1 CI LM385Z-2.5 D7 41 40754A 1 Circuito impreso cargador de batería TR50C 40754A 42 41003 2 C 100 uF 25V C4, C11 43 41016 1 C 4700 uF 25V C1
+
+81
+
+# Página 72
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+Item CODIGO Cant DESCRIPCION REFERENCIA 44 41032 1 C 220 uF 25V C9 45 41035 1 C 10uF 25V C3 46 41038 1 C 100 nF C7 47 41042 3 C 10nF C2,C12,C13 48 41044 1 C 22nF C6 49 41047 2 C 47nF C8,C10 50 41081 1 C 15nF POL.MET. C5 51 41452 1 Conector Molex recto 4 contacts paso 2.54 CN1 52 41543 1 Conector Berg hembra 3 posiciones 53 41558 6 Terminal pala-macho CN3,CN4 54 42404 4 D 1N4004 D5,D6,D8,D9 55 42410 1 D 12A D10 56 42418 4 D 1N5404 D1,D2,D3,D4 57 43102 1 R 1.2K R26 58 43103 1 R 4.7K R25 59 43105 3 R 100 K R8,R9,R17 60 43107 1 R 100ohms R29 61 43109 1 R470K R19 62 43111 1 R120K R16 63 43114 2 R 10K R22,R24 64 43126 4 R 47K R6,R11,R14,R27 65 43133 2 R 10M R20,R21 66 43160 1 R 33K R23 67 43167 1 R 330K R7 68 43173 1 R 56K R15 69 43174 1 R 150K R18 70 43216 1 R 18K R3 71 43217 1 R 0.56 ohms 4W R1 72 43721 1 R 75K 1% R10 73 43725 1 R 15K 1% R11 74 43743 1 R 237K 1% R12 75 43757 1 R 220 ohms 1% R5 76 43758 1 R 2.43K 1% R4 77 43762 1 R 71.5K 1% R13 78 44212 1 Trans. BC337 Q1 79 44224 1 IRF4905 Q2 80 47682 1 Buzzer SBT-24 BZ1 81 47926B 2 Pin macho para conector Berg hembra 82 54205A 2 Tornillo 5/32 83 64200B 2 Arandela 84 71826 0.125 Postes premontados rectos paso 3.96 x 24vías
+
+82 82
+
+# Página 73
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+```metadata
+pagina: 73
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P73_I0.png
+contexto: 
+```
+
+![Imagen página 73 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P73_I0.png)
+
+83
+
+# Página 74
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+84 84
+
+```metadata
+pagina: 74
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P74_I0.png
+contexto: 
+```
+
+![Imagen página 74 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P74_I0.png)
+
+# Página 75
+
+**Equipo:** Incubadora de Transporte MEDIX TR 200
+
+85
+
+```metadata
+pagina: 75
+imagen: data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P75_I0.png
+contexto: 
+```
+
+![Imagen página 75 - 0](data/images/incubadora_medix_manual_de_usuario_incubadora_medix_tr200/P75_I0.png)
+

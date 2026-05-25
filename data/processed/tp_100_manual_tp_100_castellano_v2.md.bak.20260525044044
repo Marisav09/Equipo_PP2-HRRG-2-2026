@@ -1,0 +1,5268 @@
+# Página 1
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 1
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P1_I0.png
+contexto: 
+```
+
+![Imagen página 1 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P1_I0.png)
+
+1
+
+```metadata
+pagina: 1
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P1_I1.png
+contexto: 
+```
+
+![Imagen página 1 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P1_I1.png)
+
+Tratamiento de agua portátil TP-100 1 - Introducción
+
+El proceso de osmosis inversa ha cobrado una gran importancia dentro de  las opciones de tratamiento fisicoquímico del agua en los últimos años, convirtiéndose en imprescindible en tratamiento de agua para hemodiálisis. El objetivo de este tratamiento es lograr a partir de red o pozo, un agua apta para su uso en hemodiálisis. Para ello el equipo cuenta con un pretratamiento simplificado más un sistema de desmineralización por membrana. El pretratamiento consta de tres etapas: A - Descalcificación, para evitar incrustaciones, mediante un lecho de resina de intercambio iónico (5 litros de lecho). El lecho de resina tienen la posibilidad de ser regenerados a través de una de las funciones de la maquina; por otro lado se pueden recargar.
+
+# Página 2
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 2
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P2_I0.png
+contexto: 
+```
+
+![Imagen página 2 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P2_I0.png)
+
+2
+
+B - Eliminación de cloro residual mediante un lecho de Carbón Activado Granular (5 litros de volumen de lecho). Este tanque de carbón tiene la posibilidad de ser recargado. C - Filtración de partículas de hasta 5 micrones, por medio de un filtro de 5” por 5um La circulación de agua a través del pre-tratamiento se encuentra forzada por una bomba a diafragma la cual provee una presión y caudal necesario para realizar el proceso de ósmosis inversa. El tratamiento de ósmosis inversa opera con una bomba de desplazamiento positivo a paletas, y como elemento de filtración una membrana de micro film compuesto de poliamida de similares características a los utilizados en escalas superiores pero de un tamaño más reducido, de manera de lograr la producción justa para dos puestos de hemodiálisis.
+
+# Página 3
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 3
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P3_I0.png
+contexto: 
+```
+
+![Imagen página 3 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P3_I0.png)
+
+3
+
+2-Características generales
+
+El equipo puede ser transportado fácilmente, ya que todo el pretratamiento y tratamiento propiamente dicho está montado sobre un único gabinete portátil y compacto. El gabinete es cerrado, pudiendo verificarse desde afuera los principales parámetros de operación tales como caudales y presión de alimentación, conductividades, rechazo porcentual de membranas y tiempos de operación/alarmas de forma digital mediante un display. Como puede verse en el diagrama de flujo el agua ingresa por la bomba auxiliar; esta bombea el agua hacia el pre-tratamiento (resina, carbón y filtro de partículas), atravesando la electro-válvula de entrada, el sensor de caudal y el sensor de conductividad de entrada. Luego es tomada bomba principal la cual eleva la presión entre 7-16 Bar para alcanzar los valores de operación a la salida de la membrana de ósmosis; esta presión es medida por un sensor de presión. Luego de esta membrana los caudales se dividen en dos: permeado y concentrado. El permeado tiene dos posibles vías: salida de producto del equipo pasando a través de un sensor de conductividad o retorno (por medio de una válvula de retención) a la entrada de la bomba principal para recircular el producto en aquellos casos en que el hemodializador no solicite agua tratada y de esta manera no se presurice esta vía. El la vía del concentrado está dispuesta la válvula aguja reguladora de presión y previo a salir del equipo se encuentra el segundo sensor de caudal. Otra vía que se va por drenaje es la de regeneración de resina por medio de una electroválvula.
+
+# Página 4
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 4
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P4_I0.png
+contexto: 
+```
+
+![Imagen página 4 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P4_I0.png)
+
+4
+
+En todos los puntos del equipo se disponen manómetros para comprobar si alguno de los elementos que componen el tratamiento de agua se encuentra en buen estado.Por medio de una electrónica personalizada el equipo registra la presión de alimentación de membranas, conductividad de entrada y salida del equipo, rechazo porcentual, caudales de entrada, permeado y concentrado; tiempos de operación y service. Por medio de todos estos parámetros se protege a través de diversas alarmas: baja presión de alimentación, alta presión de entrada a membrana, alto/bajo caudal de permeado/concentrado, alta conductividad, bajo porcentaje de rechazo y timers. La calidad del agua producida poseerá un nivel de sales aproximado al 3%o menor que los valores de ingreso. Cualquier variación importante (superior al 10%) en los mismos, será indicativa de algún deterioro en el pretratamiento o en la membrana.
+
+# Página 5
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 5
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P5_I0.png
+contexto: 
+```
+
+![Imagen página 5 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P5_I0.png)
+
+5
+
+3-Especificaciones técnicas Caudal de producción 100 lts/hora Tratamiento Acondicionamiento químico a partir de agua de pozo o de red. Principio Decloración / Ablandamiento / Filtración/Desmineralización por OI Carbón activado 5 litros Norit Resina de ablandamiento 5 litros Dowex Filtro de partículas Osmonics 5 micrones Bomba de auxiliar A diafragma
+
+Bomba de presurización Desplazamiento positivo a paletas – Tipo Procom
+
+Membrana Poliamídica Control de encendido Por demanda de operación Control de operación Caudales de entrada, permeado y drenaje, presión de entrada a membrana, conductividades de entrada y salida de forma digital; y presiones de alimentación , salida de filtros de resina salida de filtro de carbón, salida de filtro de partículas y salida de concentrado por medio de manómetros Suministros Agua de línea común / desagüe Energía eléctrica 220v-50Hz Potencia 500 W Materiales Acero inoxidable. Polímeros compatibles Dimensiones generales 540 x 600 x 1260 mm Gabinete Acero inoxidable / ABS, cerrado, con ruedas.
+
+# Página 6
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 6
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P6_I0.png
+contexto: 
+```
+
+![Imagen página 6 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P6_I0.png)
+
+6
+
+4-Requerimientos del agua de alimentación Caudal 400 Lt/h Presión Superior a 0,5 Kg/cm2 Temperatura Superior a 17ºC Cloro residual Menor de 0,7 ppm pH 6 - 8,5 SDI* Menor de 2 El SDI (Silt density index) es un parámetro indicativo del ensuciamiento que producirá el agua en la membrana de osmosis. No siempre es realizada su cuantificación en los laboratorios argentinos, pero si la turbiedad y el recuento total de bacterias son bajos podemos decir que el SDI se encontrará por debajo del límite mencionado.
+
+# Página 7
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 7
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P7_I0.png
+contexto: 
+```
+
+![Imagen página 7 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P7_I0.png)
+
+7
+
+5-Operación
+
+```metadata
+pagina: 7
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P7_I1.png
+contexto: 
+```
+
+![Imagen página 7 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P7_I1.png)
+
+5.1 Conexión Además de la alimentación eléctrica el equipo posee cuatro conexiones de agua: alimentación (con las condiciones indicadas más arriba) dos salidas de permeado a las máquinas de diálisis y salida de concentrado y una de alimentación de agua. El tipo de conexiones previstas son racords a los que pueden conectarse flexibles. Cuyas características deben tener en cuenta la resistencia a la presión (1- 2 Kg/cm2) para el caso de la alimentación; y ser de una calidad atóxica para la alimentación del permeado al dializador. Es conveniente que estas dos conexiones flexibles mencionadas sean previamente esterilizadas.
+
+# Página 8
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 8
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P8_I0.png
+contexto: 
+```
+
+![Imagen página 8 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P8_I0.png)
+
+8
+
+El equipo se encontrará normalmente cargado con una solución preservante, de manera que al menos media hora antes de su uso debe ser conectado y dejar circular agua colocando la llave en sanitización y abriendo la válvula reguladora de tal forma de no producir permeado, para permitir su enjuague. La forma de verificar que el enjuague ha finalizado es testeando hasta reacción negativa, o bien que los  valores de conductividad permanezcan invariables en la salida de permeado (este último método es una forma aproximada para la determinación de un enjuague total) Luego de este testeo se enciende el equipo sin ser conectado al dializador y se regula la presión de entrada en  7– 16 Bar (esta presión se logra cerrando la válvula de regulación, y también se puede combinar con la regulación del by pass de la bomba principal), permaneciendo en esta condición durante 15 minutos drenando tanto el concentrado como los dos permeados. Nota: para el caso en que la presión de entrada no sea suficiente colocando la llave en sanitización se encenderá la  bomba auxiliar y deberá cerrarse la válvula de bypass de entrada. 5.2 Puesta en marcha Una vez enjuagado el equipo, conectar el/los permeado/s al/los equipo/s dializador/es, poner en funcionamiento éste e inmediatamente el equipo de tratamiento de agua (por medio de la llave de ósmosis), si ya existe demanda de agua. Regular por medio de la válvula aguja el caudal de salida del producto. Habilitar las salidas de permeado dependiendo de la cantidad de dializadores que debe asistir
+
+# Página 9
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 9
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P9_I0.png
+contexto: 
+```
+
+![Imagen página 9 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P9_I0.png)
+
+9
+
+5.3 Control de operación Verificar los siguientes caudales y presiones: Caudal de perneado: 1.4-2.3 lpm Caudal de concentrado:                mayor de 3 lpm Presión de entrada a membrana:  menor de 16 Bar 5.4 Salida de servicio Una vez concluida la sesión de diálisis directamente se procede a: 1 - Apagar el equipo 2 - Vaciarlo lo más completamente posible. 3 - Trasladarlo al sector de limpieza (de contar con este espacio) 4 - Proceder a un pasaje de solución sanitizante/conservante Nota: Este último paso se realizará en el caso que el equipo permanezca parado más de 3 días. Como este es un manual genérico, los valores establecidos más arriba son límites guía. Pero lo conveniente es tener registrado en planilla dichos valores iniciales para luego detectar cualquier variación a lo largo de sucesivos usos. Es posible controlar la integridad operativa de lechos y filtros midiendo dureza y cloro residual a la salida de los mismos, en el caso de los dos primeros y caída de la presión de salida en el caso del microfiltro.
+
+# Página 10
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 10
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P10_I0.png
+contexto: 
+```
+
+![Imagen página 10 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P10_I0.png)
+
+10
+
+6 -Procedimiento de sanitización / desincrustación SANITIZACION DE TP100 • Poner el equipo en servicio durante 2 minutos para purgar el sistema • Desconectar la alimentación y colocarla junto con las mangueras de permeado y concentrado en un bidón con 5 litros de agua de osmosis y 200 ml de Oxidial (logrando con esto una concentración de 1-1,5%). • Anular la alarma por baja presión (poner limite de alarma de presión de alimentación en  0,00Bar) • Cerrar la llave de bypass. • Colocar el equipo en sanitización • Recircular durante 5 minutos • Dejar reposar al menos 10 hs o esperar hasta la próxima diálisis. • Para enjuagar el sanitizante, poner en servicio el equipo por más de 10 minutos testeando la ausencia del sanitizante en el permeado y concentrado del equipo. • Reestablecer el limite inferior de alarma superior a 5,00 Bar • Reestablecer la posición de la llave de Bypass. • Finalmente conectar el equipo y poner en servicio. DESINCRUSTACIPON TP100 • Poner el equipo en servicio durante 2 minutos para purgar el sistema • Desconectar la alimentación y colocarla junto con las mangueras de permeado y concentrado en un bidón con 5 litros de agua de osmosis y 350 de Acido cítrico previamente diluido (logrando con esto una concentración de 2,5%). • Anular la alarma por baja presión (poner limite de alarma de presión de alimentación en  0,00Bar)
+
+# Página 11
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 11
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P11_I0.png
+contexto: 
+```
+
+![Imagen página 11 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P11_I0.png)
+
+11
+
+• Cerrar la llave de bypass. • Colocar el equipo en sanitización • Recircular durante 30 minutos • Poner en servicio el equipo por más de 15 minutos para enjuagar el ácido cítrico • Repetir el proceso completo si la solución toma un color amarillento. • Reestablecer el limite inferior de alarma superior a 5,00 Bar • Reestablecer la posición de la llave de Bypass. • Finalmente conectar el equipo y poner en servicio. 7-Regeneración de la resina Para realizar este proceso se debe colocar en un bidón 10litros agua saturada en sal; conectar mediante una manguera a la entrada de la maquina, colocar la llave de regeneración de resina de esta manera se inundara el lecho de resina con la solución salina y a la salida se drenará por medio de una electro-válvula. Este proceso se debe realizar hasta que el bidón de 10 litros se consuma totalmente, culminado esto, apagar el equipo y dejarlo reposar durante 5 minutos. Luego de la espera  se deberá enjuagar el lecho de resina alimentando el equipo con agua de red/pozo y haciéndole circular agua a drenaje colocando la llave de regeneración de resina alrededor de 10minutos. Luego de este enjuague el lecho esta listo para ser utilizado para otro turno de dialisis. El período de regeneraciones esta dado por la dureza del agua de entrada. 8-Mantenimiento El mantenimiento de este equipo consiste en: • Llevar el registro de los parámetros operativos de cada uso , (Presiones, caudales, conductividades) • Controlar que las condiciones del agua de alimentación se mantienen dentro de los valores para los que el equipo fue diseñado. • Cambiar los prefiltros cada 10 turnos de diálisis
+
+# Página 12
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 12
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P12_I0.png
+contexto: 
+```
+
+![Imagen página 12 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P12_I0.png)
+
+12
+
+•  Cualquier decaimiento operativo de la membrana puede ser indicativo de la necesidad de limpiezas químicas. Pero la vida útil de las membranas rondan los tres años. •  Cada vez que se realice algún cambio de lecho se deberán enjuagar los mismos; para un cambio de lecho de resina se puede enjuagar conectando la maquina a la red de alimentación y posicionando la llave en regeneración de resina (previo al cierre completo de la válvula aguja). Para el enjuague del lecho de carbón deberá retirarse el filtro de particular y sacar por medio del acople rápido la alimentación de agua a la entrada de la bomba principal; de esta manera se deberá encender el equipo en sanitización y la bomba auxiliar drenará agua. Realizar este proceso entre 8-10 minutos. Una vez realizado este proceso de debe colocar la manguera que se retiró en la alimentación de la bomba principal y colocar el filtro de particular. • 9-Pantallas del equipo El equipo tiene 5 pantallas principales, este cambio de pantallas se realiza por medio de la tecla enter.
+
+```metadata
+pagina: 12
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P12_I1.png
+contexto: 
+```
+
+![Imagen página 12 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P12_I1.png)
+
+```metadata
+pagina: 12
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P12_I2.png
+contexto: 
+```
+
+![Imagen página 12 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P12_I2.png)
+
+# Página 13
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 13
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P13_I0.png
+contexto: 
+```
+
+![Imagen página 13 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P13_I0.png)
+
+13
+
+```metadata
+pagina: 13
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P13_I1.png
+contexto: 
+```
+
+![Imagen página 13 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P13_I1.png)
+
+```metadata
+pagina: 13
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P13_I2.png
+contexto: 
+```
+
+![Imagen página 13 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P13_I2.png)
+
+```metadata
+pagina: 13
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P13_I3.png
+contexto: 
+```
+
+![Imagen página 13 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P13_I3.png)
+
+# Página 14
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 14
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P14_I0.png
+contexto: 
+```
+
+![Imagen página 14 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P14_I0.png)
+
+14
+
+Para acceder a la pantalla de programación de alarmas se deberá tener en equipo apagado (colocar la llave de OSMOSIS_NO Y LA LLAVE DE REGENERACION Y SANITIZACION TAMBIEN EN NO) y pulsar durante 1 seg. la tecla ENTER. Con la flecha subir o bajar se deberá seleccionar el menú deseado.
+
+```metadata
+pagina: 14
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P14_I1.png
+contexto: 
+```
+
+![Imagen página 14 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P14_I1.png)
+
+# Página 15
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 15
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P15_I0.png
+contexto: 
+```
+
+![Imagen página 15 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P15_I0.png)
+
+15
+
+```metadata
+pagina: 15
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P15_I1.png
+contexto: 
+```
+
+![Imagen página 15 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P15_I1.png)
+
+```metadata
+pagina: 15
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P15_I2.png
+contexto: 
+```
+
+![Imagen página 15 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P15_I2.png)
+
+# Página 16
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 16
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P16_I0.png
+contexto: 
+```
+
+![Imagen página 16 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P16_I0.png)
+
+16
+
+```metadata
+pagina: 16
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P16_I1.png
+contexto: 
+```
+
+![Imagen página 16 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P16_I1.png)
+
+```metadata
+pagina: 16
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P16_I2.png
+contexto: 
+```
+
+![Imagen página 16 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P16_I2.png)
+
+# Página 17
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 17
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P17_I0.png
+contexto: 
+```
+
+![Imagen página 17 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P17_I0.png)
+
+17
+
+```metadata
+pagina: 17
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P17_I1.png
+contexto: 
+```
+
+![Imagen página 17 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P17_I1.png)
+
+```metadata
+pagina: 17
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P17_I2.png
+contexto: 
+```
+
+![Imagen página 17 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P17_I2.png)
+
+# Página 18
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 18
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P18_I0.png
+contexto: 
+```
+
+![Imagen página 18 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P18_I0.png)
+
+18
+
+En cada pantallas se puede ajustar cada parámetro pulsando la tecla de subir y/o bajar  cuando se alcance el valor deseado o se desea pasar al valor siguiente se deberá pulsar la tecla enter.
+
+Las posibles alarmas que puede generar el equipo son las siguientes: • Baja presión de alimentación • Alta presión de alimentación • Falla eléctrica bomba principal • Alto caudal de permeado • Alto caudal de concentrado • Bajo caudal de permeado • Bajo caudal de concentrado • Alta conductividad de salida • Bajo porcentaje de rechazo de membranas • Realizar reemplazo de filtro de partículas (por horas de func.) • Realizar sanitización (por horas de func.) • Realizar cambio de lecho/s (por horas de func.) • Realizar servicio técnico (por horas de func.)
+
+```metadata
+pagina: 18
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P18_I1.png
+contexto: 
+```
+
+![Imagen página 18 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P18_I1.png)
+
+# Página 19
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 19
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P19_I0.png
+contexto: 
+```
+
+![Imagen página 19 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P19_I0.png)
+
+19
+
+Todas estas alarmas se presetean/resetean en las pantallas anteriores. Baja presión
+
+Si se genera una alarma por baja presión puede ser por los siguientes motivos:
+
+• Falta de alimentación de agua a la máquina (problema externo)
+
+• Filtro de partículas/ lechos tapado (se debe verificar el elemento y reemplazar si es necesario)
+
+• Falla de la bomba presurizadota/auxiliar (verificar funcionamiento)
+
+• Falla de la electroválvula de entrada
+
+• Falla en el sensor de presión. Alta presión Si el quipo para por alta presión se debe verificar la posición de las válvulas reguladoras con estas se debe estabilizar presiones y caudales según se indica en la sección de operación. Si luego de la regulación de dichas válvulas prevalece la alta presión y es acompañada por un bajo caudal de producción nos está indicando un nivel de incrustación / ensuciamento de las membranas. Para subsanar este problema deberá realizarse un lavado químico o bien un recambio de membranas Falla eléctrica (bba principal)
+
+Ante una falla eléctrica se debe retirar la tapa del tablero eléctrico y verificar que los térmicos de las bombas estén en la posición correcta. Deberá abrirse el tablero principal con una trabas de ¼ de giro, todos los componentes eléctricos se encuentra en este tablero para ser protegidos de posibles salpicaduras, ya que este es IP 54.
+
+Bajo/Alto caudal permeado y concentrado
+
+Los rangos de los caudales como era el caso de las presiones podrán ser regulados con las válvulas manuales ya mencionadas, la lectura de estos no son independiente de las presiones. Para hacer un diagnostico correcto deberá tenerse en cuenta el valor de todo los parámetros.
+
+# Página 20
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 20
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P20_I0.png
+contexto: 
+```
+
+![Imagen página 20 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P20_I0.png)
+
+20
+
+A continuación haremos un ejemplo de dos situaciones características:
+
+Bajo caudal de permeado, bajo caudal de concentrado, alta presión de alimentación, y baja presión de salida de membrana. En una situación como está el equipo detendrá por el primer valor detectado al resetear dicha alarma se deberá reiniciar el equipo para determinar en que condición estamos. La condición antes descripta, generalmente asociado a un aumento de la conductividad del producto nos da una idea de una incrustación de las membranas de ósmosis inversa que generalmente recuperan sus parámetros normales de funcionamiento luego de un lavado químico apropiado.
+
+Otra situación característica puede darse ante la presencia de alto caudal de permeado, bajo caudal de concentrado, baja presión de alimentación, baja presión de salida y entrada a membrana.
+
+Estos parámetros generalmente se asocian a una alta conductividad de permeado. Esta situación nos indica o bien una apertura de las fibras de la/s membranas o bien una fuga a través de los sellos desde el concentrado hacia el permeado, ante esta situación deberán verificarse el estado de los sellos o’ring/v’ring, o proceder al cambio de la/s membrana/s deterioradas.
+
+Bajo porcentaje de rechazo y alta conductividad
+
+Esta situación no será independiente de las ya mencionadas respecto a las de caudales y presiones y el aumento de estos parámetros conlleva a tres situaciones posibles: • Taponamiento/ensuciamiento de las membranas/ rotura de las mismas o bien transferencia del flujo de concentrado hacia el permeado a través de los sellos o’ring/v’ring . En algunas oportunidades algunos paliativos ante esta situación puede colocar el v’ring en el lado apuesto de la membrana e invertir la posición  de la misma, dado que la membrana  sufre un deterioro gradual en el sentido de la circulación del flujo. Si usted enciende el equipo en el modo Sanitización se mostraran todos los parámetros necesarios para la regulación del equipo de manera de resumen, todos los parámetros registrados en una sola pantalla del
+
+# Página 21
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 21
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P21_I0.png
+contexto: 
+```
+
+![Imagen página 21 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P21_I0.png)
+
+21
+
+display digital y el equipo solo queda protegido contra baja presión de alimentación o alta presión de entrada a membranas. Timer por horas de funcionamiento El software dispone de distintos timer’s que darán los siguientes enunciado en el display • Realizar reemplazo de filtro de partículas (por horas de func.) • Realizar sanitización (por horas de func.) • Realizar cambio de lecho/s (por horas de func.) • Realizar servicio técnico (por horas de func.) Esto permite realizar un mantenimiento preventivo mucho más exacto que en los tratamientos de aguas tradicionales que dará como resultado el sostenimiento de una excelente calida de producto en el tiempo, bajar considerablemente el nivel de imprevistos y el costo operativo del equipo. Para el caso del servicio técnico se harán controles de parámetros no previstos en el resto de las preventivas descriptas. Control de parámetros operativos: • Consumo de corrientes de bombas. • Testeo de sellos y rodamientos de las mismas. • Verificación de curva de presiones y caudales de bombas, según fabricante. • Calibración de electrónicas (conductímetro, sensor de cloro). • Chequeo de caudales de cooler de refrigeración. • Testeo por medio de reactivos específicos o instrumentos de distintos de niveles de concentración de cloro, dureza, nitratos, conductividades. • Eventuales sanitizaciones y/o lavados químicos. • Recambio de insumos, repuestos o accesorios originales. Todas estas acciones descriptas y las que pudieran surgir puntualmente fg ingenieria recomienda que sean ejecutadas por un servicio técnico oficial. Otra posibilidad por cuestiones de logística o costos es que sea ejecutada por personal técnico no perteneciente y autorizado por la empresa pero con conocimiento técnico comprobable e instrucción técnica previa de nuestra parte.
+
+# Página 22
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 22
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P22_I0.png
+contexto: 
+```
+
+![Imagen página 22 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P22_I0.png)
+
+22
+
+10- Diagrama de flujos
+
+```metadata
+pagina: 22
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P22_I1.png
+contexto: 
+```
+
+![Imagen página 22 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P22_I1.png)
+
+# Página 23
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 23
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P23_I0.png
+contexto: 
+```
+
+![Imagen página 23 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P23_I0.png)
+
+23
+
+11- Calibración del conductímetro de ósmosis
+
+Para realizar una calibración de conductímetro de osmosis se deben realizar los siguientes pasos, se puede observar en el plano M-TP100-17: 1. Apagar la osmosis y bajar la llave térmica del tablero. 2. Chequear que las 2 celdas sensores de conductividad se encuentren bien secas, de lo contrario secarlas y reubicarlas en sus posiciones originales. 3. Ubicar los siguientes preset´s para empezar con la calibración: P2:  preset para ajustar el nivel de  0uS  de conductividad de entrada. P3:  preset para ajustar la ganancia fina de conductividad de entrada. P4:  preset para ajustar la ganancia gruesa de la conductividad de entrada. P5:  preset para ajustar el nivel de  0uS  de conductividad del producto. P7:  preset para ajustar la ganancia fina de conductividad del producto. P6:  preset para ajustar la ganancia gruesa de la conductividad del producto. El nivel de 0uS se debe calibrar con  P2  (conductividad de entrada) y P5  (conductividad de producto). Se deben girar los preset de manera que el display empiece a marcar valores por encima de 0uS en esta condición volver a dejarlo en 0uS (esto se realiza porque el display no muestra valores negativos). 4. Una vez calibrado el nivel de 0uS se debe levantar la llave térmica y poner el equipo de osmosis a producir. 5. Con los preset  P3  y  P7  se calibran las ganancias hasta alcanzar los valores patrones de conductividad de entrada y de conductividad de producto. Nota: de no ser posible alcanzar los valores patrones porque los preset han llegado sus límites, se deben tocar los preset de ganancia gruesa ( P4   y  P6 ) para acercar el valor de lectura a los  valores patrones  y luego con los preset de ganancia fina ( P3  y  P7 ) se reajusta la lectura. De esta manera se ha llegado a la calibración del conductímetro.
+
+# Página 24
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 24
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P24_I0.png
+contexto: 
+```
+
+![Imagen página 24 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P24_I0.png)
+
+24
+
+12-  Listado de Planos
+
+Nº Plano Titulo M-TP100-00 Vista General TP 100 M-TP100-01 Identificacion de Despieces 01-02 M-TP100-02 Identificacion de Despieces 03 M-TP100-03 Identificacion de Despieces 04-05 M-TP100-02 Identificacion de Despieces 06 M-TP100-04 Despiece 01 M-TP100-05 Despiece 02 M-TP100-06 Despiece 03 M-TP100-07 Despiece 04 M-TP100-08 Despiece 05 M-TP100-09 Despiece 06 1/2 M-TP100-09 Despiece 06 2/2 M-TP100-14 Piezas Tablero Electrico M-TP100-15 Conexionados Tablero Electrico M-TP100-19 Tablero Electrico Conexionado 4 M-TP100-20 Esquema Eléctrico TP 100
+
+# Página 25
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 25
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P25_I0.png
+contexto: 
+```
+
+![Imagen página 25 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P25_I0.png)
+
+25
+
+13- Listado de Piezas
+
+Codigo Descripción 010156 Valvula esferica de 1/4 010312 Valvula aguja 1/2 6000 psi 011111 Abrazadera Tapa Membrana 4" 011112 Carcasa Membrana 4040 020040 Tapon 1/2" Tapa Carcasa Membrana 4040 020088 Reduccion Tigre 3/4"M a 1/2"H 020115 Codo 1/2 PVC Tigre 020116 Valvula Tigre 1/2 Hembra 020177 Valvula de retencion duke 020178 Cupla 1/2 rosca_30 020179 Acople Rapido manguera Jardin 020180 Espiga 1/2_15 021015 Tapa Polipropileno Carcasa Membrana 4" 021054 Espiga 15-1/4H 021055 Espiga 1/2_15 Torneada 021058 Espiga 1/4H_1/4H PVC 021073 Sensor de Conductividad p/festo TP 100
+
+030002 Selectora Plastica 2 Posiciones TLMQ XB7- ED21
+
+030003 Motor CZERWENY TIPO A71CP4B 1/2CV 220V Bajo Par Blindado 100% 030006 Termica P60 Curva C 2x6A 030007 LC1-K0910 Mini Contactor Trip 9A/5,5CV TLMQ
+
+030008 Relevo Termico Mini 2,68A a 3,7A TLMQ LR2- K0310
+
+030036 Pulsador TLMQ XB7-EA45 PLA.RA ROJO 1NA+1NC 030059 Valvula de Punto de Inyección Bomba Dosivac 030106 Bomba Fluid-o-Tech PA 411F 030108 Punch Emergencia ZBE-102 030122 Display 8 Lineas
+
+# Página 26
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 26
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P26_I0.png
+contexto: 
+```
+
+![Imagen página 26 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P26_I0.png)
+
+26
+
+030123 Electrovalvula Plastica 1/2" con Bobina 24 vol 030132 Turbina 12V (c/Rejilla) 60x60x38 030159 Trafo 9 vol 5 amper tp 100 030229 Bba  Flojet mod R3526-144 040002 Racor rápido QST-8 040010 Tubo flexible PLN-8x1,25-NT 040042 Racor rápido QSSF-1/4-8-B 040085 CQL 15mm COD PM0315E 040086 Tubo 15 mm azul COD PE-15115-0100M-B 040088 CQ_1/2-15 040090 CQT_15 040091 CQ_1/4_8 040094 QSL_1/4-8mm 040095 CQ_3/4-15 050054 O Ring 2-345 Nitrilo 050055 O Ring 2-210 Nitrilo
+
+050056 Membrana Osmosis Inversa MOD CPA2-4040 / ESPA2-4040 050135 Turbina Medidora de Caudal TP 100 Flowstat 050176 Manometro 0-25 bar 050177 Manometro 0-6 bar 050178 Manometro Glicerina 0-100 bar 050179 Membrana FILMTEC TW-30 2026 070320 Acople Motor Bomba TP 100
+
+# Página 27
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I0.png
+contexto: 
+```
+
+![Imagen página 27 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P27_I0.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I1.png
+contexto: 
+```
+
+![Imagen página 27 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P27_I1.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I2.png
+contexto: 
+```
+
+![Imagen página 27 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P27_I2.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I3.png
+contexto: 
+```
+
+![Imagen página 27 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P27_I3.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I4.png
+contexto: 
+```
+
+![Imagen página 27 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P27_I4.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I5.png
+contexto: 
+```
+
+![Imagen página 27 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P27_I5.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I6.png
+contexto: 
+```
+
+![Imagen página 27 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P27_I6.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I7.png
+contexto: 
+```
+
+![Imagen página 27 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P27_I7.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I8.png
+contexto: 
+```
+
+![Imagen página 27 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P27_I8.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I9.png
+contexto: 
+```
+
+![Imagen página 27 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P27_I9.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I10.png
+contexto: 
+```
+
+![Imagen página 27 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P27_I10.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I11.png
+contexto: 
+```
+
+![Imagen página 27 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P27_I11.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I12.png
+contexto: 
+```
+
+![Imagen página 27 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P27_I12.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I13.png
+contexto: 
+```
+
+![Imagen página 27 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P27_I13.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I14.png
+contexto: 
+```
+
+![Imagen página 27 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P27_I14.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I15.png
+contexto: 
+```
+
+![Imagen página 27 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P27_I15.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I16.png
+contexto: 
+```
+
+![Imagen página 27 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P27_I16.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I17.png
+contexto: 
+```
+
+![Imagen página 27 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P27_I17.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I18.png
+contexto: 
+```
+
+![Imagen página 27 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P27_I18.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I19.png
+contexto: 
+```
+
+![Imagen página 27 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P27_I19.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I20.png
+contexto: 
+```
+
+![Imagen página 27 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P27_I20.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I21.png
+contexto: 
+```
+
+![Imagen página 27 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P27_I21.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I22.png
+contexto: 
+```
+
+![Imagen página 27 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P27_I22.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I23.png
+contexto: 
+```
+
+![Imagen página 27 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P27_I23.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I24.png
+contexto: 
+```
+
+![Imagen página 27 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P27_I24.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I25.png
+contexto: 
+```
+
+![Imagen página 27 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P27_I25.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I26.png
+contexto: 
+```
+
+![Imagen página 27 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P27_I26.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I27.png
+contexto: 
+```
+
+![Imagen página 27 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P27_I27.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I28.png
+contexto: 
+```
+
+![Imagen página 27 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P27_I28.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I29.png
+contexto: 
+```
+
+![Imagen página 27 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P27_I29.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I30.png
+contexto: 
+```
+
+![Imagen página 27 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P27_I30.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I31.png
+contexto: 
+```
+
+![Imagen página 27 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P27_I31.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I32.png
+contexto: 
+```
+
+![Imagen página 27 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P27_I32.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I33.png
+contexto: 
+```
+
+![Imagen página 27 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P27_I33.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I34.png
+contexto: 
+```
+
+![Imagen página 27 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P27_I34.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I35.png
+contexto: 
+```
+
+![Imagen página 27 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P27_I35.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I36.png
+contexto: 
+```
+
+![Imagen página 27 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P27_I36.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I37.png
+contexto: 
+```
+
+![Imagen página 27 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P27_I37.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I38.png
+contexto: 
+```
+
+![Imagen página 27 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P27_I38.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I39.png
+contexto: 
+```
+
+![Imagen página 27 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P27_I39.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I40.png
+contexto: 
+```
+
+![Imagen página 27 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P27_I40.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I41.png
+contexto: 
+```
+
+![Imagen página 27 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P27_I41.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I42.png
+contexto: 
+```
+
+![Imagen página 27 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P27_I42.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I43.png
+contexto: 
+```
+
+![Imagen página 27 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P27_I43.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I44.png
+contexto: 
+```
+
+![Imagen página 27 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P27_I44.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I45.png
+contexto: 
+```
+
+![Imagen página 27 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P27_I45.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I46.png
+contexto: 
+```
+
+![Imagen página 27 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P27_I46.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I47.png
+contexto: 
+```
+
+![Imagen página 27 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P27_I47.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I48.png
+contexto: 
+```
+
+![Imagen página 27 - 48](data/images/tp_100_manual_tp_100_castellano_v2/P27_I48.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I49.png
+contexto: 
+```
+
+![Imagen página 27 - 49](data/images/tp_100_manual_tp_100_castellano_v2/P27_I49.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I50.png
+contexto: 
+```
+
+![Imagen página 27 - 50](data/images/tp_100_manual_tp_100_castellano_v2/P27_I50.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I51.png
+contexto: 
+```
+
+![Imagen página 27 - 51](data/images/tp_100_manual_tp_100_castellano_v2/P27_I51.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I52.png
+contexto: 
+```
+
+![Imagen página 27 - 52](data/images/tp_100_manual_tp_100_castellano_v2/P27_I52.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I53.png
+contexto: 
+```
+
+![Imagen página 27 - 53](data/images/tp_100_manual_tp_100_castellano_v2/P27_I53.png)
+
+```metadata
+pagina: 27
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P27_I54.png
+contexto: 
+```
+
+![Imagen página 27 - 54](data/images/tp_100_manual_tp_100_castellano_v2/P27_I54.png)
+
+# Página 28
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I0.png
+contexto: 
+```
+
+![Imagen página 28 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P28_I0.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I1.png
+contexto: 
+```
+
+![Imagen página 28 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P28_I1.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I2.png
+contexto: 
+```
+
+![Imagen página 28 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P28_I2.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I3.png
+contexto: 
+```
+
+![Imagen página 28 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P28_I3.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I4.png
+contexto: 
+```
+
+![Imagen página 28 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P28_I4.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I5.png
+contexto: 
+```
+
+![Imagen página 28 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P28_I5.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I6.png
+contexto: 
+```
+
+![Imagen página 28 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P28_I6.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I7.png
+contexto: 
+```
+
+![Imagen página 28 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P28_I7.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I8.png
+contexto: 
+```
+
+![Imagen página 28 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P28_I8.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I9.png
+contexto: 
+```
+
+![Imagen página 28 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P28_I9.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I10.png
+contexto: 
+```
+
+![Imagen página 28 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P28_I10.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I11.png
+contexto: 
+```
+
+![Imagen página 28 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P28_I11.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I12.png
+contexto: 
+```
+
+![Imagen página 28 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P28_I12.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I13.png
+contexto: 
+```
+
+![Imagen página 28 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P28_I13.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I14.png
+contexto: 
+```
+
+![Imagen página 28 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P28_I14.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I15.png
+contexto: 
+```
+
+![Imagen página 28 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P28_I15.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I16.png
+contexto: 
+```
+
+![Imagen página 28 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P28_I16.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I17.png
+contexto: 
+```
+
+![Imagen página 28 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P28_I17.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I18.png
+contexto: 
+```
+
+![Imagen página 28 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P28_I18.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I19.png
+contexto: 
+```
+
+![Imagen página 28 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P28_I19.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I20.png
+contexto: 
+```
+
+![Imagen página 28 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P28_I20.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I21.png
+contexto: 
+```
+
+![Imagen página 28 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P28_I21.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I22.png
+contexto: 
+```
+
+![Imagen página 28 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P28_I22.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I23.png
+contexto: 
+```
+
+![Imagen página 28 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P28_I23.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I24.png
+contexto: 
+```
+
+![Imagen página 28 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P28_I24.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I25.png
+contexto: 
+```
+
+![Imagen página 28 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P28_I25.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I26.png
+contexto: 
+```
+
+![Imagen página 28 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P28_I26.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I27.png
+contexto: 
+```
+
+![Imagen página 28 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P28_I27.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I28.png
+contexto: 
+```
+
+![Imagen página 28 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P28_I28.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I29.png
+contexto: 
+```
+
+![Imagen página 28 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P28_I29.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I30.png
+contexto: 
+```
+
+![Imagen página 28 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P28_I30.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I31.png
+contexto: 
+```
+
+![Imagen página 28 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P28_I31.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I32.png
+contexto: 
+```
+
+![Imagen página 28 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P28_I32.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I33.png
+contexto: 
+```
+
+![Imagen página 28 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P28_I33.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I34.png
+contexto: 
+```
+
+![Imagen página 28 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P28_I34.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I35.png
+contexto: 
+```
+
+![Imagen página 28 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P28_I35.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I36.png
+contexto: 
+```
+
+![Imagen página 28 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P28_I36.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I37.png
+contexto: 
+```
+
+![Imagen página 28 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P28_I37.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I38.png
+contexto: 
+```
+
+![Imagen página 28 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P28_I38.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I39.png
+contexto: 
+```
+
+![Imagen página 28 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P28_I39.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I40.png
+contexto: 
+```
+
+![Imagen página 28 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P28_I40.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I41.png
+contexto: 
+```
+
+![Imagen página 28 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P28_I41.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I42.png
+contexto: 
+```
+
+![Imagen página 28 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P28_I42.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I43.png
+contexto: 
+```
+
+![Imagen página 28 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P28_I43.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I44.png
+contexto: 
+```
+
+![Imagen página 28 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P28_I44.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I45.png
+contexto: 
+```
+
+![Imagen página 28 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P28_I45.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I46.png
+contexto: 
+```
+
+![Imagen página 28 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P28_I46.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I47.png
+contexto: 
+```
+
+![Imagen página 28 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P28_I47.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I48.png
+contexto: 
+```
+
+![Imagen página 28 - 48](data/images/tp_100_manual_tp_100_castellano_v2/P28_I48.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I49.png
+contexto: 
+```
+
+![Imagen página 28 - 49](data/images/tp_100_manual_tp_100_castellano_v2/P28_I49.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I50.png
+contexto: 
+```
+
+![Imagen página 28 - 50](data/images/tp_100_manual_tp_100_castellano_v2/P28_I50.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I51.png
+contexto: 
+```
+
+![Imagen página 28 - 51](data/images/tp_100_manual_tp_100_castellano_v2/P28_I51.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I52.png
+contexto: 
+```
+
+![Imagen página 28 - 52](data/images/tp_100_manual_tp_100_castellano_v2/P28_I52.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I53.png
+contexto: 
+```
+
+![Imagen página 28 - 53](data/images/tp_100_manual_tp_100_castellano_v2/P28_I53.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I54.png
+contexto: 
+```
+
+![Imagen página 28 - 54](data/images/tp_100_manual_tp_100_castellano_v2/P28_I54.png)
+
+```metadata
+pagina: 28
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P28_I55.png
+contexto: 
+```
+
+![Imagen página 28 - 55](data/images/tp_100_manual_tp_100_castellano_v2/P28_I55.png)
+
+# Página 29
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I0.png
+contexto: 
+```
+
+![Imagen página 29 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P29_I0.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I1.png
+contexto: 
+```
+
+![Imagen página 29 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P29_I1.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I2.png
+contexto: 
+```
+
+![Imagen página 29 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P29_I2.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I3.png
+contexto: 
+```
+
+![Imagen página 29 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P29_I3.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I4.png
+contexto: 
+```
+
+![Imagen página 29 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P29_I4.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I5.png
+contexto: 
+```
+
+![Imagen página 29 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P29_I5.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I6.png
+contexto: 
+```
+
+![Imagen página 29 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P29_I6.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I7.png
+contexto: 
+```
+
+![Imagen página 29 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P29_I7.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I8.png
+contexto: 
+```
+
+![Imagen página 29 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P29_I8.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I9.png
+contexto: 
+```
+
+![Imagen página 29 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P29_I9.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I10.png
+contexto: 
+```
+
+![Imagen página 29 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P29_I10.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I11.png
+contexto: 
+```
+
+![Imagen página 29 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P29_I11.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I12.png
+contexto: 
+```
+
+![Imagen página 29 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P29_I12.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I13.png
+contexto: 
+```
+
+![Imagen página 29 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P29_I13.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I14.png
+contexto: 
+```
+
+![Imagen página 29 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P29_I14.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I15.png
+contexto: 
+```
+
+![Imagen página 29 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P29_I15.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I16.png
+contexto: 
+```
+
+![Imagen página 29 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P29_I16.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I17.png
+contexto: 
+```
+
+![Imagen página 29 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P29_I17.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I18.png
+contexto: 
+```
+
+![Imagen página 29 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P29_I18.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I19.png
+contexto: 
+```
+
+![Imagen página 29 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P29_I19.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I20.png
+contexto: 
+```
+
+![Imagen página 29 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P29_I20.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I21.png
+contexto: 
+```
+
+![Imagen página 29 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P29_I21.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I22.png
+contexto: 
+```
+
+![Imagen página 29 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P29_I22.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I23.png
+contexto: 
+```
+
+![Imagen página 29 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P29_I23.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I24.png
+contexto: 
+```
+
+![Imagen página 29 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P29_I24.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I25.png
+contexto: 
+```
+
+![Imagen página 29 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P29_I25.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I26.png
+contexto: 
+```
+
+![Imagen página 29 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P29_I26.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I27.png
+contexto: 
+```
+
+![Imagen página 29 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P29_I27.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I28.png
+contexto: 
+```
+
+![Imagen página 29 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P29_I28.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I29.png
+contexto: 
+```
+
+![Imagen página 29 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P29_I29.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I30.png
+contexto: 
+```
+
+![Imagen página 29 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P29_I30.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I31.png
+contexto: 
+```
+
+![Imagen página 29 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P29_I31.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I32.png
+contexto: 
+```
+
+![Imagen página 29 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P29_I32.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I33.png
+contexto: 
+```
+
+![Imagen página 29 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P29_I33.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I34.png
+contexto: 
+```
+
+![Imagen página 29 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P29_I34.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I35.png
+contexto: 
+```
+
+![Imagen página 29 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P29_I35.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I36.png
+contexto: 
+```
+
+![Imagen página 29 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P29_I36.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I37.png
+contexto: 
+```
+
+![Imagen página 29 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P29_I37.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I38.png
+contexto: 
+```
+
+![Imagen página 29 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P29_I38.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I39.png
+contexto: 
+```
+
+![Imagen página 29 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P29_I39.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I40.png
+contexto: 
+```
+
+![Imagen página 29 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P29_I40.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I41.png
+contexto: 
+```
+
+![Imagen página 29 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P29_I41.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I42.png
+contexto: 
+```
+
+![Imagen página 29 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P29_I42.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I43.png
+contexto: 
+```
+
+![Imagen página 29 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P29_I43.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I44.png
+contexto: 
+```
+
+![Imagen página 29 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P29_I44.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I45.png
+contexto: 
+```
+
+![Imagen página 29 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P29_I45.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I46.png
+contexto: 
+```
+
+![Imagen página 29 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P29_I46.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I47.png
+contexto: 
+```
+
+![Imagen página 29 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P29_I47.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I48.png
+contexto: 
+```
+
+![Imagen página 29 - 48](data/images/tp_100_manual_tp_100_castellano_v2/P29_I48.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I49.png
+contexto: 
+```
+
+![Imagen página 29 - 49](data/images/tp_100_manual_tp_100_castellano_v2/P29_I49.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I50.png
+contexto: 
+```
+
+![Imagen página 29 - 50](data/images/tp_100_manual_tp_100_castellano_v2/P29_I50.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I51.png
+contexto: 
+```
+
+![Imagen página 29 - 51](data/images/tp_100_manual_tp_100_castellano_v2/P29_I51.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I52.png
+contexto: 
+```
+
+![Imagen página 29 - 52](data/images/tp_100_manual_tp_100_castellano_v2/P29_I52.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I53.png
+contexto: 
+```
+
+![Imagen página 29 - 53](data/images/tp_100_manual_tp_100_castellano_v2/P29_I53.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I54.png
+contexto: 
+```
+
+![Imagen página 29 - 54](data/images/tp_100_manual_tp_100_castellano_v2/P29_I54.png)
+
+```metadata
+pagina: 29
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P29_I55.png
+contexto: 
+```
+
+![Imagen página 29 - 55](data/images/tp_100_manual_tp_100_castellano_v2/P29_I55.png)
+
+# Página 30
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I0.png
+contexto: 
+```
+
+![Imagen página 30 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P30_I0.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I1.png
+contexto: 
+```
+
+![Imagen página 30 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P30_I1.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I2.png
+contexto: 
+```
+
+![Imagen página 30 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P30_I2.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I3.png
+contexto: 
+```
+
+![Imagen página 30 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P30_I3.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I4.png
+contexto: 
+```
+
+![Imagen página 30 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P30_I4.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I5.png
+contexto: 
+```
+
+![Imagen página 30 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P30_I5.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I6.png
+contexto: 
+```
+
+![Imagen página 30 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P30_I6.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I7.png
+contexto: 
+```
+
+![Imagen página 30 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P30_I7.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I8.png
+contexto: 
+```
+
+![Imagen página 30 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P30_I8.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I9.png
+contexto: 
+```
+
+![Imagen página 30 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P30_I9.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I10.png
+contexto: 
+```
+
+![Imagen página 30 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P30_I10.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I11.png
+contexto: 
+```
+
+![Imagen página 30 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P30_I11.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I12.png
+contexto: 
+```
+
+![Imagen página 30 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P30_I12.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I13.png
+contexto: 
+```
+
+![Imagen página 30 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P30_I13.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I14.png
+contexto: 
+```
+
+![Imagen página 30 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P30_I14.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I15.png
+contexto: 
+```
+
+![Imagen página 30 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P30_I15.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I16.png
+contexto: 
+```
+
+![Imagen página 30 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P30_I16.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I17.png
+contexto: 
+```
+
+![Imagen página 30 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P30_I17.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I18.png
+contexto: 
+```
+
+![Imagen página 30 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P30_I18.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I19.png
+contexto: 
+```
+
+![Imagen página 30 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P30_I19.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I20.png
+contexto: 
+```
+
+![Imagen página 30 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P30_I20.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I21.png
+contexto: 
+```
+
+![Imagen página 30 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P30_I21.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I22.png
+contexto: 
+```
+
+![Imagen página 30 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P30_I22.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I23.png
+contexto: 
+```
+
+![Imagen página 30 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P30_I23.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I24.png
+contexto: 
+```
+
+![Imagen página 30 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P30_I24.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I25.png
+contexto: 
+```
+
+![Imagen página 30 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P30_I25.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I26.png
+contexto: 
+```
+
+![Imagen página 30 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P30_I26.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I27.png
+contexto: 
+```
+
+![Imagen página 30 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P30_I27.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I28.png
+contexto: 
+```
+
+![Imagen página 30 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P30_I28.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I29.png
+contexto: 
+```
+
+![Imagen página 30 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P30_I29.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I30.png
+contexto: 
+```
+
+![Imagen página 30 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P30_I30.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I31.png
+contexto: 
+```
+
+![Imagen página 30 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P30_I31.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I32.png
+contexto: 
+```
+
+![Imagen página 30 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P30_I32.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I33.png
+contexto: 
+```
+
+![Imagen página 30 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P30_I33.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I34.png
+contexto: 
+```
+
+![Imagen página 30 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P30_I34.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I35.png
+contexto: 
+```
+
+![Imagen página 30 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P30_I35.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I36.png
+contexto: 
+```
+
+![Imagen página 30 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P30_I36.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I37.png
+contexto: 
+```
+
+![Imagen página 30 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P30_I37.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I38.png
+contexto: 
+```
+
+![Imagen página 30 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P30_I38.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I39.png
+contexto: 
+```
+
+![Imagen página 30 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P30_I39.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I40.png
+contexto: 
+```
+
+![Imagen página 30 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P30_I40.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I41.png
+contexto: 
+```
+
+![Imagen página 30 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P30_I41.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I42.png
+contexto: 
+```
+
+![Imagen página 30 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P30_I42.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I43.png
+contexto: 
+```
+
+![Imagen página 30 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P30_I43.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I44.png
+contexto: 
+```
+
+![Imagen página 30 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P30_I44.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I45.png
+contexto: 
+```
+
+![Imagen página 30 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P30_I45.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I46.png
+contexto: 
+```
+
+![Imagen página 30 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P30_I46.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I47.png
+contexto: 
+```
+
+![Imagen página 30 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P30_I47.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I48.png
+contexto: 
+```
+
+![Imagen página 30 - 48](data/images/tp_100_manual_tp_100_castellano_v2/P30_I48.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I49.png
+contexto: 
+```
+
+![Imagen página 30 - 49](data/images/tp_100_manual_tp_100_castellano_v2/P30_I49.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I50.png
+contexto: 
+```
+
+![Imagen página 30 - 50](data/images/tp_100_manual_tp_100_castellano_v2/P30_I50.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I51.png
+contexto: 
+```
+
+![Imagen página 30 - 51](data/images/tp_100_manual_tp_100_castellano_v2/P30_I51.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I52.png
+contexto: 
+```
+
+![Imagen página 30 - 52](data/images/tp_100_manual_tp_100_castellano_v2/P30_I52.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I53.png
+contexto: 
+```
+
+![Imagen página 30 - 53](data/images/tp_100_manual_tp_100_castellano_v2/P30_I53.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I54.png
+contexto: 
+```
+
+![Imagen página 30 - 54](data/images/tp_100_manual_tp_100_castellano_v2/P30_I54.png)
+
+```metadata
+pagina: 30
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P30_I55.png
+contexto: 
+```
+
+![Imagen página 30 - 55](data/images/tp_100_manual_tp_100_castellano_v2/P30_I55.png)
+
+# Página 31
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I0.png
+contexto: 
+```
+
+![Imagen página 31 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P31_I0.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I1.png
+contexto: 
+```
+
+![Imagen página 31 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P31_I1.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I2.png
+contexto: 
+```
+
+![Imagen página 31 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P31_I2.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I3.png
+contexto: 
+```
+
+![Imagen página 31 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P31_I3.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I4.png
+contexto: 
+```
+
+![Imagen página 31 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P31_I4.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I5.png
+contexto: 
+```
+
+![Imagen página 31 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P31_I5.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I6.png
+contexto: 
+```
+
+![Imagen página 31 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P31_I6.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I7.png
+contexto: 
+```
+
+![Imagen página 31 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P31_I7.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I8.png
+contexto: 
+```
+
+![Imagen página 31 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P31_I8.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I9.png
+contexto: 
+```
+
+![Imagen página 31 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P31_I9.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I10.png
+contexto: 
+```
+
+![Imagen página 31 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P31_I10.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I11.png
+contexto: 
+```
+
+![Imagen página 31 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P31_I11.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I12.png
+contexto: 
+```
+
+![Imagen página 31 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P31_I12.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I13.png
+contexto: 
+```
+
+![Imagen página 31 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P31_I13.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I14.png
+contexto: 
+```
+
+![Imagen página 31 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P31_I14.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I15.png
+contexto: 
+```
+
+![Imagen página 31 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P31_I15.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I16.png
+contexto: 
+```
+
+![Imagen página 31 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P31_I16.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I17.png
+contexto: 
+```
+
+![Imagen página 31 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P31_I17.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I18.png
+contexto: 
+```
+
+![Imagen página 31 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P31_I18.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I19.png
+contexto: 
+```
+
+![Imagen página 31 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P31_I19.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I20.png
+contexto: 
+```
+
+![Imagen página 31 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P31_I20.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I21.png
+contexto: 
+```
+
+![Imagen página 31 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P31_I21.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I22.png
+contexto: 
+```
+
+![Imagen página 31 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P31_I22.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I23.png
+contexto: 
+```
+
+![Imagen página 31 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P31_I23.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I24.png
+contexto: 
+```
+
+![Imagen página 31 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P31_I24.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I25.png
+contexto: 
+```
+
+![Imagen página 31 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P31_I25.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I26.png
+contexto: 
+```
+
+![Imagen página 31 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P31_I26.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I27.png
+contexto: 
+```
+
+![Imagen página 31 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P31_I27.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I28.png
+contexto: 
+```
+
+![Imagen página 31 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P31_I28.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I29.png
+contexto: 
+```
+
+![Imagen página 31 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P31_I29.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I30.png
+contexto: 
+```
+
+![Imagen página 31 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P31_I30.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I31.png
+contexto: 
+```
+
+![Imagen página 31 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P31_I31.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I32.png
+contexto: 
+```
+
+![Imagen página 31 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P31_I32.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I33.png
+contexto: 
+```
+
+![Imagen página 31 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P31_I33.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I34.png
+contexto: 
+```
+
+![Imagen página 31 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P31_I34.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I35.png
+contexto: 
+```
+
+![Imagen página 31 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P31_I35.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I36.png
+contexto: 
+```
+
+![Imagen página 31 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P31_I36.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I37.png
+contexto: 
+```
+
+![Imagen página 31 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P31_I37.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I38.png
+contexto: 
+```
+
+![Imagen página 31 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P31_I38.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I39.png
+contexto: 
+```
+
+![Imagen página 31 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P31_I39.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I40.png
+contexto: 
+```
+
+![Imagen página 31 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P31_I40.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I41.png
+contexto: 
+```
+
+![Imagen página 31 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P31_I41.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I42.png
+contexto: 
+```
+
+![Imagen página 31 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P31_I42.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I43.png
+contexto: 
+```
+
+![Imagen página 31 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P31_I43.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I44.png
+contexto: 
+```
+
+![Imagen página 31 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P31_I44.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I45.png
+contexto: 
+```
+
+![Imagen página 31 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P31_I45.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I46.png
+contexto: 
+```
+
+![Imagen página 31 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P31_I46.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I47.png
+contexto: 
+```
+
+![Imagen página 31 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P31_I47.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I48.png
+contexto: 
+```
+
+![Imagen página 31 - 48](data/images/tp_100_manual_tp_100_castellano_v2/P31_I48.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I49.png
+contexto: 
+```
+
+![Imagen página 31 - 49](data/images/tp_100_manual_tp_100_castellano_v2/P31_I49.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I50.png
+contexto: 
+```
+
+![Imagen página 31 - 50](data/images/tp_100_manual_tp_100_castellano_v2/P31_I50.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I51.png
+contexto: 
+```
+
+![Imagen página 31 - 51](data/images/tp_100_manual_tp_100_castellano_v2/P31_I51.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I52.png
+contexto: 
+```
+
+![Imagen página 31 - 52](data/images/tp_100_manual_tp_100_castellano_v2/P31_I52.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I53.png
+contexto: 
+```
+
+![Imagen página 31 - 53](data/images/tp_100_manual_tp_100_castellano_v2/P31_I53.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I54.png
+contexto: 
+```
+
+![Imagen página 31 - 54](data/images/tp_100_manual_tp_100_castellano_v2/P31_I54.png)
+
+```metadata
+pagina: 31
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P31_I55.png
+contexto: 
+```
+
+![Imagen página 31 - 55](data/images/tp_100_manual_tp_100_castellano_v2/P31_I55.png)
+
+# Página 32
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I0.png
+contexto: 
+```
+
+![Imagen página 32 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P32_I0.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I1.png
+contexto: 
+```
+
+![Imagen página 32 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P32_I1.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I2.png
+contexto: 
+```
+
+![Imagen página 32 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P32_I2.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I3.png
+contexto: 
+```
+
+![Imagen página 32 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P32_I3.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I4.png
+contexto: 
+```
+
+![Imagen página 32 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P32_I4.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I5.png
+contexto: 
+```
+
+![Imagen página 32 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P32_I5.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I6.png
+contexto: 
+```
+
+![Imagen página 32 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P32_I6.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I7.png
+contexto: 
+```
+
+![Imagen página 32 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P32_I7.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I8.png
+contexto: 
+```
+
+![Imagen página 32 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P32_I8.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I9.png
+contexto: 
+```
+
+![Imagen página 32 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P32_I9.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I10.png
+contexto: 
+```
+
+![Imagen página 32 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P32_I10.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I11.png
+contexto: 
+```
+
+![Imagen página 32 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P32_I11.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I12.png
+contexto: 
+```
+
+![Imagen página 32 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P32_I12.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I13.png
+contexto: 
+```
+
+![Imagen página 32 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P32_I13.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I14.png
+contexto: 
+```
+
+![Imagen página 32 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P32_I14.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I15.png
+contexto: 
+```
+
+![Imagen página 32 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P32_I15.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I16.png
+contexto: 
+```
+
+![Imagen página 32 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P32_I16.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I17.png
+contexto: 
+```
+
+![Imagen página 32 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P32_I17.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I18.png
+contexto: 
+```
+
+![Imagen página 32 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P32_I18.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I19.png
+contexto: 
+```
+
+![Imagen página 32 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P32_I19.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I20.png
+contexto: 
+```
+
+![Imagen página 32 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P32_I20.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I21.png
+contexto: 
+```
+
+![Imagen página 32 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P32_I21.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I22.png
+contexto: 
+```
+
+![Imagen página 32 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P32_I22.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I23.png
+contexto: 
+```
+
+![Imagen página 32 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P32_I23.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I24.png
+contexto: 
+```
+
+![Imagen página 32 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P32_I24.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I25.png
+contexto: 
+```
+
+![Imagen página 32 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P32_I25.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I26.png
+contexto: 
+```
+
+![Imagen página 32 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P32_I26.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I27.png
+contexto: 
+```
+
+![Imagen página 32 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P32_I27.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I28.png
+contexto: 
+```
+
+![Imagen página 32 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P32_I28.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I29.png
+contexto: 
+```
+
+![Imagen página 32 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P32_I29.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I30.png
+contexto: 
+```
+
+![Imagen página 32 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P32_I30.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I31.png
+contexto: 
+```
+
+![Imagen página 32 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P32_I31.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I32.png
+contexto: 
+```
+
+![Imagen página 32 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P32_I32.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I33.png
+contexto: 
+```
+
+![Imagen página 32 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P32_I33.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I34.png
+contexto: 
+```
+
+![Imagen página 32 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P32_I34.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I35.png
+contexto: 
+```
+
+![Imagen página 32 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P32_I35.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I36.png
+contexto: 
+```
+
+![Imagen página 32 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P32_I36.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I37.png
+contexto: 
+```
+
+![Imagen página 32 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P32_I37.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I38.png
+contexto: 
+```
+
+![Imagen página 32 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P32_I38.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I39.png
+contexto: 
+```
+
+![Imagen página 32 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P32_I39.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I40.png
+contexto: 
+```
+
+![Imagen página 32 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P32_I40.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I41.png
+contexto: 
+```
+
+![Imagen página 32 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P32_I41.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I42.png
+contexto: 
+```
+
+![Imagen página 32 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P32_I42.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I43.png
+contexto: 
+```
+
+![Imagen página 32 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P32_I43.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I44.png
+contexto: 
+```
+
+![Imagen página 32 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P32_I44.png)
+
+```metadata
+pagina: 32
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P32_I45.png
+contexto: 
+```
+
+![Imagen página 32 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P32_I45.png)
+
+# Página 33
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 33
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P33_I0.png
+contexto: 
+```
+
+![Imagen página 33 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P33_I0.png)
+
+```metadata
+pagina: 33
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P33_I1.png
+contexto: 
+```
+
+![Imagen página 33 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P33_I1.png)
+
+```metadata
+pagina: 33
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P33_I2.png
+contexto: 
+```
+
+![Imagen página 33 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P33_I2.png)
+
+```metadata
+pagina: 33
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P33_I3.png
+contexto: 
+```
+
+![Imagen página 33 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P33_I3.png)
+
+# Página 34
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I0.png
+contexto: 
+```
+
+![Imagen página 34 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P34_I0.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I1.png
+contexto: 
+```
+
+![Imagen página 34 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P34_I1.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I2.png
+contexto: 
+```
+
+![Imagen página 34 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P34_I2.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I3.png
+contexto: 
+```
+
+![Imagen página 34 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P34_I3.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I4.png
+contexto: 
+```
+
+![Imagen página 34 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P34_I4.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I5.png
+contexto: 
+```
+
+![Imagen página 34 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P34_I5.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I6.png
+contexto: 
+```
+
+![Imagen página 34 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P34_I6.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I7.png
+contexto: 
+```
+
+![Imagen página 34 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P34_I7.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I8.png
+contexto: 
+```
+
+![Imagen página 34 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P34_I8.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I9.png
+contexto: 
+```
+
+![Imagen página 34 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P34_I9.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I10.png
+contexto: 
+```
+
+![Imagen página 34 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P34_I10.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I11.png
+contexto: 
+```
+
+![Imagen página 34 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P34_I11.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I12.png
+contexto: 
+```
+
+![Imagen página 34 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P34_I12.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I13.png
+contexto: 
+```
+
+![Imagen página 34 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P34_I13.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I14.png
+contexto: 
+```
+
+![Imagen página 34 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P34_I14.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I15.png
+contexto: 
+```
+
+![Imagen página 34 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P34_I15.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I16.png
+contexto: 
+```
+
+![Imagen página 34 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P34_I16.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I17.png
+contexto: 
+```
+
+![Imagen página 34 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P34_I17.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I18.png
+contexto: 
+```
+
+![Imagen página 34 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P34_I18.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I19.png
+contexto: 
+```
+
+![Imagen página 34 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P34_I19.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I20.png
+contexto: 
+```
+
+![Imagen página 34 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P34_I20.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I21.png
+contexto: 
+```
+
+![Imagen página 34 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P34_I21.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I22.png
+contexto: 
+```
+
+![Imagen página 34 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P34_I22.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I23.png
+contexto: 
+```
+
+![Imagen página 34 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P34_I23.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I24.png
+contexto: 
+```
+
+![Imagen página 34 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P34_I24.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I25.png
+contexto: 
+```
+
+![Imagen página 34 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P34_I25.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I26.png
+contexto: 
+```
+
+![Imagen página 34 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P34_I26.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I27.png
+contexto: 
+```
+
+![Imagen página 34 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P34_I27.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I28.png
+contexto: 
+```
+
+![Imagen página 34 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P34_I28.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I29.png
+contexto: 
+```
+
+![Imagen página 34 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P34_I29.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I30.png
+contexto: 
+```
+
+![Imagen página 34 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P34_I30.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I31.png
+contexto: 
+```
+
+![Imagen página 34 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P34_I31.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I32.png
+contexto: 
+```
+
+![Imagen página 34 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P34_I32.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I33.png
+contexto: 
+```
+
+![Imagen página 34 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P34_I33.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I34.png
+contexto: 
+```
+
+![Imagen página 34 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P34_I34.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I35.png
+contexto: 
+```
+
+![Imagen página 34 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P34_I35.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I36.png
+contexto: 
+```
+
+![Imagen página 34 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P34_I36.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I37.png
+contexto: 
+```
+
+![Imagen página 34 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P34_I37.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I38.png
+contexto: 
+```
+
+![Imagen página 34 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P34_I38.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I39.png
+contexto: 
+```
+
+![Imagen página 34 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P34_I39.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I40.png
+contexto: 
+```
+
+![Imagen página 34 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P34_I40.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I41.png
+contexto: 
+```
+
+![Imagen página 34 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P34_I41.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I42.png
+contexto: 
+```
+
+![Imagen página 34 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P34_I42.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I43.png
+contexto: 
+```
+
+![Imagen página 34 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P34_I43.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I44.png
+contexto: 
+```
+
+![Imagen página 34 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P34_I44.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I45.png
+contexto: 
+```
+
+![Imagen página 34 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P34_I45.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I46.png
+contexto: 
+```
+
+![Imagen página 34 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P34_I46.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I47.png
+contexto: 
+```
+
+![Imagen página 34 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P34_I47.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I48.png
+contexto: 
+```
+
+![Imagen página 34 - 48](data/images/tp_100_manual_tp_100_castellano_v2/P34_I48.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I49.png
+contexto: 
+```
+
+![Imagen página 34 - 49](data/images/tp_100_manual_tp_100_castellano_v2/P34_I49.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I50.png
+contexto: 
+```
+
+![Imagen página 34 - 50](data/images/tp_100_manual_tp_100_castellano_v2/P34_I50.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I51.png
+contexto: 
+```
+
+![Imagen página 34 - 51](data/images/tp_100_manual_tp_100_castellano_v2/P34_I51.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I52.png
+contexto: 
+```
+
+![Imagen página 34 - 52](data/images/tp_100_manual_tp_100_castellano_v2/P34_I52.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I53.png
+contexto: 
+```
+
+![Imagen página 34 - 53](data/images/tp_100_manual_tp_100_castellano_v2/P34_I53.png)
+
+```metadata
+pagina: 34
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P34_I54.png
+contexto: 
+```
+
+![Imagen página 34 - 54](data/images/tp_100_manual_tp_100_castellano_v2/P34_I54.png)
+
+# Página 35
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 35
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P35_I0.png
+contexto: 
+```
+
+![Imagen página 35 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P35_I0.png)
+
+```metadata
+pagina: 35
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P35_I1.png
+contexto: 
+```
+
+![Imagen página 35 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P35_I1.png)
+
+```metadata
+pagina: 35
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P35_I2.png
+contexto: 
+```
+
+![Imagen página 35 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P35_I2.png)
+
+```metadata
+pagina: 35
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P35_I3.png
+contexto: 
+```
+
+![Imagen página 35 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P35_I3.png)
+
+# Página 36
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I0.png
+contexto: 
+```
+
+![Imagen página 36 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P36_I0.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I1.png
+contexto: 
+```
+
+![Imagen página 36 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P36_I1.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I2.png
+contexto: 
+```
+
+![Imagen página 36 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P36_I2.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I3.png
+contexto: 
+```
+
+![Imagen página 36 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P36_I3.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I4.png
+contexto: 
+```
+
+![Imagen página 36 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P36_I4.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I5.png
+contexto: 
+```
+
+![Imagen página 36 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P36_I5.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I6.png
+contexto: 
+```
+
+![Imagen página 36 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P36_I6.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I7.png
+contexto: 
+```
+
+![Imagen página 36 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P36_I7.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I8.png
+contexto: 
+```
+
+![Imagen página 36 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P36_I8.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I9.png
+contexto: 
+```
+
+![Imagen página 36 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P36_I9.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I10.png
+contexto: 
+```
+
+![Imagen página 36 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P36_I10.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I11.png
+contexto: 
+```
+
+![Imagen página 36 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P36_I11.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I12.png
+contexto: 
+```
+
+![Imagen página 36 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P36_I12.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I13.png
+contexto: 
+```
+
+![Imagen página 36 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P36_I13.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I14.png
+contexto: 
+```
+
+![Imagen página 36 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P36_I14.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I15.png
+contexto: 
+```
+
+![Imagen página 36 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P36_I15.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I16.png
+contexto: 
+```
+
+![Imagen página 36 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P36_I16.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I17.png
+contexto: 
+```
+
+![Imagen página 36 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P36_I17.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I18.png
+contexto: 
+```
+
+![Imagen página 36 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P36_I18.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I19.png
+contexto: 
+```
+
+![Imagen página 36 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P36_I19.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I20.png
+contexto: 
+```
+
+![Imagen página 36 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P36_I20.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I21.png
+contexto: 
+```
+
+![Imagen página 36 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P36_I21.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I22.png
+contexto: 
+```
+
+![Imagen página 36 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P36_I22.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I23.png
+contexto: 
+```
+
+![Imagen página 36 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P36_I23.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I24.png
+contexto: 
+```
+
+![Imagen página 36 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P36_I24.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I25.png
+contexto: 
+```
+
+![Imagen página 36 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P36_I25.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I26.png
+contexto: 
+```
+
+![Imagen página 36 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P36_I26.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I27.png
+contexto: 
+```
+
+![Imagen página 36 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P36_I27.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I28.png
+contexto: 
+```
+
+![Imagen página 36 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P36_I28.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I29.png
+contexto: 
+```
+
+![Imagen página 36 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P36_I29.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I30.png
+contexto: 
+```
+
+![Imagen página 36 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P36_I30.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I31.png
+contexto: 
+```
+
+![Imagen página 36 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P36_I31.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I32.png
+contexto: 
+```
+
+![Imagen página 36 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P36_I32.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I33.png
+contexto: 
+```
+
+![Imagen página 36 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P36_I33.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I34.png
+contexto: 
+```
+
+![Imagen página 36 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P36_I34.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I35.png
+contexto: 
+```
+
+![Imagen página 36 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P36_I35.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I36.png
+contexto: 
+```
+
+![Imagen página 36 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P36_I36.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I37.png
+contexto: 
+```
+
+![Imagen página 36 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P36_I37.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I38.png
+contexto: 
+```
+
+![Imagen página 36 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P36_I38.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I39.png
+contexto: 
+```
+
+![Imagen página 36 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P36_I39.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I40.png
+contexto: 
+```
+
+![Imagen página 36 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P36_I40.png)
+
+```metadata
+pagina: 36
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P36_I41.png
+contexto: 
+```
+
+![Imagen página 36 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P36_I41.png)
+
+# Página 37
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I0.png
+contexto: 
+```
+
+![Imagen página 37 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P37_I0.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I1.png
+contexto: 
+```
+
+![Imagen página 37 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P37_I1.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I2.png
+contexto: 
+```
+
+![Imagen página 37 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P37_I2.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I3.png
+contexto: 
+```
+
+![Imagen página 37 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P37_I3.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I4.png
+contexto: 
+```
+
+![Imagen página 37 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P37_I4.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I5.png
+contexto: 
+```
+
+![Imagen página 37 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P37_I5.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I6.png
+contexto: 
+```
+
+![Imagen página 37 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P37_I6.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I7.png
+contexto: 
+```
+
+![Imagen página 37 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P37_I7.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I8.png
+contexto: 
+```
+
+![Imagen página 37 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P37_I8.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I9.png
+contexto: 
+```
+
+![Imagen página 37 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P37_I9.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I10.png
+contexto: 
+```
+
+![Imagen página 37 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P37_I10.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I11.png
+contexto: 
+```
+
+![Imagen página 37 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P37_I11.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I12.png
+contexto: 
+```
+
+![Imagen página 37 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P37_I12.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I13.png
+contexto: 
+```
+
+![Imagen página 37 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P37_I13.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I14.png
+contexto: 
+```
+
+![Imagen página 37 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P37_I14.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I15.png
+contexto: 
+```
+
+![Imagen página 37 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P37_I15.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I16.png
+contexto: 
+```
+
+![Imagen página 37 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P37_I16.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I17.png
+contexto: 
+```
+
+![Imagen página 37 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P37_I17.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I18.png
+contexto: 
+```
+
+![Imagen página 37 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P37_I18.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I19.png
+contexto: 
+```
+
+![Imagen página 37 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P37_I19.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I20.png
+contexto: 
+```
+
+![Imagen página 37 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P37_I20.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I21.png
+contexto: 
+```
+
+![Imagen página 37 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P37_I21.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I22.png
+contexto: 
+```
+
+![Imagen página 37 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P37_I22.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I23.png
+contexto: 
+```
+
+![Imagen página 37 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P37_I23.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I24.png
+contexto: 
+```
+
+![Imagen página 37 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P37_I24.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I25.png
+contexto: 
+```
+
+![Imagen página 37 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P37_I25.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I26.png
+contexto: 
+```
+
+![Imagen página 37 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P37_I26.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I27.png
+contexto: 
+```
+
+![Imagen página 37 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P37_I27.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I28.png
+contexto: 
+```
+
+![Imagen página 37 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P37_I28.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I29.png
+contexto: 
+```
+
+![Imagen página 37 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P37_I29.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I30.png
+contexto: 
+```
+
+![Imagen página 37 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P37_I30.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I31.png
+contexto: 
+```
+
+![Imagen página 37 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P37_I31.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I32.png
+contexto: 
+```
+
+![Imagen página 37 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P37_I32.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I33.png
+contexto: 
+```
+
+![Imagen página 37 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P37_I33.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I34.png
+contexto: 
+```
+
+![Imagen página 37 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P37_I34.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I35.png
+contexto: 
+```
+
+![Imagen página 37 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P37_I35.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I36.png
+contexto: 
+```
+
+![Imagen página 37 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P37_I36.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I37.png
+contexto: 
+```
+
+![Imagen página 37 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P37_I37.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I38.png
+contexto: 
+```
+
+![Imagen página 37 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P37_I38.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I39.png
+contexto: 
+```
+
+![Imagen página 37 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P37_I39.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I40.png
+contexto: 
+```
+
+![Imagen página 37 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P37_I40.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I41.png
+contexto: 
+```
+
+![Imagen página 37 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P37_I41.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I42.png
+contexto: 
+```
+
+![Imagen página 37 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P37_I42.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I43.png
+contexto: 
+```
+
+![Imagen página 37 - 43](data/images/tp_100_manual_tp_100_castellano_v2/P37_I43.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I44.png
+contexto: 
+```
+
+![Imagen página 37 - 44](data/images/tp_100_manual_tp_100_castellano_v2/P37_I44.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I45.png
+contexto: 
+```
+
+![Imagen página 37 - 45](data/images/tp_100_manual_tp_100_castellano_v2/P37_I45.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I46.png
+contexto: 
+```
+
+![Imagen página 37 - 46](data/images/tp_100_manual_tp_100_castellano_v2/P37_I46.png)
+
+```metadata
+pagina: 37
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P37_I47.png
+contexto: 
+```
+
+![Imagen página 37 - 47](data/images/tp_100_manual_tp_100_castellano_v2/P37_I47.png)
+
+# Página 38
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I0.png
+contexto: 
+```
+
+![Imagen página 38 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P38_I0.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I1.png
+contexto: 
+```
+
+![Imagen página 38 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P38_I1.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I2.png
+contexto: 
+```
+
+![Imagen página 38 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P38_I2.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I3.png
+contexto: 
+```
+
+![Imagen página 38 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P38_I3.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I4.png
+contexto: 
+```
+
+![Imagen página 38 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P38_I4.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I5.png
+contexto: 
+```
+
+![Imagen página 38 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P38_I5.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I6.png
+contexto: 
+```
+
+![Imagen página 38 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P38_I6.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I7.png
+contexto: 
+```
+
+![Imagen página 38 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P38_I7.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I8.png
+contexto: 
+```
+
+![Imagen página 38 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P38_I8.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I9.png
+contexto: 
+```
+
+![Imagen página 38 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P38_I9.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I10.png
+contexto: 
+```
+
+![Imagen página 38 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P38_I10.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I11.png
+contexto: 
+```
+
+![Imagen página 38 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P38_I11.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I12.png
+contexto: 
+```
+
+![Imagen página 38 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P38_I12.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I13.png
+contexto: 
+```
+
+![Imagen página 38 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P38_I13.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I14.png
+contexto: 
+```
+
+![Imagen página 38 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P38_I14.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I15.png
+contexto: 
+```
+
+![Imagen página 38 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P38_I15.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I16.png
+contexto: 
+```
+
+![Imagen página 38 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P38_I16.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I17.png
+contexto: 
+```
+
+![Imagen página 38 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P38_I17.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I18.png
+contexto: 
+```
+
+![Imagen página 38 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P38_I18.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I19.png
+contexto: 
+```
+
+![Imagen página 38 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P38_I19.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I20.png
+contexto: 
+```
+
+![Imagen página 38 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P38_I20.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I21.png
+contexto: 
+```
+
+![Imagen página 38 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P38_I21.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I22.png
+contexto: 
+```
+
+![Imagen página 38 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P38_I22.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I23.png
+contexto: 
+```
+
+![Imagen página 38 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P38_I23.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I24.png
+contexto: 
+```
+
+![Imagen página 38 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P38_I24.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I25.png
+contexto: 
+```
+
+![Imagen página 38 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P38_I25.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I26.png
+contexto: 
+```
+
+![Imagen página 38 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P38_I26.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I27.png
+contexto: 
+```
+
+![Imagen página 38 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P38_I27.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I28.png
+contexto: 
+```
+
+![Imagen página 38 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P38_I28.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I29.png
+contexto: 
+```
+
+![Imagen página 38 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P38_I29.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I30.png
+contexto: 
+```
+
+![Imagen página 38 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P38_I30.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I31.png
+contexto: 
+```
+
+![Imagen página 38 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P38_I31.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I32.png
+contexto: 
+```
+
+![Imagen página 38 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P38_I32.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I33.png
+contexto: 
+```
+
+![Imagen página 38 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P38_I33.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I34.png
+contexto: 
+```
+
+![Imagen página 38 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P38_I34.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I35.png
+contexto: 
+```
+
+![Imagen página 38 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P38_I35.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I36.png
+contexto: 
+```
+
+![Imagen página 38 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P38_I36.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I37.png
+contexto: 
+```
+
+![Imagen página 38 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P38_I37.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I38.png
+contexto: 
+```
+
+![Imagen página 38 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P38_I38.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I39.png
+contexto: 
+```
+
+![Imagen página 38 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P38_I39.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I40.png
+contexto: 
+```
+
+![Imagen página 38 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P38_I40.png)
+
+```metadata
+pagina: 38
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P38_I41.png
+contexto: 
+```
+
+![Imagen página 38 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P38_I41.png)
+
+# Página 39
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I0.png
+contexto: 
+```
+
+![Imagen página 39 - 0](data/images/tp_100_manual_tp_100_castellano_v2/P39_I0.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I1.png
+contexto: 
+```
+
+![Imagen página 39 - 1](data/images/tp_100_manual_tp_100_castellano_v2/P39_I1.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I2.png
+contexto: 
+```
+
+![Imagen página 39 - 2](data/images/tp_100_manual_tp_100_castellano_v2/P39_I2.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I3.png
+contexto: 
+```
+
+![Imagen página 39 - 3](data/images/tp_100_manual_tp_100_castellano_v2/P39_I3.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I4.png
+contexto: 
+```
+
+![Imagen página 39 - 4](data/images/tp_100_manual_tp_100_castellano_v2/P39_I4.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I5.png
+contexto: 
+```
+
+![Imagen página 39 - 5](data/images/tp_100_manual_tp_100_castellano_v2/P39_I5.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I6.png
+contexto: 
+```
+
+![Imagen página 39 - 6](data/images/tp_100_manual_tp_100_castellano_v2/P39_I6.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I7.png
+contexto: 
+```
+
+![Imagen página 39 - 7](data/images/tp_100_manual_tp_100_castellano_v2/P39_I7.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I8.png
+contexto: 
+```
+
+![Imagen página 39 - 8](data/images/tp_100_manual_tp_100_castellano_v2/P39_I8.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I9.png
+contexto: 
+```
+
+![Imagen página 39 - 9](data/images/tp_100_manual_tp_100_castellano_v2/P39_I9.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I10.png
+contexto: 
+```
+
+![Imagen página 39 - 10](data/images/tp_100_manual_tp_100_castellano_v2/P39_I10.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I11.png
+contexto: 
+```
+
+![Imagen página 39 - 11](data/images/tp_100_manual_tp_100_castellano_v2/P39_I11.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I12.png
+contexto: 
+```
+
+![Imagen página 39 - 12](data/images/tp_100_manual_tp_100_castellano_v2/P39_I12.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I13.png
+contexto: 
+```
+
+![Imagen página 39 - 13](data/images/tp_100_manual_tp_100_castellano_v2/P39_I13.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I14.png
+contexto: 
+```
+
+![Imagen página 39 - 14](data/images/tp_100_manual_tp_100_castellano_v2/P39_I14.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I15.png
+contexto: 
+```
+
+![Imagen página 39 - 15](data/images/tp_100_manual_tp_100_castellano_v2/P39_I15.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I16.png
+contexto: 
+```
+
+![Imagen página 39 - 16](data/images/tp_100_manual_tp_100_castellano_v2/P39_I16.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I17.png
+contexto: 
+```
+
+![Imagen página 39 - 17](data/images/tp_100_manual_tp_100_castellano_v2/P39_I17.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I18.png
+contexto: 
+```
+
+![Imagen página 39 - 18](data/images/tp_100_manual_tp_100_castellano_v2/P39_I18.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I19.png
+contexto: 
+```
+
+![Imagen página 39 - 19](data/images/tp_100_manual_tp_100_castellano_v2/P39_I19.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I20.png
+contexto: 
+```
+
+![Imagen página 39 - 20](data/images/tp_100_manual_tp_100_castellano_v2/P39_I20.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I21.png
+contexto: 
+```
+
+![Imagen página 39 - 21](data/images/tp_100_manual_tp_100_castellano_v2/P39_I21.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I22.png
+contexto: 
+```
+
+![Imagen página 39 - 22](data/images/tp_100_manual_tp_100_castellano_v2/P39_I22.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I23.png
+contexto: 
+```
+
+![Imagen página 39 - 23](data/images/tp_100_manual_tp_100_castellano_v2/P39_I23.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I24.png
+contexto: 
+```
+
+![Imagen página 39 - 24](data/images/tp_100_manual_tp_100_castellano_v2/P39_I24.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I25.png
+contexto: 
+```
+
+![Imagen página 39 - 25](data/images/tp_100_manual_tp_100_castellano_v2/P39_I25.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I26.png
+contexto: 
+```
+
+![Imagen página 39 - 26](data/images/tp_100_manual_tp_100_castellano_v2/P39_I26.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I27.png
+contexto: 
+```
+
+![Imagen página 39 - 27](data/images/tp_100_manual_tp_100_castellano_v2/P39_I27.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I28.png
+contexto: 
+```
+
+![Imagen página 39 - 28](data/images/tp_100_manual_tp_100_castellano_v2/P39_I28.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I29.png
+contexto: 
+```
+
+![Imagen página 39 - 29](data/images/tp_100_manual_tp_100_castellano_v2/P39_I29.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I30.png
+contexto: 
+```
+
+![Imagen página 39 - 30](data/images/tp_100_manual_tp_100_castellano_v2/P39_I30.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I31.png
+contexto: 
+```
+
+![Imagen página 39 - 31](data/images/tp_100_manual_tp_100_castellano_v2/P39_I31.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I32.png
+contexto: 
+```
+
+![Imagen página 39 - 32](data/images/tp_100_manual_tp_100_castellano_v2/P39_I32.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I33.png
+contexto: 
+```
+
+![Imagen página 39 - 33](data/images/tp_100_manual_tp_100_castellano_v2/P39_I33.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I34.png
+contexto: 
+```
+
+![Imagen página 39 - 34](data/images/tp_100_manual_tp_100_castellano_v2/P39_I34.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I35.png
+contexto: 
+```
+
+![Imagen página 39 - 35](data/images/tp_100_manual_tp_100_castellano_v2/P39_I35.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I36.png
+contexto: 
+```
+
+![Imagen página 39 - 36](data/images/tp_100_manual_tp_100_castellano_v2/P39_I36.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I37.png
+contexto: 
+```
+
+![Imagen página 39 - 37](data/images/tp_100_manual_tp_100_castellano_v2/P39_I37.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I38.png
+contexto: 
+```
+
+![Imagen página 39 - 38](data/images/tp_100_manual_tp_100_castellano_v2/P39_I38.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I39.png
+contexto: 
+```
+
+![Imagen página 39 - 39](data/images/tp_100_manual_tp_100_castellano_v2/P39_I39.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I40.png
+contexto: 
+```
+
+![Imagen página 39 - 40](data/images/tp_100_manual_tp_100_castellano_v2/P39_I40.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I41.png
+contexto: 
+```
+
+![Imagen página 39 - 41](data/images/tp_100_manual_tp_100_castellano_v2/P39_I41.png)
+
+```metadata
+pagina: 39
+imagen: data/images/tp_100_manual_tp_100_castellano_v2/P39_I42.png
+contexto: 
+```
+
+![Imagen página 39 - 42](data/images/tp_100_manual_tp_100_castellano_v2/P39_I42.png)
+
+# Página 40
+
+**Equipo:** Tratamiento de agua portátil TP-100
+
+Sensor de Conductividad agua de entrada
+
+Sensor de Conductividad agua de salida
+
+-5V +5V 0V +12V
+
++12V Retorno Llave Osmosis Retorno NC Reset Retorno NC Punch Retorno Botón Subir Retorno Botón Bajar Retorno Llave Regeneracion Retorno Botón Enter Retorno Llave Sanitizacion +12V
+
++5V Dato 0V 0V
+
++5V Dato 0V 0V } }
+
+Caudal de Entrada
+
+Caudal de Concentrado
+
++12V Dato Presión Membrana
+
+Retorno del Contactor Bba.Princ. +12V
+
+Fase Fase
+
+N
+
+~ ~ + -
+
++9Vdc
+
+0Vdc
+
+220Vac / 9Vacx5A
+
+N
+
+A1
+
+A2
+
+96
+
+95
+
+Contactor Bba. Principal
+
+Contacto Relevo Térmico
+
+EV Entrada
+
++12Vac
+
+EV Resina
+
++12Vac
+
+Bomba Auxiliar
+
+220Vac / 12+12Vac x 1A
+
+Fase Neutro (N)
+
+-12Vac
+
++12Vac
+
++12V 0V
+
++5V
+
+-5V
+
+00 05 00 01 06 07 02 08 03 09 04
+
+N F
+
+EV_Entrada
+
+-12Vac
+
+N U
+
+0Vdc
+
++9Vdc
+
+EV_Resnia
+
+-12Vac
+
+}
+
+Alimentación
+
+}
+
+EV de Entrada
+
+}
+
+EV de Resina
+
+}
+
+Bba. Principal
+
+}
+
+Bba. Auxiliar
+
+Fuente 12Vx1A 5Vx1A
+
+Fuente 12Vx1A 5Vx1A
+
+TITULO:  ESQUEMA ELECTRICO TP 100
+
+PLANO N°: M-TP-100-17 FECHA: 23/02/2015
+

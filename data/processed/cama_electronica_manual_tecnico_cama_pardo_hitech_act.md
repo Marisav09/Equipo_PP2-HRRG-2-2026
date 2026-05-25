@@ -1,0 +1,352 @@
+# Página 1
+
+**Equipo:** Cama de UCI HiTech ACT
+
+HiTech ACT  Cama
+
+C/ Los Ángeles 5, (Polígono Centrovía) 50198 La Muela, Zaragoza (España)     |     Tel.: (+34) 976 300 033 / Fax: (+34) 976 320 647     |     www.pardo.es
+
+Características
+
+La cama de UCI HiTech ACT está dotada de la tecnología más avanzada para el cuidado intensivo del paciente.
+
+Compuesta por 3 columnas rectangulares de elevación y lateralización y de múltiples opciones para satisfacer las necesidades del cuidado del paciente y optimizando la labor de los cuidadores.
+
+Alguna de sus características principales son:
+
+ Para facilitar su transporte:
+
+Ligera, dispone de unas ruedas de alta resistencia a la rodadura, al desgaste y a la oxidación, así como un mínimo ruido al realizar los movimientos.
+
+Tiene un sistema de freno centralizado mediante barra situado en la zona del pie- cero.
+
+ Sencilla e intuitiva de manejar:
+
+Sistema de elevación y lateralización me- diante 3 columnas rectangulares, el uso de columnas, facilita la limpieza de la cama y por tanto reduce las posibilidades de infecciones.
+
+Control principal de la cama mediante una pantalla táctil instalada en el piecero, con-
+
+trolando con ella todos los movimientos de la cama así como para controlar el sis- tema de pesaje de la misma.
+
+La cama dispone una batería que funcio- na en caso de que la cama se desenchufe de la corriente eléctrica pudiendo realizar más de 300 movimientos completos.
+
+ Favorece el bienestar del paciente:
+
+La lateralización de la cama permite una mejor oxigenación para evitar complica- ciones y facilita el cuidado diario del pa- ciente.
+
+Su sección de respaldo radio transparen- te, preparada para Rx.
+
+Extensibilidad del lecho, hasta en 26 cm.
+
+Sistema de doble regresión, reduce la presión en la zona pélvica reduciendo de esta manera el riesgo de ulceras por pre- sión (15 cm).
+
+Sistema del posicionado de los pies del paciente en varias posiciones gracias a un amortiguador.
+
+ Otras mejoras:
+
+3 Lechos fabricados en HPL (Tronco, ex- tremidades y pies) desmontables sin he- rramientas y lecho central fijo, fabricado en chapa.
+
+Lechos fáciles de limpiar con gran protec- ción, al igual que la cama, frente a la for- mación y propagación de bacterias.
+
+Barandilla fabricadas en polipropileno con zona de agarre y sistema plegado me- diante pistón de gas, ayudan a la incorpo- ración y a la salida de la cama.
+
+Cabecero y piecero fácilmente extraíbles con sistema de bloqueo.
+
+4 cilindros de protección en las esquinas que evitan los choques minimizando los impactos y el deterioro de la cama.
+
+2 guías en ambos laterales con 4 ganchos portadrenajes incluidos en cada una de ellas.
+
+4 arquillos de retención del colchón en tórax y pies.
+
+Vinilos completamente personalizables.
+
+ Además la cama HiTech ACT dispone de una amplia gama de accesorios y com- plementos que permite cumplir con las necesidades del hospital y del paciente, para su confort y bienestar.
+
+```metadata
+pagina: 1
+imagen: data/images/cama_electronica_manual_tecnico_cama_pardo_hitech_act/P1_I1.png
+contexto: 
+```
+
+![Imagen página 1 - 1](data/images/cama_electronica_manual_tecnico_cama_pardo_hitech_act/P1_I1.png)
+
+227 98 51 - 91
+
+4
+
+250 185
+
+Columnas Motor lineal
+
+Longitud máx. estándar Anchura máx. estándar Alturas Estándar
+
+SWL MPW
+
+Nº lechos
+
+TR / ATR Silla cardíaca Lateralización
+
+CPR
+
+# Página 2
+
+**Equipo:** Cama de UCI HiTech ACT
+
+Cód: PCO739750_FichaTecnica_HiTechACT_ES_2020_rev1 may 2023
+
+HiTech ACT  Cama
+
+Nuestros productos están protegidos por patentes propias. Pardo se reserva el derecho a modificar sin previo aviso los modelos y especificaciones técnicas descritas en esta ficha.
+
+Cualquier modificación realizada en esta documentación por personas ajenas a la empresa, exime a Pardo de cualquier reclamación
+
+Información técnica
+
+Longitud total con cabecero anclado y piecero 227 cm. ± 1 mm.
+
+Anchura total con barandillas 98 cm. ± 1 cm.
+
+Altura mínima / máxima del lecho 51 / 91 cm. ± 1 cm
+
+Altura libre desde suelo hasta sistema de columnas 5 cm. ± 1 cm.
+
+Altura libre paso de grúas 18 cm. ± 1 cm.
+
+Diámetro de las ruedas 15 cm. ± 1 cm.
+
+Anchura de los lechos 83 cm.
+
+Longitudes de los lechos 79 / 17 / 32 / 62 cm.
+
+Longitud extensible zona de extremidades 26 cm.
+
+Doble regresión de los lechos 15 cm. ± 1 cm.
+
+Ángulo inclinación respaldo 65º ± 5º
+
+Ángulo inclinación extremidades 47º ± 2º
+
+Ángulo inclinación pies 18º / 7º ± 2º
+
+Ángulos posiciones Trend / Antitrend 18º / 18º ± 2º
+
+Ángulo inclinación Lateralización 20º ± 2º
+
+Peso máximo usuario (MPW) 185 kg.
+
+Carga máxima de seguridad (SWL) 250 kg.
+
+Peso de la cama en vacío Desde 125 kg. hasta 150 kg.
+
+Dimensiones del colchón recomendado 85 cm x 200 cm.
+
+Estándar obligatorios
+
+Opciones intercambiables
+
+Configuración
+
+Barandillas integrales
+
+5ª rueda
+
+Amortiguador elevación pies
+
+Luz bajo cama (2)
+
+Cabecero curvo extraíble
+
+Barandillas salida segura
+
+Freno centralizado
+
+Dobles carenadas Ø150mm
+
+Vinilo Personalizado (3)
+
+Alarma de freno Mesa bajo piecero
+
+Protección
+
+Protección
+
+Transporte
+
+Transporte
+
+Otros
+
+Otros
+
+Bienestar
+
+Bienestar
+
+Estándar
+
+Opcional
+
+Ganchos para drenajes
+
+Lechos de HPL extraíbles
+
+Lecho central de chapa
+
+Batería
+
+Vinilo Pardo P.288 (1)
+
+Cabecero anclado
+
+Pesaje integrado en pantalla
+
+CPR
+
+SCALE SCALE
+
+-kg -kg
+
+13:48 PM 13:48 PM
+
+0.1 0.1 >0< >0<
+
++/- +/- Add or remove items from the bed Add or remove items from the bed
+
+85.1 kg 85.1 kg
+
+-                                         kg                                         - -                                         kg                                         -
+
+# Página 3
+
+**Equipo:** Cama de UCI HiTech ACT
+
+HiTech ACT  Cama
+
+C/ Los Ángeles 5, (Polígono Centrovía) 50198 La Muela, Zaragoza (España)     |     Tel.: (+34) 976 300 033 / Fax: (+34) 976 320 647     |     www.pardo.es
+
+Información eléctrica
+
+Elevación y Lateralización de la cama 3 columnas
+
+Elevación del respaldo Motor lineal
+
+Elevación de las extremidades Motor lineal
+
+Tensión y 110 V ó 230 V
+
+Frecuencia 50 - 60 Hz
+
+Protección descarga eléctrica / penetración de líquidos Clase I / Tipo B / IPX6
+
+Consumo máximo Máx. 3 15A (máximo 400 W)
+
+Operación intermitente del motor 10% 2 min. - 18 min.
+
+Accesorios
+
+Configuración de los Mandos de Control
+
+Certificación
+
+ Norma UNE EN ISO 12100.
+
+ Norma UNE EN 20324.
+
+ Norma UNE EN 60204-1.
+
+ Norma UNE EN 60601-1.
+
+ Norma UNE EN 60601-1-2.
+
+ Norma UNE EN 60601-2-52.
+
+ Norma UNE EN 45501-16.
+
+Ensayos EN 60601-2-52:2010
+
+ ITA (Instituto tecnológico de Aragón) Ensayos Eléctricos y Electro- magneticos.
+
+ IBV (Instituto Biomecanico de Valencia (Ensayo Mecánico de Ba- randillas).
+
+Mando obligatorio en todas las camas
+
+Otros mandos a añadir
+
+Membrana de barandillas Pedal de elevación
+
+Pantalla táctil
+
+Pedal de lateralización Mando de paciente
+
+Portasueros 2 ganchos
+
+Potencia
+
+Mesa abatible Portabom- bonas Arco balcánico Portaplacas
+
+Portasueros 4 ganchos
+
+CPR
+
+FEATURES
+
+SETTINGS
+
+BED CONTROL BED CONTROL
+
+13:48 PM 13:48 PM
+
+Potencia Techno
+
+# Página 4
+
+**Equipo:** Cama de UCI HiTech ACT
+
+HiTech ACT  Cama
+
+Nuestros productos están protegidos por patentes propias. Pardo se reserva el derecho a modificar sin previo aviso los modelos y especificaciones técnicas descritas en esta ficha.
+
+Cualquier modificación realizada en esta documentación por personas ajenas a la empresa, exime a Pardo de cualquier reclamación
+
+INCOMPATIBILIDADES:
+
+2 - La luz bajo cama deberá configurarse junto con alguno de los siguientes mandos:
+
+ Membrana de barandillas  Mando paciente con luz
+
+NOTAS:
+
+1 - Los vinilos estándar de las camas tendrán como características:
+
+ Color Azul P.288  Sólo llevarán el Logo Pardo en color blanco
+
+3 - Los vinilos personalizados de las camas, irán condicionados según la cantidad del pedido (Ver plazos de entrega))
+
+ Color: Se intentará realizar el fondo en un sólo color.  Logotipo: Se podrá incluir el logotipo del cliente. Se intentará hacer en blanco. A no ser que el cliente solicite lo contrario.
+
+PLAZOS DE ENTREGA:
+
+Camas (Desde la Mecanización del pedido).
+
+Camas HiTech ACT Estándar:
+
+ Pedido < 5 unidades: Consultar con producción  Pedido < 75 unidades: 5 - 6 semanas  Pedido > 75 unidades: 7 - 8 semanas
+
+Camas Hitech ACT Especiales:
+
+ Consultar con producción.
+
+Vinilos (Desde la Mecanización del pedido).
+
+ Pedido < 25 unidades: Se hace por impresión digital. Se pueden añadir algún color. Plazo normal: 10 días.  Pedido > 25 unidades: Se hace por serigrafía. Cuantos más colores, mayor es el precio. Plazo normal: 3 semanas.
+
+MECANIZADO DE PEDIDOS:
+
+Códigos que se deben mecanizar en un pedido:
+
+ Código CAMA: ( Ejm: SC8010600000XXX)  Código BARANDILLAS: (Ejm: BC8011800000XX)  Código CABECERO - PIECERO (Ejm: RC80122000000XXX)  Código VINILOS (Ejm: AC80124000000XX)  Código MANUALES. (Ejm: XX8499900000XXX)
+
+Enviar los archivos por pdf.  Código DOCUMENTACIÓN (Ejm: XX8499800000XXX)
+
+Únicamente mecanizar la ficha rápida, una por unidad de cama en el pedido.  Código EMBALAJE: AC8012100000023  Código ACCESORIOS, en función del pedido.
+
