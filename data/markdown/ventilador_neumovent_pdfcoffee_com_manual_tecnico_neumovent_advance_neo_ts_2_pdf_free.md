@@ -1,0 +1,4066 @@
+# Página 1
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  2
+
+•	EN ISO 13485:2012/AC:2012 -  Medical devices. Quality management systems. Requirements for regulatory purposes (ISO 13485:2003)
+
+•	EN 60601-1:2006 -  Medical electrical equipment - Part 1: General requirements for basic safety and essential performance (IEC 60601-1:2005).
+
+•	EN ISO 80601-2-12:2011/AC:2011 -  Medical electrical equipment. Part 2-12: Par­ ticular requirements for basic safety and essential performance of critical care ven­ tilators (ISO 80601-2-12:2011/Cor 1: 2011).
+
+•	EN 60601-1-2:2007/AC:2010 -  Medical electrical equipment. Part 1-2: General re­ quirements for basic safety and essential performance. Collateral standard: Elec­ tromagnetic compatibility - Requirements and tests (IEC 60601-1-2:2007).
+
+•	EN 60601-1-6:2010 -  Medical electrical equipment. Part 1-6: General requirements for basic safety and essential performance. Collateral standard: Usability (IEC 60601-1-6:2010).
+
+•	EN 60601-1-8:2007/AC:2010 -  Medical electrical equipment. Part 1-8: General re­ quirements for basic safety and essential performance. Collateral Standard: Gene­ ral requirements, tests and guidance for alarm systems in medical electrical equip­ ment and medical electrical systems (IEC 60601-1-8:2006).
+
+•	EN 60601-1-9:2008/AC:2013 -  Medical electrical equipment - Part 1-9: General requirements for basic safety and essential performance - Collateral Standard: Re­ quirements for environmentally conscious design (IEC 60601-1-9:2007/A1:2013).
+
+•	EN 62304:2006/AC:2008 -  Medical device software. Software life cycle processes (IEC 62304:2006).
+
+• EN 62366:2008 -  Medical devices. Application of usability engineering to medical devices (IEC 62366:2007).
+
+Graph Net  advance neo ts  es un respirador mecánico controlado por microproce­ sador que incorpora los modos más avanzados de soporte ventilatorio. El circuito electrónico maneja dos válvulas proporcionales que proveen el flujo de gases ne­ cesario para satisfacer la configuración elegida.
+
+Graph Net  advance  fue concebido para ser usado en pacientes, adultos, pediá­ tricos, y neonatos-infantiles (incluyendo prematuros);  Graph Net  ts  para  pacien­ tes adultos, pediátricos, y neonatos-infantiles; y  Graph Net  neo  para pacientes neonatos-infantiles (incluyendo prematuros); todos éstos siendo pacientes que rrequieran soporte ventilatorio invasivo, y no invasivo, por un período breve o pro­ longado, permitiendo la monitorización de los principales parámetros ventilatorios. El equipo contempla la asistencia para pacientes con o sin capacidad de realizar esfuerzos respiratorios propios.
+
+Graph Net  advance neo ts  debe ser manejado por, o bajo la supervisión de profe­ sionales de la salud, con la correspondiente formación en terapias ventilatorias, y en especial sobre el uso de este respirador.
+
+El respirador fue diseñado para desempeñarse dentro de hospitales y centros de cuidado de la salud, específicamente en salas de cuidados intensivos, donde la presencia de profesionales competentes y las instalaciones necesarias garanticen el buen uso del equipo.
+
+1.2 |  Descripción General del Equipo
+
+1.3 |  Uso Previsto
+
+1.4 |  Usuario Previsto
+
+1.5 |  Ambiente de Uso Previsto
+
+1.1 |  Requerimientos y
+
+Estándares
+
+Observados
+
+# Página 2
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  3
+
+NO es posible utilizar el respirador cuando sucede alguno de  los siguientes eventos:
+
+•	Comenzar y operar el respirador sin la presencia de profesionales médicos com­ petentes que supervisen el procedimiento.
+
+•	Si no existe un método y equipo alternativo de ventilación que pueda usarse como respaldo.
+
+•	Como impulsores de máquinas de anestesia. Tampoco utilizarlo en presencia de gases anestésicos inflamables.
+
+•	No utilizar con óxido nítrico, helio o mezclas que contengan helio.
+
+•	Conectado a una red de distribución de energía eléctrica inadecuada (ej. sin conexión de puesta a tierra).
+
+•	El respirador se encuentra ubicado en cercanías de equipos de resonancia mag­ nética o importantes fuentes de radiación electromagnética.
+
+•	Con suministro de gases que no cumplan con las especificaciones de grado médico.
+
+•	Durante el traslado inter hospitalario de pacientes (movilización fuera de la insti­ tución asignada).
+
+•	Si no se respetan estrictamente las declaraciones de uso, usuario, y ambiente de uso previsto para este respirador.
+
+•	Si el respirador se encuentra en una cámara hiperbárica.
+
+Si necesita  asistencia técnica, envíe un correo electrónico a asistencia.tecnica@ tecme.com.ar. Por favor, asegúrese de incluir el nombre de la institución a la que pertenece, y los datos de contacto donde una respuesta pueda ser enviada.
+
+Mantener hacia arriba.
+
+Mantener seco.
+
+Límites de temperatura.
+
+Frágil.
+
+No estibar más de 5 cajas.
+
+Límite de humedad.
+
+1.6 |  Contraindicaciones de Uso
+
+1.7 |  Asistencia Técnica para el Usuario
+
+1.8 |  Símbolos Utilizados
+
+# Página 3
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  4
+
+Parte aplicada Tipo B.
+
+Referencia al manual de instrucciones.
+
+Disposición final de acuerdo a la directiva WEEE (Waste Electrical and Electronic Equipment)
+
+Grado de protección contra el ingreso de partículas (N1) y líquidos (N2). Clasifica­ ción IP.
+
+Acceso a la configuración de límites de alarmas.
+
+Audio pausado. Icono utilizado para identi­ ficar el control y el aviso en pantalla de se­ ñal auditiva de alarma pausada.
+
+Alarma desactivada. Icono que indica que una alarma ha sido desactivada.
+
+Límites de alarma.
+
+Puerto de evacuación de gases espirados (desde paciente). Conexión para el conjun­ to espiratorio.
+
+Alarm Limits
+
+Fabricante.
+
+No reusable.
+
+Marcado que indica conformidad con los re­ quisitos de la Directiva del Consejo Europeo (93/42/CEE) relativo a dispositivos médicos
+
+Representante autorizado en la Comuni­ dad Europea.
+
+Apagado (energía eléctrica).
+
+Encendido (energía eléctrica).
+
+Advertencia.
+
+Precaución.
+
+Nota.
+
+0086
+
+# Página 4
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  5
+
+Puerto de entrega de gases inspirados (ha­ cia paciente).
+
+Puerto de conexión para el nebulizador.
+
+P1     P2 Puertos de conexión para las mangueras del neumotacógrafo distal.
+
+Prox Puerto de conexión para el neumotacógra­ fo proximal. ( Graph Net  advance / neo )
+
+O 2 % Puerto de conexión de la celda de O 2 .
+
+CO 2 Capnógrafo ( Graph Net  advance )
+
+Respirador en Standby. No existe asisten­ cia respiratoria en este estado.
+
+Indica respiraciones iniciadas por el pa­ ciente.
+
+Estados de carga de la batería interna.
+
+Batería defectuosa.
+
+Tiempo de subida. Control para la veloci­ dad de establecimiento de la presión inspi­ ratoria configurada.
+
+Indicación en pantalla para autoescala ac­ tivada.
+
+Indicación en pantalla para nebulización activada.
+
+Indicación en pantalla para tecla  [Ctrl]  pre­ sionada.
+
+Indicación en pantalla para humidificador pasivo seleccionado.
+
+Indicación en pantalla para humidificador activo seleccionado.
+
+Bloqueo de pantalla.
+
+Neumotacógrafo proximal activado. ( Graph Net  advance / neo )
+
+Indicación en pantalla sobre la necesidad de mantenimiento.
+
+# Página 5
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  6
+
+%O 2 Concentración de O 2
+
+ADL Adulto ( Graph Net  advance / ts )
+
+APRV Ventilación con alivio de presión
+
+BTPS Body temperature pressure saturated
+
+Cdin Complacencia dinámica
+
+Cest Complacencia estática
+
+Cmax Complacencia máxima
+
+CPAP Presión positiva continua de la vía aérea
+
+Esc Escape
+
+Esp. Espiración o espirado
+
+ETCO 2
+
+CO 2  de fin de espiración ( Graph Net advance )
+
+f Frecuencia respiratoria
+
+F Espon Frecuencia respiratoria espontánea
+
+F/VT Relación frecuencia respiratoria/volu­ men tidal. ( Graph Net  advance / ts )
+
+FiO 2 Fracción inspirada de oxígeno
+
+f TOTAL Frecuencia respiratoria total
+
+I:E Relación tiempo inspiratorio/tiempo espiratorio
+
+Insp. Inspiración o inspirado
+
+Lip Punto de inflexión superior. ( Graph Net advance / ts )
+
+MMV Ventilación mandatoria minuto ( Graph Net  advance / ts )
+
+NEO-INF Neonato – infantil
+
+O 2  100% Oxigenación 100%
+
+P/V flex Puntos de inflexión. ( Graph Net  advance / ts )
+
+P0.1 Presión durante los primeros 100 ms. ( Graph Net  advance / ts )
+
+P1 Ingreso de manguera inferior del neu­ motacógrafo espiratorio
+
+1.9 |  Abreviaturas, Acrónimos y Nombres de Variables
+
+# Página 6
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  7
+
+P2 Ingreso de manguera superior del neumotacógrafo espiratorio
+
+Paw Presión de la vía aérea
+
+PCV Ventilación con presión controlada.
+
+PED Pediátrico. ( Graph Net  advance / ts )
+
+PEEP Presión positiva de fin de espiración.
+
+Pimax Presión inspiratoria máxima. ( Graph Net  advance / ts )
+
+Pmax Presión máxima.
+
+Pmin Presión mínima.
+
+PSV Ventilación con presión de soporte.
+
+Re Resistencia espiratoria.
+
+Ri Resistencia inspiratoria.
+
+SIMV Ventilación mandatoria intermitente sincronizada.
+
+TCPL Ventilación ciclada por tiempo, limita­ da por presión.
+
+Te Tiempo espiratorio.
+
+Ti Tiempo inspiratorio.
+
+Uip Punto de inflexión superior. ( Graph Net advance / ts )
+
+V Flujo.
+
+VCO 2 CO 2  eliminado. ( Graph Net  advance )
+
+VCV Ventilación con control de volumen.
+
+V ̇ E Volumen minuto espirado.
+
+VE Espont Volumen minuto espirado espontáneo.
+
+VE Mandat Volumen minuto espirado mandatorio.
+
+VM Volumen minuto.
+
+Vmax Volumen máximo.
+
+VNI Ventilación no invasiva. ( Graph Net advance / ts )
+
+# Página 7
+
+**Equipo:** Respirador Neumovent Graph
+
+Generalidades |  Graph Net  advance neo ts 1.  8
+
+VT ó V T Volumen tidal.
+
+WOBi Trabajo respiratorio impuesto. ( Graph Net  advance / ts )
+
+# Página 8
+
+**Equipo:** Respirador Neumovent Graph
+
+Advertencia - Precaución - Notas |  Graph Net  advance neo ts 2.  2
+
+ADVERTENCIA •  Significa que existe la posibilidad de pro­ ducir daño a uno mismo o a otros.
+
+PRECAUCIÓN •  Significa que existe la posibilidad de dañar el equipo u otro cercano.
+
+NOTA •  Indica puntos de interés particular que deben ser tenidos en cuenta para una aplicación correcta.
+
+ADVERTENCIA
+
+•	Se requiere una atención constante del personal especializado cuan­ do el respirador está conectado a un paciente. Algunas situaciones necesitan de una atención correctiva inmediata. El sistema de alar­ mas no significa por sí mismo la solución de una condición adversa, sino que advierte su existencia.
+
+•	Las indicaciones relativas a la aplicación y regulaciones de los con­ troles mencionados en este manual, son orientativas. El profesional a cargo de su aplicación, deberá, con su conocimiento y criterio, adap­ tar este equipo mecánico a las necesidades del paciente.
+
+•	El respirador GraphNet advance ts neo es un dispositivo sostén de vida. Es obligatorio realizar vigilancia clínica frecuente y adecuada del paciente. También se debe estar preparado para proporcionar una manera alternativa de ventilación.
+
+•	GraphNet advance ts neo no ha sido diseñado para funcionar como soporte de máquinas anestésicas. La utilización del respirador en procedimientos de administración  de anestésicos no es contemplada como una indicación de uso prevista.
+
+•	No usar el respirador en presencia de gases anestésicos inflamables. Puede resultar un accidente por explosión o incendio.
+
+•	Utilizar SIEMPRE un filtro de agua para aire comprimido en la entrada AIR del equipo. El uso de este tipo de filtros es necesario indepen­ dientemente del tipo de fuente de aire comprimido utilizada.
+
+•	No se deberán emplear mangueras antiestáticas ni eléctricamente conductoras tanto en la alimentación neumática del respirador como en el circuito paciente.
+
+•	El funcionamiento con batería interna tiene un tiempo limitado. Ante un estado de Batería Inoperante reponga inmediatamente la energía eléctrica principal, o cambie a un método alternativo de ventilación.
+
+•	Para evitar el riesgo de descarga eléctrica este equipo sólo debe co­ nectarse a una red eléctrica con puesta a tierra. No eliminar la terce­ ra espiga (tierra) del enchufe del cable de alimentación, ni utilizar un adaptador de dos espigas.
+
+•	En caso de que la integridad del conductor de protección a tierra exter­ na sea dudosa, el equipo deberá ser alimentado por su batería interna.
+
+•	Respetar la distancia de separación con otros artefactos emisores de alta frecuencia (por ejemplo, teléfono celular o inalámbrico, desfibri­ lador, electrobisturí, etc.). Pueden verificarse interferencias no desea­ das en el respirador.
+
+2.1 | Definición de
+
+Expresiones
+
+2.2 | Advertencias
+
+# Página 9
+
+**Equipo:** Respirador Neumovent Graph
+
+Advertencia - Precaución - Notas |  Graph Net  advance neo ts 2.  3
+
+•	Los equipos de resonancia magnética producen emisiones que pue­ den dañar al respirador en forma permanente.
+
+•	No quitar el panel posterior del equipo bajo ninguna circunstancia. De lo contrario será causa suficiente de pérdida de validez de la garantía, incluida en este manual de usuario. Si se quitara el panel posterior, TECME S.A. no se hará responsable por las consecuencias que esto pudiera ocasionar sobre el equipo o las personas. Puede existir ries­ go de electrocución si se quita mientras el equipo se encuentra en funcionamiento.
+
+•	Usar sólo gases (aire y O 2 ) que cumplan con los requisitos de grado médico de las normas aplicables.
+
+•	No conectar accesorios que no hayan sido especificados como parte del sistema.
+
+•	No usar entre la salida de suministro y las mangueras de suministro que alimentan al respirador ningún dispositivo que signifique alguna restricción del flujo o de la presión. Por lo tanto, NO USAR regulado­ res de presión con llaves de paso, ni medidores de flujo.
+
+•	En caso de una fuga significativa revisar el circuito paciente para de­ tectar el tramo con pérdida. Cambiar o reparar el segmento para evitar una alteración indebida en la ventilación.
+
+•	El sensor de flujo espiratorio (neumotacógrafo) tiene en la parte me­ dia interna una membrana cuya integridad es imprescindible para la lectura apropiada del volumen espirado. Al limpiar esta pieza tener cuidado de no dañar la membrana.
+
+•	Mientras el respirador se encuentre ventilando un paciente, no es­ tablecer ninguna conexión entre éste y una red de datos, o equipo externo que no cumpla con los requisitos de seguridad eléctrica ne­ cesarios para ser considerado como equipo o sistema electromédico.
+
+•	Solamente TECME S.A. o personal autorizado por la empresa puede reemplazar, o modificar el respirador o sus partes.
+
+• No posicionar el respirador cerca de superficies que puedan bloquear el soplador,rendijas de ventilación, la salida para el audio de las alar­ mas o la salida de gases exhalados , ya que esto podría ocasionar:
+
+- Un sobrecalentamiento del respirador. - Una limitación de la capacidad del profesional para escuchar
+
+las alarmas. - Una limitación de la salida de gases exhalados por válvula espi­
+
+ratoria, dando lugar a posible daño potencial.
+
+• El respirador es un dispositivo sostén de vida. Es obligatorio realizar vigilancia clínica frecuente y adecuada del paciente.
+
+• En caso de falla del respirador, la falta de un medio alternativo de ventilación puede ocasionar la muerte del paciente.Es por ello que es imprescindible contar con medios alternativos de ventilación, tales como reanimadores (según especificado en la norma ISO 10651-4) o bolsas auto inflables al momento de usar el respirador.
+
+•  El agregado de accesorios al circuito paciente puede ocasionar un cambio en el gradiente de presión a través del sistema y afectar de manera directa el funcionamiento del equipo. Por tanto, se deberá asegurar que ante cualquier cambio que afecte al circuito paciente del respirador, no se excedan los valores especificados para la com­ placencia y/o la resistencia inspiratoria o espiratoria total.
+
+•  El uso de nebulizadores o humidificadores puede conducir a un in­ cremento en la resistencia de los filtros inspiratorios y/o espiratorios. Monitorear los filtros de manera frecuente para evitar bloqueos o au­ mento de resistencia.
+
+• No usar el respirador en una cámara hiperbárica. El dispositivo no ha sido diseñado para ser usado en ese entorno.
+
+Mantener una distanci a NO menor a 3 metr os
+
+```metadata
+pagina: 9
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P9_I8.png
+contexto: 
+```
+
+![Imagen página 9 - 8](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P9_I8.png)
+
+# Página 10
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  4
+
+• Usar solo gases (aire y oxigeno) que cumplan con los requisitos de grado médico de las normas aplicables. No usar óxido nítrico, helio o mezclas que contengan helio. El respirador no ha sido diseñado para ser usado con estos gases.
+
+• El respirador debería ser conectado a una red de alimentación de ga­ ses que cumpla con la norma ISO 7396-1:2007, ya que:
+
+- Al ser un dispositivo de alto flujo puede interferir en el funciona­
+
+miento de equipos adyacentes que usen el mismo gas. - Se puede exceder la capacidad de flujo para la cual fue diseñada
+
+la red.
+
+• Para evitar una posible contaminación interna del respirador, contem­ plar siempre la utilización de filtros bacterianos virales en rama inspi­ ratoria y espiratoria durante la ventilación.
+
+• La desactivación de señales de alarma o la configuración de límites extremadamente altos o bajos puede ocasionar que durante la venti­ lación las señales de alarma no se activen, con la consecuente dis­ minución de la efectividad del sistema de alarmas en dar aviso de situaciones que requieran supervisión profesional.
+
+PRECAUCIÓN
+
+•	No usar solventes, acetona, cloroformo o sustancias ácidas fuertes o sol­ ventes clorinados para limpiar las partes de plástico o las mangueras del circuito paciente.
+
+•	NO USAR soluciones con hipoclorito de sodio (lavandina) para limpiar los mangueras del circuito paciente de «Hytrel».
+
+•	NO USAR en ninguna parte alcohol puro, soluciones limpiadoras que con­ tengan alcohol, ni tampoco limpiadores que contengan acondicionadores.
+
+•	El gabinete del respirador no debe ser sometido a esterilización con gas de óxido de etileno. Se puede producir daño irreparable de sus componentes.
+
+•	El óxido de etileno puede causar alteraciones de la superficie del los plás­ ticos y acelerar el envejecimiento de los componentes de goma.
+
+•	Si al encender el equipo, después de un lapso de tiempo prolongado en desuso, aparecen las señales de alarma de Baja carga de la batería, el respirador debe ser conectado a una red de de energía eléctrica adecuada por un período minimo de 15 (quince) horas. La persistencia de estas seña­ les pueden indicar la necesidad del reemplazo de la batería. En este caso, consultar con el servicio autorizado.
+
+NOTA
+
+•	Cada modo operativo programado mantiene sus propios valores y es guar­ dado en memoria transitoria mientras el equipo se mantenga encendido.
+
+•	No es posible iniciar la calibración del respirador usando solamente AIRE comprimido.
+
+•	Mientras un valor de parámetro ventilatorio se está cambiando y todavía no es aceptado, el valor previo sigue activo. De igual manera, si la modifica­ ción no es aceptada dentro de un tiempo máximo de 15 segundos, el valor previo no es modificado.
+
+•	Para descartar todo el equipo, partes obsoletas o elementos provistos por otras compañías, seguir los estándares vigentes en cada país.
+
+•	Para descartar la celda de oxígeno, tener en cuenta que la misma es un residuo con restos de plomo (Pb).
+
+•	Para descartar la batería de Li-Ion y la pila de la placa CPU, tener en cuenta que estos son residuos con restos de plomo (Pb). La batería descartada no debe ser arrojada al fuego. Existe peligro de explosión.
+
+2.4 | Notas
+
+2.3 | Precauciones
+
+# Página 11
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  5
+
+AVISO DE MANTENIMIENTO
+
+Cuando se cumplen las primeras 5000 horas de funcionamiento y en lo su­ cesivo, cada 5000 horas, aparece un ícono de herramienta en la  Barra de íconos y mensajes . La presencia del ícono es eliminado por el Service auto­ rizado una vez que se lleva a cabo el protocolo de mantenimiento.
+
+# Página 12
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  2
+
+El respirador  Graph Net  advance neo ts  integra en su gabinete la interfaz de usua­ rio, las conexiones para el circuito paciente y las conexiones a las fuentes de alimentación (eléctrica y neumática).
+
+La interfaz de usuario cuenta con una pantalla táctil, teclas fijas, y una perilla gira­ toria que permiten el manejo de todas las funciones.
+
+Todos los puntos de conexión del respirador, ya sean eléctricos o neumáticos res­ petan los estándares correspondientes.
+
+A los efectos de la descripción se divide el respirador en cuatro sectores:
+
+•	Panel frontal.
+
+•	Bloque inferior de conexiones.
+
+•	Panel trasero.
+
+•	Panel Superior.
+
+Fig. 3-1   Imagen del panel frontal
+
+Referencias de la Fig. 3-1
+
+Pantalla.
+
+Alarm Signals – Indicaciones luminosas del sistema de alarmas.
+
+Teclas fijas.
+
+Perilla giratoria.
+
+Indicadores de alimentación eléctrica.
+
+3.1 | Descripción General
+
+3.2 | Panel Frontal
+
+```metadata
+pagina: 12
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P12_I0.png
+contexto: 
+```
+
+![Imagen página 12 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P12_I0.png)
+
+1
+
+3
+
+5
+
+2
+
+4
+
+# Página 13
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  3
+
+El respirador cuenta con una pantalla táctil de 12” donde se muestra continuamen­ te la monitorización de los parámetros ventilatorios, y diversas  curvas que pueden ser elegidas según la preferencia del usuario. La descripción sobre el manejo de los atributos gráficos en pantalla se presenta en el capítulo  Manejo de gráficos .
+
+NOTA •  Se puede conectar un monitor externo por medio del puerto VGA, permitiendo visualizar en tiempo real la misma información que se muestra en la pantalla principal del respirador.
+
+La pantalla se encuentra sectorizada para facilitar la interpretación de la informa­ ción presentada. A continuación se detallan las características de estos sectores.
+
+En el sector inferior de la pantalla se muestran los parámetros ventilatorios que participan del modo operativo seleccionado (Fig. 3-2). Estos valores pueden ser ajustados por el usuario. Según se elija uno u otro modo operativo, la cantidad y naturaleza de estos parámetros puede variar.
+
+Fig. 3-2   Imagen de una captura de pantalla donde se ha resaltado el campo reservado para los ajustes de controles (pantalla del modo operativo: SIMV (VCV) + PSV).
+
+En el sector superior de la pantalla se ubican los valores de los parámetros que el equipo monitoriza (Fig. 3-3). Sobre la izquierda de este sector se encuentra una etiqueta que indica la categoría de paciente, el modo operativo, y en el caso de que sea posible programar ventilación de respaldo, el modo operativo configurado como respaldo. Sobre este sector se incluye también la fecha y hora actual.
+
+Debajo de algunos de los parámetros monitorizados se encuentran botones tácti­ les. Estos botones permiten acceder directamente a la configuración de la alarma correspondiente. Estos botones muestran en todo momento el valor de los límites de dichas alarmas (ver capítulo  Alarmas ).
+
+```metadata
+pagina: 13
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P13_I0.png
+contexto: 
+```
+
+![Imagen página 13 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P13_I0.png)
+
+3.2.1 |  Pantalla
+
+# Página 14
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  4
+
+Fig. 3-3   Imagen de una pantalla donde se ha destacado la porción superior, dedicada a mostrar los parámetros monitorizados. Sobre la izquierda de este sector se muestran los datos generales de la ventilación como la categoría de paciente, el modo operativo, y el modo configurado como ventilación de respaldo.
+
+Los parámetros que se monitorizan son los siguientes:
+
+• Flujo Pico -  Pico de flujo inspiratorio (L/min) Flujo pico en litros por minuto. En todos los modos indica el flujo máxi­ mo de gas enviado en cada inspiración por el respirador.
+
+• T i   -  Tiempo inspiratorio (s) Es mostrado en todos los modos para cada respiración. Se agrega el tiempo de pausa cuando está programada o cuando se ejecuta manualmente.
+
+• T e  -  Tiempo espiratorio (s) Tiempo espiratorio resultante actualizado con cada nueva respiración.
+
+• I:E  Actual
+
+Indica la relación inspiración/espiración resultante.
+
+• f TOTAL  -  Frecuencia total (rpm) Frecuencia total (respiraciones espontáneas y mandatorias) expresa­ da en respiraciones por minuto.
+
+• V T  -  Volumen tidal espirado (L en ADL/PED y mL en NEO-INF). Volumen espirado respiración por respiración.
+
+• V E  -  Volumen minuto espirado (L/min) Valor del volumen que por minuto atraviesa la válvula espiratoria. Es un parámetro que se monitoriza en todos los modos operativos. La actualización de este valor se hace de manera continua.
+
+• Oxígeno -  Monitor de Oxígeno (%) Muestra el porcentaje de oxígeno del gas enviado al paciente.
+
+```metadata
+pagina: 14
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P14_I0.png
+contexto: 
+```
+
+![Imagen página 14 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P14_I0.png)
+
+# Página 15
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  5
+
+Sobre el sector derecho de la pantalla aparecen una serie de botones táctiles que tienen asociadas las siguientes funciones:
+
+Gráficos (muestra las opciones de gráficos en pantalla).
+
+Congelar (congela los gráficos en pantalla).
+
+Mecánica respiratoria.
+
+Guardar bucle.
+
+Nebulizador.
+
+Ayuda (ayuda sobre el significado de las teclas táctiles y fijas).
+
+En espera (Stand by).
+
+Sobre el sector izquierdo de la pantalla se sitúan los dos botones táctiles de acce­ so rápido para modificar los límites de alarmas de presión inspiratoria.
+
+Presión inspiratoria máxima.
+
+Presión inspiratoria mínima.
+
+Fig. 3-4   Se destaca la barra derecha donde se ubican los comandos táctiles de algunas funciones, y la barra izquierda donde, entre otras cosas, se muestra la monitorización numérica de las presiones.
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I0.png
+contexto: 
+```
+
+![Imagen página 15 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I0.png)
+
+3.2.1.3 | Botones Táctiles
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I1.png
+contexto: 
+```
+
+![Imagen página 15 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I1.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I2.png
+contexto: 
+```
+
+![Imagen página 15 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I2.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I3.png
+contexto: 
+```
+
+![Imagen página 15 - 3](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I3.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I4.png
+contexto: 
+```
+
+![Imagen página 15 - 4](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I4.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I5.png
+contexto: 
+```
+
+![Imagen página 15 - 5](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I5.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I6.png
+contexto: 
+```
+
+![Imagen página 15 - 6](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I6.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I7.png
+contexto: 
+```
+
+![Imagen página 15 - 7](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I7.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I8.png
+contexto: 
+```
+
+![Imagen página 15 - 8](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I8.png)
+
+```metadata
+pagina: 15
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I9.png
+contexto: 
+```
+
+![Imagen página 15 - 9](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P15_I9.png)
+
+# Página 16
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  6
+
+En el sector izquierdo (ver Fig.3-4) se acomoda la siguiente información:
+
+• Estado de la batería Indicador del estado de carga de la batería. La autonomía declarada para la ba­ tería interna en el capítulo  Especificaciones técnicas  comprende los estados de Carga completa y Carga baja.
+
+Batería con carga completa (ícono verde).
+
+Batería con carga baja (ícono amarillo).
+
+Batería inoperante. Carga muy baja (ícono rojo con des­ tellos).
+
+Batería Defectuosa. Imposibilidad de cargar la batería.
+
+ADVERTENCIA •	Cuando aparece el ícono de Batería inoperante, el tiempo de carga restante es impredecible, y debe restablecerse la alimentación principal, o reem­ plazar por un sistema de ventilación alternativo
+
+• Icono “Pulmón” Se activa con cada inspiración disparada por el paciente.
+
+• Presión pico (Pico) Indica la presión pico (máxima) alcanzada en cada respiración.
+
+• Presión traqueal (Traq) Indica la presión estimada a nivel de la tráquea cuando se encuentra activada la función  Compensación de tubo . (solo para  Graph Net  advance )
+
+• Presión plateau  (Plateau) Indica la presión mantenida durante la inspiración cuando se ha programado pau­ sa inspiratoria o cuando se presiona la tecla  [Pause Insp/Exp] .
+
+• Presión media (Media) Indica la presión media de cada respiración.
+
+• PEEP Indica la presión del final de la fase espiratoria.
+
+•Límites de alarma de la presión inspiratoria Corresponde a los límites de alarma de la presión máxima y mínima configurados (en el capítulo  Alarmas  se explica cómo modificar estos límites).
+
+Entre los  Datos monitorizados  y el área de los gráficos existe un espacio dedicado a la  Barra de íconos y mensajes  y a los  Avisos en pantalla  de alarmas.
+
+La barra donde se acomodan íconos y mensajes que informan sobre algún estado
+
+3.2.1.5 | Barra de íconos y mensajes y
+
+Avisos en pantalla de alarmas.
+
+3.2.1.4 | Barra izquierda
+
+# Página 17
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  7
+
+particular del respirador, o función del mismo, se ubica sobre la izquierda de sector de la pantalla. El significado de los íconos se encuentra en el capítulo  Introducción .
+
+Si la cantidad de mensajes activos que deben mostrarse en esta barra supera el espacio reservado para ellos, automáticamente se activa una función de muestra rotativa. Para indicar la presencia de mensajes que no son mostrados en ese momento, aparece la imagen de una flecha en el ángulo superior derecho de la barra. Cada 5 s los mensajes van rotando, de manera que se muestran todos los mensajes activados. En la Fig. 3-5 se ha copiado la secuencia de tres estados de la  Barra de íconos y mensajes  cuando existen 4 mensajes activos.
+
+Fig. 3-5   Las tres barras muestran la secuencia de mensajes, cuando se en­ cuentran activas las funciones de Compensación de volumen, Compensación de fugas, Suspiro, y Pausa inspiratoria.
+
+Sobre la derecha de este sector se dedica un espacio para la aparición de los Avisos en pantalla del sistema de alarmas. Cada vez que una condición de alarma se dispara, el respirador muestra el nombre de la misma en este sector. El nombre aparece sobre un fondo de color rojo o amarillo que indica la prioridad de dicha alarma.
+
+Fig. 3-6   Imagen en la cual se resalta el espacio reservado para la aparición de los Avisos en pantalla de alarmas. En este caso se encuentra activa la alarma de Presión inspiratoria máxima.
+
+Corresponde a las señales visuales de tipo luminoso que forman parte del sistema de alarmas.
+
+```metadata
+pagina: 17
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P17_I0.png
+contexto: 
+```
+
+![Imagen página 17 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P17_I0.png)
+
+3.2.2 |  Alarm signals
+
+```metadata
+pagina: 17
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P17_I1.png
+contexto: 
+```
+
+![Imagen página 17 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P17_I1.png)
+
+# Página 18
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  8
+
+Fig. 3-7   Aspecto del sector de Alarm Signals donde se encuentran los indicadores luminosos de alarmas.
+
+• Vent. Inop. Se enciende en color rojo en caso de que el respirador entre en falla técnica, y quede inoperante. Durante el encendido, este indicador se enciende momentá­ neamente durante las pruebas automáticas iniciales, sin significar falla técnica. Condición de alarma de prioridad máxima.
+
+• High Reservado para las alarmas de prioridad alta. Enciende en color rojo.
+
+• Med – Low Indicación luminosa que acompaña las alarmas de prioridad media y baja. Encien­ de en color amarillo.
+
+Sobre el panel superior del equipo se encuentra el indicador luminoso superior que for­ ma parte del sistema de alarmas.
+
+Configuración de límites de alarmas Las alarmas tienen valores predeterminados, pero pueden ser re­ programadas. Al presionar la tecla aparece un menú con las alar­ mas que pueden ser modificadas por el usuario.
+
+Audio pausado Presionando la tecla una vez, se pausa la señal auditiva de alarma du­ rante 30 s; en caso de hacerlo dos veces seguidas, la pausa dura 60 s.
+
+Selección de modos operativos Presionando esta tecla se accede al menú de  MODOS OPERATI­ VOS , desde donde se puede seleccionar uno de los modos operati­ vos habilitados para la categoría de paciente actual.
+
+Menú Esta tecla permite el acceso al menú principal del respirador. Dada la importancia de las funciones de esta tecla, se dedica un capítulo es­ pecial a su descripción. Ver el capítulo  Menú  del manual de usuario.
+
+Screen Lock – Bloqueo de pantalla táctil Tecla fija utilizada para bloquear las funciones de la pantalla táctil y las teclas fijas del sector derecho del panel frontal.
+
+Aspiración %O 2 Permite la ventilación con una concentración de O 2  configurable para maniobras de aspiración. El tiempo destinado a la aspiración también puede ser configurado.
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I0.png
+contexto: 
+```
+
+![Imagen página 18 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I0.png)
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I1.png
+contexto: 
+```
+
+![Imagen página 18 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I1.png)
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I2.png
+contexto: 
+```
+
+![Imagen página 18 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I2.png)
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I3.png
+contexto: 
+```
+
+![Imagen página 18 - 3](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I3.png)
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I4.png
+contexto: 
+```
+
+![Imagen página 18 - 4](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I4.png)
+
+3.2.3 | Teclas Fijas
+
+3.2.2.1 | Panel Frontal
+
+3.2.2.2 | Panel Superior
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I5.png
+contexto: 
+```
+
+![Imagen página 18 - 5](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I5.png)
+
+```metadata
+pagina: 18
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I6.png
+contexto: 
+```
+
+![Imagen página 18 - 6](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P18_I6.png)
+
+# Página 19
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  9
+
+3.2.4 |  Perilla giratoria
+
+Inspiración Manual Mientras el respirador está ventilando, la pulsación de esta tecla ini­ cia una inspiración manual, con los valores del modo seleccionado. Presionando  [Ctrl] + [Manual Insp.]  se inicia un suspiro, si estos están programados.
+
+Pausa Inspiratoria / Espiratoria Manual Suspende la ventilación y mantiene la fase inspiratoria o la espirato­ ria mientras la tecla se mantiene presionada con un máximo de 7 s para la inspiración y 20 s para la espiratoria. Este comando funciona en los modos VCV, PCV, y PRVC.
+
+Ctrl Esta tecla se usa siempre en combinación con otra. Algunos ejem­ plos de sus funciones son: • [Ctrl] + [Alarm Limits] =  1) Prueba de alarmas. 2) Mensaje de ayuda cuando alguna alarma está activada. • [Oxígeno] + [Ctrl] =  Cambio del valor en escalones de a diez unidades. • [Ctrl] + [Ctrl] =  Reajusta todos los sensores a cero. • [Ctrl] + [Manual Insp.] =  Suspiro (si está programado). • [Ctrl] + [Graphic] =  1) Renovación de pantalla. 2) Borra el bucle de referencia en pantalla pero permanece en memoria .
+
+Esc Es una tecla con funciones múltiples, primarias o en combinación con otras teclas. Esta tecla permite, entre otras funciones:
+
+• Restaurar la señal luminosa de cualquier alarma activada. • Cancelar o abortar la operación en curso, retornando a la función previa. • Cerrar un menú abierto regresando a la visualización de gráficos. • Cancelar la pantalla en uso, y retornar a pantalla principal (CINCO CURVAS). • Cancelar una maniobra en curso.
+
+NOTA •	La pantalla táctil permanecerá bloqueada en caso de que alguna tecla fija se encuentre presionada. Si esta condición se mantiene por más de 60 segundos, apa­ recerá un mensaje en la Barra de íconos y mensajes.
+
+Sobre el ángulo inferior derecho del panel frontal se ubica la perilla giratoria. Esta descansa sobre un aro luminoso que se enciende en cada oportunidad que la perilla se encuentra habilitada para ser utilizada. Este es el elemento que permite realizar modificaciones en la configuración del equipo, y con el que también es posible navegar por los menúes habilitados.
+
+Existen algunas tareas específicas que también son llevadas a cabo con ayuda de la perilla. Por ejemplo, los cambios de escala, o los desplazamientos de los cursores sobre los gráficos.
+
+```metadata
+pagina: 19
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I0.png
+contexto: 
+```
+
+![Imagen página 19 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I0.png)
+
+```metadata
+pagina: 19
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I1.png
+contexto: 
+```
+
+![Imagen página 19 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I1.png)
+
+```metadata
+pagina: 19
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I2.png
+contexto: 
+```
+
+![Imagen página 19 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I2.png)
+
+```metadata
+pagina: 19
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I3.png
+contexto: 
+```
+
+![Imagen página 19 - 3](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P19_I3.png)
+
+# Página 20
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  10
+
+Al presionar la perilla se acepta el cambio realizado, o el submenú sobre el que se está posicionado. La utilización de este elemento de control es muy intuitiva, y en el transcurso de este manual de instrucciones se describirá cuando es necesario utilizarlo.
+
+Este sector reúne dos indicadores luminosos que informan sobre el estado de la alimentación eléctrica del respirador. Consultar la Tabla 3-1.
+
+Fig. 3-8   Indicadores luminosos que informan sobre el estado de alimenta­ ción eléctrica.
+
+Tabla 3-1   Indicadores luminosos de alimentación eléctrica
+
+Indicador Encendido/Apagado
+
+(Color) Estado
+
+110-220 VAC
+
+Battery/Charge
+
+Encendido (verde).
+
+Apagado.
+
+Respirador alimentado a través de red eléctrica 110-220 VAC.
+
+110-220 VAC
+
+Battery/Charge
+
+Apagado.
+
+Encendido (azul).
+
+Respirador alimentado a través de su batería interna.
+
+110-220 VAC
+
+Battery/Charge
+
+Encendido (verde).
+
+Encendido (verde).
+
+Respirador alimentado a través de red eléctrica 110-220 VAC. Batería en pe­ ríodo de carga.
+
+En el capítulo  Ensamble e Instalación  del manual de usuario, se describen las formas de conexión. En este apartado sólo se listan los elementos que forman parte del bloque.
+
+Fig. 3-9  Imagen del sector inferior del respirador.
+
+Referencias de la Fig. 3-9
+
+Conexión para el conjunto espiratorio.
+
+Conexiones para las mangueras del neumotacógrafo de la válvula es­ piratoria.
+
+Celda de O 2 .
+
+3.2.5 |  Indicadores de
+
+alimentación eléctrica
+
+3.3 | Bloque Inferior de
+
+Conexiones
+
+```metadata
+pagina: 20
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P20_I0.png
+contexto: 
+```
+
+![Imagen página 20 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P20_I0.png)
+
+1
+
+2
+
+```metadata
+pagina: 20
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P20_I1.png
+contexto: 
+```
+
+![Imagen página 20 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P20_I1.png)
+
+3
+
+# Página 21
+
+**Equipo:** Respirador Neumovent Graph
+
+Descripción . Sectores del Respirador |  Graph Net  advance neo ts 3.  11
+
+Conexión para manguera de nebulización.
+
+Conexión Hacia Paciente del circuito paciente.
+
+Entrada para conector de capnógrafo. ( Graph Net  advance )
+
+Conexión para neumotacógrafo proximal. ( Graph Net  advance y neo )
+
+En el panel trasero se encuentran los orificios de entrada para la conexión de los gases, la entrada para la alimentación eléctrica, y el interruptor de encendido/apa­ gado del equipo. En el capítulo  Ensamble e Instalación  del manual de usuario, se describe cómo se realizan las conexiones.
+
+Fig. 3-10  Imagen del panel trasero del respirador.
+
+Referencias de la Fig. 3-10
+
+Salida de aire del soplador.
+
+Salida para el audio de las alarmas.
+
+Puerto RS-232.
+
+Interruptor eléctrico.
+
+Entrada (filtro AC) para alimentación eléctrica con caja de fusibles.
+
+Entrada de aire.
+
+Entrada de oxígeno.
+
+Puerto VGA.
+
+Sobre la parte superior del gabinete del respirador se encuentra el indicador lumi­ noso superior que funciona como una señal de alarma visual, ver Fig.3-1.
+
+5
+
+5
+
+2
+
+1
+
+7
+
+7
+
+8
+
+4
+
+6
+
+6
+
+3
+
+3.4 | Panel Trasero
+
+3.5 | Panel Superior
+
+```metadata
+pagina: 21
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P21_I0.png
+contexto: 
+```
+
+![Imagen página 21 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P21_I0.png)
+
+4
+
+# Página 22
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  2
+
+4.1 | Gabinete posterior
+
+```metadata
+pagina: 22
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P22_I0.png
+contexto: 
+```
+
+![Imagen página 22 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P22_I0.png)
+
+```metadata
+pagina: 22
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P22_I1.png
+contexto: 
+```
+
+![Imagen página 22 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P22_I1.png)
+
+```metadata
+pagina: 22
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P22_I2.png
+contexto: 
+```
+
+![Imagen página 22 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P22_I2.png)
+
+4.1.1 |  Carcasa
+
+4.1.2 |  Tapa posterior
+
+# Página 23
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  3
+
+```metadata
+pagina: 23
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P23_I0.png
+contexto: 
+```
+
+![Imagen página 23 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P23_I0.png)
+
+```metadata
+pagina: 23
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P23_I1.png
+contexto: 
+```
+
+![Imagen página 23 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P23_I1.png)
+
+```metadata
+pagina: 23
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P23_I2.png
+contexto: 
+```
+
+![Imagen página 23 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P23_I2.png)
+
+4.1.4 |  Kit ventilador
+
+4.1.3 |  Kit parlante
+
+4.1.5 |  Llave ON-OFF
+
+Referencia Parte
+
+1 Parlante
+
+2 Caja acústica
+
+3 Cable
+
+4 Rejilla
+
+# Página 24
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  4
+
+```metadata
+pagina: 24
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I0.png
+contexto: 
+```
+
+![Imagen página 24 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I0.png)
+
+```metadata
+pagina: 24
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I1.png
+contexto: 
+```
+
+![Imagen página 24 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I1.png)
+
+```metadata
+pagina: 24
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I2.png
+contexto: 
+```
+
+![Imagen página 24 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I2.png)
+
+4.1.6 |  Batería
+
+4.1.7 |  Chasis metálico superior e inferior
+
+```metadata
+pagina: 24
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I3.png
+contexto: 
+```
+
+![Imagen página 24 - 3](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P24_I3.png)
+
+4.1.8 |  Kit de apoyo inferior
+
+# Página 25
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  5
+
+```metadata
+pagina: 25
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I0.png
+contexto: 
+```
+
+![Imagen página 25 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I0.png)
+
+4.2.1 |  Box inferior
+
+4.2 | Box neumático (supe­ rior e inferior)
+
+```metadata
+pagina: 25
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I1.png
+contexto: 
+```
+
+![Imagen página 25 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I1.png)
+
+```metadata
+pagina: 25
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I2.png
+contexto: 
+```
+
+![Imagen página 25 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I2.png)
+
+4.2.1.1 | Kit Entrada de Aire
+
+```metadata
+pagina: 25
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I3.png
+contexto: 
+```
+
+![Imagen página 25 - 3](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P25_I3.png)
+
+# Página 26
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  6
+
+```metadata
+pagina: 26
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P26_I0.png
+contexto: 
+```
+
+![Imagen página 26 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P26_I0.png)
+
+4.2.1.2 | Kit Entrada de Oxígeno
+
+```metadata
+pagina: 26
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P26_I1.png
+contexto: 
+```
+
+![Imagen página 26 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P26_I1.png)
+
+4.2.1.3 | Control de gases com­
+
+pleto
+
+```metadata
+pagina: 26
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P26_I2.png
+contexto: 
+```
+
+![Imagen página 26 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P26_I2.png)
+
+Referencia Parte
+
+1 Conector 3/4”
+
+2 O-ring
+
+3 Filtro de metal poroso
+
+4 Tornillos
+
+5 Cuerpo entrada de gas impulsor con 6 perforaciones
+
+6 Cuerpo entrada de gas impulsor
+
+Referencia Parte
+
+1 Conector 9/16”
+
+2 O-ring
+
+3 Filtro de metal poroso
+
+4 Tornillos
+
+5 Cuerpo entrada de gas impulsor con 6 perforaciones
+
+6 Cuerpo entrada de gas impulsor
+
+# Página 27
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  7
+
+4.2.1.3.1 | Conjunto de gases
+
+4.2.1.3.2 | Válvula de seguridad
+
+4.2.1.3.3 | Válvula antisofocación
+
+completa
+
+```metadata
+pagina: 27
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P27_I0.png
+contexto: 
+```
+
+![Imagen página 27 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P27_I0.png)
+
+```metadata
+pagina: 27
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P27_I1.png
+contexto: 
+```
+
+![Imagen página 27 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P27_I1.png)
+
+```metadata
+pagina: 27
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P27_I2.png
+contexto: 
+```
+
+![Imagen página 27 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P27_I2.png)
+
+Referencia Parte
+
+1 Reguladores de aire y oxígeno 2,0 Kg/cm 2  (40 PSI)
+
+2 Válvula proporcional completa
+
+3 Neumotacógrafo interno
+
+# Página 28
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  8
+
+4.2.1.4 | Regulador 0,7 Kg/cm 2  (10
+
+PSI)
+
+4.2.1.5 | Válvula no retorno aire
+
+4.2.1.6 | Válvula no retorno oxíge­
+
+no
+
+```metadata
+pagina: 28
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P28_I0.png
+contexto: 
+```
+
+![Imagen página 28 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P28_I0.png)
+
+```metadata
+pagina: 28
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P28_I1.png
+contexto: 
+```
+
+![Imagen página 28 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P28_I1.png)
+
+```metadata
+pagina: 28
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P28_I2.png
+contexto: 
+```
+
+![Imagen página 28 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P28_I2.png)
+
+# Página 29
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  9
+
+```metadata
+pagina: 29
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P29_I0.png
+contexto: 
+```
+
+![Imagen página 29 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P29_I0.png)
+
+4.2.2 |  Box superior
+
+4.2.2.1 | Placa sensores
+
+Referencia Parte
+
+1
+
+Sensores de Flujo Honeywell
+
+a: Sensor de Flujo Aire b: Sensor de Flujo Oxígeno c: Sensor de Flujo Espirado
+
+2
+
+Sensores de Presión:
+
+a: Alta MPX5700DP b: Baja MPX10DP /
+
+3 Válvula proporcional PEEP
+
+4 Válvulas ON/OFF
+
+4.3 | Gabinete frontal
+
+```metadata
+pagina: 29
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P29_I1.png
+contexto: 
+```
+
+![Imagen página 29 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P29_I1.png)
+
+# Página 30
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  10
+
+```metadata
+pagina: 30
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P30_I0.png
+contexto: 
+```
+
+![Imagen página 30 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P30_I0.png)
+
+4.3.1 |  Placa CPU
+
+```metadata
+pagina: 30
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P30_I1.png
+contexto: 
+```
+
+![Imagen página 30 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P30_I1.png)
+
+4.3.3 |  Placa Leds de alarma superior
+
+```metadata
+pagina: 30
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P30_I2.png
+contexto: 
+```
+
+![Imagen página 30 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P30_I2.png)
+
+4.3.2 |  Placa controladora Touch Screen
+
+# Página 31
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  11
+
+```metadata
+pagina: 31
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P31_I0.png
+contexto: 
+```
+
+![Imagen página 31 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P31_I0.png)
+
+```metadata
+pagina: 31
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P31_I1.png
+contexto: 
+```
+
+![Imagen página 31 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P31_I1.png)
+
+```metadata
+pagina: 31
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P31_I2.png
+contexto: 
+```
+
+![Imagen página 31 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P31_I2.png)
+
+4.3.4 |  Fuente 4.3.4.1 | Placa fuente
+
+4.3.4.3 | Soporte fuente
+
+4.3.4.2 | Blindaje fuente
+
+# Página 32
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  12
+
+```metadata
+pagina: 32
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P32_I0.png
+contexto: 
+```
+
+![Imagen página 32 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P32_I0.png)
+
+```metadata
+pagina: 32
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P32_I1.png
+contexto: 
+```
+
+![Imagen página 32 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P32_I1.png)
+
+4.3.5 |  Bridas de cierre
+
+4.3.6 |  Blindaje placa base
+
+```metadata
+pagina: 32
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P32_I2.png
+contexto: 
+```
+
+![Imagen página 32 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P32_I2.png)
+
+4.3.7 |  Panel frontal y múltiple
+
+# Página 33
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  13
+
+4.3.7.1 | Panel frontal completo
+
+```metadata
+pagina: 33
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P33_I0.png
+contexto: 
+```
+
+![Imagen página 33 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P33_I0.png)
+
+Referencia Parte
+
+1 Perilla encoder
+
+2 Panel con Lámina
+
+3 Placa Teclado
+
+4 Display
+
+```metadata
+pagina: 33
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P33_I1.png
+contexto: 
+```
+
+![Imagen página 33 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P33_I1.png)
+
+# Página 34
+
+**Equipo:** Respirador Neumovent Graph
+
+Detalle de partes y conjuntos |  Graph Net  advance neo ts 4.  14
+
+4.3.7.2 | Múltiple de salida com­
+
+pleto
+
+```metadata
+pagina: 34
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P34_I0.png
+contexto: 
+```
+
+![Imagen página 34 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P34_I0.png)
+
+Referencia Parte
+
+1 Conexión para válvula exhalatoria.
+
+2 Conexiones para mangueras del neumotacógrafo de válvula exhalatoria.
+
+3 Sensor de flujo proximal (Sólo en  Graph Net  advance/neo ).
+
+4 Sensor de O 2 .
+
+5 Conexión para manguera de nebulización.
+
+6 Conexión Hacia Paciente del circuito paciente.
+
+7 Entrada para conector de capnógrafo (sólo en  Graph Net  ad­ vance ).
+
+# Página 35
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  2
+
+El inicio del proceso de desmontaje comienza con la apertura del equipo, retiran­ do la tapa trasera y el gabinete posterior, procedimiento que se constituye de las siguientes etapas.
+
+Retirar tapa trasera:
+
+• El equipo debe recostarse sobre goma espuma con la parte superior próxima al técnico y la parte frontal hacia abajo. Luego, retirar la tapa trasera, removiendo los ocho tornillos allen de M 4x0,7x16 que se muestran en la figura, por medio de llaves Allen de 2.5 mm.
+
+Fig. 5-1  Detalle de los tornillos allen a remover.
+
+Desconexión de cables de la tapa trasera:
+
+•	Levantar la tapa posterior para proceder a desconectar los cables de la placa base, los cuales están indicados en la etiqueta que se encuentra en la tapa pos­ terior. La misma debe observarse también en el momento de reconectar los ca­ bles y volver a colocar la tapa. La información que se detalla en la etiqueta es la siguiente:
+
+• Batería CON 27
+
+• RS-232 CON 19
+
+• Parlante CON 18
+
+• Ventilador CON 23
+
+• Salida VGA CON 9
+
+Separación gabinete frontal del gabinete posterior
+
+•	Retirar los seis tornillos que separan el gabinete frontal del gabinete posterior (Fig. 5-2). La medida de los tornillos allen del gabinete frontal son de M4x0,7x30 (ubicación 3, llave allen 3mm), y del gabinete posterior de M4x0,7x16  (ubicación
+
+5.1 | Apertura del Equipo
+
+```metadata
+pagina: 35
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P35_I0.png
+contexto: 
+```
+
+![Imagen página 35 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P35_I0.png)
+
+# Página 36
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  3
+
+1, llave allen 2.5mm), en la parte superior del gabinete y de M6x1x20 (ubicación 2, llave allen 4mm) en la parte inferior del mismo, entre los dos apoyos inferiores.
+
+•	Separar los dos gabinetes para proceder a la desconexión eléctrica (Fig. 5-3), y luego retirar la junta de cierre.
+
+Fig. 5-2  Tornillos que deben retirarse para separar los gabinetes.
+
+Fig. 5-3  Desconexión eléctrica: Masa de la fuente principal, Cable de la ficha de entrada AC de la fuente principal, Cable de llave ON/OFF de la placa base (CON26)
+
+```metadata
+pagina: 36
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P36_I0.png
+contexto: 
+```
+
+![Imagen página 36 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P36_I0.png)
+
+```metadata
+pagina: 36
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P36_I1.png
+contexto: 
+```
+
+![Imagen página 36 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P36_I1.png)
+
+# Página 37
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  4
+
+Para realizar el desmontaje del box neumático, se deben seguir los siguientes pasos:
+
+•	Desconectar de la placa sensores los cables sensor de oxígeno, electroválvulas, sensores y válvulas proporcionales (Fig. 5.4, izquierda).
+
+•	Remover los cuatro tornillos allen M4X0,7X12  que sujetan la parte superior del box neumático, usando una llave allen de 2.5 mm (Fig. 5.4, derecha).
+
+Fig. 5-4  Desconexión de cables (izq.) y remoción de tornillos allen (der.) para desconectar el box superior del inferior.
+
+•	Desconectar las mangueras del conector múltiple ubicado en el box neumático superior, que proceden tanto del múltiple de salida  como del conjunto neumático. Para ello retirar las mangueras hasta la tercera sección del conector (Fig. 5-5), para luego proceder a tirar de las mismas.
+
+NOTA • Para realizar la reconexión de dichas mangueras se deberá cortar las mismas con un alicate alrededor de 5 mm, para que mantengan su integridad, evitando potenciales problemas de desconexión y/o fugas.
+
+Fig. 5-5  Conector metálico.
+
+• Desconectar las mangueras Festo de aire y oxígeno proveniente de las entradas de gases de alta presión, quedando de esta manera el box superior libre.
+
+5.2 | Desmontaje del Box Neumático superior
+
+```metadata
+pagina: 37
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P37_I0.png
+contexto: 
+```
+
+![Imagen página 37 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P37_I0.png)
+
+```metadata
+pagina: 37
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P37_I1.png
+contexto: 
+```
+
+![Imagen página 37 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P37_I1.png)
+
+# Página 38
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  5
+
+•	Tanto en las imagenes (Fig. 5-6, Fig. 5-7, Fig. 5-8 y Fig. 5-9) como en la tabla a continuación (Tabla 5-1), se detalla el conexionado adecuado de las mangueras a manera de referencia para realizar el conexionado nuevamente.
+
+Tabla 5-1  Conexionado de mangueras del box neumático
+
+Mangueras Box inferior
+
+Conector múltiple box
+
+neumático
+
+Placa sensores
+
+Válvula PEEP Puerto espira­ torio 1 Salida de V14 (Válvula PEEP)
+
+P2 * (1) P2 2
+
+Entrada 2 de V2 con salida conecta­ da a T Festo para conexión a salida de V4 (Purga) y entrada 2 de V6
+
+P1 * (2) P1 3
+
+Entrada 2 de V3 con salida conecta­ da a T Festo para conexión a salida de V5 (Purga) y entrada 2 de V7
+
+Proximal
+
+Conector proxi­ mal izquierdo (P1) * (2) 4
+
+Entrada 1 de V3 con salida conecta­ da a T Festo para conexión a salida de V5 (Purga) y entrada 2 de V7
+
+Conector proxi­ mal derecho (P2) * (1) 5
+
+Entrada 1 de V2 con salida conecta­ da a T Festo para conexión a salida de V4 (Purga) y entrada 2 de V6
+
+Pctrl Protector sensor de oxígeno 6 Entrada 2 de V1 con salida hacia sensor motorola MPX10 inferior
+
+Nebulizador múltiple
+
+Salida nebuliza­ dor múltiple 7 Entrada 1 de V13
+
+Nebulizador- aire
+
+Conector T Festo de aire ubicado a la salida del regu­ lador de aire de 2 kg/cm 2
+
+A Entrada 1 de V12 (conector plástico) con salida hacia la salida de V13
+
+Nebulizador- oxígeno
+
+Conector T Festo ubicado a la salida del regulador de oxígeno de 2 kg/ cm 2
+
+B Entrada 2 de V12 (conector metáli­ co) con salida hacia la salida de V13
+
+Regulador 0.7
+
+Salida del regulador de 0.7 kg/cm 2
+
+C
+
+Conector T Festo con entrada 1 de V4 y V5,y entrada de V14 (Válvula PEEP)
+
+Neumotacógra­ fo de aire
+
+Neumotacógrafo de aire
+
+D
+
+Entrada 2 de V11 con salida hacia conector P2 de sensor de flujo Ho­ neywell de aire
+
+E
+
+Entrada 2 de V10 con salida hacia conector P1 de sensor de flujo Ho­ neywell de aire
+
+Neumotacógra­ fo de oxígeno
+
+Neumotacógrafo de oxígeno
+
+F
+
+Entrada 2 de V9 con salida hacia conector P2 de sensor de flujo Ho­ neywell de oxígeno
+
+G
+
+Entrada 2 de V8 con salida hacia conector P1 de sensor de flujo Ho­ neywell de oxígeno
+
+Aire alta pre­ sión
+
+Conector Festo Entrada aire - Sensor motorola MPX5700 superior
+
+Oxígeno alta presión
+
+Conector Festo Entrada oxígeno - Sensor motorola MPX5700 inferior
+
+*(1) La salida de V6 a T Festo hacia sensor motorola MPX10 superior y conector P1 de sensor de flujo Honeywell espirado.
+
+*(2)  La salida de V7 hacia conector P2 de sensor de flujo Honeywell espirado.
+
+# Página 39
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  6
+
+Fig.5-6  Ubicación de mangueras en el múltiple de salida
+
+Fig.5-7  Ubicación de mangueras en el conjunto neumático
+
+```metadata
+pagina: 39
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P39_I0.png
+contexto: 
+```
+
+![Imagen página 39 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P39_I0.png)
+
+```metadata
+pagina: 39
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P39_I1.png
+contexto: 
+```
+
+![Imagen página 39 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P39_I1.png)
+
+# Página 40
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  7
+
+Fig.5-8  Ubicación de mangueras en el conector múltiple del box neumático superior
+
+Fig.5-9  Ubicación de sensores y válvulas en placa sensores
+
+•	Retirar la tapa carcasa box, desajustando las cuatros tuercas que la fijan por medio de una llave tubo ¼ (Fig.5-10).
+
+Fig.5-10  Desmontaje de la tapa carcasa box.
+
+```metadata
+pagina: 40
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P40_I0.png
+contexto: 
+```
+
+![Imagen página 40 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P40_I0.png)
+
+```metadata
+pagina: 40
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P40_I1.png
+contexto: 
+```
+
+![Imagen página 40 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P40_I1.png)
+
+```metadata
+pagina: 40
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P40_I2.png
+contexto: 
+```
+
+![Imagen página 40 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P40_I2.png)
+
+# Página 41
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  8
+
+•	Quitar con una llave tubo 7/32 las 6 tuercas M3x0,5 que fijan la placa sensores al box superior (Fig.5-11).
+
+Fig.5-11  Desmontaje de la placa sensores del box superior
+
+```metadata
+pagina: 41
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P41_I0.png
+contexto: 
+```
+
+![Imagen página 41 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P41_I0.png)
+
+# Página 42
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  9
+
+•	Quitar con destornillador Phillips los 4 tornillos Parker 4x3/8 que fijan el conector múltiple al box superior (Fig.5-12).
+
+Fig.5-12  Desmontaje del conector múltiple del box superior
+
+NOTA • En función de las necesidades del servicio técnico, la desconexión de la placa CPU puede realizarse antes o después de la desconexión de la fuente. Sin em­ bargo, para acceder al panel frontal, deben desmon­ tarse ambas partes.
+
+En la Fig. 5-13 se observa la ubicación de los conectores a los que están conecta­ dos los cables que deben desconectarse para poder retirar la placa CPU, los cua­ les se detallan en la Tabla 5-2, donde a su vez se especifica el conexionado en la placa controladora.
+
+Fig. 5-13  Localización de los conectores de la placa CPU
+
+```metadata
+pagina: 42
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P42_I0.png
+contexto: 
+```
+
+![Imagen página 42 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P42_I0.png)
+
+5.3 | Desmontaje de la pla- ca CPU
+
+```metadata
+pagina: 42
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P42_I1.png
+contexto: 
+```
+
+![Imagen página 42 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P42_I1.png)
+
+# Página 43
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  10
+
+Para realizar el desmontaje de la placa cpu (Fig.5-12), se deben seguir los siguien­ tes pasos:
+
+•	Proceder en primer lugar a la desconexión de los cables detallados en la Tabla 5-2, utilizando protección antiestática.
+
+Tabla 5-2   Conexiones de placas CPU y CONTROLADORA
+
+CABLE Conector en CONTROLADORA Conector en CPU
+
+Cable de datos display - CON4
+
+Cable backlight - CON3
+
+Cable placa controladora  ficha DB9 P1 (cable serial) CON7
+
+Cable placa controladora  rojo-negro P1 (cable serial) CON32
+
+Cable cinta membrana accutouch P2 -
+
+Cable capnógrafo - CON31
+
+Cable alimentación CPU - CON25
+
+Cable plano  izquierdo de placa tecla - CON6
+
+Cable plano  derecho de placa tecla - CON8
+
+•	Desajustar las 3 tuercas M3x0,5 que sujetan la placa CPU al blindaje metálico (Fig. 5-14)
+
+Fig.5-14  Desajuste de las tres tuercas que sujetan la placa CPU al blindaje placa base.
+
+•	Retirar la placa hacia hacia atrás, y luego deslizarla hacia arriba.
+
+•	Para retirar la placa controladora, se deberán desajustar dos tuercas M3x0,5. que fijan dicha placa al blindaje metálico. (Fig.5-15)
+
+```metadata
+pagina: 43
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P43_I0.png
+contexto: 
+```
+
+![Imagen página 43 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P43_I0.png)
+
+# Página 44
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  11
+
+Fig.5-15  Desmontaje placa controladora
+
+Para realizar el desmontaje de la fuente se deben seguir los siguientes pasos:
+
+•	Quitar el blindaje con un destornillador plano, desajustando dos tornillos M3x0,5x6 (Fig.5-16)
+
+Fig.5-16  Desconexión del blindaje fuente
+
+•	Desconectar el cable masa (Fig.5-17) y quitar el tornillo de fijación fuente soporte M3x0,5x20, con su arandela, entredós de aluminio y tuerca 3x0,5 (Fig. 5-18), por medio de una llave allen de 2,5 mm y llave tubo de 7/32.
+
+Habiendo realizado lo detallado previamente, retirar la fuente del soporte movien­ do hacia arriba los tres entredos de fijación.
+
+5.4 | Desmontaje de la fuente.
+
+```metadata
+pagina: 44
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P44_I0.png
+contexto: 
+```
+
+![Imagen página 44 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P44_I0.png)
+
+```metadata
+pagina: 44
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P44_I1.png
+contexto: 
+```
+
+![Imagen página 44 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P44_I1.png)
+
+# Página 45
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  12
+
+Fig.5-17  Desconexión cable masa soporte fuente
+
+Fig.5-18  Desconexión fuente de soporte
+
+•	Desajustar la tuerca M4x0,7 que fija la parte inferior del soporte fuente al múltiple, por medio de una llave tubo de 7 mm (Fig.5-19)
+
+Fig.5-19  Desconexión soporte fuente de múltiple de salida
+
+```metadata
+pagina: 45
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P45_I0.png
+contexto: 
+```
+
+![Imagen página 45 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P45_I0.png)
+
+```metadata
+pagina: 45
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P45_I1.png
+contexto: 
+```
+
+![Imagen página 45 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P45_I1.png)
+
+```metadata
+pagina: 45
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P45_I2.png
+contexto: 
+```
+
+![Imagen página 45 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P45_I2.png)
+
+# Página 46
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  13
+
+•	Desajustar la tuerca M3x0,5 que fija el soporte fuente al box neumático, por me­ dio de una llave tubo de 6 mm (Fig.5-20).
+
+Fig.5.20  Desconexión soporte fuente de box neumático
+
+•	Quitar el tornillo M3x0,5x22 que sujeta el soporte fuente al box con un entredós, una arandela estrella, el cable masa del box (Fig. 5-21 y Fig.5-22).
+
+Fig.5-21  Ubicación entredos soporte fuente box neumático
+
+Fig.5-22  Tornillo de fijación de box neumático a soporte fuente
+
+```metadata
+pagina: 46
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P46_I0.png
+contexto: 
+```
+
+![Imagen página 46 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P46_I0.png)
+
+```metadata
+pagina: 46
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P46_I1.png
+contexto: 
+```
+
+![Imagen página 46 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P46_I1.png)
+
+```metadata
+pagina: 46
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P46_I2.png
+contexto: 
+```
+
+![Imagen página 46 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P46_I2.png)
+
+# Página 47
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  14
+
+•	Retirar el soporte fuente (Fig.5.23)
+
+Fig.5-23  Remoción de soporte fuente
+
+Para realizar el desmontaje del box neumático inferior, se deben seguir los siguien­ tes pasos:
+
+•	Desconectar tanto la manguera corrugada circuito paciente como la manguera siliconada en “U” del conector del protector del sensor de oxígeno  (Fig. 5-24).
+
+Fig. 5-24  Desconexión de mangueras del protector del sensor de oxígeno
+
+•	Quitar seis tuercas M4x0,7 que fijan el box inferior al múltiple (Fig. 5-25)
+
+```metadata
+pagina: 47
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P47_I0.png
+contexto: 
+```
+
+![Imagen página 47 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P47_I0.png)
+
+5.5 | Desmontaje del box neumático inferior
+
+```metadata
+pagina: 47
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P47_I1.png
+contexto: 
+```
+
+![Imagen página 47 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P47_I1.png)
+
+# Página 48
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  15
+
+Fig. 5-25  Ubicación de tuercas de fijación de múltiple a box inferior.
+
+•	Por último, separar el gabinete frontal del box neumático inferior (Fig. 5-26), pa­ sando todas las mangueras del múltiple por los orificios del box inferior.
+
+Fig. 5-26  Separación del box inferior del gabinete frontal.
+
+Para desmontar el conjunto neumático, se deben seguir los siguientes pasos:
+
+•	Desconectar las mangueras Festo de alta presión de aire y oxígeno, de las entra­ das de gases respectivas.
+
+•	Remover los tornillos M 4x0,7x6 con una llave allen de 3mm, y sus respectivas arandelas estrella (Fig. 5-27).
+
+```metadata
+pagina: 48
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P48_I0.png
+contexto: 
+```
+
+![Imagen página 48 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P48_I0.png)
+
+5.5.1 |  Desmontaje del conjunto neumático del box inferior
+
+```metadata
+pagina: 48
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P48_I1.png
+contexto: 
+```
+
+![Imagen página 48 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P48_I1.png)
+
+# Página 49
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  16
+
+```metadata
+pagina: 49
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P49_I0.png
+contexto: 
+```
+
+![Imagen página 49 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P49_I0.png)
+
+Fig.5-27  Desconexión de tornillos  M 4x0,7x6. El tornillo A se encuentra ubicado próximo al regulador de 0,7 kg/cm2, mientras que el tornillo B se encuentra próximo a la válvula antisofocación.
+
+•	Sacar hacia arriba, el conjunto neumático de los alojamientos del box neumático inferior (Fig.5-28)
+
+Fig.5-28  Separación del conjunto neumático del box inferior
+
+```metadata
+pagina: 49
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P49_I1.png
+contexto: 
+```
+
+![Imagen página 49 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P49_I1.png)
+
+# Página 50
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  17
+
+•	Quitar el precinto que fija el tubo siliconado de la válvula antisofocación al conjun­ to neumotacógrafo (Fig.5-29), para luego quitar las tuercas M 4x0,7 (Fig. 5-30) que fijan la válvula antisofocación a los reguladores de 2kg/cm 2
+
+Fig.5-29  Eliminación de precinto de fijación de tubo siliconado
+
+Fig.5-30  Desconexión de tuercas de fijación de válvula antisofocación a reguladores de 2 kg/cm2.
+
+•	Para dejar libre el regulador de 0,7 kg/cm 2 ,  cortar con un alicate las mangueras Par­ ker que unen dicho regulador con los reguladores de aire y oxígeno de 2 kg/cm 2 .
+
+•	Remover los prisioneros del neumotacógrafo para separarlo de las válvulas pro­ porcionales (Fig.5-31).
+
+Fig. 5-31  Desmontaje del neumotacógrafo.
+
+```metadata
+pagina: 50
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P50_I0.png
+contexto: 
+```
+
+![Imagen página 50 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P50_I0.png)
+
+```metadata
+pagina: 50
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P50_I1.png
+contexto: 
+```
+
+![Imagen página 50 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P50_I1.png)
+
+```metadata
+pagina: 50
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P50_I2.png
+contexto: 
+```
+
+![Imagen página 50 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P50_I2.png)
+
+# Página 51
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  18
+
+•	Para desmontar el soporte electroválvulas, se debe realizar lo siguiente: en primer lugar sacar las dos tuercas M4x0,7 junto con los dos tornillos M4x0,7x8 que fijan dicho soporte al soporte reguladores (Fig.5-32), luego proceder a sacar los cuatro tornillos M4x0,7x6 que fijan las válvulas proporcionales al soporte (Fig.5-33).
+
+Fig. 5-32  Desajuste soporte válvulas proporcionales de soporte reguladores
+
+Fig. 5-33  Desmontaje soporte válvulas proporcionales del soporte correspon­ diente
+
+•	Separar reguladores de presión de válvulas proporcionales, tirando de los mis­ mos (Fig.5-34).
+
+Fig. 5-34  Desmontaje válvula proporcional de regulador de presión.
+
+```metadata
+pagina: 51
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P51_I0.png
+contexto: 
+```
+
+![Imagen página 51 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P51_I0.png)
+
+```metadata
+pagina: 51
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P51_I1.png
+contexto: 
+```
+
+![Imagen página 51 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P51_I1.png)
+
+```metadata
+pagina: 51
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P51_I2.png
+contexto: 
+```
+
+![Imagen página 51 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P51_I2.png)
+
+# Página 52
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  19
+
+Para desmontar los periféricos del box inferior, se deben seguir los siguientes pasos:
+
+•	Desajustar el tornillo M4x0,7x12 que fija el tope de regulador con el box inferior (Fig.5-35).
+
+Fig.5-35  Desajuste de tope de regulador de box inferior
+
+•	Retirar la entrada antisofocación, teniendo en cuenta que la misma se encuentra pegada al box inferior (Fig.5-36).
+
+Fig.5-36  Desmontaje de entrada antisofocación
+
+•	Desajustar los conectores Festo de aire y oxígeno (Fig.5-37), utilizando llave fija.
+
+Fig.5-37  Desajuste de los conectores Festo de aire y oxígeno
+
+5.5.2 |  Desmontaje de periféri- cos del box interior
+
+```metadata
+pagina: 52
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P52_I0.png
+contexto: 
+```
+
+![Imagen página 52 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P52_I0.png)
+
+```metadata
+pagina: 52
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P52_I1.png
+contexto: 
+```
+
+![Imagen página 52 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P52_I1.png)
+
+```metadata
+pagina: 52
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P52_I2.png
+contexto: 
+```
+
+![Imagen página 52 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P52_I2.png)
+
+# Página 53
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  20
+
+•	Por último, desajustar los tres tornillos M4x0,7x8 que ajustan las entradas de aire y oxígeno al box, quedando estas libres del mismo (Fig.5-38).
+
+Fig.5-38  Desajuste de las entradas de aire y oxígeno
+
+Para separar el múltiple de salida del gabinete frontal se deben seguir los siguien­ tes pasos:
+
+•	Quitar las cuatro tuercas M4x0,7 que fijan el múltiple al gabinete frontal (Fig.5-39).
+
+Fig. 5-39  Ubicación de tuercas de fijación del múltiple al gabinete frontal
+
+NOTA • El siguiente paso sólo es aplicable para equipo Graph Net  advance.
+
+•	Desconectar los terminales molex del cable capnógrafo múltiple de los dos co­ nectores (Fig.5-40), teniendo en cuenta el siguiente diagrama de conexionado al momento de proceder luego al armado de dicho cable:
+
+```metadata
+pagina: 53
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P53_I0.png
+contexto: 
+```
+
+![Imagen página 53 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P53_I0.png)
+
+5.6 | Desmontaje del múlti- ple de salida
+
+```metadata
+pagina: 53
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P53_I1.png
+contexto: 
+```
+
+![Imagen página 53 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P53_I1.png)
+
+# Página 54
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  21
+
+Tabla 5.3  Posibles configuraciones de los cables de los conectores del capnógrafo
+
+Cable 1 2 3 4 5 6 7
+
+Conf. 1 Violeta Marrón Amarillo Celeste Verde Rojo Naranja
+
+Conf. 2 Blanco Marrón Amarillo Azul Transparente Rojo Naranja
+
+Conf. 3 Violeta Negro Amarillo Azul Blanco Rojo Naranja
+
+Conf. 4 Blanco Negro Marrón Azul Verde Rojo Naranja
+
+Fig. 5-40  Esquema de conexiones de cables del capnógrafo.
+
+•	Proceder a retirar el múltiple del gabinete frontal (Fig.5-41)
+
+Fig.5-41  Desmontaje del múltiple de salida
+
+Para realizar el desmontaje del panel frontal, se deben seguir los siguientes pasos:
+
+•	Pasar por las ranuras correspondientes, el cable luz de alarma superior y el cable cinta membrana accutouch.
+
+•	Retirar las cuatro tuercas M3x0,5 que sujetan el blindaje placa base al gabinete frontal (Fig.5-42).
+
+```metadata
+pagina: 54
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P54_I0.png
+contexto: 
+```
+
+![Imagen página 54 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P54_I0.png)
+
+5.7 | Desmontaje del panel frontal, luz de alarma superior y bridas de cierre.
+
+```metadata
+pagina: 54
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P54_I1.png
+contexto: 
+```
+
+![Imagen página 54 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P54_I1.png)
+
+# Página 55
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  22
+
+Fig. 5-42   Desmontaje del blindaje placa base.
+
+•	Quitar las cuatro tuercas M3x0,5 que fijan el display al panel frontal (Fig.5-43).
+
+Fig. 5-43   Ubicación de tuercas de fijación de display con panel frontal.
+
+•	Quitar tres tornillos Parker 4x1/4” que fijan la parte superior del panel frontal (Fig.5-44)  más los siete tornillos 3,5x12,5 restantes que fijan el panel frontal al gabinete frontal (Fig. 5-45), quedando libre de esta manera el panel del gabinete.
+
+Fig. 5-44  Desajuste de tornillos Parker
+
+```metadata
+pagina: 55
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P55_I0.png
+contexto: 
+```
+
+![Imagen página 55 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P55_I0.png)
+
+```metadata
+pagina: 55
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P55_I1.png
+contexto: 
+```
+
+![Imagen página 55 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P55_I1.png)
+
+```metadata
+pagina: 55
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P55_I2.png
+contexto: 
+```
+
+![Imagen página 55 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P55_I2.png)
+
+# Página 56
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  23
+
+Fig. 5-45  Desajuste de tornillos 3,5x12,5
+
+•	Quitar con un destornillador Phillips los dos tornillos Parker 4x3/8 que fijan la placa luz de alarma superior al gabinete (Fig.5-46).
+
+Fig. 5-46   Desmontaje luz de alarma superior
+
+•	Quitar las bridas de sujeción ubicadas en los extremos del gabinete (Fig.5-47). Tener en cuenta que el cable masa sólo se encuentra en el extremo izquierdo, no así en el derecho.
+
+```metadata
+pagina: 56
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P56_I0.png
+contexto: 
+```
+
+![Imagen página 56 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P56_I0.png)
+
+```metadata
+pagina: 56
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P56_I1.png
+contexto: 
+```
+
+![Imagen página 56 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P56_I1.png)
+
+# Página 57
+
+**Equipo:** Respirador Neumovent Graph
+
+Desmontaje |  Graph Net  advance neo ts 5.  24
+
+```metadata
+pagina: 57
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P57_I0.png
+contexto: 
+```
+
+![Imagen página 57 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P57_I0.png)
+
+Fig. 5-47  Desajuste de bridas de cierre
+
+Para realizar el desmontaje de la placa teclado del panel frontal, se deben seguir los siguientes pasos:
+
+•	Quitar la perilla encoder, y la tuerca encoder touch niquelada del panel frontal.
+
+•	Quitar las ocho tuercas M 3x0,5 mm que fijan la placa teclado al panel frontal (Fig. 5-48).
+
+Fig. 5-48  Desmontaje de la placa teclado.
+
+NOTA • Tener en cuenta al momento de sacar la placa teclado del panel frontal, que este último presenta difusores a nivel de las teclas fijas representativas del silencia­ do de alarmas (30-60 s), y bloqueo de pantalla táctil (ícono de candado).
+
+5.8 | Desmontaje de la pla- ca teclado
+
+```metadata
+pagina: 57
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P57_I1.png
+contexto: 
+```
+
+![Imagen página 57 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P57_I1.png)
+
+# Página 58
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  2
+
+Durante el proceso de montaje de las partes componentes del respirador es nece­ sario tener una serie de precauciones, con el fin de evitar conexiones inadecuadas que luego podrían ocasionar errores de funcionamiento.
+
+Cada parte ensamblada a su vez presenta una mayor o menor dificultad al mo­ mento del montaje, dependiendo de las características que presenten.
+
+Con respecto a los montajes mecánicos y electrónicos, éstos pueden ser tomados del capítulo Desmontaje, siguiendo el procecedimiento inverso al descripto en di­ cho capítulo.
+
+Sin embargo, las conexiones neumáticas del box presentan una mayor criticidad, y es por ello que se justifica la inclusión de los apartados siguientes, donde se brindará la información apropiada para evitar posibles inconvenientes, como ser desconexiones o acodamientos.
+
+Conectar una manguera PARKER PARFLEX 4mm x 210mm en “Entrada 1” de válvula V12 como se indica en la figura.
+
+Conectar una manguera PARKER PARFLEX 4mm x 70mm en “Salida” de válvula V12 y en “Salida” de válvula  V13.
+
+6.1 | Introducción
+
+6.2 | Conexión de mangue- ras en placa sensores
+
+```metadata
+pagina: 58
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P58_I0.png
+contexto: 
+```
+
+![Imagen página 58 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P58_I0.png)
+
+```metadata
+pagina: 58
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P58_I1.png
+contexto: 
+```
+
+![Imagen página 58 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P58_I1.png)
+
+# Página 59
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  3
+
+Conectar cinco mangueras PARKER PARFLEX 4mm x 90mm como se detalla a continuación:
+
+•	Conectar en “Salida” de válvula V7 y en pico “P2” de honeywell de flujo espiratorio.
+
+•	Conectar en “Salida” de válvula V8 y en pico “P1” de honeywell de flujo O 2 .
+
+•	Conectar en “Salida” de válvula V9 y en pico “P2” de honeywell de flujo O 2 .
+
+•	Conectar en “Salida” de válvula V10 y en pico “P1” de honeywell de flujo Aire. Ru­ tear por encima de la manguera conectada en la “Entrada 1”, de la válvula V12.
+
+•	Conectar en “Salida” de válvula V11 y en pico “P2” de honeywell de flujo Aire. Rutear por encima de la manguera conectada en la “Entrada 1”, de la válvula V12.
+
+Conectar tubo cristal D.3x6x60mm según la secuencia definida:
+
+1º. Conectar en “Salida” de válvula V1.
+
+2º. Rutear la manguera por debajo de las entradas de las válvulas V2 y V3.
+
+3º. Conectar en pico inferior de sensor Motorola según la figura.
+
+Conectar tubo FESTO PUN 6x1x400mm en pico inferior de sensor Motorola a tope, como se indica en la figura.
+
+```metadata
+pagina: 59
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P59_I0.png
+contexto: 
+```
+
+![Imagen página 59 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P59_I0.png)
+
+```metadata
+pagina: 59
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P59_I1.png
+contexto: 
+```
+
+![Imagen página 59 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P59_I1.png)
+
+# Página 60
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  4
+
+Conectar tubo FESTO PUN 6x1x400mm en pico superior de sensor Motorola a tope, como se indica en la figura
+
+Conectar dos mangueras PARKER PARFLEX 4mm x 210mm como se detalla a continuación:
+
+• Conectar en “Entrada 2” de válvula V2.
+
+• Conectar en “Entrada 2” de válvula V3.
+
+```metadata
+pagina: 60
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P60_I0.png
+contexto: 
+```
+
+![Imagen página 60 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P60_I0.png)
+
+```metadata
+pagina: 60
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P60_I1.png
+contexto: 
+```
+
+![Imagen página 60 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P60_I1.png)
+
+```metadata
+pagina: 60
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P60_I2.png
+contexto: 
+```
+
+![Imagen página 60 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P60_I2.png)
+
+# Página 61
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  5
+
+Conectar ocho mangueras PARKER PARFLEX 4mm x 65mm y una línea neumá­ tica NRO5 como se detalla a continuación:
+
+• Conectar en “Entrada 2” de válvula V1.
+
+•  Conectar en “Entrada 1” de válvula V2.
+
+• Conectar en “Entrada 1” de válvula V3.
+
+• Conectar en “Entrada 2” de válvula V8.
+
+• Conectar en “Entrada 2” de válvula V9.
+
+• Conectar en “Entrada 2” de válvula V10.
+
+• Conectar en “Entrada 2” de válvula V11.
+
+• Conectar en “Entrada 2” de válvula V12.
+
+• Conectar tramo más largo de línea N° 5 en “Entrada 1” de válvula V13.
+
+Conectar línea N°3 en pico de motorola, honeywell y válvula V6 según la secuen­ cia definida:
+
+1º Conectar tramo de 65 mm en “Salida” de válvula V6.
+
+2º Rutear tramo conectado por debajo de la “Entrada 1” de la válvula V7.
+
+3º Conectar tramo más cortó en pico “P1” de honeywell de flujo espiratorio.
+
+4º Conectar tramo más largo en “pico superior” del sensor Motorola.
+
+```metadata
+pagina: 61
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P61_I0.png
+contexto: 
+```
+
+![Imagen página 61 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P61_I0.png)
+
+# Página 62
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  6
+
+Conectar los tramos de la línea N° 4 según la secuencia definida:
+
+1º Conectar tramo más corto en la “Entrada 2” de válvula V7.
+
+2º Conectar tramo de 70 mm en “Salida” de válvula V3
+
+3º Conectar tramo más largo en “Salida” de válvula V5, rutear como se indica en la figura.
+
+Conectar los tramos de la línea N° 4 por encima de la línea N°4 conectada en la operación anterior y en la secuencia definida:
+
+1º Conectar tramo más corto en la “Entrada 2” de válvula V6.
+
+2º Conectar tramo de 70 mm en “Salida” de válvula V2
+
+3º Conectar tramo más largo en “Salida” de válvula V4, rutear por encima del tramo más corto, como se indica en la figura.
+
+```metadata
+pagina: 62
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P62_I0.png
+contexto: 
+```
+
+![Imagen página 62 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P62_I0.png)
+
+```metadata
+pagina: 62
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P62_I1.png
+contexto: 
+```
+
+![Imagen página 62 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P62_I1.png)
+
+# Página 63
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  7
+
+Conectar tramos de línea N° 1 por encima de las líneas conectadas anteriormente y como se detalla a continuación:
+
+• Conectar tramo de 140 mm en “Entrada” de válvula V14.
+
+• Conectar tramo de 90 mm en “Entrada 1” de válvula V5.
+
+• Conectar tramo de 120 mm en “Entrada 1” de válvula V4.
+
+Conectar tramo más corto de la línea N° 2 en la “Salida” de válvula V14 como se indica en la figura.
+
+```metadata
+pagina: 63
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P63_I0.png
+contexto: 
+```
+
+![Imagen página 63 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P63_I0.png)
+
+```metadata
+pagina: 63
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P63_I1.png
+contexto: 
+```
+
+![Imagen página 63 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P63_I1.png)
+
+```metadata
+pagina: 63
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P63_I2.png
+contexto: 
+```
+
+![Imagen página 63 - 2](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P63_I2.png)
+
+# Página 64
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  8
+
+Conectar mangueras de placa sensores en conector múltiple (1 y 2) como se es­ pecifica a continuación:
+
+•	Tomar líneas 1 y 7, y conectar según se especifica en la figura debajo. No conec­ tar la línea C.
+
+•	Una vez conectadas controlar que las mismas no estén acodadas en los puntos marcados en la figura a continuación.
+
+•	Tomar mangueras A, B, D, E, F y G, y conectar según se especifica en la siguien­ te figura.
+
+6.3 | Conexion de mangue- ras en box superior
+
+```metadata
+pagina: 64
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P64_I0.png
+contexto: 
+```
+
+![Imagen página 64 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P64_I0.png)
+
+```metadata
+pagina: 64
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P64_I1.png
+contexto: 
+```
+
+![Imagen página 64 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P64_I1.png)
+
+# Página 65
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  9
+
+• Tomar línea “C” y conectar en conector conjunto Neumático en la ubicación C como se indica a continucación.
+
+• Tomar líneas 4, 5, 6 y rutear por debajo de líneas 2 y 3.
+
+•	Luego conectar en conector múltiple como se especifica en la figura debajo.
+
+```metadata
+pagina: 65
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P65_I0.png
+contexto: 
+```
+
+![Imagen página 65 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P65_I0.png)
+
+```metadata
+pagina: 65
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P65_I1.png
+contexto: 
+```
+
+![Imagen página 65 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P65_I1.png)
+
+# Página 66
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  10
+
+• Tomar líneas 2, 3 y rutear línea 2 por debajo de línea 3.
+
+•	Luego conectar en conector de múltiple como se especifica a continuación.
+
+•	Una vez conectadas las mangueras, controlar que las mismas no estén acoda­ das, en los puntos marcados en la figura siguiente.
+
+```metadata
+pagina: 66
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P66_I0.png
+contexto: 
+```
+
+![Imagen página 66 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P66_I0.png)
+
+```metadata
+pagina: 66
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P66_I1.png
+contexto: 
+```
+
+![Imagen página 66 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P66_I1.png)
+
+# Página 67
+
+**Equipo:** Respirador Neumovent Graph
+
+Montaje |  Graph Net  advance neo ts 6.  11
+
+Rutear líneas 1, 2, 3, 4 y 5 por debajo del conector neumotacografo y luego conec­ tar la tuberia siliconada “U” en el codo del neumotacografo.
+
+Rutear línea 7 por encima de tubo corrugado.
+
+```metadata
+pagina: 67
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P67_I0.png
+contexto: 
+```
+
+![Imagen página 67 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P67_I0.png)
+
+6.4| Conexion de mangue- ras en box inferior
+
+```metadata
+pagina: 67
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P67_I1.png
+contexto: 
+```
+
+![Imagen página 67 - 1](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P67_I1.png)
+
+# Página 68
+
+**Equipo:** Respirador Neumovent Graph
+
+Limpieza de rutina |  Graph Net  advance neo ts 7.  2
+
+7.1 | Indicaciones genera­
+
+les
+
+7.2 | Gabinete
+
+Los respiradores  Graph Net advance/neo/ts  y las partes asociadas del circuito pa­ ciente (mangueras, conectores, accesorios, etc.) son entregados limpios, pero no estériles.
+
+NOTA • La información que se provee para el manejo de la limpieza y desinfección de los diferentes componen­ tes se ofrece a manera de guía. Esta puede adaptar­ se a los protocolos propios de cada servicio, siempre que se respeten las advertencias y precauciones de­ claradas en este capítulo. • Para descartar todo el equipo o partes o elementos en desuso provistos por otras compañías, seguir los requerimientos vigentes de cada pais.
+
+El gabinete está conformado por la carcasa y por el panel frontal. A continuación, se detallarán los procedimientos de limpieza y desinfección  para dichas partes.
+
+La carcasa del equipo debe limpiarse y desinfectarse externamente utilizando al­ guno de los siguientes productos:
+
+•	Limpiador hidro alcohólico/amonio cuaternario (como el cloruro de benzalconio) a base de solvente.
+
+•	Glutaraldehido.
+
+•	De ser necesario, utilizar la espuma limpiadora y secar con trapo.
+
+PRECAUCIÓN • No limpiar la carcasa con solventes químicos abrasi­ vos, ni sustancias ácidas o alcalinas. No usar solven­ tes, acetona, cloroformo, o sustancias ácidas fuertes o solventes clorinados.
+
+Las recomendaciones de limpieza de este apartado corresponden tanto al display como a la lámina táctil. Para la limpieza, utilizar un paño suave, embebido en so­ lución de jabón neutro y agua tibia.
+
+PRECAUCIÓN • No limpiar la pantalla con solventes químicos abrasi­ vos, ni sustancias ácidas o alcalinas. No utilizar nin­ gún tipo de alcohol. • No rociar el producto de limpieza directamente sobre la pantalla. • Antes de comenzar con los procesos de limpieza y desinfección, apagar el respirador.
+
+7.2.1 |  Carcasa
+
+7.2.2 |  Panel frontal
+
+# Página 69
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  2
+
+8.1 |  Clasificación Tabla 8-1   Clasificaciones del respirador
+
+Riesgo
+
+Clase IIb (Council Directive 93/42/EEC).
+
+Clase III (MERCOSUR/GMC/RES. N° 40/00).
+
+Aislamiento eléctrico Clase I – Tipo B (según IEC 60601-1).
+
+Protección IP
+
+IP21 ( “2” protegido contra objetos de diámetro ≥ 12,5 mm; “1” protegido contra goteos que descienden verticalmente)
+
+Modo de operación Funcionamiento continuo (IEC 60601-1).
+
+Tabla 8-2   Características físicas
+
+Altura 35 cm (13.8 in).
+
+Ancho 36 cm (14.2 in).
+
+Profundidad 32 cm (12.6 in).
+
+Altura incluyendo el pedestal 131 cm (51.6 in).
+
+Peso sin incluir el pedestal 9,8 kg (21.6 lb).
+
+Peso incluyendo el pedestal 23,8 kg (52.5 lb).
+
+Peso incluyendo accesorios 27.25 kg (60 lb).
+
+Ancho del pedestal 51 cm (20.1 in) - 65 cm con ruedas lateralizadas (25.6 in).
+
+Profundidad del pedestal 52 cm (20.5 in) - 59 cm con ruedas en línea (23.2 in).
+
+Nivel de presión acústica ponderada A No excede de 45.3 dBA a una distancia de 1 m
+
+Nivel de potencia acústica ponderada A No excede de 56.3 dBA.
+
+Tabla 8-3   Pantalla
+
+Tipo Pantalla sensible al tacto (resistiva) / TFT-LED color.
+
+Tamaño 12,1”.
+
+Resolución 800x600.
+
+Tabla 8-4   Requerimientos ambientales
+
+Temperatura Presión ambiente Humedad
+
+Funcionamiento 15 °C – 35 °C 560 – 1030 hPa 15 - 95% no condensante
+
+Almacenamiento/
+
+Transporte
+
+-10 °C – 55
+
+°C 500 – 1060 hPa < 95% no condensante
+
+Tabla 8-5   Especificaciones neumáticas
+
+Gases de suministro Aire y oxígeno de grado médico.
+
+Presión mínima de suministro 280 kPa (40,61 psi).
+
+Presión máxima de suministro 600 kPa (87 psi)
+
+Presión limitada máxima (válvula de alivio) 120 ± 5 cmH 2 O.
+
+Presión máxima de trabajo (PMT)
+
+La PMT está garantizada por el límite superior de presión máxima cuando la presión inspirato­ ria es de 120 cmH 2 O
+
+Flujo de entrada (fuente de gases) adv/ts: 180 L/min (120 L/min para compresor de aire) / neo: 60 L/min.
+
+Flujo pico entregado por el respirador adv/ts: 0,2 – 180 L/min - neo: 0,2 – 40 L/min.
+
+Volumen minuto resultante máximo ADL: 130 L/min./PED: 40 L/min./NEO-INF: 17 L/min.
+
+8.2 |  Características Físicas
+
+8.3 |  Pantalla
+
+8.4 |  Requerimientos Ambientales
+
+8.5 |  Especificaciones Neumáticas
+
+NOTA •	En caso de ser necesario, TECME proveerá información técnica del equipo, tal como descripciones, diagramas e instrucciones de calibración, etc. para ayudar al per­ sonal técnico debidamente calificado a reparar aquellas partes definidas por el fabricante como reparables.
+
+# Página 70
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  3
+
+Complacencia interna (del respirador) 0,16 ml/cmH 2 O.
+
+Conectores del respirador para suministro de gases
+
+Aire: conector macho DISS 3/4” – 16. Oxígeno: conector macho DISS 9/16” – 18.
+
+Conectores de las mangueras de suministro de gases
+
+Aire: conector hembra DISS 3/4” – 16 (ambos extremos). Oxígeno: conector hembra DISS 9/16” – 18 (ambos extremos).
+
+Tabla 8-6   Especificaciones eléctricas
+
+Alimentación principal Voltaje: 100 – 240 V (conmutación automática).
+
+Frecuencia: 50 – 60 Hz.
+
+Consumo máximo: 1,25 A a 100 V - 0,5 A a 240 V
+
+Batería interna Voltaje: 11,1 V (continua).
+
+Carga eléctrica: 7,8 Ah (recarga automática).
+
+Autonomía: 2.5 horas.
+
+Fusibles F2L250V (250 V / 2 A – 0,5 mm x 20 mm).
+
+Conectividad RS-232C / VGA
+
+NOTA •	Cuando el respirador recibe alimentación desde la batería interna presenta las mismas capacidades operativas que cuando es alimentado desde la red eléctrica a través del cable de alimentación principal, con la excepción de capnografía que se encuentra deshabilitada.
+
+Tabla 8-7   Ajuste de parámetros ventilatorios
+
+Parámetro Rango Incrementos (1) Valor inicial
+
+Volumen tidal  (L)
+
+ADL: 0,050 - 2,500 PED: 0,020 - 0,300 NEO-INF: adv: 0,002 - 0,150 ts: 0,005 - 0,150 neo: 0,002 - 0,350
+
+ADL: 0,010* PED: 0,001* NEO-INF: 0,001*
+
+ADL: 0,400 (2)
+
+PED: 0,050 (2)
+
+NEO-INF: 0,010 (2)
+
+Flujo Pico  (L/min) 0,2 - 180 (adv/ts)
+
+0,2 - 40 (neo)
+
+0,2 a 1: 0,1 1 a 20: 0,5 20 a 180: 1
+
+ADL: 48 PED: 10 NEO-INF: 2,4
+
+Volumen minuto (programación MMV + PSV) (4)  (L/ min) (adv/ts)
+
+ADL: 1 - 50 PED: 1 - 50 NEO-INF: N/A
+
+0,100
+
+ADL: 6,0 PED: 4,0 NEO-INF: N/A
+
+Presión controla­ da (PCV)  (cmH 2 O) PCV + PEEP = 2 - 100 1
+
+ADL: 15 PED: 8 NEO-INF: 8
+
+Presión de sopor­ te (PSV)  (cmH 2 O) PSV + PEEP = 0 - 100 1
+
+ADL: 5 PED: 5 NEO-INF: 5
+
+PEEP/CPAP
+
+(cmH 2 O) 0 - 50 1
+
+ADL: 5 (3)
+
+PED: 5 (3)
+
+NEO-INF: 3 (3)
+
+Presión limitada (en TCPL - NEO-
+
+INF)  (cmH 2 O)
+
+3 - 70 1 10
+
+Flujo continuo
+
+TCPL  (L/min) 2 - 40 1 8
+
+Tiempo  inspiratorio
+
+(s) (en modos asisti­
+
+dos/controlados)
+
+0,1 - 10 0,01*
+
+ADL: 1,0 (3)
+
+PED: 0,6 (3)
+
+NEO-INF: 0,5 (3)
+
+8.6 |  Especificaciones Eléctricas
+
+8.7 |  Ajuste de Parámetros Ven- tilatorios
+
+# Página 71
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  4
+
+Tiempo inspirato­
+
+rio  (s)  (APRV)
+
+Ti alto 0.5 – 30 Ti bajo 0.2 – 30 0,01* 5.0 1.5
+
+Relación I:E
+
+5:1 – 1:599 (en modos
+
+asistidos/controlados) 150:1 – 1:60 (APRV)
+
+0,1:0,1
+
+Resultado del tiem­ po inspiratorio y la frecuencia iniciales.
+
+Frecuencia respi­ ratoria  (rpm)
+
+ADL: 1 - 100. PED y NEO-INF: 1 - 150.
+
+1
+
+ADL: 12 (3)
+
+PED: 25 (3)
+
+NEO-INF: 30 (3)
+
+Oxígeno (concen­ tración)  (%) 21 - 100 1* 50
+
+Sensibilidad inspiratoria  (Flujo = L/min; Presión = cmH 2 O)
+
+Gatillado por flujo: 0,2 a 15 Gatillado por presión: -0,5 a -20
+
+Por flujo: 0,1/0,5/1 según el valor de sensibilidad.
+
+Por presión: 0,5
+
+ADL: Flujo=3; Pre­ sión=-1,5 PED: Flujo=3; Pre­ sión=-1,5 NEO-INF: Flujo=1; Presión=-1,5
+
+Sensibilidad espiratoria  (para modos con PSV)
+
+5% - 80% del flujo pico. 5% 25%
+
+Pausa inspiratoria programable  (en VCV) (s)
+
+0 – 2 (adv/ts)
+
+0 – 1 (neo) 0,25 0 (NO)
+
+Pausa inspiratoria manual  (s) 7 (máximo) N/A N/A
+
+Pausa espiratoria manual  (s) 20 (máximo) N/A N/A
+
+Suspiros (en VCV)
+
+(adv/ts)
+
+N° de suspiros: NO/1/2/3.
+
+Frecuencia: 5/10/15/20 por hora.
+
+Volumen agregado: +0,1VT - +1,0VT (el volumen se agrega al VT configurado).
+
+N/A
+
+N° de suspiros: 1.
+
+Frecuencia:
+
+5 por hora.
+
+Volumen agregado: +30% (+0,3VT).
+
+Activado: NO
+
+Forma de onda del flujo inspiratorio
+
+Rampa descendente y constante (rectangular). N/A Rampa descen­ dente.
+
+Compensación de fugas en VNI   (L/ min) (adv/ts)
+
+No ajustable. N/A
+
+ADL: hasta 50
+
+PED: hasta 30
+
+Compensación de fugas para el res­ to de los modos (L/min)
+
+No ajustable. N/A
+
+ADL: hasta 15
+
+PED: hasta 15
+
+NEO-INF: hasta 10
+
+Tiempo de respuesta frente a cambios de Con­ centración de O 2 desde 21% a 90%
+
+No ajustable. N/A
+
+15.9 s a 500 ml
+
+23.5 s a 150 ml
+
+38.1 s a 30 ml
+
+Compensación de tubo (adv)
+
+Tubo: Endotraqueal o traqeostomía.
+
+Diámetro: 4 – 12 mm.
+
+Compensar: 10%- 100%.
+
+N/A
+
+Tubo: Endotraqueal.
+
+Diámetro: 8 mm.
+
+Compensar: 50%
+
+Activado: NO
+
+Flujo continuo oxigenoterapia
+
+(L/min)
+
+ADL: 1-80 PED: 1-60 NEO-INF: 1-20
+
+1
+
+ADL: 20 PED: 10 NEO-INF: 5
+
+# Página 72
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  5
+
+Concentración de oxígeno oxigeno­ terapia  (%)
+
+21-100 1
+
+ADL: 50 PED: 50 NEO-INF: 50
+
+(1) El asterisco (*) que acompaña a algunos valores de esta columna significa que si se presiona la tecla  [Ctrl]  antes de realizar una modificación del parámetro se pueden conseguir incrementos mayores o menores según el parámetro del que se trate.
+
+(2) Valores iniciales de fábrica. Al modificar los mL/kg en la configuración de VT basado en PCI, estos valores pueden cambiar (ver capítulo Verificación y calibración inicial).
+
+(3) Estos valores se muestran como referencia, y son los que pueden encontrarse en los modos VCV o PCV. Para conocer los valores iniciales de cada modo consulte el capítulo Modos operativos del manual de usuario.
+
+(4) El Volumen Minuto se programa únicamente en MMV + PSV. En el resto de los modos el Volumen Minuto es el resultado de la programación de otros parámetros (ver valores máximos por categoría en Tabla 10-4).
+
+Tabla 8-8   Parámetros entregados
+
+Parámetro Precisión
+
+Volumen tidal inspiratorio
+
+±(5 ml +10% del volumen tidal configurado) si VT>50 ml
+
+±(2 ml +10% del volumen tidal configurado) si VT≤50 ml
+
+Presión controlada (PCV) ±(2 cmH 2 O + 4 % de la presión programada)
+
+Presión de soporte (PSV) ±(2 cmH 2 O + 4 % de la presión programada)
+
+Presión de fin de espiración (PEEP) ±(2 cmH 2 O + 4 % de la presión programada)
+
+Concentración de O 2 ±3% (unidades porcentuales)
+
+Tabla 8-9   Parámetros monitorizados
+
+Parámetro Precisión
+
+Volumen tidal inspiratorio
+
+<±(4 ml +15% del volumen tidal inspiratorio moni­ torizado si VT >50 ml) <±(2 ml +10% del volumen tidal espiratorio moni­ torizado si VT≤ 50 ml)
+
+Volumen tidal espiratorio
+
+<±(4 ml +15% del volumen tidal inspiratorio moni­ torizado si VT >50 ml) <±(2 ml +10% del volumen tidal espiratorio moni­ torizado si VT≤ 50 ml)
+
+Presión pico <± (2 cmH 2 O +4% de la presión monitorizada)
+
+Presión plateau <± (2 cmH 2 O +4% de la presión monitorizada)
+
+Presión media <± (2 cmH 2 O +4% de la presión monitorizada)
+
+Presión de fin de espiración <± (2 cmH 2 O +4% de la presión monitorizada)
+
+Concentración de oxígeno ±(2.5% (1)  + 2.5% del valor monitorizado)
+
+CO 2
+
+0 – 40 mm Hg ±2 mm Hg 41 – 70 mm Hg ±5% de la lectura 71 – 100 mm Hg ±8% de la lectura 101 – 150 mm Hg ±10%  de la lectura
+
+Frecuencia respiratoria ± 1 rpm
+
+(1) Unidades Porcentuales.
+
+8.8  | Parámetros Entregados
+
+8.9  | Parámetros Monitorizados
+
+# Página 73
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  6
+
+Tabla 8-10   Ajuste de alarmas
+
+Alarma Límites Incremento Valor inicial
+
+Presión inspi­ ratoria máxima (cmH 2 O)
+
+10 (ó >mín - 120) 1
+
+ADL: 40 PED: 30 NEO-INF: 25
+
+Presión inspirato­ ria mínima  (cmH 2 O) 1 - 99 (ó <máx) 1
+
+ADL: 5 PED: 5 NEO-INF: 2
+
+Volumen tidal máximo (3)  (L)
+
+ADL: >VTmín - 3,0 PED: >VTmín - 0.500 NEO-INF: >VTmín - 0,250
+
+ADL: 0,010 (2)
+
+PED: 0,005 (1)
+
+NEO-INF: 0,005 (1)
+
+ADL: 0,600 PED: 0,075 NEO-INF: 0,015
+
+Volumen tidal mínimo (3)  (L)
+
+ADL: 0 a <VTmáx PED: 0  a <VTmáx NEO-INF: 0 a <VTmáx
+
+ADL: 0,010 (2)
+
+PED: 0,001 (1)
+
+NEO-INF: 0,001 (1)
+
+ADL: 0,150 PED: 0,025 NEO-INF: 0,005
+
+Volumen minuto espirado máximo (L/min)
+
+ADL: >VMmín - 55 PED: >VMmín - 55 NEO-INF: >VMmín - 55
+
+0,01/ 0,05/ 0,1/ 0,5/ 1,0 según el valor del límite de alarma
+
+ADL: 7,23 (9,0 en MMV+PSV) PED: 1,91 (6,0 en MMV+PSV) NEO-INF: 0,40
+
+Volumen minuto espirado mínimo (L/min)
+
+ADL: 0  – <VMmáx PED: 0  – <VMmáx NEO-INF: 0  – <VM­ máx
+
+0,01/ 0,05 /0,1 /0,5/ 1,0 según el valor del límite de alarma
+
+ADL: 2,41 (4,5 en MMV+PSV) PED: 0,63 (3,0 en MMV+PSV) NEO-INF: 0,13
+
+Concentración de O 2  (%)
+
+Alta: 25 - 110 Baja: 19 - 95 1 Alta: 60 Baja: 40
+
+Oxígeno no ade­ cuado  (%)
+
+18 o menor (no es configurable) N/A N/A
+
+Desconexión N/A (no es configu­ rable) N/A N/A
+
+Fuga no compen­ sable  (L/min)
+
+N/A (no es configu­ rable) N/A
+
+ADL: 50 (3)
+
+PED: 30 (3)
+
+NEO-INF: 10
+
+Apnea  (s) 5 - 60 5 15
+
+PEEP bajo  (cmH 2 O) 0 - 6 2 ADL/PED/NEO- INF: 2
+
+Frecuencia respira­ toria máxima  (rpm) 3 - 160 1 ADL/PED: 30 NEO-INF: 40
+
+ETCO 2  (mmHg) (adv)
+
+Máx: >Mín a 150 Mín 1 a <Máx 1 Máx: 50 Min: 30
+
+Presión continua­ da alta
+
+Condición de alarma: 5 cmH 2 O por encima del nivel de PEEP configurado durante más de  15 s. No es configurable.
+
+Falta de energía eléctrica externa
+
+No es configurable. Cualquiera sea la causa del evento, el respi­ rador conmuta automáticamente a funcionamiento por batería.
+
+Batería agotada Nivel de carga nulo o muy bajo. Reemplazar por un método venti­ latorio alternativo. No es configurable.
+
+Vent. Inop. Cuando se suspende el funcionamiento del respirador. Reempla­ zar por un método ventilatorio alternativo. No es configurable.
+
+Falla de soplador
+
+No es configurable. Las señales de alarma se disparan cuando se detecta un consumo eléctrico excesivo del soplador (causado por una resistencia aumentada al giro de las aspas).
+
+(1) De 1 a 30 mL incrementa de a 0,001 L; de 30 a 100 mL incrementa de a 0,005 L, y > 100 mL incrementa de a 0,010 L. (2) En todos los modos ventilatorios, el VTmáx es 1,5VT basado en PCI, y el VTmín inicial es 0,5VT basado en PCI. (3) Los valores declarados para ADL y PED corresponden al modo VNI. Para el resto de los modos la Fuga no Compensable se dispara a partir de los 15 L/min. En NEO-INF el valor de fuga compensable es el mismo para todos los modos.
+
+8.10 |  Ajuste de Alarmas
+
+# Página 74
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  7
+
+Tabla 8-11   Obtención de los datos para control y monitorización
+
+Parámetro Método Variables involucradas
+
+Presión Transductores de presión relativa. Presiones de control, de soporte y monitorizadas.
+
+Flujo controlado
+
+Neumotacógrafo de malla relaciona­ do con transductores diferenciales de presión.
+
+Flujo continuo, flujo para genera­ ción de volúmenes controlados.
+
+Flujo monitorizado
+
+Neumotacógrafo de orificio varia­ ble relacionado con transductor diferencial de presión (opcional neumotacógrafo de orificio fijo para categoría NEO-INF).
+
+Flujos monitorizados y graficados, y volúmenes espirados.
+
+Volumen Se deriva de las mediciones de flujo correspondientes.
+
+Volúmenes controlados, monitoriza­ dos, y graficados.
+
+Tiempo Cristal de cuarzo.
+
+Tiempos inspiratorio y espiratorio, frecuencia respiratoria, y relación I:E. Reloj interno.
+
+Concentra­
+
+ción de O 2
+
+Celda galvánica. Concentración de O 2 .
+
+CO 2  (adv) Infrarojo no dispersivo
+
+Eliminación de CO 2 , presión de CO 2 , mediciones de capnografía volumétrica
+
+La información detallada a continuación corresponde al circuito paciente provisto por TECME S.A.
+
+ADVERTENCIA •	La utilización de elementos que no sean provis­ tos por TECME S.A. pueden ocasionar un funcio­ namiento inapropiado del respirador.
+
+Tabla 8-12   Características del circuito respiratorio
+
+Resistencia inspiratoria (cmH 2 O) Adulto: 0.38-0.81 a 30 L/min Pediátrico: 0.37-0.55 a 15 L/min Neonatal: 0.07-0.24 a 2.5 L/min
+
+Resistencia espiratoria (cmH 2 O)
+
+Adulto: 0.38-3.42 a 30 L/min Pediátrico: 0.37-1.99 a 15 L/min Neonatal: 0.07-0.48 a 2.5 L/min
+
+Complacencia (mL/cmH 2 O)
+
+Adulto: 1.12-1.64 Pediátrico: 0.75-1.33 Neonatal: 0.57-0.77
+
+Espacio muerto (ml)
+
+Sensor de flujo proximal: < 1 Adaptador capnógrafo adulto/pediátrico: < 5 Adaptador capnógrafo neonatal: < 1
+
+ADVERTENCIA •	El reemplazo de los accesorios o cables (alimen­ tación principal o cableados internos) del equi­ popor otros que no sean aprobados por TECME S.A. puede resultar en la disminución de la inmu­ nidad, o en el incremento de las emisiones decla­ radas para  Graph Net  advance, ts y neo.
+
+•	En caso de utilizar un cable para comunicación serial RS232, la longitud del mismo no deberá su­ perar los 3 m
+
+8.11 |  Obtención de los Datos para Control y Monitorización
+
+8.12  | Características del circui- to respiratorio
+
+8.13 |  Compatibilidad Electromagnética
+
+# Página 75
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  8
+
+Tabla 8-13   Declaración de emisiones electromagnéticas
+
+Graph Net  advance,ts y neo  está destinado para ser utilizado en el entorno electromagné­ tico especificado. El cliente y/o usuario de  Graph Net  advance, ts y neo deberá asegurarse de que se utilice en un entorno  electromagnético como el declarado en esta Tabla.
+
+Prueba de
+
+emisión Conformidad Entorno electromagnético
+
+Emisiones de RF
+
+CISPR 11 Grupo 1
+
+Graph Net  advance, ts y neo  utiliza energía de RF sólo para su funcionamiento interno. Por ello, las emisiones de RF son muy bajas y es poco probable que provoquen alguna interferencia en el equipamiento electrónico cercano.
+
+Emisiones de RF
+
+CISPR 11 Clase A
+
+Graph Net  advance, ts y neo  puede ser utilizado en todos los establecimientos, menos en los do­ mésticos, y aquellos que se encuentran conecta­ dos directamente a la red pública de suministro eléctrico de baja tensión que alimentan a los edifi­ cios usados con propósitos domésticos.
+
+Emisiones armónicas IEC
+
+61000-3-2
+
+Clase A
+
+Fluctuaciones de
+
+voltaje / emisio­ nes discontinuas
+
+IEC 61000-3-3
+
+Conforme con especificaciones
+
+Tabla 8-14   A-Declaración de inmunidad electromagnética
+
+Graph Net  advance, ts y neo  está destinado para ser utilizado en el entorno electromagné­ tico especificado. El cliente y/o usuario de  Graph Net  advance, ts y neo  deberá asegurarse de que se utilice en un entorno  electromagnético como el declarado en esta Tabla.
+
+Prueba de inmunidad
+
+Nivel de prueba
+
+IEC 60601-1-2
+
+Nivel de conformidad
+
+Entorno
+
+electromagnético
+
+Descarga elec­ trostática (ESD)
+
+IEC 610000-4-2
+
+Contacto: ± 6 kV.
+
+Aire: ± 8 kV.
+
+Contacto: ± 6 kV.
+
+Aire: ± 8 kV.
+
+Los suelos deben ser de ma­ dera, hormigón, o cerámico. Si los suelos se encuentran cubiertos de material sintéti­ co, la humedad relativa debe ser de al menos un 30%.
+
+Transitorios eléctricos rápi­ dos en ráfagas
+
+IEC 61000-4-4
+
+± 2 kV para líneas
+
+de alimentación. ± 1 kV para líneas de entrada/salida.
+
+± 2 kV para líneas
+
+de alimentación. ± 1 kV para líneas de entrada/salida.
+
+La calidad de la red eléctrica debe ser equivalente a la de un entorno comercial u hospitalario típicos.
+
+Ondas de choque IEC
+
+61000-4-5
+
+Modo diferencial:
+
+±1 kV. Modo común: ±
+
+2 kV.
+
+Modo diferencial:
+
+±1 kV. Modo común: ±
+
+2 kV.
+
+La calidad de la red eléctrica debe ser equivalente a la de un entorno comercial u hospitalario típicos.
+
+Huecos de ten­
+
+sión, interrup­ ciones breves
+
+y variaciones de tensión en lí­ neas de entrada
+
+de corriente eléctrica IEC
+
+61000-4-11
+
+< 5% UT (baja > 95% de UT) para
+
+0,5 ciclos.
+
+40% UT (baja de 60% de UT) para
+
+5 ciclos.
+
+70%  UT (baja de
+
+30% de UT) para
+
+25 ciclos.
+
+< 5% UT (baja > 95% de UT) para
+
+5 s.
+
+< 5% UT (baja > 95% de UT) para
+
+0,5 ciclos.
+
+40% UT (baja de 60% de UT) para
+
+5 ciclos.
+
+70%  UT (baja de
+
+30% de UT) para
+
+25 ciclos.
+
+< 5% UT (baja > 95% de UT) para
+
+5 s.
+
+La calidad de la red eléctrica debe ser equivalente a la de un entorno comercial u hos­ pitalario típicos. Si el usuario de  Graph Net advance,ts y neo  requiere que se mantenga el funcionamiento durante las interrupciones de la corriente, se recomienda conectar el sistema a una fuente de alimentación inin­ terrumpida o a una batería.
+
+Campo mag­
+
+nético de la frecuencia de
+
+alimentación (50-60 Hz) IEC
+
+61000-4-8
+
+3 A/m 3 A/m
+
+El campo magnético de la frecuencia de alimentación debería ser característico de los niveles encontrados en  un entorno comercial u hospitalario típico.
+
+NOTA:  UT es el voltaje de la red de CA antes de aplicar el nivel de prueba.
+
+8.13.1 | Declaración del fabricante: Emisiones electromagnéticas
+
+8.13.2 | Declaración del fabricante: Inmunidad electromagnética
+
+# Página 76
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  9
+
+Tabla 8-15   B-Declaración de inmunidad electromagnética
+
+Graph Net  advance, ts y neo  está destinado para ser utilizado en el entorno electromagnético especificado. El cliente y/o usuario de  Gra­ ph Net  advance, ts y neo   deberá asegurarse de que se utilice en un entorno  electromagnético como el declarado en esta Tabla.
+
+Prueba de inmunidad
+
+Nivel de prueba IEC
+
+60601
+
+Nivel de conformidad
+
+Entorno electromagnético
+
+No debe utilizarse equipamiento de comunicaciones de RF,  móviles y/o portátiles (incluidos los cables), a una distancia de  Graph Net  advance, ts y neo  menor a la distancia de separación calculada a partir de la ecuación  aplicable a la frecuencia del transmisor.
+
+Distancia de separación recomendada
+
+RF conducida IEC
+
+61000-4-6
+
+3 Vrms 150 kHz - 80 Mhz fuera de las bandas ISM (1)
+
+10 Vrms 150 kHz - 80 Mhz dentro de las bandas ISM (1)
+
+10 Vrms
+
+10 Vrms
+
+d  = 0,35    P
+
+d  = 1,2    P
+
+RF radiada IEC
+
+61000-4-3
+
+10 V/m 80 MHz - 2,5 GHz 10 V/m
+
+d  = 1,2    P para 80 MHz - 800 MHz
+
+d  = 2,3    P para 800 MHz - 2,5 GHz
+
+Donde  P  es la potencia máxima de salida del transmisor en Watts (W) de acuerdo al fabricante, y d es la distancia de separación recomendada expresada en metros (m)  (2) . La intensidad de campos generados por transmisores fijos, determinados por ensayos electromagnéticos locales (3)  deben ser menores que el nivel de conformidad para cada rango de frecuencias (4) . Puede ocurrir interferencia en las cercanías de los equipos marcados con el siguiente símbolo:
+
+NOTA 1
+
+Para 80 MHz y 800 MHz se aplica el rango de frecuencia mayor. NOTA 2 Esta guía puede no aplicar para todas las situaciones. La propagación electromagnética es afectada por la absorción y la reflexión desde estructuras, objetos, y persona.
+
+(1) Las bandas ISM (industrial, científica y médica) entre 150 kHz y 80 MHz son 6,765 MHz a 6,795 MHz; 13,553 MHz a 13,567 MHz; 26,957 MHz a 27,283 MHz; y 40,66 MHz a 40,70 MHz. (2) Los niveles de conformidad en las bandas de frecuencias ISM entre 150 kHz y 80 MHz y en el rango de frecuencias de 80 MHz y 2,5 GHz  se han establecido para reducir la posibilidad de que un dispositivo de comunicaciones portátil/móvil pueda causar interferencias si es introducido in­ advertidamente en el área del paciente. Por esta razón, se ha incorporado un factor adicional de 10/3 a la fórmula utilizada para realizar el cálculo de la distancia de separación recomendada para transmisores en aquellos rangos de frecuencias. (3) Las intensidades de campo de los transmisores fijos, como las estaciones de bases de los teléfonos por radio (portátiles o inalámbricos) y las radios móviles terrestres, radioaficionados, emisiones de radio AM y FM y de TV no pueden predecirse teóricamente con precisión. Para valorar el entorno electromagnético en el lugar, generado por transmisores de RF fijos, debe considerarse a realización de un ensayo in situ. Si la medi­ ción de la intensidad del campo en el lugar donde GraphNet advance, ts y neo es utilizado excede los límites anteriores de conformidad de RF aplicable, GraphNet advance, ts y neo debe ser evaluado para asegurar que puede operar con normalidad. Si se observa un desempeño anormal, puede ser necesario tomar medidas adicionales como reorientar o reubicar el equipo. (4) Sobre el rango de frecuencias entre 150 kHz y 80 MHz, la intensidad del campo deberá ser menor a 10 V/m.
+
+# Página 77
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  10
+
+Tabla 8-16   Distancias de separación recomendadas entre el respirador y equi­
+
+pos de comunicaciones móviles/portátiles
+
+Graph Net  advance, ts y neo  está destinado para ser utilizado en un entorno electromag­ nético en el cual las perturbaciones por RF radiada se encuentran controladas. El cliente y/o usuario de  Graph Net  advance  puede ayudar a prevenir interferencias electromagné­ ticas  manteniendo una distancia mínima entre equipos de comunicación de RF, móviles y portátiles (transmisores) y  Graph Net  advance, ts y neo  como se recomienda en esta Tabla, de acuerdo a la potencia máxima de salida del equipamiento de comunicaciones.
+
+Potencia máxima de
+
+salida del transmisor
+
+(W)
+
+Distancia de separación de acuerdo a la frecuencia del transmisor (m)
+
+150 kHz - 80 MHz fuera de las bandas ISM
+
+d  = 0,35    P
+
+150 kHz - 80 MHz Dentro de las bandas ISM
+
+d  = 1,2    P
+
+80 MHz - 800
+
+MHz
+
+d  = 1,2    P
+
+800 MHz  2,5
+
+GHz
+
+d  = 2,3    P
+
+0,01 0,04 0,12 0,12 0.23
+
+0,1 0,11 0,38 0,38 0.73
+
+1 0,35 1,2 1,2 2.3
+
+10 1,1 3,8 3,8 7.3
+
+100 3,5 12 12 23
+
+Para los transmisores cuya potencia de salida máxima no se encuentre en la lista an­ terior, la distancia de separación recomendada d en metros (m) puede ser determinada utilizando la ecuación aplicable a la frecuencia del transmisor, donde P es la máxima potencia de salida del transmisor en Watts (W) de acuerdo a la declaración del fabricante del transmisor. NOTA 1 Para 80 MHz y 800 MHz, aplica la distancia de separación para el rango mayor de frecuencias. NOTA 2 Las bandas ISM (industrial, científica y médica) entre 150 kHz y 80 MHz son 6,765 MHz a 6,795 MHz; 13,553 MHz a 13,567 MHz; 26,957 MHz a 27,283 MHz; y 40,66 MHz a 40,70 MHz. NOTA 3 Un factor adicional de 10/3 ha sido incorporado a la fórmula utilizada para el cálculo de la distancia de separación para los transmisores que operan en la banda de frecuencia ISM entre 150 kHz y 80 MHz, y en el rango de frecuencias de 80 MHz a 2,5 GHz para dis­ minuir la posibilidad de que los equipos de comunicación, móviles y/o portátiles puedan causar interferencia si son introducidos inadvertidamente en las áreas de pacientes. NOTA 4 Estas guías pueden no ser aplicables en todas las situaciones. La propagación electro­ magnética es afectada por la absorción y reflexión desde estructuras, objetos, y personas.
+
+Graph Net  advance, ts y neo  cuenta con un sistema de control microprocesado que coordina las tareas que surgen de la programación del equipo. Todas las acciones que el respirador lleva a cabo, se encuentran comandadas por este sistema.
+
+El flujo de gas que recibe el paciente es administrado por dos válvulas proporcio­ nales, una para el aire, y la otra para el oxígeno. Las válvulas funcionan en simul­ táneo, proveyendo la concentración de oxígeno adecuada y las características necesarias de la onda de flujo.
+
+La válvula espiratoria está gobernada por el accionamiento de una válvula pro­ porcional que comanda 2 funciones: su apertura o cierre, lo que determina el final y comienzo de la fase inspiratoria, respectivamente; y la regulación del nivel de PEEP, cuando este se encuentra configurado.
+
+El microprocesador es realimentado con señales provenientes del sistema de sen­ sores del respirador, lo cual permite controlar y ajustar el programa ventilatorio configurado.
+
+8.13.3 | Declaración del fabricante: Distancias de separación
+
+8.14  | Operación Básica del Respirador
+
+# Página 78
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  11
+
+Con respecto a la información de presión, la misma es obtenida a partir de dos sensores de presión relativa ubicados uno en las cercanías de la salida paciente y el otro en las cercanías del conjunto espiratorio.
+
+El primero de ellos presenta entre sus funciones principales la del control de la presión entregada en modos controlados por presión, o con presión de soporte. Además, es utilizado para el disparo de inspiraciones cuando se encuentra selec­ cionada la sensibilidad por presión, activación de señales de alarma, entre otras.
+
+Con respecto al sensor próximo al conjunto espiratorio, entre sus funciones prin­ cipales se puede destacar la graficación de curvas de presión, así como la de activación de señales de alarma.
+
+La información de flujo es obtenida por medios de tres sensores de presión dife­ rencial: dos sensores relacionados con los neumotacógrafos internos de salida, y un sensor relacionado con los neumotacógrafosespiratorios (distal o proximal). El neumotacógrafo interno (de malla tipo Silverman)permite controlar los flujos y volúmenes impulsados por el respirador en la fase inspiratoria; mientras que los flujos espirados son medidos a través de los neumotacógrafos espiratorios (distal y opcionalmente proximal).
+
+Toda esta información obtenida por los sensores, es filtrada utilizando filtros anti- aliasing por hardware, para luego ser muestreadas por el conversor A/D. Luego del proceso de digitilización, las señales pasan por filtros promediadores FIR e IIR digitales que trabajan sobre un número fijo de muestras, para luego ser utilizadas para el control y graficación del respirador.
+
+Se emplea un control por bucle cerrado sobre el funcionamiento del respirador, lo cual contribuye a mantener una consistencia en cuanto a la entrega de parámetros de flujo, volumen o presión frente a alteraciones ya sea en el paciente o en el sis­ tema. Esto se realiza por medio de la retroalimentación de la señal de salida hacia un comparador, el cual además tiene en cuenta la magnitud de la variable progra­ mada por el usuario. La diferencia obtenida entre ambas señales genera una señal de corrección (señal de error) que lleva al sistema a alcanzar el valor deseado.
+
+A continuación puede observarse un diagrama esquemático representativo de lo anteriormente explicado:
+
+Fig. 8-1  Diagrama esquemático de un sistema de control retroalimentado.
+
+El equipo cuenta con un sistema de válvulas que permite una vía de comunicación entre los transductores de presión y la presión ambiente. De esta forma se permite una puesta a cero de los transductores. Simultáneamente, un flujo de aire es im­ pulsado para purgar las líneas del neumotacógrafo espiratorio, y evitar el depósito de agua y humedad en los elementos de medición.
+
+ENTRADA
+
+(parámetros configurados por el usuario)
+
+RESPIRADOR (Controlador/Efector)
+
+ALTERACIONES
+
+PACIENTE
+
+Presión Flujo o Volumen
+
+RETROALIMENTACIÓN
+
+E + -
+
+# Página 79
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  12
+
+Graph Net  advance, ts y neo  cuenta con un completo sistema de seguridad, que incluye el sistema operativo que gobierna el microprocesador, y diversos compo­ nentes, que actúan independientemente de estos.
+
+•	WATCHDOG: este es un sistema que vigila el funcionamiento del circuito electrónico, y ejerce su control independientemente de la integridad de aquel. Cuando detecta una anomalía en la  función del respirador, permite que esta se suspenda, y se active una modalidad ventilatoria de emergencia, la Ventilación de Emergencia.
+
+El Watchdog puede activar la Ventilación de Emergencia en dos situaciones dife­ rentes:
+
+-	Luego de 30 s transcurridos desde el encendido del respirador, sin que se selec­
+
+cione categoría de paciente, sobre la primera pantalla de calibración inicial.
+
+-	Cuando el microprocesador pierde el control de la secuencia del programa que
+
+regula la ventilación.
+
+•	VENTILACIÓN DE EMERGENCIA: la Ventilación de Emergencia es un meca­ nismo de seguridad que se activa en condiciones de extrema necesidad para proveer al paciente de una ventilación temporal hasta que se tomen las medidas para reemplazar el respirador por un mecanismo ventilatorio alternativo. No se trata de un modo operativo válido.
+
+La Ventilación de Emergencia permite la entrega de respiraciones con caracterís­ ticas similares a las de presión controlada (PCV). Durante el transcurso de este evento, sólo se monitoriza la presión pico y la frecuencia respiratoria. Los valores predeterminados de los parámetros ventilatorios se presentan en la Tabla 12-15. Los límites de alarma no se encuentran habilitados para su modificación. Las alar­ mas activas son las de Presión máxima y mínima, y frecuencia respiratoria máxi­ ma, cuyos límites son mostrados en pantalla. La única función complementaria habilitada es Manual Insp.
+
+Tabla 8-17   Parámetros ventilatorios en Ventilación de Emergencia
+
+Parámetro Valor inicial Rango Observaciones
+
+Presión controlada (PCV) 10 cmH 2 O 2 - 30 cmH 2 O
+
+La presión se encuentra limitada por alarma de presión máxima en 30 cmH 2 O. Este límite no puede modificarse.
+
+Ti (tiempo inspira­ torio) 0,70 s 0,10 - 3,00 s
+
+El tiempo inspiratorio pue­ de encontrarse limitado por el valor de frecuencia.
+
+Frecuencia resp. 20 rpm 1 - 100 rpm
+
+La frecuencia puede encon­ trarse limitada por el valor del tiempo inspiratorio.
+
+Sensibilidad Insp. -2 cmH 2 O -0,5 - 20 cmH 2 O No se encuentra habilitada la sensibilidad por flujo.
+
+Concentración de O 2
+
+50 - No es posible modificar este parámetro.
+
+Tiempo de Subida Mismo valor que
+
+en modo PCV
+
+Mismo rango que
+
+en modo PCV
+
+8.15  | Mecanismos de Seguridad
+
+# Página 80
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  13
+
+ADVERTENCIA •	En el caso de activarse la Ventilación de Emer­ gencia, proporcionar al paciente un mecanismo de ventilación alternativo, y averiguar la causa que generó este evento. Si ha sido activada por la demora en la aceptación de la primera pantalla de calibración inicial, reiniciar el equipo para ventilar al paciente.
+
+•	VÁLVULA DE SEGURIDAD: se encuentra ubicada inmediatamente anterior a la salida paciente. Se abre cuando la presión dentro del circuito paciente llega a un valor de 120 ± 5 cmH 2 O. La mezcla de gases pasa a un colector interno, y es expulsado al exterior.
+
+•	VÁLVULA DE ALIVIO INSPIRATORIO: esta válvula permite ins¬pirar al paciente aire ambiente, en las siguientes condiciones:
+
+-	Cuando el equipo se encuentra desenergizado.
+
+-	Cuando el respirador se encuentra en estado inoperante.
+
+-	En condición de baja presión de aire y oxígeno en simultáneo.
+
+-	En espera (Stand by).
+
+•	ESCAPE DE GASES DE FUNCIONAMIENTO: las gases que pueden filtrarse dentro del equipo, son recuperados en un colector común, y dirigidos hacia el exterior.
+
+•	FALTA DE PRESIÓN DE AIRE COMPRIMIDO: el aire comprimido es utilizado como gas de comando del circuito neumático. Cuando este falta, el oxígeno pue­ de reemplazarlo. Además, cuando el equipo detecta falta de aire, conmuta auto­ máticamente a una concentración de O 2  de 100%.
+
+•	FALTA DE PRESIÓN DE OXÍGENO: en este caso, el aire toma el lugar del oxíge­ no, y las respiraciones son entregadas con una concentración de O 2  de 21%.
+
+•	CERO AUTOMÁTICO: cada 10 minutos, o cuando el operador lo active (pre­ sionando  [Ctrl] + [Ctrl] ) se produce una puesta a cero de todos los sensores de presión. Esto reinicia las lecturas, evitando posibles errores de offset de las presiones medidas. Durante los primeros minutos de ventilación, el respirador puede ejecutar puestas a cero con una frecuencia mayor a la declarada. En cada puesta a cero aparece un mensaje en la Barra de íconos y mensajes indicando que se está realizando este procedimiento.
+
+•	PURGA DEL CIRCUITO: para evitar obstrucción y paso de humedad a los sen­ sores de presión, se inyecta aire por el circuito paciente, en simultáneo con la puesta a cero de los sensores de presión.
+
+•	SISTEMA DE ALARMAS:  Graph Net  advance, ts y neo  cuenta con un sistema de alarmas para advertir situaciones que revisten algún grado de riesgo para el paciente, o para el mismo equipo. Algunas permiten evitar la continuidad de la condición que le dio origen, otras solamente disparan señales para informar sobre su presencia.
+
+# Página 81
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  14
+
+•	AJUSTE DE PARÁMETROS: para evitar modificaciones inadvertidas de los pa­ rámetros, es necesario ejecutar secuencias establecidas sobre los controles del respirador. De esta manera, la presión sobre una única tecla, o sobre la perilla, no permite ingresar modificaciones. Por ello, el operador siempre es consciente de las acciones que ejecuta sobre el equipo.
+
+Tabla 8-18   Vida Útil
+
+Vida útil del respirador 10 años 8.16 | Vida Útil
+
+# Página 82
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 12.  15
+
+8.17 | Circuito Neumático del Respirador
+
+(GraphNet advance y GraphNet neo)
+
+```metadata
+pagina: 82
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P82_I0.png
+contexto: 
+```
+
+![Imagen página 82 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P82_I0.png)
+
+# Página 83
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  16
+
+8.18 | Circuito Neumático del Respirador
+
+(GraphNet ts)
+
+```metadata
+pagina: 83
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P83_I0.png
+contexto: 
+```
+
+![Imagen página 83 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P83_I0.png)
+
+# Página 84
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 12.  17
+
+```metadata
+pagina: 84
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P84_I0.png
+contexto: 
+```
+
+![Imagen página 84 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P84_I0.png)
+
+8.19 | Circuito Eléctrico del Respirador
+
+(GraphNet advance)
+
+# Página 85
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 8.  18
+
+```metadata
+pagina: 85
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P85_I0.png
+contexto: 
+```
+
+![Imagen página 85 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P85_I0.png)
+
+8.20 | Circuito Eléctrico del Respirador
+
+(GraphNet neo)
+
+# Página 86
+
+**Equipo:** Respirador Neumovent Graph
+
+Especificaciones técnicas |  Graph Net  advance neo ts 12.  19
+
+```metadata
+pagina: 86
+imagen: data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P86_I0.png
+contexto: 
+```
+
+![Imagen página 86 - 0](data/images/ventilador_neumovent_pdfcoffee_com_manual_tecnico_neumovent_advance_neo_ts_2_pdf_free/P86_I0.png)
+
+8.21 | Circuito Eléctrico del Respirador
+
+(GraphNet ts)
+
