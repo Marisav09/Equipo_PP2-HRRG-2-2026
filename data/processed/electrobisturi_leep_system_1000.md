@@ -1,0 +1,752 @@
+# Página 1
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+SYSTEM FEATURES
+
+• Microprocessor controlled for increased precision, accuracy,  repeatability, and safety. • Adequate power for all LEEP ™  monopolar electrosurgical procedures. • Accurate selection of discrete power levels. • Digital display of output power levels. • Choice of radio frequency wave forms including CUT, BLEND, and COAG to accommodate subtle differences in technique and accessory performance. • Patient plate continuity monitoring with audible alarm. • Distinct audible tones for CUT/BLEND modes and COAG mode with associated MODE light. • Fully regulated isolated output power. • Meets or exceeds IEC 601-2-2, second edition. • Non-electric pneumatic foot pedal to maximize safety. • Choice of reusable or disposable patient plate. • Reusable handpiece. • Choice of reusable or disposable electrodes. • Output power safety audible alarm with automatic power shut off. • Class 1, type BF, protected for use with defibrillator. • Membrane switching to maximize cleanliness and ease of use.
+
+Controls
+
+1. Main switch 2. Socket for foot pedal 3. Socket for active electrodes 4. Socket for patient plate 5. Warning light of patient plate alarm (red) 6. Coagulation light (blue) 7. Pure cut and blend light (yellow) 8. Mode control
+
+9. Power control Classification I Type BF protected against defibrillator effects Floating output circuit Cautions, consult this manual for safety precautions Pedal connection Active handle connection Patient plate connection
+
+F
+
+POWER
+
+LEEP System 1000 TM
+
+① ② ⑧ ⑨
+
+⑤ ⑥⑦
+
+③ ④
+
+Pure Cut
+
+Blend Cut
+
+Coag
+
+F
+
+Rev.10/02  LEEP System 1000™ Service Manual 2
+
+# Página 2
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+Specifications:
+
+Meets or Exceeds IEC 601-1-1, IEC 601-1-2 and IEC 601-2-2 specifications. Meets the requirements of Annex 1 of Directive 93/42/EEC relating to Medical Devices. UL and CUL approved.
+
+Input Voltage:  .....................................95 - 135 OAC 60 Hz or 190 - 250 VAC 50 Hz Current:  ................................................2.3 amps max. or 1.2 amps max. Low Frequency Leakage: ...................Less than 50 microamps Fuses: ....................................................2.5 amps, T type .........................................................or 1.6 amps, T type
+
+Physical
+
+Dimensions:  .........................................305mm x 267mm x 115mm Weight: .................................................7.250 Kg
+
+Electrosurgical Output
+
+RF Output Frequency: ........................450 kHz RF Output Power: Volts p-p Max Duty Crest (open circuit) Cycle Factor
+
+CUT ..................0-100 watts RMS* .............830..................—- ..........1.4 BLEND  ............0-100 watts RMS* ............1200................60% .........2.0 COAG  ..............0-80 watts RMS* ..............3800................10%..5.5 NOTE: *stable to >800 ohms (calibration at 500 ohms)
+
+RF Isolation ..........Less than 100 milliamps at 200 ohms (per IEC 601-2-2) Classification ........I-Type BF Output Circuit ......Floating output. Protected against the effects of the defibrillator. Working Mode  ..... Discontinuous maximum duty cycle: 10/30 sec. Cooling  .................Convection cooling without fan Control ..................Foot pedal operated (pneumatic) with audible signals and mode lights
+
+Audible signals and lights for operation and alarm: Main.................................................green light Alarm, patient plate continuity..........low pitch intermittant audible alarm - red light Alarm, output power ........................higher pitch intermittant audible alarm Cut and Blend modes.......................low pitch audible signal - yellow light Coagulation mode............................ high pitch audible signal - blue light NOTE: specifications subject to change
+
+3
+
+Rev. 10/02  LEEP System 1000™ Service Manual
+
+Electrical
+
+# Página 3
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+SERVICE MANUAL
+
+EQUIPMENT REQUIRED
+
+DESCRIPTION FEATURES EXAMPLE
+
+Double tracking Passband: Tektronix oscilloscope DC - 100 MHz Mod. 2235A
+
+Digital multimeter Accuracy: Hewelett Packard DC = 1%, AC = 2% Mod. E2373A
+
+Thermoelement Passband: YOKOYAWA 10 Hz - 5 MHz Mod. 2016
+
+Digital Passband: Hewelett Packard frequency meter 10 HZ - 100 MHz Mod. HP 5384A
+
+Voltage probe Passband: Tektronix X10 DC - 200 MHz Mod. P6063B
+
+Voltage probe Passband: Tektronix X1000 DC - 10 MHz Mod. P6015
+
+Current probe Passband: Tektronix DC - 50 MHz Mod. A6302/AM 503
+
+A) PRELIMINARY PROCEDURES
+
+a) Remove the F3 fuse from the MAIN BOARD (cod. 801278). b) Insert plug from pedal control into input port. c) Insert neutral plate plug in its appropriate outlet. d) Insert power supply cable in current outlet.
+
+B) LOW VOLTAGE POWER SUPPLY (BOARD 801278)
+
+1) TESTING POWER SUPPLY VOLTAGE + 5V AND +15V (TP1, TP 2) a) Set oscilloscope vertical sensitivity at 1V/div. (plugged in DC). b) Connect oscilloscope probe to test point TP1. c) Turn on electrosurgical knife and make sure voltage is between 4.7V and 5.3V. d) Insert oscilloscope plug in AC outlet with vertical sensitivity set at 0.1V/div. and make sure that ripple voltage is not over 10mVpp. e) Move oscilloscope probe on test point TP2 (Vert. 2V/div.; DC) and make sure voltage is between 14.3V and 15.7V.
+
+C) MICROCONTROLLER (BOARD 801282)
+
+1) SELF TEST WHEN EQUIPMENT IS TURNED ON Turn Power Switch “ON” • Power Switch illuminates • CUT, BLEND and COAG LED’s illuminate • Display reads “888” • After approximately 10 seconds, display changes to “- - - “ then CUT and BLEND activation LED’s and buzzer triggers for a second. • Display changes to “O” • BLEND and COAG mode LED’s deactivate
+
+2) CALIBRATING VREF VOLTAGE a) Connect the voltmeter to test point TP3 (BOARD 801282). b) Turn trimmers R57 and R62 fully clockwise. c) Set trimmer R2 so that voltage is exactly at 4.94V.
+
+3) TESTING RF MODULATION SIGNAL a) Connect oscilloscope probe to test point TP4 (BOARD 801282). b) Set 10W as power index in the function.
+
+Rev.10/02  LEEP System 1000™ Service Manual 4
+
+# Página 4
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+c) With the electrosurgical knife turned on, test the modulation signal taking as reference the following wave form:
+
+e) Set 10W as power index in the function. f) With the electrosurgical knife turned on, test the modulation signal, taking as reference the following wave form:
+
+D) POWER SUPPLY (BOARD 801278)
+
+1) CALIBRATING REFERENCE VOLTAGE VREFA a) Connect to TP5 to ground. (MOSFET drain Q6, Board 801278). This prevents activation of the RF power generator, thus preventing possible damage to electronic circuits that have not been tested yet. b) Insert F3 fuse. c) Position trimmer R4 at center position (BOARD 801278). d) Turn on electrosurgical knife and wait for the display to show “0”. e) Calibrate trimmer R6 (BOARD 801278) so that voltage at test point TP6 is exactly 8.0V.
+
+2) TESTING PWM SIGNAL CONTROLLING THE POWER SUPPLIER a) Connect oscilloscope probe to test point TP7 (BOARD 801278). b) Set 100W as power index in the function. c) Activate and make sure the following wave form appears:
+
+5
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+100
+
+90
+
+10
+
+0%
+
+100
+
+90
+
+10
+
+0%
+
+Vert.: (DC) 1 V/div. Hor.: 10 µs/div.
+
+Vert.: (DC) 1 V/div. Hor.: 2 µs/div.
+
+100
+
+90
+
+10
+
+0%
+
+[TP4]
+
+[TP4] [TP4]
+
+Vert.:(DC) 1V/div. Hor.: 20  μ s/div
+
+# Página 5
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+3) CALIBRATING MINIMUM VOLTAGE a) Set 2W as power index in the function. b) Make sure that, when the electrosurgical knife is not turned on, voltage is lower than 3V in test point TP8. c) Press the activation pedal and bring voltage to 7V on TP8, by using trimmer R4 .
+
+4) CALIBRATING MAXIMUM VOLTAGE a) Set 80W as power index in the function. b) Press activation pedal and bring voltage to 134V on TP8, by using trimmer R6. Calibration of the two voltages, the maximum and minimum, is interactive; thus, it is necessary to repeat  calibrations until the values that have been indicated are reached. d) Remove the jumper used to create electical bonding on TP5 (MOSFET drain Q6, BOARD 801278).
+
+E) RADIO FREQUENCY (BOARD 801278)
+
+Remove F3 fuse 1) TESTING NEUTRAL CIRCUIT PLATE a) Select function. b) Disconnect the two end conductors in the plate and then insert a 1000 ohm resistor in series. c) Check that red LED is turned on, at the same time that the LED turns on, a repetetive acoustic  signal will give warning of an error in the neutral plate. d) Once again, short the end conductors on the neutral plate.
+
+2) TESTING WORKING FREQUENCY a) Set 10W as power index in the       function. b) Connect frequency meter to test point TP9. c) With the electrosurgical knife turned on, make sure that working frequency is 900 KHz (+ 10KHz). d) Calibrate the capacity trimmer C24 in such a way that the wave form is the following:
+
+100
+
+90
+
+10
+
+0%
+
+Vert.: (Gleich- Vert.: (DC) 2 V/div. Hor.: 20 µs/div.
+
+[TP7]
+
+100
+
+90
+
+10
+
+0%
+
+Vert.: (DC) 1 V/div. Hor.: 50 ns/div.
+
+[TP9]
+
+Rev.10/02  LEEP System 1000™ Service Manual 6
+
+# Página 6
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+3) CALIBRATING THE SLOPED SIGNAL (SAW-TOOTH SIGNAL) a) Always with the CUT function activated, regulate the R53 trimmer in such a way that the wave form on test point TP10 will be the following:
+
+b) Turn the electrosurgical knife off.
+
+4) CALIBRATING DEAD TIME a) Connect a load of 500 ohm to the output hook up b) Set 10W as power index in the       function. c) Turn the R 61 trimmer fully counterclockwise. d) Using both inlets of the oscilloscope, connect probe “1” to test point TP11, and probe “2’ on test point TP12. e) With the electrosurgical knife turned on, turn the R53 trimmer so that dead time (i.e., the time at which both signals are at zero level) is equal to 250ns.
+
+g) Increase dead time by another 25ns by using trimmer R61. h) Insert the F3 fuse.
+
+5) TESTING THE RF POWER AMPLIFIER a) Set 100W as power index in the       function. b) Insert the RF current probe in series in the output.
+
+7
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+100
+
+90
+
+10
+
+0%
+
+Vert.: (DC) 1 V/div. Hor.: 200 ns/div.
+
+[TP10]
+
+100
+
+90
+
+10
+
+0%
+
+Vert.: (DC) 5 V/div. Hor.: 500 ns/div.
+
+[TP11]
+
+# Página 7
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+c) activate the electrosurgical knife and make sure it has the following wave form:
+
+6) CALIBRATING CURRENT LIMITER a) Bring output load to 200 ohm. b) Set 80W as power index in the       function. c) Calibrate the R76 trimmer in such a way that the current running through the output load is 580mA.
+
+7) TESTING OUTPUT POWER a) Bring the output load to 500 ohm. b) With power set at 80W in       , make sure that effective current in the load is equal to 400mA (+ 5%). If necessary, it is possible to adjust the maximum output power by intervening on the R6 trimmer.  Calibrating the R6 trimmer is allowed only if the voltage that is supplying the final stage does not exceed 135V. c) Set 10W as power index in the       function d) Make sure that the effective current in the load is equal to 140mA (+ 5%).  If necessary, it is possible to adjust the maximum output power by intervening on the R4 trimmer. e) Set 100W as power index in the       function f) Make sure that effective current in the load is equal to 450mA (+ 5%). NOTE:  This manual contains a chapter with drawings of the power output capacity curves for the electrosurgical knife; for a complete test of the device, refer to these curves, page 11.
+
+8) CALIBRATING MAXIMUM LEVEL OF RF CURRENT LEAKAGE a) Bring load resistor to 1500 ohm. b) Set 100W as power index in the       function. c) Connect the oscilloscope probe to test point TP8. d) By calibrating the R115 trimmer, find the point in which the tension displayed in the oscilloscope decreases abruptly from 52V to 42V ( +  20%).
+
+F) CALIBRATING RF PROTECTION SYSTEMS
+
+1) PROTECTION FROM MALFUNCTION CAUSED BY MODULATION SIGNAL a) Bring load resistor to 1000 ohm. b) Set 40W as power index in the       function. c) With the electrosurgical knife activated, turn the R64 trimmer (BOARD 801282) slowly counterclockwise, until the audio signal becomes intermittent and, at the same time, the RF output signal stops. d) Now turn the R64 trimmer (BOARD 801282) clockwise 15 degrees e) Always keeping the power index at 40W, make sure that all functions are properly activated. f) In order to simulate a malfunction condition, short the R49 resistance (BOARD 801278) and activate in       . The audio signal must warn of a malfunction condition. g) Remove jumper shorting the R49 resistance.
+
+100
+
+90
+
+10
+
+0%
+
+Vert.: (AC) 0.2 A/div. Hor.: 500 ns/div.
+
+1 LOAD + 500 ohm
+
+_
+
+Rev.10/02  LEEP System 1000™ Service Manual 8
+
+# Página 8
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+2) PROTECTION FROM MALFUNCTION CAUSED BY POWER SUPPLY a) Bring load resistor to 500 ohm. b) Set 40W as power index in the       function . c) With the electrosurgical knife activated, turn slowly the R59 trimmer counterclockwise (BOARD 801282) until the audio sound becomes intermittent. d) Now, turn the R59 trimmer (BOARD 801282) clockwise 15 degrees. e) Always keeping the power index at 40W, make sure that all functions are properly activated.
+
+G) CHECKING THE AUDIO SIGNAL LEVEL
+
+The audio level has no control.  The frequency and amplitude of the signal require no calibrating and are generated directly by the microprocessor.  To check, proceed as follows: a) Set 2W as power index of the       function. b) Connect the oscilloscope probe to test point TP13. c) Activate and make sure that the wave form is the following:
+
+9
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+100
+
+90
+
+10
+
+0%
+
+TP13
+
+Vert.: (AC) 2 V/div. Hor.: 0.5 ms/div.
+
+100
+
+90
+
+10
+
+0%
+
+# Página 9
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+H) CHECKING RF CURRENT LEAKAGE
+
+High frequency current leakage, for insulated equipment, must never exceed 150mA RMS, as required by the CEI EN 60601-2-2 REGULATIONS  (IEC 601-2-2). The microprocessor for the electrosurgical knife LEEP 1000 has controls allowing it to keep well below such limit.  To test the efficiency of these controls, it is indispensible to duplicate the most extreme test conditions, which in the case of the electrosurgical knife LEEP 1000 are obtained with the functions CUT, BLEND, FORCED COAG and SOFT COAG, at their highest power setting.
+
+The average figures for leakage current are less than 100mA.
+
+Measurements must be made as indicated by the CEI REGULATIONS EN 60601-2-2 (with insulated equipment).
+
+9
+
+8 7
+
+5
+
+4
+
+3 2
+
+1
+
+8 7
+
+0.6m
+
+200 Ω
+
+0.25 m
+
+0.25 m
+
+1 m
+
+200 Ω
+
+CEI—IEC 726/91
+
+Rev.10/02  LEEP System 1000™ Service Manual 10
+
+# Página 10
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+POWER OUTPUT CAPACITY CURVES
+
+11
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+80
+
+60
+
+40
+
+20
+
+0
+
+Leistung (W)
+
+50 100 200 300 400 500 600 700 800 900 1K 1.1K 1.2K 1.3K 1.4K 1.5K 1.6K 1.7K 1.8K 1.9K 2K
+
+1. Gerinnung - Leistung 100%
+
+2. Gerinnung - Leistung 50%
+
+100
+
+75
+
+50
+
+25
+
+0
+
+Leistung (W)
+
+50 100 200 300 400 500 600 700 800 900 1K 1.1K 1.2K 1.3K 1.4K 1.5K 1.6K 1.7K 1.8K 1.9K 2K
+
+1. Gemischter Schnitt - Leistung 100%
+
+2. Gemischter Schnitt - Leistung 50%
+
+100
+
+75
+
+50
+
+25
+
+Impedanz (Ohms)
+
+Leistung (W)
+
+50 100 200 300 400 500 600 700 800 900 1K 1.1K 1.2K 1.3K 1.4K 1.5K 1.6K 1.7K 1.8K 1.9K 2K
+
+1.  Reiner Schnitt - Leistung 100%
+
+2. Reiner Schnitt - Leistung 50%
+
+80
+
+60
+
+40
+
+20
+
+Einstellung 20 40 60 80
+
+Leistung (W) (500 Ohm)
+
+Gerinnung 100
+
+75
+
+50
+
+25
+
+Setting
+
+Leistung (W)
+
+25 50 75 100
+
+(500 Ohm)
+
+Reiner Schnitt Gemischter Schnitt
+
+Impedanz (Ohms)
+
+Impedanz (Ohms)
+
+80
+
+60
+
+40
+
+20
+
+0 Impedance (Ohms)
+
+POWER (W)
+
+50 100 200 300 400 500 600 700 800 900 1K 1.1K 1.2K 1.3K 1.4K 1.5K 1.6K 1.7K 1.8K 1.9K 2K
+
+1. COAGULATION–POWER 100%
+
+2. COAGULATION–POWER 50%
+
+100
+
+75
+
+50
+
+25
+
+0 Impedance (Ohms)
+
+POWER (W)
+
+50 100 200 300 400 500 600 700 800 900 1K 1.1K 1.2K 1.3K 1.4K 1.5K 1.6K 1.7K 1.8K 1.9K 2K
+
+1. BLEND CUT–POWER 100%
+
+2. BLEND CUT–POWER 50%
+
+100
+
+75
+
+50
+
+25
+
+Impedance (Ohms)
+
+POWER (W)
+
+50 100 200 300 400 500 600 700 800 900 1K 1.1K 1.2K 1.3K 1.4K 1.5K 1.6K 1.7K 1.8K 1.9K 2K
+
+1. PURE CUT–POWER 100%
+
+2. PURE CUT–POWER 50%
+
+80
+
+60
+
+40
+
+20
+
+Setting 20 40 60 80
+
+POWER (WW (500 Ohm)
+
+COAGULATION 100
+
+75
+
+50
+
+25
+
+Setting
+
+POWER (WW
+
+25 50 75 100
+
+(500 Ohm)
+
+PURE CUT BLEND CUT
+
+# Página 11
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+LEEP 1000 801253 Bill Of Materials Revised May 3, 1994 Revision 4A
+
+Reference Part Description Code
+
+R1 330 R2 330 R3 3K9 R4 10KT R5 8K/1% R6 2KT R7 3K/1% R8 150K R9 1K R10 100K R11 330K R12 10K R13 10 R14 12K R15 220K R16 27K R17 10K R18 100K R19 1K R20 100 R21 1K R22 10 R23 10 R24 22K R25 47K R26 10K R27 22K R28 47K R29 4K7 R30 10K R31 56 R32 1K R33 56 R34 100K R35 5K6 R36 1K R37 33K/6W/F R38 1OK/1W R39 1OK/1W R40 10K R41 22K R42 12K R43 10 R44 1K8 R45 100 R46 1K8 R47 220 R48 1K8 R49 4K7 R50 220 R51 10K R52 100 R53 10KT R54 12K R55 47 R56 39K R57 27K R58 1K R59 1K8 R60 100K R61 100KT R62 560 R63 27K R64 56K R65 560 R66 27K R67 27K R68 4K7 R69 22 R70 22 R71 10 R n 100K R73 1K R74 1OK R75 2K2 R76 5KT R77 1K R78 4K7 R79 47K R80 1OK
+
+Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Trimmer Cermet Precision Resistor 1% 0.5. W Trimmer Cermet Precision Resistor 1% 0.5. W Metat Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 U 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Wirewound Resistor 33 K 6 W Metal Film Resistor 1 W Metal Film Resistor 1 W Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5X Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Fitm Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Trimmer Cermet Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metsl Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Trimmer Cermet Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Trimmer Cermet Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5%
+
+430171 430171 430350 403066 430469 403092 430459 430360 430170 430177 430173 430339 430180 430351 430352 430340 430339 430177 430170 430336 430170 430180 430180 430179 430218 430339 430179 430218 430167 430339 430444 430170 430444 430177 430344 430170 430463 430320 430320 430339 430179 430351 430180 430198 430336 430198 430358 430198 430167 430358 430339 430336 403066 430351 430334 430217 430340 430170 430198 430177 403084 430178 430340 430176 430178 430340 430340 430167 430447 430447 430180 430177 430170 430339 430343 403052 430170 430167 430218 430339
+
+Rev.10/02  LEEP System 1000™ Service Manual 12
+
+# Página 12
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+13
+
+Rev.10/02  LEEP System 1000™ Service Manual
+
+LEEP 1000 801253 Bill Of Materials Revised May 3, 1994 Revision 4A
+
+Reference Part Description Code
+
+R81 R82 R83 R84 R85 R86 R87 R88 R89 R90 R91 R92 R93 R94 R95 R96 R97 R98 R99 R100 R101 R102 R103 R104 R105 R106 R107 R108 R109 R110 R111 R112 R113 R114 R115 R116 R117 R118 R119 R120 R121 R122 R123 R124 R125 R126 R127 R128 R129 R130 R131 R132 R133 R134 R135 C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 C21 C22 C23
+
+10K 1K 12 12 1K 1K 1K/3W/A 1K/3W/A 1K/3W/A 1K/3W/A 1K/3W/A 1K/3W/A 100 470 470 2K2 470 22K 2K/1% 11K/1% 11K/1% 11K/1% 33K2/1% 4K7 10K 47 1OK/5W 1OK/SW 1OK/SW 2K2 2K2 12 4K7 10K 10KT 1K 100 22K 33K 220 220 100 680 180 10 100 1KS 560 820 18K 100K 2K2 1M NU 100 10u/T/35V 100n 1n/P 100n 100p/NPO 220P/C 1 Ou/T/35V 1 u/T/35V 22p/C 10u/T/35V 100n 10n/C/1KV 470u/E/250V 680p/C/5OOV 1000u/E/35V 10u/T/35V 10u/T/35V 1000u/E/35V 1 Ou/T/35V 1 Ou/T/35V 22u/E/100V/V 22u/E/100V/V 22u/E/100V/V
+
+Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Non Inductive Resistor 3 W Non Inductive Resistor 3 W Non Inductive Resistor 3 W Non Inductive Resistor 3 W Non Inductive Resistor 3 W Non Inductive Resistor 3 W Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Non Inductive Resistor 5 W Non Inductive Resistor 5 W Non Inductive Resistor 5 W Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Trimmer Cermet Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% NOT USED Metal Film Resistor 1/4 W 5% Tantalum Electrolytic Capacitor Ceramic Capacitor Metallized Polyester Capacitor Ceramic Capacitor NPO Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor Vertical Electrolytic Capacitor Ceramic Capacitor Electrolytic Capacitor Tantalum Electrolytic Capacitor Tantalum Electrolytic Capacitor Electrolytic Capacitor Tantalum Electrolytic Capacitor Tantalum Electrolytic Capacitor Vertical Electrolytic Capacitor SMPS Vertical Electrolytic Capacitor SMPS Vertical Electrolytic Capacitor SMPS
+
+430339 430170 430415 430415 430170 430170 430450 430450 430450 430450 430450 430450 430336 430169 430169 430343 430169 430179 430461 430467 430467 430467 430472 430167 430339 430334 430471 430471 430471 430343 430343 430415 430167 430339 403066 430170 430336 430179 430172 430358 430358 430336 430194 430342 430180 430336 430199 430178 430200 430346 430177 430343 430331 - - - - - - - 430336 400134 400139 400278 400139 400260 400240 400134 400173 400290 400134 400139 400133 400304 400292 400256 400134 400134 400256 400134 400134 400286 400286 400286
+
+# Página 13
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+22u/E/100V/V 22u/E/100V/V 22u/E/100V/V 22u/E/100V/V 22u/E/100V/V 100n 100p/NPO 100n 1 Ou/T/35V 10n 100n 22u/E/35V 1n/P 100n 2nZ/P 12p/C 7_100p 220P/C 47p/NPo 100p/NPO 220p/PP/400V/A 10u/T/35V 10u/T/35V 100n 100n 10n 10u/T/35V 100n 1 u/T/35V 100n 220n/P 2n2/C/3KV 2n2/C/3KV 10n/C/1KV 10n 10n/C/1KV 220n/PP/400V 1n/P 100n 220n/P 220n/P 47p/C/6KV 47p/C/6KV 1n/PP/2KV 1n/PP/2KV 1n/PP/2KV 680p/C/5OOV 680p/C/5OOV 10n 1 u/T/35V 100n 1n/P 100n 2n2/C 220n/P 100n 100n 100n 100n 100n 10u/T/35V KBL06 WL04 WL04 2V7/O SW BYT03/400 12V/1W 12V/1W 12V/1W 12V/1W BAT83 1N4148 11DQ06 11DQ06 12V/1W 1ZV/1W BAT83 10V/O.5W 1 5OV/5W
+
+C24 C25 C26 C27 C28 C29 C30 C31 C32 C33 C34 C35 C36 C37 C38 C39 C40 C41 C42 C43 C44 C45 C46 C47 CU C49 C50 C51 C52 C53 C54 CSS C56 C57 C58 C59 C60 C61 C62 C63 C64 C65 C66 C67 C68 C69 C70 C71 C72 C73 C74 C75 C76 C77 C78 C79 C80 C81 C82 C83 C84 D1 D2 D3 D4 D5 D6 D7 D8 D9 D10 D11 D12 D13 D14 D15 D16 D17 D18
+
+LEEP 1000 801253 Bill Of Materials Revised May 3, 1994 Revision 4A
+
+Reference Part Description Code
+
+Vertical Electrolytic Capacitor SMPS Vertical Electrolytic Capacitor SMPS Vertical Electrolytic Capacitor SMPS Vertical Electrolytic Capacitor SMPS Vertical Electrolytic Capacitor SMPS Ceramic Capacitor NPO Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor Vertical Electrolytic Capacitor Metallized Polyester Capacitor Ceramic Capacitor Metallized Polyester Capacitor Ceramic Capacitor Trimmer Capacitor 7/100p Ceramic Capacitor NPO Ceramic Capacitor NPO Ceramic Capacitor Axial Polypropylene Capacitor Tantalum Electrolytic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Metallized Film Capacitor High Voltage Ceramic Capacitor High Voltage Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Polypropylene Capacitor (SIEMENS) Metallized Polyester Capacitor Ceramic Capacitor Metallized Film Capacitor Metallized Film Capacitor High Voltage Ceramic Capacitor High Voltage Ceramic Capacitor Polypropylene Capacitor (Philips) Polypropylene Capacitor (Philips) Polypropylene Capacitor (Philips) Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Metallized Polyester Capacitor Ceramic Capacitor Ceramic Capacitor Metallized Film Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Bridge Rectifier 4A/600V Bridge Rectifier 1A Bridge Rectifier 1A Zener diode 2V7-1/2W Ultra Fast Diode 3A/400V Zener diode 12V/1W Zener diode 12V/1W Zener diode 12V/1W Zener diode 12V/ 1W Schottky Diode Diode Schottky Diode Schottky Diode Zener diode 12V/1W Zener diode 12V/1W Schottky Diode Zener diode 10V-1/2W Zener Diode (x2)
+
+400286 400286 400286 400286 400286 400139 400260 400139 400134 400251 400139 400237 400278 400139 400277 400269 400289 400240 400255 400260 400280 400134 400134 400139 400139 400251 400134 400139 400173 400139 400271 400223 400223 400133 400251 400133 400297 400278 400139 400271 400271 400301 400301 400299 400299 400299 400292 400292 400251 400173 400139 400278 400139 400261 400271 400139 400139 400139 400139 400139 400134 420069 420013 420013 420067 420071 420019 420019 420019 420019 420070 420010 420054 420054 420019 420019 420070 420068 420091
+
+Rev.10/02  LEEP System 1000™ Service Manual 14
+
+# Página 14
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+D19 D20 D21 D22 D23 D24 D25 D26 D27 D28 D29 D30 D31 D32 D33 Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 L1 L2 L3 L4 L5 L6 U1 U2 U3 U4 U5 U6 U7 U8 U9 RL1 T1 T2 T3 T4 T5 F1 F2 F3 J1 J2 J3 J4 J5 J6 J7 J8 J9 J10 J11 J12 J13 LP1 AL1 AL2 AL3 AL4 AL5
+
+15
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+LEEP 1000 801253 Bill Of Materials Revised May 3, 1994 Revision 4A
+
+Reference Part Description Code
+
+150V/5W BYT03/400 BYT03/400 11DQ06 11DQ06 11DQ06 11DQ06 1N4007 1lDQ06 1N4148 1N4148 11DQ06 10V/O.5W 2V7/0.5W 1N4148 VN1OKM BC237B IRF740 IRF740 BC237B VN10KM IRF740(IR) IRF740(IR) BC237B VN10KM BC237B VN10KM VN10KM 520uH 703191 150uH/175mA 713621 1mH/100mA 1mH/100mA LM431 UC3525 LM78S15 LM7805 LM386 74HCT00 UC3825 4093 CNY65 V23061 421026 713337 801255 713708 713744 1A/T 1A/T 2A/T 399028 399028 399028 399028 399028 399028 STRIP_20P 399028 399028 399028 399028 399028 399028 449125 ML73_2 ML73_2 ML73_2 ML73_2 ML73_2
+
+Zener Diode 150V/5W(x2) Ultra Fast Diode 3A/400V Ultra Fast Diode 3A/400V Schottky Diode Schottky Diode Schottky Diode Schottky Diode Diode Schottky Diode Diode Diode Schottky Diode Zener diode 10V-1/2W Zener diode 2V7-1/2W Diode N Channel Mosfet NPN Transistor N Channel Mosfet N Channel Mosfet NPN Transistor N Channel Mosfet N Channel Mosfet (IR) N Channel Mosfet (IR) NPN Transistor N Channel Mosfet NPN Transistor N Channel Mosfet N Channel Mosfet Toroidal Inductor Variable Inductor 33uH Inductor Ind AMIDON T94-2 Inductor Inductor Voltage Regulator PWM UC3525 Voltage Regulator +15 V Voltage Regulator LM7805 BF LM386 HCT 7400 PWM UC3825 CMOS CD4093 Optocoupler CNY 65 Relay Siemens Pulse Transformer (2 secondaries) H F Current Transformer Output Transformer LEEP SYSTEM 1000 H F Current Transformer Transformer 10KV (SIRIO) Fuse 1 A T 5x20 mm Fuse 1 A T 5x20 mm Fuse 2 A T 5x20 mm Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Strip 20 pin Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Connector Faston C.S. Loudspeaker 8 ohm 0 25 W Aluminium Heat Sink Aluminium Heat Sink Aluminium Heat Sink Aluminium Heat Sink Aluminium Heat Sink
+
+420091 420071 420071 420054 420054 420054 420054 420001 420054 420010 420010 420054 420068 420067 420010 427054 427057 427076 427076 427057 427054 427086 427086 427057 427054 427057 427054 427054 713623 703191 422008 713621 422005 422005 482078 482060 482086 482003 482056 482049 482064 482025 482064 404044 421026 713337 801255 713708 713744 433009 433009 433001 399028 399028 399028 399028 399028 399028 446015/20 399028 399028 399028 399028 399028 399028 449125 713249 713249 713249 713249 713249
+
+# Página 15
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+```metadata
+pagina: 15
+imagen: data/images/electrobisturi_leep_system_1000/P15_I0.png
+contexto: 
+```
+
+![Imagen página 15 - 0](data/images/electrobisturi_leep_system_1000/P15_I0.png)
+
+Rev.10/02  LEEP System 1000™ Service Manual 16
+
+# Página 16
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+```metadata
+pagina: 16
+imagen: data/images/electrobisturi_leep_system_1000/P16_I0.png
+contexto: 
+```
+
+![Imagen página 16 - 0](data/images/electrobisturi_leep_system_1000/P16_I0.png)
+
+17
+
+# Página 17
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+```metadata
+pagina: 17
+imagen: data/images/electrobisturi_leep_system_1000/P17_I0.png
+contexto: 
+```
+
+![Imagen página 17 - 0](data/images/electrobisturi_leep_system_1000/P17_I0.png)
+
+Rev.10/02  LEEP System 1000™ Service Manual 18
+
+# Página 18
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+Rev. 5.22.95  LEEP System 1000™ Service Handbuch
+
+```metadata
+pagina: 18
+imagen: data/images/electrobisturi_leep_system_1000/P18_I0.png
+contexto: 
+```
+
+![Imagen página 18 - 0](data/images/electrobisturi_leep_system_1000/P18_I0.png)
+
+19
+
+# Página 19
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17 R18 R19 R20 R21 R22 R23 R24 R25 R26 R27 R28 R29 R30 R31 R32 R33 R34 R35 R36 R37 R38 R39 R40 R41 R42 R43 R44 R45 R46 R47 R48 R49 R50 R51 R52 R53 R54 R55 R56 R57 R58 R59 R60 R61 R62 R63 R64 R65 R66 R67 R68 R69 C1 C2 C4 C5 C6 C7 C8 C9 C10 C11 C12
+
+LEEP 1000 801254 Bill Of Materials Revised September 13, 1994 Revision 4A
+
+Reference Part Description Code
+
+560 5KT 1K/1% 3K/1% 1K 100 1K 10K 1K8 22K 10K 10K 10K 100 100 100 10K 10K 10K 1K 1K 1K 100 1K 10K 10K 10K 1K 1K 100 100 80/1% 3K/1% 80/1% 3K/1% 3K/1% 22K 22K 560K 10K 22K 10K 1K 10K 10K 10K 10K 10K 10K 10K 560 470 470 10K 10K 10K 100 1K/1% 20K 1K 10K NU 1K/1% 50K 1K/1% 1K NU NU 100 10n 47p/NPO 100n 100n 100n 100n 100n 100n 10u/T/35V 22p1C 22p/C
+
+Metal Film Resistor 1/4 W 5% Trimmer Cermet Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Precision Resistor 1% 0.5 W Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% Precision Resistor 1% 0.5 W Trimmer Cermet Metal Film Resistor 1/4 W 5% Metal Film Resistor 1/4 W 5% NOT USED Precision Resistor 1% 0.5 W Trimmer Cermet Precision Resistor 1% 0.5 W Metal Film Resistor 1/4 W 5% NOT USED NOT USED Metal Film Resistor 1/4 W 5% Ceramic Capacitor NPO Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor
+
+430178 403052 430458 430459 430170 430336 430170 430339 430198 430179 430339 430339 430339 430336 430336 430336 430336 430339 430339 430170 430170 430336 430336 430170 430339 430339 430170 430170 430170 430336 430336 430460 430459 430460 430459 430459 430179 430179 430178 430339 430179 430339 430170 430339 430339 430339 430339 430339 430339 430339 430178 430169 430169 430339 430339 430339 403458 430170 403050 430170 430339 - - - - - - - 430458 430088 430458 430170 - - - - - - - - - - - - - - 400336 400251 400255 400139 400139
+
+Microcontroller Board
+
+400139 400139 400139 400139 400134 400290 400290
+
+Rev.10/02  LEEP System 1000™ Service Manual 20
+
+# Página 20
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+21
+
+Rev. 10/02  LEEP System 1000™ Service Manual
+
+LEEP 1000 801254 Bill Of Materials Revised September 13, 1994 Revision 4A
+
+Reference Part Description Code Microcontroller Board
+
+C13 C14 C15 C16 C17 C18 C19 C20 C21 C22 C23 C24 C25 C26 C27 C28 C29 C30 C31 C32 C33 C34 D1 D2 D3 D4 D5 D6 D7 D8 D9 D10 D11 D12 D13 D15 Q1 Q2 Q3 Q4 Q5 Q6 Q7 L1 L2 U1 U2 U3 U4 U5 U6 XT1 SW1 SW2 SW3 J3 J6
+
+100n 10u/T/35V 100n 10u/T/35V 1N/C 2n2/C 10u/T/35V 100n 1u/T/35V 100n 10u/T/35V 100n 100n 100n 100n 47u/E/50V 100n 100n 10n 100n 1u/T/35V 10n 5V6/0.5W LED Y3 LED Y3 LED Y3 5V6/5W 5V6/5W GL5HR8 GL5HY8 HDSP5301 HDSP5301 HDSP5301 GL5HB8 NU 1N4148 BC237B BC237B BC237B BC237B BC237B BC237B BC307B 100uH/275mA 6uH8/800mA LM431 80C552 74HC373 27256 SAA1064 MB3773 12Mhz/HC18 MTG_1241 MTG_1241 MTG_1241 NU 399028
+
+Cermic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Electrolytic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Ceramic Capacitor Tantalum Electrolytic Capacitor Ceramic Capacitor Zener diode 5V6/0.5W Yellow Led Lamp 3mm Yellow Led Lamp 3mm Yellow Led Lamp 3mm Zener diode 5V6/0.5W Zener diode 5V6/0.5W Red Led Lamp 5mm Yellow Led Lamp 5mm Common Anode 7 Segment Display Common Anode 7 Segment Display Common Anode 7 Segment Display Blue Led Lamp 5mm NOT USED Diode NPN Transistor NPN Transistor NPN Transistor NPN Transistor NPN Transistor NPN Transistor PNP Transistor Inductor Inductor Voltage Regulator Microcontroller 74HC373 EPROM256K Display decoder Watch-dog timer Quartz Crystal 12Mhz Pushbutton SCHURTER Pushbutton SCHURTER Pushbutton SCHURTER NOT USED Connector Faston C.S.
+
+400139 400134 400139 400134 400252 400256 400134 400139 400173 400139 400134 400139 420139 420139 420139 420296 420139 420139 420251 420139 420173 420251 420018 420079 420079 420079 420088 420088 420025 420036 420080 420080 480080 420092 - - - - - - - 480010 427057 427057 427057 427057 427057 427057 427058 422006 422007 482078 482077 482066 482067 482080 482088 252005 416094 416094 416094 - - - - - - - 399028
+
+# Página 21
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+```metadata
+pagina: 21
+imagen: data/images/electrobisturi_leep_system_1000/P21_I0.png
+contexto: 
+```
+
+![Imagen página 21 - 0](data/images/electrobisturi_leep_system_1000/P21_I0.png)
+
+Rev.10/02  LEEP System 1000™ Service Manual 22
+
+# Página 22
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+23
+
+Rev. 10/02  LEEP System 1000™ Service Manual
+
+```metadata
+pagina: 22
+imagen: data/images/electrobisturi_leep_system_1000/P22_I0.png
+contexto: 
+```
+
+![Imagen página 22 - 0](data/images/electrobisturi_leep_system_1000/P22_I0.png)
+
+# Página 23
+
+**Equipo:** Electrobisturi LEEP SYSTEM 1000
+
+```metadata
+pagina: 23
+imagen: data/images/electrobisturi_leep_system_1000/P23_I0.png
+contexto: 
+```
+
+![Imagen página 23 - 0](data/images/electrobisturi_leep_system_1000/P23_I0.png)
+
+Rev.10/02  LEEP System 1000™ Service Manual 24
+

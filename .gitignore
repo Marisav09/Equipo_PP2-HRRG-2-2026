@@ -1,10 +1,31 @@
-.env
-__pycache__/
-*.py[cod]
-.venv/
 venv/
-logs/
-data/chroma/
-data/memory/*.sqlite3
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.vscode/
+vectorstore/
 data/processed/
-static/img/qr/*.png
+data/chroma/
+data/audit/
+data/tickets/
+logs/
+# Entornos virtuales
+venv/
+env/
+.venv/
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Base de datos vectorial (no se sube, se genera localmente)
+chroma_db/
+
+data/raw_original_unicos/
+
+data/downloads_originales/
+
+data/raw_pre_fix_aliases/
+
+data/ocr_output/
+data/raw_pre_ocr_backup/

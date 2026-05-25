@@ -1,0 +1,1706 @@
+# Página 1
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+5
+
+1. Introducción
+
+Este manual describe el funcionamiento del Comando y Generador para Equipos de Rayos X Dinar       AF-
+
+500.
+
+El equipo debe ser usado de acuerdo con todos los procedimientos descritos en este manual;  no debe
+
+ser usado con objetivos para los que no fue diseñado y debe ser manejado sólo por personal que cuente
+
+con el debido entrenamiento y autorización, lo que incluye un conocimiento adecuado en cuanto a pro-
+
+tección contra la  radiación.
+
+El Comando y Generador para Equipos de Rayos X Dinar AF-500 fue desarrollado para ser instalado en
+
+equipos de rayos X, para uno o dos puestos de trabajo, en ambientes clínicos y hospitalarios.
+
+Este manual de operaciones describe todas las configuraciones del sistema con el máximo número de
+
+funciones, incluidas las opcionales.
+
+# Página 2
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+6
+
+Símbolos  de Seguridad
+
+Estos símbolos pueden ser encontrados en este manual, en el cuerpo del equipamiento, en etiquetas pegadas, como así también en embalaje que proteja el producto.
+
+PELIGRO Este símbolo identifica instrucciones que deben observarse en todos los casos para evitar lesiones al paciente y / o al personal.
+
+CUIDADO Este símbolo identifica instrucciones que deben observarse en todos los
+
+casos para evitar lesiones al equipamiento.
+
+Símbolo Definición
+
+Riesgo Eléctrico
+
+Atención! Consulte los Manuales  de Usuario/ Mante- nimiento
+
+Radiación Ionizante X
+
+Equipamiento Tipo B
+
+Proteger Contra Humedad
+
+Parte Superior en esta dirección
+
+Frágil
+
+Límite Máximo para Apilar
+
+No descarte el Equipamiento sin consultar Legislación Local
+
+# Página 3
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+7
+
+2. Seguridad
+
+Los siguientes capítulos describirán las características del equipo y las instrucciones necesarias para su
+
+uso y operación correctos.
+
+A continuación se presentan aspectos de seguridad y recomendaciones generales que deben leerse dete-
+
+nidamente.
+
+CUIDADO
+
+❖ Si el equipo tiene alguna deficiencia eléctrica, mecánica o radiológica, repórtelo inme-
+
+diatamente a RAYOS X DINAN S.A. o a su distribuidor oficial.
+
+❖ RAYOS X DINAN S.A. no es responsable por el mal funcionamiento, daños o lesiones
+
+que puedan resultar del mal uso de este equipo o la omisión de instrucciones de man-
+
+tenimiento preventivo que le correspondan.
+
+❖ No está permitido eliminar o modificar los circuitos de seguridad.
+
+❖ Si el operador desea utilizar este equipo en combinación con otros dispositivos, acce-
+
+sorios o módulos de diferentes fuentes, debe asegurarse de que esta combinación no
+
+represente ningún riesgo para las personas. Con este fin, primero debe consultar a los
+
+fabricantes de dichos equipos y con RAYOS X DINAN S.A.
+
+Seguridad Eléctrica
+
+Antes de empezar a usar el Comando y Generador para Equipos de Rayos X Dinar 500-AF, verifique que
+
+haya alimentación eléctrica y que los elementos periféricos, como filtros y Bucky, estén conectados co-
+
+rrectamente.
+
+El Comando y Generador para Equipos de Rayos X Dinar 500-AF está diseñado de acuerdo con los últimos
+
+estándares internacionales de seguridad eléctrica para minimizar cualquier riesgo de descarga eléctrica
+
+para el operador o el usuario. Sin embargo, se debe tener en cuenta que:
+
+CUIDADO
+
+❖ En ninguna circunstancia las tapas del equipo deben quitarse por otro que no sea per-
+
+sonal entrenado por Rayos X Dinan S.A. Sólo el personal de servicio autorizado puede
+
+quitar los blindajes de los cables de alto voltaje del tubo de rayos X. Los circuitos eléc-
+
+tricos internos del equipo usan tensiones capaces de causar serios daños o la muerte
+
+debido a descargas eléctricas. Para evitar este riesgo los operadores nunca deberán
+
+quitar las tapas del gabinete.
+
+❖ El usuario no puede cancelar ni modificar fusibles o protecciones térmicas en el sis-
+
+tema eléctrico del equipo.
+
+# Página 4
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+8
+
+❖ Cuando este dispositivo de rayos X se usa en un espacio médico, sus instalaciones de-
+
+ben  cumplir con los requisitos de IEC.
+
+❖ En ninguna circunstancia los circuitos de seguridad deben ser puenteados o anulados.
+
+❖ Siempre apague el sistema y desconecte el cable de alimentación antes de limpiar
+
+el equipo. Use una esponja o un trapo de algodón para limpiar.
+
+❖ No coloque comida o recipientes con líquidos en ninguna parte del equipamiento
+
+ya que pueden volcarse y producir cortocircuitos eléctricos.
+
+Seguridad Mecánica
+
+Todas las partes y ensamblajes móviles del equipo deben ser operados con cuidado e inspeccionados
+
+habitualmente.
+
+Sólo personal entrenado y calificado debe tener acceso a las partes internas y de seguridad del equipo.
+
+Deberán tomarse las precauciones adecuadas en torno a circuitos eléctricos ya que a pesar de estar el
+
+equipo desconectado de la red energética puede almacenar carga eléctrica.
+
+No deberán removerse los cables de alta tensión del tubo de rayos X o de alimentación general sin antes
+
+desconectar el interruptor del tablero principal y cualquier suministro auxiliar de energía.
+
+El incumplimiento de estas condiciones puede resultar en daños serios o fatales de aquellas personas
+
+involucradas.
+
+Seguridad contra explosión
+
+PELIGRO
+
+❖ Este equipamiento no debe ser usado en áreas con riesgo de explosión.
+
+❖ Productos de limpieza y desinfección, incluso cuando sean usados en pacientes, pue-
+
+den formar mezclas gaseosas explosivas. Tenga en cuenta la normativa vigente al res-
+
+pecto.
+
+❖ No intente reemplazar la batería recargable de litio (U5 en la placa principal de la CPU),
+
+a menos que haya obtenido la autorización del servicio técnico, para evitar cualquier
+
+tipo de riesgo de explosión.
+
+# Página 5
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+9
+
+Seguridad contra incendio
+
+CUIDADO
+
+❖ Nunca debe operar este equipo médico en áreas de peligro de incendio.
+
+❖ Las ranuras de ventilación no deben cubrirse al encender el equipo.
+
+❖ Use solo extintores de incendios para incendios causados por fallas eléctricas cuando
+
+estén específicamente etiquetados para este propósito. El uso de agua u otros produc-
+
+tos líquidos puede provocar lesiones graves o fatales.
+
+❖ Si es seguro, aísle el producto de la red eléctrica antes de intentar extinguir el fuego.
+
+Esto reducirá el riesgo de descarga eléctrica.
+
+ADVERTENCIA: Emisión de radiación ionizante
+
+Este equipo produce radiación dañina. Este equipo ha sido producido cumpliendo con todos los niveles aplicables de seguridad y con las normas
+
+de radiación, pero puede causar daño al paciente y al operador en caso de ser usado incorrectamente.
+
+En caso de existir preguntas relacionadas con la funcionalidad del equipo, favor de comunicarse con el
+
+fabricante o distribuidor autorizado.
+
+El Comando y Generador para Equipos de Rayos X Dinar 500-AF está equipado con todos los dispositivos
+
+de protección de radiación de acuerdo a las normas vigentes.
+
+Los operadores deberán tomar las medidas necesarias para protegerse y proteger a los pacientes de ra-
+
+diación innecesaria.
+
+El operador deberá usar todos los dispositivos de protección y de controles de radiación de acuerdo con
+
+las normas de la entidad regulatoria.
+
+Durante el lapso de exposición, el operador debe estar siempre detrás de la pantalla protectora.
+
+El Comando y Generador para Equipos de Rayos X Dinar 500-AF cuenta con circuitos de bloqueo en caso
+
+de que ocurra una falla técnica.
+
+El operador debe siempre prestar especial atención a la correcta colimación, posición y alineación del haz
+
+de rayos como medida de seguridad.
+
+El operador debe tener en todo momento contacto visual y auditivo con el paciente durante la exposición.
+
+El operador debe asegurarse de que todas las regulaciones de seguridad y radiación sean aplicadas du-
+
+rante todo el procedimiento.
+
+El operador debe leer este manual previamente  al uso de este equipo.
+
+# Página 6
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+10
+
+Protección contra radiación
+
+El equipo de rayos X, si no se usa adecuadamente, puede causar lesiones. Por lo tanto, las instrucciones
+
+contenidas en este manual deben leerse y comprenderse antes de poner en funcionamiento el equipo.
+
+Aunque los equipos y accesorios fabricados por RAYOS X DINAN S.A. incorporan un alto grado de protec-
+
+ción contra la radiación secundaria dispersa, ningún diseño de equipo práctico puede proporcionar una
+
+protección completa. Tampoco ningún proyecto práctico puede obligar al operador o sus asistentes a
+
+tomar las precauciones adecuadas para evitar que personas autorizadas o no, inconsciente o consciente-
+
+mente, se expongan o expongan a otros a radiación directa o secundaria.
+
+CUIDADO
+
+❖ Es importante que todas las personas involucradas en el uso de este equipo estén
+
+completamente familiarizadas con las recomendaciones y regulaciones de protec-
+
+ción contra la radiación aplicables, y que tomen las medidas adecuadas para garan-
+
+tizar la protección de lesiones a sí mismas o a otros. El tubo de rayos X produce ra-
+
+diación cuando recibe energía eléctrica, nunca opere este dispositivo sin protección.
+
+❖ Se asume que las personas autorizadas para usar este equipo son conscientes del
+
+peligro de exposición excesiva a la radiación X. El equipo se vende con el entendi-
+
+miento de que RAYOS X DINAN S.A. y sus distribuidores autorizados no son respon-
+
+sables de lesiones o daños que puedan resultar de la exposición a la radiación X.
+
+❖ Hay varios dispositivos y materiales de protección disponibles. Instamos a los usua-
+
+rios a utilizar estos materiales y dispositivos para su propia protección y la del pa-
+
+ciente. Para ello, se deben tener en cuenta las siguientes recomendaciones:
+
+❖ Los delantales de radio protección con un valor equivalente de 0,35 mm de plomo
+
+reducen la radiación en 50 KVp en un 99,95% y 100 KVp en un 94,5%
+
+❖ Limite la dosis y el número de exposiciones al mínimo posibles.
+
+❖ La protección radiológica más efectiva es la distancia. Mantenga la máxima distancia
+
+posible del paciente y del tubo de rayos X.
+
+❖ Evite trabajar directamente en el haz de rayos X trabaje siempre con el campo de
+
+radiación más pequeño posible. La radiación dispersa depende en gran medida del
+
+volumen del objeto sometido a la exposición a rayos X.
+
+❖ El propietario debe designar áreas que permitan una operación segura y el operador
+
+debe asegurarse de utilizar el equipo dentro de esas áreas.
+
+# Página 7
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+12
+
+Compatibilidad Electromagnética (EMC)
+
+De acuerdo con su funcionalidad, este dispositivo eléctrico está en conformidad con los reguladores ac-
+
+tuales de compatibilidad electromagnética para una emisión permisible de campos electromagnéticos y
+
+grado de inmunidad exigido. Sin embargo, no es posible excluir definitivamente los sistemas de transmi-
+
+sión de alta frecuencia, por ejemplo, los teléfonos de radio móviles o los equipos de transmisión de radio
+
+móvil, que pueden interferir con el   funcionamiento de los equipos eléctricos para medicina. Este podría
+
+ser el caso cuando dicho equipo de radio emite señales de radio de potencia relativamente alta directa-
+
+mente en las proximidades del dispositivo médico. Para excluir posibles interferencias en el funciona-
+
+miento y contol del dispositivo médico, es necesario evitar la puesta en marcha de equipos de radio cer-
+
+canos. Los dispositivos electrónicos que cumplen con el estándar de compatibilidad electromagnética es-
+
+tán diseñados de tal manera que están excluidos, en condiciones normales, de fallas causadas por influen-
+
+cias electromagnéticas.
+
+Sin embargo, teniendo en cuenta la existencia de señales de radio de transmisores de alta frecuencia de
+
+alta potencia que pueden estar en servicio cerca de dispositivos electrónicos, no es posible excluir con
+
+absoluta certeza la aparición de posibles incompatibilidades electromagnéticas en dichos dispositivos. La
+
+incidencia de varios factores al mismo tiempo en una combinación inesperada podría iniciar una secuencia
+
+de funciones no deseadas en el dispositivo, en determinadas circunstancias, lo que podría causar peligro
+
+tanto al paciente como al operador. Por esta razón, se debe evitar cualquier tipo de activación del servicio
+
+de transmisión en el equipo mientras la radio móvil está en la sala de rayos X. Esto también se aplica a
+
+estos dispositivos en espera. Debe desconectar los teléfonos celulares en las áreas problemáticas indica-
+
+das.
+
+Conformidad
+
+El propietario/ operador es responsable de verificar continuamente los niveles de exposición a la radia-
+
+ción, fuga de radiación, alineación del haz de rayos X, calibración de kV y mAs.
+
+Se aconseja efectuar una verificación anual por un servicio técnico especializado de acuerdo con las re-
+
+glamentaciones locales.
+
+La conformidad con lo establecido legalmente y los requerimientos regulatorios es responsabilidad del
+
+propietario/operador.
+
+Consultar a una agencia local, provincial o nacional en cuanto a requerimientos específicos y regulaciones
+
+aplicables al uso y tipo del equipamiento médico electrónico.
+
+# Página 8
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+13
+
+3. Mantenimiento, Limpieza y Descarte
+
+Mantenimiento
+
+El Comando y Generador para Equipos de Rayos X Dinar 500-AF requiere, además de un manejo adecuado,
+
+un mantenimiento preventivo periódico para garantizar su funcionamiento en condiciones óptimas. Al-
+
+gunas de estas medidas pueden ser realizadas por el usuario y otras requerirán la asistencia del Servicio
+
+Técnico Autorizado, para lo cual recomendamos la gestión de RAYOS X DINAN S.A. o su servicio técnico
+
+autorizado.
+
+Con estas medidas de precaución, conservará la capacidad y, sobre todo, la seguridad operativa de su
+
+equipo. Además, como usuario de equipos de rayos X, está sujeto a las normas de prevención de acciden-
+
+tes y regulaciones vigentes para cumplir con estas medidas.
+
+Las medidas de mantenimiento deben consistir en:
+
+❖ Controles, limpieza y desinfección:  deben ser realizados por el usuario.
+
+❖ Controles técnicos de seguridad:  deben ser realizadas por el usuario periódicamente, para detectar
+
+los defectos más evidentes:
+
+• Controlar que todos los pulsadores y luces indicadoras funcionen correctamente.
+
+• Realizar una inspección visual para detectar deterioro mecánico de las partes.
+
+• Prestar atención a ruidos o vibraciones inusuales.
+
+• Controlar que trabajen correctamente, y estén firmemente sujetas todas las perillas, man-
+
+dos, empuñaduras, trabas, etc.
+
+• Asegurarse que no existan perdidas de aceite en la base del comando.
+
+❖ Tareas de mantenimiento o reparación , deben ser ejecutadas por el Servicio Técnico Autorizado.
+
+Si alguno de estos u otros defectos de funcionamiento (o cualquier anomalía) aparecieran, informe a RA-
+
+YOS X DINAN S.A. o al Servicio Técnico Autorizado.
+
+Es importante tener en cuenta que, el uso de equipos radiológicos con componentes defectuosos, eleva
+
+el factor de riesgo y puede conducir a una exposición innecesariamente elevada de la radiación.
+
+El ajuste correcto de los componentes mecánicos y electrónicos del equipo, influye de manera directa en
+
+el funcionamiento, la calidad de imagen, la seguridad eléctrica, así como en la exposición a la radiación
+
+del paciente y del personal médico.
+
+Tenga en cuenta que la vida útil del equipo depende del mantenimiento preventivo.
+
+# Página 9
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+14
+
+Limpieza y desinfección
+
+Antes de realizar las tareas de limpieza habituales, se deben tomar ciertas precauciones, ya que ciertos
+
+productos químicos pueden afectar su funcionamiento o incluso formar mezclas de gases explosivos.
+
+Tenga cuidado al elegir un limpiador:  no utilice agentes de limpieza o pulido cáusticos, solventes o abra-
+
+sivos.  Use sólo soluciones jabonosas para limpiar superficies de plástico, ya que otros productos pueden
+
+hacer que el material se torne rígido y quebradizo (no use productos con alto contenido de alcohol).
+
+Al limpiar, tenga en cuenta lo siguiente:
+
+❖ Antes de limpiar, desconecte el equipo de la alimentación eléctrica.
+
+❖ Evite la penetración de agua u otros líquidos dentro del equipo, evitando posibles cortocircuitos
+
+y el deterioro de los componentes.
+
+❖ Limpie sólo las superficies pintadas o de aluminio con un paño humedecido con una solución ja-
+
+bonosa o detergente suave, y luego limpie con un paño seco.
+
+El método de desinfección utilizado debe cumplir con las disposiciones legales y normativas vigentes para
+
+la desinfección y la protección contra explosiones. No utilice desinfectantes cáusticos, solventes o gaseo-
+
+sos.
+
+Durante la desinfección, tenga en cuenta lo siguiente:
+
+❖ Antes de comenzar la desinfección, desconecte el equipo de la alimentación eléctrica.
+
+❖ Todos los componentes del equipo, incluidos los cables y accesorios, deben desinfectarse sólo con
+
+un paño.
+
+❖ Recomendamos no desinfectar con aerosol ya que el desinfectante puede penetrar dentro del
+
+equipo y dañar los componentes.
+
+❖ En caso de desinfección de la habitación por medio de aerosoles, asegúrese de desconectar el
+
+equipo y resguardarlo con una cubierta de plástico. Después de que la solución desinfectante se
+
+haya depositado en las superficies, retire la cubierta y desinfecte el equipo con un paño.
+
+❖ Si usa un desinfectante que puede formar mezclas de gases explosivas, debe esperar hasta que
+
+se haya evaporado antes de volver a conectar el equipo.
+
+Descarte
+
+❖ Este símbolo indica que los residuos de los equipos electrónicos no deben elimi-
+
+narse con los residuos normales. Consulte la legislación local.
+
+❖ Al final de la vida útil del equipo, es necesario consultar la legislación local para
+
+verificar las normas a seguir en su proceso de eliminación, para evitar riesgos para
+
+el medio ambiente.
+
+# Página 10
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+15
+
+4. Especificaciones Técnicas
+
+Condiciones Ambientales
+
+Temperatura da sala +10ºC a +30ºC
+
+Durante la operación Humedad relativa 30% a 75% sin condensación
+
+Presión atmosférica 700 hPa a 1060 hPa
+
+Temperatura
+
+-10ºC a +55ºC
+
+(versión convencional)
+
++15ºC a +35ºC (versión digital)
+
+Transporte y almacenamiento
+
+Humedad relativa
+
+10% a 85% sin condensación
+
+(versión convencional)
+
+30% a 85% sin condensación
+
+(versión digital)
+
+Presión atmosférica 700 hPa a 1060 hPa
+
+# Página 11
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+16
+
+5. Descripción
+
+Panel de control del generador
+
+Número Descripción
+
+1 Botón de encendido
+
+2 Indicador de estado (verde)
+
+3 Pantalla TFT táctil full color
+
+4 Disparador manual
+
+2
+
+1
+
+4
+
+3
+
+# Página 12
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+17
+
+Disparador manual
+
+Número Descripción
+
+1 Disparador manual de dos etapas. Preparación/ Exposición
+
+2 Botón del disparador
+
+3 Soporte del disparador
+
+Informaciones Gráficas
+
+Pantalla Principal
+
+```metadata
+pagina: 12
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P12_I0.png
+contexto: 
+```
+
+![Imagen página 12 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P12_I0.png)
+
+```metadata
+pagina: 12
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P12_I2.png
+contexto: 
+```
+
+![Imagen página 12 - 2](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P12_I2.png)
+
+1
+
+3
+
+2
+
+# Página 13
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+18
+
+Símbolos de la Pantalla Principal
+
+Símbolo Descripción
+
+Configuraciones (Servicio Técnico)
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I1.png
+contexto: 
+```
+
+![Imagen página 13 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I1.png)
+
+Selección de Potter (con o sin grilla antidifusora)
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I2.png
+contexto: 
+```
+
+![Imagen página 13 - 2](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I2.png)
+
+AEC- Control Automático de Exposición
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I3.png
+contexto: 
+```
+
+![Imagen página 13 - 3](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I3.png)
+
+Técnicas Programables
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I4.png
+contexto: 
+```
+
+![Imagen página 13 - 4](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I4.png)
+
+Indicador de Foco Fino / Grueso
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I5.png
+contexto: 
+```
+
+![Imagen página 13 - 5](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I5.png)
+
+Selección de corriente de tubo (mA)
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I6.png
+contexto: 
+```
+
+![Imagen página 13 - 6](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I6.png)
+
+Tubo de Columna y Mesa Fija
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I7.png
+contexto: 
+```
+
+![Imagen página 13 - 7](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I7.png)
+
+Tubo de Columna y Potter Bucky Mural
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I8.png
+contexto: 
+```
+
+![Imagen página 13 - 8](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I8.png)
+
+Tubo de Columna y Espinógrafo (desactivado para el modelo DINAR 500-MAF)
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I9.png
+contexto: 
+```
+
+![Imagen página 13 - 9](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I9.png)
+
+Mesa Radiológica 90/15 con Seriógrafo (desactivado para el modelo DINAR 500-MAF)
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I10.png
+contexto: 
+```
+
+![Imagen página 13 - 10](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I10.png)
+
+Visualizador de KV
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I11.png
+contexto: 
+```
+
+![Imagen página 13 - 11](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I11.png)
+
+Visualizador de mAs
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I12.png
+contexto: 
+```
+
+![Imagen página 13 - 12](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I12.png)
+
+Indicador de carga térmica del tubo (KJ)
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I13.png
+contexto: 
+```
+
+![Imagen página 13 - 13](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I13.png)
+
+Selección de KVp
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I14.png
+contexto: 
+```
+
+![Imagen página 13 - 14](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I14.png)
+
+Selección de mAs
+
+```metadata
+pagina: 13
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I15.png
+contexto: 
+```
+
+![Imagen página 13 - 15](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P13_I15.png)
+
+Disparador Manual
+
+# Página 14
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+19
+
+6. Indicaciones de Uso
+
+Encendiendo/ Apagando el Equipo
+
+Levante la llave termomagnética en posición ON(ver frente del Generador Dinar AF-500).
+
+El indicador de estado (Ver Figura 1 - Panel de control del generador), se encenderá y apagará a una
+
+velocidad lenta, lo que indica que el equipo está en modo "Stand-By".
+
+Para encender el equipo, presione el botón de encendido / apagado (Ver Figura 1 - Panel de control del
+
+generador).
+
+Después de la presentación gráfica, toque la pantalla para continuar, dejando el equipo listo para usar de
+
+inmediato. El indicador de estado permanece activo continuamente.
+
+Mantenga el botón de encendido presionado durante 10 segundos para volver al estado "Stand-By".
+
+Selección de puesto
+
+Presionar sobre el botón de puesto deseado. El mismo cambiará a color amarillo, quedando seleccionado
+
+el puesto elegido.
+
+```metadata
+pagina: 14
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P14_I0.png
+contexto: 
+```
+
+![Imagen página 14 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P14_I0.png)
+
+Llave termomagnética
+
+# Página 15
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+20
+
+Símbolo Descripción
+
+```metadata
+pagina: 15
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I0.png
+contexto: 
+```
+
+![Imagen página 15 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I0.png)
+
+Tubo de Columna y Mesa Fija
+
+```metadata
+pagina: 15
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I1.png
+contexto: 
+```
+
+![Imagen página 15 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I1.png)
+
+Tubo de Columna y Potter Bucky Mural
+
+```metadata
+pagina: 15
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I2.png
+contexto: 
+```
+
+![Imagen página 15 - 2](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I2.png)
+
+Tubo de Columna y Espinógrafo (desactivado para el modelo DINAR 500-MAF)
+
+```metadata
+pagina: 15
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I3.png
+contexto: 
+```
+
+![Imagen página 15 - 3](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I3.png)
+
+Mesa Radiológica 90/15 con Seriógrafo (desactivado para o modelo DINAR 500-MAF)
+
+Selección de técnica de trabajo – Técnica Manual
+
+Una vez que se ha seleccionado la estación de trabajo, se debe seleccionar la técnica radiográfica que se
+
+utilizará.
+
+Para aumentar o disminuir los valores continuamente, presione y mantenga presionado el botón corres-
+
+pondiente.
+
+Tenga en cuenta que si se excede la potencia de la ampolla de rayos X, el aumento en los parámetros de
+
+mA y kV se inhibirán automáticamente, resaltando la variable afectada en colores.
+
+Si esto ocurre, se puede adoptar el criterio de disminuir la escala de mA y aumentar el tiempo, mante-
+
+niendo constantes los mA deseados.
+
+Selección de kV
+
+```metadata
+pagina: 15
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I5.png
+contexto: 
+```
+
+![Imagen página 15 - 5](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P15_I5.png)
+
+1
+
+2
+
+3
+
+# Página 16
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+21
+
+Número Descripción
+
+1
+
+Visualizador de kV
+
+2
+
+Botón para aumentar  kVp
+
+3
+
+Botón para disminuir kVp
+
+Selección de mAs
+
+Número Descripción
+
+1
+
+Visualizador de mAs
+
+2
+
+Botón para aumentar mAs
+
+3
+
+Botón para disminuir mAs
+
+3
+
+2
+
+1
+
+# Página 17
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+22
+
+Selección de corriente de tubo (mA)
+
+Número Descripción
+
+1 Visualizador de mA
+
+2
+
+Botón para aumentar mA
+
+3
+
+Botón para disminuir mA
+
+Selección de Potter
+
+Al presionar el ícono de Potter se deshabilita la grilla antidifusora.
+
+Para reactivarlo, presione el mismo ícono nuevamente.
+
+```metadata
+pagina: 17
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P17_I8.png
+contexto: 
+```
+
+![Imagen página 17 - 8](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P17_I8.png)
+
+3
+
+1
+
+2
+
+```metadata
+pagina: 17
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P17_I25.png
+contexto: 
+```
+
+![Imagen página 17 - 25](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P17_I25.png)
+
+# Página 18
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+23
+
+Selección de técnica de trabajo – Técnicas Programables
+
+El Comando y Generador DINAR AF-500, posee técnicas programables de acuerdo con las diferentes re-
+
+giones anatómicas.
+
+Para acceder al submenú de técnicas programables, presione el icono TP (Técnicas programables).
+
+Una vez seleccionado, puede ver el siguiente menú:
+
+```metadata
+pagina: 18
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P18_I4.png
+contexto: 
+```
+
+![Imagen página 18 - 4](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P18_I4.png)
+
+```metadata
+pagina: 18
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P18_I5.png
+contexto: 
+```
+
+![Imagen página 18 - 5](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P18_I5.png)
+
+# Página 19
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+24
+
+Selección de técnica de trabajo – Técnicas Programables
+
+El equipo cuenta con 48 técnicas programables según las diferentes regiones anatómicas.
+
+Puede seleccionarlos simplemente tocando la región de interés en la figura humana que se encuentra en la pantalla
+
+del menú principal, o usando los cursores , siguiendo la lista detallada a continuación:
+
+Técnicas Programables DFP (cm) KV mA ms
+
+Cráneo PA con Bucky 105 a 115 72 100 200
+
+Cráneo Lateral con Bucky 105 a 115 67 100 200
+
+Cráneo Axial PA con Bucky 105 a 115 72 100 200
+
+Senos Paranasales Waters con Bucky 105 a 115 73 100 200
+
+Columna Cervical AP con Bucky 105 a 115 68 100 300
+
+Columna Cervical Lateral con Bucky 120 a 150 65 100 300
+
+Hombro AP con Bucky 105 a 115 68 100 200
+
+Hombro Lateral con Bucky 105 a 115 90 250 80
+
+Clavícula AP con Bucky 105 a 115 65 100 200
+
+Tórax PA con Bucky 150 a 180 70 250 80
+
+Tórax Lateral con Bucky 150 a 180 72 200 100
+
+Tórax Lateral con Bucky 105 a 115 72 250 80
+
+Esternón con Bucky 150 a 180 68 100 200
+
+Costillas PA Supra con Bucky 150 a 180 75 320 125
+
+Costillas PA Infra con Bucky 150 a 180 75 320 200
+
+Columna Dorsal AP con Bucky 105 a 115 75 250 200
+
+Columna Dorsal Lateral con Bucky 105 a 115 75 250 200
+
+# Página 20
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+25
+
+Técnicas Programables DFP (cm) KV mA ms
+
+Columna Lumbar AP con Bucky 105 a 115 85 320 150
+
+Columna Lumbar Lateral con Bucky 105 a 115 86 400 240
+
+Caderas AP con Bucky 105 a 115 70 250 125
+
+Caderas Lateral con Bucky 105 a 115 70 250 125
+
+Pelvis AP con Bucky 105 a 115 75 250 125
+
+Húmero AP con Bucky 105 a 115 60 100 200
+
+Húmero Lateral con Bucky 105 a 115 60 100 200
+
+Codo AP sin Bucky 105 a 115 57 80 200
+
+Codo Lateral sin Bucky 105 a 115 57 80 200
+
+Antebrazo PA sin Bucky 105 a 115 55 80 125
+
+Antebrazo Lateral sin Bucky 105 a 115 55 80 125
+
+Muñeca PA sin Bucky 105 a 115 50 64 100
+
+Muñeca Lateral sin Bucky 105 a 115 50 64 100
+
+Mano PA sin Bucky 105 a 115 45 80 50
+
+Mano PA Oblicuosin Bucky 105 a 115 45 80 50
+
+Dedos da Mano PA sin Bucky 105 a 115 40 40 50
+
+Dedos da Mano Lateral sin Bucky 105 a 115 40 40 50
+
+Dedos da Mano PA Oblicuo sin Bucky 105 a 115 40 40 50
+
+Fémur AP con Bucky 105 a 115 70 250 125
+
+Fémur Lateral con Bucky 105 a 115 70 250 125
+
+Rodilla AP con Bucky 105 a 115 65 100 240
+
+# Página 21
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+26
+
+Técnicas Programables DFP (cm) KV mA ms
+
+Rodilla Lateral sin Bucky 105 a 115 55 100 200
+
+RodillaTangencial de Rótula con Bucky 105 a 115 60 100 240
+
+Tibia y Peroné sin Bucky 105 a 115 55 100 200
+
+Tibia y Peroné Lateral sin Bucky 105 a 115 55 100 200
+
+Tobillo AP sin Bucky 105 a 115 55 100 150
+
+Tobillo Lateral sin Bucky 105 a 115 56 100 150
+
+Pie AP sin Bucky 105 a 115 50 80 80
+
+Pie Oblicua Media sin Bucky 105 a 115 42 80 125
+
+Dedos del Pie AP sin Bucky 105 a 115 42 80 80
+
+Dedos del Pie Oblicua sin Bucky 105 a 115 42 80 80
+
+Una vez que se ha seleccionado la técnica programada deseada, podrá observar la información de interés,
+
+como la distancia desde el foco de la película y el uso de la grilla en posición.
+
+Para confirmar la técnica, presione el botón OK. De esta forma, el equipo vuelve a la pantalla principal e
+
+indica los parámetros radiográficos para la técnica seleccionada.
+
+Los parámetros pueden modificarse según las características físicas del paciente.
+
+# Página 22
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+27
+
+Para realizar una radiografía
+
+Una vez que se han seleccionado los parámetros radiográficos para la exposición, presione el disparador
+
+remoto a su primera posición. De esta manera, comienza la preparación para la emisión de rayos X.
+
+La pantalla principal muestra la siguiente secuencia:
+
+Si, durante la preparación, no se cumplen las condiciones para la emisión de rayos X, el equipo bloqueará
+
+el disparo (consulte el Capítulo - Bloqueo de disparo).
+
+Durante la preparación, el equipo controla todos los subsistemas involucrados en la emisión de rayos X,
+
+si se cumplen las condiciones, la preparación finaliza indicando que está listo para disparar rayos X, mos-
+
+trando la siguiente secuencia:
+
+```metadata
+pagina: 22
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P22_I1.png
+contexto: 
+```
+
+![Imagen página 22 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P22_I1.png)
+
+```metadata
+pagina: 22
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P22_I3.png
+contexto: 
+```
+
+![Imagen página 22 - 3](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P22_I3.png)
+
+# Página 23
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+28
+
+Una vez completada la preparación, si el disparador remoto se presiona a la siguiente posición, el haz se
+
+dispara y muestra la siguiente secuencia:
+
+Una vez que realizado el disparo, el sistema mostrará en la pantalla que se ejecutó correctamente:
+
+Si el disparo no fue realizado, pero el botón de preparación se mantiene presionado, después de 10 se-
+
+gundos, la secuencia se cancelará automáticamente:
+
+Si suelta el botón antes de 10 segundos, el dispositivo volverá automáticamente al estado de espera en la
+
+pantalla principal.
+
+```metadata
+pagina: 23
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P23_I1.png
+contexto: 
+```
+
+![Imagen página 23 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P23_I1.png)
+
+```metadata
+pagina: 23
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P23_I3.png
+contexto: 
+```
+
+![Imagen página 23 - 3](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P23_I3.png)
+
+```metadata
+pagina: 23
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P23_I5.png
+contexto: 
+```
+
+![Imagen página 23 - 5](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P23_I5.png)
+
+# Página 24
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+29
+
+Si en cualquiera de las etapas anteriores, el equipo detecta una anomalía en su funcionamiento, esto será
+
+informado por el sistema de informe de fallas (Ver Capitulo - Indicación de anomalías)
+
+Si esto ocurre, notifique al Servicio Técnico Oficial.
+
+Si se suelta el botón de rayos X durante el disparo, el usuario cancelará esta operación.
+
+Bloqueo de disparo
+
+Si durante la preparación no se dan las condiciones para la emisión de rayos X, el equipo bloqueará la
+
+toma y mostrará la siguiente pantalla:
+
+Luego, el sistema ejecutará la secuencia de indicación de anomalías (ver Capítulo - Indicación de anoma-
+
+lías).
+
+Indicación de anomalías
+
+Si durante la preparación de rayos X o el proceso de disparo, se ejecuta uno de los sistemas de protección,
+
+el equipo se bloqueará automáticamente, mostrando la siguiente secuencia:
+
+```metadata
+pagina: 24
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P24_I1.png
+contexto: 
+```
+
+![Imagen página 24 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P24_I1.png)
+
+```metadata
+pagina: 24
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P24_I3.png
+contexto: 
+```
+
+![Imagen página 24 - 3](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P24_I3.png)
+
+# Página 25
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+30
+
+Cuando el usuario suelta el botón del disparador remoto, muestra la siguiente pantalla:
+
+Si se produce más de un error, aparecerá un icono de error de memoria en la barra de estado.
+
+Si esto sucede, haga clic en él e ingrese el submenú de errores en la memoria.
+
+Tome nota de los errores indicados en la pantalla y notifique de inmediato al Servicio Técnico.
+
+Para retornar a la pantalla principal, presione el botón
+
+```metadata
+pagina: 25
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P25_I1.png
+contexto: 
+```
+
+![Imagen página 25 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P25_I1.png)
+
+```metadata
+pagina: 25
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P25_I3.png
+contexto: 
+```
+
+![Imagen página 25 - 3](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P25_I3.png)
+
+```metadata
+pagina: 25
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P25_I5.png
+contexto: 
+```
+
+![Imagen página 25 - 5](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P25_I5.png)
+
+# Página 26
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+31
+
+Indicador de kilojoules
+
+El indicador de kilojoules muestra la energía acumulada en el ánodo del tubo de rayos X.
+
+Si al momento de realizar un nuevo disparo, el equipo calcula que se excederá la carga térmica total acu-
+
+mulada en el tubo de rayos X, no será posible ejecutar el disparo, hasta que la carcasa y el conjunto del
+
+tubo de rayos X se enfríen.
+
+```metadata
+pagina: 26
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P26_I1.png
+contexto: 
+```
+
+![Imagen página 26 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P26_I1.png)
+
+1
+
+# Página 27
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+32
+
+```metadata
+pagina: 27
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P27_I0.png
+contexto: 
+```
+
+![Imagen página 27 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P27_I0.png)
+
+7. Etiqueta
+
+```metadata
+pagina: 27
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P27_I1.png
+contexto: 
+```
+
+![Imagen página 27 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P27_I1.png)
+
+# Página 28
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+33
+
+8. Descripción Técnica y Mantenimiento
+
+Uno de los objetivos de diseño del generado AF-500 fue simplificar el mantenimiento y reducir el costo del mismo, para lo cual se emplearon tecnologías modernas de fabricación y montaje, junto con técnicas de control digital que permiten mejorar la estabilidad de los sistemas de control de los parámetros de radiación simplificando y reduciendo las calibraciones, detectar gran cantidad de condiciones de falla an- tes de que afecten el rendimiento del equipo o que dañen alguna parte vital del equipo, y simplificar las tareas de instalación y de reparación en caso de falla. Las plaquetas de control del equipo son de tecnología de montaje superficial y no son reparables en el campo, sino que están diseñadas para ser reemplazadas en caso de falla, y en el diseño del equipo se simplificó la interconexión de las mismas para facilitar su montaje en producción y el recambio en el campo. Todos los ajustes y configuración del equipo se realizan por software, ya sea conectándose al equipo con una PC por USB y utilizando una aplicación de service, o desde el comando ingresando en un modo espe- cial de service.
+
+Descripción Funcional
+
+Diagrama en Bloques
+
+El generador contiene tres plaquetas electrónicas principales:
+
+• Placa de Control • Placa de Filamento • Placa Driver
+
+Fuente de Alimentación
+
+Todas las placas electrónicas que controlan el equipo están alimentadas por una única fuente de switching de 12VDC identificada en el diagrama como FSW. La fuente de switching recibe 220VAC del contactor de línea que sea activa al encender el equipo, de manera que en situación de stand-by la fuente de 12V está apagada. La situación de stand-by es cuando el equipo esta energizado (con la llave térmica principal tri- fásica levantada), pero apagado desde el comando. Solamente la placa de control recibe una alimentación adicional de AC a través de un pequeño transformador que mantiene activa la conminación entre la placa
+
+```metadata
+pagina: 28
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P28_I0.png
+contexto: 
+```
+
+![Imagen página 28 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P28_I0.png)
+
+# Página 29
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+34
+
+de control y el comando durante la situación de stand-by, para permitir que el equipo sea encendido en forma remota desde el comando. Todas las placas incluyen reguladores de tensión para generar todas las tensiones internas necesarias a partir de la alimentación de 12VDC. Las placas principales tienen reguladores lineales de 5V y 3.3V y tiene puntos de prueba para verificarlos. Además las placas pueden verificar dichas tensiones y generar fallas en caso de que estén fuera de valor.
+
+Bus RS485
+
+La comunicación entre la placa de control y el comando es por medio de un bus de datos serie con interfaz RS485. La interfaz RS485 permite una comunicación half-duplex asincrónica diferencial a través de un par trenzado (dos conductores). Este tipo de comunicación tiene alta inmunidad al ruido y permite alta velo- cidad de transferencia. El formato de los datos responde al protocolo standard, MODBUS RTU. El cable que conecta el comando con la placa de control es un cable especial blindado, con conectores de 6 vías porque además del bus RS485 lleva los 12V de la fuente switching, 12V de stand-by, y conexiones de masa y blindaje.
+
+Bus CAN
+
+Las placas del generador están interconectadas entre sí por medio de un bus CAN. El bus CAN es también un bus de dos hilos diferencial, con una interfaz similar al RS485, pero la comunicación es sincrónica, ya que junto con los datos viaja embebida una señal de reloj. El CAN es el bus que utilizan en la actualidad la mayoría de los automóviles para interconectar la computadora principal (ECU) con las demás partes elec- trónicas del vehículo. Este bus hace años que se utiliza ampliamente en control industrial y en la industria automotriz, y en los últimos años su uso se extendió a otras aplicaciones como electro medicina. El CAN es un bus compartido que permite mandar datos muy rápidamente en pequeños paquetes de hasta 8 bytes, en los que se envían datos y señales de tiempo real, e información de configuración. El bus CAN es lo único que interconecta las placas principales del equipo. La placa de control puede manejar dos buses CAN, pero en principio se usa uno solo para la comunicación con las demás placas principales (Driver y filamento, y la una placa opcional para AEC). El CAN es un bus tipo guirnalda en el que todos los nodos van conectados en paralelo, pero para simplificar el cableado todas las placas, salvo la de control, tienen dos conectores de CAN que están internamente en paralelo, de manera que los chicotes conectan las placas punto a punto.
+
+Placa de Filamento
+
+La placa de filamento es básicamente una fuente de switching que controla por PWM (modulación de ancho de pulso) los primarios de los transformadores de filamento de foco fino y grueso, que se encuen- tran dentro del transformador de alta tensión. La placa de filamento, por medio de algoritmos DSP (Digital Signal Processing), controla la corriente RMS de los filamentos, y durante la emisión la ajusta para mantener la corriente de tubo deseada, que mide a través de la realimentación que le viene del transformador de alta tensión. Tiene tres escalas de medición de corriente de tubo: hasta 5mA, hasta 100mA, y hasta 1A. La placa de filamento recibe 220VAC del contactor de línea que sea activa al encender el equipo. La placa de filamento es configurada y comandada desde la placa de control a través del CAN, y ésta a su vez manda información de status y de fallas por el mismo bus CAN. Esta placa puede detectar una serie de condiciones de error durante la operación que los informa al resto del sistema por medio de mensajes del CAN.
+
+# Página 30
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+35
+
+Placa Driver
+
+La placa driver controla por PWM las compuertas de los cuatro IGBT que forman el puente que alimenta al primario del transformador de alta tensión, para generar los kV de tensión de tubo. Los IGBT son parte del cableado de potencia que va montado directamente sobre el chasis. La placa driver es la que determina la duración del pulso de kV en radiografía y en fluoroscopia pulsada. El control de los kV se realiza por medio de algoritmos DSP en base la medición que hace a través de la realimentación que recibe del transformador de alta tensión. La placa driver mide tanto los kV de la rama positiva como los de la negativa, haciendo un control más preciso de los kV totales, y pudiendo detectar posibles fallas del transformador o los cables de alta tensión por desbalance entre las ramas. La placa driver mide la tensión de continua de las barras que alimentan al puente de IGBT, determinando si la precarga de los capacitores se realizó correctamente, y detectando posibles fallas. La placa driver es configurada y comandada desde la placa de control a través del CAN, y ésta a su vez manda información de status y de fallas por el mismo bus CAN. Esta placa puede detectar una serie de condiciones de error durante la operación que los informa al resto del sistema por medio de mensajes del CAN.
+
+Placa de Control
+
+Esta placa es el control central del generador y es la que realiza todas las secuencias de encendido, apa- gado, preparación, emisión, etc., configurando y comandando las demás placas según corresponda, y ve- rificando que éstas respondan de acuerdo a lo previsto. La placa de control incluye el manejo de los contactores del cableado de potencia (línea, preparación y fin de preparación), y el control del giro de ánodo a frecuencia nominal de línea de AC (50/60Hz).  El circuito de control del giro de ánodo permite detectar diversas fallas. La placa de control es comandada desde el bus RS485 a través de registros MODBUS. Tiene una memoria no volátil en la que guarda configuraciones y archivos de registro de actividad y fallas. El contenido de los archivos puede ser descargado por medio de la aplicación de service. Tiene un reloj de tiempo real, RTC, alimentado por una pila, que le permite mantener la hora, la cual utiliza para el cálculo del enfriamiento del tubo (aun con el equipo desenergizado), y para el registro en los ar- chivos. Tiene tres borneras para sendos potter-bucky, un conector con señales de entrada/salida para mesa se- riografica, pedales de rayos y flurorscopia, conectores para sincronismo con dos cámaras, etc. Tiene un conector para circuito opcional de emergencia normal-cerrado, que de activarse (abrirse) corta inmediatamente los contactores, apaga el equipo y detecta la condición de emergencia indicándola en el LED del comando (que parpadea rápido en ese caso). Tiene además dos conectores para circuitos de se- guridad normal-cerrado que al abrirse impiden la emisión de rayos (switch de puerta de sala, switch tér- mico de tubo, etc.) Estos tres conectores si no se utilizan deben tener instalado un puente. La placa de control tiene un conector para una placa opcional externa de manejo del mecanismo conmu- tador de tubos. Esta placa opcional conmuta los cables de giro de ánodo y maneja en mecanismo electro- mecánico de conmutación de los cables de alta tensión y filamentos, que va montado directamente sobre el transformador de alta tensión. La placa de control admite la conexión de un módulo opcional USB para conectar una PC, generando un puerto COM virtual que también implementa MODBUS RTU, permitiendo el comando desde la aplicación de service. La aplicación de sevice permite operar el equipo normalmente de la misma manera que desde el comando, y también permite realizar funciones especiales de configuración, puesta en hora, descarga de archivos, calibración de tubo, etc.
+
+Comando
+
+El comando posee un pulsador, un LED, un display LCT-TFT de 7” con pantalla táctil, y un disparador de dos posiciones, y se comunica con la placa de control a través del bus RS485.
+
+# Página 31
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+36
+
+Cuando el equipo está en stand-by el LED parpadea lento y la pantalla permanece apagada. Si se presiona el pulsador el equipo se enciende, el LED queda encendido fijo y la pantalla se enciende mostrando pri- mero una presentación y pasando luego a la pantalla principal. Internamente tiene una sola placa de control a la que se conecta el display, la pantalla touch, la placa del pulsador y LED, el disparador y el bus RS485. El comando tiene un pulsador interno sobre la placa de control que si se lo mantienen presionado al en- cender el equipo se ingresa en un modo de service en el que se habilita el botón de configuración de la pantalla principal. Entrando en la pantalla de configuración se puede acceder a otras pantallas que per- miten calibrar la pantalla touch, ajustar el brillo, poner el reloj en hora, modificar la configuración del generador, calibrar el tubo, etc.
+
+Cableado de Potencia
+
+```metadata
+pagina: 31
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P31_I0.png
+contexto: 
+```
+
+![Imagen página 31 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P31_I0.png)
+
+# Página 32
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+37
+
+El circuito monofásico utiliza la fase T y el neutro, pasando a través de la llave termomagnética interna marcada como S2-S3. Lo primero que alimenta es el transformador de stand-by T1, la bobina del contactor de línea K1, y el neutro de retorno de los contactores  en la bornera de la placa de control, el resto se alimenta después de los contactos del contactor de línea K1.
+
+El contactor de preparación K3 por un lado manda alimentación al circuito de giro de ánodo de la placa de control (TB6) y por otro lado manda dos fases, a la etapa de potencia de IGBT, una de ellas a través de la resistencia R1 y el diodo D1. El circuito de giro de ánodo tiene los capacitores de arranque C1 y mantenimiento C2. C2 está en serie con la alimentación del circuito de giro, y al arrancar esta cortocircuitado internamente por medio de un relay. Una vez que el giro toma velocidad la placa de control abre el relay y C2 produce una caída de tensión que hace que baje la corriente del circuito de giro al valor de mantenimiento (para reducir el calentamiento). Una vez completada la precarga de los electrolíticos y arrancado el giro, la placa de control activa el con- tactor de fin de preparación K2 pasando las tres fases directo al circuito de potencia.
+
+```metadata
+pagina: 32
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P32_I0.png
+contexto: 
+```
+
+![Imagen página 32 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P32_I0.png)
+
+```metadata
+pagina: 32
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P32_I1.png
+contexto: 
+```
+
+![Imagen página 32 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P32_I1.png)
+
+# Página 33
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+38
+
+Las fases entran al circuito de potencia de IGBT a través del puente rectificador trifásico BR1, generando las barras, positiva y negativa, de corriente continua junto con los capacitores C3 y C4. Los 4 IGBT que forman el puente están agrupados de a dos en dos bloques medio-puente (half-bridge). La placa driver tiene dos cables de conexión para cada IGTC: emisor y compuerta, y tiene también conexiones a los co- lectores para bloqueo de sobrecorriente y medición de la tensión de las barras. En serie con el primario del transformado se insertan las bobinas L1 y L2 que forman parte del circuito de control serie inductivo. L2 permite trabajar a bajas potencias con PWM mas alto mejorando el control, pero para a altas potencias la placa de control lo puentea activando el contactor auxiliar K4. Cuando se apaga el equipo se conecta la resistencia de descarga R2 a través del contacto auxiliar normal- cerrado del contactor de línea K1.
+
+```metadata
+pagina: 33
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P33_I0.png
+contexto: 
+```
+
+![Imagen página 33 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P33_I0.png)
+
+# Página 34
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+39
+
+9. LED de Diagnóstico y Puntos de Prueba
+
+Placa de Control
+
+El LED PWR (LD1) tiene un comportamiento similar al LED del comando, parpadea lento cuando el equipo está en stand-by, enciende fijo cuando el equipo esta encendido, y parpadea rápido cuando está en situa- ción de emergencia (circuito de emergencia abierto). Si está apagado significa que el equipo esta desener- gizado. En caso de que el equipo este energizado y este LED no encienda puede estar apagada la térmica monofásica interna, o puede haber un problema en el transformador de stand-by o en la placa de control. El LED MDB (LD4) indica el estado de la comunicación MODBUS por el bus RS485 con el comando (o con la PC por USB). Si hay comunicación normal debe encender fijo, si no hay comunicación se apaga. El LED ACT (LD3) indica que el equipo está realizando alguna actividad, preparación, emisión de rayos, fluoroscopia, etc. Permanece apagado cuando el equipo está inactivo. El LED ERR (LD2) indica presencia de fallas. Además de registrar las fallas en archivos la placa de control tiene una memoria de corto plazo que guarda las últimas cuatro fallas. Si hay una falla presente
+
+```metadata
+pagina: 34
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P34_I0.png
+contexto: 
+```
+
+![Imagen página 34 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P34_I0.png)
+
+```metadata
+pagina: 34
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P34_I1.png
+contexto: 
+```
+
+![Imagen página 34 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P34_I1.png)
+
+# Página 35
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+40
+
+persistente este LED se enciende fijo. Si no hay falla presente pero hay fallas previas en esta memoria de corto plazo, el LED parpadea. Si no hay fallas presentes ni memorizadas este LED permanece apagado. Esta memoria de fallas de corto plazo se borra al energizar el equipo, al hacer preparación, o al apagar desde el frente. Los LED CAN2 (LD5 y LD6) corresponde al status del bus CAN 2, y los LED CAN1 (LD8 y LD5) al CAN1. El bus que se usa para la comunicación con las placas internas del generador es CAN2. En condición normal con el equipo encendido y las placas conectadas y respondiendo normalmente a la comunicación CAN el LED verde debe encender fijo y el rojo permanecer apagado. Los patrones de encendido y parpadeo de estos LED son complejos y permiten indicar varias condiciones de operación anormal y/o falla del bus. Si el LED verde no está fijo o se enciende o parpadea el rojo significa que hay problemas en el bus o en alguna placa conectada al bus. Las demás placas también tienen estos LED con el mismo significado. Los LED de los relays de contactores (LD9 a LD11) indican que el respectivo contactor está activado. LD11 corresponde a fin de preparación, LD9 a línea, LD10 a preparación, y LD3 auxiliar. El LED de giro (a la derecha de la placa) se enciende durante el arranque y se apaga cuando entra en mantenimiento (baja corriente).
+
+Placa de Filamento
+
+```metadata
+pagina: 35
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P35_I0.png
+contexto: 
+```
+
+![Imagen página 35 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P35_I0.png)
+
+# Página 36
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+41
+
+Los tres LED de status de la parte superior son los dos del CAN, rojo y verde, y el LED verde de Power. Los tres LED de status del centro de la placa son el verde de Foco Fino, el amarillo de Foco Grueso, y el rojo de falla. El LED rojo de la parte inferior de la placa indica que hay tensión de línea de 220V presente y/o que está cargado el capacitor electrolítico. No tocar y/o manipular la placa mientras ese LED permanezca encen- dido. Al apagar el equipo totalmente o desde el frente el LED se irá apagando a medida que el electrolítico se descarga lentamente. Si el LED de Power y los LED de filamento están apagados significa que la placa no tiene alimentación de 12V. Si algún LED de filamento esta encendido y el LED de power está apagado significa que la placa no puede controlar la corriente del filamento. La condición normal durante en encendido sin emisión es que este encendido el LED de power y los LED de los dos filamentos, indicando que está en modo de precale- facción. Durante la preparación y la emisión solo se enciende uno de los dos LED de filamento y el LED de power. El LED de error indica que la placa detectó alguna condición de falla.
+
+```metadata
+pagina: 36
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P36_I0.png
+contexto: 
+```
+
+![Imagen página 36 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P36_I0.png)
+
+# Página 37
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+42
+
+Placa Driver
+
+El LED RX se enciende durante la emisión. El LED de bloqueo BLK se enciende si se produce bloqueo de IGBT por sobrecorriente durante la emisión, y permanece encendido hasta apagar o realizar un nuevo disparo. El LED de error ERR se enciende si la placa detecta cualquier condición de falla. El LED de PWR normalmente debe estar encendido. Se apaga momentáneamente cuando la placa realiza el reset de la condición de bloqueo. El LED rojo de alta tensión indica que están cargados los electrolíticos de las barras de alimentación del puente de IGBT. No se debe tocar esta placa ni nada que esté conectado a las barras de IGBT mientras este LED este encendido. Al apagar el equipo totalmente o desde el frente el LED se irá apagando a medida que los electrolíticos se descargan a través de la resistencia de descarga.
+
+```metadata
+pagina: 37
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P37_I0.png
+contexto: 
+```
+
+![Imagen página 37 - 0](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P37_I0.png)
+
+```metadata
+pagina: 37
+imagen: data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P37_I1.png
+contexto: 
+```
+
+![Imagen página 37 - 1](data/images/dinan_af500_mtm_af_500_manual_tecnico_y_mantenimiento_v5_0_2020_02_27/P37_I1.png)
+
+# Página 38
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+43
+
+10. Códigos de Falla
+
+La placa de control puede detectar una cantidad de fallas, algunas son detectadas por la propia placa de control y otras detectadas por las demás placas, driver, filamento, etc., y son informadas a la placa de control a través del CAN. A cada falla se le asigna un código de falla único, que identifica que parte del equipo, o subsistema, falló, y cuál fue la falla especifica. Cada ver que se detecta una falla esa falla es registrada en un archivo de registro, y es memorizada en un registro MODBUS para que pueda ser visualizada en el comando. Además hay cuatro registros MODBUS que retienen los códigos de las últimas cuatro fallas para poder verlas desde el comando. Esta memoria de últimas fallas se borra al energizar el equipo, al hacer preparación, o al apagar desde el frente. El código de fallas es un número de hexadecimal de tres dígitos, en el cual el primer digito identifica el subsistema y los otros dos dígitos identifican la falla. Por ejemplo el código hexadecimal 102 significa que es la falla 2 del subsistema 1. Los subsistemas son:
+
+• 1 = Placa de control • 2 = Placa de Filamento • 3 = Placa Driver • 4 = Giro de Ánodo (contenido en la placa de control) • 5 = Subsistema de Administración del Tubo (en placa de control) • 6 = Reloj RTC (en placa de control) • 7 = Subsistema de Archivos (en placa de control) • 8 = Conmutador de Tubos (en placa de control, placa opcional y mecanismo) • 9 = Contadores de actividad (en placa ed control) • A = Placa AEC
+
+Lista de Códigos de Falla
+
+Subs. Falla HEX 1 Control 1 1 fuente de 5V 101 1 2 fuente de 12V 102 1 3 timeout de Modbus 103 1 4 botón de emergencia 104 1 5 falla de setup 105 1 6 falla fatal de fuente de 5V 106 1 7 falla fatal de fuente de 12V 107 1 8 falla de bus CanOpen 108 1 9 falla de inicialización de CanOpen 109 1 A falla en la tensión V1 de DC del driver 10A 1 B falla en la tensión V2 de DC del driver 10B 1 C falla del sistema de registro de fallas 10C 1 D falla de grilla Potter-Bucky 10D 1 E falla de grilla Potter-Bucky 10E 1 F falla de grilla Potter-Bucky 10F 1 10 falla de grilla Potter-Bucky 110 1 11 falla de sincronismo 111
+
+# Página 39
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+44
+
+2 Filamento 2 1 timeout u otro error de NMT de CanOpen 201 2 2 timeout de SDO de CanOpen 202 2 3 timeout de PDO de CanOpen 203 2 4 No da Ifil Ready 204 2 81 emergencia por bloqueo de IGBT 281 2 82 emergencia por falla de filamento foco grueso 282 2 83 emergencia por falla de filamento foco fino 283 2 84 emergencia por falla de calibración 284
+
+2 85
+
+emergencia por realimentación de I tubo desenchu- fada 285 2 86 emergencia por bloqueo de IGBT 1 286 2 87 emergencia por bloqueo de IGBT 2 287
+
+3 Driver 3 1 timeout u otro error de NMT de CanOpen 301 3 2 timeout de SDO de CanOpen 302 3 3 timeout de PDO de CanOpen 303 3 4 timeout de pulso de RX 304 3 81 emergencia por bloqueo de IGBT canal 1 381 3 82 emergencia por bloqueo de IGBT canal 2 382 3 83 emergencia por bloqueo de IGBT canal 3 383 3 84 emergencia por bloqueo de IGBT canal 4 384 3 85 emergencia por desbalance de kV 385 3 86 emergencia por plug de realimentación desenchufado 386 3 87 emergencia por timeout de control 387
+
+4 Starter 4 1 sin corriente ningún bobinado en arranque 401 4 2 sin corriente ningún bobinado en mant. 402 4 3 corriente muy alta por bobinado inductivo 403 4 4 corriente muy baja por bobinado inductivo 404 4 5 corriente muy baja por bobinado capacitivo 405 4 6 fase incorrecta 406
+
+5 Tubo 5 1 falla lectura de parámetros de tubo custom 501 5 2 falla lectura de calibración 502 5 3 selección de tubo desconocido 503 5 4 falla lectura de datos de kJ 504 5 5 inconsistencia de hora de reloj 505
+
+6 RTC 6 1 tiempo invalido 601 6 2 batería baja 602 6 3 batería desconectada 603
+
+7 Sistema de archivos 7 80 falla de archivo 0 780 7 81 falla de archivo 1 781 7 82 falla de archivo 2 782
+
+# Página 40
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+45
+
+7 83 falla de archivo 3 783 7 84 falla de archivo 4 784 7 85 falla de archivo 5 785
+
+8 Conmutador 8 1 no sale hacia el tubo 1 801 8 2 no llega al tubo 1 802 8 3 no sale hacia el tubo 2 803 8 4 no llega al tubo 2 804 8 5 error de fin de carrera 805
+
+9 Contadores 9 1 error de lectura de contadores de la NVM 901
+
+A Placa AEC/Digital A 1 timeout u otro error de NMT de CanOpen A01 A 2 timeout de SDO de CanOpen A02 A 3 timeout de PDO de CanOpen A03
+
+11. Configuración y Ajustes
+
+El generador tiene una serie de parámetros configurables que afectan al funcionamiento del equipo, que quedan guardados en la memoria no volátil de la placa de control (como por ejemplo el modelo de tubo), y una serie de parámetros de ajustes que también quedan guardados en la memoria no volátil de la placa de control y de otras placas. Estas configuraciones y ajustes salen correctamente programados de fábrica para la configuración específica de cada equipo, y la mayoría de ellos normalmente no deben ser modifi- cados, salvo que se reemplacen placas, o que sea necesario verificar y/o retocar la calibración del tubo en un mantenimiento preventivo o correctivo. Estos ajustes y calibraciones pueden ser realizados desde una PC por medio de una aplicación de servicio técnico, o desde el comando, ingresando en un modo especial de configuración. El comando tiene un botón de configuración en la pantalla principal, que normalmente se encuentra in- habilitado, que permite ingresar en una pantalla de configuración. ESTA OPERACIÓN DEBE SER REALIZADA SOLO POR PERSONAL TECNICO CALIFICADO. CONFIGURACIONES O AJUSTES INCORRECTOS PUEDEN OCASIONAR MAL FUNCIONAMIENTO Y/O DAÑO PERMANENTE DE PARTES DEL EQUIPO INCLUIDO EL TUBO. Hay dos maneras de habilitar en el comando el modo de configuración, una consiste en energizar el equipo con un jumper (puente enchufable) instalado entre la placa de control, y la otra es encender el equipo desde el comando manteniendo presionado un pulsador interno de la placa de control del comando. Este último método es el recomendado. En ambos casos se requiere abrir alguna parte del equipo, en un caso el generador y en otro el comando. No se recomienda utilizar el método del jumper porque se corre el riesgo de dejar el jumper puesto quedando el modo de configuración habilitado para personal no califi- cado con el riesgo de desconfigurar o descalibrar el equipo, lo que podría resultar en mal funcionamiento y/o daño de alguna parte, incluso del tubo. Para habilitar el modo de configuración desde la placa de control se debe desenergizar el equipo bajando la llave térmica, retirar las cubiertas del generador para tener acceso a la placa de control, instalar un jumper entre los pines 2 y 3 del conector J12 de la placa de control, y energizar nuevamente el equipo. Si
+
+# Página 41
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+46
+
+el equipo tiene instalada la opción USB, tendrá una pequeña placa de interconexión enchufada en J12, la cual debe ser retirada para esta operación. El modo de configuración se volverá a inhabilitar cuando se desenergize el equipo y se vuelva a energizar con el jumper removido. Para habilitar el modo de configuración desde el comando se debe retirar la tapa posterior del comando, y manteniendo presionado el pulsador que se encuentra en el centro de la placa sobre el borde inferior de la misma, encender el equipo presionando el botón del frente del comando. El modo de configuración se volverá a inhabilitar al apagar el equipo desde el comando. Si el modo de configuración se habilitó correctamente se verá habilitado el botón de configuración de la pantalla principal del comando, y presionando el mismo se podrá ingresar en la pantalla de configuración.
+
+Ajuste de Brillo y Selección de Idioma
+
+En la pantalla de configuración hay controles para ajustar el brillo y seleccionar el idioma del comando. Estos ajustes se salvan en la memoria no volátil del propio comando presionando el botón de salvar.
+
+Calibración de Pantalla Táctil
+
+ESTA OPERACION ES PELIGROSA PORQUE DE REALIZARSE MAL PODRIA DEJAR EL COMANDO INUTILIZA- BLE. Esta operación se realiza en fabrica al poner en marcha el comando y no es normal que haya que haya que volver a realizarla en el campo. Si se sospecha que podría ser necesario realizar esta calibración se deberá primero consultar con personal de servicio o soporte técnico de la fábrica. Desde la pantalla de ajustes se accede a esta pantalla presionando el botón correspondiente, con lo que aparece una pantalla totalmente negra con una pequeña cruz roja con un círculo en el centro sobre fondo blanco, cerca de la esquina superior izquierda. Se debe presionar exactamente en el centro del círculo con un objeto de punta pequeña pero no punzante, y al hacerlo la cruz se dezplazará a otra esquina. Repi- tiendo la operación para todas las esquinas y para el centro el comando volverá a la pantalla de configu- ración.
+
+Ajustar el Reloj RTC del generador
+
+Como ya se mencionó en puntos anteriores el generador utiliza un reloj RTC mantenido con una pila para el cálculo del enfriamiento del tubo y para insertar fecha y hora en los archivos de registro de falla y actividad. Dicho reloj RTC es preciso pero podría tener un pequeño corrimiento de atraso o adelanto a lo largo de varios meses, por lo cual es conveniente revisarlo periódicamente y ajustarlo en caso de ser ne- cesario. En caso de recambio de la placa de control se debe revisar este ajuste y corregirlo si es necesario. Desde la pantalla de ajustes se accede a esta pantalla presionando el botón correspondiente. En la pan- talla de ajuste del reloj hay controles para cambiar la fecha y hora, el día de semana, y para salvar el ajuste en la placa de control.
+
+Configuración de Parámetros del Generador
+
+El equipo ya viene configurado de fábrica, pero es posible que haya que revisar esta configuración en caso de reemplazo de la placa de control.
+
+# Página 42
+
+**Equipo:** Equipo de Rayos X Dinar AF-500
+
+47
+
+Varias de estas configuraciones son opciones que pueden estar habilitadas o no, otros son valores numé- ricos, y otras son listas de opciones (modelo de tubo). ESTA CONFIGURACION SOLO DEBE SER MODIFICADA CON EL ASESORAMIENTO DE PERSONAL DE SERVI- CIO O SOPORTE TECNICO DE FÁBRICA. La configuración de parámetros se realiza por medio de varias pantallas entre las que se puede navegar con la flecha que aparece en el borde inferior de dichas pantallas. Desde la pantalla de ajustes se accede a la primera pantalla de configuración de parámetros presionando el botón correspondiente. Todos estos parámetros se salvan en la memoria no volátil de la placa de control, y todas estas pantallas tienen un botón para salvar los cambios.
+
+Calibración de Tubo
+
+Al realizar la preparación el generador fija la corriente de filamento en el valor correspondiente, según las curvas del tubo, para obtener la corriente de tubo deseada para los kV seleccionados. Dicho valor puede variar ligeramente con el envejecimiento del tubo, y también depende de la calibración de la placa de filamento (que viene de calibrada de fábrica y no puede ser ajustada en el campo). Para corregir estas variaciones el generador tiene valores de ajuste para cada punto de calibración, que pueden ser positivos y negativos. Estos valores de ajuste se guardan en la memoria no volátil de la placa de control. La calibración del tubo debe realizarse siempre en caso de reemplazo de las placas de control y/o fila- mento. Desde la pantalla de ajustes se accede a esta pantalla presionando el botón correspondiente. Hay 5 puntos de calibración para cada foco (filamento), que corresponden a 5 valores de corriente de tubo desde el más bajo al más alto. Con los botones Foco F y Foco G se selecciona el foco. Con las flechas de selección de punto se cambia de punto, del 1 al 5. Para cada punto el campo mA Ref. muestra el valor de corriente de tubo de referencia para ese punto. El valor del ajuste aparece  entre los botones + y – que permiten modificarlo. El valor de ajuste adimensional y puede variar desde -100 a +100. Para realizar la calibración de un punto se debe seleccionar el punto y realizar un disparo presionando a fondo el disparador. En el campo mA ÚLTIMO aparecerá el valor real de corriente de tubo del disparo efectuado. Si el valor está dentro de los límites aceptables dicho valor tendrá color verde, y si esta fuera de límites será rojo. Si se requiere ajuste se deberá subir o bajar el valor de ajuste (con + y -) según haya que subir o bajar la corriente resultante del disparo, y se debe repetir el disparo para ver el resultado. Una vez lograda la calibración del punto o puntos se debe presionar guardar para salvar los ajustes en la me- moria no volátil de la placa de control del generador. La operación de salvar debe realizarse por separado para cada foco. SI NO SE LOGRA CALIBRAR DENTRO DEL RANGO DE AJUSTE PODRIA DEBERSE A UNA FALLA DEL EQUIPO O DEL TUBO Y SE DEBERA CONSULTAR A SERVICIO O SOPORTE TECNICO DE FABRICA.
+

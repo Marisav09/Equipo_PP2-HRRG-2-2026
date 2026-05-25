@@ -1,0 +1,82 @@
+# Página 1
+
+**Equipo:** cabina microbiologica euroclone
+
+```metadata
+pagina: 1
+imagen: data/images/cabina_bioseguridad_manual_de_servicio_cabina_microbiologica_euroclone_safemate_ez_ing/P1_I0.png
+contexto: 
+```
+
+![Imagen página 1 - 0](data/images/cabina_bioseguridad_manual_de_servicio_cabina_microbiologica_euroclone_safemate_ez_ing/P1_I0.png)
+
+S@femate TM  EZ Series MICROBIOLOGICAL SAFETY CABINETS
+
+ Fully EN12469 compliant  State of the art microprocessor
+
+control system.  Large digital display  Air and aerosol-tight sliding
+
+sash, electrically operated by finger touch  Alarms for low air flow and
+
+wrong front window position  Sloped front and back wall for
+
+the most comfortable access  Front access for filter
+
+maintenance and service  C-shaped support stand with
+
+adjustable height  Easy retrofit option kits  HPV compatible for sterilization
+
+# Página 2
+
+**Equipo:** cabina microbiologica euroclone
+
+S@femate EZ Cabinets are supplied in two different sizes (1.2mt and 1.8mt). These last generation Microbiological Safety Cabinets Class II type A2, have been designed according to the most stringent safety standards (EN12469-2000). The internal design, the air flow aerodynamics and monitoring, the built-in safety devices and the very accurate manufacturing, guarantees the highest performances at the most stringent safety levels, as specified by EN12469 standard. High intrinsic biological safety, combined with impressively competitive prices, gives the end user a state of the art cabinet accessible to every budget, that only experienced European design and accurate quality manufacturing, can provide. The EZ series sets a new standard for entry level cabinets combining a very attractive price with a full range of comfort options that were only available in more expensive cabinets.
+
+Main specifications
+
+ Fully EN12469 compliant  Microprocessor controlled motor blower, with volumetric sensor for exhausted air flow monitoring  State of the art Microprocessor control system offering:
+
+o Large screen monitor. o Automatic control of preset airflow volumes. o Sliding sash window with smart control. o Permanent monitoring of HEPA filters life
+
+span. o Alarms. Multilevel alarms, with redundancy
+
+functions. o Permanent display of working conditions. o High air flow stability both in case of
+
+transitional disturbances or to progressive filter clogging o Continuous monitoring of front barrier air
+
+flow to guarantee operator safety o Low barrier alarm o Power failure alarm  Volt-free contact for remote monitoring of exhaust fan.  Automatic reset of initial conditions in case of power failure  C-shaped support stand with adjustable height for easy  one man installation  procedure
+
+Mechanical and functional specifications
+
+ 5° Sloped front design to increase operational comfort. Sloped back side of the working chamber for the best down flow distribution (cabinet carcass EN12298 tested and certified for air tightness)  Utilities inlets from the top of the cabinet.  Stainless Steel internal surfaces with 2B finishing (including spillage tray). Solid or perforated work surface (divided in sectors) and “V” shaped anti obstruction front grill.  Electrically operated sliding multilayer safety glass window (max opening at 120°)  Comfortable 200mm front opening  Easy to install retrofit options through lateral sides.  Exposed exhaust HEPA filter for easy visual integrity check.
+
+```metadata
+pagina: 2
+imagen: data/images/cabina_bioseguridad_manual_de_servicio_cabina_microbiologica_euroclone_safemate_ez_ing/P2_I1.png
+contexto: 
+```
+
+![Imagen página 2 - 1](data/images/cabina_bioseguridad_manual_de_servicio_cabina_microbiologica_euroclone_safemate_ez_ing/P2_I1.png)
+
+# Página 3
+
+**Equipo:** cabina microbiologica euroclone
+
+ H14 class High Efficiency Particulate Air filters with 99.999% efficiency on .3micron particles (most penetrating particle diameter) (Efficiency >= 99.995% on 0.1-0.2 micron particles MPPS as per EN1822-1)  Both exhaust and Main Filters are equipped with a micromesh membrane located downstream which acts as airspeed equalizer expansion plenum, as well as a clear indicator of filter damages.  Filter change and maintenance from the front of the cabinet.  Exhaust transitions easily installable.  Key operated. The key can be removed when the unit is in SAFE mode, in order to avoid unwanted operation. In case of power failure, the cabinet is re-set to original working conditions.  Self calibration cycle performed when cabinet is switched on.  Visual display of SAFE conditions. Pre-warning before actual alarm conditions are reached (visual and acoustic alarms)  Soft touch control with keys for standard service utilities. Interconnected UV and fluorescent lights.  Microprocessor equipped with analogical watch dog. Default utilities  UV lamp on back wall. Controlled by control panel with timer for delayed start and cycle duration (max 1h)  Two power sockets (Shucko/Europlug standard). Other socket standards are available as options Optional utilities  Compressed air/vacuum tap. Installs on the right wall.  Combustible gas tap with solenoid safety valve. Installs on the right wall.  HPV adapter kit (inlet camlock on left wall and outlet camlock connector on transition adapter)  Additional sockets and sockets standards (max power overall 3Amperes)  Passive and active transition adapters or thimble for ducting Technical Features S@femate EZ Series
+
+Model 1.2 1.8
+
+Part No. LDK4000 (solid w/s) LDK4001 (perforated w/s)
+
+LDK6000 (solid w/s) LDK6001 (perforated w/s) Overall dimensions (lxwxh) mm 1380x795x1450 1990x795x1450
+
+Usefull dimensions (lxwxh) mm 1230x600x700 1840x600x700
+
+Weight kg 256 360 Front barrier air speed ≥ 0.5mt/sec Aperture protection Factor (Apf) ≥ 1.5 x 10 5
+
+Front aperture mm 200 Cleanability Index CC grade Light intensity on work surface > 900 lux Work surface displacement (vibration) <0.005mm RMS between 20Hz and 20,000Hz
+
+Power supply AC 230V, 50/60Hz These Microbiological Safety Cabinets, are manufactured according to EN12469:2000
+
+EUROCLONE S.p.A
+

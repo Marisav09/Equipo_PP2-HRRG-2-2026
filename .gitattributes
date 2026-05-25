@@ -1,0 +1,4 @@
+data/raw/drager_vn500_manual_usuario_vn500_es.pdf filter=lfs diff=lfs merge=lfs -text
+data/raw/ventilador_crossvent_manual_de_servicio_crossvent_biomed_devices_crossvent_4.pdf filter=lfs diff=lfs merge=lfs -text
+data/raw/ventilador_leistung_luft3_6_nivel_3_terapia_fallas_frecuentes_presion_1.pdf filter=lfs diff=lfs merge=lfs -text
+data/raw/ventilador_maquet_servo_i_maquet_servo_i_service_manual_2_of_2.pdf filter=lfs diff=lfs merge=lfs -text

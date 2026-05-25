@@ -1,0 +1,5760 @@
+# Página 1
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 i
+
+Convenciones tipográficas
+
+Ilustraciones
+
+Las ilustraciones de productos y el contenido de la pantalla en este documento puede diferir de los productos reales dependiendo de la configuración y el diseño.
+
+Utilización de términos
+
+Dräger utiliza el término "accesorios" no solo para accesorios en el sentido de la norma IEC 60601-1, sino también para consumibles, piezas desmontables y piezas adjuntas.
+
+Marcas registradas
+
+Marcas comerciales propiedad de terceros fabricantes
+
+1 Los números consecutivos indican pasos de una acción y el número "1" representa una nueva secuencia de acciones.
+
+ Las listas con puntos indican acciones indivi- duales o diferentes opciones para una acción.
+
+– Los guiones indican una lista de datos, opcio- nes u objetos.
+
+(A) Las letras dentro de paréntesis se refieren a elementos de la ilustración relacionada.
+
+A Las letras en las ilustraciones denotan elemen- tos a los que se hace referencia en el texto.
+
+> El símbolo "mayor que" indica la ruta de nave- gación en la ventana de diálogo.
+
+El texto en negrita y cursiva indica etiquetas en el dispositivo y textos visualizados en la panta- lla.
+
+Marca registrada Propietario de marca comercial
+
+Actichlor Ecolab USA
+
+Oxycide Ecolab USA
+
+Adobe Reader Adobe Corporation
+
+Klorsept 17 Medentech
+
+Peridox RTU Bio Med Protect
+
+Windows Microsoft Corporation
+
+Windows Vista
+
+Pentium Intel Corporation
+
+Dismozon pur BODE Chemie
+
+
+
+# Página 2
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Para su seguridad y la de sus pacientes
+
+2 Instrucciones de uso JM-105
+
+Información general de seguridad
+
+Las siguientes indicaciones de ADVERTENCIA y PRECAUCIÓN se aplican al funcionamiento general del dispositivo médico.
+
+Las indicaciones de ADVERTENCIA y PRECAUCIÓN específicas de subsistemas o características particulares del dispositivo médico aparecen en las respectivas secciones de estas instrucciones de uso o en las instrucciones de uso de otro producto usado con este dispositivo médico.
+
+Siga estrictamente estas instrucciones de uso
+
+Mantenimiento
+
+Servicio técnico
+
+ADVERTENCIA
+
+Riesgo de funcionamiento incorrecto y de uso incorrecto
+
+Cualquier forma de utilización del dispositivo médico implica la perfecta comprensión y el estricto seguimiento de todas las secciones de estas instrucciones de uso. El dispositivo médico tiene que ser utilizado únicamente para los propósitos especificados en Uso pre- visto en la página 12 y en combinación con una monitorización de paciente apropiada (consultar página 4).
+
+Observar estrictamente todas las indicacio- nes de ADVERTENCIA y PRECAUCIÓN que aparecen en estas instrucciones de uso, así como todas las indicaciones que figuran en las etiquetas del dispositivo médico. El incumplimiento de estas indicaciones informativas de seguridad constituye un uso incoherente del dispositivo médico con res- pecto a su uso previsto.
+
+ADVERTENCIA
+
+Riesgo de fallo del dispositivo médico y lesio- nes en el paciente
+
+El dispositivo médico tiene que ser inspeccio- nado y mantenido regularmente por personal de servicio técnico. La reparación y el mante- nimiento complejo realizados en el disposi- tivo médico deben ser realizados por personal de servicio técnico especializado.
+
+Si no se cumple lo arriba indicado, pueden producirse fallos en el dispositivo médico y lesiones en el paciente. Observe el capítulo "Servicio técnico".
+
+Dräger recomienda que se cierre un contrato de mantenimiento con DrägerService y que todas las reparaciones sean realizadas por DrägerService. Para el mantenimiento, Dräger recomienda la utilización de piezas de repuesto auténticas de Dräger.
+
+ADVERTENCIA
+
+Riesgo si el servicio técnico no se realiza con regularidad
+
+Si no se realizan labores de servicio técnico con regularidad, podrían producirse fallos de funcionamiento, que a su vez pueden ser cau- sa de lesiones personales y daños materiales.
+
+Realizar el servicio técnico de acuerdo con el capítulo "Servicio técnico".
+
+
+
+# Página 3
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 3
+
+Para su seguridad y la de sus pacientes
+
+Dispositivos conectados
+
+No usar en zonas con peligro de explosión
+
+Conexión segura a otros equipos eléctricos
+
+Conexión a otros dispositivos
+
+Si una combinaciones de dispositivos no está aprobada por Dräger, el funcionamiento correcto de los dispositivos puede verse perjudicado.
+
+El operario debe asegurar que la combinación de dispositivos cumpla las normas aplicables.
+
+Observe estrictamente las instrucciones de uso y de montaje de todos los dispositivos conectados.
+
+Seguridad del paciente
+
+El diseño del dispositivo médico, la documentación que lo acompaña y las etiquetas que aparecen en él se basan en la suposición de que la adquisición y la utilización del dispositivo médico están restringidas a personas familiarizadas con las características inherentes del dispositivo médico.
+
+Las instrucciones y las indicaciones de ADVERTENCIA y PRECAUCIÓN están limitadas en gran parte a aquellas específicas del dispositivo médico Dräger.
+
+Las instrucciones de uso no contienen ninguna información sobre los siguientes aspectos:
+
+– Riesgos que son obvios para los usuarios
+
+– Consecuencias evidentes de un uso inapropiado del dispositivo médico
+
+– Efectos potencialmente negativos en pacientes con diferentes enfermedades subyacentes
+
+La modificación o el uso inadecuado del dispositivo médico pueden ser peligrosos.
+
+ADVERTENCIA
+
+Riesgo de descarga eléctrica y de mal funcio- namiento del dispositivo
+
+Los dispositivos o combinaciones de disposi- tivos conectados que no cumplan los requisi- tos mencionados en estas instrucciones de uso pueden afectar al correcto funciona- miento del dispositivo médico y provocar una descarga eléctrica. Antes de poner en funcio- namiento el dispositivo médico, cumplir las instrucciones de uso de todos los dispositi- vos o combinaciones de dispositivos conec- tados.
+
+ADVERTENCIA
+
+Riesgo de incendio
+
+El dispositivo médico no ha sido aprobado para utilizarse en áreas donde exista la posibi- lidad de que se generen mezclas de gas explo- sivas o combustibles.
+
+PRECAUCIÓN
+
+Riesgo de lesiones para el paciente
+
+Las conexiones eléctricas a dispositivos no indi- cados en estas instrucciones de uso o de montaje deberán realizarse exclusivamente cuando hayan sido aprobadas por cada fabricante corres- pondiente.
+
+
+
+# Página 4
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Para su seguridad y la de sus pacientes
+
+4 Instrucciones de uso JM-105
+
+Monitorización del paciente
+
+El usuario del dispositivo médico es responsable de la elección apropiada de un sistema de monitorización de paciente, que proporcione información adecuada sobre el funcionamiento del dispositivo médico y sobre la condición del paciente.
+
+La seguridad del paciente se puede garantizar mediante una serie de medios que van desde la vigilancia electrónica del funcionamiento del dispositivo médico y de la condición del paciente, hasta la observación directa de señales clínicas.
+
+La responsabilidad respecto a la elección del mejor nivel de monitorización del paciente recae exclusivamente en el usuario del dispositivo médico.
+
+Compatibilidad electromagnética (CEM)
+
+Los equipos electromédicos están sujetos a medidas de prevención especiales relativas a la compatibilidad electromagnética. Durante la instalación, y antes de la puesta en marcha inicial, seguir la información de la sección: "Declaración sobre compatibilidad electromagnética (CEM)" (página 105).
+
+Este dispositivo puede verse afectado por otros equipos eléctricos.
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+No tomar decisiones terapéuticas basadas única- mente en valores medidos individualmente y parámetros de monitorización.
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+El dispositivo no ha sido diseñado como un dispositivo de detección independiente para el diagnóstico de hiperbilirrubinemia. Se uti- liza como un dispositivo de detección con otras señales clínicas y mediciones de labora- torio.
+
+ADVERTENCIA
+
+Riesgo debido a descargas electrostáticas
+
+Pueden producirse fallos de funcionamiento que pongan en peligro al paciente si no se to- man medidas de protección frente a descar- gas electrostáticas (ESD) en las siguientes si- tuaciones: – Al tocar clavijas de conectores que llevan el símbolo de advertencia de ESD. – Al establecer conexiones con estos conec- tores.
+
+Para evitar fallos de funcionamiento, observe las siguientes medidas y proporcione la for- mación necesaria al personal relevante: – Observe las medidas de protección contra ESD. Entre estas medidas se pueden in- cluir: el uso de vestimenta y calzado an- tiestáticos, tocar una clavija de ecualiza- ción de potencial antes y durante la cone- xión, o el uso de guantes antiestáticos y de aislamiento eléctrico. – Observe los requisitos para el entorno electromagnético. Observe la siguiente sección: "Declaración sobre compatibili- dad electromagnética (CEM)" (página 105).
+
+
+
+# Página 5
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 5
+
+Para su seguridad y la de sus pacientes
+
+Almacenamiento de las instrucciones de uso
+
+Formación
+
+La formación para usuarios es puesta a disposición por parte del responsable de la organización Dräger (ver www.draeger.com).
+
+Servicio técnico
+
+ADVERTENCIA
+
+Riesgo debido a perturbaciones electromag- néticas
+
+Los dispositivos de comunicación inalám- brica (por ejemplo, teléfonos móviles) y equi- pos médicos eléctricos (como desfibriladores, dispositivos electroquirúrgi- cos) emiten radiación electromagnética. Cuando se usa este tipo de equipos dema- siado cerca de este dispositivo o de sus cables, la integridad funcional del dispositivo puede verse afectada por perturbaciones electromagnéticas. Como consecuencia, el paciente puede correr peligro.
+
+Mantener una distancia de al menos 0,3 m (1,0 pies) entre este dispositivo y los equipos de comunicación inalámbricas para garantizar que se satisface el funcionamiento fundamen- tal del dispositivo.
+
+Conservar una distancia adecuada entre este dispositivo y cualquier otro equipo eléctrico médico.
+
+PRECAUCIÓN
+
+Riesgo de un uso incorrecto
+
+Las instrucciones de uso deben ser guardadas en un lugar accesible para el usuario.
+
+ADVERTENCIA
+
+Riesgo si el servicio técnico no se realiza con regularidad
+
+Si no se realizan labores de servicio técnico con regularidad, podrían producirse fallos de funcionamiento, que a su vez pueden ser cau- sa de lesiones personales y daños materiales.
+
+Realizar el servicio técnico de acuerdo con el capítulo "Servicio técnico".
+
+
+
+# Página 6
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Para su seguridad y la de sus pacientes
+
+6 Instrucciones de uso JM-105
+
+Grupos destinatarios
+
+Deberes de la entidad explotadora
+
+Las tareas descritas en este documento especifican los requisitos que ha de cumplir cada grupo destinatario.
+
+La entidad explotadora de este producto debe asegurarse de lo siguiente:
+
+– El grupo destinatario tiene las cualificaciones necesarias (p. ej., se ha sometido a una formación especializada o ha adquirido conocimientos especializados mediante la experiencia profesional).
+
+– El grupo destinatario ha sido formado para realizar la tarea.
+
+– El grupo destinatario ha leído y comprendido los capítulos requeridos para realizar la tarea.
+
+Descripción de los grupos destinatarios
+
+Los grupos destinatarios solo pueden realizar las siguientes tareas si cumplen con los requisitos correspondientes.
+
+Usuario
+
+Personal de reprocesamiento
+
+Personal de servicio técnico
+
+Dräger recomienda formalizar un contrato de mantenimiento con  DrägerService.
+
+Tarea Requisito
+
+Uso del producto de acuerdo con el uso previsto
+
+Conocimientos médicos especializados sobre neo- natología
+
+Uso del producto de acuerdo con el uso previsto
+
+Conocimientos médicos especializados sobre el uso del producto
+
+Tarea Requisito
+
+Reprocesamiento Conocimientos especiali- zados sobre el reprocesa- miento de dispositivos mé- dicos
+
+Tarea Requisito
+
+Instalación Conocimientos especiali- zados sobre ingeniería eléctrica y mecánica
+
+Experiencia en el servicio técnico de dispositivos mé- dicos
+
+Tareas de servicio técnico básicas (ins- pección, manteni- miento de acuerdo con el capítulo "Mantenimiento")
+
+
+
+# Página 7
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 7
+
+Para su seguridad y la de sus pacientes
+
+Precauciones específicas del producto
+
+Precauciones eléctricas
+
+ADVERTENCIA
+
+Riesgo de incendio, descarga eléctrica o daños en el equipo
+
+El uso de una docking station o adaptador de CA que no sea el suministrado con el disposi- tivo podría dañar el dispositivo.
+
+Usar solamente la docking station JM-A33 y el adaptador de CA JM-A32 con el disposi- tivo.
+
+ADVERTENCIA
+
+Riesgo de incendio, descarga eléctrica o daños en el equipo
+
+La conexión a una fuente de alimentación eléctrica sin una puesta a tierra protectora podría dañar el dispositivo.
+
+Solo conecte el dispositivo a una fuente de ali- mentación eléctrica con una puesta a tierra protectora.
+
+ADVERTENCIA
+
+Riesgo de incendio, descarga eléctrica o daños en el equipo
+
+Si se tira del cable de alimentación eléctrica, éste podría resultar dañado y provocar incen- dio o descarga eléctrica.
+
+Al desconectar el cable de alimentación eléc- trica de CA de una fuente de alimentación eléctrica o del adaptador de CA, sujetarlo por el extremo del enchufe.
+
+ADVERTENCIA
+
+Riesgo de incendio
+
+Se pueden acumular polvo o agua en el enchufe del cable de alimentación eléctrica.
+
+Desconecte el cable de alimentación eléctrica cuando no se utilice o no se cargue el dispo- sitivo durante un tiempo prolongado.
+
+ADVERTENCIA
+
+Riesgo de descarga eléctrica
+
+Tocar el cable de alimentación eléctrica de CA con las manos mojadas puede causar una descarga eléctrica.
+
+No conecte o desconecte el cable de alimenta- ción eléctrica de CA con las manos mojadas.
+
+ADVERTENCIA
+
+Riesgo de descarga eléctrica o de fallo del dis- positivo
+
+La penetración de objetos de metal puede dañar al dispositivo o la docking station, pro- vocando el fallo del dispositivo, lo cual puede poner en peligro al paciente.
+
+No permita que objetos de metal penetren en el dispositivo o en la docking station.
+
+ADVERTENCIA
+
+Riesgo de incendio
+
+El funcionamiento del dispositivo y de sus accesorios puede provocar un incendio si están dañados.
+
+No utilizar el dispositivo o sus accesorios si alguno de ellos estuviera dañado o si se pro- dujera humo o un olor extraño.
+
+
+
+# Página 8
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Para su seguridad y la de sus pacientes
+
+8 Instrucciones de uso JM-105
+
+Precauciones generales
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+Una luz ambiente intensa, las interferencias electromagnéticas y los teléfonos móviles pueden interferir con la medición precisa de datos.
+
+No utilice el dispositivo cuando haya una luz ambiente intensa, o cerca de dispositivos electrónicos o teléfonos móviles.
+
+ADVERTENCIA
+
+Riesgo debido a modificaciones
+
+Las modificaciones del producto pueden pro- ducir fallos de funcionamiento y riesgos im- previstos. Esto podría provocar lesiones en el paciente o el usuario, o daños materiales.
+
+No modifique este producto.
+
+ADVERTENCIA
+
+Riesgo de lesión
+
+Utilizar el dispositivo mientras la sonda está orientada hacia los ojos puede provocar daños oculares.
+
+No pulse la sonda de medición cuando está orientada hacia los ojos.
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+Las alteraciones patológicas o de otro tipo de la piel que afecten a la difusión o absorción de la luz podrían provocar mediciones de TcB incorrectas.
+
+No realice mediciones en pacientes con icteri- cia temprana e ictericia patológica.
+
+No realice mediciones cuando las enfermeda- des cutáneas puedan alterar la suposición hecha con respecto a la difusión y absorción de la luz.
+
+Utilice el dispositivo sólo en la piel sana del paciente. No realice mediciones en las marcas de nacimiento ni en las zonas velludas. Evite las áreas de grosor que, en opinión del médico, puedan impedir el uso del medidor de TcB o interferir con él.
+
+ADVERTENCIA
+
+Riesgo de terapia retrasada
+
+El uso del dispositivo sin comprobar la exac- titud de las mediciones podría provocar medi- ciones incorrectas.
+
+Para comprobar la fiabilidad de medición del sistema, compare el valor de bilirrubina trans- cutánea (TcB) determinado por el dispositivo con la bilirrubina total en suero (TSB) determi- nada a partir de muestras de sangre. Siga las directrices del hospital para determinar la fre- cuencia de las comprobaciones (p. ej., des- pués de reparar o calibrar el JM-105 o el equipo de laboratorio de TSB, o tras un cam- bio en los procesos clínicos).
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+El dispositivo o la docking station podrían volcar o caerse.
+
+No coloque el dispositivo en una superficie ines- table o inclinada.
+
+
+
+# Página 9
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 9
+
+Para su seguridad y la de sus pacientes
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+No deje caer el dispositivo ni coloque objetos pesados sobre él.
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+El dispositivo no es impermeable ni a prueba de líquidos.
+
+No exponga el dispositivo a lluvia, agua, sangre ni a otros líquidos.
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+Una vibración excesiva o impactos podrían dañar el dispositivo.
+
+Maneje el dispositivo con cuidado y evite impac- tos o vibraciones excesivas.
+
+NOTA
+
+Asegúrese de que el dispositivo esté colocado cerca de una fuente de alimentación eléctrica de CA. Asegúrese también de que el cable de alimen- tación eléctrica de CA se pueda conectar y desco- nectar con facilidad.
+
+
+
+# Página 10
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Para su seguridad y la de sus pacientes
+
+10 Instrucciones de uso JM-105
+
+Precauciones de almacenamiento y transporte
+
+Restricciones de uso
+
+Accesorios
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+No almacene el dispositivo en áreas donde la luz solar directa, presión, temperatura, humedad, ventilación, polvo, campos magnéticos potentes o atmósferas salinas o sulfurosas afecten al dispo- sitivo.
+
+No almacene el dispositivo donde pueda estar expuesto al agua.
+
+No almacene el dispositivo en áreas donde se almacenen productos químicos o se emita gas.
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+El dispositivo o la docking station podrían volcar o caerse.
+
+No almacene el dispositivo sobre una superficie inestable o inclinada o una superficie sujeta a vibraciones o choques físicos.
+
+PRECAUCIÓN
+
+Riesgo de daños en el equipo
+
+Evite las vibraciones y choques físicos durante el transporte.
+
+NOTA
+
+Limpie el dispositivo y los accesorios exhaustiva- mente antes de almacenarlos.
+
+PRECAUCIÓN
+
+Dispositivo concebido solamente para el uso en centros de atención sanitaria y exclusivamente por personas con una formación específica y experiencia en su uso.
+
+ADVERTENCIA
+
+Riesgo debido a accesorios incompatibles
+
+El uso de accesorios incompatibles puede afectar negativamente a la integridad funcio- nal del producto. Como consecuencia, po- drían producirse lesiones personales y daños materiales.
+
+Utilice solamente accesorios compatibles. Los accesorios que son compatibles con este producto se indican en la lista de accesorios suministrada con él.
+
+
+
+# Página 11
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Aplicación
+
+12 Instrucciones de uso JM-105
+
+Uso previsto
+
+El Bilirrubinómetro es un medidor de bilirrubina transcutánea no invasivo. Mide el color amarillento del tejido subcutáneo en recién nacidos. La unidad ofrece una medición digital visual que se corresponde con la bilirrubina en el suero en recién nacidos.
+
+El dispositivo ha sido diseñado para ser utilizado en hospitales o en consultorios médicos bajo la supervisión de un médico o por indicación médica. Éste ayuda a los médicos a monitorizar a recién nacidos. La unidad es un dispositivo para la detección de la hiperbilirrubinemia neonatal en las primeras etapas. Para el diagnóstico y las decisiones de terapia, los datos de medición proporcionados por el dispositivo se deben utilizar de forma conjunta con otros síntomas clínicos y mediciones de laboratorio.
+
+Los recién nacidos, cuyos resultados de la prueba del Bilirrubinómetro den indicios de hiperbilirrubinemia, deben ser examinados por los médicos para tratar de forma adecuada al paciente. Antes de determinar el tratamiento, los niveles de bilirrubina específicos de pacientes neonatales deben confirmarse por otros métodos, como la bilirrubina en el suero.
+
+El Bilirrubinómetro no está indicado para el uso doméstico.
+
+El JM-105 es un dispositivo médico que requiere prescripción médica.
+
+El JM-105 solamente se debe utilizar para realizar mediciones en el esternón para aplicaciones en consultorio médico.
+
+Indicaciones/contraindicaciones
+
+Indicaciones
+
+El Bilirrubinómetro está indicado para el uso en pacientes neonatales nacidos con   24 semanas de gestación, que no han recibido ninguna exanguinotransfusión. El dispositivo está indicado para el uso antes, durante y después del tratamiento de fototerapia.
+
+Contraindicaciones/limitaciones
+
+El Bilirrubinómetro no está indicado como dispositivo de diagnóstico. Se trata de un dispositivo para la detección de la hiperbilirrubinemia neonatal en la primera etapa que se deberá usar conjuntamente con otros síntomas clínicos y mediciones de laboratorio para el diagnóstico y la toma de decisiones de terapia.
+
+No utilizar este dispositivo en bebés con ictericia patológica. Si existe alguna posibilidad de que el bebé sufra de ictericia patológica, como resultado de un grupo sanguíneo incompatible o ictericia hemolítica, debe medirse la bilirrubina total en el suero.
+
+No utilice este dispositivo en pacientes con hidropesía fetal, malformaciones congénitas mayores, enfermedades, alteraciones o grosor de
+
+
+
+# Página 12
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 13
+
+Aplicación
+
+la piel que, en opinión del médico, puedan impedir el uso del medidor de TcB o interferir con él (p. ej., infecciones cutáneas, púrpura, etc.).
+
+Limitaciones (durante la fototerapia)
+
+Antes de comenzar las mediciones, asegúrese de que todas las lámparas de fototerapia estén apagadas.
+
+Limitaciones (uso en consultorio médico)
+
+Usar solo en bebés de máximo 14 días.
+
+Tener en cuenta que el funcionamiento en los consultorios médicos puede variar del funcionamiento en los hospitales.
+
+Punto de medición
+
+Habitualmente, los médicos miden la TCB en el esternón o en la frente, o en ambos sitios. Algunos estudios indican que el esternón es más exacto que la frente en los bebés a término y cercanos a término [17, 18]. Algunos estudios muestran que la frente tenía una mayor correlación con la TSB que el esternón. En otros estudios que observan la concordancia entre las medidas de TCB y TSB, no se ha indicado el lugar de medición de la TCB [19, 20].
+
+Por tanto, el lugar de medición (frente o esternón) quedará a discreción del médico en el entorno del hospital (evítense las marcas de nacimiento y las zonas velludas). Sin embargo, para el consultorio médico solo se recomiendan las mediciones en el esternón, ya que existe la posibilidad de que la diferencia sea más pronunciada en los bebés que han sido expuestos a la luz solar.
+
+
+
+# Página 13
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Visión general
+
+16 Instrucciones de uso JM-105
+
+Vistas del dispositivo
+
+Bilirrubinómetro JM-105 - parte frontal Bilirrubinómetro JM-105 - parte trasera
+
+A Botón de encendido B Sonda de medición C Indicador/panel táctil D Lámpara  READY
+
+002
+
+A
+
+B
+
+C
+
+D
+
+A Botón  LOCK  de la pantalla B Contacto de carga C Puerto de comunicación D Cubierta de la batería E Lector de código de barras
+
+003
+
+A
+
+B
+
+C
+
+D
+
+E
+
+
+
+# Página 14
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 17
+
+Visión general
+
+Docking station JM-A33 - parte frontal Docking station JM-A33 - parte trasera
+
+A Cubierta del comprobador B Valores de comprobador estándar C Comprobador de lectura D Ventana de comunicación E Conector jack del cargador
+
+004
+
+A
+
+B
+
+C D
+
+E
+
+A Conector USB B Jack DC
+
+005
+
+A
+
+B
+
+
+
+# Página 15
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Visión general
+
+18 Instrucciones de uso JM-105
+
+Adaptador de AC JM-A32
+
+006
+
+A
+
+B
+
+C
+
+D
+
+A Enchufe del cable de alimentación AC B Cable de alimentación AC C Adaptador AC D Enchufe DC
+
+
+
+# Página 16
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 19
+
+Visión general
+
+Dispositivos externos
+
+Combinaciones de dispositivos válidas
+
+El JM-105 solo se puede combinar con la docking station JM-A33 y el adaptador de AC JM-A32 para medir la bilirrubina. También se puede conectar a un ordenador para transmitir datos del dispositivo a un sistema de historiales médicos electrónicos.
+
+Interfaces
+
+El puerto USB ofrece una conexión para transmitir datos a sistemas de historiales médicos electrónicos. También ofrece un método alternativo para cargar el dispositivo.
+
+Software
+
+Software del dispositivo
+
+El JM-105 es un medidor de bilirrubina transcutánea no invasivo. Utiliza datos digitales generados al convertir la cantidad de luz reflejada del tejido humano. El dispositivo muestra los resultados en el indicador LCD. El software está instalado en el dispositivo ROM. El dispositivo se vuelve operativo cuando se activa la alimentación eléctrica de las baterías y se emite la señal de activación.
+
+Software de transmisión de datos
+
+El software de transmisión de datos, SW JM-S1w permite al JM-105 transmitir datos de medición a un ordenador y enviarlos a un sistema de historiales médicos electrónicos (EHR). También permite guardar los datos en un archivo CSV.
+
+
+
+# Página 17
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Visión general
+
+20 Instrucciones de uso JM-105
+
+Abreviaturas
+
+Abreviatura Significado
+
+AC Corriente alterna
+
+AP Componente aplicado
+
+CD Disco compacto
+
+CSA Asociación Canadiense de Norma- lización
+
+DC Corriente continua
+
+DVD Disco de video digital
+
+EHR Historial médico electrónico
+
+CEM Compatibilidad electromagnética
+
+ESD Descarga electrostática
+
+GMDN Nomenclatura global de productos sanitarios
+
+CEI Comisión Electrotécnica Interna- cional
+
+LCD Indicador de cristal líquido
+
+PC Ordenador personal
+
+HR Humedad relativa
+
+ROM Memoria de solo lectura
+
+UMDNS Sistema de nomenclatura universal de los productos sanitarios
+
+USB Bus serie universal
+
+
+
+# Página 18
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 21
+
+Visión general
+
+Símbolos
+
+Símbolos en el dispositivo
+
+Advertencia
+
+Precaución
+
+Grado de protección contra des- carga eléctrica: tipo BF
+
+Consultar las instrucciones de uso
+
+Alimentación eléctrica AC
+
+Alimentación eléctrica DC
+
+No eliminar con los desechos comunes
+
+Fecha de fabricación
+
+Puerto USB
+
+```metadata
+pagina: 18
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P18_I0.png
+contexto: 
+```
+
+![Imagen página 18 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P18_I0.png)
+
+```metadata
+pagina: 18
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P18_I1.png
+contexto: 
+```
+
+![Imagen página 18 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P18_I1.png)
+
+En espera u on/off
+
+Entrada
+
+Terminal de salida de circuito
+
+
+
+# Página 19
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Visión general
+
+22 Instrucciones de uso JM-105
+
+Símbolos en la pantalla táctil
+
+Batería recargable
+
+Indicador de prioridad: muestra que el bebé tiene un nivel alto de bilirrubina y podría necesitar un examen más atento.
+
+Bloqueo
+
+Indicador de fototerapia: muestra que el bebé ha sido tratado con fototerapia
+
+Menú
+
+Teclado
+
+Escanear
+
+Enviar a gráfico
+
+Eliminar
+
+Eliminar
+
+…
+
+DEL ×
+
+DEL
+
+VOLVER a la pantalla anterior
+
+EDITAR el elemento seleccionado
+
+BORRAR la entrada
+
+Continuar con el BEBÉ SIGUIENTE
+
+ID de enfermera
+
+ID de bebé
+
+Valor L (largo)
+
+Valor S (corto)
+
+Valor Delta (diferencia entre valor largo y valor corto)
+
+BAC K
+
+E DIT
+
+C L E AR
+
+N E X T B A B Y
+
+N
+
+B
+
+L
+
+S
+
+
+
+# Página 20
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 23
+
+Visión general
+
+Símbolos en el ordenador
+
+CANCELAR la entrada o detener la tarea
+
+Confirmar la entrada
+
+Ocupado
+
+JM-S1w
+
+Error de JM-S1w
+
+CANCEL
+
+OK
+
+```metadata
+pagina: 20
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P20_I0.png
+contexto: 
+```
+
+![Imagen página 20 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P20_I0.png)
+
+```metadata
+pagina: 20
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P20_I1.png
+contexto: 
+```
+
+![Imagen página 20 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P20_I1.png)
+
+```metadata
+pagina: 20
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P20_I2.png
+contexto: 
+```
+
+![Imagen página 20 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P20_I2.png)
+
+
+
+# Página 21
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Concepto de funcionamiento
+
+26 Instrucciones de uso JM-105
+
+Diseño de la pantalla del dispositivo
+
+Pantalla principal
+
+La pantalla principal contiene estos campos.
+
+Pantalla  MENU
+
+La pantalla del  MENU  contiene estos botones.
+
+A Fecha
+
+B Hora
+
+C Selecciones disponibles
+
+– MEDIR
+
+– COMPROB
+
+– HISTOR.
+
+– BORR DAT
+
+D OK
+
+E Flechas
+
+F MENU
+
+007
+
+OK
+
+2012/08/01 10:00
+
+MENU
+
+A B
+
+C
+
+D E F
+
+E
+
+MEDIR
+
+COMPROB
+
+HISTOR.
+
+BORR DAT
+
+A Fecha
+
+B Hora
+
+C Selecciones disponibles
+
+– MEDIR
+
+– COMPROB
+
+– HISTOR.
+
+– BORR DAT
+
+– CONFIG
+
+D OK
+
+E Flechas
+
+008
+
+BACK OK
+
+2012/08/01 10:00 A
+
+C
+
+D E
+
+E
+
+B
+
+MEDIR
+
+COMPROB
+
+HISTOR.
+
+BORR DAT
+
+
+
+# Página 22
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 27
+
+Concepto de funcionamiento
+
+Pantalla de datos medidos
+
+La pantalla de datos medidos contiene estos campos.
+
+Pantalla de determinación del promedio
+
+La pantalla de determinación del promedio contiene estos campos.
+
+A NURSE ID  (ID de enfermera)
+
+B BABY ID  (ID de bebé)
+
+C Fecha de medición
+
+D Hora de medición
+
+E/ F Puntos - Significa que no se han establecido indicadores. Botón para empezar a ajustar los indi- cadores de prioridad o fototerapia.
+
+E Indicador de prioridad - Botón para mostrar que el bebé tiene un nivel alto de bilirrubina y podría necesitar un exa- men más atento.
+
+F Indicador de fototerapia - Botón para mostrar que el bebé ha sido tratado con fototerapia.
+
+G Enviar a gráfico electrónico
+
+046
+
+2012/08/01 10:00
+
+N ＊＊＊＊ 0001
+
+B BABY0002
+
+01/12 11:23AM 01/12 11:23AM 01/12 11:23AM
+
+2. 2 2. 4
+
+! 2. 3 mg/dL
+
+MENU OK
+
+DEL ×
+
+002/004
+
+…
+
+A B C D
+
+E F G
+
+A Bloqueo del indicador
+
+B Indicador de batería
+
+C Resultado de la medición
+
+D Pulse para continuar con el bebé siguiente
+
+E Número de mediciones para determinar el promedio
+
+F Capacidad de registro de datos
+
+G Número de mediciones almacenadas en el registro de datos
+
+H/ I Puntos - Significa que no se han establecido indicadores. Botón para empezar a ajustar los indi- cadores de prioridad o fototerapia.
+
+H Indicador de prioridad - Botón para mostrar que el bebé tiene un nivel alto de bilirrubina y podría necesitar un exa- men más atento.
+
+I Indicador de fototerapia - Botón para mostrar que el bebé ha sido tratado con fototerapia.
+
+043
+
+MENU
+
+CLEAR
+
+2012/08/01 10:00
+
+NE X T BABY
+
+N NURSE001
+
+B BABY0001
+
+004/100 AVE . 3 12. 4 12. 3
+
+!
+
+12.3 mg/dL
+
+B A
+
+C
+
+D
+
+K J I H
+
+G F E
+
+
+
+# Página 23
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Concepto de funcionamiento
+
+28 Instrucciones de uso JM-105
+
+Diseño de la pantalla del software de transmisión de datos
+
+Menú JM-S1w
+
+La pantalla de menú JM-S1w contiene estas selecciones:
+
+Pantalla Común
+
+La pantalla  Común  contiene estos campos.
+
+J BABY ID  (ID de bebé) (9 caracteres más si el ID tiene 10 o más caracteres).
+
+K NURSE ID  (ID de enfermera) (9 carac- teres más si el ID tiene 10 o más carac- teres).
+
+A Preferencias  - Abre el cuadro de diá- logo JM-S1w donde se ajustan las pre- ferencias.
+
+B Salir
+
+067
+
+```metadata
+pagina: 23
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P23_I0.png
+contexto: 
+```
+
+![Imagen página 23 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P23_I0.png)
+
+Preferencias
+
+Salir
+
+A
+
+B
+
+069
+
+```metadata
+pagina: 23
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P23_I1.png
+contexto: 
+```
+
+![Imagen página 23 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P23_I1.png)
+
+A B C D E
+
+F
+
+G H I
+
+A Enviar mensaje HL7  - Habilita/desha- bilita la comunicación con un sistema de historiales médicos electrónicos.
+
+B Reint. interv.  - Ajusta el tiempo de espera antes de reenviar datos des- pués de que se produzca un error.
+
+Selecciones disponibles: No reint 1 min 10 min 30 min
+
+C Guardar datos en PC  - Habilita/desha- bilita el almacenamiento de datos en archivos de texto CSV (valor separado por comas) en el ordenador.
+
+D Carpeta CSV  - Indica la carpeta selec- cionada en donde se guardará el archivo CSV.
+
+E Abrir  - Abre una ventana para seleccio- nar la carpeta CSV.
+
+F Puerto COM (Estación de acopl.)  - Muestra una lista de puertos COM dis- ponibles.
+
+G Permitir config.  - Compruebe si desea cambiar preferencias en alguna de las pantallas de preferencias.
+
+H OK  - Guarda las selecciones y cierra el diálogo.
+
+I CANCELAR  - Cancela la transacción.
+
+
+
+# Página 24
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 29
+
+Concepto de funcionamiento
+
+Pantalla Red
+
+La pantalla  Red  contiene estos campos.
+
+Pantalla  HL-7
+
+La pantalla  HL-7  contiene estos campos. A Direc. servidor  - Introduzca la direc- ción IPv4 o el nombre de host alfanu- mérico del servidor de historiales médicos electrónicos.
+
+Restricciones: No se puede utilizar proxy. Un ordenador en la red de área local (LAN) debe establecerse como destino.
+
+B Puerto serv.  - Introduzca el puerto de destino de comunicación en el servidor. El ajuste predeterminado es el puerto HL-7 (2575).
+
+C Permitir config.  - Compruebe si desea cambiar preferencias en alguna de las pantallas de preferencias.
+
+D OK  - Guarda las selecciones y cierra el diálogo.
+
+E CANCELAR  - Cancela la transacción.
+
+070
+
+```metadata
+pagina: 24
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P24_I0.png
+contexto: 
+```
+
+![Imagen página 24 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P24_I0.png)
+
+A
+
+B
+
+C D E
+
+A Versión HL7  - Seleccionar Ver. 2.3.1 o Ver. 2.5.1.
+
+B Estructura de mensaje  - JM-105 puede necesitar hasta 3 mediciones por ID de bebé. Seleccionar cómo JM-S1w debe manejar tales medicio- nes agrupadas.
+
+C Enviar 1 mensaje para 1 medición  - JM-S1w crea 1 mensaje para cada medición realizada. Si se han realizado 3 mediciones para una ID de bebé, entonces se crearán 3 mensajes.
+
+D Enviar 1 mensaje por bebé (hasta 3 mediciones)  - JM-S1w crea 1 mensaje para cada ID de bebé. Si se han reali- zado 3 mediciones para un ID de bebé, entonces de creará 1 mensaje conte- niendo las 3 mediciones. Está permitido realizar un máximo de 3 mediciones por bebé.
+
+E Enviar 1 mensaje con la medición más alta por bebé  - JM-S1w crea 1 mensaje conteniendo únicamente la medición más alta realizada para cada ID de bebé (máximo 3 mediciones por ID de bebé). Si el valor más alto se pro- duce para más de 1 medición, el men- saje contendrá la primera medición más alta registrada.
+
+071
+
+```metadata
+pagina: 24
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P24_I1.png
+contexto: 
+```
+
+![Imagen página 24 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P24_I1.png)
+
+A B C D E F G H I
+
+J K L
+
+M N O
+
+
+
+# Página 25
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Concepto de funcionamiento
+
+30 Instrucciones de uso JM-105
+
+Pantalla Editar mensaje pers.
+
+El diálogo  Editar mensaje pers.  aparece cuando se hace clic en el botón  Editar mensaje pers.  en la pantalla HL7. La pantalla  Editar mensaje pers. contiene estos campos.
+
+F Cambiar campo ORC - OBR  - Cuando se activa, cambia el pedido de envío de los campos ORC y OBR.
+
+G Cambiar AR - AE  - Cuando se activa, cambia AR y AE a mensajes enviados y recibidos.
+
+H Add ’0B’ before message  - Cuando se activa, añade OB al principio de mensa- jes enviados.
+
+I Usar mensaje pers.  - Habilita el uso de un mensaje personalizado. Cuando se activa, el botón " Editar mensaje pers. " está habilitado.
+
+Cuando se activa este botón, los ajus- tes de " Versión HL7 " y " Cambiar campo ORC - OBR " se ignoran.
+
+J Editar mensaje pers.  - Cuando está habilitado, hacer clic en este botón abre el cuadro de diálogo " Editar mensaje pers. ".
+
+K Registro de transmisión  - Abre el diá- logo del registro de transmisión. NOTA: Este campo solo es aplicable para la versión de JM-S1w 1.40 o supe- rior.
+
+L Centro de envío  - El usuario puede editar este campo según sea necesa- rio. NOTA: Este campo solo es aplicable para la versión de JM-S1w 1.40 o supe- rior.
+
+M Permitir config.  - Compruebe el botón de radio si desea cambiar preferencias en alguna de las pantallas de preferen- cias.
+
+N OK  - Guarda las selecciones y cierra el diálogo.
+
+O CANCELAR  - Cancela la transacción.
+
+A Lista de selección - Indica los campos disponibles para personalizar.
+
+B Insertar  - Inserta el campo seleccio- nado al final del mensaje actual o en el lugar donde se posicione el cursor.
+
+C OK  - Guarda el formato del mensaje personalizado y cierra el cuadro de diá- logo.
+
+D CANCELAR  - Cancela la transacción.
+
+072
+
+```metadata
+pagina: 25
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P25_I0.png
+contexto: 
+```
+
+![Imagen página 25 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P25_I0.png)
+
+A
+
+B C D
+
+
+
+# Página 26
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 31
+
+Concepto de funcionamiento
+
+Pantalla registro de transmisión
+
+El diálogo  Registro de transmisión  aparece cuando se hace clic en el botón  Registro de transmisión  en la pantalla HL7. La pantalla Registro de transmisión  contiene estos campos.
+
+076a
+
+JM-S1w
+
+Failed transmission data
+
+Successfull transmission data
+
+Allow changes. Delete All
+
+Transmission log
+
+Close
+
+Transmission Date/Time Date/Time 1 Value 1 Value 2
+
+2017/02/28/12:34:56
+
+: : : : : : : : : : : : :
+
+2017/02/28/12:34:56
+
+2017/02/28/12:00:00
+
+2017/02/28/12:00:00
+
+Date/Time 2
+
+2017/02/28/12:00:10
+
+2017/03/01/12:00:15
+
+JOHN DOE
+
+NURSE ID
+
+JOHN DOE
+
+NURSE_01
+
+BABY ID Instrument ID
+
+NURSE_01
+
+3501001
+
+3051000
+
+12.1
+
+12.3
+
+12.2
+
+12.4
+
+Value 3 Error Date/Time 2
+
+2017/02/28/12:00:20
+
+2017/03/01/12:01:00
+
+12.1
+
+12.2
+
+Transmission Date/Time Value 1 Value 2
+
+2017/02/28/12:34:56
+
+: : : : : : : : : :
+
+2017/02/28/12:34:56
+
+2017/02/28/12:00:00
+
+2017/02/28/12:00:00
+
+Date/Time 2
+
+2017/02/28/12:00:10
+
+2017/03/01/12:00:15
+
+JOHN DOE
+
+NURSE ID
+
+JOHN DOE
+
+NURSE_01
+
+BABY ID Instrument ID
+
+NURSE_01
+
+3501001
+
+3051000
+
+12.1
+
+12.3
+
+12.2
+
+12.4
+
+Value 3 Date/Time 2
+
+2017/02/28/12:00:20
+
+2017/03/01/12:01:00
+
+12.1
+
+12.2
+
+AE
+
+AR
+
+Retry Delete
+
+Retry Delete
+
+A
+
+B C D E F G H I J K L M N
+
+O B C D E F G H I J K
+
+P Q R
+
+A Datos de transmisión fallida  - Enu- mera todas las transmisiones que han fallado o contenían errores.
+
+B Fecha/Hora de transmisión  - Muestra la fecha y la hora de la transmisión.
+
+C ID de enfermero  - (Editable)
+
+D ID de bebé  - (Editable)
+
+E ID de instrumento  (ID de instrumento) -
+
+F Fecha/Hora1  - Muestra la fecha y la hora de la primera medición prome- diada.
+
+G Valor1  - Muestra el valor de la primera medición promediada.
+
+H Fecha/Hora2  - Muestra la fecha y la hora de la segunda medición prome- diada.
+
+I Valor2  - Muestra el valor de la segunda medición promediada.
+
+J Fecha/Hora3  - Muestra la fecha y la hora de la tercera medición prome- diada.
+
+K Valor3  - Muestra el valor de la tercera medición promediada.
+
+L Error  - Muestra el tipo de error. Si se hace clic sobre el error, aparece un mensaje emergente con detalles sobre el error.
+
+M Reintentar  - Intenta efectuar la trans- misión de nuevo.
+
+NOTA: Este capo se puede ocultar si el contenido de otros campos es largo.
+
+N Eliminar  - Elimina la transmisión erró- nea.
+
+NOTA: Este capo se puede ocultar si el contenido de otros campos es largo.
+
+O Datos de transmisión correcta  - Enu- mera todas las transmisiones realiza- das correctamente.
+
+P Permitir config.  - Compruebe si desea editar los campos o eliminar/reintentar las transmisiones.
+
+Q Eliminar todo  - Elimina todas las trans- misiones.
+
+R Cerrar  - Cierra el diálogo.
+
+
+
+# Página 27
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Concepto de funcionamiento
+
+32 Instrucciones de uso JM-105
+
+Pantalla del lector Código de barras
+
+La pantalla de lector de  Código de barras  contiene estos campos.
+
+074
+
+NOTA
+
+La pantalla de lector de  Código de barras  solo es aplicable al JM-S1w versión 1.30 o superior y requiere firmware de dispositivo 1.10 o superior.
+
+A Código 39 Comprobar dígito Desactivar  - deshabilita el dígito de control.
+
+B Código 39 Comprobar dígito Activar - habilita el dígito de control.
+
+C Código 39 conversión ASCII com- pleta Desactivar  - deshabilita la con- versión ASCII.
+
+D Código 39 conversión ASCII com- pleta Activar  - habilita la conversión ASCII.
+
+E Escribir  - aplica la selección de habili- tar o deshabilitar.
+
+F Leer ajuste actual  - muestra los ajus- tes actuales de código de barras.
+
+G Permitir config.  - Compruebe si desea cambiar preferencias en alguna de las pantallas de preferencias.
+
+H OK  - Cierra el diálogo.
+
+I CANCELAR  - Cierra el diálogo.
+
+```metadata
+pagina: 27
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P27_I0.png
+contexto: 
+```
+
+![Imagen página 27 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P27_I0.png)
+
+A B
+
+E F
+
+G H I
+
+C D
+
+
+
+# Página 28
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Montaje y preparación
+
+34 Instrucciones de uso JM-105
+
+Carga de la batería
+
+Cargar e inspeccionar el instrumento antes de utilizarlo.
+
+Al utilizar el instrumento por primera vez, asegurarse de que esté completamente cargado. Para mantener siempre la carga completa, colocar el instrumento en la unidad de carga cuando no se esté utilizando para mediciones. Cuando la carga de la batería es baja, el indicador de la batería parpadea.
+
+1 Antes de cargar el JM-105 por medio de un conector USB, asegúrese de que el puerto USB cumpla las siguientes especificaciones mínimas:
+
+– La conexión USB tiene que ser USB 2.0 o posterior.
+
+– La conexión USB debe suministrar 5 V, 500 mA o más potencia al JM-105.
+
+– La conexión USB debe haber cumplido las certificaciones de seguridad eléctrica para CE y UL.
+
+2 Enchufar el cable USB en el conector USB de la docking station.
+
+3 Enchufar el cable USB en un puerto USB de un ordenador.
+
+4 Colocar el dispositivo en la docking station. Asegúrese de que el indicador mire hacia delante.
+
+El dispositivo se carga en 2 horas. Se pueden realizar doscientas cincuenta mediciones con una batería nueva totalmente cargada.
+
+NOTA
+
+La potencia de la batería disminuye cuando el dis- positivo no se carga durante mucho tiempo. Ase- gúrese de que la batería sea cargada antes del uso.
+
+012
+
+NOTA
+
+Cuando el dispositivo está colocado en la docking station, se enciende la alimentación eléctrica y la lámpara  READY  se vuelve naranja. Al finalizar la carga, la lámpara  READY  se apaga.
+
+NOTA
+
+No conectar el JM-105 a concentradores USB ali- mentados por bus o autoalimentados que están conectados a un puerto USB de ordenador. No proporcionan suficiente potencia para cargar el JM-105. Es posible que el JM-105 no se cargue completamente o no se cargue en absoluto.
+
+011
+
+READY
+
+
+
+# Página 29
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 35
+
+Montaje y preparación
+
+Método de carga alternativo con un adaptador de CA (opcional)
+
+En lugar del cable USB se puede utilizar el adaptador de AC para cargar el dispositivo.
+
+1 Enchufar el cable de alimentación eléctrica en el adaptador de AC.
+
+2 Enchufar el adaptador de AC en el conector jack de DC de la docking station.
+
+3 Enchufar el cable de alimentación eléctrica a una fuente de AC apropiada.
+
+4 Colocar el dispositivo en la docking station. Asegúrese de que el indicador mire hacia delante.
+
+ADVERTENCIA
+
+Riesgo de incendio, descarga eléctrica o daños en el equipo
+
+El uso de una docking station o adaptador de CA que no sea el suministrado con el dis- positivo podría dañar el dispositivo.
+
+Usar solamente la docking station JM-A33 y el adaptador de CA JM-A32 con el dispositivo.
+
+009 010
+
+ADVERTENCIA
+
+Riesgo debido a una tensión de red incorrecta o a la falta de toma de tierra
+
+Si el dispositivo está conectado a una toma de corriente con una tensión de red incorrecta o sin toma de tierra, puede producirse una descarga eléctrica.
+
+Conectar el dispositivo solamente a tomas de corriente con una tensión de red correcta y una toma de tierra.
+
+NOTA
+
+Cuando el dispositivo está colocado en la docking station, se enciende la alimentación eléctrica y la lámpara  READY  se vuelve naranja. Al finalizar la carga, la lámpara  READY  se apaga.
+
+060 011
+
+READY
+
+
+
+# Página 30
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Montaje y preparación
+
+36 Instrucciones de uso JM-105
+
+Desembalaje del software de transmisión de datos
+
+El dispositivo JM-105 está acompañado de software de transmisión de datos. El software SW JM-S1w permite al ordenador recibir datos de mediciones de un JM-105 y enviarlos a un sistema de historiales médicos electrónicos (EHR). También permite guardar los datos en un archivo.
+
+Tenga en cuenta que este manual asume que el usuario está familiarizado con operaciones básicas de Windows.
+
+Contenido del paquete
+
+ CD-ROM de instalación del software de transmisión de datos del Bilirrubinómetro, SW JM-S1w
+
+ Cable USB
+
+NOTA
+
+Cuando la docking station está enchufada al adap- tador de AC y al puerto USB, el dispositivo recibe alimentación eléctrica del adaptador de AC.
+
+ADVERTENCIA
+
+Riesgo de incendio, descarga eléctrica o daños en el equipo
+
+La conexión a una fuente de alimentación eléctrica sin una puesta a tierra protectora podría dañar el dispositivo.
+
+Solo conecte el dispositivo a una fuente de ali- mentación eléctrica con una puesta a tierra protectora.
+
+
+
+# Página 31
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+38 Instrucciones de uso JM-105
+
+Encender y preajustar el dispositivo por primera vez
+
+Al encender el dispositivo por primera vez, se puede seleccionar el idioma del indicador y el formato de la fecha, así como ajustar la fecha y la hora.
+
+1 Pulsar el botón  POWER  y mantenerlo pulsado durante 1 s. A continuación aparecerá la pantalla de idioma.
+
+2 Seleccione el idioma del indicador pulsando el idioma deseado o mediante los botones ARRIBA/ABAJO. El idioma seleccionado se resalta.
+
+3 Pulsar  OK  para guardar la selección.
+
+4 Aparece la pantalla del formato de fecha.
+
+5 Seleccione el formato de fecha.
+
+6 Pulsar  OK  para guardar la selección.
+
+7 Aparece la pantalla de ajuste de fecha/hora.
+
+8 Ajuste la fecha y la hora pulsando el elemento que desea cambiar.
+
+9 Pulsar el botón  EDIT  (A).
+
+10 Para cambiar el valor, pulse las flechas ARRIBA/ABAJO.
+
+013
+
+READY
+
+014
+
+ENGLISH
+
+日本語
+
+中文
+
+言語
+
+OK
+
+2012/08/01 10:00
+
+015
+
+M/D/Y D/M/Y
+
+Y/M/D 言語
+
+BACK OK
+
+2012/08/01 10:00
+
+016
+
+EDIT OK
+
+A
+
+
+
+# Página 32
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 39
+
+Primeros pasos
+
+11 Pulsar  OK  para guardar la selección.
+
+12 Volver a pulsar  OK  cuando realice cambios. ABRIENDO  y la versión del software aparece en la pantalla.
+
+Configuración de Código 39 formato de código de barras
+
+1 Si utiliza el Código 39 formato de código de barras, ajuste las preferencias en el software de transmisión de datos (consulte Ajuste de preferencias - Código de barras en la página 50).
+
+Comprobación del formato de mensaje Fuera de rango
+
+1 Para comprobar el formato actual, pulsar el botón  MENU , en caso necesario.
+
+2 Pulsar el botón  CONFIG  o pulsar las flechas ARRIBA/ABAJO.
+
+3 Pulsar el botón  UNID . El dispositivo muestra los ajustes actuales como  HI:>20  o  HI:>340 .
+
+NOTA
+
+Requiere versión de firmware del dispositivo 1.10 o superior.
+
+
+
+# Página 33
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+40 Instrucciones de uso JM-105
+
+Comprobación antes del uso
+
+1 Encienda el dispositivo.
+
+2 Seleccionar  COMPROB .
+
+3 Pulsar  OK  para guardar la selección.
+
+4 Abra la cubierta del comprobador.
+
+5 Coloque la sonda de medición en posición perpendicular respecto al comprobador y empújela suavemente hasta que se produzca un destello.
+
+6 Revise los resultados de comprobación.
+
+– Valor L (valor medido de camino óptico largo)
+
+– Valor S (valor medido de camino óptico corto)
+
+– Valor Delta (diferencia entre los valores L y S)
+
+ADVERTENCIA
+
+Riesgo de terapia retrasada
+
+El uso del dispositivo sin comprobar la exac- titud de las mediciones podría provocar medi- ciones incorrectas.
+
+Para comprobar la fiabilidad de medición del sistema, compare el valor de bilirrubina trans- cutánea (TcB) determinado por el dispositivo con la bilirrubina total en suero (TSB) determi- nada a partir de muestras de sangre. Siga las directrices del hospital para determinar la fre- cuencia de las comprobaciones (p. ej., des- pués de reparar o calibrar el JM-105 o el equipo de laboratorio de TSB, o tras un cam- bio en los procesos clínicos).
+
+NOTA
+
+No toque la superficie del comprobador. Si la superficie del comprobador está sucia, límpiela con un paño suave humedecido en alcohol. Para secarla, frótela con un paño suave.
+
+018
+
+BACK OK
+
+2012/08/01 10:00
+
+MEDIR
+
+COMPROB
+
+HISTOR.
+
+BORR DAT
+
+NOTA
+
+No realice mediciones con el dispositivo inclinado sobre el comprobador.
+
+019
+
+READY
+
+020
+
+
+
+# Página 34
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 41
+
+Primeros pasos
+
+– Todos los valores deberían estar dentro de los rangos mostrados en la cubierta del comprobador.
+
+– Si hubiera algún valor fuera de rango, limpie el comprobador y la sonda. Repita la medición.
+
+7 Cierre la cubierta del comprobador.
+
+NOTA
+
+Si los valores están repetidamente fuera de rango, ponerse en contacto con DrägerService.
+
+NOTA
+
+Si no se ha realizado una comprobación del dispo- sitivo en el presente día, el mensaje  AVISO LUZ CHECK  aparecerá durante 3 s al encender el dis- positivo.
+
+Para eliminar el mensaje, compruebe el disposi- tivo.
+
+017 021
+
+MENU
+
+2012/08/01 10:00
+
+L 2. 4
+
+S 2. 2
+
+㸊 0. 2
+
+NOTA
+
+Si han pasado 12 meses o más desde la última calibración del dispositivo, el mensaje  AVISO CALIBRAR  aparecerá durante 3 s al encender el dispositivo.
+
+Para eliminar el mensaje, calibre el dispositivo.
+
+NOTA
+
+Se deberá comprobar la legibilidad de las etique- tas del producto antes de usarlo.
+
+
+
+# Página 35
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+42 Instrucciones de uso JM-105
+
+Software de transmisión de datos
+
+Después de que el usuario ajuste la  MEMOR. de JM-105 a  CONECT  y el dispositivo esté colocado en la docking station, este enviará datos a la docking station. A través del puerto USB, la docking station envía datos al software de transmisión de datos SW JM-S1w. El software envía datos a un sistema de historiales médicos
+
+electrónicos mediante el Protocolo de Aplicación para Intercambio de Datos Electrónicos en Entornos Sanitarios HL-7 utilizando TCP/IP. O envía un archivo CSV a una carpeta en el ordenador, como se especifica durante la configuración.
+
+Diagrama de bloques del sistema
+
+Notas sobre el uso
+
+ No se incluye ningún sistema operativo con este software.
+
+ El sistema operativo debe instalarse en el ordenador antes de poder instalar este software.
+
+ Al insertar el CD-ROM en la unidad CD-ROM, observar la orientación correcta del disco e insertarlo con cuidado.
+
+ Mantener el CD-ROM limpio y sin arañazos. Si la superficie grabada se ensucia o la superficie etiquetada se raya, puede producirse un error de lectura.
+
+ Evitar la exposición del CD-ROM a cambios bruscos de temperatura y condensación.
+
+ No dejar el CD-ROM en lugares donde esté expuesto a altas temperaturas causadas por luz solar directa o calefacciones.
+
+ No dejar caer el CD-ROM ni permitir que se someta a un impacto fuerte.
+
+ Mantener el CD-ROM apartado del agua, el alcohol, diluyentes de pintura y otras sustancias similares.
+
+ Retirar el CD-ROM de la unidad DVD-ROM mientras el ordenador esté encendido.
+
+ Utilizar solamente el Software de Transmisión de Datos 1.50 o superior.
+
+066
+
+Transmisión de datos por software JM-S1w JM-105 Docking station
+
+Archivo de texto CSV
+
+Sistema de historiales médicos electrónicos (protocolo HL7)
+
+
+
+# Página 36
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 43
+
+Primeros pasos
+
+Requisitos del sistema
+
+Sistemas operativos Windows 7 Professional SP1 32 bits
+
+Windows 7 Professional SP1 64 bits
+
+Windows 8.1 Professional 32 bits
+
+Windows 8.1 Professional 64 bits
+
+Windows 10 Professional 64 bits (Creators update)
+
+Resolución de la pantalla 1024 X 768 o superior
+
+CPU Pentium III 1,6 GHz o superior
+
+Memoria 1 GB o más
+
+Disco duro Mínimo 3,5 GB de espacio disponible en el disco (en este disco, por lo menos 300 MB deben estar en la unidad del sistema).
+
+Otros Unidad CD-ROM (para la instalación)
+
+Puerto USB Para conectar la docking station
+
+Idiomas (CE1) Inglés, francés, alemán, italiano, español
+
+Idiomas (CE2) Inglés, neerlandés, portugués, ruso, sueco
+
+Idiomas (CE3) Inglés, croata, polaco, serbio, turco
+
+Idiomas (CE4) Inglés, checo, húngaro, noruego, eslovaco
+
+Idiomas (CE5) Inglés, danés, finlandés, griego, rumano
+
+
+
+# Página 37
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+44 Instrucciones de uso JM-105
+
+Preparaciones
+
+Cumplimiento de la licencia de software
+
+Los términos del acuerdo de la licencia del software de transmisión de datos del Bilirrubinómetro, SW JM-S1w, se ofrecen en el cuadro de diálogo del Acuerdo de la Licencia de Software visualizado en la pantalla durante la instalación. Solo se puede instalar el software si se está de acuerdo con todos los términos del acuerdo.
+
+Introducción
+
+Se necesitan tres archivos de instalación para instalar el software JM-S1w (versión 1.50). Estos tres archivos se deben instalar en el orden siguiente:
+
+1 setup1.exe: Instalador de Microsoft Visual C++ 2015 Redistributable Package
+
+2 setup2.exe: Instalador de Microsoft .NET Framework 4.6.2
+
+3 setup3.exe: Instalador de JM-S1w
+
+Instalación de Microsoft Visual C++ 2015 Redistributable Package
+
+1 Ejecutar el archivo setup1.exe.
+
+2 Marcar la casilla de  Acepto los términos y condiciones de licencia  (A).
+
+3 Hacer clic en el botón  Instalar  (B).
+
+4 Hacer clic en el botón  Sí  (C).
+
+NOTA
+
+Utilizar solamente el Software de Transmisión de Datos 1.50 o superior.
+
+NOTA
+
+No desinstalar el software JM-S1w si hay una ver- sión anterior instalada. Al instalar JM-S1w (versión 1.50), se desinstalará automáticamente la versión anterior del software y se heredarán los ajustes anteriores.
+
+NOTA
+
+Para JM-S1w (versión 1.30) o anteriores, los ajus- tes se asignaban a cada usuario que iniciaba sesión en Windows. JM-S1w (versión 1.50) tiene un único conjunto de ajustes para todos los usua- rios.
+
+NOTA
+
+Si se utilizó almacenamiento de archivos CSV con el software anterior, tal vez sea necesario ajustar manualmente la ubicación a un directorio apro- piado. La ubicación predeterminada es: C:\Usua- rios\Acceso público\Documentos públicos\jm- s1w\CSV.
+
+NOTA
+
+Cuando se haya instalado ya Visual C++ 2015 Redistributable Package en el PC, habrá que con- tinuar con el siguiente paso (Instalación de Micro- soft .NET Framework 4.6.2).
+
+NOTA
+
+Si el usuario de inicio de sesión que ejecuta el ins- talador de JM-S1w no tiene derechos administrati- vos de Windows, aparecerá el diálogo de "Control de cuentas de usuario".
+
+000
+
+```metadata
+pagina: 37
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P37_I0.png
+contexto: 
+```
+
+![Imagen página 37 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P37_I0.png)
+
+A B
+
+
+
+# Página 38
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 45
+
+Primeros pasos
+
+5 Hacer clic en el botón  Cerrar  (D).
+
+Instalación de Microsoft .NET Framework 4.6.2
+
+1 Ejecutar el archivo setup2.exe.
+
+2 Hacer clic en el botón  Sí  (A).
+
+3 Marcar la casilla de  He leído y acepto los términos de la licencia  (B).
+
+4 Hacer clic en el botón  Instalar  (C).
+
+5 Si aparece el diálogo de abajo, hacer clic en el botón  Sí  (D).
+
+001 002
+
+NOTA
+
+Cuando se haya instalado ya una versión posterior de .NET Framework, habrá que continuar con el siguiente paso (Instalación de JM-S1w).
+
+```metadata
+pagina: 38
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I0.png
+contexto: 
+```
+
+![Imagen página 38 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I0.png)
+
+C
+
+```metadata
+pagina: 38
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I1.png
+contexto: 
+```
+
+![Imagen página 38 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I1.png)
+
+D
+
+003 004 005
+
+```metadata
+pagina: 38
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I2.png
+contexto: 
+```
+
+![Imagen página 38 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I2.png)
+
+A
+
+```metadata
+pagina: 38
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I3.png
+contexto: 
+```
+
+![Imagen página 38 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I3.png)
+
+B
+
+C
+
+```metadata
+pagina: 38
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I4.png
+contexto: 
+```
+
+![Imagen página 38 - 4](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P38_I4.png)
+
+D
+
+
+
+# Página 39
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+46 Instrucciones de uso JM-105
+
+6 Hacer clic en el botón  Finalizar  (E).
+
+7 Hacer clic en el botón  Reiniciar Ahora  (F) para reiniciar el PC.
+
+Instalación de JM-S1w
+
+1 Ejecutar el archivo setup3.exe.
+
+2 Hacer clic en el botón  Yes  (A).
+
+3 Abrir la lista desplegable (B).
+
+4 Seleccionar el idioma que se desea instalar (C).
+
+5 Hacer clic en el botón  OK  (D).
+
+006 007
+
+NOTA
+
+Utilizar solamente el Software de Transmisión de Datos 1.50 o superior.
+
+```metadata
+pagina: 39
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I0.png
+contexto: 
+```
+
+![Imagen página 39 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I0.png)
+
+E
+
+```metadata
+pagina: 39
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I1.png
+contexto: 
+```
+
+![Imagen página 39 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I1.png)
+
+F
+
+008 009 010
+
+```metadata
+pagina: 39
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I2.png
+contexto: 
+```
+
+![Imagen página 39 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I2.png)
+
+A
+
+```metadata
+pagina: 39
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I3.png
+contexto: 
+```
+
+![Imagen página 39 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I3.png)
+
+B
+
+D
+
+```metadata
+pagina: 39
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I4.png
+contexto: 
+```
+
+![Imagen página 39 - 4](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P39_I4.png)
+
+C
+
+
+
+# Página 40
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 47
+
+Primeros pasos
+
+6 Hacer clic en el botón  Siguiente  (E).
+
+7 Seleccionar el botón  Acepto los términos del Contrato de licencia  (F).
+
+8 Hacer clic en el botón  Siguiente  (G).
+
+9 Para instalar el software en otra ubicación, hacer clic en el botón  Cambiar...  (H).
+
+10 Hacer clic en el botón  Siguiente  (I).
+
+11 Hacer clic en el botón  Instalar  (J).
+
+12 Hacer clic en el botón  Instalar  (K) para instalar el controlador USB.
+
+011 012
+
+```metadata
+pagina: 40
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I0.png
+contexto: 
+```
+
+![Imagen página 40 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I0.png)
+
+E
+
+```metadata
+pagina: 40
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I1.png
+contexto: 
+```
+
+![Imagen página 40 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I1.png)
+
+F
+
+G
+
+013 014 015
+
+```metadata
+pagina: 40
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I2.png
+contexto: 
+```
+
+![Imagen página 40 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I2.png)
+
+H
+
+I
+
+```metadata
+pagina: 40
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I3.png
+contexto: 
+```
+
+![Imagen página 40 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I3.png)
+
+J
+
+```metadata
+pagina: 40
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I4.png
+contexto: 
+```
+
+![Imagen página 40 - 4](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P40_I4.png)
+
+K
+
+
+
+# Página 41
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+48 Instrucciones de uso JM-105
+
+13 Hacer clic en el botón  Finalizar  (L).
+
+Instalación del controlador USB para la docking station
+
+Antes de usar el software, es necesario conectar la docking station al ordenador.
+
+Cuando la docking station esté conectada a un ordenador por primera vez, se requiere la instalación del controlador USB.
+
+1 Asegurarse de que  MEMOR.  esté ajustada en CONECT .
+
+2 Enchufar el cable USB, TA-15, a la docking station y el puerto USB del ordenador.
+
+3 El Asistente de Hardware Nuevo Encontrado se inicia en el ordenador, solicitando la instalación del controlador del Bilirrubinómetro. Acepte el acuerdo de la licencia de software.
+
+4 Comprobar que se haya seleccionado  Instalar el software automáticamente (recomendado) , y hacer clic en  Siguiente >.
+
+5 Si aparece un mensaje de advertencia indicando que el software no ha superado la prueba del logotipo de Windows, haga clic en Continuar  o en  OK . Después, continuar con la instalación del controlador USB.
+
+6 Cuando surja el diálogo con el mensaje de que la instalación del controlador ha finalizado, haga clic en  Cerrar  para cerrar el diálogo.
+
+Comprobación del puerto COM
+
+Para comprobar el puerto COM asignado a la docking station, siga este procedimiento.
+
+1 Abra el  Panel de control .
+
+2 Haga doble clic en  Sistema .
+
+3 Seleccione la pestaña de  Hardware  y haga clic en  Administrador de dispositivos .
+
+4 Haga clic en  +  junto a  Puertos (COM y LPT) . Aparece la lista de los dispositivos conectados.
+
+5 El  Bilirrubinómetro  aparece en la lista, seguido del puerto COM asignado entre paréntesis.
+
+Si el  Bilirrubinómetro  no aparece en la lista bajo Puertos (COM y LPT), significa que el controlador no ha sido instalado correctamente. Si el Bilirrubinómetro  aparece en la lista en otro lugar, selecciónelo y desinstale el controlador. Luego desconecte la docking station del ordenador y vuelva a conectarla al ordenador y reinstale el controlador.
+
+Verificación de la carga de software
+
+1 Reinicie el ordenador.
+
+2 Cuando JM-S1w se haya instalado en un ordenador, JM-S1w se inicia al iniciar Windows. El JM-S1w se ejecuta en segundo plano. Aparece un símbolo en la bandeja de tareas cuando JM-S1w está en progreso.
+
+3 Si JM-S1w no se inicia automáticamente, puede iniciarse haciendo clic en  Inicio  >  Todos los programas  >  Draeger  >  JM-S1w .
+
+016
+
+```metadata
+pagina: 41
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P41_I0.png
+contexto: 
+```
+
+![Imagen página 41 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P41_I0.png)
+
+L
+
+NOTA
+
+Mientras JM-S1w está en progreso, el ordenador no puede entrar automáticamente en el modo de suspensión. Si el ordenador es puesto en modo de suspensión, pueden producirse errores de comu- nicación al cancelar el modo de suspensión.
+
+```metadata
+pagina: 41
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P41_I1.png
+contexto: 
+```
+
+![Imagen página 41 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P41_I1.png)
+
+
+
+# Página 42
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 49
+
+Primeros pasos
+
+Salida del software JM-S1w
+
+1 Hacer clic con el botón derecho del ratón en el símbolo de la bandeja de tareas de JM-S1w.
+
+2 Seleccionar  Salida . JM-S1w se cierra.
+
+Cuando Windows se reinicia, JM-S1w también se reinicia.
+
+Notas sobre el almacenamiento del CD-ROM
+
+ Después de usar el CD-ROM, volver a meterlo en su funda y guardarlo en un lugar seguro.
+
+ No dejar el CD-ROM en lugares expuestos a altas temperaturas provocadas por luz solar directa o calefacciones.
+
+ No almacenar el CD-ROM en lugares muy húmedos.
+
+Ajuste de preferencias
+
+1 Acceder al menú JM-S1w haciendo clic con el botón derecho del ratón en el símbolo JM-S1w de la bandeja de tareas.
+
+Esta acción abre el menú JM-S1w.
+
+1 Seleccionar  Preferencias .
+
+Ajuste de preferencias - Común
+
+1 Se abre un cuadro de diálogo con pestañas para cada una de las 4 categorías de ajuste: Común  (A),  Red  (B),  HL7  (C) y  Código de barras  (D). La pestaña  Común  está en la parte de delante.
+
+2 Marcar la casilla (E) para poder realizar cambios en los ajustes.
+
+3 Determine si desea guardar los cambios en un archivo de texto CSV o en EHR.
+
+```metadata
+pagina: 42
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I0.png
+contexto: 
+```
+
+![Imagen página 42 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I0.png)
+
+NOTA
+
+Todos los usuarios pueden modificar las preferen- cias. Sin embargo, las preferencias se aplican a todos los usuarios. Los usuarios no pueden ajus- tar preferencias individuales.
+
+069
+
+```metadata
+pagina: 42
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I1.png
+contexto: 
+```
+
+![Imagen página 42 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I1.png)
+
+067
+
+```metadata
+pagina: 42
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I2.png
+contexto: 
+```
+
+![Imagen página 42 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I2.png)
+
+Preferencias
+
+Salir
+
+```metadata
+pagina: 42
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I3.png
+contexto: 
+```
+
+![Imagen página 42 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P42_I3.png)
+
+A B C D
+
+F
+
+G
+
+H E
+
+
+
+# Página 43
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Primeros pasos
+
+50 Instrucciones de uso JM-105
+
+4 Si prefiere el archivo de texto CSV, cambie los ajustes de  Común  marcando la casilla Guardar datos en PC  (F).
+
+5 Hacer clic en el botón  Abrir  (G) para seleccionar la ubicación de almacenamiento del archivo CSV.
+
+6 Hacer clic sobre  OK  (H) para guardar los ajustes.
+
+Ajuste de preferencias - Red
+
+1 Si prefiere EHR, seleccionar la pestaña  Red .
+
+2 Cambiar los ajustes de  Red  para introducir la dirección del servidor (A) y el puerto del servidor (B).
+
+Ajuste de preferencias - HL7
+
+1 Seleccionar la pestaña  HL7 .
+
+2 Para permitir cambios en los ajustes, comprobar el botón de radio (A) para permitir los cambios en los ajustes.
+
+3 Cambiar los ajustes de  HL7 :  Versión HL7  (B) y las opciones  Estructura de mensaje  (C) y (D).
+
+4 Hacer clic en el botón  Editar mensaje pers.  (E) si se desea.
+
+5 Edite mensajes como se desee.
+
+6 Editar el campo  Centro de envío  (F), si se desea.
+
+7 Hacer clic en  OK  para guardar.
+
+Ajuste de preferencias - Código de barras
+
+1 Si prefiere el código de barras Código 39, seleccionar la pestaña  Código de barras .
+
+2 Marcar el botón de selección correspondiente para desactivar (A) o activar (B) el dígito de control Código 39.
+
+3 Marque el botón de selección correspondiente para desactivar (C) o activar (D) el código ASCII completo.
+
+4 Pulsar el botón  Escribir  (F) para aplicar los ajustes.
+
+5 Hacer clic en  OK  ( G ) para guardar.
+
+070 071
+
+```metadata
+pagina: 43
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P43_I0.png
+contexto: 
+```
+
+![Imagen página 43 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P43_I0.png)
+
+A
+
+B
+
+```metadata
+pagina: 43
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P43_I1.png
+contexto: 
+```
+
+![Imagen página 43 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P43_I1.png)
+
+A
+
+B C
+
+D E
+
+F
+
+NOTA
+
+Esta función solo está disponible si se utiliza el JM-S1w versión 1.30 o superior y el firmware de dispositivo 1.10 o superior.
+
+074
+
+NOTA
+
+Para ver los ajustes actuales, hacer clic en el botón  Leer ajuste actual  (E).
+
+```metadata
+pagina: 43
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P43_I2.png
+contexto: 
+```
+
+![Imagen página 43 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P43_I2.png)
+
+A B
+
+C D
+
+E F G
+
+
+
+# Página 44
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 51
+
+Funcionamiento
+
+Funcionamiento
+
+Garantía de mediciones correctas  . . . . . . . . 52
+
+Punto de medición . . . . . . . . . . . . . . . . . . . . . . 54
+
+Elección de ajustes de medición   . . . . . . . . . 54
+
+Ajuste del número de mediciones promedio  . . 54 Posibilidad de almacenamiento de mediciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+
+Medición  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+
+Retirada de la docking station  . . . . . . . . . . . . . 57 Medición de bilirrubina  (sin almacenamiento de mediciones en el registro de datos) . . . . . . . . . . . . . . . . . . . . . . . 58 Medición de bilirrubina (almacenamiento de mediciones en el registro de datos) . . . . . . . . . 59
+
+Almacenamiento del dispositivo . . . . . . . . . . 62
+
+Apagado del dispositivo  . . . . . . . . . . . . . . . . 63
+
+Guía rápida sobre la medición   . . . . . . . . . . . 64
+
+
+
+# Página 45
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+52 Instrucciones de uso JM-105
+
+Garantía de mediciones correctas
+
+1 Antes de comenzar las mediciones, asegúrese de que todas las lámparas de fototerapia estén apagadas.
+
+2 Coloque la sonda de medición perpendicular al punto de medición.
+
+3 Empújela hacia abajo suavemente. No incline la sonda de medición.
+
+ADVERTENCIA
+
+Riesgo de lesión.
+
+Este dispositivo emite luz intensa.
+
+Nunca permita que el dispositivo emita luz a los ojos. Siempre realice las mediciones en el esternón o en la frente.
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+Las alteraciones patológicas o de otro tipo de la piel que afecten a la difusión o absorción de la luz podrían provocar mediciones de TcB incorrectas.
+
+No realice mediciones en pacientes con icteri- cia temprana e ictericia patológica.
+
+No realice mediciones cuando las enfermeda- des cutáneas puedan alterar la suposición hecha con respecto a la difusión y absorción de la luz.
+
+Utilice el dispositivo sólo en la piel sana del paciente. No realice mediciones en las marcas de nacimiento ni en las zonas velludas. Evite las áreas de grosor que, en opinión del médico, puedan impedir el uso del medidor de TcB o interferir con él.
+
+NOTA
+
+Limpie la sonda de medición antes de usarla.
+
+NOTA
+
+La colocación incorrecta de la sonda de medición puede provocar mediciones erróneas. Asegúrese de que la sonda de medición sea perpendicular al punto de medición.
+
+NOTA
+
+Asegúrese de que el paciente esté tranquilo antes de realizar las mediciones. Los movimientos pue- den interferir en la colocación correcta de la sonda.
+
+NOTA
+
+Existe un riesgo menor al administrar la fototera- pia cuando ésta no está clínicamente indicada.
+
+022
+
+
+
+# Página 46
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 53
+
+Funcionamiento
+
+4 Ajuste el dispositivo al número de mediciones deseado (consultar Elección de ajustes de medición en la página 54). Dräger recomienda que el dispositivo se ajuste a un promedio de 2 a 5 veces. Este ajuste minimiza los errores de medición provocados por la inclinación de la sonda de medición.
+
+023
+
+OK
+
+2012/08/01 10:00
+
+ÚNICO
+
+2 VECES
+
+3 VECES
+
+4 VECES
+
+
+
+# Página 47
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+54 Instrucciones de uso JM-105
+
+Punto de medición Las mediciones deben realizarse solo en el esternón (en hospitales o consultorios médicos) o en la frente (solo en hospitales) donde circule una cantidad de sangre suficiente.
+
+Elección de ajustes de medición
+
+Este dispositivo realiza mediciones individuales y mediciones promedio. Las mediciones individuales toman los resultados de cada medición como el valor medido. Las mediciones promedio toman los resultados promedio de 2 a 5 mediciones individuales como el valor medido.
+
+El dispositivo también permite al usuario seleccionar si desea o no almacenar las mediciones. La configuración del dispositivo depende del punto de medición y de las condiciones.
+
+Ajuste del número de mediciones promedio
+
+1 Pulsar el botón  MENU  en caso necesario.
+
+2 Usando las flechas ARRIBA/ABAJO, desplazarse por la lista hasta que aparezca CONFIG .
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+Las alteraciones patológicas o de otro tipo de la piel que afecten a la difusión o absorción de la luz podrían provocar mediciones de TcB incorrectas.
+
+No realice mediciones en pacientes con icteri- cia temprana e ictericia patológica.
+
+No realice mediciones cuando las enfermeda- des cutáneas puedan alterar la suposición hecha con respecto a la difusión y absorción de la luz.
+
+Utilice el dispositivo sólo en la piel sana del paciente. No realice mediciones en las marcas de nacimiento ni en las zonas velludas. Evite las áreas de grosor que, en opinión del médico, puedan impedir el uso del medidor de TcB o interferir con él.
+
+024
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I0.png
+contexto: 
+```
+
+![Imagen página 47 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I0.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I1.png
+contexto: 
+```
+
+![Imagen página 47 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I1.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I2.png
+contexto: 
+```
+
+![Imagen página 47 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I2.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I3.png
+contexto: 
+```
+
+![Imagen página 47 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I3.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I4.png
+contexto: 
+```
+
+![Imagen página 47 - 4](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I4.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I5.png
+contexto: 
+```
+
+![Imagen página 47 - 5](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I5.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I6.png
+contexto: 
+```
+
+![Imagen página 47 - 6](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I6.png)
+
+JM-105
+
+READY JM-105 READY
+
+025
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I7.png
+contexto: 
+```
+
+![Imagen página 47 - 7](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I7.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I8.png
+contexto: 
+```
+
+![Imagen página 47 - 8](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I8.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I9.png
+contexto: 
+```
+
+![Imagen página 47 - 9](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I9.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I10.png
+contexto: 
+```
+
+![Imagen página 47 - 10](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I10.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I11.png
+contexto: 
+```
+
+![Imagen página 47 - 11](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I11.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I12.png
+contexto: 
+```
+
+![Imagen página 47 - 12](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I12.png)
+
+```metadata
+pagina: 47
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I13.png
+contexto: 
+```
+
+![Imagen página 47 - 13](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P47_I13.png)
+
+JM-105
+
+READY JM-105 READY
+
+
+
+# Página 48
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 55
+
+Funcionamiento
+
+3 Seleccionar  CONFIG .
+
+4 Aparece la pantalla AJUSTES.
+
+5 Seleccionar  MEDIA .
+
+6 Pulsar  OK  para guardar la selección.
+
+7 Seleccionar el número de mediciones.
+
+ ÚNICO : Muestra el resultado de una medición.
+
+ 2 VECES  hasta  5 VECES : Muestra el promedio de resultados de 2 mediciones a 5 mediciones.  AVE  indica que se han seleccionado múltiples mediciones.
+
+8 Pulsar  OK  para guardar la selección.
+
+Posibilidad de almacenamiento de mediciones
+
+1 En caso necesario, pulsar el botón  MENU .
+
+2 Seleccionar  CONFIG .
+
+3 Pulsar  OK  para guardar la selección.
+
+4 Aparece la pantalla AJUSTES.
+
+026
+
+BACK OK
+
+2012/08/01 10:00
+
+CONFIG
+
+BORR DAT
+
+HISTOR.
+
+COMPROB
+
+027
+
+MENU OK
+
+2012/08/01 10:00
+
+UNID
+
+MEDIA
+
+MEMOR.
+
+NURSE ID
+
+028
+
+OK
+
+2012/08/01 10:00
+
+ÚNICO
+
+2 VECES
+
+3 VECES
+
+4 VECES
+
+029
+
+BACK OK
+
+2012/08/01 10:00
+
+CONFIG
+
+BORR DAT
+
+HISTOR.
+
+COMPROB
+
+
+
+# Página 49
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+56 Instrucciones de uso JM-105
+
+5 Seleccionar  MEMOR. . La selección previa está marcada ( OFF ,  SOLO MEM  o  CONECT ). 6 Seleccionar la opción deseada
+
+ OFF : No se almacenan datos medidos en el registro de datos.
+
+ SOLO MEM : Los datos medidos se almacenan en el registro de datos.
+
+ CONECT : Los datos medidos se almacenan en el registro de datos y se envían a un ordenador.
+
+030
+
+MENU OK
+
+2012/08/01 10:00
+
+UNID
+
+MEDIA
+
+MEMOR.
+
+NURSE ID
+
+031
+
+OK
+
+2012/08/01 10:00
+
+OFF
+
+SOLO MEM
+
+CONECT
+
+
+
+# Página 50
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 57
+
+Funcionamiento
+
+Medición
+
+Retirada de la docking station
+
+1 Antes de comenzar las mediciones, asegúrese de que todas las lámparas de fototerapia estén apagadas.
+
+2 Retirar el dispositivo de la docking station.
+
+3 Limpie la sonda de medición.
+
+4 Encienda el dispositivo.
+
+5 Pulsar el botón  MENU  en caso necesario.
+
+6 Seleccionar  MEDIR . ADVERTENCIA
+
+Riesgo debido a una lectura incorrecta
+
+Las mediciones de detección se deben com- parar con las obtenidas al tomar muestras de sangre. – Comparar el valor TcB (bilirrubina transcu- tánea) medido por el dispositivo y el valor TSB (bilirrubina total en suero) medido de las muestras de sangre recogidas.
+
+NOTA
+
+Por cuestiones de control de calidad, compare periódicamente el JM-105 con los resultados de la bilirrubina en suero. Con esto se comprueba que el instrumento mantiene un rendimiento constante con el tiempo y que los usuarios están manejando el instrumento de forma adecuada.
+
+NOTA
+
+Si no se utiliza durante 1 min o más, la pantalla táctil se apagará. En caso necesario, toque la pan- talla para activarla.
+
+NOTA
+
+Después de unos segundos, la lámpara  READY se pone verde. Esta acción indica que el disposi- tivo está listo.
+
+032
+
+OK
+
+2012/08/01 10:00
+
+MENU
+
+MEDIR
+
+COMPROB
+
+HISTOR.
+
+BORR DAT
+
+
+
+# Página 51
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+58 Instrucciones de uso JM-105
+
+Medición de bilirrubina (sin almacenamiento de mediciones en el registro de datos)
+
+1 Antes de comenzar las mediciones, asegurarse de que todas las lámparas de fototerapia estén apagadas.
+
+2 Asegurarse de que  MEMOR.  está ajustada a  OFF  (consultar Posibilidad de almacenamiento de mediciones en la página 55).
+
+3 Asegurarse de que la lámpara  READY  está encendida.
+
+4 Colocar la sonda de medición perpendicular al punto de medición (en la frente o el esternón).
+
+5 Empujarla suavemente hasta que emita destellos.
+
+ Si no se ha seleccionado  MEDIA , el indicador mostrará los datos medidos.
+
+ Si se ha seleccionado  MEDIA , el indicador mostrará el número restante de mediciones necesarias para determinar el promedio.
+
+6 Si se desea determinar el promedio, esperar a que la lámpara  READY  se ponga verde y repetir la medición para el número de veces seleccionado ( 2 VECES  o  5 VECES ). El indicador muestra el promedio calculado de las múltiples mediciones.
+
+7 Lea las mediciones.
+
+ El indicador muestra hasta 3 valores medidos.
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+Las alteraciones patológicas o de otro tipo de la piel que afecten a la difusión o absorción de la luz podrían provocar mediciones de TcB incorrectas.
+
+No realice mediciones en pacientes con icteri- cia temprana e ictericia patológica.
+
+No realice mediciones cuando las enfermeda- des cutáneas puedan alterar la suposición hecha con respecto a la difusión y absorción de la luz.
+
+Utilice el dispositivo sólo en la piel sana del paciente. No realice mediciones en las marcas de nacimiento ni en las zonas velludas. Evite las áreas de grosor que, en opinión del médico, puedan impedir el uso del medidor de TcB o interferir con él.
+
+033
+
+```metadata
+pagina: 51
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I0.png
+contexto: 
+```
+
+![Imagen página 51 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I0.png)
+
+```metadata
+pagina: 51
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I1.png
+contexto: 
+```
+
+![Imagen página 51 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I1.png)
+
+```metadata
+pagina: 51
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I2.png
+contexto: 
+```
+
+![Imagen página 51 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I2.png)
+
+```metadata
+pagina: 51
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I3.png
+contexto: 
+```
+
+![Imagen página 51 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I3.png)
+
+```metadata
+pagina: 51
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I4.png
+contexto: 
+```
+
+![Imagen página 51 - 4](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I4.png)
+
+```metadata
+pagina: 51
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I5.png
+contexto: 
+```
+
+![Imagen página 51 - 5](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P51_I5.png)
+
+JM-105
+
+READY JM-105 READY
+
+034
+
+MENU CLEAR
+
+2012/08/01 10:00
+
+mg/dL
+
+12. 1 12. 3 12.2
+
+AVE. 3
+
+A
+
+
+
+# Página 52
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 59
+
+Funcionamiento
+
+ Si >20 o >340 parpadea en un campo de valor medido, el valor medido está fuera del rango de medición (>20,0 mg/dL/>340   mol/L).
+
+ Para realizar otra medición, pulsar el botón BORR.  (A) y repetir los pasos 2 a 6.
+
+Medición de bilirrubina (almacenamiento de mediciones en el registro de datos)
+
+ Asegurarse de que  MEMOR.  está ajustada a  SOLO MEM  o  CONECT  (consultar Posibilidad de almacenamiento de mediciones en la página 55).
+
+ Máximo 15 caracteres
+
+Introducción de  NURSE ID  ( ID de enfermera ) y BABY ID  ( ID de bebé ) utilizando un lector de código de barras
+
+1 Pulsar el botón  SCAN .El lector de código de barras emite luz.
+
+2 Escanear  NURSE ID  (ID de enfermera) (opcional), y pulsar  OK .
+
+3 Escanear  BABY ID  (ID de bebé) y pulsar  OK .
+
+4 Asegurarse de que la lámpara  READY  está encendida. Vaya a Realización de mediciones en la página 60.
+
+Introducción de NURSE ID (ID de enfermera) y BABY ID (ID de bebé) usando la pantalla táctil
+
+1 Para seleccionar el modo de entrada de letras/números, pulsar el botón  KEY .
+
+2 Para cambiar entre el modo alfabético y el modo numérico, pulsar el botón  ABC/123 .
+
+3 Cuando se esté en el modo numérico, pulsar el número deseado.
+
+NOTA
+
+Al pulsar  BORR.  una vez, se borra el último valor medido. Al pulsar y mantener pulsado  BORR. , se borran todos los valores medidos visualizados.
+
+036
+
+BABY ID
+
+2012/08/01 10:27
+
+MENU KEY
+
+SCAN
+
+OK
+
+NOTA
+
+Al pulsar el botón  CÓD BARR , se vuelve al modo de entrada de código de barras.
+
+ABC
+
+123
+
+038
+
+NURSE ID
+
+2 3 1
+
+5 6 4
+
+8 9 7
+
+0 DEL
+
+OK
+
+ABC 123
+
+MENU
+
+1234567890_
+
+
+
+# Página 53
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+60 Instrucciones de uso JM-105
+
+ Cuando se esté en el modo alfabético, pulsar la letra deseada. Para desplazarse a la letra siguiente, pulsar el botón de flecha derecha.
+
+ Ejemplo de modo alfabético: Para introducir BR, pulsar el botón  ABC  dos veces. Pulsar el botón de flecha derecha. Pulsar el botón  PQRS  3 veces.
+
+4 Pulsar  OK  para guardar el ID introducido. El dispositivo vuelve a la pantalla de medición.
+
+5 Asegurarse de que la lámpara  READY  está encendida.
+
+039
+
+NURSE ID
+
+ABC DEF
+
+JKL MNO GHI
+
+TUV WXYZ PQRS
+
+DEL
+
+OK
+
+ABC 123
+
+MENU
+
+1234567890AB CD_
+
+
+
+# Página 54
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 61
+
+Funcionamiento
+
+Realización de mediciones
+
+1 Antes de comenzar las mediciones, asegurarse de que todas las lámparas de fototerapia estén apagadas.
+
+2 Colocar la sonda de medición perpendicular al punto de medición (en la frente o el esternón).
+
+3 Empujarla suavemente hasta que emita destellos.
+
+ Si no se ha seleccionado  MEDIA , el indicador mostrará los datos medidos.
+
+ Si se ha seleccionado  MEDIA , el indicador mostrará el número restante de mediciones necesarias para determinar el promedio.
+
+4 Si se desea determinar el promedio, esperar a que la lámpara  READY  se ponga verde y repetir la medición para el número de veces seleccionado ( 2 VECES  o  5 VECES ). El indicador muestra el promedio calculado de las múltiples mediciones.
+
+5 Lea los datos medidos.
+
+ El indicador muestra hasta 3 valores medidos.
+
+ Si  >20  o  >340  parpadea en un campo de valor medido, el valor medido está fuera del rango de medición (>20,0 mg/dL/>340   mol/L).
+
+ADVERTENCIA
+
+Riesgo de lesiones para el paciente
+
+Las alteraciones patológicas o de otro tipo de la piel que afecten a la difusión o absorción de la luz podrían provocar mediciones de TcB incorrectas.
+
+No realice mediciones en pacientes con icteri- cia temprana e ictericia patológica.
+
+No realice mediciones cuando las enfermeda- des cutáneas puedan alterar la suposición hecha con respecto a la difusión y absorción de la luz.
+
+Utilice el dispositivo sólo en la piel sana del paciente. No realice mediciones en las marcas de nacimiento ni en las zonas velludas. Evite las áreas de grosor que, en opinión del médico, puedan impedir el uso del medidor de TcB o interferir con él.
+
+040
+
+```metadata
+pagina: 54
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I0.png
+contexto: 
+```
+
+![Imagen página 54 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I0.png)
+
+```metadata
+pagina: 54
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I1.png
+contexto: 
+```
+
+![Imagen página 54 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I1.png)
+
+```metadata
+pagina: 54
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I2.png
+contexto: 
+```
+
+![Imagen página 54 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I2.png)
+
+```metadata
+pagina: 54
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I3.png
+contexto: 
+```
+
+![Imagen página 54 - 3](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I3.png)
+
+```metadata
+pagina: 54
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I4.png
+contexto: 
+```
+
+![Imagen página 54 - 4](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I4.png)
+
+```metadata
+pagina: 54
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I5.png
+contexto: 
+```
+
+![Imagen página 54 - 5](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P54_I5.png)
+
+JM-105
+
+READY JM-105 READY
+
+042a 041
+
+MENU
+
+CLEAR
+
+2012/08/01 10:00
+
+NE X T BABY
+
+N NURSE001
+
+B BABY0001
+
+004/100 AVE . 3 12. 4 12. 3
+
+!
+
+12.3 mg/dL
+
+A
+
+MENU CLEAR
+
+2012/08/01 10:00
+
+mg/dL >20
+
+MENU CLEAR
+
+2012/08/01 10:00
+
+umol >340
+
+
+
+# Página 55
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+62 Instrucciones de uso JM-105
+
+6 Para introducir indicadores, hacer lo siguiente:
+
+ Para introducir un indicador de prioridad, pulsar el botón de puntos (aparece el indicador de prioridad que indica un nivel alto de bilirrubina en el paciente).
+
+ Para introducir un indicador de fototerapia, pulsar otra vez el botón (aparece el indicador de fototerapia que indica que el paciente ha sido tratado con fototerapia).
+
+ Para introducir ambos indicadores, pulsar otra vez el botón (aparecen los dos indicadores ).
+
+ Para quitar los indicadores, pulsar otra vez el botón (desaparecen los dos indicadores y vuelven los puntos ).
+
+7 Para continuar con el siguiente paciente, pulsar el botón  NEXT BABY  (A), introducir  NURSE ID (opcional) y  BABY ID , y repetir los pasos 6 a 9.
+
+Almacenamiento del dispositivo
+
+1 Limpie la sonda de medición con un paño humedecido en alcohol. 2 Coloque el dispositivo en la docking station.
+
+3 Deje el dispositivo en la docking station cuando no se está utilizando.
+
+N NURSE001
+
+B BABY0001
+
+004/100 AVE . 3 12. 4
+
+ADVERTENCIA
+
+Riesgo de fototerapia retrasada
+
+Se han de tener en cuenta los indicadores establecidos a la hora de interpretar las medi- ciones de las pruebas. De lo contrario, aumenta el riesgo de proporcionar una terapia incorrecta. – Seguir los procedimientos del hospital para valorar si es necesaria la fototerapia o algún otro tipo de evaluación.
+
+NOTA
+
+Cuando el número de mediciones almacenado en el registro de datos alcanza 100, la medición se deshabilita.
+
+052
+
+053
+
+READY
+
+
+
+# Página 56
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 63
+
+Funcionamiento
+
+ Mientras el dispositivo está en la docking station, la alimentación eléctrica permanece encendida. Después de 1 min la pantalla se apaga. La alimentación eléctrica permanece encendida.
+
+ Si el dispositivo está fuera de la docking station durante 1 min, la pantalla se apaga. Después de 9 min, la alimentación eléctrica se apaga.
+
+Apagado del dispositivo
+
+Para apagar la alimentación eléctrica cuando el dispositivo no está en la docking station, pulsar el botón de encendido y mantenerlo pulsado 1 s.
+
+
+
+# Página 57
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Funcionamiento
+
+64 Instrucciones de uso JM-105
+
+Guía rápida sobre la medición
+
+Encienda la alimentación eléctrica.
+
+Realice los ajustes iniciales (si enciende el dispositivo por primera vez).
+
+Cambiar ajustes en caso necesario.
+
+Comprobar el dispositivo.
+
+Realizar una medición.
+
+Si la memoria interna está desactivada: - Realizar una medición.
+
+Comprobar los datos. Comprobar los datos.
+
+Si la memoria interna está acti- vada: - Introducir el ID de la enfermera. - Introducir el ID del bebé. - Realizar una medición.
+
+Colocar el dispositivo en la docking station. Colocar el dispositivo en la docking station.
+
+Transferir los datos al sistema de gráficos médicos electróni- cos (MEMORY tiene que estar ajustado a LINK ON).
+
+Consultar Encender y preajustar el dispositivo por primera vez en la página 38.
+
+Consultar "Elección de ajustes de medición" en la página 54.
+
+Asegurarse de que la fototerapia está apagada. Consultar Comprobación antes del uso en la página 40.
+
+Consultar "Medición" en la página 57.
+
+Consultar "Pantalla de datos medidos" en la página 27.
+
+Consultar "Transmisión de datos a gráficos electrónicos" en la página 68.
+
+Consultar "Transmisión de datos a gráficos electrónicos" en la página 68.
+
+
+
+# Página 58
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Tendencias y datos
+
+66 Instrucciones de uso JM-105
+
+Visualización de mediciones almacenadas en el registro de datos
+
+1 Pulsar el botón  MENU  en caso necesario.
+
+2 Pulsar  HISTOR. .
+
+3 Pulsar  OK  para guardar la selección. El indicador muestra una lista de ID de bebés (5 caracteres más si la ID tiene 6 o más caracteres), números de medición e indicadores.
+
+4 Seleccione la ID de bebé deseada.
+
+5 Pulsar  OK  para guardar la selección. El indicador muestra los datos medidos detallados.
+
+044
+
+BACK OK
+
+2012/08/01 10:00
+
+HISTOR.
+
+BORR DAT
+
+COMPROB
+
+MEDIR
+
+045
+
+1 : ...Y0001
+
+2 : ...Y0002
+
+3 : ...Y0003 4 : ...Y0004
+
+MENU OK
+
+2012/08/01 10:00
+
+!
+
+ADVERTENCIA
+
+Riesgo debido a una lectura incorrecta
+
+Las mediciones de detección se deben com- parar con las obtenidas al tomar muestras de sangre. – Comparar el valor TcB (bilirrubina transcu- tánea) medido por el dispositivo y el valor TSB (bilirrubina total en suero) medido de las muestras de sangre recogidas.
+
+046
+
+2012/08/01 10:00
+
+N ＊＊＊＊ 0001
+
+B BABY0002
+
+01/12 11:23AM 01/12 11:23AM 01/12 11:23AM
+
+2. 2 2. 4
+
+! 2. 3 mg/dL
+
+MENU OK
+
+DEL ×
+
+002/004
+
+…
+
+
+
+# Página 59
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 67
+
+Tendencias y datos
+
+Eliminación de mediciones individuales del registro de datos
+
+1 Pulsar el botón  MENU  en caso necesario.
+
+2 Pulsar  HISTOR. .
+
+3 Seleccione la ID de bebé deseada.
+
+4 Seleccione la medición deseada.
+
+5 Pulsar  DELETE  (A).
+
+6 Pulsar  OK  para guardar la selección.
+
+Eliminación de todas las mediciones del registro de datos
+
+1 Pulsar el botón  MENU  en caso necesario.
+
+2 Pulsar  BORR DAT .
+
+3 Pulsar  BORR.  en la pantalla de confirmación.
+
+4 Pulsar  OK  para guardar la selección. Se eliminan todas las mediciones del registro de datos.
+
+035
+
+1 : ...Y0001
+
+2 : ...Y0002
+
+3 : ...Y0003 4 : ...Y0004
+
+MENU OK
+
+2012/08/01 10:00
+
+!
+
+047
+
+2012/08/01 10:00
+
+N ＊＊＊＊ 0001
+
+B BABY0002
+
+01/12 11:23AM 01/12 11:23AM 01/12 11:23AM
+
+2. 2 2. 4
+
+! 2. 3 mg/dL
+
+MENU OK
+
+DEL ×
+
+002/004
+
+…
+
+A
+
+048
+
+BACK OK
+
+2012/08/01 10:00
+
+BORR DAT
+
+HISTOR.
+
+COMPROB
+
+MEDIR
+
+
+
+# Página 60
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Tendencias y datos
+
+68 Instrucciones de uso JM-105
+
+Transmisión de datos a gráficos electrónicos
+
+Si  Enviar mensaje HL7  está habilitado en la pestaña  Común  del diálogo  JM-S1w , las mediciones de JM-105 se envían automáticamente al sistema de historiales médicos electrónicos. Si Guardar datos en PC  está habilitado en la pestaña Común , las mediciones de JM-105 se envían a un archivo de registro CSV en el ordenador. Consultar Ajuste de preferencias - Común en la página 49 para confirmar los ajustes.
+
+1 En el bilirrubinómetro, navegar hasta el menú de ajustes:  MENU > CONFIG .
+
+2 Seleccionar  MEMOR.  de las opciones del menú.
+
+3 Seleccionar  CONECT  de las opciones del menú.
+
+4 Conectar la docking station al ordenador.
+
+5 Abrir el SW JM-S1w en el ordenador.
+
+6 Confirmar puerto COM (B) en la pantalla Común .
+
+7 Coloque el dispositivo en la docking station conectada al ordenador.
+
+8 El indicador muestra la pantalla  CONFIRM .
+
+NOTA
+
+Asegúrese de que la pantalla Común (docking sta- tion) (A) muestre arriba la lista de puertos COM y que haya por lo menos 1 puerto COM en la lista.
+
+069
+
+NOTA
+
+Asegúrese de que el puerto COM está seleccio- nado antes de colocar el JM-105 en la docking sta- tion.
+
+```metadata
+pagina: 60
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P60_I0.png
+contexto: 
+```
+
+![Imagen página 60 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P60_I0.png)
+
+A
+
+B
+
+049
+
+READY
+
+050
+
+CANCEL OK
+
+2012/08/01 10:00
+
+CONFIRM
+
+ENVIANDO
+
+
+
+# Página 61
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 69
+
+Tendencias y datos
+
+9 Pulsar  OK  para transmitir los datos. El indicador muestra la pantalla  ENVIANDO .
+
+El indicador muestra el número de datos transferidos y el número de datos en la memoria a transferir. También muestra el progreso de la transferencia de todos los datos en la memoria.
+
+Errores de transmisión de datos
+
+Si la transmisión de datos no se puede completar, por ejemplo, si se ha seleccionado el puerto COM equivocado, la transmisión de datos se excede en el JM-105. El indicador del JM-105 muestra  ENVIO ERROR  y un bocadillo con el mensaje de error aparece sobre el símbolo de bandeja de JM-S1w en el ordenador.
+
+Cuando aparece un mensaje de error en el JM-105, pulsar  OK  para continuar. Cuando el bocadillo con el mensaje de error aparece en el ordenador, éste debe cerrarse.
+
+Si la transmisión de datos al sistema de historiales médicos electrónicos falla, JM-S1w guarda los datos en un archivo. Más adelante, intenta reenviar los datos después del periodo especificado por el ajuste de intervalo de reintento. Si se ha ajustado No reint. , no se realizará ningún intento de reenvío. Los intentos de reenvío se realizan en el intervalo especificado hasta conseguir el objetivo o hasta que se deshabilite  Enviar mensaje HL7 .
+
+Registro de transmisión
+
+Si  Enviar mensaje HL7  está habilitado en la pestaña  Común  del diálogo JM-S1w, los resultados de enviar mediciones al sistema HL-7 se guardan en el registro de transmisión.
+
+Consultar Visualización el registro de transmisión del software JM-S1w en la página 70.
+
+NOTA
+
+Al pulsar  CANCELAR  durante la transmisión de datos se detiene la transmisión de datos. Los datos ya transmitidos se consideran transmitidos.
+
+051
+
+SENDING
+
+001/004
+
+CANCEL
+
+2012/08/01 10:00
+
+…
+
+
+
+# Página 62
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Tendencias y datos
+
+70 Instrucciones de uso JM-105
+
+Visualización el registro de transmisión del software JM-S1w
+
+1 Seleccionar la pestaña  HL-7  (A).
+
+2 Editar la instalación de envío (B), si se desea.
+
+3 Seleccionar el botón  Registro de transmisión (C).
+
+4 El diálogo  Registro de transmisión  se abre.
+
+5 Utilizar las barras de avance (D) para navegar por los datos (izquierda y derecha/arriba y abajo).
+
+6 Comprobar el botón de radio  Permitir config. (E) para permitir la edición del registro de transmisión.
+
+7 Para visualizar los detalles del error, hacer clic en el enlace  AE/AR/CN/UN  (F).
+
+8 Para reenviar una transmisión errónea, hacer clic en el botón  Reintentar  (G).
+
+9 Para eliminar una transmisión errónea, hacer clic en el botón  Eliminar  (H).
+
+10 Clasificar los datos según se desee, por fecha o por nombre, haciendo clic en la flecha (I) en el encabezado de la columna (orden ascendente o descendente). Los datos se pueden clasificar por campos:  Fecha/Hora de transmisión ,  ID de enfermero ,  ID de bebé ,  Fecha/Hora1.
+
+11 Editar los datos según se desee en los campos: ID de enfermero, ID de bebé .
+
+12 Para eliminar todos los datos del registro de transmisión, hacer clic en el botón  Eliminar todo  (J).
+
+13 Aparece un mensaje de confirmación,  ¿Seguro que quiere eliminar todos los elementos?.
+
+14 Seleccionar sí o no.
+
+15 Para cerrar la ventana, hacer clic en el botón Cerrar  (K).
+
+071 076a
+
+NOTA
+
+Los botones Reintentar y Eliminar pueden ocul- tarse a la derecha si los datos en otros campos son largos. Utilizar las barras de avance para encontrar estos botones.
+
+```metadata
+pagina: 62
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P62_I0.png
+contexto: 
+```
+
+![Imagen página 62 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P62_I0.png)
+
+A
+
+B
+
+C
+
+JM-S1w
+
+Failed transmission data
+
+Successfull transmission data
+
+Allow changes. Delete All
+
+Transmission log
+
+Close
+
+Transmission Date/Time Date/Time 1 Value 1 Value 2
+
+2017/02/28/12:34:56
+
+: : : : : : : : : : : : :
+
+2017/02/28/12:34:56
+
+2017/02/28/12:00:00
+
+2017/02/28/12:00:00
+
+Date/Time 2
+
+2017/02/28/12:00:10
+
+2017/03/01/12:00:15
+
+JOHN DOE
+
+NURSE ID
+
+JOHN DOE
+
+NURSE_01
+
+BABY ID Instrument ID
+
+NURSE_01
+
+3501001
+
+3051000
+
+12.1
+
+12.3
+
+12.2
+
+12.4
+
+Value 3 Error Date/Time 2
+
+2017/02/28/12:00:20
+
+2017/03/01/12:01:00
+
+12.1
+
+12.2
+
+Transmission Date/Time Value 1 Value 2
+
+2017/02/28/12:34:56
+
+: : : : : : : : : :
+
+2017/02/28/12:34:56
+
+2017/02/28/12:00:00
+
+2017/02/28/12:00:00
+
+Date/Time 2
+
+2017/02/28/12:00:10
+
+2017/03/01/12:00:15
+
+JOHN DOE
+
+NURSE ID
+
+JOHN DOE
+
+NURSE_01
+
+BABY ID Instrument ID
+
+NURSE_01
+
+3501001
+
+3051000
+
+12.1
+
+12.3
+
+12.2
+
+12.4
+
+Value 3 Date/Time 2
+
+2017/02/28/12:00:20
+
+2017/03/01/12:01:00
+
+12.1
+
+12.2
+
+AE
+
+AR
+
+Retry Delete
+
+Retry Delete
+
+D
+
+E
+
+F G H
+
+080
+
+NOTA
+
+El orden de clasificación por defecto muestra la transmisión más reciente en la parte superior.
+
+NOTA
+
+El registro de transmisión puede contener 500 entradas. Cuando el registro llega a 500 entradas, las nuevas entradas expulsan a las más antiguas del registro.
+
+081
+
+```metadata
+pagina: 62
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P62_I1.png
+contexto: 
+```
+
+![Imagen página 62 - 1](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P62_I1.png)
+
+I
+
+```metadata
+pagina: 62
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P62_I2.png
+contexto: 
+```
+
+![Imagen página 62 - 2](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P62_I2.png)
+
+J K
+
+
+
+# Página 63
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Configuración
+
+72 Instrucciones de uso JM-105
+
+Cambio de ajustes en el JM-105
+
+1 Encienda el dispositivo.
+
+2 Pulsar el botón  MENU  en caso necesario.
+
+3 Para seleccionar  CONFIG , pulsar el botón CONFIG  o pulsar las flechas ARRIBA/ABAJO.
+
+4 Pulsar  OK  para guardar la selección.
+
+5 Aparece la pantalla Ajustes.
+
+6 Pulse el elemento que se desea cambiar.
+
+7 Para cambiar el valor, pulse los botones ARRIBA/ABAJO.
+
+8 Pulsar  OK  para guardar la selección.
+
+9 Volver a pulsar  OK  después de finalizar los cambios en los ajustes.
+
+Ajustes del sistema y predeterminados para el JM-105
+
+054
+
+BACK OK
+
+2012/08/01 10:00
+
+CONFIG
+
+BORR DAT
+
+HISTOR.
+
+COMPROB
+
+055
+
+MENU OK
+
+2012/08/01 10:00
+
+UNID
+
+MEDIA
+
+MEMOR.
+
+NURSE ID
+
+Ajuste Descripción Opciones Descripción
+
+UNID Seleccionar unidad para medir y ver el registro de datos. mg/dL Predeterminado
+
+ mol/L
+
+MEDIA Seleccione el número de medicio- nes para determinar el promedio. ÚNICO Predeterminado
+
+2 VECES
+
+3 VECES
+
+4 VECES
+
+5 VECES
+
+
+
+# Página 64
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 73
+
+Configuración
+
+MEMOR. Seleccione si los datos deben alma- cenarse en el dispositivo o transfe- rirse a un ordenador.
+
+OFF Predeterminado
+
+Ningún dato almacenado en el registro de datos.
+
+SOLO MEM Datos almacenados en el registro de datos.
+
+CONECT Datos almacenados en el registro de datos.
+
+Datos transmitidos al orde- nador (se requieren cable USB y software de comuni- cación ).
+
+NURSE ID Seleccione si debe introducirse ID de enfermera. NO Ninguna ID de enfermera introducida.
+
+CÓD BARR 1) Predeterminado 1)
+
+Introduzca la ID de enfer- mera mediante el lector de código de barras.
+
+TOCAR Introduzca la ID de enfer- mera mediante la pantalla táctil.
+
+BABY ID Seleccione cómo debe introducirse la ID de bebé. CÓD BARR 1) Predeterminado 1)
+
+Introduzca la ID de bebé mediante el lector de código de barras.
+
+TOCAR Introduzca la ID de bebé mediante la pantalla táctil.
+
+SONIDO Seleccione si se desea activar el tono. OFF Sin pitido.
+
+ON Predeterminado
+
+Pitido.
+
+ALERT.ON Pitido solo para alertas.
+
+FIJ.HORA Ajustar fecha y hora. Debe ajustarse o seleccio- narse cuando el dispositivo es encendido por primera vez.
+
+FOR.FEC. 2) Seleccione el formato de fecha. M/D/A
+
+D/M/A
+
+A/M/D
+
+Ajuste Descripción Opciones Descripción
+
+
+
+# Página 65
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Configuración
+
+74 Instrucciones de uso JM-105
+
+FMT.HORA Seleccionar formato de marca de tiempo para datos medidos en el registro de datos.
+
+(La hora en la parte superior dere- cha de la pantalla táctil siempre es indicada en formato de 24 horas).
+
+12 HORAS
+
+24 HORAS Predeterminado
+
+IDIOMA 2)  para CE1 Seleccionar idioma del indicador. ENGLISH Predeterminado
+
+DEUTSCH
+
+ESPAÑOL
+
+FRANÇAIS
+
+ITALIANO
+
+IDIOMA 2)  para CE2 Seleccionar idioma del indicador. ENGLISH Predeterminado
+
+NEDERL.
+
+SVENSKA
+
+РУС.
+
+PORTUG.
+
+IDIOMA 2)  para CE3 Seleccionar idioma del indicador. ENGLISH Predeterminado
+
+POLSKI
+
+TÜRKÇE
+
+HRVATSKI
+
+SRPSKI
+
+IDIOMA 2)  para CE4 Seleccionar idioma del indicador. ENGLISH Predeterminado
+
+ČEŠTINA
+
+MAGYAR
+
+NORSK
+
+SLOVENSK
+
+Ajuste Descripción Opciones Descripción
+
+
+
+# Página 66
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 75
+
+Configuración
+
+IDIOMA 2)  para CE5 Seleccionar idioma del indicador. ENGLISH Predeterminado
+
+SUOMI
+
+DANSK
+
+ΕΛΛΗΝΙΚΑ
+
+ROMÂNĂ
+
+CONTRAST Seleccionar contraste de la pantalla táctil. 1 Más oscuro
+
+2
+
+3 Predeterminado
+
+4
+
+5 Más claro
+
+PANTALLA Ajustar pantalla táctil. Pulse el cen- tro de X.
+
+FIJ.T.O. Seleccionar el tiempo tras el cual se cancela la transmisión de datos. 1 MIN Predeterminado
+
+5 MIN
+
+S/W VERS Muestra la versión de software.
+
+INICIAR Inicializar dispositivo.
+
+(Permite seleccionar el idioma del indicador, el formato de la fecha y ajustar la fecha y hora).
+
+Software de transmisión de datos
+
+Código 39 Comprobar dígito 1)
+
+Seleccione si el código de barras contiene un dígito de control o no. Desactivar
+
+Activar Predeterminado
+
+Código 39 conversión ASCII com- pleta 1)
+
+Seleccione si desea activar ASCII completo o no. Desactivar
+
+Activar Predeterminado
+
+Centro de envío 3) para HL-7
+
+Muestra el dispositivo enviando los datos durante la transmisión de datos. Este campo lo puede editar el usuario.
+
+Enfermería Predeterminado
+
+1) Solo aplicable a dispositivos con firmware 1.10 o superior y lector de código de barras utilizando JM-S1w versión 1.30 o superior. 2) Debe ajustarse o seleccionarse cuando el dispositivo es encendido por primera vez. 3) Requiere JM-S1w versión 1.40 o superior.
+
+Ajuste Descripción Opciones Descripción
+
+
+
+# Página 67
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Resolución de problemas
+
+78 Instrucciones de uso JM-105
+
+Fallo – Causa – Solución
+
+La tabla indica las causas posibles de un fallo y las soluciones correspondientes. Las causas y soluciones deben corregirse siguiendo el orden de la lista hasta resolver el fallo.
+
+Mensajes de error
+
+Fallo Causa Solución
+
+ERROR01 El valor medido es anormal. Para promedios, la diferencia entre mediciones es excesivamente grande.
+
+Repita la medición.
+
+ERROR03 Error de RAM. Anomalías o datos dañados en RAM. Apague el dispositivo y póngalo fuera de servicio.
+
+ERROR03 ERROR04 ERROR06
+
+Fallo en la determinación de pro- medios Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+Fallo del hardware Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+ERROR04 Error de memoria. Anomalías o datos dañados en EEPROM. Apague el dispositivo y póngalo fuera de servicio.
+
+ERROR05 Carga insuficiente, error de cir- cuito. Cargue el dispositivo.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+ERROR06 Error de datos de calibración. Los datos de calibración en la EEPROM están dañados.
+
+Apague el dispositivo y póngalo fuera de servicio.
+
+ERROR07 Error de comunicación entre el ordenador y el sistema de historia- les médicos electrónicos.
+
+Revise la configuración del ordenador y repita la transmisión de datos.
+
+JIG MODE Ver. 1.x Batería agotada. Cargar el dispositivo durante 32 horas.
+
+Si el error continúa, sustituir la batería
+
+
+
+# Página 68
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 79
+
+Resolución de problemas
+
+Indicaciones de la batería
+
+Fallo Causa Solución
+
+El indicador de batería está encendido. Batería baja. Cargue la batería.
+
+La retroiluminación de la pantalla táctil se ilumina 5 s y después se apaga el dispositivo.
+
+La batería se ha agotado. Cargue la batería.
+
+Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+La batería se agota rápi- damente. La pantalla táctil se utiliza con frecuencia. Establezca procedimientos de medición que reduzcan la activación de la retroilu- minación de la pantalla táctil. La retroilu- minación de la pantalla táctil consume mucha energía.
+
+Batería recargada a menudo antes de que se descargara toda la energía.
+
+Deje que la batería se descargue com- pletamente y recárguela luego. Repita este procedimiento varias veces.
+
+Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+La lámpara  READY  par- padea en rojo durante la carga
+
+La batería está excesiva- mente descargada cuando se la coloca en la docking station.
+
+Espere unos minutos. La carga de la batería aumenta a 1,2 V o más. La lám- para  READY  roja se ilumina continua- mente.
+
+Temperatura de la batería demasiado alta. Deje que la batería se enfríe. La carga empieza automáticamente cuando la batería se ha enfriado.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+No hay ninguna batería conectada al JM-105. Conectar la batería.
+
+
+
+# Página 69
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Resolución de problemas
+
+80 Instrucciones de uso JM-105
+
+Otros problemas
+
+Fallo Causa Solución
+
+Pantalla apagada Alimentación eléctrica apa- gada. Encienda la alimentación eléctrica.
+
+La batería se ha agotado. Cargue la batería.
+
+El dispositivo no se ha utili- zado durante 1 min o más después de que se encen- diera la alimentación eléc- trica.
+
+Toque cualquier parte de la pantalla táctil.
+
+Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+Respuesta lenta de la pantalla táctil La pantalla táctil ha sido pul- sada muy levemente. Pulse la pantalla táctil con mayor presión.
+
+Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+
+
+# Página 70
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 81
+
+Resolución de problemas
+
+El indicador luminoso del cargador no se ilumina ni siquiera cuando el dispo- sitivo está colocado en la docking station.
+
+Docking station no conectada al adaptador de CA o no conectada correctamente.
+
+Conecte la docking station correcta- mente al adaptador de CA.
+
+El adaptador de CA no está conectado a la alimentación de CA o no está conectado correctamente a la alimenta- ción de CA.
+
+Conecte el adaptador de CA correcta- mente a la alimentación de CA.
+
+El cable USB no está conec- tado a la docking station o no está conectado correcta- mente a la docking station.
+
+Conecte el cable USB correctamente a la docking station.
+
+El cable USB no está conec- tado al ordenador o no está conectado correctamente al ordenador.
+
+Conectar el cable USB correctamente al ordenador.
+
+El dispositivo no está enca- jado correctamente en la doc- king station.
+
+Encajar el dispositivo correctamente en la docking station.
+
+Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+No es posible realizar mediciones La batería se ha agotado. Cargue la batería.
+
+Pantalla táctil bloqueada. Para desbloquear la pantalla táctil, pulse el botón de bloqueo del indicador.
+
+La pantalla táctil está conge- lada o ha fallado. Pulsar el interruptor de encendido/apa- gado (on/off) y el botón de bloqueo del indicador simultáneamente y MANTE- NERLOS pulsados durante 5 s. La ali- mentación eléctrica se apaga. Después, vuelva a encender la alimentación eléc- trica.
+
+Apagar la alimentación eléctrica. Esperar 10 s. Encender la alimentación eléctrica.
+
+Si el fallo continúa, apague el dispositivo y póngalo fuera de servicio.
+
+Fallo Causa Solución
+
+
+
+# Página 71
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Resolución de problemas
+
+82 Instrucciones de uso JM-105
+
+Errores JM-S1w
+
+Cuando se produce un error de envío, aparece un bocadillo con un mensaje de error por encima del símbolo de bandeja del JM-S1w. El símbolo cambia incluyendo una línea roja que lo tacha. Si se produce un error de envío y aparece el símbolo de error JM-S1w, comprobar los ajustes JM-S1w, salir del software y reiniciar el software.
+
+Símbolo de error:
+
+```metadata
+pagina: 71
+imagen: data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P71_I0.png
+contexto: 
+```
+
+![Imagen página 71 - 0](data/images/bilirrubinometro_drager_jm105_manual_de_usuario_bilirrubinometro_drager_jm_105/P71_I0.png)
+
+Fallo Causa Solución
+
+Imposible salvar los datos, chequee espacio libre.
+
+JM-S1w no se ha podido guardar o eliminar el archivo caché para enviar/reenviar. El disco duro podría estar lleno o la carpeta caché podría tener el ajuste "solo lectura".
+
+Compruebe el disco duro, la car- peta caché 1)  o la carpeta CSV. Libere espacio en el disco duro o ajuste la carpeta caché para lec- tura/escritura.
+
+El servidor no pudo reci- bir datos. Los ajustes de mensajes o servi- dor son incorrectos y el servidor HL-7 no pudo recibir los datos. Los datos no están guardados en el servidor y JM-S1w no reintenta enviar los datos porque el servidor no acepta los mensajes.
+
+Corrija el ajuste del servidor o el ajuste de mensajes.
+
+Compruebe ajustes de Servidor o Mensaje. El formato es incorrecto para el mensaje recibido. El servidor puede o no haber aceptado el mensaje, pero JM-S1w no puede saber el resultado y no reenvía los datos.
+
+Corrija los ajustes del servidor.
+
+No se puede conectar al servidor. Compruebe ajustes de red o del servi- dor
+
+JM-S1w no se puede conectar al servidor HL-7 a través de la red: -La dirección del servidor es erró- nea o la conexión del puerto ha fallado físicamente . Los datos son reenviados.
+
+Corrija los ajustes de la red o del servidor.
+
+Algunos datos no fueron recibidos, JM-S1w lo reintentará con los ajus- tes
+
+El servidor no pudo aceptar el mensaje, porque el servidor estaba procesando. El servidor puede aceptar el mensaje más tarde, así que JM-S1w lo reintenta automáticamente.
+
+Espere un poco y vuelva a inten- tarlo.
+
+
+
+# Página 72
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 83
+
+Resolución de problemas
+
+Imposible salvar los datos, chequee espacio libre.
+
+JM-S1w no ha podido guardar los datos de registro. El disco duro está lleno y la carpeta caché tiene el ajuste "solo lectura".
+
+Los archivos de registro no se han podido crear, pero las conexiones son correctas y la transferencia de datos al servidor HL-7 ha sido exi- tosa.
+
+Cambie el ajuste de la carpeta caché 1)  o libere espacio en el disco duro.
+
+Al efectuar ajustes de código de barras, selec- cionar solo un puerto COM (estación de acopla- miento).
+
+Este mensaje aparece en la pan- talla   Código de barras  de JM- S1w se ha seleccionado más de un puerto en la pantalla  Común de JM-S1w.
+
+Solo seleccione un puerto COM en la pantalla  Común  de JM-S1w.
+
+COMx Fallo
+
+(x es el número del puerto de comunicación)
+
+Se ha intentado leer los datos actuales del código de barras 39, pero ningún JM-105 está conec- tado o el JM-105 conectado no es compatible con el formato de código de barras 39.
+
+Conectar un JM-105 que sea compatible con el formato de código de barras 39 e intente leer los datos nuevamente.
+
+1) Carpeta caché: En Windows Vista, Windows 7, Windows 8, Windows 10 C:\ProgramData\Draeger\JM-S1w\
+
+Fallo Causa Solución
+
+
+
+# Página 73
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Reprocesamiento
+
+86 Instrucciones de uso JM-105
+
+Información de seguridad
+
+Información sobre el reprocesamiento
+
+Seguir las directrices sobre prevención de infecciones y las regulaciones sobre reprocesamiento nacionales.
+
+Seguir las directrices sobre prevención de infecciones y las regulaciones sobre reprocesamiento del centro sanitario (p. ej., en relación con los ciclos de reprocesamiento).
+
+ADVERTENCIA
+
+Riesgo debido a productos reprocesados de forma inapropiada
+
+Los productos reutilizables deben ser repro- cesados; de lo contrario, aumenta el riesgo de infección. – Seguir las directrices sobre prevención de infecciones y las regulaciones sobre re- procesamiento del centro sanitario. – Seguir las directrices sobre prevención de infecciones y las regulaciones sobre re- procesamiento nacionales. – Utilizar procedimientos validados para el reprocesamiento. – Reprocesar los productos reutilizables después de cada uso.
+
+Seguir las instrucciones de los fabricantes de los productos de limpieza, los desinfectantes y los dispositivos de reprocesamiento.
+
+PRECAUCIÓN
+
+Riesgo debido a productos defectuosos
+
+Es posible que aparezcan signos de desgaste, como fisuras, deformaciones, cambios de color o desprendimientos en los productos reprocesa- dos.
+
+Comprobar que los productos no presentan sig- nos de desgaste y sustituirlos en caso necesario.
+
+PRECAUCIÓN
+
+Riesgo debido a accesorios defectuosos
+
+Incluso los accesorios reutilizables tienen una vida útil limitada. Se pueden producir señales externas de desgaste, p.ej., grietas, deformacio- nes, cambios de color o desconchados.
+
+Si hubiera señales externas de desgaste, cam- biar los accesorios afectados.
+
+
+
+# Página 74
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 87
+
+Reprocesamiento
+
+Clasificaciones para el reprocesamiento
+
+Clasificación de dispositivos médicos
+
+La clasificación depende del uso previsto del dispositivo médico. La clasificación Spaulding se basa en el riesgo de transmisión de infecciones por la aplicación del producto en el paciente sin el reprocesamiento adecuado.
+
+Clasificación de componentes específicos del dispositivo
+
+La siguiente clasificación es una recomendación de Dräger.
+
+No críticos
+
+– Componentes del dispositivo – Dispositivo principal JM-105 – Cargadores – Docking station JM-A33
+
+Clasificación Explicación
+
+No críticos Componentes que solo entran en contacto con piel intacta
+
+Semicríticos Componentes que transportan gas respiratorio o entran en contacto con mem- branas mucosas o piel alterada por alguna patología
+
+Críticos Componentes que penetran la piel o las membranas mucosas o que entran en contacto con la sangre
+
+
+
+# Página 75
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Reprocesamiento
+
+88 Instrucciones de uso JM-105
+
+Antes del reprocesamiento
+
+Observar lo siguiente antes del desmontaje
+
+1 Apagar el dispositivo.
+
+2 Desconectar los enchufes de la corriente eléctrica.
+
+Componentes específicos del dispositivo
+
+Los componentes específicos del dispositivo se deben quitar del dispositivo y, si es necesario, se deben desmontar.
+
+Retirada del adaptador de CA
+
+1 Desconectar el adaptador de AC de la toma de corriente de AC.
+
+2 Desconectar el enchufe de DC del dispositivo.
+
+Desmontaje de la [docking station]
+
+1 Retirar el Bilirrubinómetro de la docking station.
+
+Inspección visual
+
+Comprobar todos los elementos por si presentaran daños o señales externas de desgaste como agrietamientos, pérdida de elasticidad o endurecimiento pronunciado y suciedad residual.
+
+ADVERTENCIA
+
+Riesgo de lesiones graves o daños en el equipo.
+
+El desmontaje o la modificación del disposi- tivo o los accesorios podría causar una des- carga eléctrica o fuego.
+
+No desmontar ni modificar el dispositivo ni los accesorios.
+
+ADVERTENCIA
+
+Riesgo de lesiones graves o daños en el equipo.
+
+Limpiar el dispositivo mientras está conec- tado a la alimentación eléctrica podría causar una descarga eléctrica o fuego.
+
+Desconectar todos los componentes y acce- sorios de la toma de corriente de AC.
+
+
+
+# Página 76
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 89
+
+Reprocesamiento
+
+Procedimientos de reprocesamiento validados
+
+Vista general de los procedimientos de reprocesamiento de los componentes
+
+Desinfección de superficies con limpieza
+
+Componentes: – Componentes del dispositivo – Dispositivo principal JM-105
+
+Requisitos previos: – Se ha preparado el desinfectantes de superficies de acuerdo con las instrucciones del fabricante. – Se observan las instrucciones del fabricante (p. ej., en cuanto a la fecha de caducidad o las condiciones de aplicación). – Se utiliza un paño no contaminado y sin pelusas, humedecido en desinfectante de superficies, para la limpieza y desinfección de superficies. Limpieza
+
+1 Limpiar la suciedad visible con un paño desechable humedecido en desinfectante de superficies. Desechar el paño.
+
+2 Frotar todas las superficies. Después, ya no debe quedar más suciedad visible.
+
+Componentes Desinfección de superfi- cies con lim- pieza
+
+Limpieza ma- nual seguida de desinfec- ción por in- mersión
+
+Limpieza me- cánica con desinfección térmica
+
+Esteriliza- ción por vapor
+
+Descripción del procedimiento
+
+Dispositivo principal JM-105 Sí No No No Consultar la página 89
+
+Desinfectante de super- ficies Fabricante Concentración Tiempo de contacto
+
+Dismozon pur Bode 1,6 % 15 min
+
+ADVERTENCIA
+
+Riesgo debido a la entrada de líquidos
+
+Si entra líquido, podría ocurrir lo siguiente: – Daño al dispositivo – Descarga eléctrica – Mal funcionamiento del dispositivo
+
+Asegurarse de que no entre ningún líquido en el dispositivo.
+
+ADVERTENCIA
+
+Riesgo de contaminación cruzada
+
+Los productos reutilizables deben ser repro- cesados; de lo contrario, aumenta el riesgo de infección. – Desinfectar la sonda de medición antes y después de cada uso con un paciente.
+
+
+
+# Página 77
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Reprocesamiento
+
+90 Instrucciones de uso JM-105
+
+Desinfección de superficies
+
+3 Frotar otra vez las superficies limpias hasta mojar visiblemente con desinfectante de superficies todas las superficies que se han de desinfectar.
+
+4 Esperar el tiempo de contacto del desinfectantes de superficies.
+
+5 Al final del tiempo de contacto, humedecer un paño nuevo, no contaminado y sin pelusas, con agua (al menos con calidad de agua potable).
+
+6 Frotar todas las superficies hasta que no queden restos visibles del desinfectante de superficies, como vetas o residuos de espuma.
+
+7 Esperar hasta que se sequen las superficies.
+
+8 Comprobar las superficies por si presentan daños visibles y, si es necesario, sustituir el producto.
+
+Información suplementaria
+
+9 Limpiar la sonda de medición frotando con alcohol antes y después de realizar una medición en el siguiente paciente. Secar con un paño seco.
+
+Almacenamiento y transporte
+
+Después del reprocesamiento, no hay requisitos especiales para el almacenamiento y el transporte del producto. Sin embargo, debe observarse lo siguiente: – Guardar el producto seco y sin polvo. – Evitar la recontaminación y el daño durante el transporte.
+
+Debe observarse cualquier otra información sobre el almacenamiento y el transporte que se incluya en los documentos que acompañen al producto.
+
+
+
+# Página 78
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 91
+
+Reprocesamiento
+
+Otros agentes y procedimientos de reprocesamiento
+
+Desinfectantes
+
+Utilizar desinfectantes homologados a nivel nacional y adecuados para el procedimiento de reprocesamiento correspondiente.
+
+Desinfectantes de superficies
+
+Los fabricantes de los desinfectantes de superficie han verificado al menos los siguientes espectros de actividad: – Bactericida – Levaduricida – Viricida o viricida contra virus con envoltura
+
+Seguir las instrucciones del fabricante relativas a desinfectantes de superficies.
+
+Los siguientes desinfectantes de superficies eran compatibles con el material en el momento de las pruebas:
+
+Dräger advierte que los agentes que liberan oxígeno y cloro pueden provocar un cambio de color en algunos materiales. Esto, sin embargo, no es ninguna indicación de que el producto no funcione correctamente.
+
+El uso de otros desinfectantes de superficies será a riesgo propio.
+
+ADVERTENCIA
+
+Riesgo de daños en el equipo.
+
+El benceno, los disolventes y los diluyentes pue- den disolver la cubierta del JM-105.
+
+No utilizar benceno, disolventes ni diluyentes.
+
+Clase de ingrediente activo Desinfectante de superficies Fabricante Listado
+
+Agentes que liberan cloro Klorsept 17 Medentech EPA 1)
+
+1) Agencia de Protección del Medio Ambiente de Estados Unidos
+
+Actichlor plus Ecolab USA EPA
+
+Agentes que liberan oxígeno Dismozon pur BODE Chemie CE
+
+Oxycide Ecolab USA EPA
+
+Periodox RTU Bio Med Protect CE
+
+Alcohol Alcohol, etanol, al 70 % Varios Todo
+
+
+
+# Página 79
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Reprocesamiento
+
+92 Instrucciones de uso JM-105
+
+Procedimientos de reprocesamiento
+
+Desinfección de superficies con limpieza
+
+Componentes: – Cargadores – Docking station JM-A33
+
+Limpieza
+
+1 Para la docking station, quitar el polvo y la suciedad de la superficie y de la parte inferior.
+
+2 Limpiar la suciedad visible con un paño desechable humedecido en desinfectante de superficies. Desechar el paño.
+
+3 Frotar todas las superficies. Después, ya no debe quedar más suciedad visible.
+
+
+
+# Página 80
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 93
+
+Reprocesamiento
+
+Después del reprocesamiento
+
+Montaje y colocación de los componentes específicos del dispositivo
+
+Requisitos previos: – Todos los componentes se han reprocesado y están secos.
+
+Montaje del JM-105
+
+1 Preparar el dispositivo de tal forma que esté listo para su utilización; ver capítulo "Montaje y preparación".
+
+Preparación antes del próximo uso del dispositivo
+
+Comprobación de la disponibilidad para el funcionamiento
+
+Requisitos previos: – El dispositivo se ha montado y preparado para el funcionamiento.
+
+Procedimiento:
+
+ Comprobar si está listo para el funcionamiento; ver capítulo "Getting started".
+
+ Limpiar la sonda de medición con alcohol antes de realizar una medición en el siguiente paciente. Secar con un paño seco.
+
+
+
+# Página 81
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Servicio técnico
+
+96 Instrucciones de uso JM-105
+
+Visión general
+
+Este capítulo describe las medidas de mantenimiento requeridas para mantener el funcionamiento apropiado del dispositivo médico. Las medidas de mantenimiento deben ser realizadas por el personal responsable.
+
+Definición de la terminología de servicio técnico
+
+ADVERTENCIA
+
+Riesgo debido a productos reprocesados de forma inapropiada
+
+El producto puede haberse contaminado con agentes infecciosos.
+
+Antes de realizar el servicio técnico y de enviar el producto para su reparación, repro- céselo de acuerdo con el capítulo "Reproce- samiento".
+
+ADVERTENCIA
+
+Riesgo cuando se abre la carcasa
+
+Bajo la carcasa, hay componentes eléctricos activos que pueden provocar una descarga eléctrica. – La carcasa solo pueden abrirla los grupos destinatarios que hayan sido asignados a esa medida particular.
+
+ADVERTENCIA
+
+Riesgo si el servicio técnico no se realiza co- rrectamente
+
+Pueden producirse lesiones personales y da- ños materiales si el servicio técnico no se rea- liza correctamente.
+
+El servicio técnico deben realizarlo los grupos destinatarios asignados a cada medida parti- cular.
+
+ADVERTENCIA
+
+Riesgo si el mantenimiento no se realiza co- rrectamente
+
+Si el dispositivo está conectado a la fuente de alimentación o al suministro de gas durante el mantenimiento, existe un riesgo de lesiones personales y daños materiales.
+
+Antes de realizar el mantenimiento, desco- necte todas las conexiones eléctricas de la fuente de alimentación y todas las conexiones de gas del suministro de gas.
+
+Concepto Definición
+
+Servicio técnico Todas las medidas (inspección, mantenimiento, reparación) destinadas a mantener o restaurar la integridad funcional de un producto
+
+Inspección Medidas destinadas a determinar y evaluar el estado actual de un producto
+
+Mantenimiento Medidas especificadas regulares destinadas a mantener la integridad funcio- nal de un producto
+
+Reparación Medidas destinadas a restaurar la integridad funcional de un producto des- pués de una avería
+
+
+
+# Página 82
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 97
+
+Servicio técnico
+
+Inspección
+
+Realización de la inspección
+
+1 Compruebe que dispone de las instrucciones de uso correspondientes.
+
+2 Realice una prueba de funcionamiento de las siguientes funciones de acuerdo con las instrucciones de uso: – Medición de luz – Batería interna
+
+3 Compruebe que el producto está en buen estado: – Todas las etiquetas están completas y son legibles – No hay daños visibles
+
+4 Observe las instrucciones de uso y compruebe que todos los componentes y accesorios necesarios para el uso del producto están disponibles.
+
+5 Compruebe la seguridad eléctrica de acuerdo con la norma IEC 62353.
+
+Mantenimiento
+
+Comprobaciones Intervalo Personal responsable
+
+Inspección Cada año Personal de servicio técnico
+
+ADVERTENCIA
+
+Riesgo si el servicio técnico no se realiza con regularidad
+
+El desgaste y la fatiga del material de los com- ponentes pueden provocar averías y fallos de funcionamiento del dispositivo.
+
+Realizar el servicio técnico en los intervalos especificados.
+
+ADVERTENCIA
+
+Riesgo de descarga eléctrica
+
+Antes de realizar trabajos de mantenimiento, desconecte todos los conectores eléctricos de la alimentación eléctrica.
+
+Componente Intervalo Tarea Personal responsable
+
+Batería interna Cada 2 años Cambio Personal de servicio técnico
+
+
+
+# Página 83
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Servicio técnico
+
+98 Instrucciones de uso JM-105
+
+Calibración
+
+Dräger recomienda que la calibración sea realizada por DrägerService cada 12 meses. Devolver el dispositivo a DrägerService para la calibración.
+
+La calibración inicial es válida durante un año a partir de la fecha de fabricación. Las calibraciones siguientes son válidas durante un año a partir de la fecha de la calibración anterior.
+
+Realización de mantenimiento
+
+Retirada de la batería
+
+1 Retirar la cubierta de la batería (consultar Bilirrubinómetro JM-105 - parte trasera en la página 16).
+
+2 Sustituya la batería.
+
+3 Cargue la batería durante 2 horas.
+
+4 Realice una comprobación operacional.
+
+Reparación
+
+Dräger recomienda que todas las reparaciones sean realizadas por DrägerService y que solo se utilicen piezas de reparación auténticas de Dräger.
+
+ADVERTENCIA
+
+Riesgo de lesiones o daños en el equipo.
+
+Este dispositivo tiene una batería integrada.
+
+Asegúrese de que solo personal formado ade- cuadamente abra el dispositivo o intente sus- tituir la batería.
+
+ADVERTENCIA
+
+Riesgo si la batería no se sustituye correcta- mente
+
+Si la batería no se sustituye correctamente, pueden producirse cortocircuitos y altas tem- peraturas capaces de provocar una explosión o un incendio.
+
+La batería deben sustituirla los grupos desti- natarios asignados.
+
+
+
+# Página 84
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Eliminación
+
+100 Instrucciones de uso JM-105
+
+Eliminación del producto
+
+ Al final de su vida útil, eliminar el producto de acuerdo con las disposiciones legales aplicables.
+
+Para los países sujetos a la directiva 2002/96/CE de la UE
+
+Este dispositivo cumple con la Directiva 2002/96/CE (RAEE) de la UE. Para cumplir con su registro conforme a esta directiva, este dispositivo no debe ser depositado en un punto de recogida municipal para basura de equipos eléctricos y electrónicos. Dräger ha autorizado a una empresa a recoger y eliminar este dispositivo. Para iniciar la recogida o para obtener más información, visite Dräger en Internet en www.draeger.com. Utilice la función de búsqueda con la palabra clave "WEEE" (RAEE) para encontrar la información relevante. Si no es posible acceder a la página web de Dräger, contactar con la organización local de Dräger.
+
+Eliminación de baterías
+
+Observe la legislación y reglamentación aplicables para la eliminación de baterías.
+
+ADVERTENCIA
+
+Riesgo de explosión y quemaduras químicas
+
+El manejo inadecuado de baterías puede pro- vocar explosiones y quemaduras químicas.
+
+No tirar las baterías al fuego. No intente abrir las baterías.
+
+
+
+# Página 85
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Características técnicas
+
+102 Instrucciones de uso JM-105
+
+Especificaciones
+
+Clasificación del dispositivo
+
+Clase de protección según la norma IEC 60601-1 (Bilirrubinómetro) Equipo electromédico con alimentación interna, tipo BF, funcionamiento continuo, no AP
+
+Clase de protección según la norma IEC 60601-1 (adaptador de CA) Equipo electromédico, clase I, con alimentación externa, tipo BF, funcionamiento continuo, no AP
+
+Entrada de líquidos y partículas (IEC 60601-1) IPX0
+
+Clasificación según la directiva comunitaria 93/42/CEE, anexo IX IIa
+
+Código UMDNS/código GMDN 16-166/35475
+
+Especificaciones eléctricas
+
+Batería NiMH interna
+
+Número de mediciones (estando totalmente cargada) hasta 250
+
+Adaptador de CA
+
+Entrada 100 V~ a 240 V~, 50/60 Hz, 11 VA a 18 VA
+
+Salida 9 VDC, 500 mA
+
+Fuente de luz Lámpara de arco de xenón
+
+Vida útil de la lámpara 150000 mediciones
+
+Sensores Fotodiodos de silicona
+
+Especificaciones físicas
+
+Ancho 56 mm (2,2 ")
+
+Profundidad 45 mm (1,8 ")
+
+Altura 168 mm (6,6 ")
+
+Peso 203 g ± 10 %
+
+Vida útil prevista 5 años
+
+
+
+# Página 86
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 103
+
+Características técnicas
+
+Especificaciones de funcionamiento
+
+Rango de medición 0,0 mg/dL a 20,0 mg/dL (0   mol/L a 340   mol/L)
+
+Exactitud (  ) ± 1,5 mg/dL o ± 25,5   mol/L (>35 semanas de ges- tación)
+
+± 1,6 mg/dL o ± 27,4   mol/L (  24 semanas de ges- tación)
+
+Exactitud (  ) tras la fototerapia ± 2,3 mg/dL o ± 39,00   mol/L (  24 semanas de gestación)
+
+± 2,2 mg/dL o ± 38,00   mol/L (>35 semanas)
+
+Error típico de estimación de datos clínicos (SEE) La desviación estándar mostrada arriba se basa en el promedio de los datos clínicos disponibles. En promedio, el 66 % de los resultados está dentro de este rango y el resto está fuera de este rango. Este valor puede verse afectado por variables como la edad, el color de la piel y el rendimiento del dispo- sitivo en las manos del usuario. Consulte el apén- dice A para una descripción detallada de los resultados según la edad gestacional, el lugar de medición y los datos demográficos de los pacien- tes. Los errores típicos de estimación (SEE, por sus siglas en inglés) mostrados en la tabla se basan en los datos clínicos disponibles y pueden verse afectados por variables, tales como la edad de desarrollo del bebé, la etnicidad, etc. Por ello, recomendamos que el JM-105 se utilice en combi- nación con otros signos clínicos y mediciones de laboratorio. La "Medición específica de bilirrubina" debería ser confirmada por otros métodos como el análisis del suero sanguíneo en laboratorio.
+
+Nota: Para comprobar la fiabilidad de medición del dispositivo, compare el valor TcB (bilirrubina transcu- tánea) medido por el dispositivo y el valor TSB (bilirrubina total en suero) medido de las muestras de san- gre recogidas.
+
+Transmisión de datos
+
+Puerto USB HL-7 o CSV
+
+Formatos de código de barras apoyados
+
+Código 39
+
+EAN/JAN
+
+Código 128
+
+ANSI/HIBC
+
+
+
+# Página 87
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Características técnicas
+
+104 Instrucciones de uso JM-105
+
+Condiciones ambientales
+
+Durante el funcionamiento
+
+Temperatura de 10 °C a 40 °C (de 50 °F a 104 °F)
+
+NOTA: La temperatura máxima de la sonda de medición es inferior a 30 °C (86 °F) a una temperatura ambiente de 25 °C (77 °F).
+
+NOTA: La temperatura máxima de la sonda de medición es inferior a 45 °C (113 °F) a una temperatura ambiente de 40 °C (104 °F). Presión atmosférica de 700 hPa a 1060 hPa
+
+(-400 m a 3000 m)
+
+Humedad relativa de 30 % a 95 % (sin condensación)
+
+Durante el almacenamiento y transporte
+
+Temperatura de -10 °C a 50 °C (de 14 °F a 122 °F)
+
+Humedad relativa de 30 % a 95 % (sin condensación)
+
+Presión atmosférica de 700 hPa a 1060 hPa
+
+
+
+# Página 88
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 105
+
+Características técnicas
+
+Declaración sobre compatibilidad electromagnética (CEM)
+
+Información general
+
+Se comprobó la compatibilidad electromagnética de este equipo usando accesorios de la lista de accesorios. Solo podrán usarse otros accesorios si no afectan a la compatibilidad electromagnética. El uso de accesorios no conformes tendría como resultado unas emisiones electromagnéticas elevadas o la disminución de la inmunidad electromagnética del dispositivo.
+
+Este dispositivo solo puede usarse en las proximidades directas si Dräger ha aprobado la disposición de dispositivos. Si Dräger no lo ha aprobado, deberá asegurarse que el dispositivo funcione correctamente en la disposición deseada antes de usarlo. Deben seguirse las instrucciones de uso de otros equipos.
+
+Entorno electromagnético
+
+Este dispositivo solo puede utilizarse en los entornos especificados en la sección "Indicaciones/contraindicaciones" en la página 12.
+
+Emisiones Compliancia
+
+Emisiones radiadas Clase B, grupo 1 (de 30 MHz a 1 GHz)
+
+Emisiones conducidas Clase B, grupo 1 (de 150 kHz a 30 MHz)
+
+NOTA
+
+Las características de las emisiones de este equipo lo hacen adecuado para el uso en áreas industriales y hospitales (CISPR 11 clase A).
+
+
+
+# Página 89
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Características técnicas
+
+106 Instrucciones de uso JM-105
+
+Distancias de separación recomendadas de los dispositivos de comunicación inalámbrica
+
+Para asegurar que se mantenga la integridad funcional del dispositivo, debe haber una distancia de separación de al menos 1,0 m (3,3 pies) entre este dispositivo y los dispositivos de comunicación inalámbrica.
+
+Inmunidad contra Nivel de prueba y entorno electromagnético re- querido
+
+Descarga electrostática (ESD) (IEC 61000-4-2) Descarga de contacto: ±8 kV
+
+Descarga en el aire: ±15 kV
+
+Transitorios eléctricos rápidos (ráfagas) (IEC 61000-4-4) Cable de alimentación: ±2 kV
+
+Líneas de entrada/salida de señal larga: ±1 kV
+
+Tensiones de impulso (sobretensión) (IEC 61000-4-5) Conductor externo de tensión eléctrica: conductor externo: ±1 kV
+
+Conductor externo de tensión eléctrica: conductor externo protector de tierra: ±2 kV
+
+Campos magnéticos a frecuencia de red (IEC 61000-4-8) 50 Hz: 30 A/m
+
+Breves interrupciones y caídas de tensión en la tensión de alimentación (IEC 61000-4-11) Caídas de tensión del 30 % al 100 %, de 8,3 ms a 5 s, distintos ángulos de fase
+
+Perturbaciones de alta frecuencia radiadas (IEC 61000-4-3) De 80 MHz a 2,7 GHz: 3 V/m
+
+Perturbaciones de alta frecuencia conducidas (IEC 61000-4-6) De 150 kHz a 80 MHz: 3 V, bandas ISM: 6 V
+
+Campos electromagnéticos en las proximidades de dispositivos de comunicación inalámbrica Varias frecuencias de 385 MHz a 5785 MHz: de 9 V/m a 28 V/m
+
+
+
+# Página 90
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Principios de funcionamiento
+
+108 Instrucciones de uso JM-105
+
+Principio de medición
+
+La bilirrubina transcutánea, un indicador de ictericia en los bebés, absorbe luz azul y verde. El bilirrubinómetro determina el color amarillento del tejido subcutáneo midiendo la diferencia de las densidades ópticas de luz en las regiones de longitud de onda del azul (450 nm) y el verde (550 nm). La sonda de medición tiene 2 caminos ópticos. Cuando la sonda de medición se presiona contra el esternón o la frente del bebé, la lámpara de xenón integrada emite destellos. La luz de la lámpara de xenón atraviesa la fibra de vidrio e ilumina la piel. La luz se dispersa y es absorbida por la piel y el tejido subcutáneo repetidamente, y finalmente vuelve al lado del sensor de la fibra de vidrio.
+
+NOTA
+
+Para comprobar la fiabilidad de medición del dis- positivo, compare el valor TcB (bilirrubina transcu- tánea) medido por el dispositivo y el valor TsB (bilirrubina total en suero) medido de las muestras de sangre recogidas.
+
+056
+
+Cutis
+
+Panniculu
+
+Fibra emisora de luz Fibra receptora de luz
+
+Ilustración conceptual de la medición
+
+
+
+# Página 91
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 109
+
+Principios de funcionamiento
+
+Cuanto más densa sea la bilirrubina transcutánea, más débil será la luz azul reflejada. La luz verde reflejada permanece intacta independientemente de la densidad de la bilirrubina.
+
+Como la diferencia de densidad óptica indica una correlación lineal con la concentración de bilirrubina total en suero, ésta se convierte a la concentración de bilirrubina estimada. Es indicada digitalmente.
+
+057
+
+Concentración de bilirrubina Baja Media Alta
+
+Color de la piel (amarillento)
+
+Cantidad de luz reflejada
+
+Azul Verde Azul Verde Azul Verde
+
+
+
+# Página 92
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Principios de funcionamiento
+
+110 Instrucciones de uso JM-105
+
+La sonda de medición tiene 2 caminos ópticos. Este método permite la medición del color amarillento de la piel y el tejido subcutáneo sin la influencia del pigmento de melanina y la madurez de la piel.
+
+De la luz que regresa a la fibra, la parte dispersada desde el tejido subcutáneo superficial atraviesa el núcleo interno (camino óptico corto) de la fibra. La parte dispersada desde el tejido subcutáneo
+
+profundo atraviesa el núcleo externo (camino óptico largo) de la fibra. Ambos alcanzan después el fotodiodo correspondiente.
+
+Al calcular la diferencia de las densidades ópticas, se deducen las partes que son comunes a la epidermis y la dermis. Como resultado, la
+
+diferencia de las densidades ópticas entre las 2 regiones de longitud de onda se puede obtener solamente para el tejido subcutáneo.
+
+058
+
+Dos longitudes de onda fotodiodo
+
+Azul
+
+Verde
+
+Panel difusor Sensor para camino óptico largo Azul
+
+Verde
+
+Lámpara de xenón Fibra de vidrio
+
+Sensor para camino óptico largo Camino óptico largo
+
+Camino óptico corto
+
+Camino emisor de luz
+
+059
+
+Camino óptico largo
+
+Camino óptico corto Camino óptico largo
+
+Camino óptico corto
+
+Epidermis Dermis
+
+Tejido subcutáneo
+
+Bebé maduro Bebé prematuro
+
+
+
+# Página 93
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 111
+
+Lista de accesorios
+
+Lista de accesorios
+
+Accesorios estándar
+
+Bilirrubinómetro Dräger JM-105 MU20105
+
+Docking station con comprobador integrado, CE, JM-A33, en MU24805
+
+Docking station con comprobador integrado, CE, JM-A33, bg MU24807
+
+Docking station con comprobador integrado, CE, JM-A33, cs MU24749
+
+Docking station con comprobador integrado, CE, JM-A33, da MU24750
+
+Docking station con comprobador integrado, CE, JM-A33, de MU24751
+
+Docking station con comprobador integrado, CE, JM-A33, es MU24752
+
+Docking station con comprobador integrado, CE, JM-A33, fr MU24753
+
+Docking station con comprobador integrado, CE, JM-A33, hr MU24754
+
+Docking station con comprobador integrado, CE, JM-A33, hu MU24755
+
+Docking station con comprobador integrado, CE, JM-A33, it MU24756
+
+Docking station con comprobador integrado, CE, JM-A33, nl MU24757
+
+Docking station con comprobador integrado, CE, JM-A33, no MU24758
+
+Docking station con comprobador integrado, CE, JM-A33, pl MU24759
+
+Docking station con comprobador integrado, CE, JM-A33, pt MU24760
+
+Docking station con comprobador integrado, CE, JM-A33, ro MU24761
+
+Docking station con comprobador integrado, CE, JM-A33, ru MU24762
+
+Docking station con comprobador integrado, CE, JM-A33, sk MU24763
+
+Docking station con comprobador integrado, CE, JM-A33, sr MU24764
+
+Docking station con comprobador integrado, CE, JM-A33, sv MU24765
+
+Docking station con comprobador integrado, CE, JM-A33, tr MU24766
+
+Cable T-A15 USB para software de transmisión de datos MU24774
+
+Software de transmisión de datos, CD-ROM/USB, SW JM-S1w MU24775
+
+Accesorios opcionales
+
+Adaptador de AC, JM-A32 MU19791
+
+Adaptador de AC, JM-A32 CE MU19792
+
+
+
+# Página 94
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Apéndice A - Resumen de rendimiento clínico
+
+114 Instrucciones de uso JM-105
+
+Investigación de la concordancia entre las mediciones de bilirrubina transcutánea usando el JM-105 y las mediciones de bilirrubina total en suero por zona, antes, durante y después de la fototerapia en una población étnicamente diversa de bebés con un periodo de gestación ≥24
+
+semanas
+
+Información de la zona
+
+El estudio se efectuó en tres hospitales terciarios universitarios, en las unidades de cuidados intensivos neonatales de St Michael's Hospital, Sinai Health Systems y McMaster Children's Hospital. Los tres lugares de estudio se encuentran en Ontario, Canadá, en dos grandes centros urbanos (Toronto y Hamilton).
+
+JM-105
+
+El Bilirrubinómetro JM-105, autorizado en Estados Unidos como K133175, es un bilirrubinómetro transcutáneo no invasivo. Mide el color amarillento del tejido subcutáneo en recién nacidos. La unidad ofrece una medición digital visual que se corresponde con la bilirrubina en el suero en recién nacidos.
+
+Actualmente, se permite el uso de JM-105 con neonatos con una gestación ≥24 semanas antes de someterse a fototerapia o exanguinotransfusión. En EE. UU., el uso previsto se restringe a ≥35 semanas de gestación antes de someterse a fototerapia o exanguinotransfusión. Por tanto, este estudio evalúa el uso del JM-105 en: 1) neonatos a término y prematuros tardíos > 35 semanas de gestación antes, durante y después de la fototerapia por zona (frente y esternón); 2) bebés prematuros entre 24 y 35 semanas de gestación antes, durante y después de la fototerapia por zona (frente y esternón). Para asegurar la generalizabilidad por raza y etnia, se buscó una población diversa para este estudio.
+
+Métodos
+
+Diseño
+
+Se llevó a cabo un ensayo prospectivo multizona de neonatos nacidos con ≥24 semanas de gestación para valorar cómo difiere la concordancia entre TCB y TSB según la zona (frente o esternón), el tratamiento (con y sin fototerapia) y la etnia informada para los bebés prematuros.
+
+Población y entornos
+
+En el estudio se incluyeron neonatos nacidos con ≥24 semanas de gestación en St. Michael’s Hospital (Toronto, ON), Sinai Health Systems (Toronto, ON) y Hamilton Health Sciences Centre (Hamilton, ON) entre septiembre de 2016 y junio de 2018. Como parte de la atención rutinaria, se midió al menos una vez la bilirrubina en suero (TSB) de todos los neonatos, aunque lo habitual fue hacer varias mediciones a lo largo de su estancia en la UCIN y el posparto.
+
+Criterios de exclusión
+
+Se excluyó a los neonatos del estudio si presentaban alguna de las siguientes afecciones: hidropesía fetal; malformaciones congénitas mayores; enfermedades, alteraciones o grosor de la piel que, en opinión del médico, puedan impedir el uso del medidor de TCB o interferir con él (p. ej., infecciones cutáneas, púrpura, etc.).
+
+
+
+# Página 95
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 115
+
+Apéndice A - Resumen de rendimiento clínico
+
+Procedimientos
+
+Una vez obtenido el consentimiento informado, se utilizó el JM-105 para medir la TCB en un plazo de hasta 15 minutos de cada medición de TSB tomada a los bebés participantes. Además, se tomaron mediciones de TCB en la frente y el ester- nón para determinar si su concordancia varía según el lugar de la muestra, cuando se compara con los niveles de TSB. Se tomaron tres medicio- nes diferentes en la frente y el esternón a cada neonato en cada medición rutinaria de TSB. Esto se hizo durante un periodo de 10 días antes, durante y después de la fototerapia.
+
+Controles
+
+Cada sujeto era su propio grupo de control. Cada participante recibió un estándar de atención (prueba de bilirrubina total en suero) y la intervención (medición de bilirrubina transcutánea con JM-105) en un plazo de hasta 15 minutos de diferencia. No fue posible emplear un grupo aparte de control e intervención, ya que no es ético negar a los participantes el estándar de atención (la prueba de bilirrubina total en suero).
+
+Estudio a ciegas
+
+Se hicieron todos los esfuerzos posibles para que los médicos responsables de la asistencia sanitaria de los neonatos inscritos actuaran a ciegas de las mediciones de bilirrubina transcutánea para reducir el sesgo en el número y la frecuencia de la bilirrubina en suero obtenida para cada neonato.
+
+Fuentes de los datos
+
+Se obtuvieron mediciones emparejadas de 3 mediciones de TCB en la frente y el esternón con TSB. Se anotaron las horas de edad en el momento de completar la prueba y la iniciación de la fototerapia para determinar si la medición tuvo lugar antes, durante o después de la fototerapia.
+
+Además, para todos los neonatos inscritos en el estudio, se obtuvo información demográfica y clínica. Esto incluye datos demográficos del bebé y de su madre, historial familiar de enfermedades relacionadas con la hiperbilirrubinemia, información médica del neonato (características clínicas, datos de laboratorio, tratamiento y resultados en el alta) mediante la extracción de gráficos.
+
+Resultados
+
+El principal resultado del estudio fue evaluar cómo difiere la concordancia entre la TCB y la TSB en función de la zona (frente o esternón), el tratamiento (con o sin) y la etnia en bebés de ≥24 semanas de gestación.
+
+Análisis
+
+Cada bebé recibió tres mediciones individuales usando el JM-105 por zona por cada prueba rutinaria de bilirrubina. La medición media por zona de cada prueba se calculó manualmente de acuerdo con el algoritmo del JM-105. El análisis se basó en estas medias de TCB por zona calculadas manualmente para cada prueba de bilirrubina. Para determinar la concordancia entre los niveles de TCB y TSB, se desarrollaron gráficos de Bland- Altman, y se efectuaron los análisis de Bland- Altman correspondientes. Se efectuaron análisis globales para todos los bebés prematuros, y luego se estratificaron por grupos gestacionales de 24-28 semanas, 29-32 semanas, 33-35 semanas y >35 semanas. Se trazaron también gráficos de Bland- Altman para: a) la medición en la zona de la TCB (es decir, frente y esternón); b) si la TCB se obtuvo antes o después de la fototerapia; y c) la raza/etnia del bebé. Además, se calcularon coeficientes de correlación de Pearson entre todos los valores hechos con el medidor y el suero, antes y después de la fototerapia.
+
+Cálculo del tamaño de la muestra
+
+Los cálculos de tamaño de efecto se basaron en un estudio anterior que indicaba una TSB media de 145,8 µmol/L y una desviación estándar de la
+
+
+
+# Página 96
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Apéndice A - Resumen de rendimiento clínico
+
+116 Instrucciones de uso JM-105
+
+diferencia media entre las mediciones de TSB y TCB de 30,0 µmol/L, con una variación insignificante por duración de la gestación y grupo étnico (28).
+
+Con los tamaños de muestra propuestos, será posible detectar una diferencia mínima entre las mediciones de TSB y TCB de 4,2 µmol/L (2,9 % de diferencia) para toda la muestra (N = 400) y una diferencia mínima de 8,5 µmol/L (5,8 % de diferencia) dentro de estratos de edad gestacional (N = 100), con una significación estadística del 5 % y una potencia del 80 %, bilateral. Se usarán gráficos de Bland-Altman para determinar la concordancia entre las mediciones e identificar posibles valores atípicos.
+
+Resultados
+
+Pacientes
+
+En el estudio se inscribieron cuatrocientos sesenta y cuatro bebés entre 24 y 44 semanas de tres centros neonatales entre septiembre de 2016 y junio de 2018. Todos los neonatos recibieron al menos una medición de TCB con el JM-105 en la frente y el esternón en el momento de la medición rutinaria de TSB. Se tomaron en total 1163 mediciones de TCB en la frente y el esternón. 332 se efectuaron antes del comienzo de la fototerapia y 831 después. De los 464 bebés, la edad gestacional media fue de 32 semanas y variaba entre las 24 y las 44 semanas. La tabla 1 resume las características demográficas de la población del estudio. Se puede obtener información adicional sobre las características demográficas de los pacientes a petición.
+
+En los bebés prematuros entre 24 y 35 semanas, se tomaron en total 881 mediciones de TCB en la frente y el esternón. 186 se efectuaron antes del comienzo de la fototerapia y 694 después. La medición media de TSB fue de 124 µmol/L ± 42,17, y la mediana fue de 121 µmol/L, con un rango intercuartílico de 30 µmol/L-260 µmol/L. De los 304 bebés prematuros, la edad gestacional media fue de 30 semanas y variaba entre las 24 y las 35
+
+semanas de gestación. La tabla 1 de la página 118 resume las características demográficas de la población del estudio.
+
+Concordancia entre TSB y TCB
+
+Se adaptaron los gráficos de Bland-Altman para tener en cuenta múltiples mediciones por bebé. Tradicionalmente, los gráficos de Bland-Altman incluyen una medición por bebé; sin embargo, en este estudio, cada bebé aportó más de una medición y un número diferente de mediciones. Para representar las mediciones repetidas por bebé, se construyó un gráfico de Bland-Altman adaptado mediante el método adaptado de Zou et al 2013 [28]. El modelo ajustado calcula la diferencia media, la media y la variación entre TCB y TSB de cada bebé. A continuación, se calcula la media de las diferencias medias, teniendo en cuenta la variabilidad intersujeto e intrasujeto. Luego se calculan los límites de la concordancia de la manera tradicional [28]. El gráfico de Bland- Altman describe la concordancia del JM-105 comparando la diferencia entre TCB y TSB con la media de TCB y TSB por grupo de prematuridad, zona, y momento antes o durante/después del comienzo de la fototerapia. Los niveles del 95 % de concordancia se calculan usando 2 desviaciones estándar.
+
+24-28 semanas
+
+Se obtuvieron en total 244 mediciones de TCB en la frente y el esternón en bebés entre 24 y 28 semanas. Dieciséis se efectuaron antes del comienzo de la fototerapia y 228 después de comenzarla. La TCB media en la frente y el esternón antes del comienzo de la fototerapia fue de 84,3 µmol/L (44,3-153,3 umol/l) y 72,9 µmol/L (21,5-151,5 µmol/L) respectivamente. Durante y después del comienzo de la fototerapia, la TCB media fue de 79,7 µmol/L en la frente (19,50- 182 µmol/L) y 73,1 µmol/L en el esternón (19,5- 173 µmol/L).
+
+
+
+# Página 97
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Instrucciones de uso JM-105 117
+
+Apéndice A - Resumen de rendimiento clínico
+
+29-32 semanas
+
+Se obtuvieron en total 398 mediciones de TCB en la frente y el esternón en bebés entre 29 y 32 semanas. Setenta se efectuaron antes del comienzo de la fototerapia y 328 después o durante el comienzo de la fototerapia. La TCB media en la frente y el esternón antes del comienzo de la fototerapia fue de 121,6 µmol/L (55,6-228,6 µmol/L) y 107,6 µmol/L (47,1-222,3 µmol/L) respectivamente. Durante y después del comienzo de la fototerapia, la TCB media fue de 112,7 µmol/L en la frente (24,5-229,6) y 107,6 µmol/L en el esternón (20,5-256,1 µmol/L).
+
+33-35 semanas
+
+Se obtuvieron en total 245 mediciones de TCB en la frente y el esternón en bebés entre 33 y 35 semanas. Noventa y nueve se efectuaron antes del comienzo de la fototerapia y 146 después o durante el comienzo de la fototerapia. La TCB media en la frente y el esternón antes del comienzo de la fototerapia fue de 154,5 (17,6-272,1 µmol/L) y 150 µmol/L (20,6-247,5 µmol/L) respectivamente. Durante y después del comienzo de la fototerapia, la TCB media fue de 148,6 µmol/L en la frente (48,8-268,6) y 143,1 µmol/L en el esternón (43,00-267,50 µmol/L).
+
+>35 semanas
+
+Se obtuvieron en total 276 mediciones de TCB en la frente y el esternón en bebés de >35 semanas de gestación. Ciento cuarenta y siete se efectuaron antes del comienzo de la fototerapia y 129 después o durante el comienzo de la fototerapia. La TCB media en la frente y el esternón antes del comienzo de la fototerapia fue de 140,1 (7,50-348 µmol/L) y 136,5 µmol/L (7,50-351,3 µmol/L) respectivamente. Durante y después del comienzo de la fototerapia, la TCB media fue de 210,1 µmol/L en la frente (51,6-348) y 190,2 µmol/L en el esternón (46-351,3 µmol/L).
+
+Correlación entre TSB y TCB
+
+La correlación de Pearson se describe por edad gestacional, zona de medición y etnia. La precisión entre TCB y TSB no parece cambiar sustancialmente por edad gestacional, zona y comienzo del tratamiento o por la etnia. La correlación de Pearson anterior a la fototerapia varió entre 0,481-0,886 y 0,397-0,796 después del comienzo de la fototerapia.
+
+
+
+# Página 98
+
+**Equipo:** bilirrubinómetro 
+drager JM-105
+
+Apéndice A - Resumen de rendimiento clínico
+
+118 Instrucciones de uso JM-105
+
+Tablas
+
+Tabla 1: características demográficas de la población del estudio
+
+Demografía
+
+Sexo
+
+Femenino 46 %
+
+Masculino 54 %
+
+Edad gestacional, semanas (media ± σ) (  mol/L) 33,5 ± 4,6
+
+Peso al nacer (g) 2155 ± 1001,7
+
+Tipo de parto
+
+Por cesárea 48,9 %
+
+Vaginal 41,4 %
+
+Desconocido (información no accesible) 9,7 %
+
+Rango de TSB en fototerapia e inicio del tratamiento
+
+Rango de TSB en fototerapia (media ± rango de σ) (  mol/L) 137 ± 56,79 (de 21 a 409)
+
+Horas de edad al comienzo de la fototerapia (media, ± σ) (h) 39,02 ± 31,08 (de 2 a 263)
+
+
+

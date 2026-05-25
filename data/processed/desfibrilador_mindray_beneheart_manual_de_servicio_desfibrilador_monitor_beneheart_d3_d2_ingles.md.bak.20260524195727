@@ -1,0 +1,6924 @@
+# Página 1
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+1-1
+
+1 Safety
+
+1.1 Safety Information
+
+DANGER
+
+ Indicates an imminent hazard that, if not avoided, will result in death, serious personal injury
+
+or property damage.
+
+WARNING
+
+ Indicates a potential hazard or unsafe maintenance practice that, if not avoided, could result in
+
+death, serious personal injury, product / property damage.
+
+CAUTION
+
+ Indicates a potential hazard or unsafe maintenance practice that, if not avoided, could result in
+
+minor personal injury or product/property damage
+
+NOTE
+
+ Provides application tips or other useful information to ensure that you can better service your
+
+product.
+
+# Página 2
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+1-2
+
+1.1.1 Dangers
+
+DANGER
+
+ The equipment delivers up to 360 J of electrical energy. Unless properly used as described in
+
+these Operating Instructions, this electrical energy may cause serious injury or death. Do not
+
+attempt to operate this defibrillator unless thoroughly familiar with these operating
+
+instructions and the function of all controls, indicators, connectors, and accessories.
+
+ Defibrillation current can cause operator or bystander severe injury or even death. Keep
+
+distance with the patient or metal devices connected to the patient during defibrillation.
+
+ Do not disassemble the defibrillator. It contains no operator serviceable components and
+
+dangerous high voltages may be present. Contact authorized service personnel for repair.
+
+ To avoid explosion hazard, do not use the equipment in the presence of oxygen-rich
+
+atmospheres, flammable anesthetics, or other flammable agents (such as gasoline). Keep the
+
+equipment and the operating environment dry and clean.
+
+1.1.2 Warnings
+
+WARNING
+
+ Before putting the system into operation, the operator must verify that the equipment,
+
+connecting cables and accessories are in correct working order and operating condition.
+
+ Make sure the synchronous input system is applied to this equipment and the input signal is
+
+correct if necessary.
+
+ To avoid risk of electric shock, this equipment must only be connected to a supply mains with
+
+protective earth. If the installation does not provide for a protective earth conductor,
+
+disconnect it from the power line and operate it on smart lithium-ion batteries.
+
+ Ensure that the equipment is supplied with continuous electric power during work. Sudden
+
+power failure leads to the loss of patient data.
+
+ Use and store the equipment in specified environmental condition. The equipment and
+
+accessories may not meet the performance specification due to aging, stored or used outside
+
+the specified temperature and humidity range.
+
+ This equipment is used for single patient at a time.
+
+ Medical electrical equipment which does not incorporate defibrillator protection should be
+
+disconnected during defibrillation.
+
+ Do not defibrillate a patient who lies on the wet ground.
+
+ Do not touch the patient and live parts simultaneously.
+
+ Do not touch the patient when connecting the peripheral equipment via the I/O signal ports to
+
+prevent patient leakage current from exceeding the requirements specified by the standard.
+
+# Página 3
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+1-3
+
+ Do not rely exclusively on the audible alarm system for patient monitoring. Adjustment of
+
+alarm volume to a low level or off may result in a hazard to the patient. Remember that alarm
+
+settings should be customized according to different patient situations and always keeping
+
+the patient under close surveillance is the most reliable way for safe patient monitoring.
+
+ Do not perform any functional check if the equipment is connected with a patient; otherwise
+
+the patient might be shocked.
+
+ Remain attentive to the patient during applying therapy. Delay in delivering a shock may
+
+result in a rhythm that was analyzed as shockable converting spontaneously to non-shockable
+
+and could result in inappropriate delivery of a shock.
+
+ For the treatment of patients with implantable pacemakers, place therapy pads or paddles
+
+away from internal pacemaker generator if possible to help prevent damage to the pacemaker.
+
+ To avoid inadvertent disconnection, route all cables in a way to prevent a stumbling hazard.
+
+Wrap and secure excess cabling to reduce risk of entanglement or strangulation by patients or
+
+personnel.
+
+ Do not touch device connectors, recorder print head, battery connector or other live
+
+equipment if in contact with the patient; otherwise patient injury may result.
+
+ To ensure patient safety, use only parts and accessories specified in this manual.
+
+ Package material may contaminate the environment. Properly dispose of the package material
+
+according to applicable waste control regulations and keep it out of children’s reach.
+
+1.1.3 Cautions
+
+CAUTION
+
+ Use of Manual Therapy security password requires the clinician to know and remember the
+
+password. Failure to enter correct password will prevent the delivery of manual defibrillation,
+
+synchronized cardioversion and pacing therapy.
+
+ At the end of its service life, the equipment, as well as its accessories, must be disposed of in
+
+compliance with the guidelines regulating the disposal of such products to avoid
+
+contaminating the environment.
+
+ Magnetic and electrical fields are capable of interfering with the proper performance of the
+
+equipment. For this reason make sure that all external devices operated in the vicinity of the
+
+equipment comply with the relevant EMC requirements. Mobile phones, X-ray equipment or
+
+MRI devices are a possible source of interference as they may emit higher levels of
+
+electromagnetic radiation.
+
+ Before connecting the equipment to the power line, check that the voltage and frequency
+
+ratings of the power line are the same as those indicated on the equipment’s label or in this
+
+manual.
+
+ Always install or carry the equipment properly to avoid damage caused by drop, impact,
+
+strong vibration or other mechanical force.
+
+# Página 4
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+1-4
+
+ Dry the equipment immediately in case of rain.
+
+ Never charge and deliver shock frequently in non-clinical situations. Otherwise equipment
+
+damage could occur.
+
+1.1.4 Notes
+
+NOTE
+
+ The equipment use a mains plug as isolation means to the mains power supply. Do not locate
+
+the equipment in a place difficult to operate the mains plug.
+
+ During normal use, the operator shall stand in front of the equipment.
+
+ Keep this manual in the vicinity of the equipment so that it can be obtained conveniently when
+
+needed.
+
+ If the equipment is run on a DC power supply, a DC/AC adapter we supply should be used.
+
+ This manual describes all features and options. Your equipment may not have all of them.
+
+1.2 Equipment Symbols
+
+See the  BeneHeart D3/ BeneHeart D2 Defibrillator/Monitor Operator’s Manual (P/N: 046-010599-00)
+
+for information about the symbols used on this product and its packaging.
+
+# Página 5
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-1
+
+2 Theory of Operation
+
+2.1 The Basics
+
+2.1.1 Overview
+
+The BeneHeart D3/BeneHeart D2 defibrillator/monitor (hereinafter called the equipment) provides four
+
+operating modes: Manual Defib, AED, Pacer, and Monitor. The equipment is for use in hospital and
+
+pre-hospital settings. It adopts the most advanced biphasic defibrillation technology and can deliver up
+
+to 360J of defibrillation energy.
+
+The equipment has an 7.0 inch color TFT LCD display with LED Backlight.
+
+2.1.2 Main Functions
+
+The equipment has the following main functions:
+
+ Manual Defib Mode
+
+In Manual Defib Mode, the operator analyzes the patient’s ECG, and, if appropriate, follows this procedure:
+
+1 Select the Manual Defib mode, adjust the energy level if necessary
+
+2 Charge; and
+
+3 Deliver the shock.
+
+Defibrillation may be performed through external paddles or multifunction electrode pads. In Manual
+
+Defib Mode, you can also perform synchronized cardioversion.
+
+ AED Mode
+
+In AED mode, the equipment automatically analyzes the patient’s ECG rhythm and indicates whether or
+
+not a shockable rhythm is detected. Voice prompts provide easy-to-follow instructions and patient
+
+information to guide you through the defibrillation process. Messages and flashing buttons are also
+
+presented to reinforce the voice prompts.
+
+ Pacer Mode
+
+The Pacer Mode offers non-invasive transcutaneous pacing therapy. Pace pulses are delivered through
+
+multifunction electrode pads using a monophasic square waveform.
+
+ Monitor Mode
+
+In Monitor Mode, the equipment is intended for monitoring, displaying, reviewing, storing and printing
+
+multiple physiological parameters and waveforms including ECG and pulse oximetry (SpO2),
+
+# Página 6
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-2
+
+2.2 Components
+
+The equipment consists of a main unit, accessories and PC software.
+
+The main unit is the core of the equipment. It provides:
+
+ Overall system control;
+
+ System power supply;
+
+ Display;
+
+ Defibrillation and pacing;
+
+ AED ;
+
+ Man-mahcine interface;
+
+ Audible and visible alarms;
+
+ Multiple parameter measurements;
+
+ External connectors and communication; and
+
+ Recording, printing and data storage.
+
+2.3 Main Unit
+
+The main unit is composed of the front housing assembly, rear housing assembly and the paddle tray
+
+assembly. External paddles are rested in the paddle tray.
+
+ The front housing assembly mainly consists of LCD, keypad board, speaker, microphone, Mode Select
+
+knob, navigation knob, alarm lamp board, front housing and front housing sheet metal, etc.
+
+ The rear housing assembly consists of CPU board, therapy module, high voltage capacitors, MPM
+
+module, power management board, fan, measurement module panel, therapy port, recorder and
+
+rear housing, etc.
+
+ The paddle tray is for holding the external paddles.
+
+# Página 7
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-3
+
+2.3.1 System Structure
+
+B13 knob
+
+B14 speaker
+
+Keypad board
+
+LCD backlight
+
+Indicator
+
+Therapy module
+
+Paddle tray assembly
+
+External paddle in-position detection
+
+Multi- parameter module
+
+CPU and power management board
+
+External paddle tray
+
+Therapy connector
+
+50-ohm discharging resistor
+
+Multi- parameter connector panel
+
+External paddles
+
+Self-discharging resistor
+
+W8
+
+W1
+
+Front housing
+
+assem bly
+
+External component
+
+W13
+
+W14
+
+RJ45 USB Externally extended IO
+
+W2 W4
+
+W5
+
+W6
+
+B15 microphone
+
+W3
+
+AC/DC module
+
+C3
+
+C4
+
+Recorder (D3)
+
+Battery
+
+W11
+
+W9
+
+W10
+
+Rear housing assem bly
+
+indicates connection cable. indicates hard connection socket.
+
+High-voltage capacitor
+
+B12 mode selection switch
+
+LCD control
+
+C2
+
+CPR module
+
+W19
+
+M02D D6 interface board C1
+
+Inductor
+
+Pacing board
+
+W20
+
+W18
+
+W12
+
+W17
+
+Alarm lamp
+
+W7
+
+W15
+
+CO2 watertrap W16
+
+Recorder (D6) W11
+
+Notes: 1. The D3 recorder is placed on the rear housing while the D6 recorder is placed on the front housing. 2. For D6, the multi-parameter module and the parameter connector panel are connected directly in hard connection mode; for D3, the multi-parameter module and the parameter connector panel are connected through wires. 3. The D6 needs to be connected to an external interface through the D6 interface board.
+
+# Página 8
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-4
+
+2.3.2 System Signal Flow
+
+The system uses the CPU and power management board as the core. The CPU and power management
+
+board is divided into the power management part and the main control part. The processor of the power
+
+management part is MSP430, which mainly implements communication with external lithium batteries
+
+and power management. The processor of the main control part is AM3352, which communicates with
+
+and controls other subsystem modules (including the therapy module, M51C module, M02D module,
+
+recorder module, CPR sensor, and keypad board on the front housing). The main control module
+
+communicates with other subsystems through asynchronous serial ports. The keypad board on the front
+
+housing implements the transit between man-machine interaction interfaces and signal display. The
+
+processor is M0, which controls input and output signals of keys, knobs, module switches, and alarm
+
+lamps.
+
+CPU and power management board
+
+Power management Main control
+
+AM3352 MSP430 UART
+
+Lithium batteries
+
+ACDC module
+
+Power
+
+Therapy module GPIO
+
+M51C Module
+
+UART+GPIO+Power
+
+GPIO
+
+Navigation knob
+
+Mode switch
+
+Alarm lamp
+
+Microphone Speaker
+
+LCD
+
+CPR sensor
+
+Recorder module
+
+M02D module UART+Power
+
+M0
+
+Keypad board
+
+RS232+Power+GPIO
+
+URAT+Power
+
+GPIO+Power GPIO+Power
+
+LVDS+Power GPIO+Power
+
+UART+GPIO+Power
+
+LVDS+Power+GPIO
+
+SmBUS+ GPIO+Power
+
+# Página 9
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-5
+
+2.3.3 Signal Sequence of Power-On/Off
+
+The power-on/off action is triggered by the naviagation knbo on the keypad board of the front housing.
+
+The power-on/off process is controlled by the power management processor as follows:
+
+Keypad board MCU
+
+TPS2490 Dual-line DC/DC
+
+PCON ENABLE
+
+RUN
+
+CPU and power management board
+
+EXTLD
+
+Single-line DC/DC
+
+VCC_EN
+
+Power-on process: When you rotate the mode switch on the front panel of the defibrillator/monitor to a
+
+mode other than "Off", the PCON signal value is changed from 1 to 0 to awake the MCU. The MCU
+
+immediately outputs the ENABLE control signal to the TPS2490 enabling the VBUS. Then, the MCU enables
+
+the RUN signal control of the dual-line DC-DC module to output 5 V (VBB) and 12 V signals.
+
+Power-off process: When your rotate the mode switch to "Off", the PCON signal value is changed from 0 to
+
+1, and the MCU outputs the ENABLE=0 and RUN=0 signals to shut down the VBUS and the DC-DC module.
+
+2.4 Front Housing Assembly
+
+The front housing assembly consists of display assembly, a keypad board, a speaker, a microphone, a
+
+Mode Select knob, a navigation knob, an alarm lamp board, a front housing and front housing sheet metal,
+
+etc.
+
+Navigation Knob
+
+You can rotate the knob clockwise or counterclockwise and then press it to confirm a selection. The knob
+
+is connected to the keypad board.
+
+Mode Select Knob
+
+A 8-position encoder is used to select the operating mode (Monitor, Manual Defib, AED and Pacer) and
+
+power-off. The unused positions are mechanically disabled.
+
+Speaker
+
+The speaker emits alarm tones, key-stroke tone, heart beats and PR sound. It supports the functions of
+
+PITCH TONE and the multi-level volume. The speaker is connected to the keypad board.
+
+# Página 10
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-6
+
+Microphone
+
+It provides the function of voice recording.
+
+Alarm Lamp Board
+
+The keypad board interfaces with the alarm lamp board. The alarm lamp transmits signals to drive the
+
+green and yellow alarm lamp. The drvie current 60mA.
+
+2.5 Paddle Tray
+
+The paddle tray is used to hold paddles. It has a 50 ohm test load and position detective switch inside.
+
+When the equipment runs self tests, test current will pass through the test load.
+
+2.6 Rear Housing Assembly
+
+The rear housing assembly consists of the CPU and power management board, therapy module, high
+
+voltage capacitors, M51C module, recorder, rear housing, parameter receptacle panel, and therapy port.
+
+2.6.1 Power System
+
+AC-DC
+
+BAT1
+
+BAT2 Dual-battery management system
+
+Charging circuit
+
+3.3V LDO
+
+MCU
+
+Vbus
+
+5V DC-DC
+
+12V DC-DC
+
+Multi-function port (reserved)
+
+Speaker
+
+LCD
+
+M51C module
+
+CPR Sensor
+
+USB flash drive
+
+Main control
+
+3G/4G module
+
+Keypad boards on left and right electrode pads
+
+Keypad board on front housing
+
+3.3V DC-DC Bluetooth
+
+Wifi
+
+M02D module
+
+Recorder
+
+Therapy board
+
+VAC BC SMBC SMBD
+
+AC and battery in-position and energy detection
+
+EXTLD
+
+AD sampling Overvoltage protection
+
+Buzzer alarm
+
+3.3V, 5V, 12V
+
+AD sampling at 3.3 V, 5 V, 12 V, and 18 V
+
+3.3 V, 5 V, and 12 V overvoltage protection 18V
+
+18V
+
+12-17V
+
+Dual-battery switching control
+
+Overcurrent and power protection
+
+# Página 11
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-7
+
+ AC/DC board
+
+It has AC mains as an input and outputs 18VDC.
+
+ Battery
+
+Its rated voltage is 14.8V, 3000mAh. Or, its rated voltage is 15.1V, 5600mAh.
+
+ CPU and power management board
+
+It manages the system power input, supplies different system power, and monitors the power status. The
+
+power management part implements battery charging and status information management.
+
+The priority of system power supply is AC mains, Battery. That is to say, when AC is not available, Battery is
+
+used.
+
+2.6.2 Main Control System
+
+Serving as the core of the system, the main control system implements the display, storage, printing, and
+
+review of parameters and waveforms, as well as parameter algorithm processing.
+
+CPU and power management board
+
+Power management Main control
+
+AM3352 MSP430 UART
+
+The integrated CPU and power management board consists of the MSP430 for power management and
+
+the AM3352 for main control. The MSP430 monitors the power status and controls the power-on/off; the
+
+AM3352 implements man-machine interaction, screen display, and AED algorithm. The main control
+
+module part and the power management part communicate with each other through asynchronous serial
+
+ports.
+
+# Página 12
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-8
+
+2.6.3 Therapy System
+
+The therapy system implements the measurement of P-lead input ECG and human body impedance, as
+
+well as the defibrillation and pacing functions. The pacing function is implemented by the optional pacing
+
+module.
+
+MCU
+
+Defibrillation charging and discharging
+
+Cable type identification
+
+ASIC
+
+Pace detection High-pass + amplification
+
+Anti- defibrillation
+
+Hardware low-pass
+
+Impedance coupling
+
+p-lead
+
+Keypad identification/lamp
+
+8IO
+
+High voltage portion of defibrillation and pacing
+
+2CH current detection
+
+2CH voltage detection
+
+2CH relay
+
+1 wire
+
+50-ohm self- discharging resistor 2CH relay
+
+MCU
+
+Uart
+
+AD
+
+2CH relay
+
+ECG input
+
+2.6.4 Recorder
+
+The recorder implements the parameter and waveform printing function by using the universal TR6F
+
+recorder module.
+
+The recorder receives data from the CPU board and then sends the data to a thermal head for printing.
+
+The recorder front panel has a key for starting/ stopping the recorder and a green indicator which is lit
+
+when working normally. The recorder is connected to the keypad board which board provides connection
+
+for the TR6F recorder. The block diagram and functional modules of the recorder are shown as below.
+
+Keypad board interface Recorder keypad board
+
+Power interface Signal interface Button & indicator interface
+
+Recorder power module Recorder CPU Motor drive circuit
+
+Power control Motor control
+
+FPC interface
+
+Thermal print head
+
+# Página 13
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-9
+
+Module Description
+
+Power Interface Adjusts input voltage to run each module.
+
+Recorder CPU Coordinates module communication, controls and processes module status.
+
+Keypad board Interface
+
+Serves as the data communication channel between the keypad board and
+
+the recorder CPU.
+
+Motor Drive Circuit Receives control signals sent by the recorder CPU to drive the step motor.
+
+Keypad and Indicator
+
+Interface
+
+Sends keypad commands to CPU and receives CPU commands to control the
+
+indicator.
+
+FPC Interface
+
+Sends print head information to CPU and receives CPU commands to control
+
+the print head.
+
+2.6.5 Parameter Measurement System
+
+The M51C multi-parameter module implements the parameter measurement function. It mainly
+
+implements 3/5-lead ECG, SpO2, NIBP, and RESP measurement functions.
+
+2.7 External Device Connectors
+
+1
+
+2
+
+3
+
+5
+
+6
+
+7
+
+4
+
+# Página 14
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+2-10
+
+1. Hook
+
+2. Battery
+
+3. Equipotential grounding terminal: When the defibrillator/monitor and other devices are to be used
+
+together, their equipotential grounding terminals should be connected together to eliminate the
+
+potential difference between them.
+
+4. External power input: It connects an AC power cord or a DC/AC adapter to run the equipment
+
+respectively on the external AC mains or DC power supply.
+
+5. Multifunctional connector: It connects a CPR sensor, provides ECG output and defib synchronization
+
+input.
+
+6. USB connector
+
+7. Network connector: It is a standard RJ45 connector.
+
+# Página 15
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+3-1
+
+3 Unpacking and Installation
+
+This chapter provides information you need to install a defibrillator/monitor ready for use.
+
+3.1 Unpacking the Equipment
+
+Open the package and take out the packing list. Check that all the articles included in the packing list are
+
+available and the quantity and specification are correct.
+
+ All the optional parts purchased by the customer shall also be checked.
+
+ Notify the supplier if provided components are not correct as compared to the packing list.
+
+ In case of damage during transportation, keep the packing material and notify the supplier
+
+immediately.
+
+ Keep the packing material till new equipment is accepted.
+
+The following pictures show the defibrillator/monitor and accessory packing.
+
+```metadata
+pagina: 15
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P15_I0.png
+contexto: 
+```
+
+![Imagen página 15 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P15_I0.png)
+
+Main unit packing
+
+```metadata
+pagina: 15
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P15_I1.png
+contexto: 
+```
+
+![Imagen página 15 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P15_I1.png)
+
+```metadata
+pagina: 15
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P15_I2.png
+contexto: 
+```
+
+![Imagen página 15 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P15_I2.png)
+
+Accessory packing
+
+# Página 16
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+3-2
+
+3.2 Preparation for Installation
+
+3.2.1 Preparation for Installation Site
+
+1. Ensure that the site meets all safety, environmental and power requirements
+
+2. Check that required power sockets are available.
+
+3. Check that a network connector is available if the defibrillator/monitor needs to be connected to
+
+network.
+
+WARNING
+
+ Only power cables provided with the system may be used. For reasons of safety, power (mains)
+
+extension cables or adapters shall not be used.
+
+Environmental Requirements
+
+WARNING
+
+ To avoid explosion hazard, do not use the equipment in the presence of flammable
+
+anaesthetics, vapours or liquids.
+
+CAUTION
+
+ The environment where the defibrillator/monitor will be used should be reasonably free from
+
+vibration, dust and corrosive substances. If these conditions are not met, the accuracy of the
+
+system may be affected and damage may occur.
+
+The environmental specification is as follows:
+
+Operating environment
+
+Operating Temperature
+
+0 to 45 ℃  (at least 60 minutes of working time when the temperature
+
+reduces from room temperature to – 20 ℃ )
+
+(5 to 40 ℃  for CO 2  module)
+
+Operating humidity 10% to 95%, (non-condensing)
+
+Operating altitude
+
+-381mmHg to + 4575mmHg (106.2kPa to 57kPa)
+
+430mmHg to + 790 mmHg for CO 2  module (57.3kPa to 105.3kPa)
+
+Storage environment
+
+Storage temperature -30 to 70 ℃ (-20 to 60 ℃  for CO2 module)
+
+Storage humidity 10% to 95%, (non-condensing)
+
+Storage altitude
+
+-381mmHg to +4575 mmHg (106.2kPa to 57kPa)
+
+430mmHg to + 790 mmHg for CO 2  module (57.3kPa to 105.3kPa)
+
+# Página 17
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+3-3
+
+3.2.2 Electrical Requirements
+
+Check cables and power cords. Make sure that:
+
+1. All system cables, power cords and power plugs are not damaged, and pins are not loose. Otherwise,
+
+remove it from use.
+
+2. The insulation of patient cables and leadwires is not damaged, and connectors are not loose.
+
+WARNING
+
+ Only power sockets with protective grounding can be used.
+
+The electrical specification is as follows:
+
+Line voltage: 100  to  240VAC ( ± 10%)
+
+Current: 1.8 A
+
+Frequency: 50/60Hz ( ± 3Hz)
+
+3.3 Preparation for Power On
+
+Before connecting the power cord to the defibrillator/monitor's power input, check that
+
+ The mains voltage meets the requirement.
+
+ 3-wire power cord is used. The power socket should be 3-wire also. This ensures that the
+
+defibrillator/monitor is properly grounded. Do not use 2-wire power cord or socket.
+
+ The equipotential grounding terminals should be connected together when the defibrillator/monitor
+
+and other devices are to be used together.
+
+ The defibrillator/monitor is not placed under the infusion bag or placed where their might be liquid
+
+spillage. This protects the defibrillator/monitor from liquid ingress.
+
+3.4 User Test
+
+A user test shall be performed after the defibrillator/monitor is installed. Follow this procedure:
+
+1. Connect AC mains or install the battery.
+
+2. Connect the external paddles. If pads are used, connect the test load.
+
+3. Select the Main Menu button on the equipment’s front panel and select  [User Test >>] . Select all test
+
+items and press  [Start]  to perform user test.
+
+NOTE
+
+ Install the battery and properly place the external paddles in the paddle tray or connect the
+
+pads cable and 50 Ω test load. Otherwise the User Test will fail.
+
+# Página 18
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-1
+
+4 Testing and Maintenance
+
+4.1 Introduction
+
+To ensure the equipment always functions normally, qualified service personnel should perform regular
+
+inspection, maintenance and test. This chapter provides a checklist of the testing procedures for the
+
+equipment with recommended test equipment and frequency. The service personnel should perform the
+
+testing and maintenance procedures as required and use appropriate test equipment.
+
+The testing procedures provided in this chapter are intended to verify that the equipment meets the
+
+performance specifications. If the equipment or a module fails to perform as specified in any test, repairs
+
+or replacement must be done to correct the problem. If the problem persists, contact our Customer
+
+Service Department.
+
+CAUTION
+
+ All tests should be performed by qualified service personnel only.
+
+ Care should be taken to change the settings in [Installation Mode] and [Service Mode] menus
+
+to avoid loss of data.
+
+ Before testing, service personnel should acquaint themselves with the test tools and make sure
+
+that test tools and cables are applicable.
+
+ When testing monitoring parameters, move the Mode Select knob to Monitor to access the
+
+Monitor Mode.
+
+ When performing therapy function tests, move the Mode Select knob to corresponding mode.
+
+# Página 19
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-2
+
+4.1.1 Test Report
+
+After completing the tests, service personnel can record test results by referring the  Test Report  at the end
+
+of this chapter.
+
+4.1.2 Recommended Frequency
+
+Test item After
+
+repair
+
+Function
+
+suspected
+
+6
+
+months
+
+12
+
+months
+
+24
+
+months
+
+Visual inspection √
+
+Power-on Test √
+
+User test √
+
+Function Checks Recorder check √ √
+
+ECG Cable Test √
+
+Manual
+
+defibrillation
+
+tests
+
+Charge/
+
+discharge
+
+√ √ √
+
+Energy disarming
+
+Synchronous
+
+defibrillation
+
+Pacing test
+
+Preventive
+
+Maintenance
+
+(Only Performance
+
+Tests)
+
+ECG Performance test √ √ √
+
+Module calibration √ √
+
+Resp Performance test √ √ √
+
+SpO2 Performance test √ √ √
+
+Performing Tests in
+
+the Installation
+
+Mode
+
+Maintain NIBP Performs the NIBP
+
+leakage test and
+
+NIBP accuracy test
+
+√ √
+
+Maintain CO2 Calibrates the CO2
+
+module.
+
+√ √
+
+Version Displays the
+
+equipment
+
+information
+
+∕ ∕
+
+CPR Displays the
+
+battery information
+
+of the CPR sensor
+
+∕ √
+
+Format Data
+
+Card
+
+Formats the
+
+storage card.
+
+√ √
+
+Watchdog Test Checks if the
+
+equipment can be
+
+normally restarted.
+
+√
+
+Modify
+
+Password
+
+Modifies the
+
+password for
+
+∕ ∕
+
+# Página 20
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-3
+
+Test item After
+
+repair
+
+Function
+
+suspected
+
+6
+
+months
+
+12
+
+months
+
+24
+
+months
+
+Performing Tests in
+
+the Installation
+
+Mode
+
+entering the
+
+installation mode.
+
+Electrical safety
+
+tests as per
+
+IEC60601-1
+
+Earth leakage
+
+current
+
+√ √
+
+Patient leakage
+
+current
+
+Patient auxiliary
+
+current
+
+4.2 Visual Test
+
+Inspect the equipment for obvious signs of damage. The test is passed if the equipment has no obvious
+
+signs of damage. Follow these guidelines when inspecting the equipment:
+
+ Carefully inspect the housing, the display screen and the buttons for physical damage.
+
+ Inspect accessories for signs of damage.
+
+ Inspect all external connections for loose connectors, bent pins or frayed cables.
+
+ Inspect all connectors on the equipment for loose connectors or bent pins.
+
+ Make sure that safety labels and data plates on the equipment are clearly legible.
+
+4.3 Power On Test
+
+This test is to verify that the defibrillator/ monitor can power on normally. The test is passed if the
+
+defibrillator/ monitor starts up by following this procedure:
+
+1. Place the external paddles on paddle tray, insert the battery in the battery compartment, and then
+
+connect the equipment with AC mains. In this case, both the AC indicator and battery indicator shall
+
+light.
+
+2. Turn the Mode Select knob to Monitor. Check that the equipment passes the self test and is turned on
+
+properly.
+
+3. Check the display of technical alarm area, prompt area and battery status indicator on the upper right
+
+corner of the main screen to judge whether the equipment runs normally.
+
+If a power-on self test error happens, the service indicator is illuminated, and alarm messages are
+
+displayed in the technical alarm area.
+
+# Página 21
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-4
+
+4.4 User Test
+
+Follow this procedure to perform user test:
+
+1. If you use external paddles, place them on the paddle tray; if you use a pads cable, connect it to the
+
+test load.
+
+2. Insert the battery into the equipment. Connect the AC mains if no battery is available.
+
+3. Select the Main Menu button on the equipment’s front panel. In the Main Menu, select [User Test>>].
+
+Then a prompt “Enter user test?” pops up. Select “Yes” to enter the User Test screen.
+
+4. Check the test items you want to perform and select [Start] to start user test
+
+The test results indicate the condition of the system. If any item fails, the Red Cross status indicator flashes.
+
+If you cannot pass User Test or the message “Connect paddles cable, and place paddles in paddle tray” is
+
+shown when paddle cable is connected and paddles are placed in paddle tray, check paddles status.
+
+Select the Monitor mode. Press and hold the [Event] hardkey, and then press the [Lead Select] hardkey on
+
+the front panel, the following screen appears.
+
+```metadata
+pagina: 21
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P21_I0.png
+contexto: 
+```
+
+![Imagen página 21 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P21_I0.png)
+
+Observe the reading of “Lead Stat”:
+
+ 0 x 382: Paddles are properly placed in paddle tray.
+
+ 0 x 182: The travel switch indicating paddle status may fail, but impedance is correct.
+
+ 0 x 102 :Paddles are not properly placed in paddle tray and the impedance value is not correct.
+
+# Página 22
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-5
+
+4.5 Password for Installation Mode
+
+Accessing installation mode is password protected. The required password is set to 888888 before the
+
+equipment leaves the factory.
+
+4.6 Module Performance Tests
+
+4.6.1 Manual Defibrillation Test
+
+Test tools:
+
+ Defibrillator/pacer analyzer
+
+Charge/Discharge
+
+1. Remove the batteries and connect the equipment with AC mains. Turn the Mode Select knob to
+
+Manual Defib.
+
+2. Connect the external paddles to the equipment and place the paddles on the defibrillator/pacer
+
+analyzer.
+
+3. Enter the Configuration-Main screen. From the Record Setup menu set [ Shock Event ] to [ On ] so that
+
+shock events can be recorded automatically if happened.
+
+4. Set the analyzer to Energy Measurement mode. In this case, the energy value should be displayed as
+
+0 or blank.
+
+5. Select the energy level to 1J.
+
+6. Charge/discharge the equipment to verify the energies measured by the analyzer meet the following
+
+accuracy:
+
+Selected Energy (J) Measured Value (J)
+
+1 0 to 3
+
+100 85 to 115
+
+360 306 to 414
+
+7 ．  Set the energy to 100J and 360J respectively. Repeat step 6.
+
+8. Disconnect the equipment from the AC mains. Run the equipment on fully charged battery. Move the
+
+Mode Select knob to Manual Defib. Repeat steps 5 to 7.
+
+9. Use multifunctional electrode pads. Repeat steps 5 to 7.
+
+10. Verify that the equipment records the shock events automatically and correctly.
+
+# Página 23
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-6
+
+Energy Disarming
+
+1. Run the equipment on fully charged battery. Move the Mode Select knob to Manual Defib.
+
+2. Connect the external paddles to the equipment and place the paddles on the defibrillator/pacer
+
+analyzer.
+
+3. Set the analyzer to Energy Measurement mode. In this case, the energy value should be displayed as
+
+0 or blank.
+
+4. Select the energy level to 360J.
+
+5. Charge the equipment.
+
+6. Verify that the charge tone is issued during charging.
+
+7. Press the “Disarm” soft key to discharge the energy internally.
+
+8. Verify that a prompt “Charge Removed” appears and the charge done tone stops.
+
+9. Verify that the value measured by the analyzer is 0J or blank.
+
+10. Enter the Configuration-Main menu, select [ Manual Therapy Setup ] and set [ Time to Auto Disarm ]
+
+to [ 60s ].
+
+11. Exit “Configuration Management”. The equipment restarts automatically.
+
+12. Set the analyzer to Energy Measurement mode. In this case, the energy value should be displayed as
+
+0 or blank.
+
+13. Select the energy level to 360J.
+
+14. Charge the equipment. Count time after charging is completed.. Verify that the prompt “Shock
+
+Removed” appears on the equipment and the energy measured by the analyzer is 0J or blank after 60
+
+seconds.
+
+15. Use multifunctional electrode pads. Repeat steps 3 to 14.
+
+Synchronous Defibrillation
+
+1. Connect the external paddles and ECG cable to the equipment. Place the paddles ECG electrodes on
+
+the defibrillator/pacer analyzer.
+
+2. Set the analyzer to Measurement Mode and output normal sinus rhythms, e.g. amplitude value 1mV
+
+and HR 60bpm.
+
+3. Enter Configuration Management. In the [ Manual Therapy Setup ] menu, set [ Sync After Shock ] to
+
+[ On ].
+
+4. Adjust the energy setting of the equipment to be 10J.
+
+5. Press the [ Sync On]  soft key to start synchronous defibrillation. If Remote Sync is switched on, press
+
+the [ Sync On]  soft key and select [ Local ] to start synchronous defibrillation
+
+6. Select [Pads] or [Paddles] as the ECG source and begin charging.
+
+7. When charging finishes, press and hold the “Shock” button to deliver a shock.
+
+8. Verify that synchronous discharge succeeds and the delivery energy measured by the analyzer is
+
+10J±2J.
+
+9. Verify that the delay time of synchronous defibrillation measured by the analyzer is less than 60ms.
+
+# Página 24
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-7
+
+10. Verify that the synchronous discharge mark appears on the R wave.
+
+11. Verify that the prompt messages are correct during testing.
+
+12. Select lead II as ECG source and perform charging. Repeat steps 7 to 11.
+
+13. Use multifunctional electrode pads. Repeat steps 2 to 12.
+
+4.6.2 Pacing Test
+
+Test tools:
+
+ Defibrillator/pacer analyzer
+
+1. Run the equipment on fully charged battery. Move the Mode Select knob to Pacer. Set [ Pacer Mode ]
+
+to [ Fixed ].
+
+2. Connect the pads cable to the equipment and properly place the pads on the defibrillator/pacer
+
+analyzer.
+
+3. Set the analyzer to Pacing Measurement mode. Use test load of 50Ω.
+
+4. On the equipment, set [ Pacer rate ] to [ 70ppm ] and [ Pacer Output ] to [ 30mA ].
+
+5. Press the  [Start Pacing]  soft key. Verify that the pacer rate measured by the analyzer is 70
+
+ppm±1ppm and the pacer output measured is 30 mA±5mA.
+
+6. Press the “Stop Pacing” soft key, and then set [ Pacer rate ] to [ 170ppm ] and [ Pacer Output ] to
+
+[ 200mA ].
+
+7. Press the  [Start Pacing]  soft key. Verify that the pacer rate measured by the analyzer is 170
+
+ppm±2ppm, and the measured current is 200 mA±10mA.
+
+4.6.3 ECG Test
+
+Performance Test
+
+Test tools
+
+ ECG simulator
+
+1. Connect the simulator to the equipment’s ECG connector with ECG leadwires.
+
+2. Set the patient simulator as follows: ECG sinus rhythm, HR=80 bpm with the amplitude as 1mV.
+
+3. Check the ECG waves are displayed correctly without noise and the displayed HR value is within 80 ±
+
+1 bpm.
+
+4. Disconnect the simulator from the equipment’s ECG connector. Verify that ECG Lead Off alarm
+
+behaves correctly.
+
+5. On the equipment, set [Paced] to [Yes], the simulator is configured as pace signals. Verify that pace
+
+signals are detected and pace pulse marks are displayed.
+
+6. Connect the simulator to the equipment’s therapy module with pads.
+
+7. Set the patient simulator as follows: ECG sinus rhythm, HR=80 bpm with the amplitude as 1mV.
+
+# Página 25
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-8
+
+8. Check the ECG waves are displayed correctly without noise and the displayed HR value is within 80 ±
+
+1 bpm.
+
+9. Disconnect the simulator from the equipment’s therapy module. Verify that ECG Lead Off alarm
+
+behaves correctly.
+
+10. On the equipment, set [Paced] to [Yes], the simulator is configured as pace signals. Verify that pace
+
+signals are detected and pace pulse marks are displayed.
+
+ECG Calibration
+
+Tool required:
+
+ Vernier caliper
+
+1. Connect the simulator to the equipment’s ECG connector with ECG leadwires.
+
+2. Select the ECG parameter area to enter the  [ECG Setup]  menu.
+
+3. Select  [Others>>]  →  [Calibrate] . A waveform signals appear on the screen and the message  [ECG
+
+Calibrating]  is displayed in the prompt information area in the lower left corner of the screen.
+
+4. Compare the amplitude of the waveform with the wave scale. The difference should be within 5%. If
+
+needed, you can also print out the waveform and the wave scale.
+
+5. After ECG calibration is completed, select  [Stop Calibrating] .
+
+6. Connect the simulator to the equipment’s therapy module with pads.
+
+7. Repeat steps 3–5.
+
+4.6.4 Resp Test
+
+Test tools
+
+ Resp Patient simulator
+
+1. Connect the patient simulator to the ECG connector on the module.
+
+2. On the defibrillator/monitor, select the Resp widow to enter the Resp Setup menu. Set  [Lead]  to  [II] .
+
+3. Configure the simulator as follows: set Lead to II, base impedance line to 1500 Ω; delta impedance to
+
+0.5 Ω, and respiration rate to 40 rpm.
+
+4. Check that respiration waveform is not distorted and the displayed Resp value does not exceed 40±2
+
+rpm.
+
+# Página 26
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-9
+
+4.6.5 SpO 2  Test
+
+Test tool
+
+ Patient simulator.
+
+1. Connect the patient simulator to the equipment’s SpO 2  connector.
+
+2. Select the model and manufacturer of the SpO 2  module under test. Configure the parameter as SpO 2
+
+96% and PR 80 bmp.
+
+3. The displayed SpO 2  and PR values should be within the ranges listed below
+
+SpO2 (%) PR (bmp)
+
+Mindray 96% ±2% 80±3
+
+Masimo 96% ±2% 80±3
+
+Nellcor
+
+MAX-A, MAX-N, MAX-P, MAX-I 96% ±2%
+
+80±3 DS-100A, OXI-A/N, OXI-P/I 96% ±3%
+
+4.6.6 NIBP Tests
+
+Accuracy Test
+
+The NIBP accuracy test is required at least once every two years or whenever you doubt the NIBP reading.
+
+Tools required:
+
+ T-shape connector
+
+ Tubing
+
+ Balloon pump
+
+ Metal Vessel, volume 500±25 ml
+
+ Calibrated manometer for reference, accuracy not lower than 1 mmHg
+
+To perform the accuracy test:
+
+1. Connect the equipment as shown below.
+
+```metadata
+pagina: 26
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P26_I0.png
+contexto: 
+```
+
+![Imagen página 26 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P26_I0.png)
+
+2. Before inflation, the reading of the manometer should be 0. If not, disconnect the airway and
+
+reconnect it until the readings is 0.
+
+Defibrillator/monitor
+
+Connector for
+
+NIBP cuff
+
+Manometer
+
+Tubing
+
+Balloon pump Metal vessel
+
+# Página 27
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-10
+
+3. Press the Main menu button on the equipment’s front panel. Select [ Others>> ] → [ Installation
+
+Mode>> ] →  enter the required password → [ Maintain NIBP ] → [ Start Accuracy Test ].
+
+4. Compare the value of manometer with the value displayed on the equipment’s screen. The difference
+
+should be no greater than 3 mmHg.
+
+5. Raise the pressure in the metal vessel to 50 mmHg with the balloon pump. Repeat steps 3 and 4.
+
+6. Raise the pressure in the metal vessel to 200 mmHg with the balloon pump. Repeat steps 3 and 4.
+
+Note
+
+ You can replace the balloon pump and manometer with a blood pressure simulator to form a
+
+test system.
+
+NIBP Leakage Test
+
+The NIBP leakage test checks the integrity of the system and of the valve. It is required at least once every
+
+two years or whenever you doubt the NIBP reading.
+
+Tools required:
+
+ An adult cuff
+
+ An air tubing
+
+ A correct sized cylinder
+
+To perform the leakage test:
+
+1. Connect the cuff to the equipment’s NIBP connector.
+
+2. Wrap the cuff around the cylinder as shown below.
+
+```metadata
+pagina: 27
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P27_I0.png
+contexto: 
+```
+
+![Imagen página 27 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P27_I0.png)
+
+3. Press the Main menu button on the equipment’s front panel. Select  [ Others>> ] → [ Installation
+
+Mode>> ] →  enter the required password → [ Maintain NIBP ] → [ Start Accuracy Test ].
+
+After about 20 seconds, the equipment automatically deflates. This means the leakage test finishes.
+
+When the accuracy test is completed, the result will be displayed. If the message [ NIBP Pneumatic Leak ]
+
+is displayed, it indicates that the NIBP airway may have leakages. Check the tubing and connections for
+
+leakages, and then perform a leakage test again.
+
+Defibrillator/monitor
+
+Connector for
+
+NIBP cuff
+
+Tubing
+
+Cylinder
+
+Cuff
+
+# Página 28
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-11
+
+When you select the [Start Leakage Test] button, it turns to be  [Stop Leakage Test].  Select  [Stop Leakage
+
+Test] , leakage test stops and the button turns to be  [Start Leakage Test]  again.
+
+Calibrating NIBP
+
+Tools required:
+
+ T-shape connector
+
+ Tubing
+
+ Balloon pump
+
+ Metal Vessel, volume 500±25 ml
+
+ Calibrated manometer, accuracy higher than 1 mmHg
+
+1. Connect the equipment as shown below
+
+```metadata
+pagina: 28
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P28_I0.png
+contexto: 
+```
+
+![Imagen página 28 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P28_I0.png)
+
+2. Before inflation, the reading of the manometer should be 0. If not, disconnect the airway and
+
+reconnect it until the readings is 0.
+
+3. Press the Main menu button on the equipment’s front panel. Select [ Others>> ] → [ Service Mode>> ]
+
+→  enter the required password → [ Calibrate NIBP ].
+
+4. Calibrate pressure. To do so, set the calibration value to 150 mmHg and adjust the pump output
+
+pressure to 150 mmHg. After the system is stable, click the [ Calibrate ] button to start calibration.
+
+5. Calibrate overpressure. To do so,
+
+ Set  [Patient Cat.]  to  [Adu/Ped]  and adjust pump output pressure to 330 mmHg. Click the
+
+[Calibrate]  button and start calibration. Or
+
+ Set  [Patient Cat.]  to  [Neo]  and adjust pump output pressure to 165 mmHg. Click the  [Calibrate]
+
+button and start calibration.
+
+All the calibration results will be displayed in the [ Calibrating NIBP ] screen. If the calibration fails, please
+
+check the connections and then perform a calibration again.
+
+Defibrillator/monitor
+
+Connector for NIBP
+
+cuff
+
+Manometer
+
+Tubing
+
+Balloon pump
+
+Metal vessel
+
+# Página 29
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-12
+
+4.6.7 CO 2  Module Tests
+
+Leakage Check
+
+1. Access the  [CO2 Setup]  menu and set  [Operating Mode]  to  [Measure].  Wait for CO 2 warm-up.
+
+2. Block the CO 2 module gas inlet completely. This will cause different reactions from the Sidestream
+
+and Microstream CO 2 modules.
+
+ Sidestream: Check that alarm message  [CO2 Filter Line Err]  is displayed on the screen in 3s.
+
+Block the gas inlet for another 30s, if the alarm message does not disappear, the module does
+
+not leak.
+
+ Microstream CO 2 module:  [CO2 Purging…] is displayed in 3s. Block the gas inlet for another 30s,
+
+if the alarm message  [CO2 Tubing Err]  appears, the module does not leak.
+
+Module Calibration
+
+Test tools
+
+ Gas cylinder, with 6% of CO 2  and balance gas N 2 .
+
+ T-shape connector
+
+ Tubing
+
+For sidestream CO 2  module, zeroing is required before calibration. Enter [ CO2 Setup ] menu and select
+
+[ Zero ] to perform zeroing.
+
+To calibrate the CO 2  module, follow this procedure:
+
+1. Make sure that the CO 2  module has been warmed up or started up.
+
+2. Connect the gas cylinder with the tubing using a T-shape connector as shown below. Check the
+
+airway and make sure there are no leaks.
+
+```metadata
+pagina: 29
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P29_I0.png
+contexto: 
+```
+
+![Imagen página 29 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P29_I0.png)
+
+3. Vent the tubing to the CO 2  by opening the gas valve.
+
+4. Access the  [Maintain CO2]  menu. To do so, Press the Main Menu button on the equipment’s front
+
+panel. Select  [Others>>]  → [Installation Mode>>]  → enter the required password → [Maintain
+
+CO2] .
+
+Defibrillator/
+
+monitor
+
+Gas cylinder
+
+To the air
+
+Gas valve
+
+Tubing
+
+# Página 30
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-13
+
+5. In the  [Maintain CO2]  menu, select a CO 2  value equal to the vented CO 2  concentration.
+
+6. In the  [Calibrate CO2]  menu, the measured CO 2  concentration is displayed. Wait till the measured
+
+CO 2  concentration becomes stable; select [ Calibrate ] to start CO 2  calibrate.
+
+The message [ Calibration Completed! ] is displayed after a successful calibration. If the calibration
+
+failed, the prompt [ Calibration Failed! ] will be displayed. In this case, perform another calibration.
+
+4.7 Electrical Safety Tests
+
+See  A Electrical Safety Inspection ..
+
+4.8 Recorder Check
+
+Tools required:
+
+ None.
+
+1. Print ECG waveforms. The recorder should print correctly and the printout should be clear.
+
+2. Simulate some recorder problems, such as out of paper, paper jam, etc. the defibrillator/ monitor
+
+should give corresponding prompt messages. After the problem is removed, the recorder should be
+
+able to work correctly.
+
+3. Switch automatic alarm recording for each parameter ON and then set each parameter’s limit outside
+
+set alarm limits. Corresponding alarm recordings should be triggered when parameter alarms occur.
+
+4.9 Factory Service
+
+4.9.1 Password for Service Mode
+
+Accessing service mode is password protected. The required password is set to 332888 before the
+
+equipment leaves the factory.
+
+4.9.2 Accessing Service Mode Menu
+
+To access the factory service menu, Press the Main menu button on the equipment’s front panel. Select
+
+[Others>>] →  [Maintenance>>] →  [Service Mode>>] →  enter the required passwords. The Service
+
+Mode-Main menu is shown below.
+
+# Página 31
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-14
+
+```metadata
+pagina: 31
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P31_I0.png
+contexto: 
+```
+
+![Imagen página 31 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P31_I0.png)
+
+4.9.3 Impedance Measurement
+
+Normally impedance measurement is unnecessary. However, you can perform impedance checking after
+
+replacing the therapy module.
+
+1. If not pre-connected, connect the pads cable to the equipment.
+
+2. Connect a test load of 300 ohms to the pads cable.
+
+3. Start the equipment and select the Monitor mode. Press and hold the  [Event]  hardkey, and then
+
+press the  [Lead Select]  hardkey on the front panel, the following screen appears.
+
+```metadata
+pagina: 31
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P31_I1.png
+contexto: 
+```
+
+![Imagen página 31 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P31_I1.png)
+
+4. Verify that the reading of “RT Imped” is between 3000±450.
+
+NOTE
+
+ If 300 ohms test load is not available, you can use a 50 ohms test load to perform impedance
+
+checking. In this case, Verify that the reading of “RT Imped” is between 500±75.
+
+If the reading of “RT Imped” is not correct, replace the therapy module.
+
+# Página 32
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-15
+
+4.9.4 Device Information
+
+Press the Main menu button on the equipment’s front panel. Select  [Others>>] →  [Maintenance>>] →
+
+[Service Mode>>] → enter the required passwords → [Device Information] . In the Device Information
+
+list, you can view the device information such as software version, system status, and etc, as shown below.
+
+```metadata
+pagina: 32
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P32_I0.png
+contexto: 
+```
+
+![Imagen página 32 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P32_I0.png)
+
+In the Device Information screen, you can select  [Export]  to export error codes and shock delivery data to
+
+a USB flash memory.
+
+4.9.5 Checking Failure Code
+
+Press the Main Menu button on the equipment’s front panel. Select  [Others>>] → [Maintenance>>] →
+
+[Service Mode>>] → enter the required passwords → [Failure Code]  to check error codes. This helps the
+
+service personnel to identify failures.
+
+```metadata
+pagina: 32
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P32_I1.png
+contexto: 
+```
+
+![Imagen página 32 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P32_I1.png)
+
+Refer to  6.8 Error Codes  for the description of each error code.
+
+# Página 33
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-16
+
+4.9.6 Inputting Serial Number
+
+Press the Main Menu button on the equipment’s front panel. Select  [Others>>] → [Maintenance>>] →
+
+[Service Mode>>] →  enter the required passwords →  [Input Serial Number]  to input the equipment’s
+
+serial number.
+
+After inputting the serial number, you can view it by accessing Installation Mode and select [Version].
+
+4.9.7 Paddle Open Circuit Display
+
+This  [Paddle Open Circuit Display]  switch is for testing only. In normal operation, it should be set to  [Off] .
+
+Test Report
+
+Customer name
+
+Customer address
+
+Servicing person
+
+Servicing company
+
+Equipment under test (EUT)
+
+Model of EUT
+
+SN of EUT
+
+Hardware version
+
+Software version
+
+Test equipment Model/No. Effective date of calibration
+
+# Página 34
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-17
+
+Test items Test records
+
+Test results
+
+(Pass/Fail)
+
+Visual inspection
+
+The case, display screen, buttons, knob, modules, power cord, and
+
+accessories have no obvious signs of damage.
+
+The external connecting cables are not frayed and the connector pins
+
+are not loose or bent.
+
+The external connectors are not loose or their pins are not bent.
+
+The safety labels and data plate are clearly legible.
+
+Power-on test
+
+The power-on test is passed. The power indicator and alarm system work
+
+correctly and the equipment start up properly.
+
+Performance test
+
+Manual Defibrillation Test
+
+When the equipment runs on AC mains and external paddles are used,
+
+the equipment can be properly charged and discharged; the energy
+
+delivered meets the requirement for accuracy, and the shock
+
+information is correctly recorded.
+
+When the equipment runs on fully charged battery and external paddles
+
+are used, the equipment can be properly charged and discharged; the
+
+energy delivered meets the requirement for accuracy, and the shock
+
+information is correctly recorded.
+
+When the equipment runs on AC mains and multifunctional electrode
+
+pads are used, the equipment can be properly charged and discharged;
+
+the energy delivered meets the requirement for accuracy, and the shock
+
+information is correctly recorded.
+
+When the equipment runs on fully charged battery and multifunctional
+
+electrode pads are used, the equipment can be properly charged and
+
+discharged; the energy delivered meets the requirement for accuracy,
+
+and the shock information is correctly recorded.
+
+When external paddles are used, the charge tone is correctly issued
+
+when the equipment is being charged. The prompt "Charged Removed"
+
+is shown on the screen and the charge done tone stops when the
+
+Disarm hotkey is pressed. The equipment does not discharge externally.
+
+When  [Time to Auto Disarm]  is set to  [60s] , the prompt "Charged
+
+Removed" is shown on the screen and the charge done tone stops after
+
+60 seconds at the completion of charging. The equipment does not
+
+discharge externally.
+
+When pads are used, the charge tone is correctly issued when the
+
+equipment is being charged. The prompt "Charged Removed" is shown
+
+on the screen and the charge done tone stops when the Disarm hotkey
+
+is pressed. The equipment does not discharge externally. When  [Time to
+
+# Página 35
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-18
+
+Test items Test records
+
+Test results
+
+(Pass/Fail)
+
+Auto Disarm]  is set to  [60s] , the prompt "Charged Removed" is shown
+
+on the screen and the charge done tone stops after 60 seconds at the
+
+completion of charging. The equipment does not discharge externally.
+
+When external paddles are used for synchronous defibrillation and ECG
+
+source is paddles and lead II respectively, the prompt is correct and a
+
+Sync mark appears above each R wave. The delivered energy measured
+
+is 10J±2J and the synchronous shock is delivered within 60 ms of the
+
+peak of the R-wave.
+
+When pads are used for synchronous defibrillation and ECG source is
+
+paddles and lead II respectively, the prompt is correct and a Sync mark
+
+appears above each R wave. The delivered energy measured is 10J±2J
+
+and the synchronous shock is delivered within 60 ms of the peak of the
+
+R-wave.
+
+Pacing Test
+
+When set  [Pacer rate]  to  [70ppm]  and  [Pacer Output]  to  [30mA] , the
+
+pacer rate measured by the analyzer is 70 ppm±1ppm and the pacer
+
+output measured is 30 mA±5mA.
+
+When set  [Pacer rate]  to  [170ppm]  and  [Pacer Output]  to  [200mA] , the
+
+pacer rate measured by the analyzer is 170 ppm±2ppm, and the
+
+measured current is 200 mA±10mA.
+
+ECG performance test
+
+ECG waves are displayed correctly without noise and the HR value is
+
+within 80±1 bpm.
+
+ECG Lead Off alarm behaves correctly.
+
+Paced signals are detected and pace pulse marks are displayed when
+
+[Paced]  is set to  [Yes]
+
+The difference between the amplitude of the ECG calibration square
+
+wave and that of the wave scale is not greater than 5%.
+
+Resp test
+
+The Resp wave is not distorted and the Resp value is within 40±2 rpm.
+
+SpO2 test
+
+The displayed SpO 2  and PR values should be within the specified ranges.
+
+NIBP test
+
+The difference is within ±3 mm when 0, 50 or 200 mmHg is set for NIBP
+
+accuracy test.
+
+There is no leakage with NIBP, or the manual leakage test result does not
+
+exceed 6mmHg/min.
+
+CO 2  test
+
+Block the gas inlet of the module or watertrap. The CO 2  flowrate is slower
+
+than 10ml/min and an alarm of CO2 Filterline Err is given. It indicates
+
+that there is no leakage.
+
+# Página 36
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+4-19
+
+Test items Test records
+
+Test results
+
+(Pass/Fail)
+
+The displayed CO 2  value is within 6 ± 0.05 ％ .
+
+Electrical safety tests
+
+Refer to Appendix  A Electrical Safety Inspection .
+
+Recorder check
+
+The recorder can print ECG waves correctly and the printout is clear.
+
+Set the recorder to some problems such as out of paper, paper jam, etc.
+
+the equipment gives corresponding prompt messages. After the
+
+problem is removed, the recorder is able to work correctly.
+
+Automatic alarm recording for each parameter functions correctly when
+
+parameter alarms occur.
+
+Tested by: _________________________                Date: ________________________
+
+# Página 37
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-1
+
+5 Hardware and Software Upgrade
+
+5.1 Hardware Upgrade
+
+5.1.1 Upgrade MPM module
+
+You can upgrade MPM module to any of the following configuration:
+
+ ECG+Mindray SpO2 modules: 115-049471-00 MPM upgrade package
+
+ ECG+Nellcor SpO2 modules: 115-049472-00 MPM upgrade package
+
+ ECG+NIBP modules: 115-049474-00 MPM upgrade package
+
+ ECG+Mindray SpO2+NIBP modules: 115-049475-00 MPM upgrade package
+
+ ECG+Masimo SpO2+NIBP modules: 115-049476-00 MPM upgrade package
+
+ ECG+Nellcor SpO2+NIBP modules: 115-049477-00 MPM upgrade package
+
+The upgrade procedure is as follows:
+
+1. Remove the MPM module assembly and parameter panel assembly as described in.  7.3.5
+
+Disassembling the MPM Module Assembly  and  7.3.6 Removing the Parameter Panel Assembly .
+
+2. Replace the old measurement module panel and MPM module with those in the MPM upgrade kit.
+
+3. Reassemble the equipment.
+
+If the upgrade MPM module is equipped with Masimo SpO 2 , you need to stick a Masimo label at the lower
+
+left corner of the front housing and a No Implied License label below the measurement module panel, as
+
+indicated in the following pictures.
+
+```metadata
+pagina: 37
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P37_I0.png
+contexto: 
+```
+
+![Imagen página 37 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P37_I0.png)
+
+```metadata
+pagina: 37
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P37_I1.png
+contexto: 
+```
+
+![Imagen página 37 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P37_I1.png)
+
+Masimo label No Implied License label
+
+# Página 38
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-2
+
+If the upgraded MPM module is equipped with Nellcor SpO 2 , you need to stick a Nellcor label at the lower
+
+left corner of the front housing, as indicated in the following pictures.
+
+```metadata
+pagina: 38
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P38_I0.png
+contexto: 
+```
+
+![Imagen página 38 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P38_I0.png)
+
+After upgrade the MPM module, perform the tests described in  4.6.3 ECG Test ,  4.6.4 Resp Test ,  4.6.5 SpO2
+
+Test ,  4.7Electrical Safety Tests , and  4.8 Recorder Check .
+
+5.1.2  Upgrade the Therapy Module
+
+You can use 115-049460-00 pacer function upgrade kit to upgrade the therapy module so that equipment
+
+has pacing function. After upgrading the therapy module, choose Mode label (with pacing function) with
+
+the language you need.
+
+Follow this procedure to upgrade the therapy module:
+
+1. Remove therapy module as described in  7.3.7 Removing the Therapy Module . Be noted that you
+
+need not to remove the parameter panel assembly and MPM module assembly.
+
+2. Take off the Mode Select knob. Peel off the Mode label, see the picture below.
+
+3. Replace the old therapy module using the one with pacing function in the upgrade kit.
+
+4. Replace the old Mode Select knob and Mode label using new ones in the upgrade kit.
+
+5. Reassemble the equipment.
+
+Nellcor label
+
+# Página 39
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-3
+
+```metadata
+pagina: 39
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P39_I0.png
+contexto: 
+```
+
+![Imagen página 39 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P39_I0.png)
+
+```metadata
+pagina: 39
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P39_I1.png
+contexto: 
+```
+
+![Imagen página 39 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P39_I1.png)
+
+After upgrade the therapy module, perform the tests described in  4.6.1 Manual Defibrillation Test ,  4.6.2
+
+Pacing Test , and  4.7 Electrical Safety Tests .
+
+5.2 Software Upgrade through a PC
+
+You can upgrade system software and module software using Mindray Patient Monitor Software Upgrade
+
+Tool. You can also view software upgrade log. Mindray Patient Monitor Software Upgrade Tool can directly
+
+run on a PC. By connecting the defibrillator/monitor to a PC via a crossover network cable, you can
+
+upgrade the following software:
+
+ Bootstrap
+
+ System software
+
+ Language library
+
+ BMP files (including screen icons, start-up screens, standby screens)
+
+ General configurations (including passwords, company logo)
+
+ System functional configuration
+
+ FPGA program
+
+ Power module software
+
+ MPM module software and therapy module software
+
+ CO 2  module
+
+Mode Select knob
+
+Mode label
+
+# Página 40
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-4
+
+5.2.1 Installing Mindray Patient Monitor Software Upgrade Tool
+
+1. Find the installation program
+
+```metadata
+pagina: 40
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P40_I0.png
+contexto: 
+```
+
+![Imagen página 40 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P40_I0.png)
+
+and double click it to start installation.
+
+2. Select installation language.
+
+3. Click  [Ok]  and the following screen appears. Click  [Next]  to go to the next step.
+
+```metadata
+pagina: 40
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P40_I1.png
+contexto: 
+```
+
+![Imagen página 40 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P40_I1.png)
+
+4. Enter User Name, Company Name and Serial Number.
+
+```metadata
+pagina: 40
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P40_I2.png
+contexto: 
+```
+
+![Imagen página 40 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P40_I2.png)
+
+# Página 41
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-5
+
+5. Specify the destination folder for installing this program. Then select  [Next].
+
+```metadata
+pagina: 41
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P41_I0.png
+contexto: 
+```
+
+![Imagen página 41 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P41_I0.png)
+
+7. Select Program Folder. Then select  [Next] .
+
+```metadata
+pagina: 41
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P41_I1.png
+contexto: 
+```
+
+![Imagen página 41 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P41_I1.png)
+
+8. Click  [Finish]  to complete installation.
+
+```metadata
+pagina: 41
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P41_I2.png
+contexto: 
+```
+
+![Imagen página 41 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P41_I2.png)
+
+# Página 42
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-6
+
+5.2.2 Software Upgrade Procedure
+
+1. Connect the defibrillator/monitor to be upgraded with a PC.
+
+2. Set IP address to 77.77.1.XX and subnet mask to 255.255.255.0.
+
+3. Run Mindray Patient Monitor Software Upgrade Tool on the PC and set Machine to BeneHeart.
+
+4. On the Mindray Patient Monitor Software Upgrade Tool screen, select [Select Package] and select
+
+packages you want to upgrade. Then select [Start].
+
+5. Simultaneously hold the [Record] key and [Menu] key on the defibrillator/monitor’s front panel, and
+
+then turn on the equipment.
+
+After software upgrade is finished, turn off the equipment, and then disconnect AC mains and remove the
+
+battery. If you do not disconnect the power supply after software upgrade, the status indicator will flash
+
+and the beeper will sound.
+
+For the details of software upgrade, refer to help and instructions for use of Mindray Patient Monitor
+
+Software Upgrade Tool.
+
+```metadata
+pagina: 42
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P42_I0.png
+contexto: 
+```
+
+![Imagen página 42 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P42_I0.png)
+
+CAUTION
+
+ Disconnect the equipment from the patient and make sure the important data are saved
+
+before upgrade.
+
+ Do not shut down or power off the equipment when upgrading the boot program. Otherwise,
+
+it may cause the equipment to break down.
+
+ Program upgrade should be performed by qualified service personnel only.
+
+ Crossover network cable shall be used if a PC is connected for equipment upgrade.
+
+NOTE
+
+ After upgrading the boot program, re-upgrade the system program and other programs to
+
+ensure compatibility.
+
+ Make sure the version of the upgrade package is the one that you desired. If you want to obtain
+
+the latest upgrade package, contact Mindray Customer Service Department.
+
+# Página 43
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-7
+
+5.3 Software Upgrade through a USB Disk
+
+5.3.1 Applicable
+
+Model SN Remark
+
+BeneHeart D5/D6 DZ-XXXXXXXX
+
+DI-XXXXXXXX
+
+This procedure is only applicable to the device
+
+which software version is 04.03.00.16 and above
+
+BeneHeart D2/D3 EZ-XXXXXXXX
+
+EI-XXXXXXXX
+
+5.3.2 Tool
+
+Index Tools Qty.
+
+1 USB disk 1
+
+5.3.3 Upgrade Procedure
+
+1. Prepare a USB Disk
+
+a. Prepare a common USB disk which the system capacity is larger than 2GB and choose FAT 32
+
+b. Create following folders in the boot directory of the USB Disk UPGRADE_AMP/Beneheart/
+
+c. Copy the BIOS program NewBeneHeart_Installer.pkg (Do not change this file name) to the
+
+UPGRADE_AMP/ Beneheart
+
+d. Copy the upgrade file (PKG or MPKG) to the UPGRADE_AMP/Beneheart.
+
+2. Connection
+
+a. Insert the prepared USB disk into the USB port of the machine.
+
+3. Upgrade
+
+a. Turn off the defibrillator, Press and hold Summary (or 12 Lead) button and Main Menu button
+
+of D5/D6 at same time, then turn on the defibrillator, to enter upgrade mode.
+
+b. Note: For D2/D3 machine simultaneously press and hold Menu and Record button (or NIBP
+
+button), and turn on the defibrillator to enter the upgrade mode.
+
+# Página 44
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+5-8
+
+4. Select the File
+
+```metadata
+pagina: 44
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P44_I0.png
+contexto: 
+```
+
+![Imagen página 44 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P44_I0.png)
+
+A maximum of 16 upgrade packages can be displayed in the left and right columns. Rotate the navigation
+
+knob to select the desired upgrade package and press down the knob to confirm.
+
+5. Completed
+
+The  upgrade completed  will be showed in the screen when the upgrade is completed. Restart the device to
+
+activate the new system software.
+
+```metadata
+pagina: 44
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P44_I1.png
+contexto: 
+```
+
+![Imagen página 44 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P44_I1.png)
+
+6. NOTE
+
+a. Disconnect the defibrillator from the patient and make sure that important data are saved
+
+before upgrade.
+
+b. Do not shut down or power off the equipment when upgrading the BIOS program and FPGA
+
+program. Otherwise, the equipment may break down.
+
+c. Upgrade should be performed by qualified service engineer only. Indicates a potential hazard
+
+or unsafe practice that, if not avoided, could result in minor personal injury or
+
+product/property damage.
+
+d. Make sure the version of the upgrade package is your desired one. If you want to obtain the
+
+latest upgrade package, please contact Mindray Customer Service Department.
+
+# Página 45
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-1
+
+6 Troubleshooting
+
+6.1 Overview
+
+In this chapter, the defibrillator/monitor problems are listed along with possible causes and recommended
+
+corrective actions. Refer to the tables to check the defibrillator/monitor, identify and eliminate the
+
+problems.
+
+The problems we list here are frequently arisen difficulties and the actions we recommend can correct
+
+most problems, but not all of them. For more information on troubleshooting, contact our Customer
+
+Service Department.
+
+6.2 Part Replacement
+
+Printed circuit boards (PCBs), major parts and components in the defibrillator/monitor are replaceable.
+
+Once you isolate a defective PCB, follow the instructions in 0
+
+Disassembly and Repair to replace the PCB with a known good one and check that the trouble disappears
+
+or the defibrillator/monitor passes all performance tests. If the trouble remains, replace the PCB with the
+
+original suspicious PCB and continue troubleshooting as directed in this chapter.
+
+To obtain information on replacement parts or order them, refer to  8 Parts .
+
+6.3 Checking Defibrillator/Monitor Status
+
+Some troubleshooting tasks may require you to identify the hardware version and status of your
+
+defibrillator/ monitor. To check equipment status,
+
+1. Select [Main Menu]  → [Review >>] → [Event Review >>]. Then you can view the information on
+
+system start time, self check, etc.
+
+2. You can also view the information on the defibrillator/monitor’s current status by pressing the Menu
+
+key on the equipment’s front panel, and then selecting [Others>>] → [Maintenance >>] → [Service
+
+Mode>>] →  enter the required password  → [Device Information>>].
+
+# Página 46
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-2
+
+6.4 Checking Device Information
+
+Some troubleshooting may involve software compatibility. Thus it requires you to know your
+
+defibrillator/monitor configuration and software version. For detailed information on version compatibility,
+
+please contact our Customer Service Department.
+
+To identify your software version, press the Menu key on the equipment’s front panel, and then select
+
+[Others>>]  → [Maintenance>>] → [Installation Mode>>] →  enter the required password →  [Version] . In
+
+the Version screen, you can view system software version and module software version.
+
+You can also press the Menu key on the equipment’s front panel, and then select  [Others>>]
+
+→ [Maintenance>>] → [Service Mode>>] →  enter the required password  → [Device Information>>]  to
+
+check system software version, module software version, and device status .
+
+6.5 Checking Technical Alarm
+
+Before troubleshooting the defibrillator/monitor, check for technical alarm message. If an alarm message is
+
+presented, eliminate the technical alarm first. For detailed information on technical alarm message,
+
+possible cause and corrective action, see the  BeneHeart D3/ BeneHeart D2 Defibrillator/Monitor
+
+Operator’s Manual (P/N: 046-010599-00) l.
+
+6.6 Troubleshooting Guide
+
+6.6.1 Defibrillation Problems
+
+Symptom Possible Cause Corrective Action
+
+The equipment does
+
+not charge by
+
+pressing the Charge
+
+button on the front
+
+panel.
+
+Keypad board failure. 1. Connect external paddles. Press the
+
+“Charge” button on the Apex paddle to start
+
+charging. If the “Charge” button on the
+
+paddles works, it indicates the keypad
+
+board fails.
+
+2. Replace the keypad board.
+
+The Charge button fails to be pressed
+
+down effectively due to the damaged
+
+or dislocated silica gel keypad.
+
+Disassemble the keypad board to replace or
+
+reshuffle the keypad.
+
+The equipment
+
+cannot be charged
+
+by pressing the
+
+Charge button on
+
+the external paddles.
+
+Paddles not connected properly. Reconnect the paddles.
+
+Paddles failure. 1. Isolate the problem by connecting pads
+
+to perform charging/discharging.
+
+2. If the paddles are failed, replace them.
+
+Failure of therapy module. Replace the therapy module.
+
+Failure of connection wire to the
+
+therapy module.
+
+Replace the connection wire.
+
+# Página 47
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-3
+
+Symptom Possible Cause Corrective Action
+
+The equipment is
+
+charged too slowly
+
+Battery failure. Replace the battery or connect the
+
+equipment with external power supply.
+
+CPU and power management board
+
+failure.
+
+Replace the CPU and power management
+
+board.
+
+Therapy module failed. Replace the therapy module.
+
+A shock cannot be
+
+delivered by
+
+pressing the Shock
+
+button on the
+
+equipment’s front
+
+panel in Manual
+
+Defib Mode or AED
+
+Mode.
+
+Keypad board failure. 1. Locate the problem by connecting
+
+paddles to perform charging / discharging.
+
+2. If the keypad board is defective, replace
+
+it.
+
+The Charge Button fails to be pressed
+
+down effectively due to the failure or
+
+dislocated silica gel keypad.
+
+Disassemble the keypad board to replace or
+
+reshuffle the keypad.
+
+A shock cannot be
+
+delivered by
+
+pressing the Shock
+
+button on the
+
+paddles.
+
+Paddles not connected properly. Reconnect the paddles.
+
+Paddles failure. 1. Locate the problem by connecting pads
+
+to perform charging/discharging. If normal
+
+discharge can be performed, it indicates the
+
+paddles are defective.
+
+2. Replace the paddles.
+
+Failure of therapy module. Replace the therapy module.
+
+Connection wire to the therapy
+
+module broken.
+
+Replace the connection wire.
+
+The message.
+
+“Disarming Failed” is
+
+displayed.
+
+Failure of therapy module. Replace the therapy module.
+
+The equipment can
+
+be properly charged,
+
+but the energy is
+
+disarmed
+
+automatically at the
+
+completion of
+
+charging or when
+
+the equipment is
+
+being discharged.
+
+Too high or too low patient impedance
+
+detected.
+
+1. Pads/paddles are detached from the
+
+patient.
+
+2. Pads/paddles failure.
+
+3. Pads cable failure.
+
+Ensure good connection between the
+
+patient and pads/paddles. If the problem
+
+persists, replace Pads, paddles or Pads
+
+cable.
+
+Failure of therapy module. Replace the therapy module.
+
+Defibrillation
+
+malfunction.
+
+Defibrillation hardware circuit
+
+defective.
+
+Replace the therapy module.
+
+Energy Select
+
+buttons on the
+
+equipment front
+
+panel do not work.
+
+Keypad board failure. 1. Locate the problem by connecting
+
+paddles to perform energy setting.
+
+2. If the keypad board is defective, replace
+
+it.
+
+The Energy Select Buttons fail to be
+
+pressed down due to the damaged or
+
+dislocated silica gel keypad.
+
+Disassemble the keypad board to replace or
+
+reshuffle the keypad.
+
+# Página 48
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-4
+
+Symptom Possible Cause Corrective Action
+
+Energy Select
+
+buttons on the
+
+paddles do not work
+
+Paddles not connected properly. Reconnect the paddles.
+
+Paddles failure. Replace the paddles.
+
+Failure of therapy module. Replace the therapy module.
+
+Connection wires to the therapy
+
+module broken.
+
+Replace the connection wires.
+
+The message
+
+“Defibrillation
+
+malfunction”
+
+presented at
+
+power-on
+
+Configuration files not properly
+
+upgraded.
+
+Upgrade the configuration files.
+
+Therapy module failure Replace the therapy module.
+
+6.6.2 Pacing Problems
+
+Symptom Possible Cause Corrective Action
+
+Does not deliver
+
+correct pacing
+
+current.
+
+Failure of the therapy module Replace the therapy module.
+
+Does not deliver
+
+correct pacing rate.
+
+Failure of the therapy module. Replace the therapy module.
+
+Pacer Equip
+
+Malfunction
+
+Pacer hardware failure. Replace the therapy module.
+
+6.6.3 Power On/Off Problems
+
+Symptom Possible Cause Corrective Action
+
+The
+
+defibrillator/monitor
+
+fails to start. AC LED or
+
+battery LED does not
+
+light
+
+AC mains not connected or
+
+battery too low.
+
+Check that AC mains is properly connected or
+
+battery capacity is sufficient.
+
+Power supply protection. Refer to  6.6.10 Power Supply Problems .
+
+Cables defective or poorly
+
+connected.
+
+1. Check that the cables between the power
+
+switch and the keypad board, the keypad board
+
+and the power management board and
+
+between the power module and the power
+
+management board are correctly connected.
+
+2. Check that wires and connectors are not
+
+defective.
+
+Power switch or keypad board
+
+failure
+
+Replace the power switch or keypad board.
+
+AC/DC board defective Replace the AC/DC board.
+
+CPU and power management
+
+board failure
+
+Replace the CPU and power management
+
+board.
+
+# Página 49
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-5
+
+6.6.4 Display Problems
+
+Symptom Possible Cause Corrective Action
+
+The LCD screen is blank,
+
+but the
+
+defibrillator/monitor
+
+works properly.
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that wires between the display and the
+
+keypad board, and between the keypad board
+
+and the CPU and power management board are
+
+correctly connected.
+
+2. Check that the cables and connectors are not
+
+defective.
+
+LCD Display failure Replace the display.
+
+Keypad board failure Replace the keypad board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Secondary display does
+
+not function.
+
+Cable failure 1. Check that the wires between the display and
+
+the defibrillator/monitor are correctly connected.
+
+2. Check that the cables and connectors are not
+
+defective.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Secondary display
+
+displays snows or
+
+flashing specks
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that the wires between the display and
+
+the defibrillator/ monitor are correctly connected.
+
+2. Check that the cables and connectors are not
+
+defective.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Images overlapped or
+
+distorted
+
+FPGA failure Update or upgrade FPGA.
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that the wire between the display and
+
+keypad board is correctly connected.
+
+2. Check that the cables and connectors are not
+
+defective.
+
+The colour of images
+
+deviates from the
+
+standard configuration.
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that wires between the display and the
+
+keypad board and between the keypad board
+
+and the power management board are correctly
+
+connected.
+
+2. Check that the cables and connectors are not
+
+defective.
+
+Display failure Replace the display.
+
+Keypad board failure Replace the keypad board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Images overlapped or
+
+distorted
+
+FPGA failure Update or upgrade FPGA
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that the wire between the display and
+
+keypad board is correctly connected.
+
+2. Check that the cables and connectors are not
+
+defective.
+
+# Página 50
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-6
+
+6.6.5 Alarm Problems
+
+Symptom Possible Cause Corrective Action
+
+The alarm lamp is not
+
+light or extinguished
+
+but alarm sound is
+
+issued
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that wire between alarm LED board and
+
+keypad board are properly connected.
+
+2. Check that connection wires and connectors
+
+are not defective.
+
+Alarm LED board failure Replace the alarm LED board.
+
+Keypad board failure Replace the keypad board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+No alarm sound is
+
+issued but alarm lamp
+
+is lit
+
+Audio alarm disabled Check that alarm tone volume is set to a value
+
+other than zero by pressing the Menu key on the
+
+equipment’s front panel, and then selecting
+
+[Alarm Setup >>].
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that the wire between the speaker and
+
+keypad board is properly connected.
+
+2. Check that connection wires and connectors
+
+are not defective.
+
+FPGA audio logic ERROR Upgrade the audio logic part of the FPGA
+
+program.
+
+Speaker failure Replace the speaker.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+6.6.6 Button and Knob Problems
+
+Symptom Possible Cause Corrective Action
+
+Buttons do not
+
+respond.
+
+Connection cable defective or
+
+poorly connected.
+
+1. .Check that the wire between the keypad and
+
+the keypad board is properly connected.
+
+2. Check that that the wire between the keypad
+
+board and the CPU and power management
+
+board is properly connected.
+
+3. Check if the connection wires and connectors
+
+are defective.
+
+Keypad board failure Replace the keypad board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Mode Select knob
+
+does not respond.
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that wires between the knob to keypad
+
+board, and between the keypad board and the
+
+power management board are properly
+
+connected.
+
+2. Check that connecting wires and connectors
+
+are not defective.
+
+# Página 51
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-7
+
+Symptom Possible Cause Corrective Action
+
+Mode Select knob
+
+does not respond.
+
+Knob failure Replace Mode Select knob.
+
+Keypad board failure Replace the keypad board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Navigation knob does
+
+not respond.
+
+Connection cable defective or
+
+poorly connected.
+
+1. Check that wires between the knob to keypad
+
+board, and between the keypad board and the
+
+power management board are properly
+
+connected.
+
+2. Check that connection wires and connectors
+
+are not defective.
+
+Knob failure. Replace the navigation knob.
+
+Keypad board failure Replace the keypad board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+6.6.7 Recorder Problems
+
+Symptom Possible Cause Corrective Action
+
+No printout Connection cable defective or
+
+poorly connected.
+
+1. Check the wire between the recorder and the
+
+keypad board is connected properly.
+
+2. Check that connection wires and connectors
+
+are not defective.
+
+Recorder power supply failure Check if the power module outputs 5 V DC and
+
+12V DC correctly.
+
+Recorder failure Replace the recorder.
+
+Poor print quality or
+
+paper not feeding
+
+properly
+
+Paper roll not properly installed Stop the recorder and re-install the paper roll.
+
+Print head dirty 1. Check the thermal print head and the paper
+
+roller for foreign matter.
+
+2. lean the thermal print head with an
+
+appropriate clean solution.
+
+Recorder failure Replace recorder.
+
+Blank printout Paper-roll installed reversely. Reload paper-roll.
+
+Recorder failure Replace the recorder.
+
+# Página 52
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-8
+
+6.6.8 Output Interface Problems
+
+Symptom Possible Cause Corrective Action
+
+Sync input failure CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Interface board failure Replace the interface board.
+
+USB Device does not
+
+function (provided
+
+that the peripheral
+
+devices are good)
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+6.6.9 Memory Card Problems
+
+Symptom Possible Cause Corrective Action
+
+Memory card
+
+malfunctions
+
+Memory card failure Format the memory card. If the problem persists,
+
+replace the CPU and power management board.
+
+6.6.10 Power Supply Problems
+
+Symptom Possible Cause Corrective Action
+
+Battery failure Battery damaged. Replace battery.
+
+Battery interface failure. 1. Check batteries are installed properly.
+
+2. Check if the battery interface is defective.
+
+3. If the battery interface is defective, replace the
+
+power management board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Batteries can not be
+
+fully charged.
+
+Battery damaged. Replace batteries.
+
+Battery interface failure. 1. Check batteries are installed properly.
+
+2. Check if the battery interface is defective.
+
+3. If the battery interface is defective, replace the
+
+power management board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+Battery cannot be
+
+charged
+
+Battery failure. Replace battery and recharge the replacement
+
+battery. If the replacement battery can be
+
+recharged, the original one fails.
+
+Cable defective or poorly
+
+connected
+
+1. Check batteries are installed properly.
+
+2. Check if the battery interface is defective.
+
+3. If the battery interface is defective, replace the
+
+power management board.
+
+CPU and power management
+
+board failure.
+
+Replace the CPU and power management board.
+
+No +3.3 V A output 1. Power supply failure 1. Turn off the defibrillator/monitor then restart
+
+# Página 53
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-9
+
+Symptom Possible Cause Corrective Action
+
+No +3.3 V B output 2. CPU and power management
+
+board failure.
+
+it.
+
+2. If the problem remains, disconnect the AC
+
+mains for 5 s and reconnect it, then restart the
+
+defibrillator/ monitor.
+
+3. If the problem still remains, replace the power
+
+management board.
+
+Not +5.0 V output
+
+No +12 V output
+
+NOTE
+
+ When the power module has a failure, it may cause problems to other components, e.g. the
+
+defibrillator/monitor suddenly breaks down during start-up, as the power module may have a
+
+power supply protection. In this case, troubleshoot the power module per the procedure
+
+described in the table above.
+
+ Components of the main unit, SMR and parameter modules are powered by the power module.
+
+In the event that a component malfunctions, check if the operating voltage is correct. Refer to
+
+2 Theory of Operation for the operating voltage and measurement points of each component.
+
+6.6.11 Software Upgrade Problems
+
+Symptom Possible Cause Corrective Action
+
+Boot file upgrade fails Power failure or unintended
+
+power off during boot file
+
+upgrade
+
+Return the CPU board to factory for repair.
+
+Program upgrade fails Incorrect network connection 1. Check that the network cable is properly
+
+connected and is not too long (shorter than
+
+50m).
+
+2. Make sure that the network cable is of the
+
+right type. Network cable with crossed wires
+
+inside is used for LAN upgrade and those with
+
+parallel wires inside for WAN.
+
+Wrong upgrade package Upgrade package shall be .pkg files. Select
+
+package according to system requirement.
+
+Incorrect IP address
+
+configuration
+
+Configure a fixed IP address in range C as
+
+specified for the defibrillator/monitor. We
+
+recommend not to upgrade a program when the
+
+defibrillator/monitor is connected to a network
+
+with multiple PCs.
+
+# Página 54
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-10
+
+6.7 Technical Alarm Messages
+
+Measurement Alarm Message Cause and solution
+
+XX XX SelfTest Err An error occurred to the XX module, or there is
+
+a problem with the communications between
+
+the module and the host. Restart the
+
+equipment.
+
+XX Init Err
+
+XX Comm Err
+
+XX Comm Stop
+
+XX Overrange The measured XX value is not within the
+
+specified range for XX measurement. Contact
+
+our Customer Service Department.
+
+ECG ECG Lead Off The ECG electrode has become detached from
+
+the patient or the lead wire has become
+
+disconnected from the trunk cable. Check the
+
+connection of the electrodes and leadwires.
+
+ECG YY Lead Off
+
+(YY represents the leadwires V,
+
+LL, LA, and RA, as per AHA
+
+standard, or C, F, L and R as per
+
+IEC standard.)
+
+Pads/Paddles off The pads/paddles have been detached from the
+
+patient or the therapy cable is loose. Check that
+
+the pads/paddles and therapy cable are
+
+properly connected.
+
+ECG Noise The ECG signal is noisy. Check for any possible
+
+sources of signal noise form the area around the
+
+cable and electrode, and check the patient for
+
+excessive motion.
+
+ECG Signal Invalid ECG amplitude is so low that ECG signal is
+
+undetectable. Check for any possible source of
+
+interference from the area around the cable
+
+and electrode; check the patient’s condition.
+
+SpO2
+
+SpO2 Sensor Off The SpO 2  sensor has become detached from
+
+the patient or the module, or there is a fault
+
+with the Sp O 2  sensor, or an unspecified Sp O 2
+
+sensor has been used. Check the sensor
+
+application site and the sensor type, and make
+
+sure the sensor is not damaged. Reconnect the
+
+sensor or use a new sensor.
+
+SpO2 Sensor Fault
+
+SpO2 No Sensor
+
+SpO2 Unknow Sensor
+
+SpO2 Sensor Incompatible
+
+SpO2 Too Much Light There is too much light on the Sp O 2  sensor.
+
+Move the sensor to a place with lower level of
+
+ambient light or cover the sensor to minimize
+
+the ambient light.
+
+SpO2 Low Signal The Sp O 2  signal is too low or too weak. Check
+
+# Página 55
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-11
+
+Measurement Alarm Message Cause and solution
+
+SpO2
+
+SpO2 Weak Signal the patient’s condition and change the sensor
+
+application site. If the error persists, replace the
+
+sensor.
+
+SpO2 Weak Pulse
+
+SpO2 Low Perf
+
+SpO2 Interference The Sp O 2  signal has been interfered. Check for
+
+any possible sources of signal noise form the
+
+area around the sensor, and check the patient
+
+for excessive motion.
+
+SpO2 Non-Pulsatile
+
+SpO2 Board Fault There is a problem with the Sp O 2  measurement
+
+board. Do not use the module and contact our
+
+Customer Service Department.
+
+NIBP NIBP Loose Cuff The NIBP cuff is not properly connected, or
+
+there is a leak in the airway. NIBP Air Leak
+
+NIBP Pneumatic Leak Check the NIBP cuff and pump for leakages.
+
+NIBP Cuff Type Wrong The cuff type applied mismatches the patient
+
+category. Verify the patient category and
+
+replace the cuff.
+
+NIBP Air Press. Err An error occurred to the air pressure. Verify that
+
+the equipment application site meets the
+
+environmental requirements and check if there
+
+is any source that affects the air pressure.
+
+NIBP Weak Signal The patient’s pulse is weak or the cuff is loose.
+
+Check the patient’s condition and change the
+
+cuff application site. If the problem persists,
+
+change the cuff.
+
+NIBP Sig. Saturated The NIBP signal is saturated due to excess
+
+motion or other sources.
+
+NIBP Overrange The patient’s NIBP value may be beyond the
+
+specified measurement range.
+
+NIBP Excessive
+
+Motion
+
+Check the patient’s condition and reduce the
+
+patient motion.
+
+NIBP Equip Err An error occurred during NIBP measurement
+
+and therefore the equipment cannot perform
+
+analysis correctly. Check the patient’s condition
+
+and NIBP connections, or replace the cuff.
+
+NIBP Time Out
+
+NIBP Measure Failed
+
+NIBP Reset For Err An illegal reset occurred during NIBP
+
+measurement. Check if the airway is occluded.
+
+CO2
+
+CO2 Sensor High
+
+Temp
+
+Check, stop using or replace the sensor.
+
+CO2 Occlusion The airway or watertrap was occluded. Check
+
+the airway and remove the occlusion.
+
+CO2: Change
+
+Watertrap
+
+Change the watertrap.
+
+# Página 56
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-12
+
+Measurement Alarm Message Cause and solution
+
+CO2
+
+CO2 Watertrap
+
+Mismatch
+
+Check the patient category, replace a matched
+
+watertrap.
+
+CO2 No Watertrap Check the watertrap connections.
+
+CO2 Zero Failed Check the CO 2  connections. After the sensor’s
+
+temperature becomes stabilized, perform a zero
+
+calibration again.
+
+CO2 Module Error There is a problem with the CO 2  module, or a
+
+problem with the communications between the
+
+host and the CO 2  module. Restart the
+
+equipment.
+
+CPR sensor CPR Sensor Err There is a self-test error or communication
+
+problem
+
+with the CPR sensor. Contact our Customer
+
+Service Department.
+
+CPR Sensor Low
+
+Battery
+
+The battery power of the CPR sensor is low.
+
+Charge the battery by connect the CPR sensor
+
+to the equipment.
+
+CPR Sensor Need Service The compressions using the CPR sensor exceed
+
+the expected numbers. Contact our Customer
+
+Service Department.
+
+CPR Sensor Cable Fault An error occurred to the CPR sensor cable.
+
+Replace the CPR sensor cable.
+
+Change CPR Sensor
+
+Battery
+
+The CPR sensor battery is aging. Contact our
+
+Customer Service Department.
+
+CPR Sensor Bat. Charge Err The CPR sensor cannot be charged. Contact our
+
+Customer Service Department.
+
+Main control system
+
+No Speaker Make sure that the speaker is connected.
+
+Power Board Comm Err An error occurred to the power board, or there
+
+is a problem with the communications between
+
+the power board and the host. Restart the
+
+equipment.
+
+Keyboard Comm Err An error occurred to the keypad board, or there
+
+is a problem with the communications between
+
+the keypad board and the host. Restart the
+
+equipment.
+
+Therapy Module Comm Err An error occurred to the therapy module, or
+
+there is a problem with the communications
+
+between the therapy module and the host.
+
+Restart the equipment. If the problem persists,
+
+contact our Customer Service Department.
+
+Main Control Selftest Err The main control voltage is abnormal. Replace
+
+the main control board.
+
+# Página 57
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-13
+
+Measurement Alarm Message Cause and solution
+
+Main control system Wifi Module Fault Contact our Customer Service Department.
+
+Machine Type Error
+
+RT Clock Need Reset Reset system time.
+
+RT Clock Err An error occurred to the RTC chip, or the button
+
+cell
+
+is depleted. Replace corresponding part.
+
+Memory Err There is a problem with the data card. Format
+
+the CF card. If the problem persists, contact our
+
+Customer Service Department.
+
+Last User Test Failed Run a successful user test.
+
+Last Auto Test Failed Run a successful user test again.
+
+No CMS The equipment is disconnected from the CMS.
+
+Check the network connection.
+
+IP Address Conflict Network IP conflicts. Check the network
+
+settings.
+
+Power board Power System Selftest Err An error occurred to the system power supply.
+
+Restart the equipment.
+
+Power Board Volt Err
+
+Low Battery Change battery or connect the equipment to
+
+the AC power source to charge the batteries.
+
+No Battery Battery is not installed. Install the battery.
+
+Battery Depleted! System will
+
+shut shown imminently.
+
+Connect to AC Mains or Replace
+
+Battery.
+
+Connect the equipment to AC mains.
+
+Battery Err There is a problem with the batteries. Check the
+
+batteries for damage; verify that correct
+
+batteries are used. Replace the batteries if
+
+necessary.
+
+Battery Aged Replace the battery.
+
+Battery failed charging Battery failure or power board hardware failure.
+
+Replace the battery. If the problem persists,
+
+replace the power board.
+
+Therapy module
+
+Therapy Equip selftest Err An error occurred during therapy module self
+
+test. Restart the equipment or replace the
+
+therapy module low voltage board.
+
+# Página 58
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-14
+
+Measurement Alarm Message Cause and solution
+
+Therapy module
+
+Defib Malfunction The defibrillation function fails or both the
+
+defibrillation and pacing functions fail. Restart
+
+the equipment and test defibrillation function.
+
+If the problem persists, contact our Customer
+
+Service Department.
+
+Pacer Malfunction! The pacing function fails. Restart the
+
+equipment and test pacer function. If the
+
+problem persists, contact our Customer Service
+
+Department.
+
+Disarming Failed There is a problem with the therapy module
+
+disarming circuit. Replace the therapy module
+
+low voltage board and high voltage board.
+
+Monitoring module Mornitor Module Selftest Err An error occurred during MPM module
+
+power-on self test. Replace the MPM module.
+
+Monitor Module Reset Err MPM module reset abnormally. In this case, the
+
+MPM module restores to default configuration.
+
+You can ignore this problem.
+
+Monitor Module Voltage Err The voltage of MPM module is abnormal.
+
+Replace the MPM module.
+
+Recorder Recorder Init Err Restart the equipment.
+
+Recordhead Overheated The recorder has been working for a prolonged
+
+time. Clear the recording tasks and resume the
+
+recording till the recorder’s print head cools
+
+down.
+
+Recorder Overcurrent Re-load the recorder paper.
+
+Pacer Pads cable Off Check that pads cable is properly connected.
+
+Pads Off Check that pads are properly connected.
+
+ECG Lead Off Check that ECG leadwires are properly
+
+connected.
+
+Pacer Stopped Abnormally Check paddles. Check that pads well contact
+
+with patient’s skin. Make sure pads are properly
+
+applied, and then start pacing again.
+
+Others Load Config Err Check if the configuration is correct, or restore
+
+the factory configuration.
+
+# Página 59
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-15
+
+6.8 Error Codes
+
+6.8.1 Therapy Module Error Codes
+
+Type Error Code Description
+
+Power-on self-test 1 CPU (M0+) power-on self-test failed
+
+2 RAM (M0+) power-on self-test failed
+
+3 ROM (M0+) power-on self-test failed
+
+4 Watchdog (M0+) power-on self-test failed
+
+5 ADC (M0+) power-on self-test failed
+
+6 Register (M3) power-on self-test failed
+
+7 RAM (M3) power-on self-test failed
+
+8 ROM (M3) power-on self-test failed
+
+9 Watchdog (M3) power-on self-test failed
+
+10 ASIC (M0+) power-on self-test failed
+
+11 CPU (M3) power-on self-test failed
+
+Reset information 45 M0+ abnormal reset
+
+46 ASIC exception
+
+47 M3 abnormal reset
+
+48 M3 and M0+ communication error
+
+Real-time self-test 49 M3 real-time ADC self-test error
+
+50 M3 chip calculation function error
+
+Defibrillation 51 |V1-V2| > 500 V at the onset of charging
+
+52 V1 <= 65 V or V2 <= 65 V 1s after charging starts
+
+53 The V1/V2 decline exceeds more than 10% of V1/V2tgt during
+
+charging
+
+54 |V1-V2| > 128 V during use and |V1-V2| > 108 V during self-test
+
+in the case of charging
+
+55 V1 >= 2400 V or V2 >= 2400 V during charging
+
+56 Charging not completed within 25s after charging starts
+
+57 V1 > (V1Tgt*1.2) after charging ends
+
+58 V1 <= 50 V or V2 <= 50 V during charging retention
+
+59 V1 > (V1Tgt*1.2) or V2 > (V1Tgt*1.2) during charging
+
+retention
+
+60 Overcurrent during self-discharging
+
+61 V1 >= 40 V or V2 >= 40 V after self-discharging
+
+62 Overvoltage protection occurred
+
+Impedance calibration 63 Zeroing sampling value error
+
+64 Gain calibration sampling value error
+
+65 Slope calculation error in gain calibration
+
+66 Zeroing failed before gain calibration
+
+67 An error occurred when calibration information is written into
+
+the flash memory
+
+# Página 60
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-16
+
+Type Error Code Description
+
+Impedance calibration 68 An error occurred when calibration information in the flash
+
+memory is read
+
+Pacing 71 Pacing power error
+
+72 Pacing relay error
+
+73 Pacing frequency error
+
+74 Pacing current error
+
+75 Pacing DA error
+
+76 Pacing voltage error
+
+77 Pacing overcurrent protection point too high
+
+78 Pacing overcurrent protection failure
+
+Function self-test
+
+201 AD self-test failed in function self-test
+
+202 Clock self-test timeout and uncompleted in function self-test
+
+203 Clock frequency self-test failed in function self-test
+
+210 Defibrillation charging failed in function self-test
+
+211 Function self-test charging timeout
+
+212 Function self-test charging retention failed
+
+216 Discharge circuit self-test failed in function self-test
+
+217 Discharge circuit self-test failed in function self-test
+
+218 Discharge circuit self-test failed in function self-test
+
+219 Discharge circuit self-test failed in function self-test
+
+220 Discharge circuit self-test failed in function self-test
+
+221 Discharge circuit self-test failed in function self-test
+
+222 Discharge circuit self-test failed in function self-test
+
+223 Discharge circuit self-test failed in function self-test
+
+224 Discharge circuit self-test failed in function self-test
+
+226 Self-discharging completion self-test failed in function
+
+self-test
+
+230 Self-test failed in minor signal impedance detection in
+
+function self-test
+
+231 Defibrillation relay short-circuited in minor signal impedance
+
+detection in function self-test
+
+232 Test load relay short-circuited in minor signal impedance
+
+detection in function self-test
+
+258 P-lead ECG self-test failed in function self-test
+
+259 PFlag & RFlag self-test failed in function self-test
+
+260 M3 5V7 power failure
+
+261 M3 +-5 V power failure
+
+262 M3 +18 V power failure
+
+263 M3 3V3 power failure
+
+264 M0 AVCC power failure
+
+265 M0 AVSS power failure
+
+266 M0 +2V5 power failure
+
+# Página 61
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-17
+
+Type Error Code Description
+
+Function self-test 267 M0 -2V5 power failure
+
+268 M0 ASIC_VREF power failure
+
+269 M0 DVDD power failure
+
+270 Charging prohibited after the in-vivo cable is connected to
+
+the human body in self-test
+
+271 Discharging failed due to discharging circuit short-circuited
+
+273 The capacitance of the energy-storage capacitor exceeds the
+
+threshold in self-test
+
+274 Defibrillation energy dual-backup check error
+
+275 Pacing frequency dual-backup check error
+
+276 Pacing current dual-backup check error
+
+277 Big error in defibrillation discharge resistance
+
+6.8.2 Power Module Error Codes
+
+Type Error Code Description
+
+Register failure 101 Battery discharging short circuit failure
+
+102 Battery charging short circuit failure
+
+103 Battery AFE discharging overcurrent failure
+
+104 Battery AFE watchdog failure
+
+105 Battery controller watchdog failure
+
+106 Setting of the battery permanent failure flag bit
+
+107 Battery overvoltage failure
+
+108 Battery undervoltage failure
+
+109 Battery pack overvoltage failure
+
+110 Battery pack undervoltage failure
+
+111 Battery Level-2 charging overcurrent failure
+
+112 Battery Level-2 discharging overcurrent failure
+
+113 Battery charging overcurrent failure
+
+114 Battery discharging overcurrent failure
+
+115 Battery charging over-temperature failure
+
+116 Battery discharging over-temperature failure
+
+117 Battery over-charge failure
+
+118 Battery over-charge current failure
+
+119 Battery over-charge voltage failure
+
+120 Battery fast charge timeout failure
+
+121 Battery pre-charge timeout failure
+
+Other error codes of
+
+power board
+
+143 Battery communication error
+
+144 Power voltage error
+
+145 Battery charging failure
+
+146 Power-on self-test error
+
+147 Main control failure
+
+# Página 62
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-18
+
+Type Error Code Description
+
+Other error codes of
+
+power board
+
+148 Disposable battery communication error
+
+151 Low battery
+
+152 Ultra-low battery
+
+153 Battery failure
+
+154 Battery aged
+
+155 RTC self-test failed
+
+156 Power-on/off button adhesion
+
+161 VBUS failure
+
+162 5VD failure
+
+163 10V failure
+
+164 DVDD failure
+
+165 18V failure
+
+166 AVSS failure
+
+167 3VB failure
+
+6.8.3 Main Control Error Codes
+
+Error Code Description
+
+401 No speaker
+
+402 No storage card
+
+403 Power board communication error
+
+404 Therapy board communication error
+
+405 Main control module power-on self-test error
+
+406 Real-time clock error
+
+407 Storage card read/write error
+
+408 Keypad self-check error
+
+409 Machine type recognition error
+
+410 Recorder communication error
+
+411 Front housing keypad self-test error
+
+412 Speaker self-test error
+
+413 Inaccurate real-time clock
+
+414 Button adhesion
+
+415 Program CRC check error
+
+416 Poles expired
+
+417 AT battery discharge error
+
+419 UT battery discharge error
+
+421 An error occurred when an SPI obtains the version
+
+422 Wi-Fi module failure
+
+423 Failed to load user configuration
+
+424 Maintenance indicator user self-test error
+
+425 M3 self-test error
+
+426 Power board self-test error
+
+# Página 63
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+6-19
+
+6.8.4 M51C Error Codes
+
+Error Code Description
+
+506
+
+After the NIBP self-test fails or the equipment is powered on, an error occurs in the air
+
+pump, A/D sampling, or pressure sensor, or a pointer error occurs during software
+
+operation.
+
+# Página 64
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-1
+
+7 Disassembly and Repair
+
+7.1 Tools Required
+
+To disassemble and replace the parts and components, the following tools may be required:
+
+ Phillips screwdrivers
+
+ Tweezers
+
+ Sharp nose pliers
+
+ 7# socket wrench
+
+ Adjustable spanner
+
+ Defibrillator/monitor high-voltage discharge fixture (0651-TF11)
+
+7.2 Preparations for Disassembly
+
+Before disassembling the equipment, finish the following preparations:
+
+ Stop patient monitoring and therapy, turn off the equipment and disconnect all the accessories and
+
+peripheral devices.
+
+ Disconnect the AC power source and remove the battery.
+
+ To avoid high voltage hazard, strictly follow the procedure as defined in section  7.3.4 Discharging
+
+the Capacitor  for disassembling.
+
+```metadata
+pagina: 64
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P64_I0.png
+contexto: 
+```
+
+![Imagen página 64 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P64_I0.png)
+
+WARNING
+
+ Before disassembling the equipment, be sure to eliminate the static charges first. When
+
+disassembling the parts labeled with static-sensitive symbols, make sure you are wearing
+
+electrostatic discharge protection such as antistatic wristband or gloves to avoid damaging the
+
+equipment.
+
+ Properly connect and route the cables and wires when reassembling the equipment to avoid
+
+short circuit.
+
+ Select appropriate screws to assemble the equipment. If unfit screws are tightened by force,
+
+the equipment may be damaged and the screws or part may fall off during use, causing
+
+unpredictable equipment damage or human injury.
+
+ Follow correct sequence to disassembly the equipment. Otherwise, the equipment may be
+
+damaged permanently.
+
+ Disconnect all the cables before disassembling any parts. Be careful not to damage any cables
+
+or connectors.
+
+# Página 65
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-2
+
+ Place removed screws and disassembled parts properly, preventing them from being lost or
+
+contaminated.
+
+ Place the screws and parts from the same module together to facilitate reassembling.
+
+ To reassemble the equipment, first assemble the assemblies, and then the main unit. Carefully
+
+route the cables.
+
+ Make sure that the waterproof material is properly applied during reassembling.
+
+7.3 Disassembling the Main Unit
+
+```metadata
+pagina: 65
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P65_I0.png
+contexto: 
+```
+
+![Imagen página 65 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P65_I0.png)
+
+WARNING
+
+ To disassemble the equipment, first remove the external assemblies, such as the hook mount
+
+(if configured), paddle tray assembly, and front housing assembly in turn, and then the
+
+internal assemblies and parts.
+
+ The power supply assembly and recorder can be removed without removing any other
+
+assemblies.
+
+ To disassemble the equipment, place the equipment on a work surface free from foreign
+
+material, avoiding damaging the antiglare screen, LCD and the knob. Be careful not to break
+
+the two cotters on the front ends of rear housing.
+
+ All the operations should be performed by qualified service personnel only. Make sure to put
+
+on the insulating gloves during service operations.
+
+ Before remove the therapy board, you must use the dicharge fixture to discharge the capacitor
+
+first. If you do not have a discharge fixture, disconnect AC mains and remove batteries, wait for
+
+at least 2 hours before removing the capacitor.
+
+# Página 66
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-3
+
+7.3.1 Removing Hook Mount (if configured)
+
+1. Stand the equipment on the work surface with the back of the equipment facing to you. Loose and
+
+remove the two M3×16 Philips screws; take off the φ3 flat washers and spring washers.
+
+```metadata
+pagina: 66
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P66_I0.png
+contexto: 
+```
+
+![Imagen página 66 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P66_I0.png)
+
+2. Pull out the hooks.
+
+7.3.2 Removing Paddle Tray
+
+1. Stand the equipment on the work surface with the back of the equipment facing to you. Tweeze the
+
+five plastic plugs filling the screw holes.
+
+```metadata
+pagina: 66
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P66_I1.png
+contexto: 
+```
+
+![Imagen página 66 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P66_I1.png)
+
+# Página 67
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-4
+
+2. Loose and unscrew the five M3×8 Philips screws. Remove the paddle tray.
+
+```metadata
+pagina: 67
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P67_I0.png
+contexto: 
+```
+
+![Imagen página 67 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P67_I0.png)
+
+3. Unscrew the two PT3×8 Philips tapping screws and two M3×6 Philips combined screws. Disconnect
+
+and remove the test load cable.
+
+`
+
+```metadata
+pagina: 67
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P67_I1.png
+contexto: 
+```
+
+![Imagen página 67 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P67_I1.png)
+
+Paddle tray
+
+assembly
+
+# Página 68
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-5
+
+7.3.3 Separating the Housing
+
+1. Lay the equipment on a padded work surface with the display facing down and the bottom of the
+
+equipment nearest to you. Be careful not to damage the LCD and controls. Loose and remove the
+
+seven M3×10 Philips screws.
+
+```metadata
+pagina: 68
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P68_I0.png
+contexto: 
+```
+
+![Imagen página 68 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P68_I0.png)
+
+```metadata
+pagina: 68
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P68_I1.png
+contexto: 
+```
+
+![Imagen página 68 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P68_I1.png)
+
+2. Stand the equipment on the work surface. Carefully separate the front housing assembly and the rear
+
+housing assembly. Remove the rocket latch , and then disconnect the cable between the main board
+
+and keypad board to remove the front housing.
+
+```metadata
+pagina: 68
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P68_I2.png
+contexto: 
+```
+
+![Imagen página 68 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P68_I2.png)
+
+NOTE
+
+ When reassemble the equipment, be sure to check if front housing water proof strip is correctly
+
+placed.
+
+Socket latch
+
+# Página 69
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-6
+
+7.3.4 Discharging the Capacitor
+
+1. Use the high-voltage discharge fixture (0651-TF11) to discharge the capacitor by hooking the
+
+high-voltage ground end (TP1) with the black probe of the fixture, and hooking the high-voltage
+
+socket (TP3) with the fixture’s red probe. Wait till all the indicating lamps on the fixture turns off. The
+
+capacitor is not completely discharged if the indicator remains on.
+
+2. Set the multimeter to DC 1000V. Measure the discharge resistance and check if the reading of the
+
+multimeter is lower than 30V. If yes, you can safely disassemble the equipment now.
+
+```metadata
+pagina: 69
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P69_I0.png
+contexto: 
+```
+
+![Imagen página 69 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P69_I0.png)
+
+7.3.5 Disassembling the MPM Module Assembly
+
+1. Lay down the equipment flat, remove the latch of the parameter connector panel upwards, and then
+
+remove the MPM module laterally.
+
+```metadata
+pagina: 69
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P69_I1.png
+contexto: 
+```
+
+![Imagen página 69 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P69_I1.png)
+
+```metadata
+pagina: 69
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P69_I2.png
+contexto: 
+```
+
+![Imagen página 69 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P69_I2.png)
+
+2. Remove the recorder wire connected between the MPM module and CPU and power board and the
+
+wire between the MPM module and the main control board from the main control board.
+
+Use the black
+
+probe to hook
+
+the cooling fin
+
+Use the red
+
+probe to touch
+
+the copper pillar
+
+Latch of the
+
+parameter
+
+panel
+
+# Página 70
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-7
+
+7.3.6 Removing the Parameter Panel Assembly
+
+1. Remove the two M3×8 cross recessed pan head screws with washers from the parameter panel to
+
+separate the MPM module from the parameter panel.
+
+```metadata
+pagina: 70
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P70_I0.png
+contexto: 
+```
+
+![Imagen página 70 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P70_I0.png)
+
+7.3.7 Removing the Therapy Module
+
+WARNING
+
+ Before removing the therapy board, you should discharge the capacitor first, refer to  7.3.4
+
+Discharging the Capacitor  for the instructions.
+
+1. Remove the six M4×12 cross recessed combination screws from the therapy module, and then pull
+
+out the therapy module upwards.
+
+```metadata
+pagina: 70
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P70_I1.png
+contexto: 
+```
+
+![Imagen página 70 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P70_I1.png)
+
+# Página 71
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-8
+
+2. Remove the in-position detection switch cable and two defibrillation port cables from the therapy
+
+module.
+
+```metadata
+pagina: 71
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P71_I0.png
+contexto: 
+```
+
+![Imagen página 71 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P71_I0.png)
+
+7.3.8 Disassembling the Power Base Assembly
+
+1. Lay the equipment on a padded work surface with the display side facing down and the bottom of
+
+the equipment nearest to you. Loose and remove the three M3×8 Philips screws and pull out the
+
+power base assembly.
+
+```metadata
+pagina: 71
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P71_I1.png
+contexto: 
+```
+
+![Imagen página 71 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P71_I1.png)
+
+```metadata
+pagina: 71
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P71_I2.png
+contexto: 
+```
+
+![Imagen página 71 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P71_I2.png)
+
+# Página 72
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-9
+
+3. Disconnect the cable between the power management board and AC/DC power supply module.
+
+Remove the power base assembly.
+
+```metadata
+pagina: 72
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P72_I0.png
+contexto: 
+```
+
+![Imagen página 72 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P72_I0.png)
+
+7.3.9 Disassembling the AC/DC Power Supply Board
+
+1. Use the screwdriver to loosen and remove the three M3×8 cross recessed pan head screws with
+
+washers and one M4×8 cross recessed pan head combination screws, remove the AC socket cable,
+
+and remove the defibrillation AC switching power board and shielding cover.
+
+```metadata
+pagina: 72
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P72_I1.png
+contexto: 
+```
+
+![Imagen página 72 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P72_I1.png)
+
+```metadata
+pagina: 72
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P72_I2.png
+contexto: 
+```
+
+![Imagen página 72 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P72_I2.png)
+
+Cable between the
+
+power management
+
+board and the AC/DC
+
+power board
+
+M4×8 cross recessed pan
+
+head combination screw
+
+AC socket cable
+
+# Página 73
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-10
+
+2. Use the screwdriver to loosen and remove the four M3×8 cross recessed pan head screws with
+
+washers, and separate and take out the power board from the shielding metal sheet.
+
+```metadata
+pagina: 73
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P73_I0.png
+contexto: 
+```
+
+![Imagen página 73 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P73_I0.png)
+
+7.3.10 Disconnecting the Therapy Port Cable
+
+1. Remove the magnetic ring on the therapy port cable.
+
+```metadata
+pagina: 73
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P73_I1.png
+contexto: 
+```
+
+![Imagen página 73 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P73_I1.png)
+
+2. Pull the therapy port latch upward, and then disconnect the therapy port cable.
+
+```metadata
+pagina: 73
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P73_I2.png
+contexto: 
+```
+
+![Imagen página 73 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P73_I2.png)
+
+Therapy port latch
+
+Magnetic ring on
+
+therapy port cable
+
+# Página 74
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-11
+
+7.3.11 Removing the Main Board Assembly
+
+1. Remove the socket latch, and then remove the data cable between the main control board and the
+
+keypad board from the power management board.
+
+```metadata
+pagina: 74
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I0.png
+contexto: 
+```
+
+![Imagen página 74 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I0.png)
+
+```metadata
+pagina: 74
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I1.png
+contexto: 
+```
+
+![Imagen página 74 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I1.png)
+
+```metadata
+pagina: 74
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I2.png
+contexto: 
+```
+
+![Imagen página 74 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I2.png)
+
+2. Use the screwdriver to remove the six M3×8 cross recessed pan head screws with washers and use
+
+the 7# socket wrench to remove the two M4×20 stud screws.
+
+```metadata
+pagina: 74
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I3.png
+contexto: 
+```
+
+![Imagen página 74 - 3](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P74_I3.png)
+
+Socket latch
+
+Data cable between the
+
+main control board and
+
+keypad board
+
+M4×20 stud screw
+
+# Página 75
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-12
+
+3. Pull the cable between the power management board and the AC/DC power board out of the rear
+
+housing gap and take out the main control board assembly.
+
+```metadata
+pagina: 75
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P75_I0.png
+contexto: 
+```
+
+![Imagen página 75 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P75_I0.png)
+
+7.3.12 Checking Waterproof Strips before Reassembling
+
+Before reassembling the equipment, make sure that the waterproof material on the rear housing assembly
+
+and power base assembly is stuck to the proper places.
+
+1. Check that the waterproof strip is properly stuck on battery socket.
+
+```metadata
+pagina: 75
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P75_I1.png
+contexto: 
+```
+
+![Imagen página 75 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P75_I1.png)
+
+Waterproof strip for
+
+battery socket
+
+Cable between the power
+
+management board and
+
+the AC/DC power board
+
+# Página 76
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-13
+
+2. Check that the white waterproof strip is adhered to the proper place.
+
+```metadata
+pagina: 76
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P76_I0.png
+contexto: 
+```
+
+![Imagen página 76 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P76_I0.png)
+
+3. Check that the waterproof strip on the power base is adhered to the proper place.
+
+```metadata
+pagina: 76
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P76_I1.png
+contexto: 
+```
+
+![Imagen página 76 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P76_I1.png)
+
+The joint of the waterproof
+
+strip should be located at the
+
+bottom and the gap should be
+
+Waterproof strip
+
+# Página 77
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-14
+
+7.4 Disassembling the Front Housing Assembly
+
+NOTE
+
+ To disassemble the equipment, place the equipment on a work surface free from foreign
+
+material, avoiding damaging the antiglare screen, LCD and the knobs.
+
+ Make sure the speaker is not damaged after repairing any other front housing assembly. Verify
+
+that the speaker works properly by powering on the equipment and testing the speaker.
+
+ Clear the LCD before reassembling it.
+
+7.4.1 Removing the Keypad Board
+
+1. Disconnect all the cables from the mode select knob cable, encoder cable, speaker cable, LCD cable,
+
+assistant keypad board cable and the alarm lamp cable.
+
+```metadata
+pagina: 77
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P77_I0.png
+contexto: 
+```
+
+![Imagen página 77 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P77_I0.png)
+
+Mode select
+
+knob cable
+
+Encoder cable
+
+Speaker cable
+
+Alarm lamp cable
+
+Assistant
+
+keypad cable LCD cable
+
+# Página 78
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-15
+
+2. Remove the two M3×8 Philips screws securing the grounding plate, and the six M3×8 Philips screws
+
+from the keypad board. Take out the kayped board.
+
+```metadata
+pagina: 78
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P78_I0.png
+contexto: 
+```
+
+![Imagen página 78 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P78_I0.png)
+
+7.4.2 Removing Display Assembly
+
+1. Remove the four M3×8 Philips screws securing the keypad board. If the grounding plate is not
+
+removed, you need to unscrew the two M3×8 Philips screws securing the grounding plate. Remove
+
+the LCD bracket before removing the display assembly.
+
+```metadata
+pagina: 78
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P78_I1.png
+contexto: 
+```
+
+![Imagen página 78 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P78_I1.png)
+
+# Página 79
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-16
+
+2. Remove the hot-melt adhesive applied on the LCD cable, and then disconnect the LCD cable. Take out
+
+the LCD from the silicone jacket.
+
+```metadata
+pagina: 79
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P79_I0.png
+contexto: 
+```
+
+![Imagen página 79 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P79_I0.png)
+
+```metadata
+pagina: 79
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P79_I1.png
+contexto: 
+```
+
+![Imagen página 79 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P79_I1.png)
+
+7.4.3 Removing the Alarm Lamp Board and Assistant Keypad Board
+
+To remove the alarm lamp board and assistant keypad board, remove the LCD bracket first, see  7.4.2
+
+Removing Display Assembly .
+
+1. Disconnect the alarm lamp cable.
+
+2. Remove the two M3×8 Philips screws, and then take out the alarm lamp board and assitant keypad
+
+board.
+
+```metadata
+pagina: 79
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P79_I2.png
+contexto: 
+```
+
+![Imagen página 79 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P79_I2.png)
+
+Remove the hot-melt adhesive
+
+applied on the LCD cable
+
+# Página 80
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-17
+
+7.4.4 Removing the Speaker
+
+1. Remove the two M3×8 Philips screws. Take off the speaker bracket, and then remove the speaker.
+
+```metadata
+pagina: 80
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I0.png
+contexto: 
+```
+
+![Imagen página 80 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I0.png)
+
+After repairing any part of the front housing assembly, verify that the speaker is not damaged by powering
+
+on the equipment and testing the speaker.
+
+7.4.5 Removing the Mode Select Knob
+
+Pull the switch off its shaft. Loosen and remove the nut and washer using a socket wrench or sharp nose
+
+pliers. Disconnect the cable from the knob.
+
+```metadata
+pagina: 80
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I1.png
+contexto: 
+```
+
+![Imagen página 80 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I1.png)
+
+```metadata
+pagina: 80
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I2.png
+contexto: 
+```
+
+![Imagen página 80 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I2.png)
+
+```metadata
+pagina: 80
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I3.png
+contexto: 
+```
+
+![Imagen página 80 - 3](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P80_I3.png)
+
+When assemble the Mode Select knob, check that it is aligned with the labelling. Adjust the knob using
+
+sharp nose pliers if necessary.
+
+Mode select
+
+knob cable
+
+Washer and nut
+
+with the knob
+
+Mode select
+
+knob
+
+Speaker bracket
+
+# Página 81
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-18
+
+7.4.6 Removing the Encoder
+
+1. Remove the navigation knob.
+
+2. Disconnect the encoder cable.
+
+3. Pull the encoder off its shaft. Loosen and remove the nut and washer using a socket wrench.
+
+Disconnect the encoder cable.
+
+```metadata
+pagina: 81
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P81_I0.png
+contexto: 
+```
+
+![Imagen página 81 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P81_I0.png)
+
+```metadata
+pagina: 81
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P81_I1.png
+contexto: 
+```
+
+![Imagen página 81 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P81_I1.png)
+
+7.4.7 Checking Waterproof Material on the Front Housing
+
+Before reassembling the equipment, make sure that the waterproof material on the front housing are
+
+placed to the proper places.
+
+Check that the white waterproof strip is properly adhered to the slot around the edge of the front housing.
+
+```metadata
+pagina: 81
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P81_I2.png
+contexto: 
+```
+
+![Imagen página 81 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P81_I2.png)
+
+navigation knob
+
+The joint of the waterproof
+
+strip located at the bottom,
+
+the gap less then 1mm
+
+# Página 82
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-19
+
+7.5 Removing the Recorder
+
+1. Remove the two M3×6 Philips screws. Pull the recorder out of the recorder well.
+
+2. Disconnect the cable from the recorder, and then remove the recorder.
+
+```metadata
+pagina: 82
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P82_I0.png
+contexto: 
+```
+
+![Imagen página 82 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P82_I0.png)
+
+```metadata
+pagina: 82
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P82_I1.png
+contexto: 
+```
+
+![Imagen página 82 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P82_I1.png)
+
+7.6 Disassembling the Recorder
+
+1. Loosen the two snaps and remove the recorder drive board.
+
+```metadata
+pagina: 82
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P82_I2.png
+contexto: 
+```
+
+![Imagen página 82 - 2](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P82_I2.png)
+
+Recorder drive
+
+board
+
+Snaps Cut this cable if it is there
+
+# Página 83
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+7-20
+
+2. Loosen and remove the two PT2×6 crosshead tapping screws. Disconnect the flexible cable and the
+
+connection cable between the recorder drive board and recorder keypad board. Remove the thermal
+
+print head and recorder drive board.
+
+```metadata
+pagina: 83
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P83_I0.png
+contexto: 
+```
+
+![Imagen página 83 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P83_I0.png)
+
+3. Remove the two PT2×6 crosshead tapping screws, and then remove the keypad board.
+
+```metadata
+pagina: 83
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P83_I1.png
+contexto: 
+```
+
+![Imagen página 83 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P83_I1.png)
+
+PT2×6 crosshead
+
+tapping screw
+
+Thermal
+
+print head
+
+Flexible cable
+
+Cable between the
+
+recorder drive
+
+board and recorder
+
+keypad board
+
+PT2×6 crosshead
+
+tapping screw
+
+Keypad board
+
+# Página 84
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-1
+
+8 Parts
+
+8.1 Introduction
+
+This chapter contains the equipment’s exploded views and parts lists. It helps the engineer to identify the
+
+parts during disassembling the equipment and replacing the parts. This manual is based on the maximum
+
+configuration. Your equipment may not have some parts and the quantity of the screws, stacking sleeves,
+
+and etc may be different with those included in the parts lists.
+
+The figure below shows the hardware architecture of the equipment’s main unit.
+
+Main Unit
+
+Front housing assembly Rear housing assembly Paddle tray assembly Other assemblies
+
+Front housing Rear housing Paddle tray External paddle set
+
+Anti-glare screen
+
+CPU and power
+
+management board
+
+Handle kit Lithium battery
+
+LCD Therapy module Paddle sheet metal Hook mount
+
+Therapy mode select knob Defibrillator capacitor Paddle holding reed
+
+Conductive gel
+
+container
+
+Silicone therapy buttons MPM module Self test resistance
+
+Monitor mode select knob Parameter panel assembly Silicon pad
+
+Silicone monitor buttons Parameter interface FPC
+
+Keyboard Recorder
+
+Alarm lamp board Therapy port assembly
+
+Waveform keyboard Capacitor fixing sheet
+
+Status indicator shade
+
+On-position detection
+
+switch kit
+
+Alarm lamp shade Power base assembly
+
+Speaker Hook hole cover
+
+Microphone Discharge board spring
+
+# Página 85
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-2
+
+8.2 Main Unit
+
+8.2.1 Exploded View
+
+```metadata
+pagina: 85
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P85_I0.png
+contexto: 
+```
+
+![Imagen página 85 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P85_I0.png)
+
+8.2.2 Parts List
+
+No. Order Number Part Description Qty Remark
+
+1 / Front Housing Assembly 1 /
+
+2 / Rear Housing Assembly 1 /
+
+3 / Paddle Tray Assembly 1 /
+
+4 115-007858-00 Li-ion Bat Pack (14.8V3000mAh LI24I001A) 1 SN: EL-/ET-
+
+115-062369-00 Li-ion Battery (5600mAh LI24I005A) SN: EZ-/EI-
+
+5 115-007587-00 Pothook  kit 1 /
+
+# Página 86
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-3
+
+8.3 Front Housing Assembly
+
+8.3.1 Exploded View
+
+```metadata
+pagina: 86
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P86_I0.png
+contexto: 
+```
+
+![Imagen página 86 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P86_I0.png)
+
+8.3.2 Parts List
+
+No. Order Number Part Description Qty Remark
+
+1 043-001114-00 knob-monitor 1 /
+
+2 049-000216-00 Monitor Key(D3) 1 Without NIBP
+
+047-011909-00 silica gel key (D3/NIBP/silk screen) With NIBP
+
+3 047-003791-00 monitor key overlay(D3/English) 1 Without NIBP
+
+047-011897-00 key label(D3/NIBP/english/silk screen) With NIBP
+
+4 049-000217-00 Screen Key 1(D3) 1 /
+
+5 049-000218-00 Screen Key 2(D3) 1 /
+
+6 115-049435-00 Encoder assembly 1 Include 1,7
+
+7 051-002778-00 Defibrillation Coder Board PCBA 1 /
+
+8 0651-20-76734-51 mode knob 1 /
+
+9 049-000215-00 Defib. Key(D3) 1 /
+
+10 051-002638-00 0652 Front Keyboard PCBA 1 /
+
+11 051-002851-00 0652 auxiliary keyboard PCBA 1 /
+
+12 009-001102-00 assistant keyboard connecting line 1 /
+
+13 115-049468-00 Truly Screen assembly 1 Include LCD & Cable
+
+115-049469-00 Tianma Screen assembly Include LCD & Cable
+
+14 115-049465-00 D3 front cover assembly 1 Include 20
+
+115-049466-00 D2 front cover assembly Include 20
+
+15 049-000170-00 lens-status 1 /
+
+# Página 87
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-4
+
+No. Order Number Part Description Qty Remark
+
+16 043-000986-00 lens-alarm 1 /
+
+051-000491-00 0652 alarm light PCBA 1 /
+
+17 801-0651-00126-00 encoder assembly 1 Include 8 ， 18
+
+801-0651-00043-00 encoder assembly Include 8 ， 18
+
+18 0651-21-76884 mode switch cable 1 /
+
+19 047-003789-00 mode overlay(D3/English) 1 /
+
+047-005443-00 Mode label (D3/No pacer/English) /
+
+20 047-003792-00 overlay of product maintenance led 1 /
+
+21 115-041367-00 Speaker FRU(D3/D6) 1 /
+
+8.4 Rear Housing Assembly
+
+8.4.1 Exploded View
+
+```metadata
+pagina: 87
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P87_I0.png
+contexto: 
+```
+
+![Imagen página 87 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P87_I0.png)
+
+# Página 88
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-5
+
+8.4.2 Parts List
+
+No. Order Number Part Description Qty Remark
+
+Rear Housing Part
+
+1 115-049467-00 D3 rear cover assembly 1 /
+
+2 115-049429-00 Examine the switch assembly 1 /
+
+3 043-001116-00 blot-defibrillation 1 /
+
+Main Control Part
+
+4 115-056282-00 0652 Main Control and Power Manage Board
+
+FRU
+
+1 /
+
+5 115-050525-00 Wifi upgrade kit(5G/ NO Mainboard) 1 /
+
+Therapy Module Part
+
+6 047-018369-00 therapy module insulating trip 1 /
+
+7 051-002615-00-00 Therapy Board FRU(with SW) 1 /
+
+8 009-008106-00 Dry type Cable to treatment module 1 /
+
+9 051-002616-00 Pace Board 1 /
+
+10 006-000239-00 IND 1.5mH 5.6 Ω 1 /
+
+11 009-007382-00 Treatment of Plate load test cable (HVR) 1 /
+
+MPM Assembly Part
+
+12 043-007617-00 lock-recorder-D3 1 /
+
+13 115-027548-00 AION Rhodium CO2 Analyzer 1 /
+
+14 082-000862-00 pump. 12VDC with 120 wire and connector 1 /
+
+21 082-000864-00 valve.CJV13-A12B2 1 /
+
+15 051-002353-00 M51C-9008V3.0 SPO2 PCBA 1 /
+
+100-000340-00 MSX2040 masimo SPO2 board
+
+（ forNon-Mahwah ）
+
+/
+
+101-000469-00 Nellcor SPO2 PCBA /
+
+16 051-002766-00 M51C 5L,MR/NC-SPO2,AO(D3) 1 /
+
+051-002767-00 M51C 5L,3-SPO2,NIBP,AO(D3) /
+
+17 115-036134-00 DRYLINE PRIME Receptacle with no panel 1 /
+
+22 082-000098-00 630F Reducer 1 /
+
+18 047-019272-00 Parameter label  of 0652 ( ECG+SPO2 ) 1 /
+
+047-019273-00 parameter label of 0652 ( ECG+SPO2+CO2 ) /
+
+047-019274-00 parameter label of 0652 ( ECG+NIBP ) /
+
+047-019275-00 parameter label of 0652 (ECG+SPO2+NIBP) /
+
+047-018634-00 0652 Parameter Label(ECG+SPO2+NIBP+CO2) /
+
+20 115-012155-00 Parameter Panel assembly 1 ECG
+
+115-012152-00 Parameter Panel assembly ECG+Mindray
+
+115-012153-00 Parameter Panel assembly ECG+Nellcor
+
+115-012154-00 Parameter Panel assembly ECG+Masimo
+
+115-021528-00 Parameter Panel assembly ECG+NIBP
+
+115-021529-00 Parameter Panel assembly ECG+Mindray+NIBP
+
+# Página 89
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-6
+
+No. Order Number Part Description Qty Remark
+
+115-021530-00 Parameter Panel assembly ECG+Masimo+NIBP
+
+115-021531-00 Parameter Panel assembly ECG+Nellcor+NIBP
+
+19 801-6800-00080-00 TR6F Recorder 1 /
+
+0000-10-11079 thermal printer head 50mm
+
+Power Base Assembly Part
+
+23 115-065041-00 DELTA Power Supply Board(18V 100W) FRU 1 /
+
+24 115-049470-00 D3 Power base assembly 1 /
+
+25 0651-20-76990 AC plug locked hook 1 /
+
+8.5 Paddle Tray Assembly
+
+8.5.1 Exploded View
+
+```metadata
+pagina: 89
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P89_I0.png
+contexto: 
+```
+
+![Imagen página 89 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P89_I0.png)
+
+8.5.2 Parts List
+
+No. Order Number Part Description Qty Remark
+
+1 801-0652-00014-00 Electrode base assembly 1 /
+
+2 115-067390-00 bracket-electrode FRU 1 Include 2 pcs
+
+3 801-0651-00124-00 test load cable 1 /
+
+# Página 90
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-7
+
+8.6 External Paddles Assembly
+
+8.6.1 Exploded View
+
+```metadata
+pagina: 90
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P90_I0.png
+contexto: 
+```
+
+![Imagen página 90 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P90_I0.png)
+
+8.6.2 Parts List
+
+No. Order Number Part Description Qty Remark
+
+1 115-032394-00 Adult sternum paddle kit 1 /
+
+2 115-032395-00 Adult apex paddle kit 1 /
+
+/ 0651-30-77114 External Paddles 1 Include 1,2
+
+# Página 91
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+8-8
+
+8.7 Others
+
+No. Order Number Part Description Qty Remark
+
+1 009-008397-00 New Defi Docking cable 1 /
+
+2 009-006848-00 Defi AC-DC to main control Power cable 1 /
+
+3 115-067299-00      Internal Wire to Defibrillator Socket 1 /
+
+4 009-006840-00 Defi multi_para to main control cable 1 /
+
+5 009-007343-00 Defibrillation Coder Cable 1 /
+
+6 009-006838-00 New Defibrillation LCD cable  tianma D3 1 /
+
+7 009-007721-00 Defibrillation LCD cable Truly (D3) 1 /
+
+8 009-006837-00 Defi before and after the shell cable 1 /
+
+9 1000-21-00122 CABLE GROUND, EQUIPOTENT,T5/T8 1 /
+
+10 M07-00131F--- FUSE Time-lag 250V 3.15AD5X20 1 /
+
+11 115-049460-00 Pace upgrade package 1 /
+
+12 115-049471-00 ECG/Mindray upgrade package 1 /
+
+13 115-049472-00 ECG/Nellcor upgrade package 1 /
+
+14 115-049474-00 ECG/NIBP upgrade package 1 /
+
+15 115-049475-00 ECG/Mindray/NIBP upgrade package 1 /
+
+16 115-049476-00 ECG/Masimo/NIBP upgrade package 1 /
+
+17 115-049477-00 ECG/Nellcor/NIBP upgrade package 1 /
+
+18 115-050533-00 M02D CO2 module upgrade package 1 /
+
+19 115-050532-00 M02D CO2 module upgrade package 1 /
+
+20 115-050531-00 M02D CO2 module upgrade package 1 /
+
+21 115-056520-00 WIFI to 3G Module Package FRU 1 /
+
+22 TR6F-20-67301 Recorder gate (mold MR67301) 1 /
+
+23 A30-000001--- PAPER,THERMAL(50MM X 20M/ROLL) 1 /
+
+# Página 92
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-1
+
+A Electrical Safety Inspection
+
+The following electrical safety tests are recommended as part of a comprehensive preventive maintenance
+
+program. They are a proven means of detecting abnormalities that, if undetected, could prove dangerous
+
+to either the patient or the operator. Additional tests may be required according to local regulations.
+
+All tests can be performed using commercially available safety analyzer test equipment. These procedures
+
+assume the use of a 601PROXL International Safety Analyzer or equivalent safety analyzer. Other popular
+
+testers complying with IEC 60601-1 used in Europe such as Fluke, Metron, or Gerb may require
+
+modifications to the procedure. Follow the instructions of the analyzer manufacturer.
+
+The consistent use of a safety analyzer as a routine step in closing a repair or upgrade is emphasized as a
+
+mandatory step if an approved agency status is to be maintained. The safety analyzer also proves to be an
+
+excellent troubleshooting tool to detect abnormalities of line voltage and grounding, as well as total
+
+current loads.
+
+A.1 Power Cord Plug
+
+A.1.1 The Power Plug
+
+Test Item Acceptance Criteria
+
+The power plug The power plug pins No broken or bent pin. No discolored pins.
+
+The plug body No physical damage to the plug body.
+
+The strain relief No physical damage to the strain relief. No plug
+
+warmth for device in use.
+
+The power plug No loose connections.
+
+The power cord No physical damage to the cord.  No deterioration to
+
+the cord.
+
+For devices with detachable power cords, inspect the
+
+connection at the device.
+
+For devices with non-detachable power cords, inspect
+
+the strain relief at the device.
+
+# Página 93
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-2
+
+A.2 Device Enclosure and Accessories
+
+A.2.1 Visual Inspection
+
+Test Item Acceptance Criteria
+
+The enclosure and accessories No physical damage to the enclosure and accessories.
+
+No physical damage to meters, switches, connectors,
+
+etc.
+
+No residue of fluid spillage (e.g., water, coffee,
+
+chemicals, etc.).
+
+No loose or missing parts (e.g., knobs, dials, terminals,
+
+etc.).
+
+A.2.2 Contextual Inspection
+
+Test Item Acceptance Criteria
+
+The enclosure and accessories
+
+No unusual noises (e.g., a rattle inside the case).
+
+No unusual smells (e.g., burning or smoky smells,
+
+particularly from ventilation holes).
+
+No taped notes that may suggest device deficiencies
+
+or operator concerns.
+
+A.3 Device Labeling
+
+Check the labels provided by the manufacturer or the healthcare facility are present and legible.
+
+ Main unit label
+
+ Integrated warning labels
+
+# Página 94
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-3
+
+A.4 Protective Earth Resistance
+
+Protective Earth Resistance is measured using the RED test lead attached to the DUT Protective Earth
+
+terminal or enclosure. Select the test current by pressing SOFT KEY 3 to toggle between 1AMP, 10AMP, and
+
+25AMP. The front panel outlet power is turned off for this test.
+
+The following conditions apply: L1 and L2 Open.
+
+Preparation
+
+1. First select the test current that will be used for performing the Protective Earth Resistance test by
+
+pressing AMPERES (SOFT KEY 3).
+
+2. Connect the test lead(s) between the RED input jack and the GREEN input jack.
+
+3. Press CAL LEADS. The 601PRO will measure the lead resistance, and if less than 0.150 Ohms, it will
+
+store the reading and subtract it from all earth resistance readings taken at the calibrated current.
+
+```metadata
+pagina: 94
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P94_I0.png
+contexto: 
+```
+
+![Imagen página 94 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P94_I0.png)
+
+If the calibration fails, the previously stored readings will be used until a passing calibration has occurred.:
+
+```metadata
+pagina: 94
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P94_I1.png
+contexto: 
+```
+
+![Imagen página 94 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P94_I1.png)
+
+WARNING
+
+ During Earth Resistance testing, the DUT must be plugged into the 601PRO front outlet. If
+
+the DUT fails Earth Resistance, discontinue tests and label the device defective.
+
+To Perform the Test
+
+1. From the MAIN MENU, or with the outlet unpowered, plug the DUT into the 601PRO front panel
+
+outlet.
+
+2. Attach the 601PRO RED input lead to the device’s Protective Earth terminal or an exposed metal area.
+
+3. Press shortcut key 3. The Protective Earth Resistance test is displayed.
+
+4. Press SOFT KEY 3 to select a test current (1AMP, 10AMP, or 25AMP). The selected test current is
+
+displayed in the upper right corner of the display.
+
+# Página 95
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-4
+
+```metadata
+pagina: 95
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P95_I0.png
+contexto: 
+```
+
+![Imagen página 95 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P95_I0.png)
+
+5. Press START TEST to start the test. The test current is applied while resistance and current readings are
+
+taken. This takes approximately 5 seconds.
+
+6. Press the print data key at any time to generate a printout of the latest measurement(s).
+
+NOTE
+
+ When "Over" is displayed for Ohms, this signifies that a valid measurement was not
+
+obtained because either an open connection was detected or that the measurement was not
+
+within range. Readings greater than 9.999 Ohms will be displayed as Over.
+
+In Case of Failure
+
+Once it reaches the limitation, stop using and inform the Customer Service Engineer for analysis and
+
+disposal.
+
+Limits
+
+ R = 0.1Ω Maximum
+
+A.5 Earth Leakage Test
+
+Run an Earth Leakage test on the device being tested before performing any other leakage tests.
+
+Leakage current is measured the following ways:
+
+ Earth Leakage Current, leakage current measured through DUT outlet Earth
+
+ Earth Leakage Current AP-EARTH (ALL Applied Parts connected to Earth), leakage current measured
+
+through DUT outlet Earth
+
+There is no need to attach a test lead; the 601PRO automatically connects the measuring device internally.
+
+# Página 96
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-5
+
+To Perform the Test
+
+1. From the MAIN MENU, or with the outlet unpowered, plug the DUT into the 601PRO front panel
+
+outlet, and turn on the device.
+
+2. Attach the device's applied parts to the 601PRO applied part terminals if applicable.
+
+3. Press shortcut key 4.The Earth Leakage test appears on the display, and the test begins immediately:
+
+```metadata
+pagina: 96
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P96_I0.png
+contexto: 
+```
+
+![Imagen página 96 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P96_I0.png)
+
+ SOFT KEY 1 toggles the DUT outlet Polarity from Normal to Off to Reverse.
+
+ SOFT KEY 2 toggles the DUT outlet from Earth to No Earth.
+
+ SOFT KEY 3 toggles the DUT outlet from L2 to No L2.
+
+ SOFT KEY 4 toggles the AP to Earth to No AP to Earth.
+
+4. Press the print data key at any time to generate a printout of the latest measurement.
+
+In Case of Failure
+
+ Check any broken of the enclosure. Replace any defective part.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ Test the wall outlet; verify it is grounded and is free of other wiring abnormalities. Notify the user or
+
+owner to correct any deviations. As a work around, check the other outlets to see if they could be
+
+used instead.
+
+ Change another probe to confirm if the fail is caused by console.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ If the leakage current measurement tests fail on a new unit and if situation can not be corrected,
+
+submit a Safety Failure Report to document the system problem. Remove unit from operation.
+
+ If all else fails, stop using and inform the Customer Service Engineer for analysis and disposal.
+
+Limits
+
+ 300 μA in Normal Condition
+
+ 1000 μA in Single Fault Condition
+
+# Página 97
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-6
+
+A.6 Patient Leakage Current
+
+Patient leakage currents are measured between a selected applied part and mains earth. All
+
+measurements may have either a true RMS or a DC-only response.
+
+Preparation
+
+Perform a calibration from the Mains on Applied Part menu.
+
+The following outlet conditions apply when performing this test:
+
+ Normal Polarity, Earth Open, Outlet ON     Normal Polarity, Outlet ON
+
+ Normal Polarity, L2 Open, Outlet ON       Reversed Polarity, Outlet ON
+
+ Reversed Polarity, Earth Open, Outlet ON    Reversed Polarity, L2 Open, Outlet ON
+
+```metadata
+pagina: 97
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P97_I0.png
+contexto: 
+```
+
+![Imagen página 97 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P97_I0.png)
+
+WARNING
+
+ If all of the applied parts correspond to the instrument type, the applied parts will be tied
+
+together and one reading will be taken. If any of the applied parts differ from the
+
+instrument type, all applied parts will be tested individually, based on the type of applied
+
+part. This applies to Auto and Step modes only.
+
+To Perform the Test
+
+1. From the MAIN MENU, or with the outlet unpowered, plug the DUT into the 601PRO front panel
+
+outlet, and turn on the device.
+
+2. Attach the applied parts to the 601PRO's applied part terminals.
+
+3. Press shortcut key 6. The Patient Leakage test is displayed, and the test begins immediately.
+
+```metadata
+pagina: 97
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P97_I1.png
+contexto: 
+```
+
+![Imagen página 97 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P97_I1.png)
+
+4. Press APPLIED PART (SOFT KEY 4) at any time to select the desired applied part leakage current.
+
+5. Modify the configuration of the front panel outlet by pressing the appropriate SOFT KEY on the
+
+601PRO.
+
+6. Press the print data key at any time to generate a printout of the latest measurement.
+
+# Página 98
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-7
+
+NOTE
+
+ If the current test standard being used does not include Patient Leakage DC readings, or the
+
+DC option is not enabled, then DC readings will not be available through the APPLIED PART
+
+SOFT KEY selections. Refer to Chapter 8, Standards and Principles.
+
+ For external or internal paddle, the patient leakage current test should be tested when the
+
+EUT was charging.
+
+In Case of Failure
+
+ Check any broken of the enclosure. Replace any defective part.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ Test the wall outlet; verify it is grounded and is free of other wiring abnormalities. Notify the user or
+
+owner to correct any deviations. As a work around, check the other outlets to see if they could be
+
+used instead.
+
+ Change another probe to confirm if the fail is caused by console.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ If the leakage current measurement tests fail on a new unit and if situation can not be corrected,
+
+submit a Safety Failure Report to document the system problem. Remove unit from operation.
+
+ If all else fails, stop using and inform the Customer Service Engineer for analysis and disposal.
+
+Limits
+
+ For ECG (Defibrillator proof) and other CF applied parts
+
+ 10 μA in Normal Condition
+
+ 50 μA in Single Fault Condition
+
+ For BF applied parts
+
+ 10 μA DC,100μA AC in Normal Condition
+
+ 50 μA DC,500μA AC in Single Fault Condition
+
+# Página 99
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-8
+
+A.7 Mains on Applied Part Leakage
+
+The Mains on Applied Part test applies a test voltage, which is 110% of the mains voltage, through a
+
+limiting resistance, to selected applied part terminals. Current measurements are then taken between the
+
+selected applied part and earth.  Measurements are taken with the test voltage (110% of mains) to
+
+applied parts in the normal and reverse polarity conditions as indicated on the display.
+
+The following outlet conditions apply when performing the Mains on Applied Part test.
+
+ Normal Polarity;
+
+ Reversed Polarity
+
+Preparation
+
+To perform a calibration from the Mains on Applied Part test, press CAL (SOFT KEY 2).
+
+1. Disconnect ALL patient leads, test leads, and DUT outlet connections.
+
+2. Press CAL to begin calibration, as shown:
+
+```metadata
+pagina: 99
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P99_I0.png
+contexto: 
+```
+
+![Imagen página 99 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P99_I0.png)
+
+If the calibration fails, the previously stored readings will be used until a passing calibration has
+
+occurred. Also, the esc/stop key has no effect during calibration.
+
+3. When the calibration is finished, the Mains on Applied Part test will reappear.
+
+```metadata
+pagina: 99
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P99_I1.png
+contexto: 
+```
+
+![Imagen página 99 - 1](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P99_I1.png)
+
+WARNING
+
+ A 2-beep-per-second signal indicates high voltage present at the applied part terminals
+
+while a calibration is being performed.
+
+ High voltage is present at applied part terminals while measurements are being taken.
+
+# Página 100
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-9
+
+To Perform the Test
+
+1. From the MAIN MENU, or with the outlet unpowered, plug the DUT into the 601
+
+2. Attach the applied parts to the 601PRO applied part terminals.
+
+3. Attach the red terminal lead to a conductive part on the DUT enclosure.
+
+4/ Press shortcut key 7. The Mains on Applied Part test is displayed.
+
+```metadata
+pagina: 100
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P100_I0.png
+contexto: 
+```
+
+![Imagen página 100 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P100_I0.png)
+
+5. Select the desired outlet configuration and applied part to test using the appropriate SOFT KEYS:
+
+6. Press START TEST (SOFT KEY 1) to begin the test.
+
+7. Press the print data key to generate a printout of the latest measurement.
+
+NOTE
+
+ If all of the applied parts correspond to the instrument type, the applied parts will be tied
+
+together and one reading will be taken. If any of the applied parts differ from the
+
+instrument type, all applied parts will be tested individually, based on the type of applied
+
+part. This applies to Auto and Step modes only.
+
+In Case of Failure
+
+ Check any broken of the enclosure. Replace any defective part.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ Test the wall outlet; verify it is grounded and is free of other wiring abnormalities. Notify the user or
+
+owner to correct any deviations. As a work around, check the other outlets to see if they could be
+
+used instead.
+
+ Change another probe to confirm if the fail is caused by console.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ If the leakage current measurement tests fail on a new unit and if situation can not be corrected,
+
+submit a Safety Failure Report to document the system problem. Remove unit from operation.
+
+ If all else fails, stop using and inform the Customer Service Engineer for analysis and disposal.
+
+# Página 101
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-10
+
+Limits
+
+ For ECG (Defibrillator proof) and other CF applied parts
+
+ 50 μA
+
+ For BF applied parts
+
+ 5000 μA
+
+A.8 Patient Auxiliary Current
+
+Patient Auxiliary currents are measured between any selected ECG jack and the remaining selected ECG
+
+jacks. All measurements may have either a true RMS or a DC-only response.
+
+Preparation
+
+1. From the MAIN MENU, or with the outlet unpowered, plug the DUT into the 601PRO front panel
+
+outlet, and turn on the device.
+
+2. Attach the patient leads to the 601PRO ECG jacks.
+
+3. Define the Lead Types from the View Settings Option (refer to: Lead Type Definitions in Section 5 of
+
+this chapter).
+
+4. Press shortcut key 8. The Patient Auxiliary Current test is displayed, and the test begins immediately.
+
+Display values are continuously updated until another test is selected.
+
+```metadata
+pagina: 101
+imagen: data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P101_I0.png
+contexto: 
+```
+
+![Imagen página 101 - 0](data/images/desfibrilador_mindray_beneheart_manual_de_servicio_desfibrilador_monitor_beneheart_d3_d2_ingles/P101_I0.png)
+
+5. Press SOFT KEYS 1-4 to select leakage tests
+
+6. Press APPLIED PART (SOFT KEY 4) at any time to select the desired applied part leakage current:
+
+7. Modify the configuration of the front panel outlet by pressing the appropriate SOFT KEY on the
+
+601PRO:
+
+8. Press the print data key at any time to generate a printout of the latest measurement.
+
+# Página 102
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-11
+
+NOTE
+
+ If the current test standard being used does not include Patient Auxiliary Current DC
+
+readings, or the DC option is not enabled, then DC readings will not be available through
+
+the APPLIED PART SOFT KEY selections.
+
+ For external or internal paddle, the patient auxiliary current test should be tested when the
+
+EUT was charging.
+
+In Case of Failure
+
+ Check any broken of the enclosure. Replace any defective part.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ Test the wall outlet; verify it is grounded and is free of other wiring abnormalities. Notify the user or
+
+owner to correct any deviations. As a work around, check the other outlets to see if they could be
+
+used instead.
+
+ Change another probe to confirm if the fail is caused by console.
+
+ Inspect wiring for bad crimps, poor connections, or damage.
+
+ If the leakage current measurement tests fail on a new unit and if situation can not be corrected,
+
+submit a Safety Failure Report to document the system problem. Remove unit from operation.
+
+ If all else fails, stop using and inform the Customer Service Engineer for analysis and disposal.
+
+Limits
+
+ For ECG (defibrillator proof) and other CF applied parts
+
+ 10μA in Normal Condition
+
+ 50μA in Single Fault Condition
+
+ For BF applied parts
+
+ 10μA DC,100μA AC in Normal Condition
+
+ 50μA DC,500μA AC in Single Fault Condition
+
+# Página 103
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-12
+
+A.9 Functional test
+
+For functional test items, please refer to relevant functional tests in  4 Testing and Maintenance .
+
+ELECTRICAL SAFETY INSPECTION FORM
+
+Overall assessment:
+
+ Scheduled inspection: Test item 1, 2, 3, 9
+
+ Unopened repair type: Test item 1, 2, 3, 9
+
+ Opened repair type, not modify the power board and patient circuit board: Test item 1, 2, 3, 4, 5, 9
+
+ Opened repair type, modify the power board or patient circuit board: Test item 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+# Página 104
+
+**Equipo:** Desfibrilador monitor BeneHeart D3  D2
+
+A-13
+
+Location: Technician:
+
+Equipment: Control Number:
+
+Manufacturer: Model: SN:
+
+Measurement equipment /SN Date of Calibration:
+
+INSPECTION AND TESTING Pass/Fail Comments
+
+1 Power Cord Plug
+
+2 Device Enclosure and Accessories
+
+3 Device Labelling
+
+4 Protective Earth Resistance _____Ω Max 0.1 Ω
+
+5 EARTH Leakage Normal condition(NC) ____μA Max
+
+NC:500μA, SFC:1000μA Single Fault condition(SFC) ____μA
+
+6* Patient Leakage
+
+Current
+
+Normal condition(NC) ____μA Max
+
+CF AP
+
+NC:10μA, SFC: 50μA
+
+BF AP
+
+NC:100μA, SFC: 500μA
+
+Single Fault condition(SFC) ____μA
+
+7* Mains on Applied Part Leakage Max
+
+CF AP: 50μA
+
+BF AP: 5000μA
+
+8* Patient Auxiliary
+
+Current
+
+Normal condition(NC) ____μA Max
+
+CF AP
+
+NC:10μA, SFC: 50μA
+
+BF AP
+
+NC:100μA, SFC: 500μA
+
+Single Fault condition(SFC) ____μA
+
+9 Functional test (parameters tested):
+
+Note: The test items marked “*” are required only for incoming inspections, after repairs or modifications
+
+that may affect lead leakage [NFPA 99 (2005)8.5.2.1.3].
+
+Deficiency / Note :
+
+Name: ________________________     Date/Signature___________________________
+
