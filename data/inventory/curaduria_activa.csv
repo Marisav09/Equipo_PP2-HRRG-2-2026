@@ -43,6 +43,7 @@
 54,ventilador_engstrom_manual_de_usuario_engstrom_carestation_es.md,Ventilador Engström,,manual_usuario,B,incluir,ingles,activo,Manual de usuario útil como fuente operativa complementaria.,
 55,ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol.md,Ventilador Engström,,manual_tecnico,A,incluir,ingles,validado,,
 56,ventilador_engstrom_manual_tecnico_ventilador_ge_engstrom_aleman.md,Ventilador Engström,,manual_tecnico,A,incluir,ingles,activo,"Fuente técnica o de servicio útil para mantenimiento, diagnóstico o reparación.",
+57,ventilador_engstrom_ventilacion_no_invasiva.md,Ventilador Engström,,sin_clasificar,B,incluir,ingles,activo,Documento específico de ventilación no invasiva; fuente operativa complementaria del ventilador Engström.,
 58,ventilador_leistung_luft3_5_nivel_3_terapia_fallas_frecuentes_fuga_1.md,Ventilador Leistung LUFT3,,troubleshooting,A,incluir,indeterminado,activo,"Documento de troubleshooting o fallas, útil para soporte técnico.",
 59,ventilador_leistung_luft3_6_nivel_3_terapia_fallas_frecuentes_presion_1.md,Ventilador Leistung LUFT3,,troubleshooting,A,incluir,indeterminado,activo,"Documento de troubleshooting o fallas, útil para soporte técnico.",
 60,ventilador_leistung_luft3_7_nivel_3_terapia_fallas_frecuentes_flujo_2.md,Ventilador Leistung LUFT3,,troubleshooting,A,incluir,indeterminado,activo,"Documento de troubleshooting o fallas, útil para soporte técnico.",
