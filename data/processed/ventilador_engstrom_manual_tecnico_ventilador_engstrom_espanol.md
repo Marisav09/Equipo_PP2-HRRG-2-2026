@@ -21,7 +21,7 @@ El ventilador está diseñado para ser utilizado con pacientes, desde pediátric
 ```metadata
 pagina: 2
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P2_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con pantalla y unidad principal que controla la energía eléctrica y el flujo de gas neumático
 ```
 
 ![Imagen página 2 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P2_I0.png)
@@ -47,7 +47,7 @@ Las precauciones informan sobre una situación que puede causar daños al equipo
 ```metadata
 pagina: 3
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P3_I0.png
-contexto: 
+contexto: Imagen asociada a advertencia de seguridad en equipo, con símbolos y texto en español que indican precauciones para evitar daños
 ```
 
 ![Imagen página 3 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P3_I0.png)
@@ -59,7 +59,7 @@ contexto:
 ```metadata
 pagina: 4
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P4_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con información sobre el ventilador Engström y sus características
 ```
 
 ![Imagen página 4 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P4_I0.png)
@@ -71,7 +71,7 @@ contexto:
 ```metadata
 pagina: 5
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P5_I0.png
-contexto: 
+contexto: Manual técnico de ventilador Engström con especificaciones y características técnicas para uso hospitalario"
 ```
 
 ![Imagen página 5 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P5_I0.png)
@@ -83,7 +83,7 @@ contexto:
 ```metadata
 pagina: 6
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P6_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico de ventiladores con especificaciones en español
 ```
 
 ![Imagen página 6 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P6_I0.png)
@@ -95,7 +95,7 @@ contexto:
 ```metadata
 pagina: 7
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P7_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con diagrama y texto en español, identificado como 'Ventilador Engström'
 ```
 
 ![Imagen página 7 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P7_I0.png)
@@ -403,7 +403,7 @@ Descripción general del ventilador
 ```metadata
 pagina: 14
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P14_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con componentes como pantalla, unidad principal, bloqueo y carro
 ```
 
 ![Imagen página 14 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P14_I0.png)
@@ -437,7 +437,7 @@ Elemento en imagen P14_I0.png con su descripción
 ```metadata
 pagina: 15
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I0.png
-contexto: 
+contexto: Imagen asociada a instrucciones para eliminar un bloqueo en un ventilador con una descripción detallada
 ```
 
 ![Imagen página 15 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I0.png)
@@ -447,7 +447,7 @@ contexto:
 ```metadata
 pagina: 15
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I1.png
-contexto: 
+contexto: Imagen asociada a un diagrama de rueda con mecanismo de bloqueo
 ```
 
 ![Imagen página 15 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I1.png)
@@ -457,7 +457,7 @@ contexto:
 ```metadata
 pagina: 15
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I2.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con ilustración de un ventilador con bloqueo del ventilador
 ```
 
 ![Imagen página 15 - 2](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I2.png)
@@ -467,7 +467,7 @@ Para volver a insertarla, coloque la lengüeta del bloque (1) dentro de la ranur
 ```metadata
 pagina: 15
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I3.png
-contexto: 
+contexto: Imagen asociada a mantenimiento de ventiladores
 ```
 
 ![Imagen página 15 - 3](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P15_I3.png)
@@ -483,7 +483,7 @@ Figura P16_0.png • Vista posterior
 ```metadata
 pagina: 16
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P16_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con un diagrama de un ventilador y su componente, junto con una lista de partes numeradas y sus descripciones en español
 ```
 
 ![Imagen página 16 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P16_I0.png)
@@ -543,7 +543,7 @@ Consulte  "Brazo de soporte"  en la Sección 3 para obtener información sobre e
 ```metadata
 pagina: 17
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P17_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con varios componentes y conectores, incluyendo interruptor del sistema y tornillos de palometa de montaje del compartimento para módulos
 ```
 
 ![Imagen página 17 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P17_I0.png)
@@ -553,7 +553,7 @@ contexto:
 ```metadata
 pagina: 17
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P17_I1.png
-contexto: 
+contexto: Imagen asociada a un dispositivo con varios puertos y componentes internos, incluyendo un ventilador Engström
 ```
 
 ![Imagen página 17 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P17_I1.png)
@@ -577,7 +577,7 @@ PRECAUCIÓN No aplique una fuerza excesiva sobre la pantalla táctil, ya que pod
 ```metadata
 pagina: 18
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P18_I0.png
-contexto: 
+contexto: Imagen asociada a una pantalla táctil con barra de favoritos para acceder funciones y menus del ventilador Engström
 ```
 
 ![Imagen página 18 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P18_I0.png)
@@ -603,7 +603,7 @@ Importante: El icono de bloqueo sólo se muestra cuando la pantalla táctil est�
 ```metadata
 pagina: 19
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P19_I0.png
-contexto: 
+contexto: Imagen asociada a un icono de bloqueo en una pantalla táctil, indicando bloqueado o inactividad de puntos táctiles
 ```
 
 ![Imagen página 19 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P19_I0.png)
@@ -619,7 +619,7 @@ Puntos táctiles
 ```metadata
 pagina: 20
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P20_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico de un ventilador, mostrando diagrama de control panel con áreas de puntos táctiles
 ```
 
 ![Imagen página 20 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P20_I0.png)
@@ -636,7 +636,7 @@ Figura P20_I0.png • Vista de pantalla normal/completa con áreas de puntos tá
 ```metadata
 pagina: 20
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P20_I1.png
-contexto: 
+contexto: Imagen asociada a un manual técnico que muestra una página con un diagrama de controlador de ventilador, con etiquetas y texto que describe características del dispositivo
 ```
 
 ![Imagen página 20 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P20_I1.png)
@@ -767,7 +767,7 @@ Importante Los procedimientos Resp. manual y Succión se inician inmediatamente 
 ```metadata
 pagina: 23
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P23_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de favoritos en manual de ventilador con lista de opciones relacionadas a operación y ajustes
 ```
 
 ![Imagen página 23 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P23_I0.png)
@@ -783,7 +783,7 @@ Controles e indicadores de la pantalla
 ```metadata
 pagina: 24
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P24_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una página que muestra un ventilador con su pantalla y controles, indicadores numerados y descripciones breves
 ```
 
 ![Imagen página 24 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P24_I0.png)
@@ -809,7 +809,7 @@ Teclas de menú
 ```metadata
 pagina: 25
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P25_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual de un ventilador con diagrama y lista de botones, incluyendo la función de "Conf. alarmas" para ajustar límites de alarma y volumen
 ```
 
 ![Imagen página 25 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P25_I0.png)
@@ -854,7 +854,7 @@ Para cambiar la pantalla del ventilador:
 ```metadata
 pagina: 27
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P27_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con captura de pantalla de pantalla de ventilador y lista de elementos numerados en español
 ```
 
 ![Imagen página 27 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P27_I0.png)
@@ -879,7 +879,7 @@ Figura P27_I0.png • Vista de Pantalla Completa o Normal
 ```metadata
 pagina: 28
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P28_I0.png
-contexto: 
+contexto: Imagen asociada a una pantalla de ventilador con información sobre características y funciones del dispositivo
 ```
 
 ![Imagen página 28 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P28_I0.png)
@@ -904,7 +904,7 @@ Figura P28_I0.png • Vista de Pantalla Básica
 ```metadata
 pagina: 29
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P29_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual de ventilador con gráficos de parámetros y opciones para configuración del dispositivo
 ```
 
 ![Imagen página 29 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P29_I0.png)
@@ -929,7 +929,7 @@ La funcionalidad de menús es común en toda la interfaz del ventilador. A conti
 ```metadata
 pagina: 30
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P30_I0.png
-contexto: 
+contexto: Imagen asociada a uso de menús en ventiladores Engström
 ```
 
 ![Imagen página 30 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P30_I0.png)
@@ -980,7 +980,7 @@ El peso del paciente que introduzca el usuario determinará los valores iniciale
 ```metadata
 pagina: 31
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P31_I0.png
-contexto: 
+contexto: Imagen asociada a una tabla de selección con opciones de pacientes, relacionadas con ventiladores
 ```
 
 ![Imagen página 31 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P31_I0.png)
@@ -995,7 +995,7 @@ Pulse  Config. sistema  para acceder a otros menús de configuración del sistem
 ```metadata
 pagina: 32
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P32_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con un menú de configuración del sistema en español, que incluye opciones como "Config. sistema" y "Config. paciente"
 ```
 
 ![Imagen página 32 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P32_I0.png)
@@ -1006,7 +1006,7 @@ Pulse  Config. sistema  y seleccione  Config. paciente  para acceder al menú Co
 ```metadata
 pagina: 32
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P32_I1.png
-contexto: 
+contexto: Imagen asociada a una página de configuración de paciente en un manual técnico
 ```
 
 ![Imagen página 32 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P32_I1.png)
@@ -1021,7 +1021,7 @@ Pulse  Config. sistema  -  Configuración de paciente  - Comprobación  para acc
 ```metadata
 pagina: 33
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P33_I0.png
-contexto: 
+contexto: Imagen asociada a manual de mantenimiento del ventilador Engström con opciones de comprobación y configuración
 ```
 
 ![Imagen página 33 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P33_I0.png)
@@ -1034,7 +1034,7 @@ Consulte  "Procedimientos"  en la Sección 4 para obtener más información.
 ```metadata
 pagina: 33
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P33_I1.png
-contexto: 
+contexto: Imagen asociada a un menú de configuración para un ventilador con opciones como iniciar ventilación y monitoreo
 ```
 
 ![Imagen página 33 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P33_I1.png)
@@ -1049,7 +1049,7 @@ Pulse  Config. vent.  para acceder al menú Configuración vent. Seleccione  Aju
 ```metadata
 pagina: 34
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P34_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de ventilación en un manual técnico
 ```
 
 ![Imagen página 34 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P34_I0.png)
@@ -1062,7 +1062,7 @@ Pulse  Config. sistema  -  Configuración de paciente  -  No invasivo.  Seleccio
 ```metadata
 pagina: 34
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P34_I1.png
-contexto: 
+contexto: Imagen asociada a configuración ventilatoria. Ventilador Engström: acceso a menú de configuración, ajuste de parámetros del modo de ventilación y selección de modos NIV
 ```
 
 ![Imagen página 34 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P34_I1.png)
@@ -1079,7 +1079,7 @@ Pulse  Config. sistema  y seleccione Configuración de paciente - Preferencias d
 ```metadata
 pagina: 35
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P35_I0.png
-contexto: 
+contexto: Imagen asociada a un menú de configuración de ventilación con opciones para ajustar parámetros y configurar el sistema
 ```
 
 ![Imagen página 35 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P35_I0.png)
@@ -1090,7 +1090,7 @@ Pulse  Config. sistema  y seleccione  Configuración de paciente  - Preferencias
 ```metadata
 pagina: 35
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P35_I1.png
-contexto: 
+contexto: Imagen asociada a un menú de configuración de ventilación en un dispositivo médico
 ```
 
 ![Imagen página 35 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P35_I1.png)
@@ -1107,7 +1107,7 @@ Pulse  Config. sistema  y seleccione  Configuración de paciente  - Preferencias
 ```metadata
 pagina: 36
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P36_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de ventilador con opciones de compensación de resistencias del tubo endotraqueal y diámetro
 ```
 
 ![Imagen página 36 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P36_I0.png)
@@ -1138,7 +1138,7 @@ Utilice el ComWheel para desplazarse y confirmar los valores. Seleccione  Menú 
 ```metadata
 pagina: 37
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P37_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla de contenido y opciones de menú, relacionado con la configuración de pantalla
 ```
 
 ![Imagen página 37 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P37_I0.png)
@@ -1161,7 +1161,7 @@ Seleccione  Menú anterior  o pulse  Pantalla Normal  para salir.
 ```metadata
 pagina: 38
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P38_I0.png
-contexto: 
+contexto: Imagen asociada a una tabla de configuración de favoritos con opciones y valores correspondientes, relacionada con un dispositivo médico
 ```
 
 ![Imagen página 38 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P38_I0.png)
@@ -1178,7 +1178,7 @@ Utilice el menú Selec. Presentación para seleccionar los modos de ventilación
 ```metadata
 pagina: 39
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P39_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de sistema de ventilación con opciones para seleccionar display y modos de ventilación
 ```
 
 ![Imagen página 39 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P39_I0.png)
@@ -1196,7 +1196,7 @@ Pulse  Config. sistema  y seleccione  Configuración parámetros  - Fuente de da
 ```metadata
 pagina: 40
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P40_I0.png
-contexto: 
+contexto: Imagen asociada a una pantalla de configuración de un ventilador con opciones de fuente de datos, escala y CO2
 ```
 
 ![Imagen página 40 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P40_I0.png)
@@ -1207,7 +1207,7 @@ Pulse  Config. sistema  y seleccione  Configuración parámetros  - Escala  para
 ```metadata
 pagina: 40
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P40_I1.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla y texto en español, que describe la configuración de parámetros del ventilador Engström
 ```
 
 ![Imagen página 40 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P40_I1.png)
@@ -1222,7 +1222,7 @@ Pulse  Config. sistema  y seleccione  Configuración parámetros  - Configuraci�
 ```metadata
 pagina: 41
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P41_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de niveles de CO2, con opciones para ajustar la escala y límites de alarma
 ```
 
 ![Imagen página 41 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P41_I0.png)
@@ -1233,7 +1233,7 @@ Pulse  Config. sistema  y seleccione  Configuración parámetros  - Configuraci�
 ```metadata
 pagina: 41
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P41_I1.png
-contexto: 
+contexto: Imagen asociada a configuración de CO2 en ventilador Engström con opciones de escala y alarma
 ```
 
 ![Imagen página 41 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P41_I1.png)
@@ -1252,7 +1252,7 @@ Seleccione  Alarma de Paux  para tener acceso rápido a los límites de alarma d
 ```metadata
 pagina: 42
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P42_I0.png
-contexto: 
+contexto: Imagen asociada a una página de configuración del sistema Paux con opciones para ajustar la escala de presión y configurar alarmas
 ```
 
 ![Imagen página 42 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P42_I0.png)
@@ -1277,7 +1277,7 @@ Seleccione  Alarma Pva  o  Alarma VMesp  para tener acceso rápido a los límite
 ```metadata
 pagina: 43
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P43_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de espirometría en dispositivo de medición de flujo y volumen
 ```
 
 ![Imagen página 43 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P43_I0.png)
@@ -1296,7 +1296,7 @@ Utilice el ComWheel para desplazarse y confirmar los valores. Seleccione  Menú 
 ```metadata
 pagina: 44
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P44_I0.png
-contexto: 
+contexto: Imagen asociada a configuracion de intercambio gas en ventilador Engström con opciones para ajustar altura, peso y superficie corporal
 ```
 
 ![Imagen página 44 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P44_I0.png)
@@ -1307,7 +1307,7 @@ Pulse  Config. sistema  y seleccione  Configuración parámetros  - Calibración
 ```metadata
 pagina: 44
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P44_I1.png
-contexto: 
+contexto: Imagen asociada a configuración de parámetros de intercambio gas en ventiladores
 ```
 
 ![Imagen página 44 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P44_I1.png)
@@ -1325,7 +1325,7 @@ Consulte  "EView"  en la sección 15 para obtener más información.
 ```metadata
 pagina: 45
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P45_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla y texto en español, que describe la configuración de transferencia de datos para acceder al menú de configuración
 ```
 
 ![Imagen página 45 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P45_I0.png)
@@ -1340,7 +1340,7 @@ Consulte  "Herramientas de ventilación INview"  en la Sección 12 para ver las 
 ```metadata
 pagina: 45
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P45_I1.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una tabla que muestra configuraciones de un dispositivo de espirometría
 ```
 
 ![Imagen página 45 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P45_I1.png)
@@ -1358,7 +1358,7 @@ Consulte  "Procedimientos"  en la Sección 4 para obtener más información.
 ```metadata
 pagina: 46
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P46_I0.png
-contexto: 
+contexto: Imagen asociada a procedimientos de ventilación mecánica en español
 ```
 
 ![Imagen página 46 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P46_I0.png)
@@ -1371,7 +1371,7 @@ Consulte  "Procedimientos"  en la Sección 4 para obtener más información.
 ```metadata
 pagina: 46
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P46_I1.png
-contexto: 
+contexto: Imagen asociada a procedimientos de ventilación pulmonar con opciones de aspiración, medición de PEEP y bloqueo inspiratorio y espiratorio
 ```
 
 ![Imagen página 46 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P46_I1.png)
@@ -1388,7 +1388,7 @@ Consulte  "Procedimientos"  en la Sección 4 para obtener más información.
 ```metadata
 pagina: 47
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P47_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con un menú para ajustar parámetros SBT, detener pruebas y modificar formatos de pantalla
 ```
 
 ![Imagen página 47 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P47_I0.png)
@@ -1405,7 +1405,7 @@ Utilice el ComWheel para desplazarse y confirmar los valores. Pulse Pantalla Nor
 ```metadata
 pagina: 47
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P47_I1.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una tabla que muestra parámetros de un nebulizador, con columnas etiquetadas como "Nebulizador" y "Parámetros"
 ```
 
 ![Imagen página 47 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P47_I1.png)
@@ -1420,7 +1420,7 @@ Pulse  Conf. alarmas  para acceder al menú Conf. alarmas. Utilice este menú pa
 ```metadata
 pagina: 48
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P48_I0.png
-contexto: 
+contexto: Imagen asociada a una pantalla de configuración de alarmas con opciones para ajustar límites y ver historias de alarmas en un manual técnico
 ```
 
 ![Imagen página 48 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P48_I0.png)
@@ -1435,7 +1435,7 @@ Utilice el ComWheel para desplazarse y confirmar los valores. Pulse Pantalla Nor
 ```metadata
 pagina: 48
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P48_I1.png
-contexto: 
+contexto: Imagen asociada a una pantalla de menú de un dispositivo o sistema con opciones para ajustar configuraciones y ver historias de alarmas en español
 ```
 
 ![Imagen página 48 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P48_I1.png)
@@ -1481,7 +1481,7 @@ Importante: Consulte las directrices de su hospital en lo que respecta al uso co
 ```metadata
 pagina: 50
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P50_I0.png
-contexto: 
+contexto: Imagen asociada a manual técnico para ventilador con instrucciones para conexión del circuito respiratorio y uso del dispositivo
 ```
 
 ![Imagen página 50 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P50_I0.png)
@@ -1511,7 +1511,7 @@ El cable de alimentación está conectado a la parte posterior del ventilador, c
 ```metadata
 pagina: 51
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P51_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con conexión eléctrica de baja potencia (menos de 200 W)
 ```
 
 ![Imagen página 51 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P51_I0.png)
@@ -1533,7 +1533,7 @@ El compartimento para módulos puede montarse en cualquier lado del ventilador.
 ```metadata
 pagina: 52
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P52_I0.png
-contexto: 
+contexto: Imagen asociada a instalación de ventilador Engström con compartimento para módulos
 ```
 
 ![Imagen página 52 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P52_I0.png)
@@ -1564,7 +1564,7 @@ El dispositivo Engström incluye una unidad de entrada de aire con manguera est�
 ```metadata
 pagina: 53
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P53_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de ventilador con conexiones para suministro de aire y oxígeno, indicando normas de seguridad para su uso
 ```
 
 ![Imagen página 53 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P53_I0.png)
@@ -1588,7 +1588,7 @@ El conector del puerto 4 permite la entrada/salida en serie de comandos y datos.
 ```metadata
 pagina: 54
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P54_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una descripción del conector de 15 pines y su función en el ventilador
 ```
 
 ![Imagen página 54 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P54_I0.png)
@@ -1619,7 +1619,7 @@ ADVERTENCIA El ventilador deberá utilizarse como fuente principal de la informa
 ```metadata
 pagina: 55
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P55_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama de ventilador con botón de llamada y señal de alarma, indicando función de llamada a la enfermera en ciertas configuraciones
 ```
 
 ![Imagen página 55 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P55_I0.png)
@@ -1665,7 +1665,7 @@ Montaje del nebulizador
 ```metadata
 pagina: 57
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P57_I0.png
-contexto: 
+contexto: Imagen asociada a un adaptador T para conectar un nebulizador a un ventilador Engström
 ```
 
 ![Imagen página 57 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P57_I0.png)
@@ -1675,7 +1675,7 @@ contexto:
 ```metadata
 pagina: 57
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P57_I1.png
-contexto: 
+contexto: Imagen asociada a instalación de nebulizador en ventilador
 ```
 
 ![Imagen página 57 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P57_I1.png)
@@ -1687,7 +1687,7 @@ ADVERTENCIA Mantenga siempre el nebulizador en posición vertical mientras se en
 ```metadata
 pagina: 57
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P57_I2.png
-contexto: 
+contexto: Imagen asociada a instrucciones para conectar un nebulizador a un ventilador
 ```
 
 ![Imagen página 57 - 2](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P57_I2.png)
@@ -1711,7 +1711,7 @@ w La capacidad máxima del nebulizador es de 10 ml. No llene el nebulizador por 
 ```metadata
 pagina: 58
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P58_I0.png
-contexto: 
+contexto: Imagen asociada a un dispositivo para convertir medicamentos líquidos en vapor inhalable, con una parte específica para llenarlo
 ```
 
 ![Imagen página 58 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P58_I0.png)
@@ -1721,7 +1721,7 @@ contexto:
 ```metadata
 pagina: 58
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P58_I1.png
-contexto: 
+contexto: Imagen asociada a un dispositivo médico que convierte medicamentos líquidos en una nube para inhalación
 ```
 
 ![Imagen página 58 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P58_I1.png)
@@ -1762,7 +1762,7 @@ La presión auxiliar es una medición de presión adicional que puede mostrarse 
 ```metadata
 pagina: 60
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P60_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con una tubería auxiliar de presión conectada, mostrando su conexión y características técnicas
 ```
 
 ![Imagen página 60 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P60_I0.png)
@@ -1814,7 +1814,7 @@ Utilice el calentador de válvula espiratoria para evitar la humedad.
 ```metadata
 pagina: 62
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I0.png
-contexto: 
+contexto: Imagen asociada a instalacion de ventilador con cable conectado y labels de puertos 2 o 3
 ```
 
 ![Imagen página 62 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I0.png)
@@ -1826,7 +1826,7 @@ Nota Solicite el cable por separado. Consulte  "Calentador de válvula espirator
 ```metadata
 pagina: 62
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I1.png
-contexto: 
+contexto: Imagen asociada a la instalacion de un calentador de válvula espiratoria en un ventilador Engström
 ```
 
 ![Imagen página 62 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I1.png)
@@ -1836,7 +1836,7 @@ contexto:
 ```metadata
 pagina: 62
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I2.png
-contexto: 
+contexto: Imagen asociada a instalacion de ventilador con calentador de valvula espiratoria
 ```
 
 ![Imagen página 62 - 2](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I2.png)
@@ -1846,7 +1846,7 @@ contexto:
 ```metadata
 pagina: 62
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I3.png
-contexto: 
+contexto: Imagen asociada a un dispositivo de ventilación con una válvula espiratoria, utilizado para controlar la humedad
 ```
 
 ![Imagen página 62 - 3](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P62_I3.png)
@@ -1872,7 +1872,7 @@ Para quitar el brazo de la pantalla:
 ```metadata
 pagina: 63
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P63_I0.png
-contexto: 
+contexto: Imagen asociada a instalación de ventilador Engström con brazo para montaje remoto de pantalla
 ```
 
 ![Imagen página 63 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P63_I0.png)
@@ -1896,7 +1896,7 @@ Nota: Asegúrese de que los cables son suficientemente largos como para cubrir l
 ```metadata
 pagina: 64
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P64_I0.png
-contexto: 
+contexto: Imagen asociada a instalacion de ventilador Engström con sistema de raíl ISO 19054
 ```
 
 ![Imagen página 64 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P64_I0.png)
@@ -1908,7 +1908,7 @@ Para volver a colocar el brazo remoto en el ventilador:
 ```metadata
 pagina: 64
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P64_I1.png
-contexto: 
+contexto: Imagen asociada a instrucciones para montar pantalla sobre sistema de raíl ISO 19054 en ventilador Engström
 ```
 
 ![Imagen página 64 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P64_I1.png)
@@ -1937,7 +1937,7 @@ Una parte móvil o un componente extraíble puede representar un riesgo de pinza
 ```metadata
 pagina: 65
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P65_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador Engström con advertencia sobre riesgos de pinzamiento o aplastamiento al agregar accesorios u otros componentes
 ```
 
 ![Imagen página 65 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P65_I0.png)
@@ -1947,7 +1947,7 @@ contexto:
 ```metadata
 pagina: 65
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P65_I1.png
-contexto: 
+contexto: Imagen asociada a un dispositivo de humidificación para ventiladores, con detalles técnicos y advertencias de seguridad
 ```
 
 ![Imagen página 65 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P65_I1.png)
@@ -1957,7 +1957,7 @@ contexto:
 ```metadata
 pagina: 65
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P65_I2.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de un ventilador Engström con advertencias sobre riesgos de accesorios adicionales
 ```
 
 ![Imagen página 65 - 2](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P65_I2.png)
@@ -1975,7 +1975,7 @@ contexto:
 ```metadata
 pagina: 66
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P66_I0.png
-contexto: 
+contexto: Imagen asociada a un humidificador con componentes como una caja, un tanque de agua y un soporte, etiquetado "AB.98.044"
 ```
 
 ![Imagen página 66 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P66_I0.png)
@@ -2018,7 +2018,7 @@ Para instalar el brazo:
 ```metadata
 pagina: 67
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P67_I0.png
-contexto: 
+contexto: Imagen asociada a instalación del brazo de soporte en ventilador Engström
 ```
 
 ![Imagen página 67 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P67_I0.png)
@@ -2050,7 +2050,7 @@ La configuración de las tomas eléctricas varía de un país a otro.
 ```metadata
 pagina: 68
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P68_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de ventilador Engström con cables de alimentación
 ```
 
 ![Imagen página 68 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P68_I0.png)
@@ -2104,7 +2104,7 @@ Compresor EVair 03 (opcional)
 ```metadata
 pagina: 70
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P70_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico que describe componentes de un ventilador Engström Compresor EVair 03, incluyendo recipiente de drenaje y interruptor de alimentación del compresor
 ```
 
 ![Imagen página 70 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P70_I0.png)
@@ -2147,7 +2147,7 @@ ADVERTENCIA: Un mantenimiento incorrecto del filtro de entrada de aire puede pro
 ```metadata
 pagina: 71
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P71_I0.png
-contexto: 
+contexto: Imagen asociada a instrucciones para el uso y mantenimiento de un ventilador
 ```
 
 ![Imagen página 71 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P71_I0.png)
@@ -2310,7 +2310,7 @@ Importante: Si se selecciona Evitar comprobación, el procedimiento de comprobac
 ```metadata
 pagina: 78
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P78_I0.png
-contexto: 
+contexto: Imagen asociada a procedimiento de comprobación de ventilador Engström
 ```
 
 ![Imagen página 78 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P78_I0.png)
@@ -2892,7 +2892,7 @@ Para estacionar el circuito:
 ```metadata
 pagina: 94
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P94_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama de circuito de ventilador con etiquetas y símbolos, indicando la función "Circuito estacionado" para proteger el circuito del paciente durante el modo En espera
 ```
 
 ![Imagen página 94 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P94_I0.png)
@@ -3019,7 +3019,7 @@ Las curvas se mostrarán en el color de curva configurado. Cuando el paciente ac
 ```metadata
 pagina: 98
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P98_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con gráficos y texto, mostrando un gráfico de curvas de presión y flujo respiratorio
 ```
 
 ![Imagen página 98 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P98_I0.png)
@@ -3043,7 +3043,7 @@ Los bucles de espirometría pueden visualizarse mediante un menú o como una pan
 ```metadata
 pagina: 99
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P99_I0.png
-contexto: 
+contexto: Imagen asociada a espirometría, mostrando gráficos de volumen y presión en diferentes tipos de bucles
 ```
 
 ![Imagen página 99 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P99_I0.png)
@@ -3088,7 +3088,7 @@ El cursor es un método sencillo de leer rápidamente el volumen y la presión d
 ```metadata
 pagina: 100
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P100_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico que muestra una curva con tres ejes, posiblemente relacionado con la espírometría y la visualización de bucles
 ```
 
 ![Imagen página 100 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P100_I0.png)
@@ -3160,7 +3160,7 @@ Para ver los cálculos completos de los datos de laboratorio:
 ```metadata
 pagina: 102
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P102_I0.png
-contexto: 
+contexto: Imagen asociada a un manual de referencia para cálculos de ventilación en pacientes adultos y pediátricos
 ```
 
 ![Imagen página 102 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P102_I0.png)
@@ -3506,7 +3506,7 @@ El software del sistema Engström no admitirá el uso simultáneo de los puertos
 ```metadata
 pagina: 113
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P113_I0.png
-contexto: 
+contexto: Imagen asociada a manual técnico de Engström, mostrando diagrama de equipo y lista de componentes software
 ```
 
 ![Imagen página 113 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P113_I0.png)
@@ -3566,7 +3566,7 @@ Conexión al paciente
 ```metadata
 pagina: 115
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P115_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador médico con una conexión al paciente y componentes modulares
 ```
 
 ![Imagen página 115 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P115_I0.png)
@@ -3583,7 +3583,7 @@ ADVERTENCIA: No coloque el módulo de vías aéreas en la ranura inferior si el 
 ```metadata
 pagina: 115
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P115_I1.png
-contexto: 
+contexto: Imagen asociada a advertencia de seguridad para ventilador
 ```
 
 ![Imagen página 115 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P115_I1.png)
@@ -4195,7 +4195,7 @@ Nota: No esterilice los filtros en el autoclave.
 ```metadata
 pagina: 142
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P142_I0.png
-contexto: 
+contexto: Imagen asociada a un filtro de ventilación para monitor, ubicado en la parte posterior del dispositivo y sujetado por un pequeño clip o latch
 ```
 
 ![Imagen página 142 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P142_I0.png)
@@ -4205,7 +4205,7 @@ contexto:
 ```metadata
 pagina: 142
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P142_I1.png
-contexto: 
+contexto: Imagen asociada a instrucciones para limpiar y mantener un ventilador con filtro de aire
 ```
 
 ![Imagen página 142 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P142_I1.png)
@@ -4237,7 +4237,7 @@ Compruebe el filtro de entrada de aire antes de cada uso, diariamente mientras e
 ```metadata
 pagina: 143
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P143_I0.png
-contexto: 
+contexto: Imagen asociada a instrucciones técnicas de mantenimiento y limpieza de ventiladores, destacando la importancia de limpiar separadamente los componentes estériles
 ```
 
 ![Imagen página 143 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P143_I0.png)
@@ -4247,7 +4247,7 @@ contexto:
 ```metadata
 pagina: 143
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P143_I1.png
-contexto: 
+contexto: Imagen asociada a un componente de ventilador con una superficie externa y un filtro de entrada de aire, indicando su importancia en la limpieza y mantenimiento del equipo
 ```
 
 ![Imagen página 143 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P143_I1.png)
@@ -4341,7 +4341,7 @@ Desmontaje
 ```metadata
 pagina: 146
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P146_I0.png
-contexto: 
+contexto: Imagen asociada a un sensor de flujo espiratorio en un ventilador Engström
 ```
 
 ![Imagen página 146 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P146_I0.png)
@@ -4391,7 +4391,7 @@ Desmontaje
 ```metadata
 pagina: 148
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P148_I0.png
-contexto: 
+contexto: Imagen asociada a un bloque de válvula espiratoria con sensor y trampa, con descripción detallada en el manual
 ```
 
 ![Imagen página 148 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P148_I0.png)
@@ -4401,7 +4401,7 @@ contexto:
 ```metadata
 pagina: 148
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P148_I1.png
-contexto: 
+contexto: Imagen asociada a un bloque de válvula espiratoria con sensor y handle, mostrado en una vista lateral
 ```
 
 ![Imagen página 148 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P148_I1.png)
@@ -4508,7 +4508,7 @@ Desmontaje
 ```metadata
 pagina: 151
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P151_I0.png
-contexto: 
+contexto: Imagen asociada a manual técnico de dispositivo médico con instrucciones de desmontaje y limpieza
 ```
 
 ![Imagen página 151 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P151_I0.png)
@@ -4563,7 +4563,7 @@ Reensamblaje
 ```metadata
 pagina: 153
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P153_I0.png
-contexto: 
+contexto: Imagen asociada a un dispositivo de nebulización para ventilación respiratoria con forma cilíndrica y características específicas
 ```
 
 ![Imagen página 153 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P153_I0.png)
@@ -4573,7 +4573,7 @@ contexto:
 ```metadata
 pagina: 153
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P153_I1.png
-contexto: 
+contexto: Imagen asociada a un dispositivo médico que convierte medicamentos líquidos en una niebla fina para inhalación controlada
 ```
 
 ![Imagen página 153 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P153_I1.png)
@@ -4599,7 +4599,7 @@ Desmontaje
 ```metadata
 pagina: 154
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P154_I0.png
-contexto: 
+contexto: Imagen asociada a manual técnico para trampa de agua con instrucciones de desmontaje y limpieza
 ```
 
 ![Imagen página 154 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P154_I0.png)
@@ -4705,7 +4705,7 @@ El control asistido está disponible en los modos VCV, PCV y PCV-VG. Active el c
 ```metadata
 pagina: 158
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P158_I0.png
-contexto: 
+contexto: Imagen asociada a ventiladores con configuración de VCV (Volumen Controlado Variable)
 ```
 
 ![Imagen página 158 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P158_I0.png)
@@ -4719,7 +4719,7 @@ contexto:
 ```metadata
 pagina: 159
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P159_I0.png
-contexto: 
+contexto: Imagen asociada a diagrama técnico de un ventilador Engström con curvas de presión-volumen y tiempos inspiratorios y expiratorios
 ```
 
 ![Imagen página 159 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P159_I0.png)
@@ -4750,7 +4750,7 @@ El control asistido está disponible en los modos VCV, PCV y PCV-VG. Active el c
 ```metadata
 pagina: 160
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P160_I0.png
-contexto: 
+contexto: Imagen asociada a ventilador con presión controlada por volumen
 ```
 
 ![Imagen página 160 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P160_I0.png)
@@ -4764,7 +4764,7 @@ contexto:
 ```metadata
 pagina: 161
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P161_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de un ventilador, mostrando componentes relacionados con su función y rendimiento
 ```
 
 ![Imagen página 161 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P161_I0.png)
@@ -4794,7 +4794,7 @@ Active el control asistido a través del menú  Preferencias de vent.
 ```metadata
 pagina: 162
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P162_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con configuración de PCV-VG, mostrando parámetros como FiO2 y VT
 ```
 
 ![Imagen página 162 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P162_I0.png)
@@ -4808,7 +4808,7 @@ contexto:
 ```metadata
 pagina: 163
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P163_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de un ventilador con componentes como presión variable y curvas de flujo
 ```
 
 ![Imagen página 163 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P163_I0.png)
@@ -4841,7 +4841,7 @@ En caso de que se seleccione que la ventilación de reserva esté activa en SIMV
 ```metadata
 pagina: 164
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P164_I0.png
-contexto: 
+contexto: Imagen asociada a un table con dos columnas y nueve filas que muestra valores numéricos y descriptivos relacionados con el ventilador Engström
 ```
 
 ![Imagen página 164 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P164_I0.png)
@@ -4855,7 +4855,7 @@ contexto:
 ```metadata
 pagina: 165
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P165_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de ventilador Engström, mostrando curva de PVA y otros componentes
 ```
 
 ![Imagen página 165 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P165_I0.png)
@@ -4889,7 +4889,7 @@ En caso de que se seleccione que la ventilación de reserva esté activa en SIMV
 ```metadata
 pagina: 166
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P166_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico de ventilador con configuraciones SIMV-PC
 ```
 
 ![Imagen página 166 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P166_I0.png)
@@ -4901,7 +4901,7 @@ contexto:
 ```metadata
 pagina: 167
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P167_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de ventilador Engström, mostrando componentes como curva de PVA y período de respiración espontánea
 ```
 
 ![Imagen página 167 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P167_I0.png)
@@ -4942,7 +4942,7 @@ En caso de que se seleccione que la ventilación de reserva esté activa en BiLe
 ```metadata
 pagina: 168
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P168_I0.png
-contexto: 
+contexto: Imagen asociada a ventilador con presión BiLevel
 ```
 
 ![Imagen página 168 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P168_I0.png)
@@ -4956,7 +4956,7 @@ contexto:
 ```metadata
 pagina: 169
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P169_I0.png
-contexto: 
+contexto: Imagen asociada a diagrama técnico con gráfica y tabla relacionadas con características del ventilador Engström
 ```
 
 ![Imagen página 169 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P169_I0.png)
@@ -4994,7 +4994,7 @@ Consulte  "Modo de instalación"  en la Sección 10 antes de hacer cambios en el
 ```metadata
 pagina: 170
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P170_I0.png
-contexto: 
+contexto: Imagen asociada a ventiladores medicales con modos CPAP/PSV
 ```
 
 ![Imagen página 170 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P170_I0.png)
@@ -5006,7 +5006,7 @@ contexto:
 ```metadata
 pagina: 171
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P171_I0.png
-contexto: 
+contexto: Imagen asociada a diagrama técnico relacionado con ventilación, mostrando curvas de PVA, Tinsp, Tesp y otros parámetros respiratorios
 ```
 
 ![Imagen página 171 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P171_I0.png)
@@ -5047,7 +5047,7 @@ Ventilación intermitente sincronizada obligatoria - controlada por presión, vo
 ```metadata
 pagina: 173
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P173_I0.png
-contexto: 
+contexto: Imagen asociada a un table con dos columnas y nueve filas, mostrando parámetros ventilatorios y sus valores correspondientes
 ```
 
 ![Imagen página 173 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P173_I0.png)
@@ -5055,7 +5055,7 @@ contexto:
 ```metadata
 pagina: 173
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P173_I1.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico que muestra la configuración del sistema Ventilación intermitente sincronizada obligatoria - controlada por presión, volumen garantizado (SIMV-PCVG)"
 ```
 
 ![Imagen página 173 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P173_I1.png)
@@ -5099,7 +5099,7 @@ Ventilación de presión BiLevel en vías aéreas - volumen garantizado (BiLevel
 ```metadata
 pagina: 175
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P175_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico de ventilador con una tabla que muestra parámetros y valores correspondientes para el BiLevel-VG
 ```
 
 ![Imagen página 175 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P175_I0.png)
@@ -5107,7 +5107,7 @@ contexto:
 ```metadata
 pagina: 175
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P175_I1.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de un ventilador Engström con componentes como curva de Pva, Tinsp y presión variable para suministrar el VT deseado
 ```
 
 ![Imagen página 175 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P175_I1.png)
@@ -5132,7 +5132,7 @@ El sistema contiene cuatro cuadros principales de control del procesador: la pan
 ```metadata
 pagina: 176
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P176_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama de un ventilador con cuatro secciones principales: pantalla, control de ventilador, monitorización de ventilación y administración de energía
 ```
 
 ![Imagen página 176 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P176_I0.png)
@@ -5186,7 +5186,7 @@ Funcionamiento del sistema neumático
 ```metadata
 pagina: 179
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P179_I0.png
-contexto: 
+contexto: Imagen asociada a un esquema del sistema neumático de ventilador, con componentes y etiquetas en español
 ```
 
 ![Imagen página 179 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P179_I0.png)
@@ -5274,7 +5274,7 @@ Bloque de la válvula espiratoria
 ```metadata
 pagina: 182
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P182_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con sus componentes y descripciones
 ```
 
 ![Imagen página 182 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P182_I0.png)
@@ -5302,7 +5302,7 @@ Calentador de válvula espiratoria
 ```metadata
 pagina: 183
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P183_I0.png
-contexto: 
+contexto: Imagen asociada a ventilador Engström con elementos Calentador de válvula espiratoria y cable, según página 183 del manual
 ```
 
 ![Imagen página 183 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P183_I0.png)
@@ -5318,7 +5318,7 @@ Elemento | Descripción | Referencia
 ```metadata
 pagina: 184
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P184_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con varios cables y una tabla de referencias
 ```
 
 ![Imagen página 184 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P184_I0.png)
@@ -5336,7 +5336,7 @@ Elemento | Descripción | Referencia
 ```metadata
 pagina: 184
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P184_I1.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una tabla de referencias y un diagrama de un conectador de cable
 ```
 
 ![Imagen página 184 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P184_I1.png)
@@ -5384,7 +5384,7 @@ Piezas del sistema
 ```metadata
 pagina: 186
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P186_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico que describe el ventilador, incluyendo sus componentes y elementos
 ```
 
 ![Imagen página 186 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P186_I0.png)
@@ -5402,7 +5402,7 @@ Sensor de flujo neonatal
 ```metadata
 pagina: 186
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P186_I1.png
-contexto: 
+contexto: Imagen asociada a un manual técnico que describe el sensor de flujo neonatal y su cable, con referencias y descripciones
 ```
 
 ![Imagen página 186 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P186_I1.png)
@@ -5437,7 +5437,7 @@ Piezas del compresor EVair 03
 ```metadata
 pagina: 187
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P187_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama de un sistema de ventilación con componentes como filtro, sensor y válvula
 ```
 
 ![Imagen página 187 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P187_I0.png)
@@ -5456,7 +5456,7 @@ Plataforma de montaje
 ```metadata
 pagina: 188
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P188_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una página de diagrama de sistema de ventilación y lista de partes
 ```
 
 ![Imagen página 188 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P188_I0.png)
@@ -5488,7 +5488,7 @@ La contraseña para acceder al menú Instalación/Servicio se proporciona durant
 ```metadata
 pagina: 189
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P189_I0.png
-contexto: 
+contexto: Imagen asociada a una pantalla de menú de configuración de un ventilador, con opciones relacionadas con ajustes y parámetros
 ```
 
 ![Imagen página 189 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P189_I0.png)
@@ -5509,7 +5509,7 @@ Tendencias
 ```metadata
 pagina: 190
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P190_I0.png
-contexto: 
+contexto: Imagen asociada a una lista de opciones de menú disponibles para un ventilador, con valores predeterminados de fábrica y unidades que deben cumplir la normativa local
 ```
 
 ![Imagen página 190 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P190_I0.png)
@@ -5523,7 +5523,7 @@ Tendencias
 ```metadata
 pagina: 191
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P191_I0.png
-contexto: 
+contexto: Imagen asociada a documento técnico con tabla relacionada a un ventilador médico
 ```
 
 ![Imagen página 191 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P191_I0.png)
@@ -5539,7 +5539,7 @@ Tendencias
 ```metadata
 pagina: 192
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P192_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla que muestra información sobre el ventilador Engström
 ```
 
 ![Imagen página 192 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P192_I0.png)
@@ -5555,7 +5555,7 @@ Ajustes de la Pantalla
 ```metadata
 pagina: 193
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P193_I0.png
-contexto: 
+contexto: Imagen asociada a ajustes de pantalla para ventilador Engström con opciones de color y configuración
 ```
 
 ![Imagen página 193 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P193_I0.png)
@@ -5571,7 +5571,7 @@ Ajustes de la Pantalla
 ```metadata
 pagina: 194
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P194_I0.png
-contexto: 
+contexto: Manual técnico de ventilador Engström con tabla de unidades y formatos de tiempo en español"
 ```
 
 ![Imagen página 194 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P194_I0.png)
@@ -5607,7 +5607,7 @@ El menú Configuración fábrica de Favoritos se muestra con el elemento de men�
 ```metadata
 pagina: 195
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P195_I0.png
-contexto: 
+contexto: Imagen asociada a una tabla con dos columnas y siete filas, donde se muestra información sobre valores predeterminados de fábrica para la barra Favoritos
 ```
 
 ![Imagen página 195 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P195_I0.png)
@@ -5636,7 +5636,7 @@ Utilice el menú Config. del ventilador para establecer los valores predetermina
 ```metadata
 pagina: 196
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P196_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla que muestra configuraciones de un ventilador
 ```
 
 ![Imagen página 196 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P196_I0.png)
@@ -5675,7 +5675,7 @@ ADVERTENCIA: Las configuraciones en el menú  Modos de Reserva Apnea  determinan
 ```metadata
 pagina: 197
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P197_I0.png
-contexto: 
+contexto: Imagen asociada a un gráfico con dos columnas y seis filas que muestra diferentes modos de reserva apnea y su disponibilidad
 ```
 
 ![Imagen página 197 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P197_I0.png)
@@ -5695,7 +5695,7 @@ El menú  Modos seleccionados  puede usarse para configurar la lista de modos de
 ```metadata
 pagina: 198
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P198_I0.png
-contexto: 
+contexto: Imagen asociada a una tabla con dos columnas y nueve filas, que muestra modos de ventilación y su disponibilidad
 ```
 
 ![Imagen página 198 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P198_I0.png)
@@ -5708,7 +5708,7 @@ Configuración de parámetros
 ```metadata
 pagina: 198
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P198_I1.png
-contexto: 
+contexto: Imagen asociada a una tabla de configuración de parámetros de ventilador con opciones de temperatura y presión
 ```
 
 ![Imagen página 198 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P198_I1.png)
@@ -5725,7 +5725,7 @@ La opción  Paciente Preconf  indica la selección realizada para  Tipo de pacie
 ```metadata
 pagina: 199
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P199_I0.png
-contexto: 
+contexto: Imagen asociada a configuración predeterminada del ventilador
 ```
 
 ![Imagen página 199 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P199_I0.png)
@@ -5782,7 +5782,7 @@ Consulte la Sección 15,  "EView"  para obtener más información.
 ```metadata
 pagina: 200
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P200_I0.png
-contexto: 
+contexto: Imagen asociada a configuracion de transferencia de datos mediante USB o tarjeta SD
 ```
 
 ![Imagen página 200 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P200_I0.png)
@@ -5807,7 +5807,7 @@ En la instalación inicial o tras una actualización del software, aparecerá un
 ```metadata
 pagina: 201
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P201_I0.png
-contexto: 
+contexto: Imagen asociada a manual técnico de calibración de ventilador Engström con menús para ajustar parámetros de funcionamiento
 ```
 
 ![Imagen página 201 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P201_I0.png)
@@ -6117,7 +6117,7 @@ Esquema del sistema neumático del compresor
 ```metadata
 pagina: 213
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P213_I0.png
-contexto: 
+contexto: Imagen asociada a un esquema de sistema neumático de compresor con componentes como válvulas, filtros y sensores
 ```
 
 ![Imagen página 213 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P213_I0.png)
@@ -6153,7 +6153,7 @@ Esquema del sistema eléctrico del compresor
 ```metadata
 pagina: 214
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P214_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de un sistema eléctrico de compresor, mostrando componentes como condensador, bomba y interruptor de temperatura
 ```
 
 ![Imagen página 214 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P214_I0.png)
@@ -6313,7 +6313,7 @@ Importante: Si añadimos un espaciador de 5 ml entre el sensor D-lite y la pieza
 ```metadata
 pagina: 221
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P221_I0.png
-contexto: 
+contexto: Imagen asociada a un gráfico que muestra las curvas actuales y de referencia del volumen de FRC en función del número de respiraciones
 ```
 
 ![Imagen página 221 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P221_I0.png)
@@ -6377,7 +6377,7 @@ El procedimiento PEEP INview se puede utilizar para ver cómo afecta un cambio e
 ```metadata
 pagina: 223
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P223_I0.png
-contexto: 
+contexto: Imagen asociada a un gráfico que muestra la relación entre el valor de PEEP y el valor de FRC en un ventilador Engström INview
 ```
 
 ![Imagen página 223 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P223_I0.png)
@@ -6486,7 +6486,7 @@ En la pantalla se muestran la mecánica del pulmón y un bucle P-V traqueal grá
 ```metadata
 pagina: 226
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P226_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con gráficos y texto en español, mostrando una línea continua sin interrupciones
 ```
 
 ![Imagen página 226 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P226_I0.png)
@@ -6507,7 +6507,7 @@ Importante: El catéter de presión endotraqueal se utiliza sólo para detectar 
 ```metadata
 pagina: 227
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P227_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico de un ventilador, con descripción de componentes y monitoreo de vital signs
 ```
 
 ![Imagen página 227 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P227_I0.png)
@@ -6558,7 +6558,7 @@ Se pueden guardar en la memoria hasta un máximo de seis grupos de bucles y curv
 ```metadata
 pagina: 229
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P229_I0.png
-contexto: 
+contexto: Imagen asociada a visualización de bucles y curvas en tiempo real con datos de SpiroDynamics"
 ```
 
 ![Imagen página 229 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P229_I0.png)
@@ -6599,7 +6599,7 @@ El cursor es un modo sencillo de leer rápidamente el volumen y la presión del 
 ```metadata
 pagina: 230
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P230_I0.png
-contexto: 
+contexto: Imagen asociada a un gráfico con una curva y un bucle, con una línea de referencia y un cursor, relacionado con la visualización de datos
 ```
 
 ![Imagen página 230 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P230_I0.png)
@@ -6633,7 +6633,7 @@ Para realizar un procedimiento Lung INview son necesarios un catéter sensor de 
 ```metadata
 pagina: 231
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P231_I0.png
-contexto: 
+contexto: Imagen asociada a: Procedimiento Lung INview para medir volumen en ventilación mecánica con uso de SpiroDynamics y FRC
 ```
 
 ![Imagen página 231 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P231_I0.png)
@@ -6748,7 +6748,7 @@ En caso de que se seleccione que la ventilación de reserva esté activa en el m
 ```metadata
 pagina: 237
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P237_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico de ventilador con parámetros como FiO2, VT y PEEP
 ```
 
 ![Imagen página 237 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P230_I0.png)
@@ -6756,7 +6756,7 @@ contexto:
 ```metadata
 pagina: 237
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P237_I1.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico de ventilador Engström con componentes como curva de presión, tinsp y tesp determinados para el paciente
 ```
 
 ![Imagen página 237 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P237_I1.png)
@@ -6784,7 +6784,7 @@ Utilice el menú  Conf. sensor flujo neo  para calibrar manualmente o desactivar
 ```metadata
 pagina: 238
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P238_I0.png
-contexto: 
+contexto: Imagen asociada a: Ventilador Engström Símbolos de neonatología en pantalla de control
 ```
 
 ![Imagen página 238 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P238_I0.png)
@@ -6794,7 +6794,7 @@ El sensor de flujo neonatal se ha desarrollado específicamente para su uso con 
 ```metadata
 pagina: 238
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P238_I1.png
-contexto: 
+contexto: Imagen asociada a un sensor de flujo neonatal con cable, con información sobre su configuración y características en una página de manual
 ```
 
 ![Imagen página 238 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P238_I1.png)
@@ -6814,7 +6814,7 @@ Conexión del sensor de flujo
 ```metadata
 pagina: 239
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P239_I0.png
-contexto: 
+contexto: Imagen asociada a instrucciones para conectar un sensor de flujo a un ventilador
 ```
 
 ![Imagen página 239 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P239_I0.png)
@@ -6828,7 +6828,7 @@ contexto:
 ```metadata
 pagina: 239
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P239_I1.png
-contexto: 
+contexto: Imagen asociada a instrucciones para conectar un sensor de flujo neonatal a un ventilador Engström
 ```
 
 ![Imagen página 239 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P239_I1.png)
@@ -6874,7 +6874,7 @@ Para calibrar el sensor de flujo neonatal:
 ```metadata
 pagina: 241
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P241_I0.png
-contexto: 
+contexto: Imagen asociada a un dispositivo sensorial utilizado en monitoreo médico o científico
 ```
 
 ![Imagen página 241 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P241_I0.png)
@@ -6953,7 +6953,7 @@ Importante: Quite, o no instale, módulos de vías aéreas compactos cuando haya
 ```metadata
 pagina: 244
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P244_I0.png
-contexto: 
+contexto: Imagen asociada a una página manual técnica con un menú para seleccionar un tipo de paciente, específicamente neonatal, y su preparación del ventilador
 ```
 
 ![Imagen página 244 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P244_I0.png)
@@ -6964,7 +6964,7 @@ El peso del paciente se puede seleccionar en el menú Configuración de paciente
 ```metadata
 pagina: 244
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P244_I1.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con tabla y texto en español, relacionada con la configuración de ventilador para pacientes neonatales
 ```
 
 ![Imagen página 244 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P244_I1.png)
@@ -7024,7 +7024,7 @@ Importante: Si se selecciona Evitar comprobación, el procedimiento de comprobac
 ```metadata
 pagina: 247
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P247_I0.png
-contexto: 
+contexto: Imagen asociada a un sistema de ventilación infantil con conexión de sensor de flujo neona
 ```
 
 ![Imagen página 247 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P247_I0.png)
@@ -7100,7 +7100,7 @@ Seleccione  Alarma de Paux  para tener acceso rápido a los límites de alarma d
 ```metadata
 pagina: 249
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P249_I0.png
-contexto: 
+contexto: Imagen asociada a configuracion de paux system en manual tecnico
 ```
 
 ![Imagen página 249 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P249_I0.png)
@@ -7115,7 +7115,7 @@ Pulse  Config. sistema  y seleccione  Configuración parámetros  - Escala  para
 ```metadata
 pagina: 250
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P250_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con tabla y texto en español, que describe la configuración de escalas para un ventilador Engström
 ```
 
 ![Imagen página 250 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P250_I0.png)
@@ -7126,7 +7126,7 @@ Pulse  Conf. alarmas  para acceder al menú Conf. alarmas. Utilice este menú pa
 ```metadata
 pagina: 250
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P250_I1.png
-contexto: 
+contexto: Imagen asociada a una tabla con dos columnas y 10 filas, mostrando opciones de configuración de un sistema de ventilación
 ```
 
 ![Imagen página 250 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P250_I1.png)
@@ -7350,7 +7350,7 @@ Importante: Si se selecciona Evitar comprobación, el procedimiento de comprobac
 ```metadata
 pagina: 259
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P259_I0.png
-contexto: 
+contexto: Imagen asociada a preparación del ventilador Engström para pacientes en modo no invasivo
 ```
 
 ![Imagen página 259 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P259_I0.png)
@@ -7407,7 +7407,7 @@ La configuración del modo NIV puede modificarse utilizando las Teclas rápidas 
 ```metadata
 pagina: 261
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P261_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de ventilador Engström en modo NIV con valores ajustados
 ```
 
 ![Imagen página 261 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P261_I0.png)
@@ -7493,7 +7493,7 @@ Importante: Si se selecciona Evitar comprobación, el procedimiento de comprobac
 ```metadata
 pagina: 264
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P264_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con opciones de configuración de pacientes en español, relacionadas con la configuración y operación de un dispositivo médico
 ```
 
 ![Imagen página 264 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P264_I0.png)
@@ -7644,7 +7644,7 @@ Nota: Para el funcionamiento del accesorio EView son necesarios el puerto serie 
 ```metadata
 pagina: 269
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P269_I0.png
-contexto: 
+contexto: Imagen asociada a un ventilador con modelo "AB.98.310", con características técnicas y funcionalidades de registro de datos y transferencia de información
 ```
 
 ![Imagen página 269 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P269_I0.png)
@@ -7668,7 +7668,7 @@ Puerto serie estándar
 ```metadata
 pagina: 270
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P270_I0.png
-contexto: 
+contexto: Imagen asociada a un diagrama técnico que muestra la configuración de ports y conexiones en un dispositivo, incluyendo puerto serie, ethernet y usb
 ```
 
 ![Imagen página 270 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P270_I0.png)
@@ -7686,7 +7686,7 @@ Puerto serie ESP
 ```metadata
 pagina: 270
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P270_I1.png
-contexto: 
+contexto: Imagen asociada a un dispositivo con varios puertos y conexiones, incluyendo un puerto Ethernet, un puerto USB y un botón de poder
 ```
 
 ![Imagen página 270 - 1](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P270_I1.png)
@@ -7708,7 +7708,7 @@ Descripción general de EView
 ```metadata
 pagina: 271
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P271_I0.png
-contexto: 
+contexto: Imagen asociada a un manual técnico con una página que muestra el EView y su componente, advirtiendo sobre la pérdida de datos si se presiona el botón de reinicio durante la transferencia
 ```
 
 ![Imagen página 271 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P271_I0.png)
@@ -7737,7 +7737,7 @@ Importante: No mueva los separadores entre sistemas. Todos los separadores lleva
 ```metadata
 pagina: 272
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P272_I0.png
-contexto: 
+contexto: Imagen asociada a dispositivo de registro de datos para ventilador Engström requiere pantalla HPDU, puerto serie ESP y software 5.05 o superior
 ```
 
 ![Imagen página 272 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P272_I0.png)
@@ -7774,7 +7774,7 @@ PRECAUCIÓN: No retire el dispositivo EView de un ventilador Engström encendido
 ```metadata
 pagina: 273
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P273_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla y texto relacionados con la transferencia de datos en equipo médico
 ```
 
 ![Imagen página 273 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P273_I0.png)
@@ -7809,7 +7809,7 @@ Importante: Los datos de EView se transfieren a través del ID del paciente. Si 
 ```metadata
 pagina: 274
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P274_I0.png
-contexto: 
+contexto: Imagen asociada a configuración de parámetros de transferencia de datos en un manual técnico
 ```
 
 ![Imagen página 274 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P274_I0.png)
@@ -7830,7 +7830,7 @@ Importante: EView no es compatible con tarjetas SDHC.
 ```metadata
 pagina: 275
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P275_I0.png
-contexto: 
+contexto: Imagen asociada a una tarjeta SD con ranura rectangular y orientación vertical, indicativa de su ubicación en un dispositivo
 ```
 
 ![Imagen página 275 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P275_I0.png)
@@ -7882,7 +7882,7 @@ Conecte un circuito de paciente y un pulmón de prueba al ventilador para realiz
 ```metadata
 pagina: 276
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P276_I0.png
-contexto: 
+contexto: Imagen asociada a una página de manual técnico con una tabla de configuración de datos de transferencia
 ```
 
 ![Imagen página 276 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P276_I0.png)
@@ -7909,7 +7909,7 @@ Para ver los archivos ocultos:
 ```metadata
 pagina: 277
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P277_I0.png
-contexto: 
+contexto: Imagen asociada a una ventana de explorador de archivos con ruta de archivo y nombre de archivo en un entorno Windows
 ```
 
 ![Imagen página 277 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P277_I0.png)
@@ -7933,7 +7933,7 @@ Estructura de denominación de los archivos de texto para los datos:
 ```metadata
 pagina: 278
 imagen: data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P278_I0.png
-contexto: 
+contexto: Imagen asociada a una lista de archivos con nombres que combinan letras y números en formato tabular
 ```
 
 ![Imagen página 278 - 0](data/images/ventilador_engstrom_manual_tecnico_ventilador_engstrom_espanol/P278_I0.png)
