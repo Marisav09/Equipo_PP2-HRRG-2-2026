@@ -44,6 +44,13 @@ class IngestionService:
         source_dir.mkdir(parents=True, exist_ok=True)
         markdown_files = sorted(path for path in source_dir.rglob("*.md") if path.is_file())
 
+        curation_index = self._curation_index()
+        if curation_index:
+            markdown_files = [
+                path for path in markdown_files
+                if path.name in curation_index
+            ]
+
         if not markdown_files:
             return {
                 "processed_files": 0,
@@ -148,6 +155,30 @@ class IngestionService:
             "message": "Ingesta finalizada.",
             "audit": self.audit_service.list_latest(),
         }
+
+    def _curation_index(self) -> dict[str, dict[str, str]]:
+        """Lee data/inventory/curaduria_activa.csv y devuelve solo fuentes incluidas."""
+        curation_path = settings.processed_documents_dir.parent / "inventory" / "curaduria_activa.csv"
+
+        if not curation_path.exists():
+            return {}
+
+        included: dict[str, dict[str, str]] = {}
+
+        with curation_path.open("r", encoding="utf-8-sig", newline="") as file:
+            for row in csv.DictReader(file):
+                source_file = (row.get("source_file") or "").strip()
+                decision = (row.get("decision_curaduria") or "").strip().lower()
+                estado = (row.get("estado_producto") or "").strip().lower()
+
+                if not source_file:
+                    continue
+
+                if decision == "incluir" and estado in {"validado", "activo", "aprobado"}:
+                    included[source_file] = row
+
+        return included
+
 
     def _load_markdown_as_documents(self, markdown_path: Path, source_dir: Path) -> list[Document]:
         text = markdown_path.read_text(encoding="utf-8", errors="replace")
