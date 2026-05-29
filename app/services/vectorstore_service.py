@@ -45,7 +45,10 @@ class VectorstoreService:
         vectorstore = self.get_store()
         for start in range(0, len(documents), settings.embedding_batch_size):
             batch = documents[start : start + settings.embedding_batch_size]
-            ids = [self._document_id(document, start + index) for index, document in enumerate(batch)]
+            ids = [
+                self._document_id(document, start + index)
+                for index, document in enumerate(batch)
+            ]
             vectorstore.add_documents(documents=batch, ids=ids)
         return len(documents)
 
@@ -82,7 +85,75 @@ class VectorstoreService:
         }
         return sorted(equipments)
 
-    def retrieve(self, question: str, equipment_name: str | None, k: int | None = None) -> list[RetrievedChunk]:
+    def list_indexed_sources(self) -> list[dict[str, Any]]:
+        """Devuelve las fuentes realmente presentes en ChromaDB.
+
+        Esta lista representa el estado real del índice vectorial, no la auditoría
+        histórica de ingestas. Se usa para que la interfaz no muestre documentos
+        excluidos o registros viejos que ya no están indexados.
+        """
+        collection = self.get_store()._collection
+        if collection.count() == 0:
+            return []
+
+        result = collection.get(include=["metadatas"])
+        metadatas = result.get("metadatas") or []
+
+        sources: dict[str, dict[str, Any]] = {}
+        pages_by_source: dict[str, set[int]] = {}
+
+        for metadata in metadatas:
+            if not metadata:
+                continue
+
+            source_file = str(metadata.get("source_file") or "").strip()
+            if not source_file:
+                continue
+
+            current = sources.setdefault(
+                source_file,
+                {
+                    "source_file": source_file,
+                    "status": "indexed",
+                    "equipment_id": metadata.get("equipment_id"),
+                    "equipment_name": metadata.get("equipment_name") or metadata.get("equipo"),
+                    "page_count": 0,
+                    "chunk_count": 0,
+                    "image_count": 0,
+                    "message": "Documento presente en ChromaDB.",
+                    "created_at": "",
+                },
+            )
+
+            current["chunk_count"] += 1
+
+            page = metadata.get("page")
+            if page not in (None, "", "sin_pagina"):
+                try:
+                    page_number = int(page)
+                except (TypeError, ValueError):
+                    page_number = 0
+
+                if page_number > 0:
+                    pages_by_source.setdefault(source_file, set()).add(page_number)
+
+            try:
+                current["image_count"] += int(metadata.get("image_count", 0) or 0)
+            except (TypeError, ValueError):
+                pass
+
+        for source_file, pages in pages_by_source.items():
+            if source_file in sources:
+                sources[source_file]["page_count"] = len(pages)
+
+        return sorted(sources.values(), key=lambda item: str(item["source_file"]))
+
+    def retrieve(
+        self,
+        question: str,
+        equipment_name: str | None,
+        k: int | None = None,
+    ) -> list[RetrievedChunk]:
         canonical_equipment = canonical_equipment_name(equipment_name)
         if not canonical_equipment:
             raise EquipmentScopeError("La busqueda documental requiere un equipo exacto.")
