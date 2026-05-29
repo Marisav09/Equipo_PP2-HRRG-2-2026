@@ -51,7 +51,7 @@ def serve_processed(filename: str):
 
 @web_bp.get("/images/<path:filename>")
 def serve_extracted_image(filename: str):
-    return send_from_directory(settings.base_dir / "data" / "imagenes", filename, as_attachment=False)
+    return send_from_directory(settings.base_dir / "data" / "images", filename, as_attachment=False)
 
 
 @web_bp.get("/manual-thumbnails/<path:filename>/page/<int:page>.png")

@@ -416,14 +416,31 @@ Respuesta:""".strip()
         return len(clean_chunks) >= 2
 
     def _build_retrieval_question(self, question: str, history: list[dict]) -> str:
+        expanded_question = question
+        normalized = question.lower()
+
+        if (
+            "bloque" in normalized
+            or "desbloque" in normalized
+            or "pantalla táctil" in normalized
+            or "pantalla tactil" in normalized
+        ):
+            expanded_question = (
+                f"{question}\n"
+                "Terminos relacionados para recuperar documentacion tecnica relevante: "
+                "bloqueo, desbloqueo, bloquear, desbloquear, pantalla tactil, pantalla táctil, "
+                "icono de bloqueo, tecla de bloqueo/desbloqueo, tecla de bloqueo y desbloqueo, "
+                "barra favoritos, funciones de la pantalla tactil."
+            )
+
         if not history:
-            return question
+            return expanded_question
 
         recent_context = "\n".join(
             f"{message['role']}: {message['content'][:450]}"
             for message in history[-4:]
         )
-        return f"{recent_context}\nPregunta actual: {question}"
+        return f"{recent_context}\nPregunta actual: {expanded_question}"
 
     def _format_history(self, history: list[dict]) -> str:
         if not history:
