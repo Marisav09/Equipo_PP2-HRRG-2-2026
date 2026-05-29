@@ -61,6 +61,18 @@ function setStatus(message) {
     }
 }
 
+function visibleSourceName(source = {}) {
+    return source.display_source || source.original_pdf || source.source_file || "Fuente documental";
+}
+
+function visibleSourcePage(source = {}) {
+    return source.pdf_page || source.page || "sin pagina";
+}
+
+function visibleSourceLabel(source = {}) {
+    return `Fuente: ${visibleSourceName(source)}, pag. ${visibleSourcePage(source)}`;
+}
+
 function createSourceList(sources = []) {
     if (!sources.length) return null;
 
@@ -70,13 +82,16 @@ function createSourceList(sources = []) {
     sources.forEach((source, index) => {
         const link = document.createElement("a");
         link.className = "source-chip";
-        link.href = source.url;
+        link.href = source.url || "#";
         link.target = "_blank";
         link.rel = "noopener noreferrer";
-        link.title = `${source.source_file}, pagina ${source.page}`;
+        link.title = `${visibleSourceName(source)}, pagina ${visibleSourcePage(source)}`;
+
         const badge = document.createElement("span");
         badge.textContent = String(index + 1);
-        const label = document.createTextNode(`Fuente: ${source.source_file}, pag. ${source.page}`);
+
+        const label = document.createTextNode(visibleSourceLabel(source));
+
         link.appendChild(badge);
         link.appendChild(label);
         wrapper.appendChild(link);
@@ -98,11 +113,14 @@ function createImageList(sources = []) {
         link.target = "_blank";
         link.rel = "noopener noreferrer";
         link.title = image.label || `Pagina ${image.page}`;
+
         const preview = document.createElement("img");
         preview.src = image.url;
         preview.alt = image.label || `Imagen pagina ${image.page}`;
+
         const label = document.createElement("span");
         label.textContent = `Pag. ${image.page}`;
+
         link.appendChild(preview);
         link.appendChild(label);
         wrapper.appendChild(link);
@@ -135,23 +153,27 @@ function appendTextWithBreaks(container, text) {
 function renderFallbackBubble(bubble, content, sources = []) {
     let sourceIndex = 0;
     const lines = String(content || "").split("\n");
+
     lines.forEach((line, index) => {
         if (index > 0) bubble.appendChild(document.createElement("br"));
+
         const normalized = line.trim().toLowerCase();
         if (normalized.startsWith("fuente:")) {
             const source = sources[sourceIndex] || sources[sources.length - 1];
             sourceIndex += 1;
+
             if (source?.url) {
                 const link = document.createElement("a");
                 link.className = "fallback-source-link";
                 link.href = source.url;
                 link.target = "_blank";
                 link.rel = "noopener noreferrer";
-                link.textContent = line;
+                link.textContent = visibleSourceLabel(source);
                 bubble.appendChild(link);
                 return;
             }
         }
+
         bubble.appendChild(document.createTextNode(line));
     });
 }
@@ -161,6 +183,7 @@ function createRegenerateAction() {
 
     const actions = document.createElement("div");
     actions.className = "message-actions";
+
     const button = document.createElement("button");
     button.className = "inline-action";
     button.type = "button";
@@ -168,6 +191,7 @@ function createRegenerateAction() {
     button.addEventListener("click", async () => {
         await ask(lastQuery, {repeatUserMessage: false});
     });
+
     actions.appendChild(button);
     return actions;
 }
@@ -179,44 +203,54 @@ function createSpeechAction(content) {
     button.textContent = speechMuted ? "🔇" : "🔊";
     button.title = speechMuted ? "Activar lectura en voz alta" : "Leer en voz alta";
     button.setAttribute("aria-label", button.title);
+
     button.addEventListener("click", () => {
         speechMuted = !speechMuted;
         localStorage.setItem("hrrgSpeechMuted", speechMuted ? "1" : "0");
         button.textContent = speechMuted ? "🔇" : "🔊";
         button.title = speechMuted ? "Activar lectura en voz alta" : "Leer en voz alta";
         button.setAttribute("aria-label", button.title);
+
         if (speechMuted) {
             window.hrrgSpeech?.stop?.();
         } else {
             window.hrrgSpeech?.speak?.(content);
         }
     });
+
     return button;
 }
 
 function addMessage(role, content, options = {}) {
     const mode = options.mode || "";
     const fallbackMode = isFallbackMode(mode);
+
     const message = document.createElement("article");
     message.className = `message ${role}`;
+
     if (role === "assistant") {
         const avatar = document.createElement("div");
         avatar.className = "avatar";
         avatar.textContent = "AI";
         message.appendChild(avatar);
     }
+
     const contentWrapper = document.createElement("div");
     contentWrapper.className = "message-content";
+
     const bubble = document.createElement("div");
     bubble.className = "bubble";
+
     const visibleContent = role === "assistant" && shell.dataset.role === "tecnico" && !fallbackMode
         ? stripSourceLines(content)
         : content;
+
     if (role === "assistant" && fallbackMode) {
         renderFallbackBubble(bubble, visibleContent, options.sources || []);
     } else {
         appendTextWithBreaks(bubble, visibleContent);
     }
+
     contentWrapper.appendChild(bubble);
 
     const images = createImageList(options.sources);
@@ -229,14 +263,17 @@ function addMessage(role, content, options = {}) {
         const actions = document.createElement("div");
         actions.className = "message-actions";
         actions.appendChild(createSpeechAction(visibleContent));
+
         const regenerate = createRegenerateAction();
         if (regenerate?.firstChild) actions.appendChild(regenerate.firstChild);
+
         contentWrapper.appendChild(actions);
     }
 
     message.appendChild(contentWrapper);
     chatMessages.appendChild(message);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+
     if (options.track !== false) {
         conversationMessages.push({
             role,
@@ -247,6 +284,7 @@ function addMessage(role, content, options = {}) {
             },
         });
     }
+
     return message;
 }
 
@@ -261,6 +299,7 @@ function addLoadingMessage() {
 
     const contentWrapper = document.createElement("div");
     contentWrapper.className = "message-content";
+
     const bubble = document.createElement("div");
     bubble.className = "bubble loading-bubble";
     bubble.setAttribute("aria-label", "El asistente esta procesando la respuesta");
@@ -279,10 +318,12 @@ function addLoadingMessage() {
         fallbackAction.addEventListener("click", async () => {
             const query = activeQuery || lastQuery;
             if (!query) return;
+
             if (activeRequestId) {
                 activeRequestCancelled = true;
                 await window.hrrgApi.postJson("/api/chat/cancel", {request_id: activeRequestId});
             }
+
             removeLoadingMessage();
             await ask(query, {forceFallback: true, repeatUserMessage: false});
         });
@@ -293,6 +334,7 @@ function addLoadingMessage() {
     message.appendChild(contentWrapper);
     chatMessages.appendChild(message);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+
     return message;
 }
 
@@ -350,20 +392,26 @@ function renderManualsAudit(documents = []) {
 
         const title = document.createElement("div");
         title.className = "manual-title";
+
         const source = document.createElement("strong");
-        source.textContent = documentInfo.source_file;
+        source.textContent = documentInfo.display_source || documentInfo.original_pdf || documentInfo.source_file;
+
         const date = document.createElement("span");
         date.textContent = documentInfo.created_at || "Sin fecha";
+
         title.appendChild(source);
         title.appendChild(date);
 
         const equipment = document.createElement("div");
         equipment.className = "manual-equipment";
+
         const equipmentName = document.createElement("strong");
         equipmentName.textContent = documentInfo.equipment_name || "Sin equipo asociado";
+
         const metrics = document.createElement("span");
         metrics.className = "manual-metrics";
         metrics.textContent = `${documentInfo.page_count || 0} paginas - ${documentInfo.chunk_count || 0} chunks - ${documentInfo.image_count || 0} imagenes`;
+
         equipment.appendChild(equipmentName);
         equipment.appendChild(metrics);
 
@@ -381,6 +429,7 @@ function renderManualsAudit(documents = []) {
 
 async function openManualsAudit() {
     if (!manualsDialog) return;
+
     setStatus("Cargando manifiesto de ingesta...");
     try {
         const data = await window.hrrgApi.getJson("/api/ingest/audit");
@@ -407,12 +456,14 @@ async function startNewChat() {
         document.querySelector("#equipment-dialog")?.showModal();
         return;
     }
+
     await window.hrrgApi.postJson("/api/chat/memory/clear", {});
     chatMessages.innerHTML = "";
     conversationMessages = [];
     lastQuery = "";
     activeQuery = "";
     removeLoadingMessage();
+
     addMessage("assistant", `Chat nuevo iniciado para ${selectedEquipmentName}.`);
     setStatus(`Chat nuevo para ${selectedEquipmentName}. Memoria de sesion limpiada.`);
 }
@@ -422,17 +473,21 @@ async function selectEquipment(equipmentId, equipmentName) {
 
     selectedEquipmentId = equipmentId;
     selectedEquipmentName = equipmentName;
+
     if (activeEquipmentTitle) {
         activeEquipmentTitle.textContent = selectedEquipmentName;
     }
+
     if (equipmentSelect && equipmentSelect.value !== selectedEquipmentId) {
         equipmentSelect.value = selectedEquipmentId;
     }
+
     await window.hrrgApi.postJson("/api/chat/memory/clear", {});
     chatMessages.innerHTML = "";
     conversationMessages = [];
     lastQuery = "";
     activeQuery = "";
+
     addMessage("assistant", `Nuevo chat iniciado para ${selectedEquipmentName}.`);
     document.querySelector("#equipment-dialog")?.close();
     setStatus(`Equipo seleccionado: ${selectedEquipmentName}. Memoria de sesion limpiada.`);
@@ -449,10 +504,12 @@ function loadHistory() {
 
 function saveHistoryEntry(equipmentName) {
     if (!equipmentName) return;
+
     const role = shell?.dataset.role || "tecnico";
     const previousEntries = loadHistory().filter(
         (item) => !(item.equipmentName === equipmentName && (item.role || role) === role),
     );
+
     const currentEntry = {
         role,
         equipmentId: selectedEquipmentId,
@@ -460,8 +517,10 @@ function saveHistoryEntry(equipmentName) {
         createdAt: new Date().toLocaleString("es-AR", {dateStyle: "short", timeStyle: "short"}),
         messages: conversationMessages.slice(-30),
     };
+
     const sameRoleEntries = previousEntries.filter((entry) => (entry.role || role) === role).slice(0, 4);
     const otherRoleEntries = previousEntries.filter((entry) => (entry.role || role) !== role);
+
     localStorage.setItem("hrrgChatHistory", JSON.stringify([currentEntry, ...sameRoleEntries, ...otherRoleEntries]));
     renderHistory();
 }
@@ -475,9 +534,11 @@ function restoreHistoryEntry(entry) {
 
     selectedEquipmentId = entry.equipmentId || selectedEquipmentId;
     selectedEquipmentName = entry.equipmentName || selectedEquipmentName;
+
     if (activeEquipmentTitle && selectedEquipmentName) {
         activeEquipmentTitle.textContent = selectedEquipmentName;
     }
+
     if (equipmentSelect && selectedEquipmentId && equipmentSelect.value !== selectedEquipmentId) {
         equipmentSelect.value = selectedEquipmentId;
     }
@@ -489,6 +550,7 @@ function restoreHistoryEntry(entry) {
     setBusy(false);
     chatMessages.innerHTML = "";
     conversationMessages = [];
+
     messages.forEach((message) => {
         addMessage(message.role, message.content, {
             ...(message.options || {}),
@@ -496,6 +558,7 @@ function restoreHistoryEntry(entry) {
             track: false,
         });
     });
+
     conversationMessages = messages.map((message) => ({
         role: message.role,
         content: message.content,
@@ -504,19 +567,23 @@ function restoreHistoryEntry(entry) {
             sources: message.options?.sources || [],
         },
     }));
+
     const lastUserMessage = [...conversationMessages].reverse().find((message) => message.role === "user");
     lastQuery = lastUserMessage?.content || "";
+
     setStatus(`Historial cargado: ${selectedEquipmentName}.`);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 function renderHistory() {
     if (!historyList) return;
+
     historyList.innerHTML = "";
     const role = shell?.dataset.role || "tecnico";
     const entries = loadHistory()
         .filter((entry) => !entry.role || entry.role === role)
         .slice(0, 5);
+
     if (!entries.length) {
         const empty = document.createElement("p");
         empty.className = "history-empty";
@@ -524,14 +591,18 @@ function renderHistory() {
         historyList.appendChild(empty);
         return;
     }
+
     entries.forEach((entry) => {
         const card = document.createElement("button");
         card.className = "history-card";
         card.type = "button";
+
         const name = document.createElement("strong");
         name.textContent = entry.equipmentName;
+
         const date = document.createElement("span");
         date.textContent = entry.createdAt;
+
         card.appendChild(name);
         card.appendChild(date);
         card.addEventListener("click", () => restoreHistoryEntry(entry));
@@ -544,6 +615,7 @@ async function ask(query, options = {}) {
     activeRequestId = requestId;
     activeRequestCancelled = false;
     activeQuery = query;
+
     setBusy(true);
     setStatus(options.forceFallback ? "Consultando directo a fuente..." : "Procesando consulta...");
     activeLoadingMessage = addLoadingMessage();
@@ -557,20 +629,25 @@ async function ask(query, options = {}) {
             force_fallback: Boolean(options.forceFallback),
             request_id: requestId,
         });
+
         if (activeRequestCancelled || activeRequestId !== requestId) return;
+
         removeLoadingMessage();
         addMessage("assistant", data.answer, {
             sources: shell.dataset.role === "tecnico" ? data.sources : [],
             mode: data.mode,
             regenerable: true,
         });
+
         saveHistoryEntry(selectedEquipmentName);
         setStatus(modeLabel(data.mode));
+
         if (!speechMuted) {
             window.hrrgSpeech.speak(data.answer);
         }
     } catch (error) {
         if (activeRequestCancelled || activeRequestId !== requestId) return;
+
         removeLoadingMessage();
         addMessage("assistant", error.message || "No se pudo completar la consulta.");
         setStatus("Error en la consulta.");
@@ -587,10 +664,13 @@ async function ask(query, options = {}) {
 if (chatForm) {
     chatForm.addEventListener("submit", async (event) => {
         event.preventDefault();
+
         const query = messageInput.value.trim();
         if (!query) return;
+
         lastQuery = query;
         if (!event.detail?.skipUserMessage) addMessage("user", query);
+
         messageInput.value = "";
         await ask(query);
     });
@@ -599,14 +679,17 @@ if (chatForm) {
 if (abortButton) {
     abortButton.addEventListener("click", async () => {
         if (!activeRequestId) return;
+
         const requestId = activeRequestId;
         activeRequestCancelled = true;
         removeLoadingMessage();
         setBusy(false);
         activeRequestId = null;
         activeQuery = "";
+
         setStatus("Consulta detenida por el usuario.");
         window.hrrgSpeech?.stop?.();
+
         await window.hrrgApi.postJson("/api/chat/cancel", {request_id: requestId});
     });
 }
@@ -615,6 +698,7 @@ if (ingestButton) {
     ingestButton.addEventListener("click", async () => {
         setStatus("Indexando Markdown desde data/processed...");
         ingestButton.disabled = true;
+
         try {
             const data = await window.hrrgApi.postJson("/api/ingest/", {});
             setStatus(
@@ -677,18 +761,22 @@ if (qrButton) {
 
         qrButton.disabled = true;
         setStatus("Generando codigo QR del equipo seleccionado...");
+
         try {
             const data = await window.hrrgApi.postJson("/api/qr/", {
                 equipment_id: selectedEquipmentId,
                 base_url: window.location.origin,
             });
+
             const result = data.generated[0];
             const imageUrl = `/static/img/qr/qr_${result.equipment_id}.png?ts=${Date.now()}`;
+
             qrTitle.textContent = result.equipment_name;
             qrImage.src = imageUrl;
             qrUrl.textContent = result.url;
             qrOpenLink.href = result.url;
             qrDialog.showModal();
+
             setStatus(`QR listo para ${result.equipment_name}.`);
         } catch (error) {
             addMessage("assistant", error.message);
@@ -703,6 +791,7 @@ if (qrCopyButton) {
     qrCopyButton.addEventListener("click", async () => {
         const value = qrUrl.textContent.trim();
         if (!value) return;
+
         await navigator.clipboard.writeText(value);
         setStatus("URL del QR copiada.");
     });
@@ -716,11 +805,13 @@ if (voiceButton) {
         },
         setStatus,
     );
+
     voiceButton.addEventListener("click", () => {
         if (!recognition) {
             setStatus("El navegador no soporta entrada por voz.");
             return;
         }
+
         recognition.start();
         setStatus("Escuchando...");
     });

@@ -179,7 +179,6 @@ class IngestionService:
 
         return included
 
-
     def _load_markdown_as_documents(self, markdown_path: Path, source_dir: Path) -> list[Document]:
         text = markdown_path.read_text(encoding="utf-8", errors="replace")
         equipment = infer_equipment_from_path(markdown_path, source_dir) or infer_equipment_from_text(text)
@@ -192,11 +191,12 @@ class IngestionService:
         if not pages:
             pages = [(1, text)]
 
-        source_url_by_page = self._document_source_urls(markdown_path)
         documents: list[Document] = []
         for page_number, page_text in pages:
             clean_text = self._strip_markdown_image_noise(page_text).strip()
             image_refs = self._extract_image_refs(page_text, page_number)
+            source_reference = self._source_reference_for_markdown(markdown_path, page_number)
+
             if not clean_text and not image_refs:
                 continue
             if not clean_text:
@@ -208,13 +208,24 @@ class IngestionService:
                     metadata={
                         "equipment_id": equipment.id,
                         "equipment_name": equipment.name,
+
+                        # Fuente interna del RAG: Markdown procesado.
                         "source_file": markdown_path.name,
-                        "page": page_number,
+                        "markdown_page": page_number,
+
+                        # Fuente visible para usuario final: PDF/manual original.
+                        "original_pdf": source_reference["original_pdf"],
+                        "display_source": source_reference["display_source"],
+                        "pdf_page": source_reference["pdf_page"],
+
+                        # Campo legado: se conserva para compatibilidad.
+                        "page": source_reference["pdf_page"],
+
                         "document_type": "manual_markdown",
                         "has_images": bool(image_refs),
                         "image_count": len(image_refs),
                         "image_refs": json.dumps(image_refs, ensure_ascii=False),
-                        "source_url": source_url_by_page(page_number),
+                        "source_url": source_reference["source_url"],
                     },
                 )
             )
@@ -224,7 +235,7 @@ class IngestionService:
         return documents
 
     def _split_markdown_pages(self, text: str) -> list[tuple[int, str]]:
-        matches = list(re.finditer(r"(?im)^#\s*P(?:a|Ã¡|á)gina\s+(\d+)\s*$", text))
+        matches = list(re.finditer(r"(?im)^#\s*P(?:a|ÃƒÂ¡|Ã¡|á)gina\s+(\d+)\s*$", text))
         if not matches:
             return []
 
@@ -268,25 +279,84 @@ class IngestionService:
         text = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", text)
         return text
 
-    def _document_source_urls(self, markdown_path: Path):
+    def _source_reference_for_markdown(self, markdown_path: Path, markdown_page: int) -> dict[str, object]:
         original_pdf = self._original_pdf_for_markdown(markdown_path)
+        pdf_page = markdown_page
 
-        def build(page_number: int) -> str:
-            if original_pdf:
-                return f"/manuals/{quote(original_pdf)}#page={page_number}"
-            return f"/processed/{markdown_path.name}#page-{page_number}"
+        if original_pdf:
+            display_source = Path(original_pdf.replace("\\", "/")).name
+            return {
+                "original_pdf": original_pdf,
+                "display_source": display_source,
+                "markdown_page": markdown_page,
+                "pdf_page": pdf_page,
+                "source_url": f"/manuals/{quote(original_pdf)}#page={pdf_page}",
+            }
 
-        return build
+        return {
+            "original_pdf": "",
+            "display_source": markdown_path.name,
+            "markdown_page": markdown_page,
+            "pdf_page": pdf_page,
+            "source_url": f"/processed/{markdown_path.name}#page-{markdown_page}",
+        }
 
     def _original_pdf_for_markdown(self, markdown_path: Path) -> str | None:
+        override = self._original_pdf_from_overrides(markdown_path.name)
+        if override:
+            return override
+
+        direct_match = self._original_pdf_from_raw(markdown_path)
+        if direct_match:
+            return direct_match
+
+        manifest_match = self._original_pdf_from_manifest(markdown_path)
+        if manifest_match:
+            return manifest_match
+
+        return None
+
+    def _original_pdf_from_overrides(self, source_file: str) -> str | None:
+        overrides_path = settings.processed_documents_dir.parent / "inventory" / "pdf_source_overrides.csv"
+        if not overrides_path.exists():
+            return None
+
+        with overrides_path.open("r", encoding="utf-8-sig", errors="replace", newline="") as file:
+            for row in csv.DictReader(file):
+                if (row.get("source_file") or "").strip() == source_file:
+                    original_pdf = (row.get("original_pdf") or "").strip()
+                    if original_pdf:
+                        return original_pdf.replace("\\", "/")
+
+        return None
+
+    def _original_pdf_from_raw(self, markdown_path: Path) -> str | None:
+        expected_pdf_name = f"{markdown_path.stem}.pdf"
+        raw_dir = settings.raw_documents_dir
+
+        if not raw_dir.exists():
+            return None
+
+        for pdf_path in raw_dir.rglob("*.pdf"):
+            if pdf_path.name == expected_pdf_name:
+                return pdf_path.relative_to(raw_dir).as_posix()
+
+        return None
+
+    def _original_pdf_from_manifest(self, markdown_path: Path) -> str | None:
         manifest_path = settings.processed_documents_dir / "pdf_name_manifest.csv"
         normalized_name = f"{markdown_path.stem}.pdf"
+
         if not manifest_path.exists():
             return None
-        with manifest_path.open("r", encoding="utf-8", errors="replace", newline="") as file:
+
+        with manifest_path.open("r", encoding="utf-8-sig", errors="replace", newline="") as file:
             for row in csv.DictReader(file):
-                if row.get("normalized_file") == normalized_name:
-                    return str(row.get("source_relative_path") or "").replace("\\", "/")
+                if (row.get("normalized_file") or "").strip() == normalized_name:
+                    original_pdf = (row.get("source_relative_path") or "").strip()
+                    if original_pdf:
+                        return original_pdf.replace("\\", "/")
+
         return None
 
     def _load_pdf_as_documents(self, pdf_path: Path, source_dir: Path) -> list[Document]:
@@ -349,16 +419,22 @@ class IngestionService:
         equipment: Equipment,
         page: dict[str, object],
     ) -> Document:
+        pdf_page = int(page["page"])
         return Document(
             page_content=str(page["text"]),
             metadata={
                 "equipment_id": equipment.id,
                 "equipment_name": equipment.name,
                 "source_file": pdf_path.name,
-                "page": int(page["page"]),
+                "original_pdf": pdf_path.name,
+                "display_source": pdf_path.name,
+                "markdown_page": pdf_page,
+                "pdf_page": pdf_page,
+                "page": pdf_page,
                 "document_type": "manual_tecnico",
                 "has_images": bool(page["has_images"]),
                 "image_count": int(page["image_count"]),
+                "source_url": f"/manuals/{quote(pdf_path.name)}#page={pdf_page}",
             },
         )
 

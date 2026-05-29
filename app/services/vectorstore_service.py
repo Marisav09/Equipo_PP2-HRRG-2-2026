@@ -110,10 +110,18 @@ class VectorstoreService:
             if not source_file:
                 continue
 
+            display_source = str(
+                metadata.get("display_source")
+                or metadata.get("original_pdf")
+                or source_file
+            ).strip()
+
             current = sources.setdefault(
                 source_file,
                 {
                     "source_file": source_file,
+                    "display_source": display_source,
+                    "original_pdf": metadata.get("original_pdf") or "",
                     "status": "indexed",
                     "equipment_id": metadata.get("equipment_id"),
                     "equipment_name": metadata.get("equipment_name") or metadata.get("equipo"),
@@ -127,7 +135,7 @@ class VectorstoreService:
 
             current["chunk_count"] += 1
 
-            page = metadata.get("page")
+            page = metadata.get("pdf_page") or metadata.get("page")
             if page not in (None, "", "sin_pagina"):
                 try:
                     page_number = int(page)
@@ -187,15 +195,23 @@ class VectorstoreService:
     ) -> RetrievedChunk:
         metadata: dict[str, Any] = document.metadata or {}
         equipment_name = str(metadata.get("equipment_name") or metadata.get("equipo") or "").strip()
+
+        pdf_page = metadata.get("pdf_page") or metadata.get("page", "sin_pagina")
+        markdown_page = metadata.get("markdown_page", "")
+
         citation = SourceCitation(
             source_file=str(metadata.get("source_file", "sin_fuente")),
-            page=metadata.get("page", "sin_pagina"),
+            page=pdf_page,
             chunk_id=str(metadata.get("chunk_id", "sin_chunk")),
             equipment_name=equipment_name or expected_equipment,
             has_images=bool(metadata.get("has_images", False)),
             image_count=int(metadata.get("image_count", 0) or 0),
             url=str(metadata.get("source_url") or ""),
             images=self._decode_images(metadata.get("image_refs")),
+            display_source=str(metadata.get("display_source") or ""),
+            original_pdf=str(metadata.get("original_pdf") or ""),
+            pdf_page=pdf_page,
+            markdown_page=markdown_page,
         )
         return RetrievedChunk(
             text=document.page_content,
@@ -207,7 +223,7 @@ class VectorstoreService:
         metadata = document.metadata or {}
         equipment = str(metadata.get("equipment_name", "sin_equipo")).replace(" ", "_")
         source = str(metadata.get("source_file", "documento")).replace(" ", "_")
-        page = metadata.get("page", "sin_pagina")
+        page = metadata.get("markdown_page") or metadata.get("page", "sin_pagina")
         chunk_id = metadata.get("chunk_id", index)
         return f"{equipment}::{source}::p{page}::c{chunk_id}"
 
