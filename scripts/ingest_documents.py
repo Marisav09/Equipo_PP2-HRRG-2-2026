@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -12,9 +13,24 @@ from app.core.logging_config import configure_logging
 from app.services.ingestion_service import IngestionService
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Ingesta documentos Markdown procesados en ChromaDB."
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Reindexa aunque el hash del Markdown no haya cambiado.",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     configure_logging()
-    result = IngestionService().ingest_directory()
+
+    result = IngestionService().ingest_directory(force=args.force)
+
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
