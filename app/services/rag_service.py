@@ -611,6 +611,101 @@ Respuesta:""".strip()
                 ]
             )
 
+        if (
+            "no carga energia" in normalized
+            or "no carga energía" in normalized
+            or "no carga bateria" in normalized
+            or "no carga batería" in normalized
+            or "no carga" in normalized
+            or "carga energia" in normalized
+            or "carga energía" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "power failure",
+                    "AC/DC power supply",
+                    "power management board",
+                    "battery",
+                    "fully charged battery",
+                    "charge",
+                    "charging",
+                    "charging prohibited",
+                    "capacitor",
+                    "capacitor charge",
+                    "energy charging",
+                    "energy disarming",
+                    "discharging failed",
+                    "defibrillator energy",
+                    "self-test",
+                    "M0 -2V5 power failure",
+                    "DVDD power failure",
+                    "ASIC_VREF power failure",
+                ]
+            )
+
+        if (
+            "no completa ciclo" in normalized
+            or "no termina ciclo" in normalized
+            or "ciclo incompleto" in normalized
+            or "ciclo abortado" in normalized
+            or "ciclo cancelado" in normalized
+            or "cycle abort" in normalized
+            or "cycle aborted" in normalized
+            or "cycle cancelled" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "cycle cancelled",
+                    "cycle aborted",
+                    "cycle abort",
+                    "sterilization cycle",
+                    "restart sterilizer",
+                    "vacuum insufficient",
+                    "vacuum not low enough",
+                    "pre-plasma",
+                    "plasma stage",
+                    "RF subsystem",
+                    "low plasma power",
+                    "moisture in load",
+                    "load may be out-gassing",
+                    "repackage load",
+                    "cassette",
+                    "pressure",
+                    "error",
+                ]
+            )
+
+        if (
+            "alarma oxigeno" in normalized
+            or "alarma oxígeno" in normalized
+            or "alarma o2" in normalized
+            or "o2 alarm" in normalized
+            or "oxygen alarm" in normalized
+            or "fio2" in normalized
+            or "fiO2" in question
+        ):
+            expansion_terms.extend(
+                [
+                    "oxygen alarm",
+                    "O2 alarm",
+                    "O2 concentration",
+                    "FiO2",
+                    "measured O2 concentration",
+                    "O2 cell",
+                    "oxygen cell",
+                    "expected cell life",
+                    "replace O2 cell",
+                    "gas supply",
+                    "gas supply pressure",
+                    "O2 supply",
+                    "Air and O2",
+                    "gas modules",
+                    "replace gas modules",
+                    "Pre-use check",
+                    "calibration",
+                ]
+            )
+
         if expansion_terms:
             unique_terms = list(dict.fromkeys(expansion_terms))
             expanded_question = (
