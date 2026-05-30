@@ -131,7 +131,7 @@ class RagService:
                 return {
                     "answer": "Respuesta cancelada por el usuario.",
                     "mode": "cancelled",
-                    "sources": [chunk.citation.to_dict() for chunk in chunks],
+                    "sources": self._sources_for_role(chat_request.role, chunks),
                     "session_id": session_id,
                 }
 
@@ -300,14 +300,44 @@ Respuesta:""".strip()
     def _sources_for_role(self, role: str, chunks: list[RetrievedChunk]) -> list[dict]:
         if role != "tecnico":
             return []
-        seen: set[tuple[str, str]] = set()
-        sources = []
+
+        seen_sources: set[tuple[str, str]] = set()
+        seen_images: set[str] = set()
+        sources: list[dict] = []
+
+        max_image_sources = 3
+        max_total_images = 4
+        total_images = 0
+
         for chunk in chunks:
             key = (chunk.citation.source_file, str(chunk.citation.page))
-            if key in seen:
+            if key in seen_sources:
                 continue
-            seen.add(key)
-            sources.append(chunk.citation.to_dict())
+
+            seen_sources.add(key)
+            source = chunk.citation.to_dict()
+
+            # Se conservan todas las fuentes documentales, pero se limita
+            # la cantidad de imagenes enviadas al frontend para evitar ruido visual.
+            # La curaduria visual fina queda para Marisa/Dario; aca solo se controla
+            # trazabilidad, duplicados y sobrecarga de miniaturas.
+            filtered_images = []
+            if len(sources) < max_image_sources and total_images < max_total_images:
+                for image in source.get("images", []):
+                    image_url = str(image.get("url") or "").strip()
+                    if not image_url or image_url in seen_images:
+                        continue
+
+                    seen_images.add(image_url)
+                    filtered_images.append(image)
+                    total_images += 1
+
+                    if total_images >= max_total_images:
+                        break
+
+            source["images"] = filtered_images
+            sources.append(source)
+
         return sources
 
     def _format_image_context(self, chunk: RetrievedChunk) -> str:
