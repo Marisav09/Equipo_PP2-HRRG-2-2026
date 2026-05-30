@@ -9,6 +9,7 @@ if (loginForm) {
             const data = await window.hrrgApi.postJson("/api/auth/login", {
                 username: formData.get("username"),
                 password: formData.get("password"),
+                profile: formData.get("profile"),
             });
             window.location.href = data.redirect_url;
         } catch (error) {

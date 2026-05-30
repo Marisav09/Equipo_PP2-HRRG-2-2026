@@ -52,6 +52,7 @@ class Settings:
     embedding_batch_size: int = _get_int("EMBEDDING_BATCH_SIZE", 4)
     enable_ocr: bool = _get_bool("ENABLE_OCR", False)
     technical_user_password: str = os.getenv("TECHNICAL_USER_PASSWORD", "tecnico-hrrg")
+    operator_user_password: str = os.getenv("OPERATOR_USER_PASSWORD", "operador-hrrg")
 
     def ensure_directories(self) -> None:
         for directory in (

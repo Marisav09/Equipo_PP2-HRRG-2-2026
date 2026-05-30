@@ -1,25 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}Login Tecnico | HRRG{% endblock %}
+{% block title %}Login {{ "Operador" if profile == "operador" else "Técnico" }} | HRRG{% endblock %}
 
 {% block content %}
-<main class="login-screen">
+<main class="login-screen login-screen-{{ profile }}">
     <section class="login-panel">
         <p class="eyebrow">Hospital Regional Rio Grande</p>
-        <h1>Ingenieria Clinica</h1>
-        <p class="muted">Acceso tecnico al asistente documental local.</p>
+        <h1>Acceso {{ "Operador" if profile == "operador" else "Técnico" }}</h1>
 
         <form class="login-form" id="login-form">
+            <input type="hidden" name="profile" value="{{ profile }}">
             <label>
                 Usuario
-                <input type="text" name="username" value="tecnico" autocomplete="username">
+                <input type="text" name="username" value="{{ profile }}" autocomplete="username">
             </label>
             <label>
-                Contrasena
+                Contraseña
                 <input type="password" name="password" autocomplete="current-password" required>
             </label>
             <button class="primary-button" type="submit">Ingresar</button>
             <p class="form-error" id="login-error" hidden>Credenciales invalidas.</p>
+            <a class="login-back-link" href="{{ url_for('web.home') }}">Volver a la pantalla inicial</a>
         </form>
     </section>
 </main>

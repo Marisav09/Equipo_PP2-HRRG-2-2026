@@ -3,107 +3,73 @@
 {% block title %}Consola Tecnica | HRRG{% endblock %}
 
 {% block content %}
-<main class="app-shell" data-role="tecnico">
-    <aside class="sidebar">
-        <img class="sidebar-logo" src="{{ url_for('static', filename='img/hrrg-logo.svg') }}" alt="HRRG">
-        <nav class="sidebar-actions" aria-label="Acciones tecnico">
-        <button class="icon-button active" type="button" id="new-chat-button" title="Nuevo chat" aria-label="Nuevo chat">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8M8 13h5"/></svg>
-            <span>Nuevo chat</span>
-        </button>
-        <button class="icon-button" type="button" id="equipment-dialog-button" title="Seleccionar equipo" aria-label="Seleccionar equipo">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v10H4z"/><path d="M8 20h8M12 16v4"/><path d="m7 11 3 0 2-4 2 8 2-4h2"/></svg>
-            <span>Seleccionar equipo</span>
-        </button>
-        <button class="icon-button" type="button" id="qr-button" title="Codigo QR" aria-label="Codigo QR">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z"/><path d="M14 14h2v2h-2zM19 14h2v5h-5v2h-2v-5h5z"/></svg>
-            <span>Codigo QR</span>
-        </button>
-        <button class="icon-button" type="button" id="manuals-button" title="Manuales cargados" aria-label="Manuales cargados">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8"/></svg>
-            <span>Manuales cargados</span>
-        </button>
-        </nav>
-        <section class="history-panel" aria-label="Historial">
-            <h2>Historial</h2>
-            <p>Ultimos 5 chats</p>
-            <div class="history-list" id="history-list"></div>
-        </section>
-    </aside>
-
-    <section class="workspace">
-        <header class="topbar">
-            <div class="equipment-heading">
-                <h1>Asistente IA para Ingenieria Clinica HRRG</h1>
-                <label class="equipment-select-label" for="equipment-select">
-                    <span>Equipo: <strong id="active-equipment">Sin equipo seleccionado</strong></span>
-                    <select id="equipment-select">
-                        <option value="">Seleccionar equipo</option>
-                        {% for equipment in equipments %}
-                        <option value="{{ equipment.id }}" data-equipment-name="{{ equipment.name }}">{{ equipment.name }}</option>
-                        {% endfor %}
-                    </select>
-                </label>
+<main class="app-shell chat-product-shell" data-role="tecnico" data-equipment-id="{{ equipment.id if equipment else '' }}" data-equipment-name="{{ equipment.name if equipment else '' }}">
+    <section class="workspace chat-workspace">
+        <header class="chat-compact-topbar">
+            <a class="chat-nav-action" href="{{ url_for('web.technician_equipment_selector') }}">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/><path d="M9 12h12"/></svg>
+                <span>Cambiar equipo</span>
+            </a>
+            <div class="chat-active-equipment" aria-live="polite">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v10H4z"/><path d="M8 20h8M12 16v4"/><path d="m7 11 3 0 2-4 2 8 2-4h2"/></svg>
+                <strong id="active-equipment">{{ equipment.name if equipment else "Equipo no reconocido" }}</strong>
             </div>
-            <button class="exit-button" type="button" id="logout-button" aria-label="Salir">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
-                <span>Salir</span>
-            </button>
+            <div class="chat-topbar-actions">
+                <button class="chat-nav-action speech-toggle-button" type="button" id="speech-toggle-button" aria-label="Silenciar lectura en voz alta"></button>
+                <button class="chat-nav-action chat-logout-action" type="button" id="logout-button" aria-label="Salir">
+                    <span>Salir</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+                </button>
+            </div>
         </header>
 
         {% include "partials/chat_panel.html" %}
     </section>
+
+    <div class="chat-floating-actions" aria-label="Herramientas tecnicas">
+        <button class="floating-tool-button" type="button" id="manuals-button" title="Manuales cargados" aria-label="Manuales cargados">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8"/></svg>
+        </button>
+        <button class="floating-tool-button" type="button" id="qr-button" title="Codigo QR" aria-label="Codigo QR">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z"/><path d="M14 14h2v2h-2zM19 14h2v5h-5v2h-2v-5h5z"/></svg>
+        </button>
+        <button class="floating-tool-button" type="button" id="new-chat-button" title="Nuevo chat" aria-label="Nuevo chat">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8M8 13h5"/></svg>
+        </button>
+    </div>
+
+    <dialog class="manuals-dialog" id="manuals-dialog">
+        <section class="manuals-panel">
+            <div class="dialog-header">
+                <div>
+                    <p class="eyebrow">Trazabilidad documental</p>
+                    <h2>Manuales cargados</h2>
+                </div>
+                <button class="dialog-close" type="button" id="manuals-close-button" aria-label="Cerrar">Cerrar</button>
+            </div>
+            <div class="manuals-summary" id="manuals-summary"></div>
+            <div class="manuals-list" id="manuals-list"></div>
+        </section>
+    </dialog>
+
+    <dialog class="qr-dialog" id="qr-dialog">
+        <form method="dialog" class="qr-panel">
+            <div class="dialog-header">
+                <div>
+                    <p class="eyebrow">Acceso operador</p>
+                    <h2 id="qr-title">Codigo QR</h2>
+                </div>
+                <button class="dialog-close" type="submit" aria-label="Cerrar">Cerrar</button>
+            </div>
+            <div class="qr-preview">
+                <img id="qr-image" alt="Codigo QR del equipo seleccionado">
+            </div>
+            <div class="qr-url" id="qr-url"></div>
+            <div class="qr-actions">
+                <a class="secondary-button" id="qr-open-link" href="#" target="_blank" rel="noopener noreferrer">Abrir URL</a>
+                <button class="primary-button" type="button" id="qr-copy-button">Copiar URL</button>
+            </div>
+        </form>
+    </dialog>
 </main>
-
-<dialog class="equipment-dialog" id="equipment-dialog">
-    <form method="dialog">
-        <p class="eyebrow">Nuevo chat</p>
-        <h2>Seleccionar equipo exacto</h2>
-        <div class="equipment-grid">
-            {% for equipment in equipments %}
-            <button class="equipment-card" type="button" data-equipment-id="{{ equipment.id }}" data-equipment-name="{{ equipment.name }}">
-                {{ equipment.name }}
-            </button>
-            {% endfor %}
-        </div>
-    </form>
-</dialog>
-
-<dialog class="manuals-dialog" id="manuals-dialog">
-    <section class="manuals-panel">
-        <div class="dialog-header">
-            <div>
-                <p class="eyebrow">Trazabilidad documental</p>
-                <h2>Manuales cargados</h2>
-            </div>
-            <button class="dialog-close" type="button" id="manuals-close-button" aria-label="Cerrar">Cerrar</button>
-        </div>
-        <div class="manuals-summary" id="manuals-summary"></div>
-        <div class="manuals-list" id="manuals-list"></div>
-    </section>
-</dialog>
-
-<dialog class="qr-dialog" id="qr-dialog">
-    <form method="dialog" class="qr-panel">
-        <div class="dialog-header">
-            <div>
-                <p class="eyebrow">Acceso operador</p>
-                <h2 id="qr-title">Codigo QR</h2>
-            </div>
-            <button class="dialog-close" type="submit" aria-label="Cerrar">Cerrar</button>
-        </div>
-        <div class="qr-preview">
-            <img id="qr-image" alt="Codigo QR del equipo seleccionado">
-        </div>
-        <div class="qr-url" id="qr-url"></div>
-        <div class="qr-actions">
-            <a class="secondary-button" id="qr-open-link" href="#" target="_blank" rel="noopener noreferrer">Abrir URL</a>
-            <button class="primary-button" type="button" id="qr-copy-button">Copiar URL</button>
-        </div>
-    </form>
-</dialog>
-{% endblock %}
-
-{% block scripts %}
-<script src="{{ url_for('static', filename='js/technician.js') }}"></script>
 {% endblock %}

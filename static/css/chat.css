@@ -377,15 +377,1153 @@
     width: 34px;
     height: 34px;
     place-items: center;
-    border-radius: 12px;
+    border-radius: 999px;
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    color: white;
+    color: #083344;
     font-size: 0.72rem;
     font-weight: 950;
 }
 
+/* Premium profile console theme: visual-only overrides, no behavior changes. */
+.app-shell {
+    position: relative;
+    isolation: isolate;
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(13, 148, 136, 0.76), rgba(3, 105, 161, 0.84), rgba(6, 78, 59, 0.9)),
+        url("/static/img/hospital-equipment-room.png") center / cover no-repeat;
+    color: #e9fbff;
+}
+
+.app-shell::before,
+.app-shell::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.app-shell::before {
+    background:
+        radial-gradient(circle at 18% 16%, rgba(45, 212, 191, 0.28), transparent 34%),
+        radial-gradient(circle at 78% 22%, rgba(56, 189, 248, 0.22), transparent 28%),
+        radial-gradient(circle at 56% 88%, rgba(16, 185, 129, 0.16), transparent 32%);
+}
+
+.app-shell::after {
+    background-image:
+        linear-gradient(rgba(125, 211, 252, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(125, 211, 252, 0.055) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: radial-gradient(circle at center, #000 0%, transparent 74%);
+}
+
+.sidebar,
+.workspace,
+.topbar,
+.status-strip,
+.composer {
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 18px 0 60px rgba(2, 6, 23, 0.22);
+    backdrop-filter: blur(24px);
+}
+
+[data-role="operador"] .sidebar {
+    background: rgba(14, 165, 233, 0.10);
+}
+
+.sidebar-logo {
+    width: 188px;
+    height: 78px;
+    filter: drop-shadow(0 18px 32px rgba(8, 47, 73, 0.42));
+}
+
+.sidebar .icon-button {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(236, 254, 255, 0.78);
+    box-shadow: 0 14px 34px rgba(2, 6, 23, 0.18);
+    backdrop-filter: blur(18px);
+}
+
+.sidebar .icon-button:hover,
+.sidebar .icon-button.active {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.28), rgba(45, 212, 191, 0.18));
+    color: #ecfeff;
+    box-shadow: 0 18px 42px rgba(14, 165, 233, 0.18);
+}
+
+[data-role="tecnico"] .sidebar .icon-button:hover,
+[data-role="tecnico"] .sidebar .icon-button.active {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.32), rgba(20, 184, 166, 0.2));
+    box-shadow: 0 18px 42px rgba(16, 185, 129, 0.18);
+}
+
+.sidebar .icon-button svg {
+    border-color: rgba(125, 211, 252, 0.28);
+    background: rgba(255, 255, 255, 0.08);
+    color: #a5f3fc;
+}
+
+[data-role="tecnico"] .sidebar .icon-button svg {
+    color: #a7f3d0;
+}
+
+.history-panel {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 16px;
+}
+
+.history-panel h2 {
+    color: #ecfeff;
+}
+
+.history-panel p,
+.history-card span,
+.history-empty {
+    color: rgba(207, 250, 254, 0.58);
+}
+
+.history-card {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    color: #ecfeff;
+    backdrop-filter: blur(14px);
+}
+
+.history-card:hover {
+    border-color: rgba(125, 211, 252, 0.34);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.workspace,
+[data-role="operador"] .workspace {
+    background: rgba(15, 23, 42, 0.26);
+}
+
+.topbar,
+[data-role="operador"] .topbar {
+    min-height: 104px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 22px 60px rgba(2, 6, 23, 0.16);
+    backdrop-filter: blur(22px);
+}
+
+.topbar h1 {
+    max-width: 820px;
+    background: linear-gradient(90deg, #5eead4, #e0f2fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(1.45rem, 2.2vw, 2.3rem);
+    font-weight: 950;
+}
+
+.equipment-line,
+.equipment-select-label,
+.equipment-select-label span {
+    color: rgba(207, 250, 254, 0.74);
+}
+
+.equipment-select-label strong,
+.equipment-line strong {
+    color: #a5f3fc;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+[data-role="tecnico"] .equipment-select-label strong,
+[data-role="tecnico"] .equipment-line strong {
+    color: #a7f3d0;
+}
+
+.equipment-select-label select {
+    border-color: rgba(125, 211, 252, 0.28);
+    background: rgba(15, 23, 42, 0.58);
+    color: #ecfeff;
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.18);
+}
+
+.exit-button,
+.dialog-close,
+.inline-action,
+.secondary-button {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(236, 254, 255, 0.86);
+    backdrop-filter: blur(16px);
+}
+
+.exit-button:hover,
+.dialog-close:hover,
+.inline-action:hover,
+.secondary-button:hover {
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 14px 32px rgba(2, 6, 23, 0.18);
+}
+
+.status-strip,
+[data-role="operador"] .status-strip {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(15, 23, 42, 0.18);
+    color: rgba(207, 250, 254, 0.62);
+    backdrop-filter: blur(16px);
+}
+
+.chat-messages {
+    background:
+        radial-gradient(circle at 20% 22%, rgba(45, 212, 191, 0.08), transparent 28%),
+        radial-gradient(circle at 82% 18%, rgba(56, 189, 248, 0.08), transparent 26%);
+}
+
+.avatar.ai-avatar,
+[data-role="operador"] .avatar.ai-avatar,
+[data-role="tecnico"] .avatar.ai-avatar {
+    border-color: rgba(255, 255, 255, 0.38);
+    box-shadow: 0 18px 36px rgba(2, 6, 23, 0.28);
+}
+
+.avatar:not(.ai-avatar) {
+    background: linear-gradient(135deg, #0ea5e9, #67e8f9);
+    color: #082f49;
+}
+
+[data-role="tecnico"] .avatar:not(.ai-avatar) {
+    background: linear-gradient(135deg, #10b981, #2dd4bf);
+    color: #052e16;
+}
+
+.bubble,
+[data-role="operador"] .message.assistant .bubble,
+[data-role="tecnico"] .message.assistant .bubble {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.11);
+    color: rgba(236, 254, 255, 0.92);
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.18);
+    backdrop-filter: blur(18px);
+}
+
+.message.user .bubble,
+[data-role="operador"] .message.user .bubble {
+    background: linear-gradient(135deg, #0284c7, #22d3ee);
+    color: #ecfeff;
+    box-shadow: 0 18px 42px rgba(14, 165, 233, 0.18);
+}
+
+[data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #059669, #2dd4bf);
+    color: #ecfdf5;
+    box-shadow: 0 18px 42px rgba(16, 185, 129, 0.18);
+}
+
+.composer,
+[data-role="operador"] .composer {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 -24px 60px rgba(2, 6, 23, 0.16);
+    backdrop-filter: blur(22px);
+}
+
+.composer input {
+    border-color: rgba(125, 211, 252, 0.30);
+    background: rgba(15, 23, 42, 0.62);
+    color: #ecfeff;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 16px 34px rgba(2, 6, 23, 0.18);
+}
+
+.composer input::placeholder {
+    color: rgba(207, 250, 254, 0.54);
+}
+
+.composer input:focus {
+    border-color: #67e8f9;
+    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.14), 0 18px 38px rgba(2, 6, 23, 0.22);
+}
+
+.primary-button,
+.send-button {
+    background: linear-gradient(135deg, #0ea5e9, #67e8f9);
+    color: #082f49;
+    box-shadow: 0 18px 38px rgba(14, 165, 233, 0.24);
+}
+
+[data-role="tecnico"] .primary-button,
+[data-role="tecnico"] .send-button {
+    background: linear-gradient(135deg, #10b981, #2dd4bf);
+    color: #052e16;
+    box-shadow: 0 18px 38px rgba(16, 185, 129, 0.24);
+}
+
+.round-button,
+.stop-button {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.10);
+    color: #cffafe;
+    backdrop-filter: blur(16px);
+}
+
+.stop-button {
+    color: #fda4af;
+}
+
+/* Absolute final readability overrides. Keep this block last. Home is excluded. */
+.chat-product-shell,
+.chat-product-shell *,
+.chat-product-shell .status-strip,
+.chat-product-shell .compact-status-strip,
+.chat-product-shell .compact-status-strip span {
+    color: #111827;
+}
+
+.chat-product-shell .chat-compact-topbar,
+.chat-product-shell .chatgpt-composer,
+[data-role="operador"].chat-product-shell .chatgpt-composer,
+.chat-product-shell .compact-status-strip {
+    background: rgba(248, 250, 252, 0.88);
+    border-color: #cbd5e1;
+}
+
+.chat-product-shell .chat-nav-action,
+.chat-product-shell .chat-active-equipment,
+.chat-product-shell .chat-active-equipment strong,
+.chat-product-shell .floating-tool-button,
+.chat-product-shell .round-button,
+.chat-product-shell .stop-button,
+.chat-product-shell .inline-action,
+.chat-product-shell .speech-action,
+.chat-product-shell .message-actions .inline-action {
+    color: #0f3f4a;
+}
+
+.chat-product-shell .message.assistant .bubble,
+.chat-product-shell[data-role="operador"] .message.assistant .bubble,
+.chat-product-shell[data-role="tecnico"] .message.assistant .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.assistant .bubble *,
+.chat-product-shell .message.assistant .bubble strong {
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell[data-role="operador"] .message.user .bubble,
+.chat-product-shell[data-role="tecnico"] .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #d9f7fb, #ccfbf1);
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.user .bubble *,
+.chat-product-shell .message-content,
+.chat-product-shell .bubble {
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .chatgpt-composer input,
+.chat-product-shell[data-role="operador"] .chatgpt-composer input,
+.chat-product-shell[data-role="tecnico"] .chatgpt-composer input,
+.chat-product-shell .composer input {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #111827;
+    font-weight: 400;
+    -webkit-text-fill-color: #111827;
+}
+
+.chat-product-shell .chatgpt-composer input::placeholder,
+.chat-product-shell .composer input::placeholder {
+    color: #475569;
+    font-weight: 400;
+}
+
+.chat-product-shell .compact-status-strip,
+.chat-product-shell .compact-status-strip span,
+.chat-product-shell .status-strip {
+    color: #1f2937;
+    font-weight: 400;
+}
+
+.chat-product-shell .source-chip,
+.chat-product-shell .fallback-source-link,
+.chat-product-shell .direct-source-button,
+.chat-product-shell .direct-source-card {
+    color: #0f766e;
+}
+
+/* Final audio/source readability pass. Keep last. */
+.chat-product-shell .chat-topbar-actions {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-product-shell .speech-toggle-button,
+.chat-product-shell .speech-action {
+    min-width: 44px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #0e7490;
+    background: #ecfeff;
+    color: #0f3f4a;
+    box-shadow: 0 10px 24px rgba(8, 47, 73, 0.16);
+}
+
+.chat-product-shell .speech-action {
+    width: 52px;
+    height: 40px;
+    padding: 0;
+}
+
+.chat-product-shell .speech-toggle-button svg,
+.chat-product-shell .speech-action svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.chat-product-shell .speech-action span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.chat-product-shell .speech-toggle-button[data-muted="true"],
+.chat-product-shell .speech-action[data-muted="true"] {
+    border-color: #64748b;
+    background: #f8fafc;
+    color: #334155;
+}
+
+.chat-product-shell .initial-equipment-name {
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.chat-product-shell .source-chip,
+.chat-product-shell .fallback-source-link,
+.chat-product-shell .direct-source-card,
+.chat-product-shell .source-label {
+    color: #0f766e;
+    font-weight: 400;
+}
+
+.chat-product-shell .source-chip span,
+.chat-product-shell .fallback-source-link {
+    font-weight: 400;
+}
+
+.chat-product-shell .source-chip > span:first-child {
+    color: #083344;
+    font-weight: 600;
+}
+
+.chat-product-shell .extract-title {
+    color: #0f3f4a;
+    font-weight: 800;
+}
+
+/* Absolute final readability overrides. Keep last. Home is excluded. */
+.chat-product-shell,
+.chat-product-shell *,
+.chat-product-shell .status-strip,
+.chat-product-shell .compact-status-strip,
+.chat-product-shell .compact-status-strip span {
+    color: #111827;
+}
+
+.chat-product-shell .chat-compact-topbar,
+.chat-product-shell .chatgpt-composer,
+[data-role="operador"].chat-product-shell .chatgpt-composer,
+.chat-product-shell .compact-status-strip {
+    background: rgba(248, 250, 252, 0.88);
+    border-color: #cbd5e1;
+}
+
+.chat-product-shell .chat-nav-action,
+.chat-product-shell .chat-active-equipment,
+.chat-product-shell .chat-active-equipment strong,
+.chat-product-shell .floating-tool-button,
+.chat-product-shell .round-button,
+.chat-product-shell .stop-button,
+.chat-product-shell .inline-action,
+.chat-product-shell .speech-action,
+.chat-product-shell .message-actions .inline-action {
+    color: #0f3f4a;
+}
+
+.chat-product-shell .message.assistant .bubble,
+.chat-product-shell[data-role="operador"] .message.assistant .bubble,
+.chat-product-shell[data-role="tecnico"] .message.assistant .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.assistant .bubble *,
+.chat-product-shell .message.assistant .bubble strong {
+    color: #111827;
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell[data-role="operador"] .message.user .bubble,
+.chat-product-shell[data-role="tecnico"] .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #d9f7fb, #ccfbf1);
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.user .bubble *,
+.chat-product-shell .message-content,
+.chat-product-shell .bubble {
+    color: #111827;
+}
+
+.chat-product-shell .chatgpt-composer input,
+.chat-product-shell[data-role="operador"] .chatgpt-composer input,
+.chat-product-shell[data-role="tecnico"] .chatgpt-composer input,
+.chat-product-shell .composer input {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #111827;
+    font-weight: 400;
+    -webkit-text-fill-color: #111827;
+}
+
+.chat-product-shell .chatgpt-composer input::placeholder,
+.chat-product-shell .composer input::placeholder {
+    color: #475569;
+    font-weight: 400;
+}
+
+.chat-product-shell .compact-status-strip,
+.chat-product-shell .compact-status-strip span {
+    color: #1f2937;
+    font-weight: 400;
+}
+
+.chat-product-shell .source-chip,
+.chat-product-shell .fallback-source-link,
+.chat-product-shell .direct-source-button,
+.chat-product-shell .direct-source-card {
+    color: #0f766e;
+}
+
+/* Unified premium chat experience */
+.chat-product-shell.app-shell {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    padding: 12px;
+    background:
+        linear-gradient(115deg, rgba(8, 35, 54, 0.96), rgba(9, 108, 130, 0.78) 46%, rgba(7, 79, 117, 0.88)),
+        url("/static/img/hospital-equipment-room.png") center / cover no-repeat;
+}
+
+.chat-product-shell.app-shell::before {
+    background:
+        radial-gradient(circle at 14% 18%, rgba(94, 234, 212, 0.26), transparent 32%),
+        radial-gradient(circle at 82% 20%, rgba(125, 211, 252, 0.18), transparent 30%),
+        linear-gradient(rgba(125, 211, 252, 0.052) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(125, 211, 252, 0.052) 1px, transparent 1px);
+    background-size: auto, auto, 44px 44px, 44px 44px;
+}
+
+.chat-workspace.workspace,
+[data-role="operador"] .chat-workspace.workspace {
+    width: 100%;
+    height: calc(100vh - 24px);
+    display: grid;
+    grid-template-rows: 50px minmax(0, 1fr) auto auto;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 26px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 90px rgba(2, 6, 23, 0.28);
+    backdrop-filter: blur(24px);
+}
+
+.chat-compact-topbar {
+    height: 50px;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) auto minmax(96px, 1fr);
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(24px);
+}
+
+.chat-nav-action {
+    min-height: 36px;
+    width: fit-content;
+    padding: 0 13px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+}
+
+.chat-logout-action {
+    justify-self: end;
+}
+
+.chat-active-equipment {
+    min-width: 0;
+    max-width: min(52vw, 560px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 18px;
+    height: 38px;
+    border: 1px solid rgba(125, 211, 252, 0.24);
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.34);
+    color: #ecfeff;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.chat-active-equipment svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    fill: none;
+    stroke: #67e8f9;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.chat-active-equipment strong {
+    min-width: 0;
+    overflow: hidden;
+    color: #dffcff;
+    font-size: 0.95rem;
+    font-weight: 900;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chat-product-shell .chat-messages {
+    min-height: 0;
+    padding: clamp(18px, 3vw, 34px) clamp(18px, 5vw, 76px);
+    overflow-y: auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 58%);
+}
+
+.chat-product-shell .message {
+    margin-bottom: 18px;
+}
+
+.chat-product-shell .message-content {
+    max-width: min(860px, 86%);
+}
+
+.chat-product-shell .avatar.ai-avatar {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 50%;
+    background:
+        linear-gradient(135deg, rgba(94, 234, 212, 0.32), rgba(56, 189, 248, 0.15)),
+        url("/static/img/ai-avatar-hrrg.png") center / cover no-repeat;
+    box-shadow: 0 16px 34px rgba(6, 182, 212, 0.20);
+}
+
+.chat-product-shell .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble,
+.chat-product-shell .message.assistant .bubble {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ecfeff;
+    box-shadow: 0 18px 46px rgba(2, 6, 23, 0.18);
+    backdrop-filter: blur(22px);
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    border: 0;
+    background: linear-gradient(135deg, #0284c7, #22d3ee);
+    color: #ecfeff;
+    box-shadow: 0 18px 46px rgba(14, 165, 233, 0.22);
+}
+
+.chat-product-shell .message.assistant .bubble strong {
+    color: #a5f3fc;
+}
+
+.compact-status-strip.status-strip {
+    min-height: 0;
+    padding: 0 clamp(18px, 5vw, 76px) 8px;
+    border: 0;
+    background: transparent;
+    color: rgba(207, 250, 254, 0.56);
+    font-size: 0.8rem;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.chatgpt-composer.composer,
+[data-role="operador"] .chatgpt-composer.composer {
+    grid-template-columns: 46px minmax(0, 1fr) auto 48px;
+    gap: 10px;
+    align-items: center;
+    padding: 12px clamp(14px, 4vw, 54px) 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(180deg, transparent, rgba(2, 6, 23, 0.16));
+    box-shadow: none;
+}
+
+.chatgpt-composer input {
+    min-height: 54px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+    padding: 0 18px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ecfeff;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06), 0 18px 42px rgba(2, 6, 23, 0.16);
+    backdrop-filter: blur(18px);
+}
+
+.chatgpt-composer input::placeholder {
+    color: rgba(207, 250, 254, 0.58);
+}
+
+.chatgpt-composer input:focus {
+    border-color: rgba(103, 232, 249, 0.56);
+    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.12), 0 20px 48px rgba(2, 6, 23, 0.20);
+}
+
+.chatgpt-composer .round-button,
+.chatgpt-composer .send-button {
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+}
+
+.chatgpt-composer .round-button svg,
+.chatgpt-composer .send-button svg,
+.floating-tool-button svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.chatgpt-composer .stop-button {
+    min-height: 46px;
+    border-radius: 16px;
+    padding: 0 14px;
+}
+
+.chat-floating-actions {
+    position: fixed;
+    right: 28px;
+    bottom: 92px;
+    z-index: 10;
+    display: grid;
+    gap: 10px;
+}
+
+.floating-tool-button {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #cffafe;
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.22);
+    backdrop-filter: blur(18px);
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.floating-tool-button:hover {
+    transform: translateY(-3px);
+    border-color: rgba(125, 211, 252, 0.42);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.manuals-dialog,
+.qr-dialog {
+    border-radius: 26px;
+}
+
+@media (max-width: 760px) {
+    .chat-product-shell.app-shell {
+        padding: 0;
+    }
+
+    .chat-workspace.workspace,
+    [data-role="operador"] .chat-workspace.workspace {
+        height: 100vh;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .chat-compact-topbar {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    .chat-nav-action {
+        width: 38px;
+        padding: 0;
+    }
+
+    .chat-nav-action span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    .chat-active-equipment {
+        max-width: none;
+        padding: 0 12px;
+    }
+
+    .chat-product-shell .chat-messages {
+        padding: 16px;
+    }
+
+    .chat-product-shell .message-content {
+        max-width: 92%;
+    }
+
+    .chatgpt-composer.composer,
+    [data-role="operador"] .chatgpt-composer.composer {
+        grid-template-columns: 42px minmax(0, 1fr) 42px;
+        padding: 10px;
+    }
+
+    .chatgpt-composer .stop-button {
+        grid-column: 1 / -1;
+        justify-self: stretch;
+        min-height: 38px;
+    }
+
+    .chat-floating-actions {
+        right: 12px;
+        bottom: 86px;
+    }
+}
+
+/* Light premium chat refinement */
+.chat-product-shell.app-shell,
+.app-shell.chat-product-shell {
+    background:
+        linear-gradient(135deg, rgba(94, 234, 212, 0.20), rgba(56, 189, 248, 0.22), rgba(255, 255, 255, 0.08)),
+        linear-gradient(115deg, rgba(8, 47, 73, 0.42), rgba(8, 145, 178, 0.24), rgba(20, 184, 166, 0.26)),
+        url("/static/img/hospital-equipment-room.png") center / cover no-repeat;
+}
+
+.chat-product-shell.app-shell::before,
+.app-shell.chat-product-shell::before {
+    background:
+        radial-gradient(circle at 18% 18%, rgba(94, 234, 212, 0.24), transparent 32%),
+        radial-gradient(circle at 82% 26%, rgba(224, 242, 254, 0.22), transparent 30%),
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: auto, auto, 44px 44px, 44px 44px;
+}
+
+.chat-workspace.workspace,
+[data-role="operador"] .chat-workspace.workspace {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.34);
+}
+
+.chat-compact-topbar {
+    grid-template-columns: minmax(150px, 1fr) auto minmax(96px, 1fr);
+    border-bottom-color: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 14px 34px rgba(8, 47, 73, 0.10);
+}
+
+.chat-nav-action,
+.chat-active-equipment {
+    background: rgba(255, 255, 255, 0.56);
+    border-color: rgba(255, 255, 255, 0.72);
+    color: #164e63;
+    box-shadow: 0 8px 22px rgba(8, 47, 73, 0.10);
+}
+
+.chat-active-equipment {
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.chat-active-equipment strong {
+    color: #0f3f4a;
+}
+
+.chat-active-equipment svg {
+    stroke: #0e7490;
+}
+
+.chat-product-shell .chat-messages {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 62%);
+}
+
+.chat-product-shell .message.assistant .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble,
+.chat-product-shell .bubble {
+    background: rgba(244, 248, 250, 0.92);
+    border-color: rgba(255, 255, 255, 0.82);
+    color: #123f4a;
+    box-shadow: 0 12px 32px rgba(8, 47, 73, 0.12);
+}
+
+.chat-product-shell .message.assistant .bubble strong {
+    color: #0f766e;
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #0ea5e9, #2dd4bf);
+    color: #083344;
+}
+
+.compact-status-strip.status-strip {
+    color: rgba(18, 63, 74, 0.68);
+}
+
+.chatgpt-composer.composer,
+[data-role="operador"] .chatgpt-composer.composer {
+    border-top-color: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.chatgpt-composer input {
+    background: rgba(255, 255, 255, 0.96);
+    border-color: rgba(255, 255, 255, 0.82);
+    color: #123f4a;
+    box-shadow: 0 10px 30px rgba(8, 47, 73, 0.12);
+}
+
+.chatgpt-composer input::placeholder {
+    color: rgba(18, 63, 74, 0.52);
+}
+
+.chatgpt-composer .round-button,
+.chatgpt-composer .stop-button,
+.chatgpt-composer .send-button,
+.floating-tool-button {
+    border-color: rgba(255, 255, 255, 0.72);
+    background: rgba(255, 255, 255, 0.72);
+    color: #164e63;
+}
+
+.chatgpt-composer .send-button {
+    background: linear-gradient(135deg, #5eead4, #38bdf8);
+    color: #083344;
+}
+
+/* Accessibility color pass: no pure-white chat text, white message input */
+.chat-product-shell,
+.chat-product-shell .chat-messages,
+.chat-product-shell .compact-status-strip {
+    color: #123f4a;
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    color: #083344;
+    font-weight: 800;
+}
+
+.chat-product-shell .message.assistant .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble {
+    color: #123f4a;
+}
+
+.chatgpt-composer input,
+[data-role="operador"] .chatgpt-composer input,
+[data-role="tecnico"] .chatgpt-composer input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #123f4a;
+}
+
+.chatgpt-composer input::placeholder {
+    color: rgba(18, 63, 74, 0.58);
+}
+
+.chat-nav-action,
+.chat-active-equipment,
+.chatgpt-composer .round-button,
+.chatgpt-composer .stop-button,
+.floating-tool-button {
+    color: #164e63;
+}
+
+/* Requested chat readability refinements */
+.chat-product-shell .message.assistant .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.assistant .bubble strong {
+    color: #111827;
+    font-weight: 800;
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #d9f7fb, #ccfbf1);
+    color: #111827;
+    font-weight: 400;
+    box-shadow: 0 10px 26px rgba(8, 47, 73, 0.10);
+}
+
+.message-actions .inline-action,
+.inline-action,
+.speech-action {
+    color: #0f3f4a;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.84);
+    border-color: #94a3b8;
+}
+
+.compact-status-strip.status-strip {
+    min-height: 34px;
+    margin: 0 clamp(14px, 4vw, 54px) 0;
+    padding: 8px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    background: rgba(248, 250, 252, 0.88);
+    color: #1f2937;
+    font-weight: 400;
+    box-shadow: 0 8px 20px rgba(8, 47, 73, 0.08);
+    backdrop-filter: blur(14px);
+}
+
+.compact-status-strip.status-strip span {
+    font-weight: 400;
+}
+
+.direct-source-button,
+.direct-source-card,
+.source-chip,
+.fallback-source-link {
+    color: #67e8f9;
+}
+
+[data-role="tecnico"] .direct-source-button,
+[data-role="tecnico"] .direct-source-card,
+[data-role="tecnico"] .source-chip,
+[data-role="tecnico"] .fallback-source-link {
+    color: #6ee7b7;
+}
+
+.equipment-dialog,
+.qr-dialog,
+.manuals-dialog {
+    border-color: rgba(255, 255, 255, 0.18);
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(13, 148, 136, 0.32)),
+        rgba(255, 255, 255, 0.08);
+    color: #ecfeff;
+    box-shadow: 0 28px 80px rgba(2, 6, 23, 0.42);
+    backdrop-filter: blur(28px);
+}
+
+.equipment-card,
+.manual-row,
+.manual-stat,
+.qr-url,
+.image-thumb {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ecfeff;
+}
+
+.equipment-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 16px 34px rgba(2, 6, 23, 0.22);
+}
+
+.manual-title strong,
+.manual-equipment strong {
+    color: #ecfeff;
+}
+
+.manual-title span,
+.manual-equipment span,
+.manual-metrics,
+.manual-empty {
+    color: rgba(207, 250, 254, 0.62);
+}
+
+.qr-preview {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.avatar.ai-avatar {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    background: url("/static/img/ai-avatar-hrrg.png") center / cover no-repeat;
+    box-shadow: 0 8px 18px rgba(0, 70, 100, 0.15);
+}
+
 [data-role="operador"] .avatar {
     background: linear-gradient(135deg, #78cef0, #1698ca);
+}
+
+[data-role="operador"] .avatar.ai-avatar,
+[data-role="tecnico"] .avatar.ai-avatar {
+    background: url("/static/img/ai-avatar-hrrg.png") center / cover no-repeat;
 }
 
 .bubble {
@@ -405,7 +1543,7 @@
 
 .message.user .bubble {
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    color: white;
+    color: #083344;
 }
 
 [data-role="operador"] .message.assistant .bubble {
@@ -536,7 +1674,7 @@
     padding: 6px 9px;
     border-radius: 9px;
     background: #17212b;
-    color: white;
+    color: #083344;
     font-size: 0.78rem;
     font-style: normal;
     font-weight: 800;
@@ -946,4 +2084,263 @@
     .manual-status {
         justify-self: start;
     }
+}
+
+/* Final profile UI overrides: keep these last so older console rules cannot override the glass theme. */
+.app-shell {
+    position: relative;
+    isolation: isolate;
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(13, 148, 136, 0.76), rgba(3, 105, 161, 0.84), rgba(6, 78, 59, 0.9)),
+        url("/static/img/hospital-equipment-room.png") center / cover no-repeat;
+    color: #e9fbff;
+}
+
+.app-shell::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 18% 16%, rgba(45, 212, 191, 0.28), transparent 34%),
+        radial-gradient(circle at 78% 22%, rgba(56, 189, 248, 0.22), transparent 28%),
+        radial-gradient(circle at 56% 88%, rgba(16, 185, 129, 0.16), transparent 32%);
+}
+
+.sidebar,
+[data-role="operador"] .sidebar,
+.workspace,
+[data-role="operador"] .workspace,
+.topbar,
+[data-role="operador"] .topbar,
+.status-strip,
+[data-role="operador"] .status-strip,
+.composer,
+[data-role="operador"] .composer {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.09);
+    color: #e9fbff;
+    backdrop-filter: blur(22px);
+}
+
+.workspace,
+[data-role="operador"] .workspace {
+    background: rgba(15, 23, 42, 0.24);
+}
+
+.topbar {
+    box-shadow: 0 22px 60px rgba(2, 6, 23, 0.16);
+}
+
+.topbar h1 {
+    background: linear-gradient(90deg, #5eead4, #e0f2fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(1.45rem, 2.2vw, 2.3rem);
+    font-weight: 950;
+}
+
+.sidebar .icon-button {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(236, 254, 255, 0.78);
+}
+
+.sidebar .icon-button:hover,
+.sidebar .icon-button.active {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.28), rgba(45, 212, 191, 0.18));
+    color: #ecfeff;
+}
+
+[data-role="tecnico"] .sidebar .icon-button:hover,
+[data-role="tecnico"] .sidebar .icon-button.active {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.32), rgba(20, 184, 166, 0.2));
+}
+
+.history-card,
+.bubble,
+[data-role="operador"] .message.assistant .bubble,
+[data-role="tecnico"] .message.assistant .bubble,
+.composer input,
+.equipment-dialog,
+.qr-dialog,
+.manuals-dialog,
+.equipment-card,
+.manual-row,
+.manual-stat,
+.qr-url,
+.image-thumb {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ecfeff;
+    box-shadow: 0 18px 42px rgba(2, 6, 23, 0.18);
+    backdrop-filter: blur(18px);
+}
+
+.message.user .bubble,
+[data-role="operador"] .message.user .bubble {
+    background: linear-gradient(135deg, #0284c7, #22d3ee);
+    color: #ecfeff;
+}
+
+[data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #059669, #2dd4bf);
+    color: #ecfdf5;
+}
+
+.composer input::placeholder,
+.status-strip,
+.history-panel p,
+.history-card span,
+.history-empty,
+.equipment-line,
+.equipment-select-label,
+.equipment-select-label span,
+.manual-title span,
+.manual-equipment span,
+.manual-metrics,
+.manual-empty {
+    color: rgba(207, 250, 254, 0.62);
+}
+
+.equipment-select-label strong,
+.equipment-line strong,
+.direct-source-button,
+.direct-source-card,
+.source-chip,
+.fallback-source-link {
+    color: #67e8f9;
+}
+
+[data-role="tecnico"] .equipment-select-label strong,
+[data-role="tecnico"] .equipment-line strong,
+[data-role="tecnico"] .direct-source-button,
+[data-role="tecnico"] .direct-source-card,
+[data-role="tecnico"] .source-chip,
+[data-role="tecnico"] .fallback-source-link {
+    color: #6ee7b7;
+}
+
+.primary-button,
+.send-button {
+    background: linear-gradient(135deg, #0ea5e9, #67e8f9);
+    color: #082f49;
+}
+
+[data-role="tecnico"] .primary-button,
+[data-role="tecnico"] .send-button {
+    background: linear-gradient(135deg, #10b981, #2dd4bf);
+    color: #052e16;
+}
+
+.round-button,
+.stop-button,
+.exit-button,
+.dialog-close,
+.inline-action,
+.secondary-button {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.10);
+    color: #cffafe;
+    backdrop-filter: blur(16px);
+}
+
+.stop-button {
+    color: #fda4af;
+}
+
+/* Absolute final readability overrides. Keep this block last. Home is excluded. */
+.chat-product-shell,
+.chat-product-shell *,
+.chat-product-shell .status-strip,
+.chat-product-shell .compact-status-strip,
+.chat-product-shell .compact-status-strip span {
+    color: #111827;
+}
+
+.chat-product-shell .chat-compact-topbar,
+.chat-product-shell .chatgpt-composer,
+[data-role="operador"].chat-product-shell .chatgpt-composer,
+.chat-product-shell .compact-status-strip {
+    background: rgba(248, 250, 252, 0.88);
+    border-color: #cbd5e1;
+}
+
+.chat-product-shell .chat-nav-action,
+.chat-product-shell .chat-active-equipment,
+.chat-product-shell .chat-active-equipment strong,
+.chat-product-shell .floating-tool-button,
+.chat-product-shell .round-button,
+.chat-product-shell .stop-button,
+.chat-product-shell .inline-action,
+.chat-product-shell .speech-action,
+.chat-product-shell .message-actions .inline-action {
+    color: #0f3f4a;
+}
+
+.chat-product-shell .message.assistant .bubble,
+.chat-product-shell[data-role="operador"] .message.assistant .bubble,
+.chat-product-shell[data-role="tecnico"] .message.assistant .bubble,
+.chat-product-shell [data-role="operador"] .message.assistant .bubble,
+.chat-product-shell [data-role="tecnico"] .message.assistant .bubble {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.assistant .bubble *,
+.chat-product-shell .message.assistant .bubble strong {
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.user .bubble,
+.chat-product-shell[data-role="operador"] .message.user .bubble,
+.chat-product-shell[data-role="tecnico"] .message.user .bubble,
+.chat-product-shell [data-role="operador"] .message.user .bubble,
+.chat-product-shell [data-role="tecnico"] .message.user .bubble {
+    background: linear-gradient(135deg, #d9f7fb, #ccfbf1);
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .message.user .bubble *,
+.chat-product-shell .message-content,
+.chat-product-shell .bubble {
+    color: #111827;
+    font-weight: 400;
+}
+
+.chat-product-shell .chatgpt-composer input,
+.chat-product-shell[data-role="operador"] .chatgpt-composer input,
+.chat-product-shell[data-role="tecnico"] .chatgpt-composer input,
+.chat-product-shell .composer input {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #111827;
+    font-weight: 400;
+    -webkit-text-fill-color: #111827;
+}
+
+.chat-product-shell .chatgpt-composer input::placeholder,
+.chat-product-shell .composer input::placeholder {
+    color: #475569;
+    font-weight: 400;
+}
+
+.chat-product-shell .compact-status-strip,
+.chat-product-shell .compact-status-strip span,
+.chat-product-shell .status-strip {
+    color: #1f2937;
+    font-weight: 400;
+}
+
+.chat-product-shell .source-chip,
+.chat-product-shell .fallback-source-link,
+.chat-product-shell .direct-source-button,
+.chat-product-shell .direct-source-card {
+    color: #0f766e;
 }

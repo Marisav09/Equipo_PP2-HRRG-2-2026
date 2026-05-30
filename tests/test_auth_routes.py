@@ -19,7 +19,10 @@ def test_login_sets_technician_cookie():
     app.config["TESTING"] = True
 
     client = app.test_client()
-    response = client.post("/api/auth/login", json={"password": "tecnico-hrrg"})
+    response = client.post(
+        "/api/auth/login",
+        json={"username": "tecnico", "password": "tecnico-hrrg"},
+    )
 
     assert response.status_code == 200
     assert "hrrg_technician_auth=ok" in response.headers["Set-Cookie"]
@@ -30,7 +33,10 @@ def test_logout_clears_technician_cookie():
     app.config["TESTING"] = True
 
     client = app.test_client()
-    client.post("/api/auth/login", json={"password": "tecnico-hrrg"})
+    client.post(
+        "/api/auth/login",
+        json={"username": "tecnico", "password": "tecnico-hrrg"},
+    )
     response = client.post("/api/auth/logout", json={})
 
     assert response.status_code == 200

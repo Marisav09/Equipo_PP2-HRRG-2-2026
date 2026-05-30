@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+
+{% block title %}Asistente IA para Ingenier&iacute;a Cl&iacute;nica{% endblock %}
+
+{% block styles %}
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+        overflow: hidden;
+    }
+
+    .medical-aurora {
+        background: linear-gradient(135deg, #0f172a, #0d9488, #0369a1, #064e3b, #0f172a);
+        background-size: 400% 400%;
+        animation: medicalAurora 15s ease-in-out infinite;
+    }
+
+    .hospital-bg {
+        background-image:
+            linear-gradient(90deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.62) 46%, rgba(15, 23, 42, 0.76)),
+            url("{{ url_for('static', filename='img/hospital-equipment-room.png') }}");
+        background-size: cover;
+        background-position: center;
+        animation: hospitalDrift 18s ease-in-out infinite alternate;
+    }
+
+    .ai-orb {
+        animation: aiOrbFloat 10s ease-in-out infinite alternate;
+    }
+
+    .ai-orb-slow {
+        animation-duration: 14s;
+    }
+
+    .ai-grid {
+        background-image:
+            linear-gradient(rgba(125, 211, 252, 0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(125, 211, 252, 0.08) 1px, transparent 1px);
+        background-size: 42px 42px;
+        animation: aiGridMove 18s linear infinite;
+        mask-image: radial-gradient(circle at center, #000 0%, transparent 72%);
+    }
+
+    .ai-scan {
+        animation: aiScan 4.8s ease-in-out infinite;
+    }
+
+    .ai-reveal-left {
+        animation: aiRevealLeft 900ms cubic-bezier(0.16, 0.9, 0.22, 1) both;
+    }
+
+    .ai-reveal-right {
+        animation: aiRevealRight 980ms cubic-bezier(0.16, 0.9, 0.22, 1) 120ms both;
+    }
+
+    .ai-button-shine::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        transform: translateX(-125%) skewX(-18deg);
+        background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.35) 45%, transparent 72%);
+        animation: aiButtonShine 3.2s ease-in-out infinite;
+    }
+
+    .ai-avatar {
+        animation: aiAvatarFloat 4.2s ease-in-out infinite;
+    }
+
+    @keyframes medicalAurora {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @keyframes hospitalDrift {
+        from { transform: scale(1.02) translateX(-1.5vw); }
+        to { transform: scale(1.08) translateX(1.5vw); }
+    }
+
+    @keyframes aiOrbFloat {
+        from { transform: translate3d(-2vw, 1vh, 0) scale(0.96); }
+        to { transform: translate3d(3vw, -3vh, 0) scale(1.08); }
+    }
+
+    @keyframes aiGridMove {
+        from { background-position: 0 0; }
+        to { background-position: 126px 84px; }
+    }
+
+    @keyframes aiScan {
+        0%, 100% { opacity: 0.22; transform: translateX(-12%); }
+        50% { opacity: 0.46; transform: translateX(12%); }
+    }
+
+    @keyframes aiRevealLeft {
+        from { opacity: 0; transform: translateX(-34px) scale(0.985); filter: blur(8px); }
+        to { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
+    }
+
+    @keyframes aiRevealRight {
+        from { opacity: 0; transform: translateX(38px) translateY(16px) scale(0.965); filter: blur(10px); }
+        to { opacity: 1; transform: translateX(0) translateY(0) scale(1); filter: blur(0); }
+    }
+
+    @keyframes aiButtonShine {
+        0%, 42% { transform: translateX(-125%) skewX(-18deg); }
+        72%, 100% { transform: translateX(150%) skewX(-18deg); }
+    }
+
+    @keyframes aiAvatarFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<main class="medical-aurora relative isolate min-h-screen overflow-hidden text-white">
+    <div class="hospital-bg pointer-events-none absolute inset-0 opacity-55"></div>
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(20,184,166,0.35),transparent_34%),radial-gradient(circle_at_82%_28%,rgba(14,165,233,0.24),transparent_30%),radial-gradient(circle_at_62%_86%,rgba(45,212,191,0.16),transparent_34%)]"></div>
+    <div class="ai-grid pointer-events-none absolute inset-0 opacity-70"></div>
+    <div class="ai-scan pointer-events-none absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-transparent via-cyan-200/10 to-transparent blur-sm"></div>
+    <div class="ai-orb pointer-events-none absolute -left-28 top-16 h-72 w-72 rounded-full bg-teal-400/20 blur-3xl"></div>
+    <div class="ai-orb ai-orb-slow pointer-events-none absolute -right-24 bottom-20 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl"></div>
+
+    <section class="relative z-10 grid min-h-screen grid-rows-[1fr_auto] px-6 py-7 sm:px-10 lg:px-16">
+        <header class="pointer-events-none absolute left-6 right-6 top-6 z-20 flex items-center justify-end sm:left-10 sm:right-10 lg:left-16 lg:right-16">
+            <div class="flex items-center gap-5">
+                <p class="text-lg font-semibold tracking-wide text-cyan-50/90 sm:text-xl">Hospital Regional R&iacute;o Grande</p>
+                <img class="h-20 w-auto object-contain drop-shadow-[0_18px_34px_rgba(8,47,73,0.45)] sm:h-24" src="{{ url_for('static', filename='img/hrrg-logo.svg') }}" alt="">
+            </div>
+        </header>
+
+        <div class="grid min-h-0 grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+            <section class="ai-reveal-left flex min-h-0 flex-col justify-center">
+                <div class="max-w-5xl pt-10">
+                    <h1 class="max-w-4xl bg-gradient-to-r from-teal-300 to-cyan-100 bg-clip-text text-5xl font-black leading-[0.96] tracking-tight text-transparent sm:text-6xl lg:text-7xl xl:text-8xl">
+                        Asistente IA para Ingenier&iacute;a Cl&iacute;nica
+                    </h1>
+                    <p class="mt-7 max-w-2xl text-xl font-light leading-8 text-cyan-50/70 sm:text-2xl">
+                        Soporte inteligente para equipos hospitalarios
+                    </p>
+
+                    <div class="mt-11 flex flex-wrap items-center gap-y-5 text-cyan-50/82">
+                        <div class="flex items-center gap-3 pr-6">
+                            <svg class="h-8 w-8 text-cyan-200" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 9h.01M12 9h.01M16 9h.01" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                            <span class="text-sm font-medium sm:text-base">Respuestas al instante</span>
+                        </div>
+                        <div class="mx-1 hidden h-10 w-px bg-cyan-100/25 sm:block"></div>
+                        <div class="flex items-center gap-3 px-6">
+                            <svg class="h-8 w-8 text-teal-200" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="text-sm font-medium sm:text-base">Informaci&oacute;n confiable</span>
+                        </div>
+                        <div class="mx-1 hidden h-10 w-px bg-cyan-100/25 sm:block"></div>
+                        <div class="flex items-center gap-3 pl-6">
+                            <svg class="h-8 w-8 text-emerald-200" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a9 9 0 1 0-9-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7v6l4 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 13h3M2 18h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="text-sm font-medium sm:text-base">Soporte continuo</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ai-reveal-right flex justify-center pt-14 lg:justify-end">
+                <div class="relative w-full max-w-[430px] pt-16">
+                    <div class="ai-avatar absolute left-1/2 top-0 z-20 h-32 w-32 -translate-x-1/2 overflow-hidden rounded-full border border-white/30 bg-white/15 p-1 shadow-2xl shadow-cyan-950/40 backdrop-blur-xl">
+                        <img class="h-full w-full rounded-full object-cover" src="{{ url_for('static', filename='img/ai-avatar-hrrg.png') }}" alt="">
+                    </div>
+
+                    <div class="rounded-3xl border border-white/20 bg-white/10 px-7 pb-8 pt-24 shadow-2xl shadow-cyan-950/40 backdrop-blur-xl sm:px-9">
+                        <div class="grid gap-5">
+                            <a class="ai-button-shine relative overflow-hidden rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-300 px-7 py-5 text-center text-lg font-bold text-slate-950 shadow-2xl shadow-cyan-400/25 transition duration-300 hover:-translate-y-1 hover:shadow-cyan-300/40" href="{{ url_for('web.login', perfil='operador') }}">
+                                <span class="relative z-10">Ingresar como Operador</span>
+                            </a>
+                            <a class="ai-button-shine relative overflow-hidden rounded-2xl border border-emerald-200/45 bg-gradient-to-r from-emerald-500 to-teal-400 px-7 py-5 text-center text-lg font-bold text-slate-950 shadow-2xl shadow-emerald-400/25 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-emerald-300/45" href="{{ url_for('web.login', perfil='tecnico') }}">
+                                <span class="relative z-10">Ingresar como T&eacute;cnico</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="grid grid-cols-1 items-center gap-4 pt-8 text-sm text-cyan-50/55 sm:grid-cols-[1fr_auto_1fr]">
+            <div class="flex items-center justify-center gap-5 sm:justify-start">
+                <img class="h-6 w-auto object-contain opacity-90" src="{{ url_for('static', filename='img/logo-tdf.png') }}" alt="">
+                <img class="h-7 w-auto object-contain opacity-90" src="{{ url_for('static', filename='img/logo-centro-politecnico.png') }}" alt="">
+            </div>
+            <nav class="flex flex-wrap justify-center gap-6">
+                <a class="transition hover:text-cyan-100" href="#proyecto">Acerca del proyecto</a>
+                <a class="transition hover:text-cyan-100" href="#funciona">&iquest;C&oacute;mo funciona?</a>
+            </nav>
+            <p class="text-center sm:text-right">Primer desarrollo &ndash; Versi&oacute;n 1.0</p>
+        </footer>
+    </section>
+</main>
+{% endblock %}

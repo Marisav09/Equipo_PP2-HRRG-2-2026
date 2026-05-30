@@ -15,28 +15,52 @@ equipment_service = EquipmentService()
 
 @web_bp.get("/")
 def home():
-    return redirect(url_for("web.login"))
+    return render_template("landing.html")
 
 
 @web_bp.get("/login")
 def login():
-    return render_template("login.html")
+    raw_profile = request.args.get("perfil", "tecnico").strip().lower()
+    profile = "operador" if raw_profile == "operador" else "tecnico"
+    return render_template("login.html", profile=profile)
 
 
 @web_bp.get("/tecnico")
-def technician_console():
+def technician_equipment_selector():
     if request.cookies.get("hrrg_technician_auth") != "ok":
-        return redirect(url_for("web.login"))
+        return redirect(url_for("web.login", perfil="tecnico"))
     return render_template(
-        "technician.html",
+        "operator_select.html",
+        profile="tecnico",
+        equipments=equipment_service.list_equipments(),
+    )
+
+
+@web_bp.get("/operador")
+def operator_equipment_selector():
+    if request.cookies.get("hrrg_operator_auth") != "ok":
+        return redirect(url_for("web.login", perfil="operador"))
+    return render_template(
+        "operator_select.html",
+        profile="operador",
         equipments=equipment_service.list_equipments(),
     )
 
 
 @web_bp.get("/equipo/<equipment_id>")
 def operator_console(equipment_id: str):
+    if request.cookies.get("hrrg_operator_auth") != "ok":
+        return redirect(url_for("web.login", perfil="operador"))
     equipment = equipment_service.get_by_id(equipment_id)
     return render_template("operator.html", equipment=equipment)
+
+
+@web_bp.get("/tecnico/equipo/<equipment_id>")
+def technician_console(equipment_id: str):
+    if request.cookies.get("hrrg_technician_auth") != "ok":
+        return redirect(url_for("web.login", perfil="tecnico"))
+    equipment = equipment_service.get_by_id(equipment_id)
+    return render_template("technician.html", equipment=equipment)
 
 
 @web_bp.get("/manuals/<path:filename>")

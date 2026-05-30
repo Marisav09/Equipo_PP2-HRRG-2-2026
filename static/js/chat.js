@@ -24,6 +24,7 @@ const qrCopyButton = document.querySelector("#qr-copy-button");
 const activeEquipmentTitle = document.querySelector("#active-equipment");
 const equipmentSelect = document.querySelector("#equipment-select");
 const historyList = document.querySelector("#history-list");
+const speechToggleButton = document.querySelector("#speech-toggle-button");
 
 let activeRequestId = null;
 let selectedEquipmentId = shell?.dataset.equipmentId || "";
@@ -73,6 +74,62 @@ function visibleSourceLabel(source = {}) {
     return `Fuente: ${visibleSourceName(source)}, pag. ${visibleSourcePage(source)}`;
 }
 
+function stripMarkdownMarkers(text) {
+    return String(text || "")
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/\*([^*\n]+)\*/g, "$1")
+        .replace(/`([^`]+)`/g, "$1")
+        .split("\n")
+        .map((line) => line.replace(/^\s*[*-]\s+/g, ""))
+        .join("\n")
+        .replace(/[*_]{2,}/g, "")
+        .replace(/\s+\*/g, " ")
+        .replace(/\*\s+/g, " ")
+        .trim();
+}
+
+function speechSafeText(text) {
+    return stripMarkdownMarkers(text)
+        .replace(/^#{1,6}\s+/gm, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/\s{2,}/g, " ")
+        .trim();
+}
+
+function speechIconSvg(isMuted = false) {
+    const slash = isMuted ? '<path d="M4 4l16 16"/>' : "";
+    const waves = isMuted
+        ? '<path d="M16 9.5 19 12l-3 2.5"/>'
+        : '<path d="M16 8.5a4.5 4.5 0 0 1 0 7"/><path d="M19 6a8 8 0 0 1 0 12"/>';
+    return `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 9v6h4l5 4V5L8 9H4z"/>
+            ${waves}
+            ${slash}
+        </svg>
+        <span>${isMuted ? "Audio silenciado" : "Audio activo"}</span>
+    `;
+}
+
+function updateSpeechControls() {
+    const title = speechMuted ? "Activar lectura en voz alta" : "Silenciar lectura en voz alta";
+    document.querySelectorAll(".speech-action, #speech-toggle-button").forEach((button) => {
+        button.innerHTML = speechIconSvg(speechMuted);
+        button.dataset.muted = speechMuted ? "true" : "false";
+        button.title = title;
+        button.setAttribute("aria-label", title);
+    });
+}
+
+function setSpeechMuted(isMuted) {
+    speechMuted = Boolean(isMuted);
+    localStorage.setItem("hrrgSpeechMuted", speechMuted ? "1" : "0");
+    if (speechMuted) {
+        window.hrrgSpeech?.stop?.();
+    }
+    updateSpeechControls();
+}
+
 function createSourceList(sources = []) {
     if (!sources.length) return null;
 
@@ -90,7 +147,9 @@ function createSourceList(sources = []) {
         const badge = document.createElement("span");
         badge.textContent = String(index + 1);
 
-        const label = document.createTextNode(visibleSourceLabel(source));
+        const label = document.createElement("span");
+        label.className = "source-label";
+        label.textContent = visibleSourceLabel(source);
 
         link.appendChild(badge);
         link.appendChild(label);
@@ -144,7 +203,7 @@ function stripSourceLines(content) {
 }
 
 function appendTextWithBreaks(container, text) {
-    String(text || "").split("\n").forEach((line, index) => {
+    stripMarkdownMarkers(text).split("\n").forEach((line, index) => {
         if (index > 0) container.appendChild(document.createElement("br"));
         container.appendChild(document.createTextNode(line));
     });
@@ -174,7 +233,15 @@ function renderFallbackBubble(bubble, content, sources = []) {
             }
         }
 
-        bubble.appendChild(document.createTextNode(line));
+        if (normalized.startsWith("extracto ")) {
+            const label = document.createElement("strong");
+            label.className = "extract-title";
+            label.textContent = stripMarkdownMarkers(line);
+            bubble.appendChild(label);
+            return;
+        }
+
+        bubble.appendChild(document.createTextNode(stripMarkdownMarkers(line)));
     });
 }
 
@@ -200,6 +267,16 @@ function createSpeechAction(content) {
     const button = document.createElement("button");
     button.className = "inline-action speech-action";
     button.type = "button";
+    button.innerHTML = speechIconSvg(speechMuted);
+    button.title = speechMuted ? "Activar lectura en voz alta" : "Silenciar lectura en voz alta";
+    button.setAttribute("aria-label", button.title);
+    button.addEventListener("click", () => {
+        const shouldMute = !speechMuted;
+        setSpeechMuted(shouldMute);
+        if (!shouldMute) window.hrrgSpeech?.speak?.(speechSafeText(content));
+    });
+    updateSpeechControls();
+    return button;
     button.textContent = speechMuted ? "🔇" : "🔊";
     button.title = speechMuted ? "Activar lectura en voz alta" : "Leer en voz alta";
     button.setAttribute("aria-label", button.title);
@@ -230,8 +307,8 @@ function addMessage(role, content, options = {}) {
 
     if (role === "assistant") {
         const avatar = document.createElement("div");
-        avatar.className = "avatar";
-        avatar.textContent = "AI";
+        avatar.className = "avatar ai-avatar";
+        avatar.setAttribute("aria-hidden", "true");
         message.appendChild(avatar);
     }
 
@@ -241,9 +318,10 @@ function addMessage(role, content, options = {}) {
     const bubble = document.createElement("div");
     bubble.className = "bubble";
 
-    const visibleContent = role === "assistant" && shell.dataset.role === "tecnico" && !fallbackMode
+    const sourceCleanContent = role === "assistant" && shell.dataset.role === "tecnico" && !fallbackMode
         ? stripSourceLines(content)
         : content;
+    const visibleContent = role === "assistant" ? stripMarkdownMarkers(sourceCleanContent) : sourceCleanContent;
 
     if (role === "assistant" && fallbackMode) {
         renderFallbackBubble(bubble, visibleContent, options.sources || []);
@@ -293,8 +371,8 @@ function addLoadingMessage() {
     message.className = "message assistant";
 
     const avatar = document.createElement("div");
-    avatar.className = "avatar";
-    avatar.textContent = "AI";
+    avatar.className = "avatar ai-avatar";
+    avatar.setAttribute("aria-hidden", "true");
     message.appendChild(avatar);
 
     const contentWrapper = document.createElement("div");
@@ -643,7 +721,7 @@ async function ask(query, options = {}) {
         setStatus(modeLabel(data.mode));
 
         if (!speechMuted) {
-            window.hrrgSpeech.speak(data.answer);
+            window.hrrgSpeech.speak(speechSafeText(data.answer));
         }
     } catch (error) {
         if (activeRequestCancelled || activeRequestId !== requestId) return;
@@ -817,10 +895,17 @@ if (voiceButton) {
     });
 }
 
+if (speechToggleButton) {
+    speechToggleButton.addEventListener("click", () => {
+        setSpeechMuted(!speechMuted);
+    });
+}
+
 document.querySelectorAll(".equipment-card").forEach((button) => {
     button.addEventListener("click", async () => {
         await selectEquipment(button.dataset.equipmentId, button.dataset.equipmentName);
     });
 });
 
+updateSpeechControls();
 renderHistory();

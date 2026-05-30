@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Asistente IA HRRG{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}?v=ui-polish-20260530c">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}?v=ui-polish-20260530c">
     {% block styles %}{% endblock %}
 </head>
 <body>
     {% block content %}{% endblock %}
-    <script src="{{ url_for('static', filename='js/api.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/speech.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/api.js') }}?v=ui-polish-20260530c"></script>
+    <script src="{{ url_for('static', filename='js/speech.js') }}?v=ui-polish-20260530c"></script>
+    <script src="{{ url_for('static', filename='js/chat.js') }}?v=ui-polish-20260530c"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -139,6 +139,7 @@ class RagService:
                 answer = self._strip_source_lines(answer)
             else:
                 answer = self._strip_operator_citations(answer)
+            answer = self._strip_markdown_markers(answer)
 
             response = {
                 "answer": answer,
@@ -224,6 +225,7 @@ Si la evidencia recuperada es parcial, ambigua o incompleta, indicalo claramente
 Solo indica que no hay informacion disponible cuando ningun fragmento recuperado contenga datos tecnicos utiles relacionados con la consulta.
 No menciones historial conversacional, historial reciente, historial de mantenimiento ni reparaciones previas salvo que esa informacion aparezca literalmente en el contexto documental recuperado.
 En modo operador, no menciones paginas, fuentes, manuales, citas, diagramas ni nombres de archivo.
+No uses Markdown en la respuesta: no uses asteriscos, negritas, encabezados Markdown ni viñetas con asterisco.
 
 Pregunta del usuario:
 {chat_request.query}{history_section}
@@ -277,6 +279,7 @@ Respuesta:""".strip()
                 if is_english and translate_english
                 else raw_text
             )
+            display_text = self._strip_markdown_markers(display_text)
             extracts.append(
                 (
                     f"Fuente: {chunk.citation.source_file}, pag. {chunk.citation.page}\n"
@@ -382,6 +385,16 @@ Respuesta:""".strip()
             skipping_sources = False
             lines.append(line)
         return "\n".join(lines).strip() or answer.strip()
+
+    def _strip_markdown_markers(self, answer: str) -> str:
+        cleaned = re.sub(r"\*\*([^*]+)\*\*", r"\1", answer)
+        cleaned = re.sub(r"\*([^*\n]+)\*", r"\1", cleaned)
+        cleaned = re.sub(r"`([^`]+)`", r"\1", cleaned)
+        cleaned = re.sub(r"(?m)^\s*[*-]\s+", "", cleaned)
+        cleaned = cleaned.replace("**", "").replace("__", "")
+        cleaned = re.sub(r"\s+\*", " ", cleaned)
+        cleaned = re.sub(r"\*\s+", " ", cleaned)
+        return cleaned.strip()
 
     def _is_likely_english(self, text: str) -> bool:
         normalized = f" {text.lower()} "
