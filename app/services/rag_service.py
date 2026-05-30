@@ -250,7 +250,7 @@ Respuesta:""".strip()
 
         return "\n\n".join(
             (
-                f"Fuente: {chunk.citation.source_file}, pagina {chunk.citation.page}, "
+                f"Fuente: {self._visible_source_name(chunk)}, pagina {self._visible_page(chunk)}, "
                 f"equipo: {chunk.citation.equipment_name}\n"
                 f"Imagenes: {self._format_image_context(chunk)}\n"
                 f"Texto:\n{chunk.text.strip()}"
@@ -282,7 +282,7 @@ Respuesta:""".strip()
             display_text = self._strip_markdown_markers(display_text)
             extracts.append(
                 (
-                    f"Fuente: {chunk.citation.source_file}, pag. {chunk.citation.page}\n"
+                    f"Fuente: {self._visible_source_name(chunk)}, pag. {self._visible_page(chunk)}\n"
                     f"{extract_label} {index}\n"
                     f"{display_text}"
                 )
@@ -293,6 +293,20 @@ Respuesta:""".strip()
             f"Consulta: {question}\n\n"
             + (f"Motivo: {reason}\n\n" if reason else "")
             + "\n\n---\n\n".join(extracts)
+        )
+
+    def _visible_source_name(self, chunk: RetrievedChunk) -> str:
+        return (
+            chunk.citation.display_source
+            or chunk.citation.original_pdf
+            or chunk.citation.source_file
+        )
+
+    def _visible_page(self, chunk: RetrievedChunk) -> int:
+        return (
+            chunk.citation.pdf_page
+            or chunk.citation.page
+            or chunk.citation.markdown_page
         )
 
     def _build_operator_fallback_answer(self, chunks: list[RetrievedChunk]) -> str:
@@ -472,18 +486,246 @@ Respuesta:""".strip()
         expanded_question = question
         normalized = question.lower()
 
+        expansion_terms: list[str] = []
+
         if (
             "bloque" in normalized
             or "desbloque" in normalized
             or "pantalla táctil" in normalized
             or "pantalla tactil" in normalized
         ):
+            expansion_terms.extend(
+                [
+                    "bloqueo",
+                    "desbloqueo",
+                    "bloquear",
+                    "desbloquear",
+                    "pantalla tactil",
+                    "pantalla táctil",
+                    "icono de bloqueo",
+                    "tecla de bloqueo/desbloqueo",
+                    "tecla de bloqueo y desbloqueo",
+                    "barra favoritos",
+                    "funciones de la pantalla tactil",
+                ]
+            )
+
+        if (
+            "no agita" in normalized
+            or "no gira" in normalized
+            or "no se mueve" in normalized
+            or "no mueve" in normalized
+            or "bandeja no se mueve" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "la bandeja no se mueve",
+                    "bandeja",
+                    "motor dañado",
+                    "motor 12v 78rpm",
+                    "objeto que obstruye el movimiento",
+                    "obstruccion",
+                    "falla mecanica",
+                    "circuito electronico",
+                    "conexion",
+                    "conectores",
+                    "cables dañados",
+                    "funcion agita si no",
+                    "mecanismo de agitacion",
+                ]
+            )
+
+        if (
+            "bateria baja" in normalized
+            or "batería baja" in normalized
+            or "bateria se mantiene baja" in normalized
+            or "batería se mantiene baja" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "la bateria se mantiene siempre baja",
+                    "la batería se mantiene siempre baja",
+                    "conexion",
+                    "conectores",
+                    "cables",
+                    "seccion 4.2",
+                    "sección 4.2",
+                    "circuito electronico",
+                    "circuito regulador de tension",
+                    "lectura de carga de bateria",
+                    "bateria dañada",
+                    "batería dañada",
+                    "bateria 12v 3.4Ah",
+                    "test bateria",
+                ]
+            )
+
+        if (
+            "no dispara" in normalized
+            or "no realiza exposicion" in normalized
+            or "no realiza exposición" in normalized
+            or "no emite radiacion" in normalized
+            or "no emite radiación" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "no realiza exposicion",
+                    "no realiza exposición",
+                    "disparo",
+                    "pulsador de disparo",
+                    "PREP RAD",
+                    "PREP+RAD",
+                    "radiacion",
+                    "radiación",
+                    "exposicion",
+                    "exposición",
+                    "filamento",
+                    "filament failure",
+                    "inverter fail",
+                    "autocalibracion",
+                    "auto-calibracion",
+                    "carga de capacitores",
+                    "fusibles",
+                    "fusible F1",
+                    "230 V",
+                    "135 V",
+                ]
+            )
+
+        if (
+            "no pasa test" in normalized
+            or "no pasa el test" in normalized
+            or "falla test" in normalized
+            or "test fall" in normalized
+            or "test unsuccessful" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "T1 test",
+                    "T1 TEST UNSUCCESSFUL",
+                    "incorrect test step",
+                    "error display",
+                    "storage error number",
+                    "test bypass",
+                    "blood system test",
+                    "display test",
+                    "accumulator test",
+                    "arterial pressure test",
+                    "venous pressure test",
+                    "temperature test",
+                    "air detector test",
+                    "blood leak detector test",
+                    "conductivity test",
+                    "UF function test",
+                    "Diasafe HDF filter test",
+                    "self test",
+                    "function test",
+                    "subtest",
+                ]
+            )
+
+        if (
+            "no carga energia" in normalized
+            or "no carga energía" in normalized
+            or "no carga bateria" in normalized
+            or "no carga batería" in normalized
+            or "no carga" in normalized
+            or "carga energia" in normalized
+            or "carga energía" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "power failure",
+                    "AC/DC power supply",
+                    "power management board",
+                    "battery",
+                    "fully charged battery",
+                    "charge",
+                    "charging",
+                    "charging prohibited",
+                    "capacitor",
+                    "capacitor charge",
+                    "energy charging",
+                    "energy disarming",
+                    "discharging failed",
+                    "defibrillator energy",
+                    "self-test",
+                    "M0 -2V5 power failure",
+                    "DVDD power failure",
+                    "ASIC_VREF power failure",
+                ]
+            )
+
+        if (
+            "no completa ciclo" in normalized
+            or "no termina ciclo" in normalized
+            or "ciclo incompleto" in normalized
+            or "ciclo abortado" in normalized
+            or "ciclo cancelado" in normalized
+            or "cycle abort" in normalized
+            or "cycle aborted" in normalized
+            or "cycle cancelled" in normalized
+        ):
+            expansion_terms.extend(
+                [
+                    "cycle cancelled",
+                    "cycle aborted",
+                    "cycle abort",
+                    "sterilization cycle",
+                    "restart sterilizer",
+                    "vacuum insufficient",
+                    "vacuum not low enough",
+                    "pre-plasma",
+                    "plasma stage",
+                    "RF subsystem",
+                    "low plasma power",
+                    "moisture in load",
+                    "load may be out-gassing",
+                    "repackage load",
+                    "cassette",
+                    "pressure",
+                    "error",
+                ]
+            )
+
+        if (
+            "alarma oxigeno" in normalized
+            or "alarma oxígeno" in normalized
+            or "alarma o2" in normalized
+            or "o2 alarm" in normalized
+            or "oxygen alarm" in normalized
+            or "fio2" in normalized
+            or "fiO2" in question
+        ):
+            expansion_terms.extend(
+                [
+                    "oxygen alarm",
+                    "O2 alarm",
+                    "O2 concentration",
+                    "FiO2",
+                    "measured O2 concentration",
+                    "O2 cell",
+                    "oxygen cell",
+                    "expected cell life",
+                    "replace O2 cell",
+                    "gas supply",
+                    "gas supply pressure",
+                    "O2 supply",
+                    "Air and O2",
+                    "gas modules",
+                    "replace gas modules",
+                    "Pre-use check",
+                    "calibration",
+                ]
+            )
+
+        if expansion_terms:
+            unique_terms = list(dict.fromkeys(expansion_terms))
             expanded_question = (
                 f"{question}\n"
                 "Terminos relacionados para recuperar documentacion tecnica relevante: "
-                "bloqueo, desbloqueo, bloquear, desbloquear, pantalla tactil, pantalla táctil, "
-                "icono de bloqueo, tecla de bloqueo/desbloqueo, tecla de bloqueo y desbloqueo, "
-                "barra favoritos, funciones de la pantalla tactil."
+                + ", ".join(unique_terms)
+                + "."
             )
 
         if not history:
