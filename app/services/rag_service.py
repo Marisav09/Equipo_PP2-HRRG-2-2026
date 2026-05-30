@@ -205,18 +205,28 @@ class RagService:
     ) -> str:
         context = self._format_context_for_role(chat_request.role, chunks)
         history_block = self._format_history(history)
+        history_section = (
+            "\n\nHistorial conversacional reciente "
+            "(solo para continuidad del dialogo; NO es fuente tecnica, "
+            "NO es historial de mantenimiento del equipo y NO debe mencionarse en la respuesta):\n"
+            f"{history_block}"
+            if history_block
+            else ""
+        )
         system_prompt = system_prompt_for_role(chat_request.role, equipment_name)
         return f"""{system_prompt}
 
 INSTRUCCION DE SEGURIDAD:
-Si el contexto documental no contiene la respuesta, dilo explicitamente. No uses conocimiento general.
+Usa solamente el contexto documental recuperado. No uses conocimiento general.
+Si el contexto contiene pasos, controles, verificaciones, alarmas, valores, codigos, placas, conectores o procedimientos relacionados con la consulta, responde con esa evidencia disponible.
+No cierres la respuesta diciendo que no se encontro informacion si ya diste pasos, controles o recomendaciones basadas en el contexto recuperado.
+Si la evidencia recuperada es parcial, ambigua o incompleta, indicalo claramente y limita la respuesta a lo que aparece en el contexto.
+Solo indica que no hay informacion disponible cuando ningun fragmento recuperado contenga datos tecnicos utiles relacionados con la consulta.
+No menciones historial conversacional, historial reciente, historial de mantenimiento ni reparaciones previas salvo que esa informacion aparezca literalmente en el contexto documental recuperado.
 En modo operador, no menciones paginas, fuentes, manuales, citas, diagramas ni nombres de archivo.
 
 Pregunta del usuario:
-{chat_request.query}
-
-Historial reciente de esta misma sesion y equipo:
-{history_block}
+{chat_request.query}{history_section}
 
 Contexto documental recuperado exclusivamente desde Markdown en data/processed por ChromaDB:
 {context}
@@ -474,7 +484,7 @@ Respuesta:""".strip()
 
     def _format_history(self, history: list[dict]) -> str:
         if not history:
-            return "Sin historial previo para este equipo."
+            return ""
 
         return "\n".join(
             f"{message['role']}: {message['content'][:700]}"
