@@ -3,7 +3,7 @@
         <div class="avatar ai-avatar" aria-hidden="true"></div>
         <div class="message-content">
             <div class="bubble">
-                Hola!<br><br>
+                <span class="initial-greeting">Hola!!</span><br><br>
                 Soy tu asistente de Ingeniería Clínica.<br><br>
                 Equipo seleccionado:<br>
                 <strong class="initial-equipment-name">{{ equipment.name if equipment else "Equipo no reconocido" }}</strong><br><br>
@@ -22,7 +22,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg>
     </button>
     <input id="message-input" name="message" type="text" autocomplete="off" placeholder="Pregunta sobre fallas, uso, alarmas o mantenimiento..." required>
-    <button class="stop-button" type="button" id="abort-button" title="Detener generacion" aria-label="Detener generacion" disabled>
+    <button class="stop-button" type="button" id="abort-button" title="Detener generación" aria-label="Detener generación" disabled>
         <span aria-hidden="true"></span>
         <em>Detener</em>
     </button>

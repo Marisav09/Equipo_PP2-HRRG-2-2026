@@ -25,6 +25,20 @@ const activeEquipmentTitle = document.querySelector("#active-equipment");
 const equipmentSelect = document.querySelector("#equipment-select");
 const historyList = document.querySelector("#history-list");
 const speechToggleButton = document.querySelector("#speech-toggle-button");
+const monitoringButton = document.querySelector("#monitoring-button");
+const monitoringDialog = document.querySelector("#monitoring-dialog");
+const monitoringCloseButton = document.querySelector("#monitoring-close-button");
+const monitoringSearchInput = document.querySelector("#monitoring-search-input");
+const monitoringUserFilter = document.querySelector("#monitoring-user-filter");
+const monitoringEquipmentFilter = document.querySelector("#monitoring-equipment-filter");
+const monitoringDateFromFilter = document.querySelector("#monitoring-date-from-filter");
+const monitoringDateToFilter = document.querySelector("#monitoring-date-to-filter");
+const myConsultationsButton = document.querySelector("#my-consultations-button");
+const myConsultationsDialog = document.querySelector("#my-consultations-dialog");
+const myConsultationsCloseButton = document.querySelector("#my-consultations-close-button");
+const myConsultationsList = document.querySelector("#my-consultations-list");
+const technicianRecentList = document.querySelector("#technician-recent-list");
+const operatorHistoryList = document.querySelector("#operator-history-list");
 
 let activeRequestId = null;
 let selectedEquipmentId = shell?.dataset.equipmentId || "";
@@ -36,6 +50,14 @@ let activeLoadingMessage = null;
 let activeRequestCancelled = false;
 let speechMuted = localStorage.getItem("hrrgSpeechMuted") === "1";
 let conversationMessages = [];
+let activeChatId = sessionStorage.getItem(`hrrgActiveChatId:${shell?.dataset.role || "default"}`) || crypto.randomUUID();
+
+function setActiveChatId(chatId = crypto.randomUUID()) {
+    activeChatId = chatId;
+    sessionStorage.setItem(`hrrgActiveChatId:${shell?.dataset.role || "default"}`, activeChatId);
+}
+
+setActiveChatId(activeChatId);
 
 function modeLabel(mode) {
     const labels = {
@@ -46,8 +68,8 @@ function modeLabel(mode) {
         guardrail: "MODO: GUARDRAIL DE SEGURIDAD",
         cancelled: "MODO: CONSULTA DETENIDA",
         sin_documentos: "MODO: SIN DOCUMENTOS INDEXADOS",
-        sin_informacion: "MODO: SIN INFORMACION DOCUMENTAL",
-        contexto_insuficiente_operador: "MODO: SEGURIDAD CLINICA",
+        sin_informacion: "MODO: SIN INFORMACIÓN DOCUMENTAL",
+        contexto_insuficiente_operador: "MODO: SEGURIDAD CLÍNICA",
     };
     return labels[mode] || `MODO: ${String(mode || "DESCONOCIDO").toUpperCase()}`;
 }
@@ -76,7 +98,7 @@ function readableSourceName(source = {}) {
 }
 
 function visibleSourcePage(source = {}) {
-    return source.pdf_page || source.page || "sin pagina";
+    return source.pdf_page || source.page || "sin página";
 }
 
 function visibleSourceLabel(source = {}) {
@@ -85,6 +107,13 @@ function visibleSourceLabel(source = {}) {
 
 function inlineSourceLabel(source = {}, index = 0) {
     return `Fuente ${index + 1}: ${readableSourceName(source)}, pag. ${visibleSourcePage(source)}`;
+}
+
+function createCitationSup(index = 0) {
+    const sup = document.createElement("sup");
+    sup.className = "notebook-citation-sup";
+    sup.textContent = String(index + 1);
+    return sup;
 }
 
 function stripMarkdownMarkers(text) {
@@ -147,22 +176,24 @@ function createSourceList(sources = []) {
     if (!sources.length) return null;
 
     const wrapper = document.createElement("div");
-    wrapper.className = "source-list source-inline-list";
-    wrapper.appendChild(document.createTextNode("Fuentes: "));
+    wrapper.className = "source-list notebook-source-list";
+
+    const title = document.createElement("div");
+    title.className = "notebook-source-title";
+    title.textContent = "Fuentes:";
+    wrapper.appendChild(title);
 
     sources.forEach((source, index) => {
         const link = document.createElement("a");
-        link.className = "source-inline-link";
+        link.className = "notebook-source-link";
         link.href = source.url || "#";
         link.target = "_blank";
         link.rel = "noopener noreferrer";
-        link.title = `${visibleSourceName(source)}, pagina ${visibleSourcePage(source)}`;
-        link.textContent = inlineSourceLabel(source, index);
+        link.title = `${visibleSourceName(source)}, página ${visibleSourcePage(source)}`;
+        link.appendChild(createCitationSup(index));
+        link.appendChild(document.createTextNode(` Fuente: ${readableSourceName(source)}, pag. ${visibleSourcePage(source)}`));
 
         wrapper.appendChild(link);
-        if (index < sources.length - 1) {
-            wrapper.appendChild(document.createTextNode("; "));
-        }
     });
 
     return wrapper;
@@ -184,7 +215,7 @@ function createImageList(sources = []) {
 
         const preview = document.createElement("img");
         preview.src = image.url;
-        preview.alt = image.label || `Imagen pagina ${image.page}`;
+        preview.alt = image.label || `Imagen página ${image.page}`;
 
         const label = document.createElement("span");
         label.textContent = `Pag. ${image.page}`;
@@ -215,6 +246,30 @@ function appendTextWithBreaks(container, text) {
     stripMarkdownMarkers(text).split("\n").forEach((line, index) => {
         if (index > 0) container.appendChild(document.createElement("br"));
         container.appendChild(document.createTextNode(line));
+    });
+}
+
+function appendCitedTextWithBreaks(container, text, sources = []) {
+    const cleanText = stripMarkdownMarkers(text);
+    if (!sources.length) {
+        appendTextWithBreaks(container, cleanText);
+        return;
+    }
+
+    let citationIndex = 0;
+    cleanText.split("\n").forEach((line, lineIndex) => {
+        if (lineIndex > 0) container.appendChild(document.createElement("br"));
+
+        const segments = line.match(/[^.!?]+[.!?]?|\s+/g) || [line];
+        segments.forEach((segment) => {
+            const trimmed = segment.trim();
+            container.appendChild(document.createTextNode(segment));
+            if (!trimmed || !/[A-Za-zÁÉÍÓÚáéíóúÑñ0-9]/.test(trimmed)) return;
+
+            const sourceIndex = Math.min(citationIndex, sources.length - 1);
+            container.appendChild(createCitationSup(sourceIndex));
+            citationIndex += 1;
+        });
     });
 }
 
@@ -270,6 +325,112 @@ function createRegenerateAction() {
 
     actions.appendChild(button);
     return actions;
+}
+
+function createAuditRow({label, count}) {
+    const row = document.createElement("div");
+    row.className = "audit-metric-row";
+
+    const name = document.createElement("span");
+    name.textContent = label;
+
+    const value = document.createElement("strong");
+    value.textContent = count;
+
+    row.appendChild(name);
+    row.appendChild(value);
+    return row;
+}
+
+function createChartRow(item, maxCount, index = 0) {
+    const row = document.createElement("div");
+    row.className = "monitoring-chart-row";
+
+    const top = document.createElement("div");
+    top.className = "monitoring-chart-topline";
+
+    const label = document.createElement("span");
+    label.textContent = item.label;
+
+    const value = document.createElement("strong");
+    value.textContent = item.count;
+
+    top.appendChild(label);
+    top.appendChild(value);
+
+    const track = document.createElement("div");
+    track.className = "monitoring-chart-track";
+
+    const bar = document.createElement("div");
+    bar.className = `monitoring-chart-bar chart-color-${(index % 4) + 1}`;
+    const percent = maxCount ? Math.max(6, Math.round((Number(item.count || 0) / maxCount) * 100)) : 0;
+    bar.style.width = `${percent}%`;
+    bar.setAttribute("aria-label", `${item.label}: ${item.count}`);
+
+    track.appendChild(bar);
+    row.appendChild(top);
+    row.appendChild(track);
+    return row;
+}
+
+function renderAuditList(elementId, items = [], emptyLabel = "Sin datos registrados") {
+    const container = document.querySelector(`#${elementId}`);
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!items.length) {
+        const empty = document.createElement("p");
+        empty.className = "audit-empty";
+        empty.textContent = emptyLabel;
+        container.appendChild(empty);
+        return;
+    }
+
+    const maxCount = Math.max(...items.map((item) => Number(item.count || 0)), 0);
+    items.slice(0, 8).forEach((item, index) => {
+        container.appendChild(createChartRow(item, maxCount, index));
+    });
+}
+
+function renderIncidentPrompt(consultationId) {
+    if (!consultationId || !chatMessages) return;
+
+    const prompt = document.createElement("article");
+    prompt.className = "incident-prompt";
+
+    const text = document.createElement("span");
+    text.textContent = "Esta consulta parece una falla. ¿Desea registrarla como incidente?";
+
+    const actions = document.createElement("div");
+    actions.className = "incident-actions";
+
+    const yesButton = document.createElement("button");
+    yesButton.type = "button";
+    yesButton.textContent = "SI";
+    yesButton.addEventListener("click", async () => {
+        try {
+            await window.hrrgApi.postJson(`/api/monitoring/consultations/${consultationId}/incident`, {});
+            prompt.remove();
+            setStatus("Incidente registrado para trazabilidad de Ingeniería Clínica.");
+        } catch (error) {
+            setStatus(error.message || "No se pudo registrar el incidente.");
+        }
+    });
+
+    const noButton = document.createElement("button");
+    noButton.type = "button";
+    noButton.textContent = "NO";
+    noButton.addEventListener("click", () => {
+        prompt.remove();
+        setStatus("Consulta guardada sin incidente formal.");
+    });
+
+    actions.appendChild(yesButton);
+    actions.appendChild(noButton);
+    prompt.appendChild(text);
+    prompt.appendChild(actions);
+    chatMessages.appendChild(prompt);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 function createSpeechAction(content) {
@@ -334,6 +495,8 @@ function addMessage(role, content, options = {}) {
 
     if (role === "assistant" && fallbackMode) {
         renderFallbackBubble(bubble, visibleContent, options.sources || []);
+    } else if (role === "assistant" && options.sources?.length) {
+        appendCitedTextWithBreaks(bubble, visibleContent, options.sources);
     } else {
         appendTextWithBreaks(bubble, visibleContent);
     }
@@ -497,7 +660,7 @@ function renderManualsAudit(documents = []) {
 
         const metrics = document.createElement("span");
         metrics.className = "manual-metrics";
-        metrics.textContent = `${documentInfo.page_count || 0} paginas - ${documentInfo.chunk_count || 0} chunks - ${documentInfo.image_count || 0} imagenes`;
+        metrics.textContent = `${documentInfo.page_count || 0} páginas - ${documentInfo.chunk_count || 0} chunks - ${documentInfo.image_count || 0} imágenes`;
 
         equipment.appendChild(equipmentName);
         equipment.appendChild(metrics);
@@ -550,9 +713,10 @@ async function startNewChat() {
     lastQuery = "";
     activeQuery = "";
     removeLoadingMessage();
+    setActiveChatId();
 
     addMessage("assistant", `Chat nuevo iniciado para ${selectedEquipmentName}.`);
-    setStatus(`Chat nuevo para ${selectedEquipmentName}. Memoria de sesion limpiada.`);
+    setStatus(`Chat nuevo para ${selectedEquipmentName}. Memoria de sesión limpiada.`);
 }
 
 async function selectEquipment(equipmentId, equipmentName) {
@@ -574,10 +738,11 @@ async function selectEquipment(equipmentId, equipmentName) {
     conversationMessages = [];
     lastQuery = "";
     activeQuery = "";
+    setActiveChatId();
 
     addMessage("assistant", `Nuevo chat iniciado para ${selectedEquipmentName}.`);
     document.querySelector("#equipment-dialog")?.close();
-    setStatus(`Equipo seleccionado: ${selectedEquipmentName}. Memoria de sesion limpiada.`);
+    setStatus(`Equipo seleccionado: ${selectedEquipmentName}. Memoria de sesión limpiada.`);
 }
 
 function loadHistory() {
@@ -715,6 +880,7 @@ async function ask(query, options = {}) {
             equipment_name: selectedEquipmentName,
             force_fallback: Boolean(options.forceFallback),
             request_id: requestId,
+            chat_id: activeChatId,
         });
 
         if (activeRequestCancelled || activeRequestId !== requestId) return;
@@ -726,7 +892,13 @@ async function ask(query, options = {}) {
             regenerable: true,
         });
 
+        if (data.incident_candidate && data.consultation_id) {
+            renderIncidentPrompt(data.consultation_id);
+        }
+
         saveHistoryEntry(selectedEquipmentName);
+        await loadTechnicianRecentChats();
+        await loadOperatorChatHistory();
         setStatus(modeLabel(data.mode));
 
         if (!speechMuted) {
@@ -745,6 +917,544 @@ async function ask(query, options = {}) {
             setBusy(false);
         }
         messageInput.focus();
+    }
+}
+
+function renderConsultationCards(container, items = [], options = {}) {
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!items.length) {
+        const empty = document.createElement("p");
+        empty.className = options.emptyClass || "audit-empty";
+        empty.textContent = options.emptyText || "Todavia no hay consultas registradas.";
+        container.appendChild(empty);
+        return;
+    }
+
+    items.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = options.cardClass || "personal-query-card";
+
+        const title = document.createElement("strong");
+        title.textContent = item.equipment_name;
+
+        const date = document.createElement("span");
+        date.textContent = `${item.date} ${item.time}`;
+
+        const question = document.createElement("p");
+        question.textContent = item.question;
+
+        const meta = document.createElement("small");
+        meta.textContent = item.es_incidente ? `${item.category} - incidente registrado` : item.category;
+
+        card.appendChild(title);
+        card.appendChild(date);
+        card.appendChild(question);
+        card.appendChild(meta);
+        container.appendChild(card);
+    });
+}
+
+function renderMyConsultations(items = []) {
+    renderConsultationCards(myConsultationsList, items, {
+        cardClass: "personal-query-card",
+        emptyClass: "audit-empty",
+        emptyText: "Todavia no hay consultas registradas.",
+    });
+}
+
+function renderPersonalChatHistory(container, items = [], options = {}) {
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!items.length) {
+        const empty = document.createElement("p");
+        empty.className = options.emptyClass || "operator-history-empty";
+        empty.textContent = options.emptyText || "Sin chats recientes";
+        container.appendChild(empty);
+        return;
+    }
+
+    items.forEach((item) => {
+        const card = document.createElement("button");
+        card.className = options.cardClass || "operator-history-card";
+        card.type = "button";
+        card.dataset.chatId = item.chat_id;
+        if (item.chat_id === activeChatId) card.classList.add("active");
+
+        const title = document.createElement("strong");
+        title.textContent = item.equipment_name || "Equipo no registrado";
+
+        const preview = document.createElement("span");
+        preview.textContent = item.last_question || "Chat sin consultas";
+
+        const meta = document.createElement("small");
+        meta.textContent = `${item.last_at || ""} · ${item.message_count || 0} consulta${Number(item.message_count || 0) === 1 ? "" : "s"}`;
+
+        card.appendChild(title);
+        card.appendChild(preview);
+        card.appendChild(meta);
+        card.addEventListener("click", () => restoreOperatorChat(item.chat_id));
+        container.appendChild(card);
+    });
+}
+
+function renderTechnicianRecent(items = []) {
+    renderPersonalChatHistory(technicianRecentList, items, {
+        cardClass: "technician-recent-item",
+        emptyClass: "technician-recent-empty",
+        emptyText: "Sin chats propios todavía",
+    });
+}
+
+async function openMyConsultations() {
+    if (!myConsultationsDialog) return;
+    setStatus("Cargando historial personal...");
+    try {
+        const data = await window.hrrgApi.getJson("/api/monitoring/my-consultations?limit=10");
+        renderMyConsultations(data.items || []);
+        myConsultationsDialog.showModal();
+        setStatus("Historial personal cargado.");
+    } catch (error) {
+        setStatus(error.message || "No se pudo cargar el historial personal.");
+    }
+}
+
+async function loadTechnicianRecentChats() {
+    if (!technicianRecentList) return;
+    try {
+        const data = await window.hrrgApi.getJson("/api/monitoring/my-chats?limit=5");
+        renderTechnicianRecent(data.items || []);
+    } catch (error) {
+        renderTechnicianRecent([]);
+    }
+}
+
+function renderOperatorChatHistory(items = []) {
+    renderPersonalChatHistory(operatorHistoryList, items, {
+        cardClass: "operator-history-card",
+        emptyClass: "operator-history-empty",
+        emptyText: "Sin chats recientes",
+    });
+}
+
+async function loadOperatorChatHistory() {
+    if (!operatorHistoryList) return;
+    try {
+        const data = await window.hrrgApi.getJson("/api/monitoring/my-chats?limit=5");
+        renderOperatorChatHistory(data.items || []);
+    } catch (error) {
+        renderOperatorChatHistory([]);
+    }
+}
+
+async function restoreOperatorChat(chatId) {
+    if (!chatId) return;
+
+    try {
+        const data = await window.hrrgApi.getJson(`/api/monitoring/my-chats/${encodeURIComponent(chatId)}`);
+        setActiveChatId(data.chat_id);
+        selectedEquipmentId = data.equipment_id || selectedEquipmentId;
+        selectedEquipmentName = data.equipment_name || selectedEquipmentName;
+
+        if (activeEquipmentTitle && selectedEquipmentName) {
+            activeEquipmentTitle.textContent = selectedEquipmentName;
+        }
+
+        removeLoadingMessage();
+        activeRequestId = null;
+        activeQuery = "";
+        activeRequestCancelled = false;
+        setBusy(false);
+        chatMessages.innerHTML = "";
+        conversationMessages = [];
+
+        (data.turns || []).forEach((turn) => {
+            addMessage("user", turn.question, {track: false});
+            addMessage("assistant", turn.answer, {
+                mode: "",
+                sources: [],
+                regenerable: false,
+                track: false,
+            });
+        });
+
+        conversationMessages = (data.turns || []).flatMap((turn) => [
+            {role: "user", content: turn.question, options: {mode: "", sources: []}},
+            {role: "assistant", content: turn.answer, options: {mode: "", sources: []}},
+        ]);
+
+        lastQuery = [...conversationMessages].reverse().find((message) => message.role === "user")?.content || "";
+        await loadOperatorChatHistory();
+        await loadTechnicianRecentChats();
+        setStatus(`Chat reabierto: ${selectedEquipmentName}.`);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    } catch (error) {
+        setStatus(error.message || "No se pudo reabrir el chat.");
+    }
+}
+
+function renderMonitoringKpis(indicators = {}) {
+    const container = document.querySelector("#monitoring-kpis");
+    if (!container) return;
+
+    container.innerHTML = "";
+    const total = Number(indicators.total_consultations || 0);
+    [
+        ["Consultas hoy", indicators.consultations_today || 0, total],
+        ["Equipos consultados", indicators.consulted_equipment || 0, Math.max(total, indicators.consulted_equipment || 0)],
+        ["Usuarios activos", indicators.active_users || 0, Math.max(total, indicators.active_users || 0)],
+        ["Fallas recurrentes", indicators.recurrent_failures || 0, Math.max(total, indicators.recurrent_failures || 0)],
+    ].forEach(([label, value, maxValue], index) => {
+        const card = document.createElement("div");
+        card.className = "monitoring-kpi";
+        const strong = document.createElement("strong");
+        strong.textContent = value;
+        const span = document.createElement("span");
+        span.textContent = label;
+        const track = document.createElement("div");
+        track.className = "monitoring-kpi-track";
+        const bar = document.createElement("div");
+        bar.className = `monitoring-kpi-bar chart-color-${(index % 4) + 1}`;
+        const percent = maxValue ? Math.max(4, Math.min(100, Math.round((Number(value || 0) / maxValue) * 100))) : 0;
+        bar.style.width = `${percent}%`;
+        track.appendChild(bar);
+        card.appendChild(strong);
+        card.appendChild(span);
+        card.appendChild(track);
+        container.appendChild(card);
+    });
+}
+
+function renderMonitoringInsights(data = {}) {
+    const container = document.querySelector("#monitoring-insights");
+    if (!container) return;
+
+    container.innerHTML = "";
+    const topEquipment = data.top_equipment?.[0];
+    const topCategory = data.by_category?.[0];
+    const topService = data.by_service?.[0];
+    const total = data.indicators?.total_consultations || 0;
+    const insights = [
+        topEquipment ? ["Equipo crítico", topEquipment.label, `${topEquipment.count} consultas`] : ["Equipo crítico", "Sin datos", "0 consultas"],
+        topCategory ? ["Falla dominante", topCategory.label, `${topCategory.count} eventos`] : ["Falla dominante", "Sin datos", "0 eventos"],
+        topService ? ["Servicio con mayor uso", topService.label, `${topService.count} consultas`] : ["Servicio con mayor uso", "Sin datos", "0 consultas"],
+        ["Base analizada", `${total} consultas`, "Historial registrado"],
+    ];
+
+    insights.forEach(([label, value, note]) => {
+        const card = document.createElement("article");
+        card.className = "monitoring-insight-card";
+        const small = document.createElement("span");
+        small.textContent = label;
+        const strong = document.createElement("strong");
+        strong.textContent = value;
+        const foot = document.createElement("small");
+        foot.textContent = note;
+        card.appendChild(small);
+        card.appendChild(strong);
+        card.appendChild(foot);
+        container.appendChild(card);
+    });
+}
+
+function renderMonitoringAlerts(items = []) {
+    const container = document.querySelector("#monitoring-alerts");
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!items.length) {
+        const empty = document.createElement("p");
+        empty.className = "audit-empty";
+        empty.textContent = "Sin alertas recurrentes dentro del periodo analizado.";
+        container.appendChild(empty);
+        return;
+    }
+
+    items.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = `monitoring-alert-card alert-${String(item.level || "media").toLowerCase()}`;
+        const badge = document.createElement("span");
+        badge.textContent = item.level || "Media";
+        const title = document.createElement("strong");
+        title.textContent = item.equipment || "Equipo sin identificar";
+        const detail = document.createElement("p");
+        detail.textContent = `${item.failure || "Falla recurrente"}: ${item.count || 0} ocurrencias`;
+        const message = document.createElement("small");
+        message.textContent = item.message || "Revisar recurrencia.";
+        card.appendChild(badge);
+        card.appendChild(title);
+        card.appendChild(detail);
+        card.appendChild(message);
+        container.appendChild(card);
+    });
+}
+
+function renderFailureMap(items = []) {
+    const container = document.querySelector("#monitoring-failure-map");
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!items.length) {
+        const empty = document.createElement("p");
+        empty.className = "audit-empty";
+        empty.textContent = "Sin recurrencias detectadas todavía.";
+        container.appendChild(empty);
+        return;
+    }
+
+    items.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "failure-card";
+        const title = document.createElement("strong");
+        title.textContent = item.equipment;
+        const total = document.createElement("span");
+        total.className = "failure-total";
+        total.textContent = `${item.total} consultas asociadas`;
+        card.appendChild(title);
+        card.appendChild(total);
+
+        const failures = item.failures || [];
+        const maxCount = Math.max(...failures.map((failure) => Number(failure.count || 0)), 0);
+        failures.forEach((failure, index) => {
+            card.appendChild(createChartRow(failure, maxCount, index));
+        });
+        container.appendChild(card);
+    });
+}
+
+function renderMonitoringConsultations(items = []) {
+    const container = document.querySelector("#monitoring-consultation-list");
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!items.length) {
+        const empty = document.createElement("p");
+        empty.className = "audit-empty";
+        empty.textContent = "No hay consultas para los filtros seleccionados.";
+        container.appendChild(empty);
+        return;
+    }
+
+    const count = document.createElement("p");
+    count.className = "monitoring-search-count";
+    count.textContent = `${items.length} consulta${items.length === 1 ? "" : "s"} encontradas`;
+    container.appendChild(count);
+
+    items.slice(0, 30).forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "monitoring-consultation-card";
+        const title = document.createElement("strong");
+        title.textContent = item.equipment_name || "Equipo no registrado";
+        const meta = document.createElement("span");
+        meta.textContent = `${item.username || "Sin usuario"} · ${item.user_service || "Sin servicio"} · ${item.date} ${item.time}`;
+        const question = document.createElement("p");
+        question.textContent = item.question || "Consulta sin detalle";
+        const category = document.createElement("small");
+        category.textContent = item.es_incidente ? `${item.category} · incidente` : item.category;
+        card.appendChild(title);
+        card.appendChild(meta);
+        card.appendChild(question);
+        card.appendChild(category);
+        container.appendChild(card);
+    });
+}
+
+function monitoringFilterParams() {
+    const params = new URLSearchParams();
+    [
+        ["search", monitoringSearchInput?.value],
+        ["username", monitoringUserFilter?.value],
+        ["equipment", monitoringEquipmentFilter?.value],
+        ["date_from", monitoringDateFromFilter?.value],
+        ["date_to", monitoringDateToFilter?.value],
+    ].forEach(([key, value]) => {
+        if (String(value || "").trim()) params.set(key, String(value).trim());
+    });
+    return params;
+}
+
+async function loadMonitoringSearch() {
+    const container = document.querySelector("#monitoring-consultation-list");
+    if (!container) return [];
+
+    const params = monitoringFilterParams();
+    const path = `/api/monitoring/consultations${params.toString() ? `?${params}` : ""}`;
+    const consultations = await window.hrrgApi.getJson(path);
+    const items = consultations.items || [];
+    renderMonitoringConsultations(items);
+    return items;
+}
+
+function groupCounts(items = [], keyBuilder) {
+    const grouped = new Map();
+    items.forEach((item) => {
+        const key = keyBuilder(item);
+        if (!key) return;
+        grouped.set(key, (grouped.get(key) || 0) + 1);
+    });
+    return [...grouped.entries()]
+        .map(([label, count]) => ({label, count}))
+        .sort((a, b) => b.count - a.count);
+}
+
+function renderPriorityList(data = {}, consultations = []) {
+    const container = document.querySelector("#monitoring-priority-list");
+    if (!container) return;
+
+    container.innerHTML = "";
+    const topFailureMap = data.failure_map || [];
+    const topCategory = data.by_category?.[0];
+    const topEquipment = data.top_equipment?.[0];
+    const priorities = [];
+
+    topFailureMap.slice(0, 4).forEach((item) => {
+        const mainFailure = item.failures?.[0];
+        priorities.push({
+            title: item.equipment,
+            detail: mainFailure ? `${mainFailure.label}: ${mainFailure.count} registros` : `${item.total} consultas`,
+            action: "Revisar recurrencia técnica y validar si requiere intervención preventiva.",
+            level: item.total >= 5 ? "Alta" : "Media",
+        });
+    });
+
+    if (!priorities.length && topEquipment) {
+        priorities.push({
+            title: topEquipment.label,
+            detail: `${topEquipment.count} consultas acumuladas`,
+            action: "Analizar preguntas frecuentes y preparar guía operativa corta.",
+            level: "Media",
+        });
+    }
+
+    if (topCategory) {
+        priorities.push({
+            title: topCategory.label,
+            detail: `${topCategory.count} eventos clasificados`,
+            action: "Estandarizar respuesta y revisar necesidad de capacitación o checklist.",
+            level: topCategory.count >= 5 ? "Alta" : "Media",
+        });
+    }
+
+    if (!priorities.length && consultations.length) {
+        const frequentEquipment = groupCounts(consultations, (item) => item.equipment_name)[0];
+        priorities.push({
+            title: frequentEquipment.label,
+            detail: `${frequentEquipment.count} consultas registradas`,
+            action: "Observar evolución durante los próximos turnos.",
+            level: "Baja",
+        });
+    }
+
+    if (!priorities.length) {
+        const empty = document.createElement("p");
+        empty.className = "audit-empty";
+        empty.textContent = "Sin datos suficientes para priorizar intervenciones.";
+        container.appendChild(empty);
+        return;
+    }
+
+    priorities.slice(0, 5).forEach((item) => {
+        const card = document.createElement("article");
+        card.className = `priority-card priority-${item.level.toLowerCase()}`;
+        const level = document.createElement("span");
+        level.className = "priority-level";
+        level.textContent = item.level;
+        const title = document.createElement("strong");
+        title.textContent = item.title;
+        const detail = document.createElement("p");
+        detail.textContent = item.detail;
+        const action = document.createElement("small");
+        action.textContent = item.action;
+        card.appendChild(level);
+        card.appendChild(title);
+        card.appendChild(detail);
+        card.appendChild(action);
+        container.appendChild(card);
+    });
+}
+
+function renderServiceFailureHeatmap(consultations = []) {
+    const container = document.querySelector("#monitoring-heatmap");
+    if (!container) return;
+
+    container.innerHTML = "";
+    if (!consultations.length) {
+        const empty = document.createElement("p");
+        empty.className = "audit-empty";
+        empty.textContent = "Sin consultas suficientes para armar la matriz.";
+        container.appendChild(empty);
+        return;
+    }
+
+    const services = groupCounts(consultations, (item) => item.user_service || "Sin servicio").slice(0, 5).map((item) => item.label);
+    const categories = groupCounts(consultations, (item) => item.category || "Sin categoría").slice(0, 6).map((item) => item.label);
+    const counts = new Map();
+    consultations.forEach((item) => {
+        const service = item.user_service || "Sin servicio";
+        const category = item.category || "Sin categoría";
+        counts.set(`${service}|${category}`, (counts.get(`${service}|${category}`) || 0) + 1);
+    });
+    const maxCount = Math.max(...counts.values(), 1);
+
+    const table = document.createElement("div");
+    table.className = "heatmap-grid";
+    table.style.gridTemplateColumns = `minmax(120px, 1.1fr) repeat(${categories.length}, minmax(82px, 1fr))`;
+
+    const corner = document.createElement("div");
+    corner.className = "heatmap-head heatmap-corner";
+    corner.textContent = "Servicio";
+    table.appendChild(corner);
+
+    categories.forEach((category) => {
+        const cell = document.createElement("div");
+        cell.className = "heatmap-head";
+        cell.textContent = category;
+        table.appendChild(cell);
+    });
+
+    services.forEach((service) => {
+        const serviceCell = document.createElement("div");
+        serviceCell.className = "heatmap-service";
+        serviceCell.textContent = service;
+        table.appendChild(serviceCell);
+
+        categories.forEach((category) => {
+            const count = counts.get(`${service}|${category}`) || 0;
+            const cell = document.createElement("div");
+            const intensity = count ? Math.max(0.16, count / maxCount) : 0;
+            cell.className = "heatmap-cell";
+            cell.style.setProperty("--heat", String(intensity));
+            cell.textContent = count ? String(count) : "-";
+            cell.title = `${service} · ${category}: ${count}`;
+            table.appendChild(cell);
+        });
+    });
+
+    container.appendChild(table);
+}
+
+async function openMonitoringCenter() {
+    if (!monitoringDialog) return;
+    setStatus("Cargando Centro de Monitoreo...");
+    try {
+        const data = await window.hrrgApi.getJson("/api/monitoring/dashboard");
+        renderMonitoringKpis(data.indicators || {});
+        renderMonitoringInsights(data);
+        renderMonitoringAlerts(data.alerts || []);
+        renderAuditList("monitoring-equipment-list", data.top_equipment || []);
+        renderAuditList("monitoring-users-list", data.top_users || []);
+        renderAuditList("monitoring-service-list", data.by_service || []);
+        renderAuditList("monitoring-category-list", data.by_category || []);
+        renderFailureMap(data.failure_map || []);
+        const consultationItems = await loadMonitoringSearch();
+        renderPriorityList(data, consultationItems);
+        renderServiceFailureHeatmap(consultationItems);
+        monitoringDialog.showModal();
+        setStatus("Centro de Monitoreo actualizado.");
+    } catch (error) {
+        setStatus(error.message || "No se pudo cargar el Centro de Monitoreo.");
     }
 }
 
@@ -803,6 +1513,43 @@ if (ingestButton) {
 
 if (manualsButton) {
     manualsButton.addEventListener("click", openManualsAudit);
+}
+
+if (monitoringButton) {
+    monitoringButton.addEventListener("click", openMonitoringCenter);
+}
+
+if (monitoringCloseButton) {
+    monitoringCloseButton.addEventListener("click", () => {
+        monitoringDialog?.close();
+    });
+}
+
+if (monitoringSearchInput) {
+    monitoringSearchInput.addEventListener("input", async () => {
+        await loadMonitoringSearch();
+    });
+}
+
+[monitoringUserFilter, monitoringEquipmentFilter, monitoringDateFromFilter, monitoringDateToFilter]
+    .filter(Boolean)
+    .forEach((control) => {
+        control.addEventListener("input", async () => {
+            await loadMonitoringSearch();
+        });
+        control.addEventListener("change", async () => {
+            await loadMonitoringSearch();
+        });
+    });
+
+if (myConsultationsButton) {
+    myConsultationsButton.addEventListener("click", openMyConsultations);
+}
+
+if (myConsultationsCloseButton) {
+    myConsultationsCloseButton.addEventListener("click", () => {
+        myConsultationsDialog?.close();
+    });
 }
 
 if (manualsCloseButton) {
@@ -918,3 +1665,5 @@ document.querySelectorAll(".equipment-card").forEach((button) => {
 
 updateSpeechControls();
 renderHistory();
+loadTechnicianRecentChats();
+loadOperatorChatHistory();

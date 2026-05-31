@@ -21,6 +21,7 @@ def create_app() -> Flask:
     from app.api.chat_routes import chat_bp
     from app.api.equipment_routes import equipment_bp
     from app.api.ingest_routes import ingest_bp
+    from app.api.monitoring_routes import monitoring_bp
     from app.api.qr_routes import qr_bp
     from app.api.system_routes import system_bp
     from app.api.web_routes import web_bp
@@ -30,6 +31,7 @@ def create_app() -> Flask:
     flask_app.register_blueprint(chat_bp, url_prefix="/api/chat")
     flask_app.register_blueprint(equipment_bp, url_prefix="/api/equipment")
     flask_app.register_blueprint(ingest_bp, url_prefix="/api/ingest")
+    flask_app.register_blueprint(monitoring_bp, url_prefix="/api/monitoring")
     flask_app.register_blueprint(qr_bp, url_prefix="/api/qr")
     flask_app.register_blueprint(system_bp, url_prefix="/api/system")
 

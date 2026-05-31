@@ -13,6 +13,7 @@ class ChatRequest:
     role: str
     force_fallback: bool
     request_id: str
+    chat_id: str = ""
 
     @classmethod
     def from_payload(cls, payload: dict) -> "ChatRequest":
@@ -25,6 +26,7 @@ class ChatRequest:
             role=role,
             force_fallback=bool(payload.get("force_fallback", False)),
             request_id=str(payload.get("request_id", "")).strip(),
+            chat_id=str(payload.get("chat_id", "")).strip(),
         )
 
 

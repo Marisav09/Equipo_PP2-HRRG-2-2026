@@ -4,6 +4,18 @@
 
 {% block content %}
 <main class="app-shell chat-product-shell operator-shell" data-role="operador" data-equipment-id="{{ equipment.id if equipment else '' }}" data-equipment-name="{{ equipment.name if equipment else '' }}">
+    <aside class="operator-history-sidebar" aria-label="Historial del operador">
+        <div class="operator-sidebar-brand">
+            <img src="{{ url_for('static', filename='img/hrrg-logo.svg') }}" alt="HRRG">
+            <span>Ingeniería Clínica</span>
+        </div>
+        <div class="operator-history-heading">
+            <h2>Historial</h2>
+            <p>Últimos 5 chats</p>
+        </div>
+        <div class="operator-history-list" id="operator-history-list"></div>
+    </aside>
+
     <section class="workspace operator-workspace chat-workspace">
         <header class="chat-compact-topbar">
             <a class="chat-nav-action" href="{{ url_for('web.operator_equipment_selector') }}">

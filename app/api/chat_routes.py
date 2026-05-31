@@ -4,7 +4,9 @@ from uuid import uuid4
 
 from flask import Blueprint, jsonify, make_response, request
 
+from app.core.equipment_catalog import canonical_equipment_name, find_equipment_by_id
 from app.models.schemas import ChatRequest
+from app.services.knowledge_audit_service import KnowledgeAuditService
 from app.services.memory_service import MemoryService
 from app.services.rag_service import RagService
 
@@ -12,6 +14,7 @@ from app.services.rag_service import RagService
 chat_bp = Blueprint("chat", __name__)
 rag_service = RagService()
 memory_service = MemoryService()
+audit_service = KnowledgeAuditService()
 cancelled_requests: set[str] = set()
 
 
@@ -30,6 +33,26 @@ def ask():
         should_cancel=lambda: chat_request.request_id in cancelled_requests,
     )
     cancelled_requests.discard(chat_request.request_id)
+    if response.get("mode") != "cancelled":
+        equipment_name = chat_request.equipment_name
+        if chat_request.equipment_id:
+            equipment = find_equipment_by_id(chat_request.equipment_id)
+            equipment_name = equipment.name if equipment else equipment_name
+        equipment_name = canonical_equipment_name(equipment_name) or equipment_name or "Equipo no reconocido"
+
+        audit = audit_service.record_consultation(
+            session_id=session_id,
+            chat_id=chat_request.chat_id or session_id,
+            username=request.cookies.get("hrrg_username") or chat_request.role,
+            profile=chat_request.role,
+            user_service=request.cookies.get("hrrg_user_service")
+            or ("UTI Adultos" if chat_request.role == "operador" else "Ingeniería Clínica"),
+            equipment_id=chat_request.equipment_id,
+            equipment_name=equipment_name,
+            question=chat_request.query,
+            answer=str(response.get("answer", "")),
+        )
+        response.update(audit)
 
     flask_response = make_response(jsonify(response))
     flask_response.set_cookie(

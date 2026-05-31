@@ -1,9 +1,41 @@
 {% extends "base.html" %}
 
-{% block title %}Consola Tecnica | HRRG{% endblock %}
+{% block title %}Consola Técnica | HRRG{% endblock %}
 
 {% block content %}
 <main class="app-shell chat-product-shell" data-role="tecnico" data-equipment-id="{{ equipment.id if equipment else '' }}" data-equipment-name="{{ equipment.name if equipment else '' }}">
+    <aside class="technician-sidebar" aria-label="Menú técnico">
+        <div class="technician-sidebar-brand">
+            <img src="{{ url_for('static', filename='img/hrrg-logo.svg') }}" alt="HRRG">
+            <span>Ingeniería Clínica</span>
+        </div>
+        <nav class="technician-menu">
+            <button class="technician-menu-button active" type="button" id="monitoring-button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-7"/><path d="M7 19v-4M11 19v-8M15 19v-5M19 19V7"/></svg>
+                <span>Centro de Monitoreo</span>
+            </button>
+            <button class="technician-menu-button" type="button" id="manuals-button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8"/></svg>
+                <span>Manuales cargados</span>
+            </button>
+            <button class="technician-menu-button" type="button" id="qr-button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z"/><path d="M14 14h2v2h-2zM19 14h2v5h-5v2h-2v-5h5z"/></svg>
+                <span>Código QR</span>
+            </button>
+            <button class="technician-menu-button" type="button" id="new-chat-button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8M8 13h5"/></svg>
+                <span>Nuevo chat</span>
+            </button>
+        </nav>
+        <section class="technician-recent-panel" aria-label="Mis últimos chats">
+            <div class="technician-recent-heading">
+                <span>Mis últimos chats</span>
+                <small>Usuario técnico</small>
+            </div>
+            <div class="technician-recent-list" id="technician-recent-list"></div>
+        </section>
+    </aside>
+
     <section class="workspace chat-workspace">
         <header class="chat-compact-topbar">
             <a class="chat-nav-action" href="{{ url_for('web.technician_equipment_selector') }}">
@@ -26,18 +58,6 @@
         {% include "partials/chat_panel.html" %}
     </section>
 
-    <div class="chat-floating-actions" aria-label="Herramientas tecnicas">
-        <button class="floating-tool-button" type="button" id="manuals-button" title="Manuales cargados" aria-label="Manuales cargados">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8"/></svg>
-        </button>
-        <button class="floating-tool-button" type="button" id="qr-button" title="Codigo QR" aria-label="Codigo QR">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3z"/><path d="M14 14h2v2h-2zM19 14h2v5h-5v2h-2v-5h5z"/></svg>
-        </button>
-        <button class="floating-tool-button" type="button" id="new-chat-button" title="Nuevo chat" aria-label="Nuevo chat">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/><path d="M8 9h8M8 13h5"/></svg>
-        </button>
-    </div>
-
     <dialog class="manuals-dialog" id="manuals-dialog">
         <section class="manuals-panel">
             <div class="dialog-header">
@@ -57,12 +77,12 @@
             <div class="dialog-header">
                 <div>
                     <p class="eyebrow">Acceso operador</p>
-                    <h2 id="qr-title">Codigo QR</h2>
+                    <h2 id="qr-title">Código QR</h2>
                 </div>
                 <button class="dialog-close" type="submit" aria-label="Cerrar">Cerrar</button>
             </div>
             <div class="qr-preview">
-                <img id="qr-image" alt="Codigo QR del equipo seleccionado">
+                <img id="qr-image" alt="Código QR del equipo seleccionado">
             </div>
             <div class="qr-url" id="qr-url"></div>
             <div class="qr-actions">
@@ -70,6 +90,74 @@
                 <button class="primary-button" type="button" id="qr-copy-button">Copiar URL</button>
             </div>
         </form>
+    </dialog>
+
+    <dialog class="monitoring-dialog" id="monitoring-dialog">
+        <section class="monitoring-panel">
+            <div class="dialog-header">
+                <div>
+                    <p class="eyebrow">Gestión de conocimiento</p>
+                    <h2>Centro de Monitoreo</h2>
+                </div>
+                <button class="dialog-close" type="button" id="monitoring-close-button" aria-label="Cerrar">Cerrar</button>
+            </div>
+
+            <div class="monitoring-kpis" id="monitoring-kpis"></div>
+            <div class="monitoring-insights" id="monitoring-insights"></div>
+
+            <section class="monitoring-section monitoring-wide">
+                <h3>Alertas automáticas</h3>
+                <div class="monitoring-alerts" id="monitoring-alerts"></div>
+            </section>
+
+            <section class="monitoring-section monitoring-wide">
+                <h3>Consultas filtrables</h3>
+                <div class="monitoring-filter-row">
+                    <input id="monitoring-search-input" type="search" placeholder="Problema reportado">
+                    <input id="monitoring-user-filter" type="search" placeholder="Usuario">
+                    <input id="monitoring-equipment-filter" type="search" placeholder="Equipo">
+                    <input id="monitoring-date-from-filter" type="date" aria-label="Fecha desde">
+                    <input id="monitoring-date-to-filter" type="date" aria-label="Fecha hasta">
+                </div>
+                <div class="monitoring-consultation-list" id="monitoring-consultation-list"></div>
+            </section>
+
+            <div class="monitoring-grid">
+                <section class="monitoring-section">
+                    <h3>Equipos más consultados</h3>
+                    <div class="monitoring-list" id="monitoring-equipment-list"></div>
+                </section>
+                <section class="monitoring-section">
+                    <h3>Usuarios más activos</h3>
+                    <div class="monitoring-list" id="monitoring-users-list"></div>
+                </section>
+                <section class="monitoring-section">
+                    <h3>Consultas por Servicio</h3>
+                    <div class="monitoring-list" id="monitoring-service-list"></div>
+                </section>
+                <section class="monitoring-section">
+                    <h3>Trazabilidad de Fallas</h3>
+                    <div class="monitoring-list" id="monitoring-category-list"></div>
+                </section>
+            </div>
+
+            <section class="monitoring-section monitoring-wide">
+                <h3>Mapa de Fallas Recurrentes</h3>
+                <div class="monitoring-failure-map" id="monitoring-failure-map"></div>
+            </section>
+
+            <div class="monitoring-decision-grid">
+                <section class="monitoring-section">
+                    <h3>Prioridades de intervención</h3>
+                    <div class="monitoring-priority-list" id="monitoring-priority-list"></div>
+                </section>
+            </div>
+
+            <section class="monitoring-section monitoring-wide">
+                <h3>Matriz Servicio - Falla</h3>
+                <div class="monitoring-heatmap" id="monitoring-heatmap"></div>
+            </section>
+        </section>
     </dialog>
 </main>
 {% endblock %}
