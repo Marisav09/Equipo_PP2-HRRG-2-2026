@@ -36,14 +36,6 @@ EQUIPMENT_CATALOG: tuple[Equipment, ...] = (
         ),
     ),
     Equipment(
-        id="perfect-pitch",
-        name="Analizador de tonos Perfect Pitch",
-        aliases=(
-            "perfect pitch",
-            "analizador de tonos",
-        ),
-    ),
-    Equipment(
         id="draeger-vn500",
         name="Respirador Draeger - VN500",
         aliases=(

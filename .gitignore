@@ -1,31 +1,32 @@
-venv/
-__pycache__/
-*.pyc
-.env
-.DS_Store
-.vscode/
-vectorstore/
-data/processed/
-data/chroma/
-data/audit/
-data/tickets/
-logs/
 # Entornos virtuales
 venv/
 env/
 .venv/
-# Archivos de caché de Python
+
+# Python
 __pycache__/
 *.pyc
 
-# Base de datos vectorial (no se sube, se genera localmente)
+# Configuracion local
+.env
+.DS_Store
+.vscode/
+
+# Base vectorial local: no se sube, se reconstruye desde data/processed
+data/chroma/
 chroma_db/
+vectorstore/
 
+# Bases y archivos locales generados en ejecucion
+data/audit/
+data/tickets/
+logs/
+
+# Backups / descargas / OCR / carpetas temporales de trabajo
 data/raw_original_unicos/
-
 data/downloads_originales/
-
 data/raw_pre_fix_aliases/
-
 data/ocr_output/
 data/raw_pre_ocr_backup/
+data/processed/*.sqlite3
+data/quarantine/

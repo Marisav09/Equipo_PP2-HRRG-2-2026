@@ -34,7 +34,6 @@ EQUIPMENT_PRESENTATION: dict[str, dict[str, str]] = {
     "dinan-af500": {"category": "Equipamiento clinico", "icon": "settings"},
     "tp-100": {"category": "Equipamiento clinico", "icon": "settings"},
     "rodantes-mac-gmm": {"category": "Imagenes medicas", "icon": "scan"},
-    "perfect-pitch": {"category": "Diagnostico", "icon": "waveform"},
 }
 
 
