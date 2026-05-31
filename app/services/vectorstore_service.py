@@ -93,6 +93,9 @@ class VectorstoreService:
         Esta lista representa el estado real del indice vectorial, no la auditoria
         historica de ingestas. Se usa para que la interfaz no muestre documentos
         excluidos o registros viejos que ya no estan indexados.
+
+        La cantidad de paginas se calcula solo con paginas PDF verificadas.
+        No se usa markdown_page ni page como reemplazo de pagina PDF oficial.
         """
         collection = self.get_store()._collection
         if collection.count() == 0:
@@ -137,15 +140,17 @@ class VectorstoreService:
 
             current["chunk_count"] += 1
 
-            page = metadata.get("pdf_page") or metadata.get("page")
-            if page not in (None, "", "sin_pagina"):
-                try:
-                    page_number = int(page)
-                except (TypeError, ValueError):
-                    page_number = 0
+            pdf_page_confidence = str(metadata.get("pdf_page_confidence") or "").strip().lower()
+            if pdf_page_confidence == "verified":
+                page = metadata.get("pdf_page")
+                if page not in (None, "", "sin_pagina"):
+                    try:
+                        page_number = int(page)
+                    except (TypeError, ValueError):
+                        page_number = 0
 
-                if page_number > 0:
-                    pages_by_source.setdefault(source_file, set()).add(page_number)
+                    if page_number > 0:
+                        pages_by_source.setdefault(source_file, set()).add(page_number)
 
             try:
                 current["image_count"] += int(metadata.get("image_count", 0) or 0)
@@ -426,12 +431,15 @@ class VectorstoreService:
         metadata: dict[str, Any] = document.metadata or {}
         equipment_name = str(metadata.get("equipment_name") or metadata.get("equipo") or "").strip()
 
-        pdf_page = metadata.get("pdf_page") or metadata.get("page", "sin_pagina")
+        pdf_page = metadata.get("pdf_page") or ""
         markdown_page = metadata.get("markdown_page", "")
+        pdf_page_confidence = str(metadata.get("pdf_page_confidence") or "").strip()
+        page_mapping_method = str(metadata.get("page_mapping_method") or "").strip()
+        page_mapping_status = str(metadata.get("page_mapping_status") or "").strip()
 
         citation = SourceCitation(
             source_file=str(metadata.get("source_file", "sin_fuente")),
-            page=pdf_page,
+            page=pdf_page or "sin_pagina",
             chunk_id=str(metadata.get("chunk_id", "sin_chunk")),
             equipment_name=equipment_name or expected_equipment,
             has_images=bool(metadata.get("has_images", False)),
@@ -441,6 +449,9 @@ class VectorstoreService:
             display_source=str(metadata.get("display_source") or ""),
             original_pdf=str(metadata.get("original_pdf") or ""),
             pdf_page=pdf_page,
+            pdf_page_confidence=pdf_page_confidence,
+            page_mapping_method=page_mapping_method,
+            page_mapping_status=page_mapping_status,
             markdown_page=markdown_page,
         )
         return RetrievedChunk(
