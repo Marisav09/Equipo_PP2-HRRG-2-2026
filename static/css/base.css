@@ -2163,3 +2163,38 @@ body,
     -webkit-text-fill-color: #123f4a;
     box-shadow: 0 0 0 1000px #f8fafc inset, 0 0 0 4px rgba(125, 211, 252, 0.14);
 }
+
+/* Technician profile identity: light green/turquoise variant. */
+.login-screen-tecnico,
+.equipment-select-screen[data-selector-profile="tecnico"] {
+    background:
+        linear-gradient(135deg, rgba(204, 251, 241, 0.50), rgba(153, 246, 228, 0.34), rgba(224, 242, 254, 0.18)),
+        linear-gradient(115deg, rgba(13, 148, 136, 0.32), rgba(20, 184, 166, 0.22), rgba(56, 189, 248, 0.15)),
+        url("/static/img/hospital-equipment-room.png") center / cover no-repeat;
+}
+
+.login-screen-tecnico .login-panel,
+.equipment-select-screen[data-selector-profile="tecnico"] .equipment-select-header,
+.equipment-select-screen[data-selector-profile="tecnico"] .equipment-search-panel,
+.equipment-select-screen[data-selector-profile="tecnico"] .equipment-select-card {
+    border-color: rgba(45, 212, 191, 0.34);
+    background: rgba(240, 253, 250, 0.84);
+    box-shadow: 0 18px 48px rgba(15, 118, 110, 0.12);
+}
+
+.login-screen-tecnico .eyebrow,
+.equipment-select-screen[data-selector-profile="tecnico"] .eyebrow,
+.equipment-select-screen[data-selector-profile="tecnico"] .equipment-category-heading span {
+    color: #0f766e;
+}
+
+.login-screen-tecnico .primary-button,
+.equipment-select-screen[data-selector-profile="tecnico"] .equipment-open-button {
+    background: linear-gradient(135deg, #14b8a6, #5eead4);
+    color: #083344;
+}
+
+.equipment-select-screen[data-selector-profile="tecnico"] .equipment-card-icon {
+    background: #ccfbf1;
+    color: #0f766e;
+}

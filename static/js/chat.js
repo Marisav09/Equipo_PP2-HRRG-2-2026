@@ -66,12 +66,25 @@ function visibleSourceName(source = {}) {
     return source.display_source || source.original_pdf || source.source_file || "Fuente documental";
 }
 
+function readableSourceName(source = {}) {
+    const rawName = visibleSourceName(source);
+    return String(rawName)
+        .replace(/\.[a-z0-9]+$/i, "")
+        .replace(/[_-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
 function visibleSourcePage(source = {}) {
     return source.pdf_page || source.page || "sin pagina";
 }
 
 function visibleSourceLabel(source = {}) {
     return `Fuente: ${visibleSourceName(source)}, pag. ${visibleSourcePage(source)}`;
+}
+
+function inlineSourceLabel(source = {}, index = 0) {
+    return `Fuente ${index + 1}: ${readableSourceName(source)}, pag. ${visibleSourcePage(source)}`;
 }
 
 function stripMarkdownMarkers(text) {
@@ -134,26 +147,22 @@ function createSourceList(sources = []) {
     if (!sources.length) return null;
 
     const wrapper = document.createElement("div");
-    wrapper.className = "source-list";
+    wrapper.className = "source-list source-inline-list";
+    wrapper.appendChild(document.createTextNode("Fuentes: "));
 
     sources.forEach((source, index) => {
         const link = document.createElement("a");
-        link.className = "source-chip";
+        link.className = "source-inline-link";
         link.href = source.url || "#";
         link.target = "_blank";
         link.rel = "noopener noreferrer";
         link.title = `${visibleSourceName(source)}, pagina ${visibleSourcePage(source)}`;
+        link.textContent = inlineSourceLabel(source, index);
 
-        const badge = document.createElement("span");
-        badge.textContent = String(index + 1);
-
-        const label = document.createElement("span");
-        label.className = "source-label";
-        label.textContent = visibleSourceLabel(source);
-
-        link.appendChild(badge);
-        link.appendChild(label);
         wrapper.appendChild(link);
+        if (index < sources.length - 1) {
+            wrapper.appendChild(document.createTextNode("; "));
+        }
     });
 
     return wrapper;
