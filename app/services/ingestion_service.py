@@ -34,6 +34,7 @@ class IngestionService:
     ) -> None:
         self.vectorstore = vectorstore or VectorstoreService()
         self.audit_service = audit_service or IngestionAuditService()
+        self.page_mapping_index = self._page_mapping_index()
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=settings.chunk_size,
             chunk_overlap=settings.chunk_overlap,
@@ -217,9 +218,13 @@ class IngestionService:
                         "original_pdf": source_reference["original_pdf"],
                         "display_source": source_reference["display_source"],
                         "pdf_page": source_reference["pdf_page"],
+                        "pdf_page_confidence": source_reference["pdf_page_confidence"],
+                        "page_mapping_method": source_reference["page_mapping_method"],
+                        "page_mapping_status": source_reference["page_mapping_status"],
 
                         # Campo legado: se conserva para compatibilidad.
-                        "page": source_reference["pdf_page"],
+                        # Solo contiene pagina PDF cuando el mapeo esta verificado.
+                        "page": source_reference["pdf_page"] or "sin_pagina",
 
                         "document_type": "manual_markdown",
                         "has_images": bool(image_refs),
@@ -281,25 +286,86 @@ class IngestionService:
 
     def _source_reference_for_markdown(self, markdown_path: Path, markdown_page: int) -> dict[str, object]:
         original_pdf = self._original_pdf_for_markdown(markdown_path)
-        pdf_page = markdown_page
+        mapping = self.page_mapping_index.get((markdown_path.name, markdown_page), {})
+
+        mapped_pdf_page = self._verified_pdf_page_from_mapping(mapping)
+        page_confidence = (mapping.get("page_confidence") or "unmapped").strip()
+        mapping_method = (mapping.get("mapping_method") or "unmapped").strip()
+        mapping_status = (mapping.get("status") or "unmapped").strip()
 
         if original_pdf:
             display_source = Path(original_pdf.replace("\\", "/")).name
+            source_url = f"/manuals/{quote(original_pdf)}"
+            if mapped_pdf_page:
+                source_url = f"{source_url}#page={mapped_pdf_page}"
+
             return {
                 "original_pdf": original_pdf,
                 "display_source": display_source,
                 "markdown_page": markdown_page,
-                "pdf_page": pdf_page,
-                "source_url": f"/manuals/{quote(original_pdf)}#page={pdf_page}",
+                "pdf_page": mapped_pdf_page or "",
+                "pdf_page_confidence": page_confidence,
+                "page_mapping_method": mapping_method,
+                "page_mapping_status": mapping_status,
+                "source_url": source_url,
             }
 
         return {
             "original_pdf": "",
             "display_source": markdown_path.name,
             "markdown_page": markdown_page,
-            "pdf_page": pdf_page,
+            "pdf_page": "",
+            "pdf_page_confidence": "unmapped",
+            "page_mapping_method": "unmapped",
+            "page_mapping_status": "missing_original_pdf",
             "source_url": f"/processed/{markdown_path.name}#page-{markdown_page}",
         }
+
+    def _page_mapping_index(self) -> dict[tuple[str, int], dict[str, str]]:
+        """Carga el mapeo Markdown -> pagina PDF oficial.
+
+        Solo las filas verified deben usarse para exponer/citar pagina PDF.
+        Las filas approximate/unresolved quedan como trazabilidad interna, pero no
+        habilitan enlaces con #page.
+        """
+        mapping_path = settings.processed_documents_dir.parent / "inventory" / "page_mapping_markdown_to_official.csv"
+
+        if not mapping_path.exists():
+            return {}
+
+        index: dict[tuple[str, int], dict[str, str]] = {}
+
+        with mapping_path.open("r", encoding="utf-8-sig", errors="replace", newline="") as file:
+            for row in csv.DictReader(file):
+                source_file = (row.get("source_file") or "").strip()
+                markdown_page = self._safe_int(row.get("markdown_page"))
+
+                if not source_file or markdown_page is None:
+                    continue
+
+                index[(source_file, markdown_page)] = row
+
+        return index
+
+    def _verified_pdf_page_from_mapping(self, mapping: dict[str, str]) -> int | None:
+        if not mapping:
+            return None
+
+        confidence = (mapping.get("page_confidence") or "").strip().lower()
+        if confidence != "verified":
+            return None
+
+        return self._safe_int(mapping.get("official_pdf_page"))
+
+    def _safe_int(self, value: object) -> int | None:
+        try:
+            if value in (None, ""):
+                return None
+            number = int(str(value))
+        except (TypeError, ValueError):
+            return None
+
+        return number if number > 0 else None
 
     def _original_pdf_for_markdown(self, markdown_path: Path) -> str | None:
         override = self._original_pdf_from_overrides(markdown_path.name)
@@ -430,6 +496,9 @@ class IngestionService:
                 "display_source": pdf_path.name,
                 "markdown_page": pdf_page,
                 "pdf_page": pdf_page,
+                "pdf_page_confidence": "verified",
+                "page_mapping_method": "direct_pdf_page",
+                "page_mapping_status": "direct_pdf_ingestion",
                 "page": pdf_page,
                 "document_type": "manual_tecnico",
                 "has_images": bool(page["has_images"]),

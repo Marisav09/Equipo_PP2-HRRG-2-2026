@@ -250,7 +250,7 @@ Respuesta:""".strip()
 
         return "\n\n".join(
             (
-                f"Fuente: {self._visible_source_name(chunk)}, pagina {self._visible_page(chunk)}, "
+                f"{self._source_reference(chunk)}, "
                 f"equipo: {chunk.citation.equipment_name}\n"
                 f"Imagenes: {self._format_image_context(chunk)}\n"
                 f"Texto:\n{chunk.text.strip()}"
@@ -282,7 +282,7 @@ Respuesta:""".strip()
             display_text = self._strip_markdown_markers(display_text)
             extracts.append(
                 (
-                    f"Fuente: {self._visible_source_name(chunk)}, pag. {self._visible_page(chunk)}\n"
+                    f"{self._source_reference(chunk)}\n"
                     f"{extract_label} {index}\n"
                     f"{display_text}"
                 )
@@ -302,12 +302,15 @@ Respuesta:""".strip()
             or chunk.citation.source_file
         )
 
-    def _visible_page(self, chunk: RetrievedChunk) -> int:
-        return (
-            chunk.citation.pdf_page
-            or chunk.citation.page
-            or chunk.citation.markdown_page
-        )
+    def _verified_pdf_page(self, chunk: RetrievedChunk) -> int | None:
+        return chunk.citation.reliable_pdf_page()
+
+    def _source_reference(self, chunk: RetrievedChunk) -> str:
+        pdf_page = self._verified_pdf_page(chunk)
+        if pdf_page:
+            return f"Fuente: {self._visible_source_name(chunk)}, pag. {pdf_page}"
+
+        return f"Fuente: {self._visible_source_name(chunk)}"
 
     def _build_operator_fallback_answer(self, chunks: list[RetrievedChunk]) -> str:
         usable = [
@@ -337,7 +340,11 @@ Respuesta:""".strip()
         total_images = 0
 
         for chunk in chunks:
-            key = (chunk.citation.source_file, str(chunk.citation.page))
+            pdf_page = self._verified_pdf_page(chunk)
+            key = (
+                chunk.citation.source_file,
+                str(pdf_page or chunk.citation.chunk_id),
+            )
             if key in seen_sources:
                 continue
 

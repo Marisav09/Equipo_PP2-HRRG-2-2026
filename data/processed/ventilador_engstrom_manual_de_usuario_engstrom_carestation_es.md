@@ -3276,6 +3276,34 @@ Apagado del sistema en <5 min Alta Quedan menos de cinco minutos de alimt. de ba
 
 Conecte el cable de alimentación.
 
+### Alarma curada: Bloqueo circuito paciente / oclusion del circuito
+
+Equipo: Ventilador Engstrom Carestation
+Tipo de contenido: alarma / resolucion de problemas
+Fuente documental: manual de usuario Engstrom Carestation, seccion Alarmas y resolucion de problemas.
+Pagina PDF aproximada: 97
+
+Sinonimos de consulta:
+oclusion en el circuito; circuito obstruido; bloqueo del circuito paciente; bloqueo circuito paciente; destapar circuito; filtro bloqueado; cuerpos extranos en el circuito; puerto de salida de gas obstruido.
+
+Mensaje de alarma:
+Bloqueo circuito paciente.
+
+Prioridad:
+Alta.
+
+Posible causa indicada por el manual:
+La presion inspiratoria es mayor a 10 cmH2O respecto de la presion espiratoria.
+
+Acciones indicadas por el manual:
+1. Compruebe si hay algun filtro bloqueado.
+2. Compruebe si hay cuerpos extranos o bloqueos en el circuito del paciente.
+3. Evite que el puerto de salida de gas se obstruya.
+
+Nota de curaduria:
+Este bloque fue agregado para separar una fila critica de la tabla de alarmas que en la extraccion original quedo compactada junto con otras alarmas, dificultando la recuperacion semantica.
+
+
 Bloqueo circuito paciente. Alta* La presión inspiratoria es > 10 cmH2O mayor que la presión espiratoria.
 
 1. Compruebe si hay algún filtro bloqueado. 2. Compruebe si hay cuerpos extraños o bloqueos en el circuito del paciente. 3. Evite que el puerto de salida de gas  se obstruya. Cambie D-fend Media Se han acumulado residuos en el filtro D-fend. Cambie D-fend.

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from typing import Any
 from urllib.parse import quote
@@ -35,7 +36,7 @@ class SourceCitation:
     # Fuente interna del RAG. Puede ser Markdown procesado.
     source_file: str
 
-    # Página visible principal. Para el usuario debe corresponder al PDF original.
+    # Campo legado. No debe usarse como pagina visible si no hay pdf_page verificada.
     page: int | str
 
     chunk_id: str
@@ -50,36 +51,75 @@ class SourceCitation:
     original_pdf: str | None = None
     pdf_page: int | str | None = None
 
+    # Confianza y metodo del mapeo de pagina.
+    pdf_page_confidence: str | None = None
+    page_mapping_method: str | None = None
+    page_mapping_status: str | None = None
+
     # Trazabilidad interna al Markdown procesado.
     markdown_page: int | str | None = None
 
     def visible_source(self) -> str:
         return self.display_source or self.original_pdf or self.source_file
 
+    def reliable_pdf_page(self) -> int | None:
+        confidence = str(self.pdf_page_confidence or "").strip().lower()
+        if confidence != "verified":
+            return None
+
+        try:
+            if self.pdf_page in (None, ""):
+                return None
+            page = int(str(self.pdf_page))
+        except (TypeError, ValueError):
+            return None
+
+        return page if page > 0 else None
+
+    def has_reliable_pdf_page(self) -> bool:
+        return self.reliable_pdf_page() is not None
+
     def visible_page(self) -> int | str:
-        return self.pdf_page if self.pdf_page not in (None, "") else self.page
+        page = self.reliable_pdf_page()
+        return page if page is not None else ""
 
     def label(self) -> str:
         visual_note = " | contiene imagenes" if self.has_images else ""
-        return f"{self.visible_source()}, pagina {self.visible_page()}, chunk {self.chunk_id}{visual_note}"
+        page = self.reliable_pdf_page()
+
+        if page is not None:
+            return f"{self.visible_source()}, pagina {page}, chunk {self.chunk_id}{visual_note}"
+
+        return f"{self.visible_source()}, pagina no verificada, chunk {self.chunk_id}{visual_note}"
 
     def document_url(self) -> str:
+        page = self.reliable_pdf_page()
+
         if self.url:
-            return self.url
+            if page is not None:
+                return self.url
+            return self._remove_page_anchor(self.url)
 
         source_for_link = self.original_pdf or self.display_source or self.source_file
         encoded_name = quote(str(source_for_link))
-        page = self.visible_page()
-        page_fragment = f"#page={page}" if str(page).isdigit() else ""
-        return f"/manuals/{encoded_name}{page_fragment}"
+
+        if page is not None:
+            return f"/manuals/{encoded_name}#page={page}"
+
+        return f"/manuals/{encoded_name}"
 
     def to_dict(self) -> dict[str, Any]:
         images = list(self.images)
 
         source_for_preview = self.original_pdf or self.display_source or self.source_file
-        page = self.visible_page()
+        page = self.reliable_pdf_page()
 
-        if self.has_images and not images and str(source_for_preview).lower().endswith(".pdf"):
+        if (
+            self.has_images
+            and not images
+            and page is not None
+            and str(source_for_preview).lower().endswith(".pdf")
+        ):
             encoded_name = quote(str(source_for_preview))
             images.append(
                 {
@@ -92,7 +132,7 @@ class SourceCitation:
         return {
             # Compatibilidad: source_file sigue disponible para trazabilidad interna.
             "source_file": self.source_file,
-            "page": page,
+            "page": page if page is not None else "",
             "chunk_id": self.chunk_id,
             "equipment_name": self.equipment_name,
             "has_images": self.has_images,
@@ -101,12 +141,23 @@ class SourceCitation:
             "url": self.document_url(),
             "images": images,
 
-            # Campos nuevos para interfaz/fuentes visibles.
+            # Campos para interfaz/fuentes visibles.
             "display_source": self.visible_source(),
             "original_pdf": self.original_pdf or "",
-            "pdf_page": page,
+            "pdf_page": page if page is not None else "",
+            "has_reliable_pdf_page": page is not None,
+            "pdf_page_confidence": self.pdf_page_confidence or "",
+            "page_mapping_method": self.page_mapping_method or "",
+            "page_mapping_status": self.page_mapping_status or "",
+
+            # Trazabilidad interna, no debe usarse como pagina visible del PDF.
             "markdown_page": self.markdown_page if self.markdown_page is not None else "",
         }
+
+    def _remove_page_anchor(self, url: str) -> str:
+        cleaned = re.sub(r"#page=\d+", "", url)
+        cleaned = re.sub(r"([?&])page=\d+(&?)", r"\1", cleaned)
+        return cleaned.rstrip("?&")
 
 
 @dataclass(frozen=True)
