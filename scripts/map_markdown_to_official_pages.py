@@ -20,7 +20,8 @@ RAW_DIR = BASE_DIR / "data" / "raw"
 SEMI_PROCESSED_DIR = BASE_DIR / "data" / "semi-processed"
 INVENTORY_DIR = BASE_DIR / "data" / "inventory"
 
-PAIRS_CSV = INVENTORY_DIR / "document_source_pairs.csv"
+CURATION_CSV = INVENTORY_DIR / "curaduria_activa.csv"
+OVERRIDES_CSV = INVENTORY_DIR / "pdf_source_overrides.csv"
 OUTPUT_CSV = INVENTORY_DIR / "page_mapping_markdown_to_official.csv"
 
 HASH_SIZE = 32
@@ -529,15 +530,14 @@ def apply_sequence_refinement(rows: list[dict[str, object]]) -> list[dict[str, o
     """
     Tercera capa de trazabilidad.
 
-    Solo resuelve páginas no resueltas cuando:
-    - la página Markdown anterior inmediata está mapeada;
-    - la página Markdown posterior inmediata está mapeada;
-    - ambas obligan al mismo número de página PDF oficial;
+    Solo resuelve paginas no resueltas cuando:
+    - la pagina Markdown anterior inmediata esta mapeada;
+    - la pagina Markdown posterior inmediata esta mapeada;
+    - ambas obligan al mismo numero de pagina PDF oficial;
     - existe evidencia visual/textual alta en la fila ambigua.
 
-    No baja umbrales globales ni fuerza páginas cuando la continuidad no cierra.
+    No baja umbrales globales ni fuerza paginas cuando la continuidad no cierra.
     """
-
     grouped: dict[str, list[dict[str, object]]] = {}
     for row in rows:
         grouped.setdefault(str(row.get("source_file") or ""), []).append(row)
@@ -612,14 +612,159 @@ def apply_sequence_refinement(rows: list[dict[str, object]]) -> list[dict[str, o
     return refined_rows
 
 
-def load_document_pairs() -> list[dict[str, str]]:
-    if not PAIRS_CSV.exists():
-        raise FileNotFoundError(
-            f"No existe {PAIRS_CSV}. Primero generar document_source_pairs.csv."
+def load_pdf_overrides() -> dict[str, str]:
+    if not OVERRIDES_CSV.exists():
+        return {}
+
+    overrides: dict[str, str] = {}
+
+    with OVERRIDES_CSV.open("r", encoding="utf-8-sig", errors="replace", newline="") as file:
+        for row in csv.DictReader(file):
+            source_file = (row.get("source_file") or "").strip()
+            original_pdf = (row.get("original_pdf") or "").strip()
+
+            if source_file and original_pdf:
+                overrides[source_file] = original_pdf.replace("\\", "/")
+
+    return overrides
+
+
+def active_curation_rows() -> list[dict[str, str]]:
+    if not CURATION_CSV.exists():
+        return []
+
+    rows: list[dict[str, str]] = []
+
+    with CURATION_CSV.open("r", encoding="utf-8-sig", errors="replace", newline="") as file:
+        for row in csv.DictReader(file):
+            source_file = (row.get("source_file") or "").strip()
+            decision = (row.get("decision_curaduria") or "").strip().lower()
+            status = (row.get("estado_producto") or "").strip().lower()
+
+            if not source_file:
+                continue
+
+            if decision == "incluir" and status in {"activo", "validado", "aprobado"}:
+                rows.append(row)
+
+    return rows
+
+
+def fallback_processed_markdowns() -> list[dict[str, str]]:
+    return [
+        {"source_file": path.name}
+        for path in sorted(PROCESSED_DIR.glob("*.md"))
+        if path.is_file()
+    ]
+
+
+def pdf_exists(root: Path, relative_pdf: str) -> bool:
+    if not relative_pdf:
+        return False
+
+    return (root / relative_pdf).exists()
+
+
+def find_pdf_by_name(root: Path, pdf_name: str) -> str:
+    if not root.exists() or not pdf_name:
+        return ""
+
+    direct = root / pdf_name
+    if direct.exists():
+        return pdf_name
+
+    for pdf_path in root.rglob("*.pdf"):
+        if pdf_path.name == pdf_name:
+            return pdf_path.relative_to(root).as_posix()
+
+    return ""
+
+
+def expected_pdf_name_for_markdown(source_file: str) -> str:
+    return f"{Path(source_file).stem}.pdf"
+
+
+def build_document_pairs_from_sources() -> list[dict[str, str]]:
+    """
+    Construye los pares Markdown -> PDF oficial sin depender de
+    document_source_pairs.csv.
+
+    Fuente principal:
+    - data/inventory/curaduria_activa.csv, solo documentos incluidos/activos.
+
+    Apoyos:
+    - data/inventory/pdf_source_overrides.csv para casos donde el nombre del
+      Markdown no coincide con el PDF oficial.
+    - data/raw para localizar el PDF oficial.
+    - data/semi-processed para habilitar fallback visual cuando exista el PDF
+      semiprocesado equivalente.
+
+    Si no existe curaduria_activa.csv, usa todos los Markdown de data/processed
+    como fallback operativo.
+    """
+    overrides = load_pdf_overrides()
+    curation_rows = active_curation_rows()
+    source_rows = curation_rows if curation_rows else fallback_processed_markdowns()
+
+    pairs: list[dict[str, str]] = []
+
+    for row in source_rows:
+        source_file = (row.get("source_file") or "").strip()
+        if not source_file:
+            continue
+
+        direct_pdf = expected_pdf_name_for_markdown(source_file)
+        override_pdf = (overrides.get(source_file) or "").strip()
+        official_candidate = override_pdf or direct_pdf
+
+        official_pdf = ""
+        if pdf_exists(RAW_DIR, official_candidate):
+            official_pdf = official_candidate
+        else:
+            official_pdf = find_pdf_by_name(RAW_DIR, official_candidate)
+
+        if not official_pdf and override_pdf:
+            official_pdf = find_pdf_by_name(RAW_DIR, direct_pdf)
+
+        if not official_pdf:
+            official_pdf = official_candidate
+
+        semi_pdf = ""
+        if pdf_exists(SEMI_PROCESSED_DIR, direct_pdf):
+            semi_pdf = direct_pdf
+        elif find_pdf_by_name(SEMI_PROCESSED_DIR, direct_pdf):
+            semi_pdf = find_pdf_by_name(SEMI_PROCESSED_DIR, direct_pdf)
+        elif pdf_exists(SEMI_PROCESSED_DIR, official_pdf):
+            semi_pdf = official_pdf
+        elif find_pdf_by_name(SEMI_PROCESSED_DIR, official_pdf):
+            semi_pdf = find_pdf_by_name(SEMI_PROCESSED_DIR, official_pdf)
+
+        pairs.append(
+            {
+                "source_file": source_file,
+                "equipo": (row.get("equipo") or "").strip(),
+                "tipo_documento": (row.get("tipo_documento") or "").strip(),
+                "official_pdf": official_pdf,
+                "official_pdf_found": str(pdf_exists(RAW_DIR, official_pdf)),
+                "semi_pdf": semi_pdf,
+                "semi_pdf_found": str(pdf_exists(SEMI_PROCESSED_DIR, semi_pdf)) if semi_pdf else "False",
+                "mapping_strategy": "auto_from_curation_and_overrides",
+            }
         )
 
-    with PAIRS_CSV.open("r", encoding="utf-8-sig", newline="") as file:
-        return list(csv.DictReader(file))
+    return pairs
+
+
+def load_document_pairs() -> list[dict[str, str]]:
+    pairs = build_document_pairs_from_sources()
+
+    if not pairs:
+        raise FileNotFoundError(
+            "No se pudieron construir pares Markdown -> PDF oficial. "
+            "Verificar data/inventory/curaduria_activa.csv o archivos .md en data/processed."
+        )
+
+    return pairs
 
 
 def build_page_mapping(
@@ -794,7 +939,11 @@ def print_summary(rows: list[dict[str, object]]) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Mapea paginas Markdown activas contra paginas reales del PDF oficial."
+        description=(
+            "Mapea paginas Markdown activas contra paginas reales del PDF oficial. "
+            "Los pares Markdown/PDF se construyen automaticamente desde curaduria_activa.csv, "
+            "pdf_source_overrides.csv, data/raw y data/semi-processed."
+        )
     )
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--source-file", type=str, default=None)
