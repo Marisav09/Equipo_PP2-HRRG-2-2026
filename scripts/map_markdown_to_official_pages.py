@@ -134,7 +134,7 @@ def strip_markdown_noise(text: str) -> str:
 
 
 def split_markdown_pages(source_file: str, markdown_text: str) -> list[MarkdownPage]:
-    pattern = r"(?im)^#\s*P(?:a|ÃƒÂ¡|Ã¡|á)gina\s+(\d+)\s*$"
+    pattern = r"(?im)^#{1,6}\s*P(?:a|ÃƒÂ¡|Ã¡|á)gina\s+(\d+)\s*$"
     matches = list(re.finditer(pattern, markdown_text))
 
     if not matches:

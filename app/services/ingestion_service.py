@@ -240,7 +240,7 @@ class IngestionService:
         return documents
 
     def _split_markdown_pages(self, text: str) -> list[tuple[int, str]]:
-        matches = list(re.finditer(r"(?im)^#\s*P(?:a|ÃƒÂ¡|Ã¡|á)gina\s+(\d+)\s*$", text))
+        matches = list(re.finditer(r"(?im)^#{1,6}\s*P(?:a|ÃƒÂ¡|Ã¡|á)gina\s+(\d+)\s*$", text))
         if not matches:
             return []
 
