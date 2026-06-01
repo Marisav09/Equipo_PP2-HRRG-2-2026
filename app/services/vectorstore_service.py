@@ -14,6 +14,7 @@ from app.core.config import settings
 from app.core.equipment_catalog import canonical_equipment_name
 from app.core.exceptions import EquipmentScopeError, VectorstoreNotReadyError
 from app.models.schemas import RetrievedChunk, SourceCitation
+from app.services.ingestion_audit_service import IngestionAuditService
 
 
 class VectorstoreService:
@@ -106,6 +107,10 @@ class VectorstoreService:
 
         sources: dict[str, dict[str, Any]] = {}
         pages_by_source: dict[str, set[int]] = {}
+        audits_by_source = {
+            str(item.get("source_file") or ""): item
+            for item in IngestionAuditService().list_latest()
+        }
 
         for metadata in metadatas:
             if not metadata:
@@ -134,9 +139,13 @@ class VectorstoreService:
                     "chunk_count": 0,
                     "image_count": 0,
                     "message": "Documento presente en ChromaDB.",
-                    "created_at": "",
+                    "created_at": str(audits_by_source.get(source_file, {}).get("created_at") or ""),
+                    "source_url": str(metadata.get("source_url") or ""),
                 },
             )
+
+            if not current.get("source_url") and metadata.get("source_url"):
+                current["source_url"] = str(metadata.get("source_url") or "")
 
             current["chunk_count"] += 1
 

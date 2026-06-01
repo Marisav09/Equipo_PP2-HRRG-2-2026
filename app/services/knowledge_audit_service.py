@@ -346,17 +346,17 @@ class KnowledgeAuditService:
         normalized = self._normalize(question)
         category_terms = (
             ("Alarmas", ("alarma", "alerta", "peep", "presion alta", "presion baja", "fio2")),
-            ("Calibracion", ("calibr", "ajuste", "sensor de flujo", "flujo", "test")),
+            ("Calibración", ("calibr", "ajuste", "sensor de flujo", "flujo", "test")),
             ("Mantenimiento", ("mantenimiento", "limpieza", "cambio", "reemplazo", "filtro", "bateria")),
             ("Pantalla", ("pantalla", "display", "touch", "tactil", "bloque", "congelada")),
             ("Sensores", ("sensor", "celda", "transductor", "sonda")),
-            ("Energia", ("enciende", "energia", "alimentacion", "carga", "bateria", "fusible")),
+            ("Energía", ("enciende", "energia", "alimentacion", "carga", "bateria", "fusible")),
             ("Uso operativo", ("como", "donde", "que significa", "modo", "configur")),
         )
         for category, terms in category_terms:
             if any(term in normalized for term in terms):
                 return category
-        return "Consulta tecnica"
+        return "Consulta técnica"
 
     def looks_like_incident(self, question: str) -> bool:
         normalized = self._normalize(question)
@@ -384,12 +384,12 @@ class KnowledgeAuditService:
         normalized = self._normalize(question)
         labels = (
             ("Alarmas PEEP", ("peep",)),
-            ("Pantalla tactil", ("pantalla tactil", "touch", "display", "pantalla")),
+            ("Pantalla táctil", ("pantalla tactil", "touch", "display", "pantalla")),
             ("Sensor flujo", ("sensor de flujo", "flujo")),
             ("No enciende", ("no enciende", "energia", "alimentacion")),
-            ("Bateria / carga", ("bateria", "carga")),
-            ("Calibracion", ("calibr",)),
-            ("Presion", ("presion",)),
+            ("Batería / carga", ("bateria", "carga")),
+            ("Calibración", ("calibr",)),
+            ("Presión", ("presion",)),
         )
         for label, terms in labels:
             if any(term in normalized for term in terms):

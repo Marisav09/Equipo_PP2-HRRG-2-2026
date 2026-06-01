@@ -1325,6 +1325,32 @@
     white-space: nowrap;
 }
 
+.equipment-qr-button {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(7, 7, 7, 0.929);
+    border-radius: 10px;
+    background:  rgba(255, 255, 255, 0.10);
+    color: #a5f3fc;
+    padding: 0;
+}
+
+.equipment-qr-button:hover {
+    border-color: rgba(243, 64, 4, 0.64);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.equipment-qr-button svg {
+    width: 17px;
+    height: 17px;
+    stroke: #000000ee; /* contorno negro */
+    stroke-width: 2;
+        
+}
+
 .chat-product-shell .chat-messages {
     min-height: 0;
     padding: clamp(18px, 3vw, 34px) clamp(18px, 5vw, 76px);
@@ -1783,8 +1809,7 @@
     box-shadow: 0 16px 34px rgba(2, 6, 23, 0.22);
 }
 
-.manual-title strong,
-.manual-equipment strong {
+.manual-title strong {
     color: #ecfeff;
 }
 
@@ -2153,7 +2178,7 @@
 
 .manual-row {
     display: grid;
-    grid-template-columns: minmax(220px, 1.4fr) minmax(180px, 1fr) auto;
+    grid-template-columns: auto minmax(220px, 1.4fr) auto;
     gap: 14px;
     align-items: center;
     padding: 14px;
@@ -2168,6 +2193,25 @@
     min-width: 0;
 }
 
+.manual-pdf-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 36px;
+    border: 1px solid #0f766e;
+    border-radius: 8px;
+    background: #ecfdf5;
+    color: #0f766e;
+    font-size: 0.78rem;
+    font-weight: 950;
+    text-decoration: none;
+}
+
+.manual-pdf-button:hover {
+    background: #ccfbf1;
+}
+
 .manual-title strong,
 .manual-equipment strong {
     overflow: hidden;
@@ -2178,16 +2222,16 @@
 }
 
 .manual-title span,
-.manual-equipment span,
 .manual-metrics {
     color: var(--muted);
     font-size: 0.82rem;
     font-weight: 700;
 }
 
-.manual-equipment {
+.manual-status-group {
     display: grid;
-    gap: 5px;
+    justify-items: end;
+    gap: 6px;
     min-width: 0;
 }
 
@@ -2740,7 +2784,7 @@
 .chat-product-shell .speech-action svg {
     width: 24px;
     height: 24px;
-    stroke-width: 2;
+    stroke-width: 1.5;
 }
 
 .chat-product-shell .speech-toggle-button[data-muted="true"] svg path:last-child,
@@ -3139,6 +3183,10 @@
     box-shadow: 0 30px 90px rgba(15, 23, 42, 0.28);
 }
 
+.monitoring-dialog {
+    overflow: hidden;
+}
+
 .audit-dialog::backdrop,
 .monitoring-dialog::backdrop {
     background: rgba(15, 23, 42, 0.38);
@@ -3151,7 +3199,14 @@
     gap: 18px;
     max-height: min(860px, calc(100vh - 36px));
     padding: 22px;
+}
+
+.audit-panel {
     overflow-y: auto;
+}
+
+.monitoring-panel {
+    overflow-y: hidden;
 }
 
 .monitoring-kpis {
@@ -3831,5 +3886,95 @@
     .operator-history-sidebar {
         height: auto;
         max-height: 220px;
+    }
+}
+
+/* Final QR placement and mobile corrections. Keep last. */
+.chat-active-equipment .equipment-qr-button {
+    margin-left: 2px;
+}
+
+.chat-active-equipment .equipment-qr-button svg {
+    width: 17px;
+    height: 17px;
+}
+
+.manual-pdf-button {
+    border-color: #0f766e;
+    background: #ecfdf5;
+    color: #0f766e;
+}
+
+.monitoring-consultation-list {
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.monitoring-panel {
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+
+@media (max-width: 760px) {
+    .chat-compact-topbar {
+        height: auto;
+        min-height: 58px;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        padding: 8px 10px;
+    }
+
+    .chat-active-equipment {
+        width: 100%;
+        max-width: 100%;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 0 8px 0 10px;
+    }
+
+    .chat-active-equipment strong {
+        font-size: 0.86rem;
+    }
+
+    .equipment-qr-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .chat-product-shell .chat-messages {
+        padding: 14px 10px;
+    }
+
+    .chat-product-shell .message {
+        gap: 8px;
+    }
+
+    .chat-product-shell .message-content {
+        max-width: calc(100% - 50px);
+    }
+
+    .chat-product-shell .avatar.ai-avatar {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+    }
+
+    .chatgpt-composer.composer,
+    [data-role="operador"] .chatgpt-composer.composer {
+        grid-template-columns: 40px minmax(0, 1fr) 42px;
+        align-items: end;
+    }
+
+    .manual-row {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .manual-status-group {
+        grid-column: 2;
+        justify-self: start;
+        justify-items: start;
     }
 }

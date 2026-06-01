@@ -344,6 +344,19 @@ function createAuditRow({label, count}) {
     return row;
 }
 
+function monitoringLabel(label) {
+    const labels = {
+        "Calibracion": "Calibración",
+        "Energia": "Energía",
+        "Consulta tecnica": "Consulta técnica",
+        "Pantalla tactil": "Pantalla táctil",
+        "Bateria / carga": "Batería / carga",
+        "Presion": "Presión",
+        "Técnicos": "Técnicos",
+    };
+    return labels[String(label || "")] || label;
+}
+
 function createChartRow(item, maxCount, index = 0) {
     const row = document.createElement("div");
     row.className = "monitoring-chart-row";
@@ -352,7 +365,7 @@ function createChartRow(item, maxCount, index = 0) {
     top.className = "monitoring-chart-topline";
 
     const label = document.createElement("span");
-    label.textContent = item.label;
+    label.textContent = monitoringLabel(item.label);
 
     const value = document.createElement("strong");
     value.textContent = item.count;
@@ -367,7 +380,7 @@ function createChartRow(item, maxCount, index = 0) {
     bar.className = `monitoring-chart-bar chart-color-${(index % 4) + 1}`;
     const percent = maxCount ? Math.max(6, Math.round((Number(item.count || 0) / maxCount) * 100)) : 0;
     bar.style.width = `${percent}%`;
-    bar.setAttribute("aria-label", `${item.label}: ${item.count}`);
+    bar.setAttribute("aria-label", `${monitoringLabel(item.label)}: ${item.count}`);
 
     track.appendChild(bar);
     row.appendChild(top);
@@ -633,7 +646,7 @@ function renderManualsAudit(documents = []) {
     if (!documents.length) {
         const empty = document.createElement("p");
         empty.className = "manual-empty";
-        empty.textContent = "Todavia no hay documentos auditados. Ejecute la ingesta de manuales.";
+        empty.textContent = "Todavía no hay documentos auditados. Ejecute la ingesta de manuales.";
         manualsList.appendChild(empty);
         return;
     }
@@ -642,6 +655,15 @@ function renderManualsAudit(documents = []) {
         const row = document.createElement("article");
         row.className = "manual-row";
 
+        const pdfLink = document.createElement("a");
+        pdfLink.className = "manual-pdf-button";
+        pdfLink.href = documentInfo.source_url || `/manuals/${encodeURIComponent(documentInfo.original_pdf || documentInfo.display_source || documentInfo.source_file || "")}`;
+        pdfLink.target = "_blank";
+        pdfLink.rel = "noopener noreferrer";
+        pdfLink.title = "Abrir PDF";
+        pdfLink.setAttribute("aria-label", "Abrir PDF del manual");
+        pdfLink.textContent = "PDF";
+
         const title = document.createElement("div");
         title.className = "manual-title";
 
@@ -649,32 +671,28 @@ function renderManualsAudit(documents = []) {
         source.textContent = documentInfo.display_source || documentInfo.original_pdf || documentInfo.source_file;
 
         const date = document.createElement("span");
-        date.textContent = documentInfo.created_at || "Sin fecha";
+        date.textContent = documentInfo.created_at || "Fecha de ingesta no registrada";
 
         title.appendChild(source);
         title.appendChild(date);
 
-        const equipment = document.createElement("div");
-        equipment.className = "manual-equipment";
-
-        const equipmentName = document.createElement("strong");
-        equipmentName.textContent = documentInfo.equipment_name || "Sin equipo asociado";
-
         const metrics = document.createElement("span");
         metrics.className = "manual-metrics";
         metrics.textContent = `${documentInfo.page_count || 0} páginas - ${documentInfo.chunk_count || 0} chunks - ${documentInfo.image_count || 0} imágenes`;
-
-        equipment.appendChild(equipmentName);
-        equipment.appendChild(metrics);
 
         const status = document.createElement("span");
         status.className = `manual-status ${documentInfo.status}`;
         status.title = documentInfo.message || "";
         status.textContent = statusLabel(documentInfo.status);
 
+        const statusGroup = document.createElement("div");
+        statusGroup.className = "manual-status-group";
+        statusGroup.appendChild(status);
+        statusGroup.appendChild(metrics);
+
+        row.appendChild(pdfLink);
         row.appendChild(title);
-        row.appendChild(equipment);
-        row.appendChild(status);
+        row.appendChild(statusGroup);
         manualsList.appendChild(row);
     });
 }
@@ -929,7 +947,7 @@ function renderConsultationCards(container, items = [], options = {}) {
     if (!items.length) {
         const empty = document.createElement("p");
         empty.className = options.emptyClass || "audit-empty";
-        empty.textContent = options.emptyText || "Todavia no hay consultas registradas.";
+        empty.textContent = options.emptyText || "Todavía no hay consultas registradas.";
         container.appendChild(empty);
         return;
     }
@@ -948,7 +966,7 @@ function renderConsultationCards(container, items = [], options = {}) {
         question.textContent = item.question;
 
         const meta = document.createElement("small");
-        meta.textContent = item.es_incidente ? `${item.category} - incidente registrado` : item.category;
+        meta.textContent = item.es_incidente ? `${monitoringLabel(item.category)} - incidente registrado` : monitoringLabel(item.category);
 
         card.appendChild(title);
         card.appendChild(date);
@@ -962,7 +980,7 @@ function renderMyConsultations(items = []) {
     renderConsultationCards(myConsultationsList, items, {
         cardClass: "personal-query-card",
         emptyClass: "audit-empty",
-        emptyText: "Todavia no hay consultas registradas.",
+        emptyText: "Todavía no hay consultas registradas.",
     });
 }
 
@@ -1140,7 +1158,7 @@ function renderMonitoringInsights(data = {}) {
     const total = data.indicators?.total_consultations || 0;
     const insights = [
         topEquipment ? ["Equipo crítico", topEquipment.label, `${topEquipment.count} consultas`] : ["Equipo crítico", "Sin datos", "0 consultas"],
-        topCategory ? ["Falla dominante", topCategory.label, `${topCategory.count} eventos`] : ["Falla dominante", "Sin datos", "0 eventos"],
+        topCategory ? ["Falla dominante", monitoringLabel(topCategory.label), `${topCategory.count} eventos`] : ["Falla dominante", "Sin datos", "0 eventos"],
         topProfile ? ["Perfil con mayor uso", topProfile.label, `${topProfile.count} consultas`] : ["Perfil con mayor uso", "Sin datos", "0 consultas"],
         ["Base analizada", `${total} consultas`, "Historial registrado"],
     ];
@@ -1261,7 +1279,7 @@ function renderMonitoringConsultations(items = []) {
         const question = document.createElement("p");
         question.textContent = item.question || "Consulta sin detalle";
         const category = document.createElement("small");
-        category.textContent = item.es_incidente ? `${item.category} · incidente` : item.category;
+        category.textContent = item.es_incidente ? `${monitoringLabel(item.category)} · incidente` : monitoringLabel(item.category);
         card.appendChild(title);
         card.appendChild(meta);
         card.appendChild(question);
@@ -1322,7 +1340,7 @@ function renderPriorityList(data = {}, consultations = []) {
         const mainFailure = item.failures?.[0];
         priorities.push({
             title: item.equipment,
-            detail: mainFailure ? `${mainFailure.label}: ${mainFailure.count} registros` : `${item.total} consultas`,
+            detail: mainFailure ? `${monitoringLabel(mainFailure.label)}: ${mainFailure.count} registros` : `${item.total} consultas`,
             action: "Revisar recurrencia técnica y validar si requiere intervención preventiva.",
             level: item.total >= 5 ? "Alta" : "Media",
         });
@@ -1339,7 +1357,7 @@ function renderPriorityList(data = {}, consultations = []) {
 
     if (topCategory) {
         priorities.push({
-            title: topCategory.label,
+            title: monitoringLabel(topCategory.label),
             detail: `${topCategory.count} eventos clasificados`,
             action: "Estandarizar respuesta y revisar necesidad de capacitación o checklist.",
             level: topCategory.count >= 5 ? "Alta" : "Media",
@@ -1398,11 +1416,11 @@ function renderProfileFailureHeatmap(consultations = []) {
     }
 
     const profiles = groupCounts(consultations, (item) => profileLabel(item.profile)).slice(0, 5).map((item) => item.label);
-    const categories = groupCounts(consultations, (item) => item.category || "Sin categoría").slice(0, 6).map((item) => item.label);
+    const categories = groupCounts(consultations, (item) => monitoringLabel(item.category) || "Sin categoría").slice(0, 6).map((item) => item.label);
     const counts = new Map();
     consultations.forEach((item) => {
         const profile = profileLabel(item.profile);
-        const category = item.category || "Sin categoría";
+        const category = monitoringLabel(item.category) || "Sin categoría";
         counts.set(`${profile}|${category}`, (counts.get(`${profile}|${category}`) || 0) + 1);
     });
     const maxCount = Math.max(...counts.values(), 1);
