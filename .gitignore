@@ -31,3 +31,12 @@ data/raw_pre_ocr_backup/
 data/processed/*.sqlite3
 data/quarantine/
 data/memory/*.sqlite3
+
+# ----------------------------------------
+# Archivos de memoria local (no se versionan)
+# conversation.sqlite3 es una base de datos
+# que se genera automáticamente en cada PC
+# para guardar el estado/memoria de la app.
+# No aporta al código fuente y genera conflictos
+# si se sube al repositorio.
+data/memory/conversation.sqlite3
