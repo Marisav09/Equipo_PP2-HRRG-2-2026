@@ -30,3 +30,4 @@ data/ocr_output/
 data/raw_pre_ocr_backup/
 data/processed/*.sqlite3
 data/quarantine/
+data/memory/*.sqlite3
