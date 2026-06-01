@@ -108,12 +108,12 @@ class IngestionService:
                     )
                     continue
 
-                chunks = self.text_splitter.split_documents(documents)
-                for index, chunk in enumerate(chunks, start=1):
-                    chunk.metadata["chunk_id"] = f"{markdown_path.stem}-{index}"
+                added_chunks, generated_chunks = self._index_documents_with_safe_retry(
+                    markdown_path=markdown_path,
+                    documents=documents,
+                )
 
-                self.vectorstore.delete_source(markdown_path.name)
-                indexed_chunks += self.vectorstore.add_documents(chunks)
+                indexed_chunks += added_chunks
                 processed_files += 1
                 first_metadata = documents[0].metadata
                 self.audit_service.record(
@@ -123,11 +123,11 @@ class IngestionService:
                     equipment_id=str(first_metadata["equipment_id"]),
                     equipment_name=str(first_metadata["equipment_name"]),
                     page_count=len(documents),
-                    chunk_count=len(chunks),
+                    chunk_count=generated_chunks,
                     image_count=sum(int(document.metadata.get("image_count", 0)) for document in documents),
                     message="Markdown indexado correctamente.",
                 )
-                logger.info("Markdown indexado: %s (%s chunks)", markdown_path.name, len(chunks))
+                logger.info("Markdown indexado: %s (%s chunks)", markdown_path.name, generated_chunks)
             except DocumentIngestionError as exc:
                 skipped_files.append(str(exc))
                 self.audit_service.record(
@@ -156,6 +156,138 @@ class IngestionService:
             "message": "Ingesta finalizada.",
             "audit": self.audit_service.list_latest(),
         }
+
+    def _index_documents_with_safe_retry(
+        self,
+        markdown_path: Path,
+        documents: list[Document],
+    ) -> tuple[int, int]:
+        """
+        Indexa documentos con reintento seguro.
+
+        Motivo:
+        Algunos Markdown curados/OCR pueden producir chunks que, aunque no sean
+        enormes en caracteres, exceden el contexto del modelo de embeddings por
+        tokenizacion o contenido tecnico denso. En ese caso se reintenta con:
+        - batches mas chicos;
+        - chunks mas chicos;
+        - limpieza previa de la fuente en Chroma para no dejar indexacion parcial.
+        """
+        attempts = self._split_attempts()
+        last_exception: Exception | None = None
+
+        for chunk_size, chunk_overlap, batch_size, label in attempts:
+            chunks = self._split_documents_for_attempt(
+                documents=documents,
+                chunk_size=chunk_size,
+                chunk_overlap=chunk_overlap,
+            )
+            self._assign_chunk_ids(markdown_path, chunks)
+
+            if not chunks:
+                raise DocumentIngestionError(f"{markdown_path.name}: no se generaron chunks para indexar.")
+
+            try:
+                self.vectorstore.delete_source(markdown_path.name)
+                added_chunks = self._add_documents_in_batches(chunks, batch_size=batch_size)
+
+                if label != "default":
+                    logger.warning(
+                        "Markdown indexado con modo seguro: %s (%s chunks, %s)",
+                        markdown_path.name,
+                        len(chunks),
+                        label,
+                    )
+
+                return added_chunks, len(chunks)
+
+            except Exception as exc:
+                last_exception = exc
+                self.vectorstore.delete_source(markdown_path.name)
+
+                if not self._is_context_length_error(exc):
+                    raise
+
+                logger.warning(
+                    "Reintentando ingesta segura para %s por limite de contexto "
+                    "(modo %s, chunk_size=%s, batch_size=%s): %s",
+                    markdown_path.name,
+                    label,
+                    chunk_size,
+                    batch_size,
+                    exc,
+                )
+
+        if last_exception:
+            raise last_exception
+
+        raise DocumentIngestionError(f"{markdown_path.name}: no se pudo completar la ingesta segura.")
+
+    def _split_attempts(self) -> list[tuple[int, int, int, str]]:
+        default_chunk_size = int(settings.chunk_size)
+        default_chunk_overlap = int(settings.chunk_overlap)
+
+        raw_attempts = [
+            (default_chunk_size, default_chunk_overlap, 16, "default"),
+            (default_chunk_size, default_chunk_overlap, 1, "default_batch_1"),
+            (500, min(default_chunk_overlap, 80), 1, "safe_500"),
+            (250, min(default_chunk_overlap, 40), 1, "safe_250"),
+            (120, min(default_chunk_overlap, 20), 1, "safe_120"),
+        ]
+
+        attempts: list[tuple[int, int, int, str]] = []
+        seen: set[tuple[int, int, int]] = set()
+
+        for chunk_size, chunk_overlap, batch_size, label in raw_attempts:
+            chunk_size = max(80, int(chunk_size))
+            chunk_overlap = max(0, min(int(chunk_overlap), chunk_size // 3))
+            batch_size = max(1, int(batch_size))
+
+            key = (chunk_size, chunk_overlap, batch_size)
+            if key in seen:
+                continue
+
+            seen.add(key)
+            attempts.append((chunk_size, chunk_overlap, batch_size, label))
+
+        return attempts
+
+    def _split_documents_for_attempt(
+        self,
+        documents: list[Document],
+        chunk_size: int,
+        chunk_overlap: int,
+    ) -> list[Document]:
+        if chunk_size == int(settings.chunk_size) and chunk_overlap == int(settings.chunk_overlap):
+            return self.text_splitter.split_documents(documents)
+
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+        )
+        return splitter.split_documents(documents)
+
+    def _assign_chunk_ids(self, markdown_path: Path, chunks: list[Document]) -> None:
+        for index, chunk in enumerate(chunks, start=1):
+            chunk.metadata["chunk_id"] = f"{markdown_path.stem}-{index}"
+
+    def _add_documents_in_batches(self, chunks: list[Document], batch_size: int) -> int:
+        added_chunks = 0
+
+        for start in range(0, len(chunks), batch_size):
+            batch = chunks[start:start + batch_size]
+            added_chunks += self.vectorstore.add_documents(batch)
+
+        return added_chunks
+
+    def _is_context_length_error(self, exc: Exception) -> bool:
+        message = str(exc).lower()
+        return (
+            "input length exceeds the context length" in message
+            or "context length" in message
+            or "too many tokens" in message
+            or "maximum context" in message
+        )
 
     def _curation_index(self) -> dict[str, dict[str, str]]:
         """Lee data/inventory/curaduria_activa.csv y devuelve solo fuentes incluidas."""
