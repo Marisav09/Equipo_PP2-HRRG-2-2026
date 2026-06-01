@@ -34,7 +34,13 @@ class IngestionService:
     ) -> None:
         self.vectorstore = vectorstore or VectorstoreService()
         self.audit_service = audit_service or IngestionAuditService()
+
+        # Mapeo Markdown -> PDF oficial.
+        # page_mapping_offsets se calcula desde filas text_similarity confiables
+        # para detectar y rechazar falsos positivos de visual_similarity en documentos largos.
+        self.page_mapping_offsets: dict[str, int] = {}
         self.page_mapping_index = self._page_mapping_index()
+
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=settings.chunk_size,
             chunk_overlap=settings.chunk_overlap,
@@ -419,11 +425,12 @@ class IngestionService:
     def _source_reference_for_markdown(self, markdown_path: Path, markdown_page: int) -> dict[str, object]:
         original_pdf = self._original_pdf_for_markdown(markdown_path)
         mapping = self.page_mapping_index.get((markdown_path.name, markdown_page), {})
+        resolved_mapping = self._resolve_page_mapping(mapping)
 
-        mapped_pdf_page = self._verified_pdf_page_from_mapping(mapping)
-        page_confidence = (mapping.get("page_confidence") or "unmapped").strip()
-        mapping_method = (mapping.get("mapping_method") or "unmapped").strip()
-        mapping_status = (mapping.get("status") or "unmapped").strip()
+        mapped_pdf_page = resolved_mapping["pdf_page"]
+        page_confidence = str(resolved_mapping["pdf_page_confidence"])
+        mapping_method = str(resolved_mapping["page_mapping_method"])
+        mapping_status = str(resolved_mapping["page_mapping_status"])
 
         if original_pdf:
             display_source = Path(original_pdf.replace("\\", "/")).name
@@ -456,16 +463,22 @@ class IngestionService:
     def _page_mapping_index(self) -> dict[tuple[str, int], dict[str, str]]:
         """Carga el mapeo Markdown -> pagina PDF oficial.
 
-        Solo las filas verified deben usarse para exponer/citar pagina PDF.
-        Las filas approximate/unresolved quedan como trazabilidad interna, pero no
-        habilitan enlaces con #page.
+        Reglas de confianza:
+        - Se lee con utf-8-sig porque el CSV puede traer BOM en la primera columna.
+        - text_similarity verified se considera confiable.
+        - visual_similarity verified NO se acepta automaticamente: en manuales largos
+          puede dar falsos positivos por esquemas repetidos.
+        - Para visual_similarity, se acepta si respeta el offset dominante calculado
+          desde filas text_similarity verified del mismo documento.
         """
         mapping_path = settings.processed_documents_dir.parent / "inventory" / "page_mapping_markdown_to_official.csv"
 
         if not mapping_path.exists():
+            self.page_mapping_offsets = {}
             return {}
 
         index: dict[tuple[str, int], dict[str, str]] = {}
+        rows: list[dict[str, str]] = []
 
         with mapping_path.open("r", encoding="utf-8-sig", errors="replace", newline="") as file:
             for row in csv.DictReader(file):
@@ -475,19 +488,166 @@ class IngestionService:
                 if not source_file or markdown_page is None:
                     continue
 
+                rows.append(row)
                 index[(source_file, markdown_page)] = row
 
+        self.page_mapping_offsets = self._dominant_page_offsets(rows)
         return index
 
-    def _verified_pdf_page_from_mapping(self, mapping: dict[str, str]) -> int | None:
+    def _dominant_page_offsets(self, rows: list[dict[str, str]]) -> dict[str, int]:
+        offsets_by_source: dict[str, dict[int, int]] = {}
+
+        for row in rows:
+            if not self._is_text_verified_mapping(row):
+                continue
+
+            source_file = (row.get("source_file") or "").strip()
+            markdown_page = self._safe_int(row.get("markdown_page"))
+            official_pdf_page = self._safe_int(row.get("official_pdf_page"))
+
+            if not source_file or markdown_page is None or official_pdf_page is None:
+                continue
+
+            offset = official_pdf_page - markdown_page
+            offsets_by_source.setdefault(source_file, {})
+            offsets_by_source[source_file][offset] = offsets_by_source[source_file].get(offset, 0) + 1
+
+        dominant_offsets: dict[str, int] = {}
+        for source_file, counts in offsets_by_source.items():
+            if not counts:
+                continue
+
+            offset, count = max(counts.items(), key=lambda item: item[1])
+
+            # Se exige al menos dos coincidencias textuales para usar el offset
+            # como correccion de mapeos visuales dudosos.
+            if count >= 2:
+                dominant_offsets[source_file] = offset
+
+        return dominant_offsets
+
+    def _resolve_page_mapping(self, mapping: dict[str, str]) -> dict[str, object]:
         if not mapping:
-            return None
+            return {
+                "pdf_page": "",
+                "pdf_page_confidence": "unmapped",
+                "page_mapping_method": "unmapped",
+                "page_mapping_status": "unmapped",
+            }
 
+        raw_confidence = (mapping.get("page_confidence") or "unmapped").strip()
+        raw_method = (mapping.get("mapping_method") or "unmapped").strip()
+        raw_status = (mapping.get("status") or "unmapped").strip()
+
+        confidence = raw_confidence.lower()
+        method = raw_method.lower()
+        status = raw_status.lower()
+        official_pdf_page = self._safe_int(mapping.get("official_pdf_page"))
+
+        if confidence != "verified" or official_pdf_page is None:
+            return {
+                "pdf_page": "",
+                "pdf_page_confidence": raw_confidence,
+                "page_mapping_method": raw_method,
+                "page_mapping_status": raw_status,
+            }
+
+        if self._is_text_verified_mapping(mapping):
+            return {
+                "pdf_page": official_pdf_page,
+                "pdf_page_confidence": "verified",
+                "page_mapping_method": raw_method,
+                "page_mapping_status": raw_status,
+            }
+
+        if "visual" in method:
+            visual_resolution = self._resolve_visual_mapping(mapping, official_pdf_page)
+            if visual_resolution is not None:
+                return visual_resolution
+
+            return {
+                "pdf_page": "",
+                "pdf_page_confidence": "unreliable_visual",
+                "page_mapping_method": raw_method,
+                "page_mapping_status": f"{raw_status}_rejected_by_consistency_rule",
+            }
+
+        # Otros metodos verificados se aceptan solo si no son visuales.
+        if "visual" not in method and "visual" not in status:
+            return {
+                "pdf_page": official_pdf_page,
+                "pdf_page_confidence": "verified",
+                "page_mapping_method": raw_method,
+                "page_mapping_status": raw_status,
+            }
+
+        return {
+            "pdf_page": "",
+            "pdf_page_confidence": "unreliable_mapping",
+            "page_mapping_method": raw_method,
+            "page_mapping_status": f"{raw_status}_rejected_unknown_mapping",
+        }
+
+    def _is_text_verified_mapping(self, mapping: dict[str, str]) -> bool:
         confidence = (mapping.get("page_confidence") or "").strip().lower()
-        if confidence != "verified":
+        method = (mapping.get("mapping_method") or "").strip().lower()
+        status = (mapping.get("status") or "").strip().lower()
+        official_pdf_page = self._safe_int(mapping.get("official_pdf_page"))
+
+        return (
+            confidence == "verified"
+            and official_pdf_page is not None
+            and ("text" in method or status == "text_matched")
+        )
+
+    def _resolve_visual_mapping(
+        self,
+        mapping: dict[str, str],
+        official_pdf_page: int,
+    ) -> dict[str, object] | None:
+        source_file = (mapping.get("source_file") or "").strip()
+        markdown_page = self._safe_int(mapping.get("markdown_page"))
+        raw_method = (mapping.get("mapping_method") or "visual_similarity").strip()
+        raw_status = (mapping.get("status") or "visual_matched").strip()
+
+        if not source_file or markdown_page is None:
             return None
 
-        return self._safe_int(mapping.get("official_pdf_page"))
+        dominant_offset = self.page_mapping_offsets.get(source_file)
+        if dominant_offset is None:
+            return None
+
+        expected_pdf_page = markdown_page + dominant_offset
+        if expected_pdf_page <= 0:
+            return None
+
+        if abs(official_pdf_page - expected_pdf_page) <= 1:
+            return {
+                "pdf_page": official_pdf_page,
+                "pdf_page_confidence": "verified",
+                "page_mapping_method": raw_method,
+                "page_mapping_status": raw_status,
+            }
+
+        # Si el mapeo visual es inconsistente con el offset textual dominante,
+        # NO se corrige automaticamente. Se descarta como pagina visible para
+        # evitar abrir paginas equivocadas. La trazabilidad interna conserva
+        # metodo y estado con marca de rechazo.
+        logger.debug(
+            "Rechazando mapeo visual inconsistente: %s markdown_page=%s "
+            "official_pdf_page=%s expected_pdf_page=%s offset=%s",
+            source_file,
+            markdown_page,
+            official_pdf_page,
+            expected_pdf_page,
+            dominant_offset,
+        )
+
+        return None
+
+    def _verified_pdf_page_from_mapping(self, mapping: dict[str, str]) -> int | None:
+        resolved = self._resolve_page_mapping(mapping)
+        return self._safe_int(resolved.get("pdf_page"))
 
     def _safe_int(self, value: object) -> int | None:
         try:
