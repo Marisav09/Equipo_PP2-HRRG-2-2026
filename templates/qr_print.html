@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f8fafc;
+            color: #0f172a;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .qr-print-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 16px 20px;
+            background: #ffffff;
+            border-bottom: 1px solid #dbe3ea;
+        }
+
+        .qr-print-toolbar button {
+            min-height: 38px;
+            border: 1px solid #0f766e;
+            border-radius: 8px;
+            padding: 0 14px;
+            background: #0f766e;
+            color: #ffffff;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .qr-sheet {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 14mm;
+            background: #ffffff;
+        }
+
+        .qr-label {
+            display: grid;
+            grid-template-columns: 34mm minmax(0, 1fr);
+            gap: 9mm;
+            align-items: center;
+            min-height: 52mm;
+            break-inside: avoid;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            padding: 6mm;
+        }
+
+        .qr-label img {
+            width: 34mm;
+            height: 34mm;
+            object-fit: contain;
+        }
+
+        .qr-label-text {
+            display: grid;
+            gap: 3mm;
+            min-width: 0;
+        }
+
+        .qr-label strong {
+            color: #0f172a;
+            font-size: 12pt;
+            line-height: 1.15;
+        }
+
+        .qr-label span,
+        .qr-label small {
+            color: #475569;
+            font-size: 8.5pt;
+            line-height: 1.25;
+            overflow-wrap: anywhere;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .qr-print-toolbar {
+                display: none;
+            }
+
+            .qr-sheet {
+                width: auto;
+                min-height: auto;
+                margin: 0;
+                padding: 12mm;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-print-toolbar">
+        <button type="button" onclick="window.print()">Imprimir</button>
+    </div>
+    <main class="qr-sheet">
+        {% for label in labels %}
+        <article class="qr-label">
+            <img src="{{ url_for('static', filename='img/qr/qr_' ~ label.equipment_id ~ '.png') }}" alt="QR {{ label.equipment_name }}">
+            <div class="qr-label-text">
+                <strong>{{ label.equipment_name }}</strong>
+                <span>ID: {{ label.equipment_id }}</span>
+                {% if label.sector %}
+                <span>Sector: {{ label.sector }}</span>
+                {% endif %}
+                <small>{{ label.url }}</small>
+            </div>
+        </article>
+        {% endfor %}
+    </main>
+    {% if auto_print %}
+    <script>
+        window.addEventListener("load", () => {
+            window.print();
+        });
+    </script>
+    {% endif %}
+</body>
+</html>

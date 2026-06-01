@@ -1512,6 +1512,35 @@ p {
     box-shadow: 0 20px 48px rgba(14, 165, 233, 0.20);
 }
 
+.equipment-header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.qr-bulk-button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(125, 211, 252, 0.34);
+    border-radius: 999px;
+    padding: 0 16px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #026240e2;
+    font-weight: 850;
+    text-decoration: none;
+    box-shadow: 0 16px 38px rgba(2, 6, 23, 0.16);
+    backdrop-filter: blur(18px);
+}
+
+.qr-bulk-button:hover {
+    transform: translateY(-2px);
+    border-color: rgba(125, 211, 252, 0.54);
+    background: rgba(255, 255, 255, 0.20);
+}
+
 .glass-exit-button svg,
 .chat-nav-action svg {
     width: 20px;
@@ -2197,4 +2226,14 @@ body,
 .equipment-select-screen[data-selector-profile="tecnico"] .equipment-card-icon {
     background: #ccfbf1;
     color: #0f766e;
+}
+
+/* Ajustes solo para el panel izquierdo */
+.operator-history-card strong {
+    font-weight: 700; /* mantenemos negrita para el nombre del equipo */
+}
+
+.operator-history-card span,
+.operator-history-card small {
+    font-weight: 400 !important; /* texto normal para descripción y fecha/consultas */
 }

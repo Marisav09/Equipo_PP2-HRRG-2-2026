@@ -46,7 +46,7 @@ def ask():
             username=request.cookies.get("hrrg_username") or chat_request.role,
             profile=chat_request.role,
             user_service=request.cookies.get("hrrg_user_service")
-            or ("UTI Adultos" if chat_request.role == "operador" else "Ingeniería Clínica"),
+            or ("OPERADOR" if chat_request.role == "operador" else "TECNICO"),
             equipment_id=chat_request.equipment_id,
             equipment_name=equipment_name,
             question=chat_request.query,

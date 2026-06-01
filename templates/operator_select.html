@@ -15,10 +15,16 @@
                     Selecciona el equipo para iniciar una conversación.
                 </p>
             </div>
-            <button class="glass-exit-button" type="button" id="logout-button" aria-label="Salir">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
-                <span>Salir</span>
-            </button>
+            <div class="equipment-header-actions">
+                {% if current_profile == "tecnico" %}
+                <a class="qr-bulk-button" href="{{ url_for('qr.download_all_qr_pdf') }}">Descargar todos los QR</a>
+                <a class="qr-bulk-button" href="{{ url_for('qr.print_all_qr') }}" target="_blank" rel="noopener noreferrer">Imprimir todos los QR</a>
+                {% endif %}
+                <button class="glass-exit-button" type="button" id="logout-button" aria-label="Salir">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+                    <span>Salir</span>
+                </button>
+            </div>
         </header>
 
         <section class="equipment-search-panel" aria-label="Buscar equipo">

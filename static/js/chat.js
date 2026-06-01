@@ -20,6 +20,8 @@ const qrTitle = document.querySelector("#qr-title");
 const qrImage = document.querySelector("#qr-image");
 const qrUrl = document.querySelector("#qr-url");
 const qrOpenLink = document.querySelector("#qr-open-link");
+const qrDownloadLink = document.querySelector("#qr-download-link");
+const qrPrintLink = document.querySelector("#qr-print-link");
 const qrCopyButton = document.querySelector("#qr-copy-button");
 const activeEquipmentTitle = document.querySelector("#active-equipment");
 const equipmentSelect = document.querySelector("#equipment-select");
@@ -1134,12 +1136,12 @@ function renderMonitoringInsights(data = {}) {
     container.innerHTML = "";
     const topEquipment = data.top_equipment?.[0];
     const topCategory = data.by_category?.[0];
-    const topService = data.by_service?.[0];
+    const topProfile = data.by_profile?.[0];
     const total = data.indicators?.total_consultations || 0;
     const insights = [
         topEquipment ? ["Equipo crítico", topEquipment.label, `${topEquipment.count} consultas`] : ["Equipo crítico", "Sin datos", "0 consultas"],
         topCategory ? ["Falla dominante", topCategory.label, `${topCategory.count} eventos`] : ["Falla dominante", "Sin datos", "0 eventos"],
-        topService ? ["Servicio con mayor uso", topService.label, `${topService.count} consultas`] : ["Servicio con mayor uso", "Sin datos", "0 consultas"],
+        topProfile ? ["Perfil con mayor uso", topProfile.label, `${topProfile.count} consultas`] : ["Perfil con mayor uso", "Sin datos", "0 consultas"],
         ["Base analizada", `${total} consultas`, "Historial registrado"],
     ];
 
@@ -1224,6 +1226,13 @@ function renderFailureMap(items = []) {
     });
 }
 
+function profileLabel(profile) {
+    const value = String(profile || "").toLowerCase();
+    if (value === "operador") return "Operador";
+    if (value === "tecnico") return "Técnico";
+    return "Sin perfil";
+}
+
 function renderMonitoringConsultations(items = []) {
     const container = document.querySelector("#monitoring-consultation-list");
     if (!container) return;
@@ -1248,7 +1257,7 @@ function renderMonitoringConsultations(items = []) {
         const title = document.createElement("strong");
         title.textContent = item.equipment_name || "Equipo no registrado";
         const meta = document.createElement("span");
-        meta.textContent = `${item.username || "Sin usuario"} · ${item.user_service || "Sin servicio"} · ${item.date} ${item.time}`;
+        meta.textContent = `${item.username || "Sin usuario"} · ${profileLabel(item.profile)} · ${item.date} ${item.time}`;
         const question = document.createElement("p");
         question.textContent = item.question || "Consulta sin detalle";
         const category = document.createElement("small");
@@ -1375,7 +1384,7 @@ function renderPriorityList(data = {}, consultations = []) {
     });
 }
 
-function renderServiceFailureHeatmap(consultations = []) {
+function renderProfileFailureHeatmap(consultations = []) {
     const container = document.querySelector("#monitoring-heatmap");
     if (!container) return;
 
@@ -1388,13 +1397,13 @@ function renderServiceFailureHeatmap(consultations = []) {
         return;
     }
 
-    const services = groupCounts(consultations, (item) => item.user_service || "Sin servicio").slice(0, 5).map((item) => item.label);
+    const profiles = groupCounts(consultations, (item) => profileLabel(item.profile)).slice(0, 5).map((item) => item.label);
     const categories = groupCounts(consultations, (item) => item.category || "Sin categoría").slice(0, 6).map((item) => item.label);
     const counts = new Map();
     consultations.forEach((item) => {
-        const service = item.user_service || "Sin servicio";
+        const profile = profileLabel(item.profile);
         const category = item.category || "Sin categoría";
-        counts.set(`${service}|${category}`, (counts.get(`${service}|${category}`) || 0) + 1);
+        counts.set(`${profile}|${category}`, (counts.get(`${profile}|${category}`) || 0) + 1);
     });
     const maxCount = Math.max(...counts.values(), 1);
 
@@ -1404,7 +1413,7 @@ function renderServiceFailureHeatmap(consultations = []) {
 
     const corner = document.createElement("div");
     corner.className = "heatmap-head heatmap-corner";
-    corner.textContent = "Servicio";
+    corner.textContent = "Perfil";
     table.appendChild(corner);
 
     categories.forEach((category) => {
@@ -1414,20 +1423,20 @@ function renderServiceFailureHeatmap(consultations = []) {
         table.appendChild(cell);
     });
 
-    services.forEach((service) => {
+    profiles.forEach((profile) => {
         const serviceCell = document.createElement("div");
         serviceCell.className = "heatmap-service";
-        serviceCell.textContent = service;
+        serviceCell.textContent = profile;
         table.appendChild(serviceCell);
 
         categories.forEach((category) => {
-            const count = counts.get(`${service}|${category}`) || 0;
+            const count = counts.get(`${profile}|${category}`) || 0;
             const cell = document.createElement("div");
             const intensity = count ? Math.max(0.16, count / maxCount) : 0;
             cell.className = "heatmap-cell";
             cell.style.setProperty("--heat", String(intensity));
             cell.textContent = count ? String(count) : "-";
-            cell.title = `${service} · ${category}: ${count}`;
+            cell.title = `${profile} · ${category}: ${count}`;
             table.appendChild(cell);
         });
     });
@@ -1445,12 +1454,12 @@ async function openMonitoringCenter() {
         renderMonitoringAlerts(data.alerts || []);
         renderAuditList("monitoring-equipment-list", data.top_equipment || []);
         renderAuditList("monitoring-users-list", data.top_users || []);
-        renderAuditList("monitoring-service-list", data.by_service || []);
+        renderAuditList("monitoring-service-list", data.by_profile || []);
         renderAuditList("monitoring-category-list", data.by_category || []);
         renderFailureMap(data.failure_map || []);
         const consultationItems = await loadMonitoringSearch();
         renderPriorityList(data, consultationItems);
-        renderServiceFailureHeatmap(consultationItems);
+        renderProfileFailureHeatmap(consultationItems);
         monitoringDialog.showModal();
         setStatus("Centro de Monitoreo actualizado.");
     } catch (error) {
@@ -1609,6 +1618,12 @@ if (qrButton) {
             qrImage.src = imageUrl;
             qrUrl.textContent = result.url;
             qrOpenLink.href = result.url;
+            if (qrDownloadLink) {
+                qrDownloadLink.href = `/api/qr/${encodeURIComponent(result.equipment_id)}/download`;
+            }
+            if (qrPrintLink) {
+                qrPrintLink.href = `/api/qr/${encodeURIComponent(result.equipment_id)}/print`;
+            }
             qrDialog.showModal();
 
             setStatus(`QR listo para ${result.equipment_name}.`);

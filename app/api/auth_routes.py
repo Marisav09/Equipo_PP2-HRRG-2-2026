@@ -20,13 +20,13 @@ def login():
         expected_password = settings.operator_user_password
         cookie_name = "hrrg_operator_auth"
         redirect_url = "/operador"
-        user_service = "UTI Adultos"
+        user_service = "OPERADOR"
     else:
         expected_username = "tecnico"
         expected_password = settings.technical_user_password
         cookie_name = "hrrg_technician_auth"
         redirect_url = "/tecnico"
-        user_service = "Ingeniería Clínica"
+        user_service = "TECNICO"
 
     if username != expected_username or password != expected_password:
         return jsonify({"error": "Credenciales invalidas."}), 401

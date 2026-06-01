@@ -27,6 +27,9 @@
                 <strong id="active-equipment">{{ equipment.name if equipment else "Equipo no reconocido" }}</strong>
             </div>
             <div class="chat-topbar-actions">
+                <button class="chat-nav-action" type="button" id="qr-button" aria-label="Ver QR del equipo">
+                    <span>QR</span>
+                </button>
                 <button class="chat-nav-action speech-toggle-button" type="button" id="speech-toggle-button" aria-label="Silenciar lectura en voz alta"></button>
                 <button class="chat-nav-action chat-logout-action" type="button" id="logout-button" aria-label="Salir">
                     <span>Salir</span>
@@ -37,5 +40,27 @@
 
         {% include "partials/chat_panel.html" %}
     </section>
+
+    <dialog class="qr-dialog" id="qr-dialog">
+        <form method="dialog" class="qr-panel">
+            <div class="dialog-header">
+                <div>
+                    <p class="eyebrow">Acceso operador</p>
+                    <h2 id="qr-title">Código QR</h2>
+                </div>
+                <button class="dialog-close" type="submit" aria-label="Cerrar">Cerrar</button>
+            </div>
+            <div class="qr-preview">
+                <img id="qr-image" alt="Código QR del equipo seleccionado">
+            </div>
+            <div class="qr-url" id="qr-url"></div>
+            <div class="qr-actions">
+                <a class="secondary-button" id="qr-open-link" href="#" target="_blank" rel="noopener noreferrer">Abrir URL</a>
+                <a class="secondary-button" id="qr-download-link" href="#" download>Descargar QR</a>
+                <a class="secondary-button" id="qr-print-link" href="#" target="_blank" rel="noopener noreferrer">Imprimir QR</a>
+                <button class="primary-button" type="button" id="qr-copy-button">Copiar URL</button>
+            </div>
+        </form>
+    </dialog>
 </main>
 {% endblock %}

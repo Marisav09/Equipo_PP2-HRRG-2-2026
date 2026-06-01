@@ -257,7 +257,7 @@ class KnowledgeAuditService:
         today = datetime.now().strftime("%Y-%m-%d")
         equipment_counter = Counter(row["equipment_name"] for row in rows)
         user_counter = Counter(row["username"] for row in rows)
-        service_counter = Counter(row["user_service"] or "Sin servicio" for row in rows)
+        profile_counter = Counter(self.profile_label(row["profile"]) for row in rows)
         category_counter = Counter(row["category"] for row in rows)
         active_users = {row["username"] for row in rows}
         consulted_equipment = {row["equipment_name"] for row in rows}
@@ -277,7 +277,7 @@ class KnowledgeAuditService:
             },
             "top_equipment": self._counter_items(equipment_counter),
             "top_users": self._counter_items(user_counter),
-            "by_service": self._counter_items(service_counter),
+            "by_profile": self._counter_items(profile_counter),
             "by_category": self._counter_items(category_counter),
             "failure_map": recurrent_failures[:8],
             "alerts": self.alerts(recurrent_failures),
@@ -395,6 +395,14 @@ class KnowledgeAuditService:
             if any(term in normalized for term in terms):
                 return label
         return category
+
+    def profile_label(self, profile: str) -> str:
+        normalized = self._normalize(profile)
+        if normalized == "operador":
+            return "Operadores"
+        if normalized == "tecnico":
+            return "Técnicos"
+        return "Sin perfil"
 
     def _all_consultations(self) -> list[sqlite3.Row]:
         with self._connect() as connection:
