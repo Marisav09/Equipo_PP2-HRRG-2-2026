@@ -1,4 +1,4 @@
-# 📊 Resumen de Cambios No Committeados
+# 📊 Resumen de Cambios
 
 **Rama:** `prueba-markdown-dario`  
 **Última sincronización con origen:** `fa79673 - Ignorar conversation.sqlite3 en el repo`  
@@ -171,25 +171,6 @@
 - Mejor responsividad móvil
 - Mejor distribución de botones en grid
 
----
 
-## 🔍 Próximos Pasos Sugeridos
-
-1. **Commit estos cambios:**
-   ```bash
-   git add -A
-   git commit -m "feat(ui,services): integración QR, botones PDF y mejora de auditoría"
-   ```
-
-2. **Verificar funcionamiento:**
-   - Probar botones QR en equipos
-   - Probar descarga de PDFs de manuales
-   - Validar responsividad en móvil
-
-3. **Consideración de codificación:**
-   - Los archivos Python/CSS/JS tienen LF que se convertirán a CRLF
-   - Posiblemente agregar configuración `.gitattributes` para normalizar finales de línea
-
----
 
 **Generado:** 2026-06-01 | **Estado:** 32 archivos en cambios no staged
