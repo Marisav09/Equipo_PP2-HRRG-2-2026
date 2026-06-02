@@ -173,14 +173,41 @@ class RagService:
                 )
             )
 
+            defibrillator_safety_risk = (
+                "desfibrilador" in self._normalize_for_match(equipment_name)
+                and any(
+                    term in normalized_operator_query
+                    for term in (
+                        "bateria baja",
+                        "bater?a baja",
+                        "no carga",
+                        "no carga bateria",
+                        "no carga bater?a",
+                        "falla antes de usar",
+                        "falla antes de usarlo",
+                        "tira falla",
+                        "error antes de usar",
+                        "antes de usarlo",
+                    )
+                )
+            )
+
             operator_active_use_failure = (
                 (patient_or_active_context and critical_failure_context)
                 or incubator_temperature_risk
                 or bed_movement_risk
+                or defibrillator_safety_risk
             )
 
             if operator_test_or_check_query or operator_active_use_failure:
-                if bed_movement_risk and not operator_test_or_check_query:
+                if defibrillator_safety_risk and not operator_test_or_check_query:
+                    critical_answer = (
+                        "No dependa de un desfibrilador con bateria baja o falla como equipo disponible para una emergencia.\n\n"
+                        "Si hay una situacion clinica urgente, pida asistencia inmediata y asegure un equipo alternativo segun el protocolo del servicio.\n\n"
+                        "No intente abrir, cambiar bateria, reparar ni intervenir el equipo por indicacion del asistente.\n\n"
+                        "Contacte inmediatamente al Tecnico de Ingenieria Clinica."
+                    )
+                elif bed_movement_risk and not operator_test_or_check_query:
                     critical_answer = (
                         "No fuerce el movimiento de la cama ni intente intervenir el mecanismo.\n\n"
                         "Si hay paciente en la cama o riesgo de caida o lesion, pida asistencia clinica inmediata y actue segun el protocolo del servicio.\n\n"
