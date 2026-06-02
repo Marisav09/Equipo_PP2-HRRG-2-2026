@@ -575,6 +575,17 @@ Respuesta:""".strip()
             )
         ]
 
+        if query_type == "falla_alarma" and not is_power_on_question:
+            specific_terms = self._specific_fault_terms(question)
+            if specific_terms and not self._chunks_contain_specific_terms(useful_chunks, specific_terms):
+                return {
+                    "quality": "debil",
+                    "query_type": query_type,
+                    "chunks": [],
+                    "reason": "termino_especifico_de_falla_no_encontrado_en_evidencia",
+                    "scores": [score for score, _chunk in scored[:5]],
+                }
+
         if is_power_on_question:
             strong_power_chunks = [
                 chunk for chunk in useful_chunks if self._has_strong_power_on_evidence(chunk.text)
@@ -777,6 +788,71 @@ Respuesta:""".strip()
                 penalty += 3.5
 
         return penalty
+
+    def _specific_fault_terms(self, question: str) -> set[str]:
+        """Extrae t?rminos espec?ficos de una falla/alarma, excluyendo palabras gen?ricas.
+
+        Evita que una consulta como "alarma Oclusi?n en el circuito" sea respondida
+        usando chunks que solo contienen palabras gen?ricas como "alarma" o "circuito".
+        """
+        generic_terms = {
+            "alarma",
+            "alarm",
+            "error",
+            "falla",
+            "fallo",
+            "problema",
+            "equipo",
+            "maquina",
+            "manual",
+            "hacer",
+            "debo",
+            "ante",
+            "revisar",
+            "verificar",
+            "comprobar",
+            "circuito",
+            "sistema",
+            "procedimiento",
+            "indica",
+            "indicar",
+        }
+        terms = {
+            term
+            for term in self._content_terms(question)
+            if len(term) >= 4 and term not in generic_terms
+        }
+
+        normalized = self._normalize_for_match(question)
+        for phrase in (
+            "oclusion",
+            "occlusion",
+            "obstruccion",
+            "obstruction",
+            "bloqueo",
+            "no calibra",
+            "no pasa test",
+            "no pasa el test",
+        ):
+            if phrase in normalized:
+                terms.add(phrase)
+
+        return terms
+
+    def _chunks_contain_specific_terms(
+        self,
+        chunks: list[RetrievedChunk],
+        specific_terms: set[str],
+    ) -> bool:
+        if not chunks or not specific_terms:
+            return False
+
+        for chunk in chunks:
+            normalized_text = self._normalize_for_match(chunk.text)
+            if any(term in normalized_text for term in specific_terms):
+                return True
+
+        return False
 
     def _is_power_on_question(self, question: str) -> bool:
         normalized = self._normalize_for_match(question)
