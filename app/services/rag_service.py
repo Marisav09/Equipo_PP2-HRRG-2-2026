@@ -62,6 +62,98 @@ class RagService:
             self._store_turn(session_id, chat_request.query, response["answer"], equipment_name)
             return response
 
+        # Guardrail deterministico para operador clinico.
+        # Se ejecuta antes de recuperar contexto y antes de llamar al LLM:
+        # en situaciones criticas no debe quedar librado al modelo.
+        if chat_request.role == "operador":
+            normalized_operator_query = self._normalize_for_match(chat_request.query)
+
+            operator_test_or_check_query = (
+                any(
+                    term in normalized_operator_query
+                    for term in (
+                        "no pasa prueba",
+                        "no pasa la prueba",
+                        "no pasa test",
+                        "no pasa el test",
+                        "no pasa pre use",
+                        "no pasa preuse",
+                        "pre use check",
+                        "preuse check",
+                        "prueba del sistema",
+                        "comprobacion del sistema",
+                        "check del sistema",
+                        "falla prueba",
+                        "falla test",
+                        "test fall",
+                        "test unsuccessful",
+                    )
+                )
+                or (
+                    any(
+                        term in normalized_operator_query
+                        for term in ("prueba", "test", "check", "comprobacion")
+                    )
+                    and any(
+                        term in normalized_operator_query
+                        for term in ("no pasa", "falla", "error", "usar igual", "puedo usar")
+                    )
+                )
+            )
+
+            operator_active_use_failure = (
+                any(
+                    term in normalized_operator_query
+                    for term in (
+                        "paciente",
+                        "bebe",
+                        "tratamiento",
+                        "dialisis",
+                        "ventilacion",
+                        "ventilando",
+                    )
+                )
+                and any(
+                    term in normalized_operator_query
+                    for term in (
+                        "trabado",
+                        "trabada",
+                        "alarma",
+                        "falla",
+                        "error",
+                        "no ventila",
+                        "no prende",
+                        "se apaga",
+                        "no responde",
+                    )
+                )
+            )
+
+            if operator_test_or_check_query or operator_active_use_failure:
+                if operator_active_use_failure and not operator_test_or_check_query:
+                    critical_answer = (
+                        "No intente intervenir el equipo durante un tratamiento o situacion clinica en curso.\n\n"
+                        "Si hay paciente conectado, tratamiento en curso o riesgo clinico, pida asistencia clinica inmediata y actue segun el protocolo del servicio.\n\n"
+                        "No intente apagar, desconectar, reiniciar, calibrar ni intervenir el equipo por indicacion del asistente.\n\n"
+                        "Contacte inmediatamente al Tecnico de Ingenieria Clinica."
+                    )
+                else:
+                    critical_answer = (
+                        "No use el equipo si no pasa una prueba, test o comprobacion del sistema.\n\n"
+                        "No intente apagar, desconectar, reiniciar, calibrar ni intervenir el equipo por indicacion del asistente.\n\n"
+                        "Si hay paciente conectado, tratamiento en curso o riesgo clinico, pida asistencia clinica inmediata y asegure soporte alternativo segun el protocolo del servicio.\n\n"
+                        "Deje el equipo fuera de uso si corresponde y contacte inmediatamente al Tecnico de Ingenieria Clinica."
+                    )
+
+                response = {
+                    "answer": critical_answer,
+                    "mode": "guardrail_operador_seguridad_critica",
+                    "sources": [],
+                    "session_id": session_id,
+                }
+                self._store_turn(session_id, chat_request.query, response["answer"], equipment_name)
+                return response
+
         self._clear_memory_if_equipment_changed(session_id, equipment_name)
         history = self.memory_service.get_recent_messages(session_id, equipment_name)
 
@@ -270,6 +362,7 @@ class RagService:
             }
             self._store_turn(session_id, chat_request.query, response["answer"], equipment_name)
             return response
+
 
     def _generate_with_timeout(
         self,
