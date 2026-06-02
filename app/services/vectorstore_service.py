@@ -390,6 +390,65 @@ class VectorstoreService:
 
     def _lexical_penalty(self, normalized_question: str, chunk: RetrievedChunk) -> float:
         text = self._normalize_for_ranking(chunk.text)
+        source = self._normalize_for_ranking(
+            " ".join(
+                (
+                    chunk.citation.display_source or "",
+                    chunk.citation.original_pdf or "",
+                    chunk.citation.source_file or "",
+                )
+            )
+        )
+
+        penalty = 0.0
+
+        # Caso VN500:
+        # BabyFlow / CPAP nasal es una fuente lateral del respirador Draeger VN500.
+        # Debe usarse cuando la consulta menciona explícitamente BabyFlow, CPAP,
+        # nCPAP, nasal, canula, mascara o contexto neonatal.
+        # Para consultas generales del respirador sobre test, alarmas, presion,
+        # ventilacion o funcionamiento, se penaliza para evitar respuestas con
+        # una fuente correcta por equipo pero incorrecta por alcance documental.
+        babyflow_source = any(
+            term in source
+            for term in (
+                "babyflow",
+                "cpap nasal",
+                "ncpap",
+            )
+        ) or any(
+            term in text
+            for term in (
+                "babyflow",
+                "cpap nasal",
+                "ncpap",
+                "canulas nasales",
+                "mascaras",
+                "gorros",
+            )
+        )
+
+        babyflow_query = any(
+            term in normalized_question
+            for term in (
+                "babyflow",
+                "cpap",
+                "ncpap",
+                "nasal",
+                "canula",
+                "canulas",
+                "mascara",
+                "mascaras",
+                "neonatal",
+                "neonato",
+                "neonatos",
+                "interfaz",
+                "gorros",
+            )
+        )
+
+        if babyflow_source and not babyflow_query:
+            penalty += 3.0
 
         circuit_obstruction_query = (
             "circuito" in normalized_question
@@ -399,23 +458,20 @@ class VectorstoreService:
             )
         )
 
-        if not circuit_obstruction_query:
-            return 0.0
-
-        penalty = 0.0
-        false_positive_phrases = (
-            "barra favoritos",
-            "pantalla tactil",
-            "bloqueo desbloqueo",
-            "bloquear o desbloquear la pantalla",
-            "tendencias",
-            "configuracion de favoritos",
-            "visualizacion de curvas",
-            "piezas",
-        )
-        for phrase in false_positive_phrases:
-            if phrase in text:
-                penalty += 4.0
+        if circuit_obstruction_query:
+            false_positive_phrases = (
+                "barra favoritos",
+                "pantalla tactil",
+                "bloqueo desbloqueo",
+                "bloquear o desbloquear la pantalla",
+                "tendencias",
+                "configuracion de favoritos",
+                "visualizacion de curvas",
+                "piezas",
+            )
+            for phrase in false_positive_phrases:
+                if phrase in text:
+                    penalty += 4.0
 
         return penalty
 
