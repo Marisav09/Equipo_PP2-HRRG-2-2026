@@ -101,32 +101,61 @@ class RagService:
                 )
             )
 
-            operator_active_use_failure = (
-                any(
-                    term in normalized_operator_query
-                    for term in (
-                        "paciente",
-                        "bebe",
-                        "tratamiento",
-                        "dialisis",
-                        "ventilacion",
-                        "ventilando",
-                    )
+            patient_or_active_context = any(
+                term in normalized_operator_query
+                for term in (
+                    "paciente",
+                    "bebe",
+                    "tratamiento",
+                    "dialisis",
+                    "ventilacion",
+                    "ventilando",
                 )
+            )
+
+            critical_failure_context = any(
+                term in normalized_operator_query
+                for term in (
+                    "trabado",
+                    "trabada",
+                    "alarma",
+                    "falla",
+                    "error",
+                    "no ventila",
+                    "no prende",
+                    "se apaga",
+                    "no responde",
+                    "temperatura",
+                    "temperatura rara",
+                    "alarma de temperatura",
+                    "sobretemperatura",
+                    "no calienta",
+                    "calienta mal",
+                    "no mantiene temperatura",
+                    "no mantiene la temperatura",
+                )
+            )
+
+            incubator_temperature_risk = (
+                "incubadora" in self._normalize_for_match(equipment_name)
                 and any(
                     term in normalized_operator_query
                     for term in (
-                        "trabado",
-                        "trabada",
-                        "alarma",
-                        "falla",
-                        "error",
-                        "no ventila",
-                        "no prende",
-                        "se apaga",
-                        "no responde",
+                        "temperatura",
+                        "temperatura rara",
+                        "alarma de temperatura",
+                        "sobretemperatura",
+                        "no calienta",
+                        "calienta mal",
+                        "no mantiene temperatura",
+                        "no mantiene la temperatura",
                     )
                 )
+            )
+
+            operator_active_use_failure = (
+                (patient_or_active_context and critical_failure_context)
+                or incubator_temperature_risk
             )
 
             if operator_test_or_check_query or operator_active_use_failure:
