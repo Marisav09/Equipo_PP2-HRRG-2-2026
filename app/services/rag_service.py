@@ -153,13 +153,41 @@ class RagService:
                 )
             )
 
+            bed_movement_risk = (
+                "cama" in self._normalize_for_match(equipment_name)
+                and any(
+                    term in normalized_operator_query
+                    for term in (
+                        "trabada",
+                        "trabado",
+                        "control no responde",
+                        "no responde",
+                        "no sube",
+                        "no baja",
+                        "no sube ni baja",
+                        "necesito mover",
+                        "mover la cama",
+                        "no se mueve",
+                        "no mueve",
+                    )
+                )
+            )
+
             operator_active_use_failure = (
                 (patient_or_active_context and critical_failure_context)
                 or incubator_temperature_risk
+                or bed_movement_risk
             )
 
             if operator_test_or_check_query or operator_active_use_failure:
-                if operator_active_use_failure and not operator_test_or_check_query:
+                if bed_movement_risk and not operator_test_or_check_query:
+                    critical_answer = (
+                        "No fuerce el movimiento de la cama ni intente intervenir el mecanismo.\n\n"
+                        "Si hay paciente en la cama o riesgo de caida o lesion, pida asistencia clinica inmediata y actue segun el protocolo del servicio.\n\n"
+                        "No intente abrir, reiniciar, reparar ni manipular componentes electricos o mecanicos.\n\n"
+                        "Contacte inmediatamente al Tecnico de Ingenieria Clinica."
+                    )
+                elif operator_active_use_failure and not operator_test_or_check_query:
                     critical_answer = (
                         "No intente intervenir el equipo durante un tratamiento o situacion clinica en curso.\n\n"
                         "Si hay paciente conectado, tratamiento en curso o riesgo clinico, pida asistencia clinica inmediata y actue segun el protocolo del servicio.\n\n"
