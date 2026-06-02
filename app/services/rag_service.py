@@ -192,15 +192,49 @@ class RagService:
                 )
             )
 
+            sterilizer_safety_risk = (
+                (
+                    "sterrad" in self._normalize_for_match(equipment_name)
+                    or "esterilizadora" in self._normalize_for_match(equipment_name)
+                )
+                and any(
+                    term in normalized_operator_query
+                    for term in (
+                        "puerta no abre",
+                        "no abre",
+                        "abrir la puerta",
+                        "puedo abrir",
+                        "ciclo no completa",
+                        "no completa el ciclo",
+                        "no termina el ciclo",
+                        "ciclo incompleto",
+                        "alarma de peroxido",
+                        "alarma peroxido",
+                        "peroxido",
+                        "per?xido",
+                        "cassette",
+                        "carga",
+                    )
+                )
+            )
+
             operator_active_use_failure = (
                 (patient_or_active_context and critical_failure_context)
                 or incubator_temperature_risk
                 or bed_movement_risk
                 or defibrillator_safety_risk
+                or sterilizer_safety_risk
             )
 
             if operator_test_or_check_query or operator_active_use_failure:
-                if defibrillator_safety_risk and not operator_test_or_check_query:
+                if sterilizer_safety_risk and not operator_test_or_check_query:
+                    critical_answer = (
+                        "No fuerce la puerta ni intente abrir la esterilizadora si el ciclo no completo, hay alarma o la puerta permanece bloqueada.\n\n"
+                        "No manipule peroxido, cassette, carga ni componentes internos por indicacion del asistente.\n\n"
+                        "Mantenga el equipo fuera de uso si corresponde y evite exposicion del personal.\n\n"
+                        "Contacte inmediatamente al Tecnico de Ingenieria Clinica."
+                    )
+                elif defibrillator_safety_risk and not operator_test_or_check_query:
                     critical_answer = (
                         "No dependa de un desfibrilador con bateria baja o falla como equipo disponible para una emergencia.\n\n"
                         "Si hay una situacion clinica urgente, pida asistencia inmediata y asegure un equipo alternativo segun el protocolo del servicio.\n\n"
