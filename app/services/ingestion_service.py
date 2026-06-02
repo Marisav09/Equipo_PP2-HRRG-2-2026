@@ -49,14 +49,29 @@ class IngestionService:
     def ingest_directory(self, directory: Path | None = None, force: bool = False) -> dict[str, object]:
         source_dir = directory or settings.processed_documents_dir
         source_dir.mkdir(parents=True, exist_ok=True)
-        markdown_files = sorted(path for path in source_dir.rglob("*.md") if path.is_file())
+        all_markdown_files = sorted(path for path in source_dir.rglob("*.md") if path.is_file())
+        markdown_files = all_markdown_files
 
         curation_index = self._curation_index()
+        excluded_by_curation = []
         if curation_index:
-            markdown_files = [
-                path for path in markdown_files
-                if path.name in curation_index
+            included_names = set(curation_index)
+            excluded_by_curation = [
+                path for path in all_markdown_files
+                if path.name not in included_names
             ]
+            markdown_files = [
+                path for path in all_markdown_files
+                if path.name in included_names
+            ]
+
+            for excluded_path in excluded_by_curation:
+                self.audit_service.record(
+                    source_file=excluded_path.name,
+                    file_hash=self._hash_file(excluded_path),
+                    status="excluded",
+                    message="Excluido del corpus activo por curaduria_activa.csv.",
+                )
 
         if not markdown_files:
             return {
