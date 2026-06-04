@@ -186,8 +186,8 @@
                 <img class="h-7 w-auto object-contain opacity-90" src="{{ url_for('static', filename='img/logo-centro-politecnico.png') }}" alt="">
             </div>
             <nav class="flex flex-wrap justify-center gap-6">
-                <a class="transition hover:text-cyan-100" href="#proyecto">Acerca del proyecto</a>
-                <a class="transition hover:text-cyan-100" href="#funciona">&iquest;C&oacute;mo funciona?</a>
+                <a class="transition hover:text-cyan-100" href="{{ url_for('static', filename='acerca-del-proyecto.html') }}">Acerca del proyecto</a>
+                <a class="transition hover:text-cyan-100" href="{{ url_for('static', filename='como-funciona.html') }}">&iquest;C&oacute;mo funciona?</a>
             </nav>
             <p class="text-center sm:text-right">Primer desarrollo &ndash; Versi&oacute;n 1.0</p>
         </footer>

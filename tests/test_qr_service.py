@@ -11,7 +11,7 @@ def test_generate_qr_for_equipment(tmp_path):
     result = service.generate_for_equipment("sterrad-100", "http://localhost:5000/")
 
     assert result.equipment_id == "sterrad-100"
-    assert result.url == "http://localhost:5000/equipo/sterrad-100"
+    assert result.url == "http://localhost:5000/qr/sterrad-100"
     assert result.output_path.exists()
     assert result.output_path.name == "qr_sterrad-100.png"
 

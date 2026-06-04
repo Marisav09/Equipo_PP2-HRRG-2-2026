@@ -140,7 +140,7 @@ class QrService:
 
     def _generate(self, equipment: Equipment, base_url: str) -> QrResult:
         clean_base_url = base_url.rstrip("/")
-        url = f"{clean_base_url}/equipo/{equipment.id}"
+        url = f"{clean_base_url}/qr/{equipment.id}"
         output_path = self.output_dir / f"qr_{equipment.id}.png"
 
         qr = qrcode.QRCode(

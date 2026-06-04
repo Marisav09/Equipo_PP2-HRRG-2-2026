@@ -1634,8 +1634,12 @@ if (qrButton) {
 
             qrTitle.textContent = result.equipment_name;
             qrImage.src = imageUrl;
-            qrUrl.textContent = result.url;
-            qrOpenLink.href = result.url;
+            if (qrUrl) {
+                qrUrl.textContent = result.url;
+            }
+            if (qrOpenLink) {
+                qrOpenLink.href = result.url;
+            }
             if (qrDownloadLink) {
                 qrDownloadLink.href = `/api/qr/${encodeURIComponent(result.equipment_id)}/download`;
             }
@@ -1656,7 +1660,7 @@ if (qrButton) {
 
 if (qrCopyButton) {
     qrCopyButton.addEventListener("click", async () => {
-        const value = qrUrl.textContent.trim();
+        const value = qrUrl?.textContent.trim();
         if (!value) return;
 
         await navigator.clipboard.writeText(value);

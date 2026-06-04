@@ -3,7 +3,7 @@ from __future__ import annotations
 from urllib.parse import unquote
 
 import fitz
-from flask import Blueprint, abort, redirect, render_template, request, send_file, send_from_directory, url_for
+from flask import Blueprint, abort, make_response, redirect, render_template, request, send_file, send_from_directory, url_for
 
 from app.core.config import settings
 from app.services.equipment_service import EquipmentService
@@ -13,9 +13,30 @@ web_bp = Blueprint("web", __name__)
 equipment_service = EquipmentService()
 
 
+def _redirect_home_with_qr_equipment(equipment_id: str):
+    response = make_response(redirect(url_for("web.home")))
+    response.set_cookie(
+        "hrrg_qr_equipment_id",
+        equipment_id,
+        max_age=60 * 15,
+        httponly=True,
+        samesite="Lax",
+    )
+    return response
+
+
 @web_bp.get("/")
 def home():
     return render_template("landing.html")
+
+
+@web_bp.get("/qr/<equipment_id>")
+def qr_landing(equipment_id: str):
+    equipment = equipment_service.get_by_id(equipment_id)
+    if not equipment:
+        abort(404)
+
+    return _redirect_home_with_qr_equipment(equipment.id)
 
 
 @web_bp.get("/login")
@@ -49,17 +70,21 @@ def operator_equipment_selector():
 
 @web_bp.get("/equipo/<equipment_id>")
 def operator_console(equipment_id: str):
-    if request.cookies.get("hrrg_operator_auth") != "ok":
-        return redirect(url_for("web.login", perfil="operador"))
     equipment = equipment_service.get_by_id(equipment_id)
+    if not equipment:
+        abort(404)
+    if request.cookies.get("hrrg_operator_auth") != "ok":
+        return _redirect_home_with_qr_equipment(equipment.id)
     return render_template("operator.html", equipment=equipment)
 
 
 @web_bp.get("/tecnico/equipo/<equipment_id>")
 def technician_console(equipment_id: str):
-    if request.cookies.get("hrrg_technician_auth") != "ok":
-        return redirect(url_for("web.login", perfil="tecnico"))
     equipment = equipment_service.get_by_id(equipment_id)
+    if not equipment:
+        abort(404)
+    if request.cookies.get("hrrg_technician_auth") != "ok":
+        return _redirect_home_with_qr_equipment(equipment.id)
     return render_template("technician.html", equipment=equipment)
 
 

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Como funciona | Asistente IA HRRG</title>
+    <link rel="stylesheet" href="/static/css/base.css?v=public-pages-20260603">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { overflow-x: hidden; }
+
+        .medical-aurora {
+            background: linear-gradient(135deg, #0f172a, #0d9488, #0369a1, #064e3b, #0f172a);
+            background-size: 400% 400%;
+            animation: medicalAurora 15s ease-in-out infinite;
+        }
+
+        .hospital-bg {
+            background-image:
+                linear-gradient(90deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.62) 46%, rgba(15, 23, 42, 0.78)),
+                url("/static/img/hospital-equipment-room.png");
+            background-size: cover;
+            background-position: center;
+            animation: hospitalDrift 18s ease-in-out infinite alternate;
+        }
+
+        .ai-grid {
+            background-image:
+                linear-gradient(rgba(125, 211, 252, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(125, 211, 252, 0.08) 1px, transparent 1px);
+            background-size: 42px 42px;
+            animation: aiGridMove 18s linear infinite;
+            mask-image: radial-gradient(circle at center, #000 0%, transparent 72%);
+        }
+
+        .ai-scan { animation: aiScan 4.8s ease-in-out infinite; }
+        .ai-reveal-left { animation: aiRevealLeft 900ms cubic-bezier(0.16, 0.9, 0.22, 1) both; }
+        .ai-reveal-up { animation: aiRevealUp 920ms cubic-bezier(0.16, 0.9, 0.22, 1) 120ms both; }
+
+        @keyframes medicalAurora {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes hospitalDrift {
+            from { transform: scale(1.02) translateX(-1.5vw); }
+            to { transform: scale(1.08) translateX(1.5vw); }
+        }
+
+        @keyframes aiGridMove {
+            from { background-position: 0 0; }
+            to { background-position: 126px 84px; }
+        }
+
+        @keyframes aiScan {
+            0%, 100% { opacity: 0.22; transform: translateX(-12%); }
+            50% { opacity: 0.46; transform: translateX(12%); }
+        }
+
+        @keyframes aiRevealLeft {
+            from { opacity: 0; transform: translateX(-34px) scale(0.985); filter: blur(8px); }
+            to { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
+        }
+
+        @keyframes aiRevealUp {
+            from { opacity: 0; transform: translateY(30px) scale(0.985); filter: blur(8px); }
+            to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+        }
+    </style>
+</head>
+<body>
+    <main class="medical-aurora relative isolate min-h-screen overflow-hidden text-white">
+        <div class="hospital-bg pointer-events-none absolute inset-0 opacity-55"></div>
+        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(20,184,166,0.35),transparent_34%),radial-gradient(circle_at_82%_28%,rgba(14,165,233,0.24),transparent_30%),radial-gradient(circle_at_62%_86%,rgba(45,212,191,0.16),transparent_34%)]"></div>
+        <div class="ai-grid pointer-events-none absolute inset-0 opacity-70"></div>
+        <div class="ai-scan pointer-events-none absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-transparent via-cyan-200/10 to-transparent blur-sm"></div>
+        <div class="pointer-events-none absolute -left-28 top-16 h-72 w-72 rounded-full bg-teal-400/20 blur-3xl"></div>
+        <div class="pointer-events-none absolute -right-24 bottom-20 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl"></div>
+
+        <section class="relative z-10 mx-auto grid min-h-screen w-full max-w-7xl grid-rows-[auto_1fr_auto] gap-8 px-6 py-7 sm:px-10 lg:px-16">
+            <header class="flex flex-wrap items-center justify-between gap-5">
+                <a class="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 font-bold text-cyan-50 shadow-2xl shadow-cyan-950/20 backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-cyan-200/45 hover:bg-white/15" href="/">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/><path d="M20 12H9"/></svg>
+                    Volver al inicio
+                </a>
+                <div class="flex items-center gap-5">
+                    <p class="text-lg font-semibold tracking-wide text-cyan-50/90 sm:text-xl">Hospital Regional R&iacute;o Grande</p>
+                    <img class="h-20 w-auto object-contain drop-shadow-[0_18px_34px_rgba(8,47,73,0.45)] sm:h-24" src="/static/img/hrrg-logo.svg" alt="">
+                </div>
+            </header>
+
+            <div class="grid items-start gap-10 lg:grid-cols-[0.72fr_1.28fr]">
+                <section class="ai-reveal-left lg:sticky lg:top-8">
+                    <p class="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">&iquest;C&oacute;mo funciona?</p>
+                    <h1 class="mt-4 bg-gradient-to-r from-teal-300 to-cyan-100 bg-clip-text text-5xl font-black leading-[0.96] tracking-tight text-transparent sm:text-6xl lg:text-7xl">
+                        Gu&iacute;a r&aacute;pida de uso
+                    </h1>
+                    <p class="mt-7 text-xl font-light leading-8 text-cyan-50/78">
+                        Dos perfiles, una misma idea: ingresar con el perfil correspondiente y hacer consultas claras sobre equipos m&eacute;dicos.
+                    </p>
+                    <div class="mt-8 rounded-lg border border-white/20 bg-white/10 p-5 shadow-2xl shadow-cyan-950/20 backdrop-blur-xl">
+                        <h2 class="text-lg font-black text-cyan-50">Si la informaci&oacute;n no existe</h2>
+                        <p class="mt-2 text-sm leading-6 text-cyan-50/72">
+                            El sistema indicar&aacute; que no dispone de informaci&oacute;n suficiente para responder la consulta.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="ai-reveal-up grid gap-5">
+                    <article class="rounded-lg border border-sky-200/25 bg-sky-300/10 p-6 shadow-2xl shadow-cyan-950/25 backdrop-blur-xl">
+                        <div class="flex items-center gap-4">
+                            <span class="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-r from-sky-500 to-cyan-300 text-slate-950 shadow-xl shadow-cyan-400/25">
+                                <svg class="h-8 w-8" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0v5a6 6 0 0 0 12 0Z"/><path d="M6 19h12"/><path d="M9 22h6"/></svg>
+                            </span>
+                            <div>
+                                <p class="text-sm font-black uppercase tracking-[0.18em] text-cyan-200">Perfil</p>
+                                <h2 class="text-3xl font-black text-cyan-50">Operador</h2>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 grid gap-4 sm:grid-cols-3">
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-cyan-200">1</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Ingresar</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">Seleccione "Ingresar como Operador". Si escane&oacute; un QR, luego del ingreso se abrir&aacute; directamente ese equipo.</p>
+                            </div>
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-cyan-200">2</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Consultar</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">Escriba o dicte una pregunta relacionada con el funcionamiento del equipo.</p>
+                            </div>
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-cyan-200">3</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Leer</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">El sistema mostrar&aacute; una respuesta clara y sencilla basada en documentaci&oacute;n disponible.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 rounded-lg border border-white/15 bg-white/10 p-4">
+                            <p class="text-sm font-black uppercase tracking-[0.16em] text-cyan-200">Ejemplos</p>
+                            <div class="mt-3 flex flex-wrap gap-2 text-sm text-cyan-50/82">
+                                <span class="rounded-full bg-white/10 px-3 py-2">&iquest;C&oacute;mo silenciar una alarma?</span>
+                                <span class="rounded-full bg-white/10 px-3 py-2">&iquest;C&oacute;mo iniciar una prueba?</span>
+                                <span class="rounded-full bg-white/10 px-3 py-2">&iquest;Qu&eacute; significa este c&oacute;digo?</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rounded-lg border border-emerald-200/25 bg-emerald-300/10 p-6 shadow-2xl shadow-cyan-950/25 backdrop-blur-xl">
+                        <div class="flex items-center gap-4">
+                            <span class="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 shadow-xl shadow-emerald-400/25">
+                                <svg class="h-8 w-8" viewBox="0 0 24 24" aria-hidden="true"><path d="m14.7 6.3 3 3"/><path d="M5 21l4.5-1 9.2-9.2a2.1 2.1 0 0 0-3-3L6.5 17.8Z"/><path d="M12 8 4 2 2 4l6 8"/></svg>
+                            </span>
+                            <div>
+                                <p class="text-sm font-black uppercase tracking-[0.18em] text-teal-100">Perfil</p>
+                                <h2 class="text-3xl font-black text-cyan-50">T&eacute;cnico</h2>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-teal-100">1</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Ingresar</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">Seleccione "Ingresar como T&eacute;cnico" y acceda con credenciales autorizadas. Si escane&oacute; un QR, se abrir&aacute; directamente ese equipo.</p>
+                            </div>
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-teal-100">2</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Consultar</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">Realice preguntas sobre procedimientos, configuraciones, alarmas o mantenimiento.</p>
+                            </div>
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-teal-100">3</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Validar</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">Revise las referencias a manuales y p&aacute;ginas utilizadas para generar la respuesta.</p>
+                            </div>
+                            <div class="rounded-lg border border-white/15 bg-white/10 p-4">
+                                <span class="text-sm font-black text-teal-100">4</span>
+                                <h3 class="mt-2 font-black text-cyan-50">Usar herramientas</h3>
+                                <p class="mt-2 text-sm leading-6 text-cyan-50/72">Acceda a consulta avanzada, historial, equipos, c&oacute;digos QR y documentaci&oacute;n asociada.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <footer class="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5 text-sm text-cyan-50/55">
+                <div class="flex items-center gap-5">
+                    <img class="h-6 w-auto object-contain opacity-90" src="/static/img/logo-tdf.png" alt="">
+                    <img class="h-7 w-auto object-contain opacity-90" src="/static/img/logo-centro-politecnico.png" alt="">
+                </div>
+                <span>Primer desarrollo &ndash; Versi&oacute;n 1.0</span>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

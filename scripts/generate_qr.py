@@ -14,7 +14,7 @@ from app.services.qr_service import QrService
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Genera codigos QR para acceso operador por equipo.")
+    parser = argparse.ArgumentParser(description="Genera codigos QR de acceso por equipo.")
     parser.add_argument(
         "--base-url",
         default="http://127.0.0.1:5000",

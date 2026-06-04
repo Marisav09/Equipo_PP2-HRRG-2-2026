@@ -1,3 +1,46 @@
+let hrrgPreferredVoice = null;
+
+function normalizeVoiceText(value) {
+    return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+}
+
+function choosePreferredVoice() {
+    if (!("speechSynthesis" in window)) {
+        return null;
+    }
+
+    const voices = window.speechSynthesis.getVoices();
+    if (!voices.length) {
+        return null;
+    }
+
+    hrrgPreferredVoice = voices.find((voice) => voice.lang === "es-AR")
+        || voices.find((voice) => voice.lang === "es-MX")
+        || voices.find((voice) => voice.lang === "es-US")
+        || voices.find((voice) => voice.lang === "es-419")
+        || voices.find((voice) => {
+            const name = normalizeVoiceText(voice.name);
+            return voice.lang.startsWith("es")
+                && (name.includes("latino")
+                    || name.includes("latin")
+                    || name.includes("argentina")
+                    || name.includes("mexico"));
+        })
+        || voices.find((voice) => voice.lang.startsWith("es") && voice.lang !== "es-ES")
+        || voices.find((voice) => voice.lang.startsWith("es"))
+        || null;
+
+    return hrrgPreferredVoice;
+}
+
+if ("speechSynthesis" in window) {
+    choosePreferredVoice();
+    window.speechSynthesis.addEventListener?.("voiceschanged", choosePreferredVoice);
+}
+
 window.hrrgSpeech = {
     createRecognition(onText, onStatus) {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -18,22 +61,14 @@ window.hrrgSpeech = {
         if (!("speechSynthesis" in window)) {
             return;
         }
+
         const utterance = new SpeechSynthesisUtterance(text.slice(0, 1200));
+        const voice = hrrgPreferredVoice || choosePreferredVoice();
+
         utterance.lang = "es-AR";
-
-        // Obtener voces disponibles
-        const voices = window.speechSynthesis.getVoices();
-
-        // Buscar alguna voz latina (ej: Google español latinoamericano)
-        const vozLatina = voices.find(v =>
-            v.lang === "es-AR" ||
-            v.lang === "es-MX" ||
-            v.lang === "es-US" ||
-            v.name.toLowerCase().includes("latino")
-        );
-
-        if (vozLatina) {
-            utterance.voice = vozLatina;
+        if (voice) {
+            utterance.voice = voice;
+            utterance.lang = voice.lang || "es-AR";
         }
 
         window.speechSynthesis.cancel();
