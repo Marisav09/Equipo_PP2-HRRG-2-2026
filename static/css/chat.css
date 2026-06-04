@@ -3978,3 +3978,239 @@
         justify-items: start;
     }
 }
+
+/* Mobile chat shell: keep controls fixed and scroll only the conversation. */
+@media (max-width: 760px) {
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .chat-product-shell.app-shell,
+    .app-shell.chat-product-shell,
+    .operator-shell.chat-product-shell.app-shell {
+        width: 100vw;
+        height: 100dvh;
+        min-height: 100dvh;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .technician-sidebar,
+    .operator-history-sidebar {
+        display: none;
+    }
+
+    .chat-workspace.workspace,
+    [data-role="operador"] .chat-workspace.workspace {
+        width: 100%;
+        height: 100dvh;
+        min-height: 0;
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto auto;
+        border: 0;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .chat-compact-topbar {
+        min-height: 56px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr) auto;
+        gap: 6px;
+        align-items: center;
+        padding: 7px 8px;
+        z-index: 3;
+    }
+
+    .chat-topbar-actions {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-self: end;
+    }
+
+    .chat-nav-action,
+    .chat-logout-action,
+    .speech-toggle-button {
+        width: 38px;
+        min-width: 38px;
+        height: 38px;
+        min-height: 38px;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+    }
+
+    .chat-nav-action svg,
+    .chat-logout-action svg,
+    .speech-toggle-button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .chat-nav-action span,
+    .chat-logout-action span,
+    .speech-toggle-button span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    .chat-active-equipment {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 38px;
+        justify-content: flex-start;
+        gap: 7px;
+        padding: 0 6px 0 9px;
+        border-radius: 14px;
+    }
+
+    .chat-active-equipment strong {
+        min-width: 0;
+        overflow: hidden;
+        font-size: 0.82rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .chat-active-equipment .equipment-qr-button {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        border-radius: 10px;
+    }
+
+    .chat-active-equipment .equipment-qr-button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .chat-product-shell .chat-messages {
+        min-height: 0;
+        height: 100%;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding: 14px 10px 18px;
+    }
+
+    .chat-product-shell .message {
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .chat-product-shell .message-content {
+        max-width: calc(100% - 48px);
+    }
+
+    .chat-product-shell .avatar.ai-avatar {
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+    }
+
+    .chat-product-shell .bubble,
+    .chat-product-shell .message.assistant .bubble {
+        border-radius: 22px;
+        padding: 18px;
+    }
+
+    .compact-status-strip.status-strip,
+    .chat-product-shell .compact-status-strip {
+        min-height: 0;
+        padding: 8px 10px 0;
+        z-index: 2;
+    }
+
+    .compact-status-strip.status-strip span,
+    .chat-product-shell .compact-status-strip span {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 999px;
+        padding: 10px 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .chatgpt-composer.composer,
+    [data-role="operador"] .chatgpt-composer.composer {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 44px 48px;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 10px max(12px, env(safe-area-inset-bottom));
+        z-index: 3;
+    }
+
+    .chatgpt-composer #message-input {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .chatgpt-composer #voice-button {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .chatgpt-composer #abort-button,
+    .chatgpt-composer .send-button {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .chatgpt-composer input {
+        width: 100%;
+        min-width: 0;
+        min-height: 56px;
+        padding: 0 14px;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+
+    .chatgpt-composer .round-button,
+    .chatgpt-composer .send-button {
+        width: 44px;
+        height: 56px;
+        min-width: 44px;
+        border-radius: 18px;
+    }
+
+    .chatgpt-composer .stop-button {
+        display: none;
+        grid-column: auto;
+    }
+
+    .chatgpt-composer .stop-button.active {
+        display: inline-grid;
+        width: 48px;
+        height: 56px;
+        min-height: 56px;
+        padding: 0;
+        place-items: center;
+        border-radius: 18px;
+    }
+
+    .chatgpt-composer .stop-button.active em {
+        display: none;
+    }
+
+    .chatgpt-composer .stop-button.active span {
+        width: 13px;
+        height: 13px;
+    }
+
+    .chatgpt-composer .stop-button.active + .send-button {
+        display: none;
+    }
+}

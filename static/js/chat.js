@@ -42,6 +42,15 @@ const myConsultationsList = document.querySelector("#my-consultations-list");
 const technicianRecentList = document.querySelector("#technician-recent-list");
 const operatorHistoryList = document.querySelector("#operator-history-list");
 
+function createRequestId() {
+    if (window.crypto?.randomUUID) {
+        return window.crypto.randomUUID();
+    }
+
+    const randomPart = Math.random().toString(36).slice(2);
+    return `req-${Date.now().toString(36)}-${randomPart}`;
+}
+
 let activeRequestId = null;
 let selectedEquipmentId = shell?.dataset.equipmentId || "";
 let selectedEquipmentName = shell?.dataset.equipmentName || "";
@@ -52,9 +61,9 @@ let activeLoadingMessage = null;
 let activeRequestCancelled = false;
 let speechMuted = localStorage.getItem("hrrgSpeechMuted") === "1";
 let conversationMessages = [];
-let activeChatId = sessionStorage.getItem(`hrrgActiveChatId:${shell?.dataset.role || "default"}`) || crypto.randomUUID();
+let activeChatId = sessionStorage.getItem(`hrrgActiveChatId:${shell?.dataset.role || "default"}`) || createRequestId();
 
-function setActiveChatId(chatId = crypto.randomUUID()) {
+function setActiveChatId(chatId = createRequestId()) {
     activeChatId = chatId;
     sessionStorage.setItem(`hrrgActiveChatId:${shell?.dataset.role || "default"}`, activeChatId);
 }
@@ -883,7 +892,7 @@ function renderHistory() {
 }
 
 async function ask(query, options = {}) {
-    const requestId = crypto.randomUUID();
+    const requestId = createRequestId();
     activeRequestId = requestId;
     activeRequestCancelled = false;
     activeQuery = query;
