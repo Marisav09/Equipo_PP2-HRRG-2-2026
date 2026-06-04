@@ -225,6 +225,12 @@ class VectorstoreService:
                 "oclusion",
                 "bloqueo",
                 "circuito",
+                "trabado",
+                "trabada",
+                "no gira",
+                "volante",
+                "manivela",
+                "freno",
             )
         )
 
@@ -250,6 +256,35 @@ class VectorstoreService:
                 "bloqueo circuito paciente oclusion circuito circuito obstruido "
                 "filtro bloqueado cuerpos extranos circuito paciente puerto salida gas obstruido "
                 "presion inspiratoria presion espiratoria"
+            )
+
+        wheel_lock_query = (
+            (
+                any(term in normalized for term in ("volante", "manivela", "freno"))
+                and any(
+                    term in normalized
+                    for term in (
+                        "trabado",
+                        "trabada",
+                        "bloqueo",
+                        "bloqueado",
+                        "bloqueada",
+                        "no gira",
+                        "girar",
+                        "desbloquear",
+                        "desbloqueo",
+                    )
+                )
+            )
+            or "bloqueo mecanico" in normalized
+        )
+
+        if wheel_lock_query:
+            expansions.append(
+                "bloqueo del volante bloqueo mecanico volante bloqueado volante desbloqueado "
+                "manivela hacia la izquierda manivela hacia la derecha "
+                "palanca posicion volante bloqueado volante desbloqueado "
+                "freno del volante freno apretado freno suelto posicion superior 12 horas"
             )
 
         if not expansions:
@@ -377,6 +412,56 @@ class VectorstoreService:
             if "alarma resolucion de problemas" in text:
                 bonus += 2.0
 
+        wheel_lock_query = (
+            (
+                any(term in normalized_question for term in ("volante", "manivela", "freno"))
+                and any(
+                    term in normalized_question
+                    for term in (
+                        "trabado",
+                        "trabada",
+                        "bloqueo",
+                        "bloqueado",
+                        "bloqueada",
+                        "no gira",
+                        "girar",
+                        "desbloquear",
+                        "desbloqueo",
+                    )
+                )
+            )
+            or "bloqueo mecanico" in normalized_question
+        )
+
+        if wheel_lock_query:
+            exact_phrases = (
+                "bloqueo del volante",
+                "bloqueo mecanico",
+                "volante bloqueado",
+                "volante desbloqueado",
+                "volante queda bloqueado",
+                "ya no se puede girar",
+                "para activar el bloqueo",
+                "para desactivar el bloqueo",
+                "empujar la manivela",
+                "tirar la manivela",
+                "hacia la izquierda",
+                "hacia la derecha",
+                "freno del volante",
+                "freno apretado",
+                "freno suelto",
+                "posicion superior",
+                "12 horas",
+            )
+            for phrase in exact_phrases:
+                if phrase in text:
+                    bonus += 3.0
+
+            if "seguridad" in text:
+                bonus += 1.0
+            if "manejo" in text and "soltar el bloqueo del volante" in text:
+                bonus += 3.0
+
         question_terms = {
             term
             for term in normalized_question.split()
@@ -390,6 +475,122 @@ class VectorstoreService:
 
     def _lexical_penalty(self, normalized_question: str, chunk: RetrievedChunk) -> float:
         text = self._normalize_for_ranking(chunk.text)
+        source = self._normalize_for_ranking(
+            " ".join(
+                (
+                    chunk.citation.display_source or "",
+                    chunk.citation.original_pdf or "",
+                    chunk.citation.source_file or "",
+                )
+            )
+        )
+
+        penalty = 0.0
+
+        # Caso VN500:
+        # BabyFlow / CPAP nasal es una fuente lateral del respirador Draeger VN500.
+        # Debe usarse cuando la consulta menciona explícitamente BabyFlow, CPAP,
+        # nCPAP, nasal, canula, mascara o contexto neonatal.
+        # Para consultas generales del respirador sobre test, alarmas, presion,
+        # ventilacion o funcionamiento, se penaliza para evitar respuestas con
+        # una fuente correcta por equipo pero incorrecta por alcance documental.
+        babyflow_source = any(
+            term in source
+            for term in (
+                "babyflow",
+                "cpap nasal",
+                "ncpap",
+            )
+        ) or any(
+            term in text
+            for term in (
+                "babyflow",
+                "cpap nasal",
+                "ncpap",
+                "canulas nasales",
+                "mascaras",
+                "gorros",
+            )
+        )
+
+        babyflow_query = any(
+            term in normalized_question
+            for term in (
+                "babyflow",
+                "cpap",
+                "ncpap",
+                "nasal",
+                "canula",
+                "canulas",
+                "mascara",
+                "mascaras",
+                "neonatal",
+                "neonato",
+                "neonatos",
+                "interfaz",
+                "gorros",
+            )
+        )
+
+        if babyflow_source and not babyflow_query:
+            penalty += 3.0
+
+        wheel_lock_query = (
+            (
+                any(term in normalized_question for term in ("volante", "manivela", "freno"))
+                and any(
+                    term in normalized_question
+                    for term in (
+                        "trabado",
+                        "trabada",
+                        "bloqueo",
+                        "bloqueado",
+                        "bloqueada",
+                        "no gira",
+                        "girar",
+                        "desbloquear",
+                        "desbloqueo",
+                    )
+                )
+            )
+            or "bloqueo mecanico" in normalized_question
+        )
+
+        if wheel_lock_query:
+            # Penaliza falsos positivos sobre retraccion, muestra o corte,
+            # salvo que el fragmento tambien contenga evidencia directa
+            # sobre bloqueo/freno del volante.
+            has_direct_wheel_lock_evidence = any(
+                phrase in text
+                for phrase in (
+                    "bloqueo del volante",
+                    "bloqueo mecanico",
+                    "volante bloqueado",
+                    "volante desbloqueado",
+                    "para activar el bloqueo",
+                    "para desactivar el bloqueo",
+                    "freno del volante",
+                    "soltar el bloqueo del volante",
+                )
+            )
+
+            if not has_direct_wheel_lock_evidence:
+                false_positive_phrases = (
+                    "retraccion de la muestra",
+                    "fase de retraccion",
+                    "rocking mode",
+                    "muestra y la cuchilla",
+                    "desbastar",
+                    "portacuchillas",
+                    "espesor de corte",
+                    "cortes",
+                    "cuchilla chilla",
+                    "parafina",
+                    "pinza portamuestras",
+                )
+                for phrase in false_positive_phrases:
+                    if phrase in text:
+                        penalty += 2.5
 
         circuit_obstruction_query = (
             "circuito" in normalized_question
@@ -399,23 +600,20 @@ class VectorstoreService:
             )
         )
 
-        if not circuit_obstruction_query:
-            return 0.0
-
-        penalty = 0.0
-        false_positive_phrases = (
-            "barra favoritos",
-            "pantalla tactil",
-            "bloqueo desbloqueo",
-            "bloquear o desbloquear la pantalla",
-            "tendencias",
-            "configuracion de favoritos",
-            "visualizacion de curvas",
-            "piezas",
-        )
-        for phrase in false_positive_phrases:
-            if phrase in text:
-                penalty += 4.0
+        if circuit_obstruction_query:
+            false_positive_phrases = (
+                "barra favoritos",
+                "pantalla tactil",
+                "bloqueo desbloqueo",
+                "bloquear o desbloquear la pantalla",
+                "tendencias",
+                "configuracion de favoritos",
+                "visualizacion de curvas",
+                "piezas",
+            )
+            for phrase in false_positive_phrases:
+                if phrase in text:
+                    penalty += 4.0
 
         return penalty
 
