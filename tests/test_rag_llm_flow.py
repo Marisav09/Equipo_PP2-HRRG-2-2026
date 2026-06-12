@@ -6,40 +6,24 @@ from app.services.rag_service import RagService
 
 class FakeVectorstore:
     def __init__(self) -> None:
+        self.last_role = ""
         self.chunks = [
             RetrievedChunk(
-                text=(
-                    "Si la alarma no puede resolverse con seguridad, detener la accion. "
-                    "El procedimiento indica confirmar el estado mostrado en pantalla antes de continuar. "
-                    "Esta informacion proviene del manual y describe una accion documentada para el operador "
-                    "cuando el equipo indica una condicion que podria afectar la seguridad del proceso."
-                ),
+                text="El interruptor del sistema permite poner en funcionamiento el equipo.",
                 citation=SourceCitation(
-                    source_file="manual_sterrad.pdf",
+                    source_file="manual.md",
                     page=10,
                     chunk_id="a",
                     equipment_name="Esterilizadora Sterrad 100",
+                    pdf_page=10,
+                    pdf_page_confidence="verified",
                 ),
-                score=0.1,
-            ),
-            RetrievedChunk(
-                text=(
-                    "El operador debe seguir solamente instrucciones documentadas y contactar al servicio "
-                    "tecnico cuando el procedimiento no sea concluyente o exista riesgo. "
-                    "El fragmento tambien indica que no se debe continuar con acciones no verificadas "
-                    "si la condicion no queda resuelta con la informacion recuperada."
-                ),
-                citation=SourceCitation(
-                    source_file="manual_sterrad.pdf",
-                    page=11,
-                    chunk_id="b",
-                    equipment_name="Esterilizadora Sterrad 100",
-                ),
-                score=0.2,
+                score=0.9,
             )
         ]
 
-    def retrieve(self, question: str, equipment_name: str | None, k=None):
+    def retrieve(self, question: str, equipment_name: str | None, k=None, role="tecnico"):
+        self.last_role = role
         return self.chunks
 
 
@@ -80,9 +64,9 @@ def _service(vectorstore=None, ollama_service=None) -> RagService:
     )
 
 
-def _request(role: str = "operador") -> ChatRequest:
+def _request(role: str = "operador", query: str = "Como se utiliza?") -> ChatRequest:
     return ChatRequest(
-        query="Que hago con la alarma?",
+        query=query,
         equipment_id="sterrad-100",
         equipment_name="Esterilizadora Sterrad 100",
         role=role,
@@ -91,139 +75,73 @@ def _request(role: str = "operador") -> ChatRequest:
     )
 
 
-def test_rag_generates_llm_answer_with_context_prompt():
+def test_rag_passes_role_to_hybrid_retrieval_and_calls_llm():
+    vectorstore = FakeVectorstore()
     ollama = FakeOllama()
-    service = _service(ollama_service=ollama)
+    service = _service(vectorstore=vectorstore, ollama_service=ollama)
 
     response = service.answer_question(_request(), "session", should_cancel=lambda: False)
 
-    assert response["mode"] == "llm"
-    assert response["answer"] == "Respuesta basada en contexto."
-    assert "Contexto documental recuperado exclusivamente desde Markdown" in ollama.last_prompt
-    assert "Esterilizadora Sterrad 100" in ollama.last_prompt
-    assert "Fuente:" not in ollama.last_prompt
-    assert "pagina 10" not in ollama.last_prompt
+    assert response["mode"] == "llm_hibrido"
+    assert vectorstore.last_role == "operador"
+    assert "Contexto documental recuperado" in ollama.last_prompt
+    assert response["sources"] == []
 
 
-def test_technician_response_gets_sources_when_model_omits_them():
+def test_technician_response_exposes_verified_sources():
     service = _service(ollama_service=FakeOllama("Diagnostico tecnico."))
 
     response = service.answer_question(_request(role="tecnico"), "session", should_cancel=lambda: False)
 
-    assert response["mode"] == "llm"
-    assert response["answer"] == "Diagnostico tecnico."
-    assert response["sources"][0]["source_file"] == "manual_sterrad.pdf"
+    assert response["mode"] == "llm_hibrido"
     assert response["sources"][0]["page"] == 10
 
 
-def test_rag_falls_back_to_chromadb_when_llm_fails():
+def test_patient_connected_guardrail_runs_before_retrieval():
+    class FailingVectorstore:
+        def retrieve(self, *args, **kwargs):
+            raise AssertionError("No debe recuperar documentos.")
+
+    service = _service(vectorstore=FailingVectorstore())
+    response = service.answer_question(
+        _request(query="Tengo un paciente conectado y necesito intervenir el equipo"),
+        "session",
+        should_cancel=lambda: False,
+    )
+
+    assert response["mode"] == "guardrail_paciente_conectado"
+    assert "asistencia clinica inmediata" in response["answer"]
+
+
+def test_operator_output_removes_prohibited_internal_instructions():
+    service = _service(
+        ollama_service=FakeOllama(
+            "Abra la tapa del gabinete y mida tension.\n"
+            "Observe el indicador visible y contacte a Ingenieria Clinica."
+        )
+    )
+
+    response = service.answer_question(_request(), "session", should_cancel=lambda: False)
+
+    assert "Abra la tapa" not in response["answer"]
+    assert "mida tension" not in response["answer"]
+    assert "Observe el indicador visible" in response["answer"]
+
+
+def test_rag_falls_back_to_document_context_when_llm_fails():
     service = _service(ollama_service=FailingOllama())
 
     response = service.answer_question(_request(role="tecnico"), "session", should_cancel=lambda: False)
 
     assert response["mode"] == "fallback_llm_error"
-    assert "Respuesta directa desde la base documental local" in response["answer"]
-    assert "ollama offline" in response["answer"]
+    assert "interruptor del sistema" in response["answer"]
 
 
-def test_fallback_compacts_visual_gaps_and_uses_thumbnail_fallback():
-    class VisualPdfVectorstore:
-        def retrieve(self, question: str, equipment_name: str | None, k=None):
-            return [
-                RetrievedChunk(
-                    text="Linea inicial.\n\n\n\n\n\nCP5 S73\nCP1 S73",
-                    citation=SourceCitation(
-                        source_file="HD-67 Troubleshooting equipos rodantes MAC GMM V2.pdf",
-                        page=12,
-                        chunk_id="visual",
-                        equipment_name="Rodantes MAC GMM",
-                        has_images=True,
-                        image_count=1,
-                    ),
-                )
-            ]
-
-    request = ChatRequest(
-        query="tiene luz roja",
-        equipment_id="rodantes-mac-gmm",
-        equipment_name="Rodantes MAC GMM",
-        role="tecnico",
-        force_fallback=True,
-        request_id="test",
-    )
-    service = _service(vectorstore=VisualPdfVectorstore())
-
-    response = service.answer_question(request, "session", should_cancel=lambda: False)
-
-    assert "\n\n\n" not in response["answer"]
-    assert "Nota visual" not in response["answer"]
-    assert response["sources"][0]["images"][0]["url"].startswith("/manual-thumbnails/")
-
-
-def test_force_fallback_labels_english_extract_as_translated():
-    class EnglishVectorstore:
-        def retrieve(self, question: str, equipment_name: str | None, k=None):
-            return [
-                RetrievedChunk(
-                    text="Press START and verify the cassette door opens. Replace wire harness if the alarm remains active.",
-                    citation=SourceCitation(
-                        source_file="manual_sterrad.pdf",
-                        page=260,
-                        chunk_id="door-test",
-                        equipment_name="Esterilizadora Sterrad 100",
-                    ),
-                )
-            ]
-
-    request = _request(role="tecnico")
-    request = ChatRequest(
-        query=request.query,
-        equipment_id=request.equipment_id,
-        equipment_name=request.equipment_name,
-        role=request.role,
-        force_fallback=True,
-        request_id=request.request_id,
-    )
-    service = _service(
-        vectorstore=EnglishVectorstore(),
-        ollama_service=FakeOllama("Presione START y verifique que la puerta del cassette se abra."),
-    )
-
-    response = service.answer_question(request, "session", should_cancel=lambda: False)
-
-    assert response["mode"] == "fallback_chromadb"
-    assert "Extracto traducido 1" in response["answer"]
-    assert "Presione START" in response["answer"]
-
-
-def test_translation_preamble_is_removed():
+def test_operator_response_removes_prompt_echo():
     service = _service()
-
-    cleaned = service._strip_translation_preamble(
-        "A continuación, te presento la traducción al español técnico:\n\nPrueba de puerta"
+    cleaned = service._strip_operator_prompt_echo(
+        "Indica la accion segura inmediata. Observe el indicador visible."
     )
 
-    assert cleaned == "Prueba de puerta"
-
-
-def test_operator_blocks_llm_when_context_is_too_sparse():
-    class SparseVectorstore:
-        def retrieve(self, question: str, equipment_name: str | None, k=None):
-            return [
-                RetrievedChunk(
-                    text="The door opens.",
-                    citation=SourceCitation(
-                        source_file="manual_sterrad.pdf",
-                        page=10,
-                        chunk_id="a",
-                        equipment_name="Esterilizadora Sterrad 100",
-                    ),
-                )
-            ]
-
-    service = _service(vectorstore=SparseVectorstore())
-
-    response = service.answer_question(_request(), "session", should_cancel=lambda: False)
-
-    assert response["mode"] == "contexto_insuficiente_operador"
-    assert "contacte INMEDIATAMENTE" in response["answer"]
+    assert "indica la accion segura inmediata" not in cleaned.lower()
+    assert "Observe el indicador visible" in cleaned

@@ -22,6 +22,14 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Reindexa aunque el hash del Markdown no haya cambiado.",
     )
+    parser.add_argument(
+        "--rebuild-parent-child",
+        action="store_true",
+        help=(
+            "Reconstruye el indice con chunks hijos para busqueda y paginas padre completas "
+            "para expansion de contexto."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -29,7 +37,8 @@ def main() -> None:
     args = parse_args()
     configure_logging()
 
-    result = IngestionService().ingest_directory(force=args.force)
+    force = args.force or args.rebuild_parent_child
+    result = IngestionService().ingest_directory(force=force)
 
     print(json.dumps(result, ensure_ascii=False, indent=2))
 

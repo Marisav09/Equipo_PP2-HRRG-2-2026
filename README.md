@@ -88,10 +88,42 @@ python scripts/ingest_documents.py
 
 1. El usuario selecciona un equipo o ingresa desde un QR con `?equipo=...&rol=operador`.
 2. El backend normaliza el nombre del equipo con `equipment_catalog.py`.
-3. ChromaDB recupera fragmentos usando `filter={"equipo": equipo}`.
-4. El LLM local redacta una respuesta usando solo el contexto recuperado.
-5. Si el LLM no responde, se devuelve fallback documental.
-6. La memoria conversacional se guarda por sesion para resolver referencias como "eso" o "la alarma anterior".
+3. ChromaDB recupera candidatos semanticos usando aislamiento estricto por equipo.
+4. BM25 agrega candidatos y peso por similitud lexica.
+5. Un cross-encoder local rerankea los candidatos combinando peso semantico, lexico y reranker.
+6. Para operador se entregan fragmentos breves y se evalua el resto de la pagina y paginas adyacentes.
+7. Para tecnico se entrega la pagina completa mas relevante, truncada alrededor de la coincidencia solo si supera el presupuesto.
+8. El LLM local redacta una respuesta usando solo el contexto recuperado.
+9. Si el LLM no responde, se devuelve fallback documental.
+10. La memoria conversacional se guarda por sesion para resolver referencias como "eso" o "la alarma anterior".
+
+## Reconstruccion parent-child
+
+La arquitectura de recuperacion usa dos colecciones sincronizadas:
+
+- `manuales_hrrg`: chunks hijos breves usados para busqueda.
+- `manuales_hrrg_pages`: paginas padre completas usadas para ampliar contexto.
+
+Despues de instalar las dependencias, reconstruir el indice una vez:
+
+```powershell
+pip install -r requirements.txt
+python scripts/ingest_documents.py --rebuild-parent-child
+```
+
+El primer uso del reranker puede descargar el modelo configurado en `RERANKER_MODEL`.
+Por defecto se ejecuta con `RERANKER_DEVICE=cuda`.
+
+Los pesos y cantidades de candidatos pueden ajustarse desde `.env`:
+
+```text
+SEMANTIC_WEIGHT=0.30
+LEXICAL_WEIGHT=0.20
+RERANKER_WEIGHT=0.50
+SEMANTIC_CANDIDATE_K=40
+LEXICAL_CANDIDATE_K=40
+RERANKER_CANDIDATE_K=60
+```
 
 ## Endpoints
 

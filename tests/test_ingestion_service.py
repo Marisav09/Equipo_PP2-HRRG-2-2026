@@ -40,12 +40,21 @@ def test_load_pdf_rejects_unknown_file(tmp_path):
 class FakeVectorstore:
     def __init__(self) -> None:
         self.add_calls = 0
+        self.page_add_calls = 0
+        self.last_child_documents: list[Document] = []
+        self.last_page_documents: list[Document] = []
 
     def delete_source(self, source_file: str) -> None:
         return None
 
     def add_documents(self, documents: list[Document]) -> int:
         self.add_calls += 1
+        self.last_child_documents = documents
+        return len(documents)
+
+    def add_page_documents(self, documents: list[Document]) -> int:
+        self.page_add_calls += 1
+        self.last_page_documents = documents
         return len(documents)
 
 
@@ -83,3 +92,6 @@ def test_ingestion_skips_unchanged_markdown_after_first_index(tmp_path):
     assert second["processed_files"] == 0
     assert second["unchanged_files"] == [markdown_path.name]
     assert vectorstore.add_calls == 1
+    assert vectorstore.page_add_calls == 1
+    assert vectorstore.last_child_documents[0].metadata["node_type"] == "child"
+    assert vectorstore.last_page_documents[0].metadata["node_type"] == "parent"

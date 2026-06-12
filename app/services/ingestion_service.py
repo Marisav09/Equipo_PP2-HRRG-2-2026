@@ -42,8 +42,8 @@ class IngestionService:
         self.page_mapping_index = self._page_mapping_index()
 
         self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=settings.chunk_size,
-            chunk_overlap=settings.chunk_overlap,
+            chunk_size=settings.operator_chunk_size,
+            chunk_overlap=settings.operator_chunk_overlap,
         )
 
     def ingest_directory(self, directory: Path | None = None, force: bool = False) -> dict[str, object]:
@@ -52,7 +52,7 @@ class IngestionService:
         all_markdown_files = sorted(path for path in source_dir.rglob("*.md") if path.is_file())
         markdown_files = all_markdown_files
 
-        curation_index = self._curation_index()
+        curation_index = self._curation_index(source_dir)
         excluded_by_curation = []
         if curation_index:
             included_names = set(curation_index)
@@ -204,6 +204,7 @@ class IngestionService:
                 chunk_overlap=chunk_overlap,
             )
             self._assign_chunk_ids(markdown_path, chunks)
+            self._assign_parent_ids(markdown_path, documents)
 
             if not chunks:
                 raise DocumentIngestionError(f"{markdown_path.name}: no se generaron chunks para indexar.")
@@ -211,6 +212,8 @@ class IngestionService:
             try:
                 self.vectorstore.delete_source(markdown_path.name)
                 added_chunks = self._add_documents_in_batches(chunks, batch_size=batch_size)
+                if hasattr(self.vectorstore, "add_page_documents"):
+                    self.vectorstore.add_page_documents(documents)
 
                 if label != "default":
                     logger.warning(
@@ -245,8 +248,8 @@ class IngestionService:
         raise DocumentIngestionError(f"{markdown_path.name}: no se pudo completar la ingesta segura.")
 
     def _split_attempts(self) -> list[tuple[int, int, int, str]]:
-        default_chunk_size = int(settings.chunk_size)
-        default_chunk_overlap = int(settings.chunk_overlap)
+        default_chunk_size = int(settings.operator_chunk_size)
+        default_chunk_overlap = int(settings.operator_chunk_overlap)
 
         raw_attempts = [
             (default_chunk_size, default_chunk_overlap, 16, "default"),
@@ -279,7 +282,10 @@ class IngestionService:
         chunk_size: int,
         chunk_overlap: int,
     ) -> list[Document]:
-        if chunk_size == int(settings.chunk_size) and chunk_overlap == int(settings.chunk_overlap):
+        if (
+            chunk_size == int(settings.operator_chunk_size)
+            and chunk_overlap == int(settings.operator_chunk_overlap)
+        ):
             return self.text_splitter.split_documents(documents)
 
         splitter = RecursiveCharacterTextSplitter(
@@ -291,6 +297,21 @@ class IngestionService:
     def _assign_chunk_ids(self, markdown_path: Path, chunks: list[Document]) -> None:
         for index, chunk in enumerate(chunks, start=1):
             chunk.metadata["chunk_id"] = f"{markdown_path.stem}-{index}"
+            chunk.metadata["node_type"] = "child"
+            chunk.metadata["parent_id"] = self._parent_id(
+                markdown_path,
+                chunk.metadata.get("markdown_page"),
+            )
+
+    def _assign_parent_ids(self, markdown_path: Path, documents: list[Document]) -> None:
+        for document in documents:
+            parent_id = self._parent_id(markdown_path, document.metadata.get("markdown_page"))
+            document.metadata["chunk_id"] = parent_id
+            document.metadata["parent_id"] = parent_id
+            document.metadata["node_type"] = "parent"
+
+    def _parent_id(self, markdown_path: Path, markdown_page: object) -> str:
+        return f"{markdown_path.stem}-page-{markdown_page or 'sin_pagina'}"
 
     def _add_documents_in_batches(self, chunks: list[Document], batch_size: int) -> int:
         added_chunks = 0
@@ -310,9 +331,10 @@ class IngestionService:
             or "maximum context" in message
         )
 
-    def _curation_index(self) -> dict[str, dict[str, str]]:
+    def _curation_index(self, source_dir: Path | None = None) -> dict[str, dict[str, str]]:
         """Lee data/inventory/curaduria_activa.csv y devuelve solo fuentes incluidas."""
-        curation_path = settings.processed_documents_dir.parent / "inventory" / "curaduria_activa.csv"
+        base_dir = source_dir.parent if source_dir is not None else settings.processed_documents_dir.parent
+        curation_path = base_dir / "inventory" / "curaduria_activa.csv"
 
         if not curation_path.exists():
             return {}

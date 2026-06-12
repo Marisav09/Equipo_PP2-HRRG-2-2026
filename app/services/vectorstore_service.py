@@ -1,7 +1,8 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from functools import cached_property
 import json
+import math
 import re
 import unicodedata
 from typing import Any
@@ -18,20 +19,26 @@ from app.services.ingestion_audit_service import IngestionAuditService
 
 
 class VectorstoreService:
-    """Single access point for ChromaDB.
-
-    The service intentionally refuses unscoped retrieval. Clinical equipment
-    manuals must not be mixed, even when a query looks generic.
-    """
+    """Hybrid retrieval over child chunks with role-aware parent-page expansion."""
 
     def __init__(self) -> None:
         settings.ensure_directories()
+        self._lexical_cache: dict[str, tuple[list[Document], Any]] = {}
 
     @cached_property
     def embeddings(self) -> OllamaEmbeddings:
         return OllamaEmbeddings(
             model=settings.embedding_model,
             base_url=settings.ollama_base_url,
+        )
+
+    @cached_property
+    def reranker(self):
+        from sentence_transformers import CrossEncoder
+
+        return CrossEncoder(
+            settings.reranker_model,
+            device=settings.reranker_device,
         )
 
     def get_store(self) -> Chroma:
@@ -41,96 +48,102 @@ class VectorstoreService:
             embedding_function=self.embeddings,
         )
 
+    def get_page_store(self) -> Chroma:
+        return Chroma(
+            collection_name=settings.page_collection_name,
+            persist_directory=str(settings.vectorstore_dir),
+            embedding_function=self.embeddings,
+        )
+
     def add_documents(self, documents: list[Document]) -> int:
         if not documents:
             return 0
+        self._add_in_batches(self.get_store(), documents, parent=False)
+        self._lexical_cache.clear()
+        return len(documents)
 
-        vectorstore = self.get_store()
+    def add_page_documents(self, documents: list[Document]) -> int:
+        if not documents:
+            return 0
+
+        store = self.get_page_store()
+        collection = store._collection
         for start in range(0, len(documents), settings.embedding_batch_size):
             batch = documents[start : start + settings.embedding_batch_size]
-            ids = [
-                self._document_id(document, start + index)
-                for index, document in enumerate(batch)
+            embedding_inputs = [
+                document.page_content[: settings.parent_embedding_max_chars]
+                for document in batch
             ]
-            vectorstore.add_documents(documents=batch, ids=ids)
+            collection.add(
+                ids=[self._document_id(document, start + index) for index, document in enumerate(batch)],
+                embeddings=self.embeddings.embed_documents(embedding_inputs),
+                documents=[document.page_content for document in batch],
+                metadatas=[document.metadata for document in batch],
+            )
         return len(documents)
+
+    def _add_in_batches(self, store: Chroma, documents: list[Document], parent: bool) -> None:
+        for start in range(0, len(documents), settings.embedding_batch_size):
+            batch = documents[start : start + settings.embedding_batch_size]
+            ids = [self._document_id(document, start + index) for index, document in enumerate(batch)]
+            store.add_documents(documents=batch, ids=ids)
 
     def delete_source(self, source_file: str) -> None:
         self.get_store()._collection.delete(where={"source_file": source_file})
+        self.get_page_store()._collection.delete(where={"source_file": source_file})
+        self._lexical_cache.clear()
 
     def delete_sources_except(self, allowed_sources: set[str]) -> int:
-        collection = self.get_store()._collection
-        if collection.count() == 0:
-            return 0
-
-        result = collection.get(include=["metadatas"])
-        metadatas = result.get("metadatas") or []
-        stale_sources = {
-            str(metadata.get("source_file", "")).strip()
-            for metadata in metadatas
-            if metadata and str(metadata.get("source_file", "")).strip() not in allowed_sources
-        }
-        for source_file in stale_sources:
-            collection.delete(where={"source_file": source_file})
+        stale_sources: set[str] = set()
+        for collection in (self.get_store()._collection, self.get_page_store()._collection):
+            if collection.count() == 0:
+                continue
+            result = collection.get(include=["metadatas"])
+            for metadata in result.get("metadatas") or []:
+                source = str((metadata or {}).get("source_file") or "").strip()
+                if source and source not in allowed_sources:
+                    stale_sources.add(source)
+        for source in stale_sources:
+            self.delete_source(source)
         return len(stale_sources)
 
     def list_equipments(self) -> list[str]:
         collection = self.get_store()._collection
         if collection.count() == 0:
             return []
-
         result = collection.get(include=["metadatas"])
-        metadatas = result.get("metadatas") or []
-        equipments = {
-            str(metadata.get("equipment_name") or metadata.get("equipo")).strip()
-            for metadata in metadatas
-            if metadata and (metadata.get("equipment_name") or metadata.get("equipo"))
-        }
-        return sorted(equipments)
+        return sorted(
+            {
+                str(metadata.get("equipment_name") or metadata.get("equipo")).strip()
+                for metadata in result.get("metadatas") or []
+                if metadata and (metadata.get("equipment_name") or metadata.get("equipo"))
+            }
+        )
 
     def list_indexed_sources(self) -> list[dict[str, Any]]:
-        """Devuelve las fuentes realmente presentes en ChromaDB.
-
-        Esta lista representa el estado real del indice vectorial, no la auditoria
-        historica de ingestas. Se usa para que la interfaz no muestre documentos
-        excluidos o registros viejos que ya no estan indexados.
-
-        La cantidad de paginas se calcula solo con paginas PDF verificadas.
-        No se usa markdown_page ni page como reemplazo de pagina PDF oficial.
-        """
         collection = self.get_store()._collection
         if collection.count() == 0:
             return []
 
         result = collection.get(include=["metadatas"])
-        metadatas = result.get("metadatas") or []
-
-        sources: dict[str, dict[str, Any]] = {}
-        pages_by_source: dict[str, set[int]] = {}
         audits_by_source = {
             str(item.get("source_file") or ""): item
             for item in IngestionAuditService().list_latest()
         }
+        sources: dict[str, dict[str, Any]] = {}
+        pages_by_source: dict[str, set[int]] = {}
 
-        for metadata in metadatas:
+        for metadata in result.get("metadatas") or []:
             if not metadata:
                 continue
-
             source_file = str(metadata.get("source_file") or "").strip()
             if not source_file:
                 continue
-
-            display_source = str(
-                metadata.get("display_source")
-                or metadata.get("original_pdf")
-                or source_file
-            ).strip()
-
             current = sources.setdefault(
                 source_file,
                 {
                     "source_file": source_file,
-                    "display_source": display_source,
+                    "display_source": metadata.get("display_source") or metadata.get("original_pdf") or source_file,
                     "original_pdf": metadata.get("original_pdf") or "",
                     "status": "indexed",
                     "equipment_id": metadata.get("equipment_id"),
@@ -143,33 +156,16 @@ class VectorstoreService:
                     "source_url": str(metadata.get("source_url") or ""),
                 },
             )
-
-            if not current.get("source_url") and metadata.get("source_url"):
-                current["source_url"] = str(metadata.get("source_url") or "")
-
             current["chunk_count"] += 1
-
-            pdf_page_confidence = str(metadata.get("pdf_page_confidence") or "").strip().lower()
-            if pdf_page_confidence == "verified":
-                page = metadata.get("pdf_page")
-                if page not in (None, "", "sin_pagina"):
-                    try:
-                        page_number = int(page)
-                    except (TypeError, ValueError):
-                        page_number = 0
-
-                    if page_number > 0:
-                        pages_by_source.setdefault(source_file, set()).add(page_number)
-
-            try:
-                current["image_count"] += int(metadata.get("image_count", 0) or 0)
-            except (TypeError, ValueError):
-                pass
+            current["image_count"] += int(metadata.get("image_count", 0) or 0)
+            if str(metadata.get("pdf_page_confidence") or "").lower() == "verified":
+                try:
+                    pages_by_source.setdefault(source_file, set()).add(int(metadata.get("pdf_page")))
+                except (TypeError, ValueError):
+                    pass
 
         for source_file, pages in pages_by_source.items():
-            if source_file in sources:
-                sources[source_file]["page_count"] = len(pages)
-
+            sources[source_file]["page_count"] = len(pages)
         return sorted(sources.values(), key=lambda item: str(item["source_file"]))
 
     def retrieve(
@@ -177,457 +173,369 @@ class VectorstoreService:
         question: str,
         equipment_name: str | None,
         k: int | None = None,
+        role: str = "tecnico",
     ) -> list[RetrievedChunk]:
         canonical_equipment = canonical_equipment_name(equipment_name)
         if not canonical_equipment:
             raise EquipmentScopeError("La busqueda documental requiere un equipo exacto.")
 
-        vectorstore = self.get_store()
-        if vectorstore._collection.count() == 0:
+        store = self.get_store()
+        if store._collection.count() == 0:
             raise VectorstoreNotReadyError("La base vectorial no tiene documentos indexados.")
 
-        requested_k = k or settings.retrieval_k
-        candidate_k = self._candidate_k(question, requested_k)
-        search_filter = self._equipment_filter(canonical_equipment)
-        expanded_question = self._expand_question(question)
+        semantic = self._semantic_candidates(question, canonical_equipment)
+        lexical = self._lexical_candidates(question, canonical_equipment)
+        candidates = self._merge_candidates(semantic, lexical)
+        ranked = self._cross_encoder_rerank(question, candidates)
+        if not ranked:
+            return []
 
-        results = vectorstore.similarity_search_with_score(
-            expanded_question,
-            k=candidate_k,
-            filter=search_filter,
+        if role == "operador":
+            return self._operator_context(question, canonical_equipment, ranked, k)
+        return self._technician_context(question, canonical_equipment, ranked)
+
+    def _semantic_candidates(self, question: str, equipment_name: str) -> list[RetrievedChunk]:
+        results = self.get_store().similarity_search_with_score(
+            question,
+            k=settings.semantic_candidate_k,
+            filter={"equipment_name": equipment_name},
         )
-
-        chunks: list[RetrievedChunk] = []
-        for document, score in results:
-            chunk = self._document_to_chunk(document, float(score), canonical_equipment)
-            if chunk.citation.equipment_name == canonical_equipment:
+        chunks = []
+        for document, distance in results:
+            chunk = self._document_to_chunk(document, self._semantic_score(float(distance)), equipment_name)
+            if chunk.citation.equipment_name == equipment_name:
                 chunks.append(chunk)
+        return chunks
 
-        ranked_chunks = self._rerank_chunks(question, chunks)
-        focused_chunks = self._focus_curated_alarm_context(question, ranked_chunks)
-        return focused_chunks[:requested_k]
+    def _lexical_candidates(self, question: str, equipment_name: str) -> list[RetrievedChunk]:
+        documents, bm25 = self._lexical_index(equipment_name)
+        if not documents:
+            return []
 
-    def _candidate_k(self, question: str, requested_k: int) -> int:
-        normalized = self._normalize_for_ranking(question)
-        alarm_or_failure = any(
-            term in normalized
-            for term in (
-                "alarma",
-                "mensaje",
-                "falla",
-                "fallo",
-                "error",
-                "problema",
-                "no funciona",
-                "no prende",
-                "no responde",
-                "obstru",
-                "oclusion",
-                "bloqueo",
-                "circuito",
-                "trabado",
-                "trabada",
-                "no gira",
-                "volante",
-                "manivela",
-                "freno",
-            )
-        )
-
-        if alarm_or_failure:
-            return max(requested_k, 80)
-
-        return max(requested_k, settings.retrieval_k)
-
-    def _expand_question(self, question: str) -> str:
-        normalized = self._normalize_for_ranking(question)
-        expansions: list[str] = []
-
-        if any(term in normalized for term in ("alarma", "mensaje", "falla", "fallo", "error")):
-            expansions.append(
-                "alarma resolucion de problemas mensaje prioridad posible causa accion medidas"
-            )
-
-        if "circuito" in normalized and any(
-            term in normalized
-            for term in ("oclusion", "obstru", "bloqueo", "destap", "tapado")
-        ):
-            expansions.append(
-                "bloqueo circuito paciente oclusion circuito circuito obstruido "
-                "filtro bloqueado cuerpos extranos circuito paciente puerto salida gas obstruido "
-                "presion inspiratoria presion espiratoria"
-            )
-
-        wheel_lock_query = (
-            (
-                any(term in normalized for term in ("volante", "manivela", "freno"))
-                and any(
-                    term in normalized
-                    for term in (
-                        "trabado",
-                        "trabada",
-                        "bloqueo",
-                        "bloqueado",
-                        "bloqueada",
-                        "no gira",
-                        "girar",
-                        "desbloquear",
-                        "desbloqueo",
-                    )
-                )
-            )
-            or "bloqueo mecanico" in normalized
-        )
-
-        if wheel_lock_query:
-            expansions.append(
-                "bloqueo del volante bloqueo mecanico volante bloqueado volante desbloqueado "
-                "manivela hacia la izquierda manivela hacia la derecha "
-                "palanca posicion volante bloqueado volante desbloqueado "
-                "freno del volante freno apretado freno suelto posicion superior 12 horas"
-            )
-
-        if not expansions:
-            return question
-
-        return f"{question}\n\n" + "\n".join(expansions)
-
-    def _rerank_chunks(
-        self,
-        question: str,
-        chunks: list[RetrievedChunk],
-    ) -> list[RetrievedChunk]:
-        normalized_question = self._normalize_for_ranking(question)
-
-        def ranking_key(index_and_chunk: tuple[int, RetrievedChunk]) -> tuple[float, int]:
-            index, chunk = index_and_chunk
-            bonus = self._lexical_bonus(normalized_question, chunk)
-            penalty = self._lexical_penalty(normalized_question, chunk)
-            adjusted_score = float(chunk.score) - bonus + penalty
-            return (adjusted_score, index)
-
+        tokens = self._tokenize(question)
+        if not tokens:
+            return []
+        raw_scores = list(bm25.get_scores(tokens))
+        normalized_scores = self._minmax(raw_scores)
+        ranked_indexes = sorted(
+            range(len(documents)),
+            key=lambda index: normalized_scores[index],
+            reverse=True,
+        )[: settings.lexical_candidate_k]
         return [
-            chunk
-            for _, chunk in sorted(
-                enumerate(chunks),
-                key=ranking_key,
-            )
+            self._document_to_chunk(documents[index], normalized_scores[index], equipment_name)
+            for index in ranked_indexes
+            if raw_scores[index] > 0
         ]
 
-    def _focus_curated_alarm_context(
+    def _lexical_index(self, equipment_name: str) -> tuple[list[Document], Any]:
+        if not hasattr(self, "_lexical_cache"):
+            self._lexical_cache = {}
+        if equipment_name in self._lexical_cache:
+            return self._lexical_cache[equipment_name]
+
+        result = self.get_store()._collection.get(
+            where={"equipment_name": equipment_name},
+            include=["documents", "metadatas"],
+        )
+        documents = [
+            Document(page_content=str(text or ""), metadata=metadata or {})
+            for text, metadata in zip(result.get("documents") or [], result.get("metadatas") or [])
+        ]
+        tokenized_documents = [self._tokenize(document.page_content) for document in documents]
+        bm25 = self._build_bm25(tokenized_documents)
+        if len(self._lexical_cache) >= 2:
+            self._lexical_cache.pop(next(iter(self._lexical_cache)))
+        self._lexical_cache[equipment_name] = (documents, bm25)
+        return documents, bm25
+
+    def _build_bm25(self, tokenized_documents: list[list[str]]):
+        try:
+            from rank_bm25 import BM25Okapi
+
+            return BM25Okapi(tokenized_documents)
+        except ImportError:
+            return _FallbackBM25Okapi(tokenized_documents)
+
+    def _merge_candidates(
+        self,
+        semantic: list[RetrievedChunk],
+        lexical: list[RetrievedChunk],
+    ) -> list[tuple[RetrievedChunk, float, float]]:
+        merged: dict[tuple[str, str], dict[str, Any]] = {}
+        for chunk in semantic:
+            key = self._chunk_key(chunk)
+            merged.setdefault(key, {"chunk": chunk, "semantic": 0.0, "lexical": 0.0})
+            merged[key]["semantic"] = float(chunk.score or 0.0)
+        for chunk in lexical:
+            key = self._chunk_key(chunk)
+            merged.setdefault(key, {"chunk": chunk, "semantic": 0.0, "lexical": 0.0})
+            merged[key]["lexical"] = float(chunk.score or 0.0)
+
+        candidates = sorted(
+            merged.values(),
+            key=lambda item: (
+                settings.semantic_weight * item["semantic"]
+                + settings.lexical_weight * item["lexical"]
+            ),
+            reverse=True,
+        )[: settings.reranker_candidate_k]
+        return [(item["chunk"], item["semantic"], item["lexical"]) for item in candidates]
+
+    def _cross_encoder_rerank(
         self,
         question: str,
-        chunks: list[RetrievedChunk],
+        candidates: list[tuple[RetrievedChunk, float, float]],
     ) -> list[RetrievedChunk]:
-        normalized_question = self._normalize_for_ranking(question)
-        circuit_obstruction_query = (
-            "circuito" in normalized_question
-            and any(
-                term in normalized_question
-                for term in ("oclusion", "obstru", "bloqueo", "destap", "tapado")
-            )
+        if not candidates:
+            return []
+        pairs = [(question, chunk.text) for chunk, _semantic, _lexical in candidates]
+        raw_scores = self.reranker.predict(
+            pairs,
+            batch_size=settings.reranker_batch_size,
+            show_progress_bar=False,
         )
-        if not circuit_obstruction_query:
-            return chunks
+        reranker_scores = self._minmax([float(score) for score in raw_scores])
 
-        curated_chunks = [
-            chunk
-            for chunk in chunks
-            if "alarma curada bloqueo circuito paciente" in self._normalize_for_ranking(chunk.text)
-        ]
-        if not curated_chunks:
-            return chunks
+        ranked = []
+        for index, (chunk, semantic, lexical) in enumerate(candidates):
+            final_score = (
+                settings.reranker_weight * reranker_scores[index]
+                + settings.semantic_weight * semantic
+                + settings.lexical_weight * lexical
+            )
+            ranked.append(self._with_score(chunk, final_score))
+        return sorted(ranked, key=lambda chunk: float(chunk.score or 0.0), reverse=True)
 
-        primary = curated_chunks[0]
-        focused: list[RetrievedChunk] = [primary]
-
-        for chunk in chunks:
-            if chunk is primary:
+    def _technician_context(
+        self,
+        question: str,
+        equipment_name: str,
+        ranked: list[RetrievedChunk],
+    ) -> list[RetrievedChunk]:
+        pages = []
+        seen = set()
+        for chunk in ranked:
+            page = self._parent_page(chunk, equipment_name)
+            if not page or self._page_key(page) in seen:
                 continue
-
-            text = self._normalize_for_ranking(chunk.text)
-            exact_same_alarm = (
-                "bloqueo circuito paciente" in text
-                and "presion inspiratoria" in text
-                and "presion espiratoria" in text
-            )
-            exact_actions = (
-                "cuerpos extranos" in text
-                and "puerto de salida de gas" in text
-            )
-
-            if exact_same_alarm or exact_actions:
-                focused.append(chunk)
-
-            if len(focused) >= 3:
+            seen.add(self._page_key(page))
+            pages.append(self._truncate_page_around_match(page, chunk.text, settings.technician_context_max_chars))
+            if len(pages) >= settings.technician_page_context_k:
                 break
+        return pages or ranked[: settings.retrieval_k]
 
-        return focused
+    def _operator_context(
+        self,
+        question: str,
+        equipment_name: str,
+        ranked: list[RetrievedChunk],
+        k: int | None,
+    ) -> list[RetrievedChunk]:
+        target_k = k or settings.operator_context_k
+        selected = ranked[:target_k]
+        if not selected:
+            return []
 
-    def _lexical_bonus(self, normalized_question: str, chunk: RetrievedChunk) -> float:
-        text = self._normalize_for_ranking(chunk.text)
-        source = self._normalize_for_ranking(
-            " ".join(
-                (
-                    chunk.citation.display_source or "",
-                    chunk.citation.original_pdf or "",
-                    chunk.citation.source_file or "",
-                )
-            )
+        page_candidates = []
+        seen_pages = set()
+        for chunk in selected:
+            page = self._parent_page(chunk, equipment_name)
+            if page and self._page_key(page) not in seen_pages:
+                seen_pages.add(self._page_key(page))
+                page_candidates.extend(self._split_parent_for_operator(page))
+
+            for adjacent in self._adjacent_parent_pages(chunk, equipment_name):
+                if self._page_key(adjacent) in seen_pages:
+                    continue
+                seen_pages.add(self._page_key(adjacent))
+                page_candidates.extend(self._split_parent_for_operator(adjacent))
+
+        expanded = self._rerank_context_fragments(question, page_candidates)
+        if not expanded:
+            return selected
+
+        best = float(expanded[0].score or 0.0)
+        threshold = best * settings.adjacent_page_relative_threshold
+        useful_expanded = [chunk for chunk in expanded if float(chunk.score or 0.0) >= threshold]
+        return self._deduplicate_chunks((selected + useful_expanded)[: target_k + settings.operator_adjacent_pages_max])
+
+    def _rerank_context_fragments(self, question: str, chunks: list[RetrievedChunk]) -> list[RetrievedChunk]:
+        if not chunks:
+            return []
+        pairs = [(question, chunk.text) for chunk in chunks]
+        raw_scores = self.reranker.predict(
+            pairs,
+            batch_size=settings.reranker_batch_size,
+            show_progress_bar=False,
+        )
+        normalized = self._minmax([float(score) for score in raw_scores])
+        return sorted(
+            [self._with_score(chunk, normalized[index]) for index, chunk in enumerate(chunks)],
+            key=lambda chunk: float(chunk.score or 0.0),
+            reverse=True,
         )
 
-        bonus = 0.0
-
-        circuit_obstruction_query = (
-            "circuito" in normalized_question
-            and any(
-                term in normalized_question
-                for term in ("oclusion", "obstru", "bloqueo", "destap", "tapado")
-            )
+    def _parent_page(self, chunk: RetrievedChunk, equipment_name: str) -> RetrievedChunk | None:
+        result = self.get_page_store()._collection.get(
+            where={
+                "$and": [
+                    {"equipment_name": equipment_name},
+                    {"source_file": chunk.citation.source_file},
+                    {"markdown_page": chunk.citation.markdown_page},
+                ]
+            },
+            include=["documents", "metadatas"],
+            limit=1,
+        )
+        documents = result.get("documents") or []
+        metadatas = result.get("metadatas") or []
+        if not documents:
+            return None
+        return self._document_to_chunk(
+            Document(page_content=documents[0], metadata=metadatas[0] or {}),
+            float(chunk.score or 0.0),
+            equipment_name,
         )
 
-        if circuit_obstruction_query:
-            exact_phrases = (
-                "alarma curada bloqueo circuito paciente",
-                "bloqueo circuito paciente",
-                "circuito obstruido",
-                "filtro bloqueado",
-                "cuerpos extranos",
-                "puerto de salida de gas",
-                "presion inspiratoria",
-                "presion espiratoria",
+    def _adjacent_parent_pages(self, chunk: RetrievedChunk, equipment_name: str) -> list[RetrievedChunk]:
+        try:
+            page_number = int(chunk.citation.markdown_page)
+        except (TypeError, ValueError):
+            return []
+        pages = []
+        for adjacent_page in (page_number - 1, page_number + 1):
+            if adjacent_page <= 0:
+                continue
+            result = self.get_page_store()._collection.get(
+                where={
+                    "$and": [
+                        {"equipment_name": equipment_name},
+                        {"source_file": chunk.citation.source_file},
+                        {"markdown_page": adjacent_page},
+                    ]
+                },
+                include=["documents", "metadatas"],
+                limit=1,
             )
-            for phrase in exact_phrases:
-                if phrase in text:
-                    bonus += 4.0
-
-            if "manual de usuario" in text or "manual de usuario" in source:
-                bonus += 1.5
-            if "manual tecnico" in source:
-                bonus -= 0.5
-            if "acciones indicadas por el manual" in text:
-                bonus += 4.0
-            if "posible causa indicada por el manual" in text:
-                bonus += 3.0
-            if "alarma resolucion de problemas" in text:
-                bonus += 2.0
-
-        wheel_lock_query = (
-            (
-                any(term in normalized_question for term in ("volante", "manivela", "freno"))
-                and any(
-                    term in normalized_question
-                    for term in (
-                        "trabado",
-                        "trabada",
-                        "bloqueo",
-                        "bloqueado",
-                        "bloqueada",
-                        "no gira",
-                        "girar",
-                        "desbloquear",
-                        "desbloqueo",
+            documents = result.get("documents") or []
+            metadatas = result.get("metadatas") or []
+            if documents:
+                pages.append(
+                    self._document_to_chunk(
+                        Document(page_content=documents[0], metadata=metadatas[0] or {}),
+                        0.0,
+                        equipment_name,
                     )
                 )
-            )
-            or "bloqueo mecanico" in normalized_question
+        return pages
+
+    def _split_parent_for_operator(self, page: RetrievedChunk) -> list[RetrievedChunk]:
+        text = page.text.strip()
+        size = settings.operator_chunk_size
+        overlap = settings.operator_chunk_overlap
+        fragments = []
+        start = 0
+        index = 0
+        while start < len(text):
+            end = min(len(text), start + size)
+            if end < len(text):
+                boundary = max(text.rfind("\n", start, end), text.rfind(". ", start, end))
+                if boundary > start + size // 2:
+                    end = boundary + 1
+            fragment = text[start:end].strip()
+            if fragment:
+                citation = self._citation_with_chunk_id(page.citation, f"{page.citation.chunk_id}-op-{index}")
+                fragments.append(RetrievedChunk(text=fragment, citation=citation, score=0.0))
+            if end >= len(text):
+                break
+            start = max(start + 1, end - overlap)
+            index += 1
+        return fragments
+
+    def _truncate_page_around_match(
+        self,
+        page: RetrievedChunk,
+        matched_text: str,
+        max_chars: int,
+    ) -> RetrievedChunk:
+        if len(page.text) <= max_chars:
+            return page
+        normalized_page = self._normalize_for_ranking(page.text)
+        match_terms = [token for token in self._tokenize(matched_text) if len(token) >= 5]
+        positions = [normalized_page.find(term) for term in match_terms if normalized_page.find(term) >= 0]
+        center = min(positions) if positions else len(page.text) // 2
+        start = max(0, center - max_chars // 2)
+        end = min(len(page.text), start + max_chars)
+        start = max(0, end - max_chars)
+        text = page.text[start:end].strip()
+        return RetrievedChunk(text=text, citation=page.citation, score=page.score)
+
+    def _citation_with_chunk_id(self, citation: SourceCitation, chunk_id: str) -> SourceCitation:
+        return SourceCitation(
+            source_file=citation.source_file,
+            page=citation.page,
+            chunk_id=chunk_id,
+            equipment_name=citation.equipment_name,
+            has_images=citation.has_images,
+            image_count=citation.image_count,
+            url=citation.url,
+            images=citation.images,
+            display_source=citation.display_source,
+            original_pdf=citation.original_pdf,
+            pdf_page=citation.pdf_page,
+            pdf_page_confidence=citation.pdf_page_confidence,
+            page_mapping_method=citation.page_mapping_method,
+            page_mapping_status=citation.page_mapping_status,
+            markdown_page=citation.markdown_page,
         )
 
-        if wheel_lock_query:
-            exact_phrases = (
-                "bloqueo del volante",
-                "bloqueo mecanico",
-                "volante bloqueado",
-                "volante desbloqueado",
-                "volante queda bloqueado",
-                "ya no se puede girar",
-                "para activar el bloqueo",
-                "para desactivar el bloqueo",
-                "empujar la manivela",
-                "tirar la manivela",
-                "hacia la izquierda",
-                "hacia la derecha",
-                "freno del volante",
-                "freno apretado",
-                "freno suelto",
-                "posicion superior",
-                "12 horas",
-            )
-            for phrase in exact_phrases:
-                if phrase in text:
-                    bonus += 3.0
+    def _semantic_score(self, distance: float) -> float:
+        return 1.0 / (1.0 + max(0.0, distance))
 
-            if "seguridad" in text:
-                bonus += 1.0
-            if "manejo" in text and "soltar el bloqueo del volante" in text:
-                bonus += 3.0
+    def _tokenize(self, text: str) -> list[str]:
+        return [
+            token
+            for token in self._normalize_for_ranking(text).split()
+            if len(token) >= 2
+        ]
 
-        question_terms = {
-            term
-            for term in normalized_question.split()
-            if len(term) >= 5 and term not in {"equipo", "mensaje", "manual", "seguir"}
-        }
-        if question_terms:
-            overlap = sum(1 for term in question_terms if term in text)
-            bonus += min(overlap * 0.2, 2.0)
-
-        return bonus
-
-    def _lexical_penalty(self, normalized_question: str, chunk: RetrievedChunk) -> float:
-        text = self._normalize_for_ranking(chunk.text)
-        source = self._normalize_for_ranking(
-            " ".join(
-                (
-                    chunk.citation.display_source or "",
-                    chunk.citation.original_pdf or "",
-                    chunk.citation.source_file or "",
-                )
-            )
-        )
-
-        penalty = 0.0
-
-        # Caso VN500:
-        # BabyFlow / CPAP nasal es una fuente lateral del respirador Draeger VN500.
-        # Debe usarse cuando la consulta menciona explícitamente BabyFlow, CPAP,
-        # nCPAP, nasal, canula, mascara o contexto neonatal.
-        # Para consultas generales del respirador sobre test, alarmas, presion,
-        # ventilacion o funcionamiento, se penaliza para evitar respuestas con
-        # una fuente correcta por equipo pero incorrecta por alcance documental.
-        babyflow_source = any(
-            term in source
-            for term in (
-                "babyflow",
-                "cpap nasal",
-                "ncpap",
-            )
-        ) or any(
-            term in text
-            for term in (
-                "babyflow",
-                "cpap nasal",
-                "ncpap",
-                "canulas nasales",
-                "mascaras",
-                "gorros",
-            )
-        )
-
-        babyflow_query = any(
-            term in normalized_question
-            for term in (
-                "babyflow",
-                "cpap",
-                "ncpap",
-                "nasal",
-                "canula",
-                "canulas",
-                "mascara",
-                "mascaras",
-                "neonatal",
-                "neonato",
-                "neonatos",
-                "interfaz",
-                "gorros",
-            )
-        )
-
-        if babyflow_source and not babyflow_query:
-            penalty += 3.0
-
-        wheel_lock_query = (
-            (
-                any(term in normalized_question for term in ("volante", "manivela", "freno"))
-                and any(
-                    term in normalized_question
-                    for term in (
-                        "trabado",
-                        "trabada",
-                        "bloqueo",
-                        "bloqueado",
-                        "bloqueada",
-                        "no gira",
-                        "girar",
-                        "desbloquear",
-                        "desbloqueo",
-                    )
-                )
-            )
-            or "bloqueo mecanico" in normalized_question
-        )
-
-        if wheel_lock_query:
-            # Penaliza falsos positivos sobre retraccion, muestra o corte,
-            # salvo que el fragmento tambien contenga evidencia directa
-            # sobre bloqueo/freno del volante.
-            has_direct_wheel_lock_evidence = any(
-                phrase in text
-                for phrase in (
-                    "bloqueo del volante",
-                    "bloqueo mecanico",
-                    "volante bloqueado",
-                    "volante desbloqueado",
-                    "para activar el bloqueo",
-                    "para desactivar el bloqueo",
-                    "freno del volante",
-                    "soltar el bloqueo del volante",
-                )
-            )
-
-            if not has_direct_wheel_lock_evidence:
-                false_positive_phrases = (
-                    "retraccion de la muestra",
-                    "fase de retraccion",
-                    "rocking mode",
-                    "muestra y la cuchilla",
-                    "desbastar",
-                    "portacuchillas",
-                    "espesor de corte",
-                    "cortes",
-                    "cuchilla chilla",
-                    "parafina",
-                    "pinza portamuestras",
-                )
-                for phrase in false_positive_phrases:
-                    if phrase in text:
-                        penalty += 2.5
-
-        circuit_obstruction_query = (
-            "circuito" in normalized_question
-            and any(
-                term in normalized_question
-                for term in ("oclusion", "obstru", "bloqueo", "destap", "tapado")
-            )
-        )
-
-        if circuit_obstruction_query:
-            false_positive_phrases = (
-                "barra favoritos",
-                "pantalla tactil",
-                "bloqueo desbloqueo",
-                "bloquear o desbloquear la pantalla",
-                "tendencias",
-                "configuracion de favoritos",
-                "visualizacion de curvas",
-                "piezas",
-            )
-            for phrase in false_positive_phrases:
-                if phrase in text:
-                    penalty += 4.0
-
-        return penalty
+    def _minmax(self, values: list[float]) -> list[float]:
+        if not values:
+            return []
+        minimum = min(values)
+        maximum = max(values)
+        if math.isclose(minimum, maximum):
+            return [1.0 if maximum > 0 else 0.0 for _ in values]
+        return [(value - minimum) / (maximum - minimum) for value in values]
 
     def _normalize_for_ranking(self, value: str | None) -> str:
         if not value:
             return ""
-
         without_accents = unicodedata.normalize("NFKD", value)
         ascii_text = without_accents.encode("ascii", "ignore").decode("ascii")
         compact = re.sub(r"[^a-zA-Z0-9]+", " ", ascii_text).strip().lower()
         return re.sub(r"\s+", " ", compact)
 
-    def _equipment_filter(self, equipment_name: str) -> dict[str, str]:
-        return {"equipment_name": equipment_name}
+    def _with_score(self, chunk: RetrievedChunk, score: float) -> RetrievedChunk:
+        return RetrievedChunk(text=chunk.text, citation=chunk.citation, score=score)
+
+    def _chunk_key(self, chunk: RetrievedChunk) -> tuple[str, str]:
+        return chunk.citation.source_file, chunk.citation.chunk_id
+
+    def _page_key(self, chunk: RetrievedChunk) -> tuple[str, Any]:
+        return chunk.citation.source_file, chunk.citation.markdown_page
+
+    def _deduplicate_chunks(self, chunks: list[RetrievedChunk]) -> list[RetrievedChunk]:
+        unique = []
+        seen = set()
+        for chunk in chunks:
+            key = self._chunk_key(chunk)
+            if key in seen:
+                continue
+            seen.add(key)
+            unique.append(chunk)
+        return unique
 
     def _document_to_chunk(
         self,
@@ -637,13 +545,7 @@ class VectorstoreService:
     ) -> RetrievedChunk:
         metadata: dict[str, Any] = document.metadata or {}
         equipment_name = str(metadata.get("equipment_name") or metadata.get("equipo") or "").strip()
-
         pdf_page = metadata.get("pdf_page") or ""
-        markdown_page = metadata.get("markdown_page", "")
-        pdf_page_confidence = str(metadata.get("pdf_page_confidence") or "").strip()
-        page_mapping_method = str(metadata.get("page_mapping_method") or "").strip()
-        page_mapping_status = str(metadata.get("page_mapping_status") or "").strip()
-
         citation = SourceCitation(
             source_file=str(metadata.get("source_file", "sin_fuente")),
             page=pdf_page or "sin_pagina",
@@ -656,16 +558,12 @@ class VectorstoreService:
             display_source=str(metadata.get("display_source") or ""),
             original_pdf=str(metadata.get("original_pdf") or ""),
             pdf_page=pdf_page,
-            pdf_page_confidence=pdf_page_confidence,
-            page_mapping_method=page_mapping_method,
-            page_mapping_status=page_mapping_status,
-            markdown_page=markdown_page,
+            pdf_page_confidence=str(metadata.get("pdf_page_confidence") or ""),
+            page_mapping_method=str(metadata.get("page_mapping_method") or ""),
+            page_mapping_status=str(metadata.get("page_mapping_status") or ""),
+            markdown_page=metadata.get("markdown_page", ""),
         )
-        return RetrievedChunk(
-            text=document.page_content,
-            citation=citation,
-            score=score,
-        )
+        return RetrievedChunk(text=document.page_content, citation=citation, score=score)
 
     def _document_id(self, document: Document, index: int) -> str:
         metadata = document.metadata or {}
@@ -684,14 +582,49 @@ class VectorstoreService:
             return ()
         if not isinstance(parsed, list):
             return ()
-        images = []
-        for item in parsed:
-            if isinstance(item, dict) and item.get("url"):
-                images.append(
-                    {
-                        "url": str(item.get("url")),
-                        "page": item.get("page"),
-                        "label": str(item.get("label") or "Imagen"),
-                    }
+        return tuple(
+            {
+                "url": str(item.get("url")),
+                "page": item.get("page"),
+                "label": str(item.get("label") or "Imagen"),
+            }
+            for item in parsed
+            if isinstance(item, dict) and item.get("url")
+        )
+
+
+class _FallbackBM25Okapi:
+    """Small BM25 fallback used only until rank-bm25 is installed."""
+
+    def __init__(self, corpus: list[list[str]], k1: float = 1.5, b: float = 0.75) -> None:
+        self.corpus = corpus
+        self.k1 = k1
+        self.b = b
+        self.avgdl = sum(len(document) for document in corpus) / max(1, len(corpus))
+        self.document_frequencies: dict[str, int] = {}
+        for document in corpus:
+            for token in set(document):
+                self.document_frequencies[token] = self.document_frequencies.get(token, 0) + 1
+
+    def get_scores(self, query_tokens: list[str]) -> list[float]:
+        total_documents = max(1, len(self.corpus))
+        scores = []
+        for document in self.corpus:
+            frequencies: dict[str, int] = {}
+            for token in document:
+                frequencies[token] = frequencies.get(token, 0) + 1
+            score = 0.0
+            for token in query_tokens:
+                frequency = frequencies.get(token, 0)
+                if not frequency:
+                    continue
+                document_frequency = self.document_frequencies.get(token, 0)
+                inverse_document_frequency = math.log(
+                    1 + (total_documents - document_frequency + 0.5) / (document_frequency + 0.5)
                 )
-        return tuple(images)
+                denominator = frequency + self.k1 * (
+                    1 - self.b + self.b * len(document) / max(1.0, self.avgdl)
+                )
+                score += inverse_document_frequency * frequency * (self.k1 + 1) / denominator
+            scores.append(score)
+        return scores
