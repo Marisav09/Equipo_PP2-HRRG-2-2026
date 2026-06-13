@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from functools import cached_property
 import json
+import logging
 import math
 import re
 import unicodedata
@@ -16,6 +17,9 @@ from app.core.equipment_catalog import canonical_equipment_name
 from app.core.exceptions import EquipmentScopeError, VectorstoreNotReadyError
 from app.models.schemas import RetrievedChunk, SourceCitation
 from app.services.ingestion_audit_service import IngestionAuditService
+
+
+logger = logging.getLogger(__name__)
 
 
 class VectorstoreService:
@@ -36,10 +40,29 @@ class VectorstoreService:
     def reranker(self):
         from sentence_transformers import CrossEncoder
 
-        return CrossEncoder(
-            settings.reranker_model,
-            device=settings.reranker_device,
-        )
+        device = self._resolve_reranker_device()
+        try:
+            return CrossEncoder(settings.reranker_model, device=device)
+        except Exception:
+            if device == "cpu":
+                raise
+            logger.exception(
+                "No se pudo inicializar el reranker en %s; se reintenta en CPU.",
+                device,
+            )
+            return CrossEncoder(settings.reranker_model, device="cpu")
+
+    def _resolve_reranker_device(self) -> str:
+        configured = str(settings.reranker_device or "auto").strip().lower()
+        if configured != "auto":
+            return configured
+
+        try:
+            import torch
+
+            return "cuda" if torch.cuda.is_available() else "cpu"
+        except ImportError:
+            return "cpu"
 
     def get_store(self) -> Chroma:
         return Chroma(
@@ -217,15 +240,25 @@ class VectorstoreService:
             return []
         raw_scores = list(bm25.get_scores(tokens))
         normalized_scores = self._minmax(raw_scores)
+        query_terms = set(tokens)
+        tokenized_documents = [self._tokenize(document.page_content) for document in documents]
+        overlap_scores = [
+            len(query_terms.intersection(document_tokens)) / max(1, len(query_terms))
+            for document_tokens in tokenized_documents
+        ]
+        lexical_scores = [
+            (0.8 * normalized_scores[index]) + (0.2 * overlap_scores[index])
+            for index in range(len(documents))
+        ]
         ranked_indexes = sorted(
             range(len(documents)),
-            key=lambda index: normalized_scores[index],
+            key=lambda index: lexical_scores[index],
             reverse=True,
         )[: settings.lexical_candidate_k]
         return [
-            self._document_to_chunk(documents[index], normalized_scores[index], equipment_name)
+            self._document_to_chunk(documents[index], lexical_scores[index], equipment_name)
             for index in ranked_indexes
-            if raw_scores[index] > 0
+            if lexical_scores[index] > 0
         ]
 
     def _lexical_index(self, equipment_name: str) -> tuple[list[Document], Any]:

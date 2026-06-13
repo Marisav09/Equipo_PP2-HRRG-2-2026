@@ -46,7 +46,7 @@ class Settings:
     llm_model: str = os.getenv("LLM_MODEL", "llama3.2:3b")
     embedding_model: str = os.getenv("EMBEDDING_MODEL", "nomic-embed-text")
     reranker_model: str = os.getenv("RERANKER_MODEL", "BAAI/bge-reranker-v2-m3")
-    reranker_device: str = os.getenv("RERANKER_DEVICE", "cuda")
+    reranker_device: str = os.getenv("RERANKER_DEVICE", "auto")
     reranker_batch_size: int = _get_int("RERANKER_BATCH_SIZE", 4)
     llm_timeout_seconds: int = _get_int("LLM_TIMEOUT_SECONDS", 300)
     ollama_health_timeout_seconds: float = _get_float("OLLAMA_HEALTH_TIMEOUT_SECONDS", 3.0)

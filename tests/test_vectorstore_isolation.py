@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+from types import SimpleNamespace
+
 import pytest
 from langchain_core.documents import Document
 
 from app.core.exceptions import EquipmentScopeError
+import app.services.vectorstore_service as vectorstore_module
 from app.services.vectorstore_service import VectorstoreService
 
 
@@ -104,3 +107,32 @@ def test_retrieve_rejects_unscoped_search():
 
     with pytest.raises(EquipmentScopeError):
         service.retrieve("alarma puerta", None)
+
+
+def test_reranker_device_auto_uses_cuda_when_available(monkeypatch):
+    service = FakeVectorstoreService(FakeStore())
+    monkeypatch.setattr(vectorstore_module, "settings", SimpleNamespace(reranker_device="auto"))
+
+    import torch
+
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: True)
+
+    assert service._resolve_reranker_device() == "cuda"
+
+
+def test_reranker_device_auto_falls_back_to_cpu(monkeypatch):
+    service = FakeVectorstoreService(FakeStore())
+    monkeypatch.setattr(vectorstore_module, "settings", SimpleNamespace(reranker_device="auto"))
+
+    import torch
+
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: False)
+
+    assert service._resolve_reranker_device() == "cpu"
+
+
+def test_reranker_device_can_be_forced(monkeypatch):
+    service = FakeVectorstoreService(FakeStore())
+    monkeypatch.setattr(vectorstore_module, "settings", SimpleNamespace(reranker_device="cpu"))
+
+    assert service._resolve_reranker_device() == "cpu"

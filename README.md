@@ -112,7 +112,8 @@ python scripts/ingest_documents.py --rebuild-parent-child
 ```
 
 El primer uso del reranker puede descargar el modelo configurado en `RERANKER_MODEL`.
-Por defecto se ejecuta con `RERANKER_DEVICE=cuda`.
+Por defecto `RERANKER_DEVICE=auto`: utiliza CUDA si esta disponible y, en caso contrario,
+utiliza CPU. Tambien puede forzarse `cuda` o `cpu` desde `.env`.
 
 Los pesos y cantidades de candidatos pueden ajustarse desde `.env`:
 
