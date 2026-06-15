@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import concurrent.futures
+import json
 import logging
 import re
 import unicodedata
@@ -52,15 +53,6 @@ class RagService:
         if not decision.allowed:
             return self._response(decision.reason, "guardrail", session_id)
 
-        if chat_request.role == "operador" and self._mentions_patient_connected(chat_request.query):
-            answer = (
-                "No intente intervenir ni modificar el equipo mientras haya un paciente conectado "
-                "o un tratamiento en curso. Pida asistencia clinica inmediata, actue segun el "
-                "protocolo del servicio y contacte a Ingenieria Clinica."
-            )
-            self._store_turn(session_id, chat_request.query, answer, equipment_name)
-            return self._response(answer, "guardrail_paciente_conectado", session_id)
-
         self._clear_memory_if_equipment_changed(session_id, equipment_name)
         history = self.memory_service.get_recent_messages(session_id, equipment_name)
         if should_cancel():
@@ -109,12 +101,13 @@ class RagService:
         if chat_request.force_fallback:
             answer = self._build_fallback_answer(chunks, chat_request.role)
             self._store_turn(session_id, chat_request.query, answer, equipment_name)
-            return self._response(
+            response = self._response(
                 answer,
                 "fallback_chromadb",
                 session_id,
                 self._sources_for_role(chat_request.role, chunks),
             )
+            return self._with_operator_fallback_risk(response, chat_request.role)
 
         try:
             answer = self._generate_with_timeout(chat_request, equipment_name, chunks, history)
@@ -122,38 +115,43 @@ class RagService:
                 return self._response("Respuesta cancelada por el usuario.", "cancelled", session_id)
 
             if chat_request.role == "operador":
-                answer = self._sanitize_operator_answer(answer)
+                answer, risk_metadata = self._parse_operator_safety_response(answer)
             else:
                 answer = self._strip_source_lines(answer)
+                risk_metadata = {}
             answer = self._strip_markdown_markers(answer)
 
             self._store_turn(session_id, chat_request.query, answer, equipment_name)
-            return self._response(
+            response = self._response(
                 answer,
                 "llm_hibrido",
                 session_id,
                 self._sources_for_role(chat_request.role, chunks),
             )
+            response.update(risk_metadata)
+            return response
         except concurrent.futures.TimeoutError:
             logger.warning("Fallback documental por timeout del LLM")
             answer = self._build_fallback_answer(chunks, chat_request.role)
             self._store_turn(session_id, chat_request.query, answer, equipment_name)
-            return self._response(
+            response = self._response(
                 answer,
                 "fallback_timeout",
                 session_id,
                 self._sources_for_role(chat_request.role, chunks),
             )
+            return self._with_operator_fallback_risk(response, chat_request.role)
         except Exception as exc:
             logger.warning("Fallback documental por falla del LLM: %s", exc)
             answer = self._build_fallback_answer(chunks, chat_request.role)
             self._store_turn(session_id, chat_request.query, answer, equipment_name)
-            return self._response(
+            response = self._response(
                 answer,
                 "fallback_llm_error",
                 session_id,
                 self._sources_for_role(chat_request.role, chunks),
             )
+            return self._with_operator_fallback_risk(response, chat_request.role)
 
     def _generate_with_timeout(
         self,
@@ -218,9 +216,10 @@ Respuesta:""".strip()
 
     def _build_fallback_answer(self, chunks: list[RetrievedChunk], role: str) -> str:
         if role == "operador":
-            text = self.fallback_translation_service.translate_if_english(chunks[0].text.strip())
-            text = self._strip_markdown_markers(text)[:900]
-            return self._sanitize_operator_answer(text)
+            return (
+                "No pude verificar que exista una accion segura para un operador con la "
+                "informacion disponible. No modifique el equipo y contacte a Ingenieria Clinica."
+            )
         extracts = [
             f"{self._source_reference(chunk)}\n{self._fallback_chunk_text(chunk)}"
             for chunk in chunks
@@ -231,64 +230,62 @@ Respuesta:""".strip()
         translated = self.fallback_translation_service.translate_if_english(chunk.text.strip())
         return self._strip_markdown_markers(translated)
 
-    def _sanitize_operator_answer(self, answer: str) -> str:
+    def _parse_operator_safety_response(self, raw_answer: str) -> tuple[str, dict]:
+        fallback = (
+            "No pude verificar que exista una accion segura para un operador. "
+            "No modifique el equipo y contacte a Ingenieria Clinica."
+        )
+        try:
+            payload = json.loads(self._extract_json_object(raw_answer))
+        except (json.JSONDecodeError, TypeError, ValueError):
+            return fallback, {
+                "risk_level": "unknown",
+                "response_strategy": "ask_or_escalate",
+            }
+
+        risk_level = str(payload.get("risk_level", "")).strip().lower()
+        strategy = str(payload.get("response_strategy", "")).strip().lower()
+        answer = str(payload.get("answer", "")).strip()
+        valid_strategies = {
+            "low": "answer",
+            "medium": "ask_or_escalate",
+            "high": "stop_and_escalate",
+            "unknown": "ask_or_escalate",
+        }
+        if not answer or valid_strategies.get(risk_level) != strategy:
+            return fallback, {
+                "risk_level": "unknown",
+                "response_strategy": "ask_or_escalate",
+            }
+
         answer = self._strip_operator_citations(answer)
         answer = self._strip_operator_prompt_echo(answer)
-        answer = self._strip_prohibited_operator_instructions(answer)
-        return answer.strip() or (
-            "La evidencia recuperada requiere una intervencion de Ingenieria Clinica. "
-            "No intente intervenir el equipo."
-        )
+        return answer or fallback, {
+            "risk_level": risk_level,
+            "risk_reason": str(payload.get("risk_reason", "")).strip(),
+            "response_strategy": strategy,
+        }
 
-    def _strip_prohibited_operator_instructions(self, answer: str) -> str:
-        prohibited = (
-            "abra la tapa",
-            "abra el gabinete",
-            "abra la carcasa",
-            "abrir la tapa",
-            "abrir el gabinete",
-            "abrir la carcasa",
-            "desarm",
-            "retirar la tapa",
-            "extraer el modulo",
-            "extraer la placa",
-            "menu de servicio",
-            "menu tecnico",
-            "modo servicio",
-            "calibr",
-            "reemplaz",
-            "cambiar el fusible",
-            "medir tension",
-            "medir voltaje",
-            "medir corriente",
-            "mida tension",
-            "mida voltaje",
-            "mida corriente",
-            "placa electronica",
-            "circuito interno",
-            "cable interno",
-        )
-        safe_lines = [
-            line
-            for line in answer.splitlines()
-            if not any(term in self._normalize_for_match(line) for term in prohibited)
-        ]
-        return "\n".join(safe_lines).strip()
+    def _extract_json_object(self, text: str) -> str:
+        stripped = text.strip()
+        if stripped.startswith("```") and stripped.endswith("```"):
+            stripped = re.sub(r"^```(?:json)?\s*", "", stripped, flags=re.IGNORECASE)
+            stripped = re.sub(r"\s*```$", "", stripped)
+        start = stripped.find("{")
+        end = stripped.rfind("}")
+        if start < 0 or end < start:
+            raise ValueError("La respuesta no contiene un objeto JSON.")
+        return stripped[start : end + 1]
 
-    def _mentions_patient_connected(self, question: str) -> bool:
-        normalized = self._normalize_for_match(question)
-        return any(
-            phrase in normalized
-            for phrase in (
-                "paciente conectado",
-                "paciente conectada",
-                "bebe dentro",
-                "tratamiento en curso",
-                "dialisis activa",
-                "ventilacion activa",
-                "ventilando al paciente",
+    def _with_operator_fallback_risk(self, response: dict, role: str) -> dict:
+        if role == "operador":
+            response.update(
+                {
+                    "risk_level": "unknown",
+                    "response_strategy": "ask_or_escalate",
+                }
             )
-        )
+        return response
 
     def _sources_for_role(self, role: str, chunks: list[RetrievedChunk]) -> list[dict]:
         if role != "tecnico":

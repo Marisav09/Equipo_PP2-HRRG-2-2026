@@ -28,7 +28,13 @@ class FakeVectorstore:
 
 
 class FakeOllama:
-    def __init__(self, answer: str = "Respuesta basada en contexto.") -> None:
+    def __init__(
+        self,
+        answer: str = (
+            '{"risk_level":"low","risk_reason":"Operacion normal documentada",'
+            '"response_strategy":"answer","answer":"Respuesta basada en contexto."}'
+        ),
+    ) -> None:
         self.answer = answer
         self.last_prompt = ""
 
@@ -115,35 +121,48 @@ def test_technician_response_exposes_verified_sources():
     assert response["sources"][0]["page"] == 10
 
 
-def test_patient_connected_guardrail_runs_before_retrieval():
-    class FailingVectorstore:
-        def retrieve(self, *args, **kwargs):
-            raise AssertionError("No debe recuperar documentos.")
-
-    service = _service(vectorstore=FailingVectorstore())
+def test_operator_semantically_classifies_high_risk_scenario():
+    service = _service(
+        ollama_service=FakeOllama(
+            '{"risk_level":"high","risk_reason":"La accion puede afectar al bebe",'
+            '"response_strategy":"stop_and_escalate",'
+            '"answer":"No realice la accion y solicite asistencia clinica."}'
+        )
+    )
     response = service.answer_question(
-        _request(query="Tengo un paciente conectado y necesito intervenir el equipo"),
+        _request(query="Quiero mover la incubadora mientras esta ocupada"),
         "session",
         should_cancel=lambda: False,
     )
 
-    assert response["mode"] == "guardrail_paciente_conectado"
-    assert "asistencia clinica inmediata" in response["answer"]
+    assert response["mode"] == "llm_hibrido"
+    assert response["risk_level"] == "high"
+    assert response["response_strategy"] == "stop_and_escalate"
+    assert "No realice la accion" in response["answer"]
 
 
-def test_operator_output_removes_prohibited_internal_instructions():
+def test_operator_rejects_inconsistent_risk_strategy():
     service = _service(
         ollama_service=FakeOllama(
-            "Abra la tapa del gabinete y mida tension.\n"
-            "Observe el indicador visible y contacte a Ingenieria Clinica."
+            '{"risk_level":"high","risk_reason":"Puede afectar a una persona",'
+            '"response_strategy":"answer","answer":"Realice la accion."}'
         )
     )
 
     response = service.answer_question(_request(), "session", should_cancel=lambda: False)
 
-    assert "Abra la tapa" not in response["answer"]
-    assert "mida tension" not in response["answer"]
-    assert "Observe el indicador visible" in response["answer"]
+    assert response["risk_level"] == "unknown"
+    assert response["response_strategy"] == "ask_or_escalate"
+    assert "No pude verificar" in response["answer"]
+
+
+def test_operator_rejects_unstructured_model_response():
+    service = _service(ollama_service=FakeOllama("Realice la accion solicitada."))
+
+    response = service.answer_question(_request(), "session", should_cancel=lambda: False)
+
+    assert response["risk_level"] == "unknown"
+    assert "No modifique el equipo" in response["answer"]
 
 
 def test_rag_falls_back_to_document_context_when_llm_fails():
@@ -153,6 +172,24 @@ def test_rag_falls_back_to_document_context_when_llm_fails():
 
     assert response["mode"] == "fallback_llm_error"
     assert "interruptor del sistema" in response["answer"]
+
+
+def test_operator_fallback_never_returns_procedural_document_text():
+    vectorstore = FakeVectorstore()
+    vectorstore.chunks[0] = RetrievedChunk(
+        text="Abra el gabinete y ajuste el componente interno.",
+        citation=vectorstore.chunks[0].citation,
+        score=0.9,
+    )
+    service = _service(vectorstore=vectorstore, ollama_service=FailingOllama())
+
+    response = service.answer_question(_request(), "session", should_cancel=lambda: False)
+
+    assert response["mode"] == "fallback_llm_error"
+    assert response["risk_level"] == "unknown"
+    assert response["response_strategy"] == "ask_or_escalate"
+    assert "Abra el gabinete" not in response["answer"]
+    assert "contacte a Ingenieria Clinica" in response["answer"]
 
 
 def test_rag_translates_english_chunk_only_when_falling_back():
