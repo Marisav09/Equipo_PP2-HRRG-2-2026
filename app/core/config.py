@@ -50,6 +50,22 @@ class Settings:
     reranker_batch_size: int = _get_int("RERANKER_BATCH_SIZE", 4)
     llm_timeout_seconds: int = _get_int("LLM_TIMEOUT_SECONDS", 300)
     ollama_health_timeout_seconds: float = _get_float("OLLAMA_HEALTH_TIMEOUT_SECONDS", 3.0)
+    fallback_translation_enabled: bool = _get_bool("FALLBACK_TRANSLATION_ENABLED", True)
+    fallback_translation_model: str = os.getenv(
+        "FALLBACK_TRANSLATION_MODEL",
+        "Helsinki-NLP/opus-mt-en-es",
+    )
+    fallback_translation_local_files_only: bool = _get_bool(
+        "FALLBACK_TRANSLATION_LOCAL_FILES_ONLY",
+        True,
+    )
+    fallback_translation_timeout_seconds: float = _get_float(
+        "FALLBACK_TRANSLATION_TIMEOUT_SECONDS",
+        8.0,
+    )
+    fallback_translation_max_chars: int = _get_int("FALLBACK_TRANSLATION_MAX_CHARS", 1200)
+    fallback_translation_max_tokens: int = _get_int("FALLBACK_TRANSLATION_MAX_TOKENS", 512)
+    fallback_language_min_words: int = _get_int("FALLBACK_LANGUAGE_MIN_WORDS", 8)
     retrieval_k: int = _get_int("RETRIEVAL_K", 4)
     semantic_candidate_k: int = _get_int("SEMANTIC_CANDIDATE_K", 40)
     lexical_candidate_k: int = _get_int("LEXICAL_CANDIDATE_K", 40)

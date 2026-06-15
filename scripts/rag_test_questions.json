@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {
+      "enabled": true,
+      "question": "¿Cómo se enciende el equipo?"
+    },
+    {
+      "enabled": true,
+      "question": "¿Qué verificaciones deben realizarse antes de utilizarlo?"
+    },
+    {
+      "enabled": true,
+      "question": "¿Qué alarmas frecuentes describe el manual?"
+    },
+    {
+      "enabled": true,
+      "question": "¿Qué mantenimiento preventivo indica el fabricante?"
+    },
+    {
+      "enabled": true,
+      "question": "¿Qué debo hacer si el equipo no inicia?"
+    }
+  ]
+}

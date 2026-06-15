@@ -12,6 +12,7 @@ from app.core.exceptions import EquipmentScopeError, VectorstoreNotReadyError
 from app.core.guardrails import require_equipment_scope
 from app.core.prompts import system_prompt_for_role
 from app.models.schemas import ChatRequest, RetrievedChunk
+from app.services.fallback_translation_service import FallbackTranslationService
 from app.services.memory_service import MemoryService
 from app.services.ollama_service import OllamaService
 from app.services.vectorstore_service import VectorstoreService
@@ -26,10 +27,14 @@ class RagService:
         vectorstore: VectorstoreService | None = None,
         ollama_service: OllamaService | None = None,
         memory_service: MemoryService | None = None,
+        fallback_translation_service: FallbackTranslationService | None = None,
     ) -> None:
         self.vectorstore = vectorstore or VectorstoreService()
         self.ollama_service = ollama_service or OllamaService()
         self.memory_service = memory_service or MemoryService()
+        self.fallback_translation_service = (
+            fallback_translation_service or FallbackTranslationService()
+        )
 
     def answer_question(
         self,
@@ -213,13 +218,18 @@ Respuesta:""".strip()
 
     def _build_fallback_answer(self, chunks: list[RetrievedChunk], role: str) -> str:
         if role == "operador":
-            text = self._strip_markdown_markers(chunks[0].text.strip())[:900]
+            text = self.fallback_translation_service.translate_if_english(chunks[0].text.strip())
+            text = self._strip_markdown_markers(text)[:900]
             return self._sanitize_operator_answer(text)
         extracts = [
-            f"{self._source_reference(chunk)}\n{self._strip_markdown_markers(chunk.text.strip())}"
+            f"{self._source_reference(chunk)}\n{self._fallback_chunk_text(chunk)}"
             for chunk in chunks
         ]
         return "\n\n---\n\n".join(extracts)
+
+    def _fallback_chunk_text(self, chunk: RetrievedChunk) -> str:
+        translated = self.fallback_translation_service.translate_if_english(chunk.text.strip())
+        return self._strip_markdown_markers(translated)
 
     def _sanitize_operator_answer(self, answer: str) -> str:
         answer = self._strip_operator_citations(answer)

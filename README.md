@@ -137,6 +137,51 @@ POST /ingest
 GET  /manuals/<archivo.pdf>
 ```
 
+## Pruebas de preguntas RAG
+
+Las preguntas base se editan en:
+
+```text
+scripts/rag_test_questions.json
+```
+
+Cada pregunta puede habilitarse o deshabilitarse con `enabled`. Para seleccionar
+equipo y rol de forma interactiva:
+
+```powershell
+python scripts/run_rag_question_tests.py
+```
+
+Tambien puede ejecutarse sin interaccion:
+
+```powershell
+python scripts/run_rag_question_tests.py --equipment ventilador-engstrom --role operador
+```
+
+Opciones utiles:
+
+```powershell
+python scripts/run_rag_question_tests.py --list-equipment
+python scripts/run_rag_question_tests.py --equipment ventilador-engstrom --role tecnico --questions scripts/rag_test_questions.json --output reports/prueba.csv
+python scripts/run_rag_question_tests.py --equipment ventilador-engstrom --role tecnico --conversation
+python scripts/run_rag_question_tests.py --equipment ventilador-engstrom --role tecnico --force-fallback
+```
+
+Para que los extractos en ingles se traduzcan al espanol cuando se activa un fallback,
+descargue una vez el modelo traductor local:
+
+```bash
+python scripts/download_fallback_translation_model.py
+```
+
+La traduccion se ejecuta unicamente en respuestas fallback y nunca modifica los chunks
+almacenados ni el contexto enviado al modelo principal.
+
+Por defecto cada pregunta usa una sesion independiente. `--conversation` conserva
+la memoria entre preguntas. El CSV incluye respuestas completas, modo de respuesta,
+duracion, fuentes, paginas y errores. El script usa directamente el flujo RAG, por
+lo que no requiere iniciar Flask; Ollama y los modelos locales si deben estar disponibles.
+
 ## Puesta en marcha
 
 Crear entorno virtual:

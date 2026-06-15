@@ -1,0 +1,59 @@
+<dialog class="manuals-dialog" id="manuals-dialog">
+    <section class="manuals-panel">
+        <div class="dialog-header">
+            <div>
+                <p class="eyebrow">Trazabilidad documental general</p>
+                <h2>Manuales cargados</h2>
+            </div>
+            <button class="dialog-close" type="button" id="manuals-close-button" aria-label="Cerrar">Cerrar</button>
+        </div>
+        <div class="manuals-summary" id="manuals-summary"></div>
+        <div class="manuals-list" id="manuals-list"></div>
+    </section>
+</dialog>
+
+<dialog class="monitoring-dialog" id="monitoring-dialog">
+    <section class="monitoring-panel">
+        <div class="dialog-header">
+            <div>
+                <p class="eyebrow">Gestión general de conocimiento</p>
+                <h2>Centro de Monitoreo</h2>
+            </div>
+            <button class="dialog-close" type="button" id="monitoring-close-button" aria-label="Cerrar">Cerrar</button>
+        </div>
+        <div class="monitoring-kpis" id="monitoring-kpis"></div>
+        <div class="monitoring-insights" id="monitoring-insights"></div>
+        <section class="monitoring-section monitoring-wide">
+            <h3>Alertas automáticas</h3>
+            <div class="monitoring-alerts" id="monitoring-alerts"></div>
+        </section>
+        <section class="monitoring-section monitoring-wide">
+            <h3>Consultas filtrables</h3>
+            <div class="monitoring-filter-row">
+                <input id="monitoring-search-input" type="search" placeholder="Problema reportado">
+                <input id="monitoring-user-filter" type="search" placeholder="Usuario">
+                <input id="monitoring-equipment-filter" type="search" placeholder="Equipo">
+                <input id="monitoring-date-from-filter" type="date" aria-label="Fecha desde">
+                <input id="monitoring-date-to-filter" type="date" aria-label="Fecha hasta">
+            </div>
+            <div class="monitoring-consultation-list" id="monitoring-consultation-list"></div>
+        </section>
+        <div class="monitoring-grid">
+            <section class="monitoring-section"><h3>Equipos más consultados</h3><div class="monitoring-list" id="monitoring-equipment-list"></div></section>
+            <section class="monitoring-section"><h3>Usuarios más activos</h3><div class="monitoring-list" id="monitoring-users-list"></div></section>
+            <section class="monitoring-section"><h3>Consultas por perfil</h3><div class="monitoring-list" id="monitoring-service-list"></div></section>
+            <section class="monitoring-section"><h3>Trazabilidad de fallas</h3><div class="monitoring-list" id="monitoring-category-list"></div></section>
+        </div>
+        <section class="monitoring-section monitoring-wide">
+            <h3>Mapa de fallas recurrentes</h3>
+            <div class="monitoring-failure-map" id="monitoring-failure-map"></div>
+        </section>
+        <div class="monitoring-decision-grid">
+            <section class="monitoring-section"><h3>Prioridades de intervención</h3><div class="monitoring-priority-list" id="monitoring-priority-list"></div></section>
+        </div>
+        <section class="monitoring-section monitoring-wide">
+            <h3>Matriz perfil - falla</h3>
+            <div class="monitoring-heatmap" id="monitoring-heatmap"></div>
+        </section>
+    </section>
+</dialog>

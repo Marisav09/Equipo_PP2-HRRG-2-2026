@@ -1452,12 +1452,89 @@ p {
 }
 
 .equipment-select-header,
+.technician-selector-tools,
 .equipment-search-panel,
 .equipment-category {
     border: 1px solid rgba(255, 255, 255, 0.16);
     background: rgba(255, 255, 255, 0.10);
     box-shadow: 0 24px 70px rgba(2, 6, 23, 0.24);
     backdrop-filter: blur(26px);
+}
+
+.technician-selector-tools {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.technician-selector-tool {
+    min-height: 92px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid rgba(125, 211, 252, 0.30);
+    border-radius: 20px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.72);
+    color: #0f4c5c;
+    text-align: left;
+    box-shadow: 0 16px 38px rgba(15, 118, 110, 0.12);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.technician-selector-tool:hover {
+    transform: translateY(-2px);
+    border-color: rgba(13, 148, 136, 0.54);
+    box-shadow: 0 20px 46px rgba(15, 118, 110, 0.20);
+}
+
+.technician-selector-tool span:not(.technician-selector-tool-icon) {
+    display: grid;
+    gap: 5px;
+}
+
+.technician-selector-tool strong {
+    color: #0f4c5c;
+    font-size: 1rem;
+    font-weight: 950;
+}
+
+.technician-selector-tool small {
+    color: rgba(15, 76, 92, 0.70);
+    font-size: 0.84rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.technician-selector-tool-icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(13, 148, 136, 0.28);
+    border-radius: 17px;
+    background: rgba(204, 251, 241, 0.88);
+    color: #0f766e;
+}
+
+.technician-selector-tool-icon svg,
+.technician-selector-tool-arrow {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.technician-selector-tool-arrow {
+    width: 20px;
+    height: 20px;
+    color: #0d9488;
 }
 
 .equipment-select-header {
@@ -2260,5 +2337,9 @@ body,
     .qr-bulk-button,
     .glass-exit-button {
         min-height: 40px;
+    }
+
+    .technician-selector-tools {
+        grid-template-columns: 1fr;
     }
 }

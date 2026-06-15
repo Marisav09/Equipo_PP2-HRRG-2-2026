@@ -21,6 +21,7 @@ vectorstore/
 data/audit/
 data/tickets/
 logs/
+reports/rag_test_*.csv
 
 # Backups / descargas / OCR / carpetas temporales de trabajo
 data/raw_original_unicos/

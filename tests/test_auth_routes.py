@@ -14,6 +14,28 @@ def test_technician_console_requires_login():
     assert "/login" in response.headers["Location"]
 
 
+def test_technician_selector_exposes_general_tools_only_to_technicians():
+    app = create_app()
+    app.config["TESTING"] = True
+
+    technician = app.test_client()
+    technician.set_cookie("hrrg_technician_auth", "ok")
+    technician_response = technician.get("/tecnico")
+
+    assert technician_response.status_code == 200
+    assert b'id="monitoring-button"' in technician_response.data
+    assert b'id="manuals-button"' in technician_response.data
+    assert b'id="monitoring-dialog"' in technician_response.data
+
+    operator = app.test_client()
+    operator.set_cookie("hrrg_operator_auth", "ok")
+    operator_response = operator.get("/operador")
+
+    assert operator_response.status_code == 200
+    assert b'id="monitoring-button"' not in operator_response.data
+    assert b'id="manuals-button"' not in operator_response.data
+
+
 def test_direct_equipment_url_without_login_returns_home_with_pending_qr_equipment():
     app = create_app()
     app.config["TESTING"] = True

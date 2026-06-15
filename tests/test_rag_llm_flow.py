@@ -56,11 +56,23 @@ class EmptyMemory:
         return None
 
 
-def _service(vectorstore=None, ollama_service=None) -> RagService:
+class TrackingFallbackTranslator:
+    def __init__(self) -> None:
+        self.calls = []
+
+    def translate_if_english(self, text: str) -> str:
+        self.calls.append(text)
+        if text.startswith("Before using"):
+            return "Antes de utilizar el equipo, revise el interruptor del sistema."
+        return text
+
+
+def _service(vectorstore=None, ollama_service=None, fallback_translation_service=None) -> RagService:
     return RagService(
         vectorstore=vectorstore or FakeVectorstore(),
         ollama_service=ollama_service or FakeOllama(),
         memory_service=EmptyMemory(),
+        fallback_translation_service=fallback_translation_service or TrackingFallbackTranslator(),
     )
 
 
@@ -78,7 +90,12 @@ def _request(role: str = "operador", query: str = "Como se utiliza?") -> ChatReq
 def test_rag_passes_role_to_hybrid_retrieval_and_calls_llm():
     vectorstore = FakeVectorstore()
     ollama = FakeOllama()
-    service = _service(vectorstore=vectorstore, ollama_service=ollama)
+    translator = TrackingFallbackTranslator()
+    service = _service(
+        vectorstore=vectorstore,
+        ollama_service=ollama,
+        fallback_translation_service=translator,
+    )
 
     response = service.answer_question(_request(), "session", should_cancel=lambda: False)
 
@@ -86,6 +103,7 @@ def test_rag_passes_role_to_hybrid_retrieval_and_calls_llm():
     assert vectorstore.last_role == "operador"
     assert "Contexto documental recuperado" in ollama.last_prompt
     assert response["sources"] == []
+    assert translator.calls == []
 
 
 def test_technician_response_exposes_verified_sources():
@@ -135,6 +153,41 @@ def test_rag_falls_back_to_document_context_when_llm_fails():
 
     assert response["mode"] == "fallback_llm_error"
     assert "interruptor del sistema" in response["answer"]
+
+
+def test_rag_translates_english_chunk_only_when_falling_back():
+    vectorstore = FakeVectorstore()
+    vectorstore.chunks[0] = RetrievedChunk(
+        text="Before using the device, check the system and press the start button.",
+        citation=vectorstore.chunks[0].citation,
+        score=0.9,
+    )
+    translator = TrackingFallbackTranslator()
+    service = _service(
+        vectorstore=vectorstore,
+        ollama_service=FailingOllama(),
+        fallback_translation_service=translator,
+    )
+
+    response = service.answer_question(_request(role="tecnico"), "session", should_cancel=lambda: False)
+
+    assert response["mode"] == "fallback_llm_error"
+    assert "Antes de utilizar el equipo" in response["answer"]
+    assert translator.calls == [vectorstore.chunks[0].text]
+
+
+def test_rag_keeps_spanish_chunk_during_fallback():
+    translator = TrackingFallbackTranslator()
+    service = _service(
+        ollama_service=FailingOllama(),
+        fallback_translation_service=translator,
+    )
+
+    response = service.answer_question(_request(role="tecnico"), "session", should_cancel=lambda: False)
+
+    assert response["mode"] == "fallback_llm_error"
+    assert "El interruptor del sistema" in response["answer"]
+    assert translator.calls == ["El interruptor del sistema permite poner en funcionamiento el equipo."]
 
 
 def test_operator_response_removes_prompt_echo():

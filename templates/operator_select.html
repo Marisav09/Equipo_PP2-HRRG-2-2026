@@ -5,7 +5,7 @@
 {% block title %}Seleccionar equipo | HRRG{% endblock %}
 
 {% block content %}
-<main class="equipment-select-screen" data-selector-profile="{{ current_profile }}">
+<main class="equipment-select-screen" data-selector-profile="{{ current_profile }}" data-role="{{ current_profile }}">
     <section class="equipment-select-shell">
         <header class="equipment-select-header">
             <div>
@@ -26,6 +26,31 @@
                 </button>
             </div>
         </header>
+
+        {% if current_profile == "tecnico" %}
+        <section class="technician-selector-tools" aria-label="Herramientas generales de Ingeniería Clínica">
+            <button class="technician-selector-tool" type="button" id="monitoring-button">
+                <span class="technician-selector-tool-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-7"/><path d="M7 19v-4M11 19v-8M15 19v-5M19 19V7"/></svg>
+                </span>
+                <span>
+                    <strong>Centro de Monitoreo</strong>
+                    <small>Indicadores, consultas, alertas y fallas de todos los equipos.</small>
+                </span>
+                <svg class="technician-selector-tool-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <button class="technician-selector-tool" type="button" id="manuals-button">
+                <span class="technician-selector-tool-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M8 7h8M8 11h8"/></svg>
+                </span>
+                <span>
+                    <strong>Manuales cargados</strong>
+                    <small>Inventario y estado documental general de todos los equipos.</small>
+                </span>
+                <svg class="technician-selector-tool-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </section>
+        {% endif %}
 
         <section class="equipment-search-panel" aria-label="Buscar equipo">
             <div class="equipment-search-control">
@@ -109,6 +134,9 @@
 
         <p class="equipment-empty-state" id="equipment-empty-state" hidden>No encontramos equipos para esa búsqueda.</p>
     </section>
+    {% if current_profile == "tecnico" %}
+    {% include "partials/technician_general_dialogs.html" %}
+    {% endif %}
 </main>
 {% endblock %}
 
