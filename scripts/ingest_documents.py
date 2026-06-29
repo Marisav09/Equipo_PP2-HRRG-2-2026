@@ -18,17 +18,9 @@ def parse_args() -> argparse.Namespace:
         description="Ingesta documentos Markdown procesados en ChromaDB."
     )
     parser.add_argument(
-        "--force",
+        "--incremental",
         action="store_true",
-        help="Reindexa aunque el hash del Markdown no haya cambiado.",
-    )
-    parser.add_argument(
-        "--rebuild-parent-child",
-        action="store_true",
-        help=(
-            "Reconstruye el indice con chunks hijos para busqueda y paginas padre completas "
-            "para expansion de contexto."
-        ),
+        help="Omite Markdown sin cambios segun auditoria de hash.",
     )
     return parser.parse_args()
 
@@ -37,7 +29,7 @@ def main() -> None:
     args = parse_args()
     configure_logging()
 
-    force = args.force or args.rebuild_parent_child
+    force = not args.incremental
     result = IngestionService().ingest_directory(force=force)
 
     print(json.dumps(result, ensure_ascii=False, indent=2))

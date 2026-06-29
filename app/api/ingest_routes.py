@@ -13,7 +13,7 @@ vectorstore_service = VectorstoreService()
 
 @ingest_bp.post("/")
 def ingest_documents():
-    result = ingestion_service.ingest_directory()
+    result = ingestion_service.ingest_directory(force=True)
     status_code = 207 if result["errors"] else 200
     return jsonify(result), status_code
 

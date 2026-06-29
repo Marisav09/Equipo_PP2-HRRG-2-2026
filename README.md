@@ -84,6 +84,15 @@ Ejecutar:
 python scripts/ingest_documents.py
 ```
 
+Por defecto, este comando reconstruye el indice con arquitectura parent-child:
+chunks hijos para busqueda y paginas padre completas para expansion de contexto.
+Si se quiere conservar el comportamiento incremental y omitir Markdown sin cambios,
+usar:
+
+```powershell
+python scripts/ingest_documents.py --incremental
+```
+
 ## Flujo RAG
 
 1. El usuario selecciona un equipo o ingresa desde un QR con `?equipo=...&rol=operador`.
@@ -104,11 +113,11 @@ La arquitectura de recuperacion usa dos colecciones sincronizadas:
 - `manuales_hrrg`: chunks hijos breves usados para busqueda.
 - `manuales_hrrg_pages`: paginas padre completas usadas para ampliar contexto.
 
-Despues de instalar las dependencias, reconstruir el indice una vez:
+Despues de instalar las dependencias, reconstruir el indice:
 
 ```powershell
 pip install -r requirements.txt
-python scripts/ingest_documents.py --rebuild-parent-child
+python scripts/ingest_documents.py
 ```
 
 El primer uso del reranker puede descargar el modelo configurado en `RERANKER_MODEL`.
