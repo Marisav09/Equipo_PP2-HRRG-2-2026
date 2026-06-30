@@ -1,67 +1,21 @@
-# Guía Técnica de Instalación,  Configuración y Puesta en Marcha
+# Guía Técnica de Instalación, Configuración y Puesta en Marcha
 
-<!-- Pagina 1 -->
+- Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial
+- Práctica Profesionalizante II
+- Documento técnico para implementación y soporte del sistema
+- Asistente IA para Ingeniería Clínica – HRRG
+**Institución destinataria:** Hospital Regional Río Grande
+**Área destinataria:** Sistemas / soporte técnico / administración técnica del sistema
+- Equipo N.º 1:
+  - Ana María Ramos Orcko
+  - Darío Agustín García Barquet
+  - Marisa Mercedes Velásquez
+  - Nancy Julieta Cassano  
 
-Guía Técnica de Instalación,
-Configuración y Puesta en Marcha
-Asistente IA para Ingeniería Clínica – HRRG
-Documento técnico para implementación y soporte del sistema
-Institución destinataria
-Hospital Regional Río Grande
-Área destinataria
-Sistemas / soporte técnico / administración técnica del sistema
-Versión
-1.0
-Fecha
-Junio 2026
-Tierra del Fuego, Antártida e Islas del Atlántico Sur
+**Versión 1.0**
+**Junio 2026**
+**Tierra del Fuego, Antártida e Islas del Atlántico Sur**
 
-<!-- Pagina 2 -->
-
-Índice
-- 1. Propósito del documento
-
-- 2. Alcance
-
-- 3. Componentes principales del sistema
-
-- 4. Requisitos previos
-
-- 5. Obtención del proyecto desde GitHub
-
-- 6. Preparación del entorno virtual
-
-- 7. Instalación de dependencias
-
-- 8. Verificación de Ollama y modelos locales
-
-- 9. Configuración inicial del entorno
-
-- 10. Estado de la base documental y ChromaDB
-
-- 11. Puesta en marcha general
-
-- 12. Ejecución de la aplicación
-
-- 13. Acceso desde red local
-
-- 14. Validaciones mínimas posteriores al inicio
-
-- 15. Verificación de manuales cargados
-
-- 16. Códigos QR
-
-- 17. Problemas frecuentes y acciones sugeridas
-
-- 18. Consideraciones de seguridad operativa
-
-- 19. Cierre
-
-<!-- Pagina 3 -->
-
-Guía Técnica de Instalación,
-Configuración y Puesta en Marcha
-Sistema de consulta documental local para apoyo técnico hospitalario
 ## 1. Propósito del documento
 
 Esta guía tiene como finalidad orientar al personal técnico responsable en la instalación,
@@ -103,46 +57,32 @@ indicaciones forman parte del Manual de Usuario.
 
 El Asistente IA para Ingeniería Clínica – HRRG está compuesto por los siguientes
 componentes técnicos:
-Componente
-Función
-Aplicación web Flask
-Permite el acceso a la interfaz del asistente, perfiles de usuario, selección de
-equipos y chat.
-Backend Python
-Gestiona la lógica de consulta, recuperación documental, generación de
-respuestas y guardrails de seguridad.
-Ollama
-Ejecuta localmente el modelo de lenguaje utilizado por el asistente.
-ChromaDB
-Almacena los embeddings de los documentos procesados y permite la búsqueda
-vectorial.
-Corpus documental
-Conjunto de manuales técnicos procesados e indexados para consulta.
-Módulo de ingesta
-Procesa documentos, genera chunks, metadatos e indexación vectorial.
-Módulo QR
-Genera códigos QR asociados a equipos para acceso directo.
-Interfaz web
-Permite el uso del sistema desde navegador en computadora o dispositivo móvil
-conectado a la red.
-Manuales técnicos / documentación procesada
-↓
-Procesamiento documental
-↓
-Chunks + metadatos + páginas + fuentes
-↓
-ChromaDB
-↓
-Recuperación documental por equipo
-↓
-Ollama / modelo local
-↓
-Respuesta del asistente con fuentes y guardrails
-↓
-Interfaz web Flask
-Figura 1. Arquitectura general del Asistente IA para Ingeniería Clínica – HRRG.
+| Componente           | Función                                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Aplicación web Flask | Permite el acceso a la interfaz del asistente, perfiles de usuario, selección de equipos y chat.             |
+| Backend Python       | Gestiona la lógica de consulta, recuperación documental, generación de respuestas y guardrails de seguridad. |
+| Ollama               | Ejecuta localmente el modelo de lenguaje utilizado por el asistente.                                         |
+| ChromaDB             | Almacena los embeddings de los documentos procesados y permite la búsqueda vectorial.                        |
+| Corpus documental    | Conjunto de manuales técnicos procesados e indexados para consulta.                                          |
+| Módulo de ingesta    | Procesa documentos, genera chunks, metadatos e indexación vectorial.                                         |
+| Módulo QR            | Genera códigos QR asociados a equipos para acceso directo.                                                   |
+| Interfaz web         | Permite el uso del sistema desde navegador en computadora o dispositivo móvil conectado a la red.            |
 
-<!-- Pagina 5 -->
+flowchart TD
+    A[Manuales técnicos / documentación procesada]
+    B[Procesamiento documental]
+    C[Chunks + metadatos + páginas + fuentes]
+    D[ChromaDB]
+    E[Recuperación documental por equipo]
+    F[Ollama / modelo local]
+    G[Respuesta del asistente con fuentes y guardrails]
+    H[Interfaz web Flask]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+
+    classDef proceso fill:#9bd4df,stroke:#5aa7b2,color:#000,font-weight:bold;
+    class A,B,C,D,E,F,G,H proceso;
+
 
 ## 4. Requisitos previos
 
@@ -178,14 +118,17 @@ Procedimiento general:
 Una vez clonado el repositorio, se recomienda registrar la fecha de instalación y el commit
 utilizado, para conservar trazabilidad técnica de la versión instalada.
 
-<!-- Pagina 6 -->
-
 Registro sugerido para instalación:
 - Repositorio utilizado: https://github.com/Marisav09/Equipo_PP2-HRRG-2-2026
 - Rama utilizada: main
-- Commit utilizado: ______________________________
+- Commit utilizado: v1.0-hrrg
 - Fecha de instalación: ___________________________
-- Responsable técnico: ___________________________ Estructura general del repositorio Proyecto Asistente IA HRRG │ ├── app │ └── Lógica principal del backend, servicios, rutas y configuración interna.
+- Responsable técnico: ___________________________   
+  
+Estructura general del repositorio Proyecto Asistente IA HRRG  
+│  
+├── app  
+│ └── Lógica principal del backend, servicios, rutas y configuración interna.
 │
 ├── data
 │ └── Datos del sistema, base documental procesada, memoria local y
@@ -216,9 +159,6 @@ y recursos visuales.
 │
 └── run.py
 └── Archivo principal para iniciar la aplicación.
-Figura 2. Estructura general del repositorio del proyecto.
-
-<!-- Pagina 7 -->
 
 ## 6. Preparación del entorno virtual
 
@@ -250,8 +190,6 @@ vectorial, el procesamiento de documentos y los servicios asociados.
 Una vez finalizada la instalación, se recomienda verificar que no se hayan producido errores
 en la terminal.
 
-<!-- Pagina 8 -->
-
 Si alguna dependencia no se instala correctamente, el personal técnico deberá revisar:
 - conexión a internet disponible durante la instalación;
 - versión de Python utilizada;
@@ -281,8 +219,6 @@ Si los modelos no se encuentran descargados, pueden instalarse mediante:
 `ollama pull nomic-embed-text`
 Una vez descargados, volver a verificar con:
 `ollama list`
-
-<!-- Pagina 9 -->
 
 Si Ollama no responde, el asistente puede presentar errores al generar respuestas o al
 recuperar información semántica. En ese caso, se recomienda revisar:
@@ -319,8 +255,6 @@ OLLAMA_MODEL=llama3.2:3b
 EMBEDDING_MODEL=nomic-embed-text
 CHROMA_DIR=./data/chroma
 RETRIEVAL_K=4
-
-<!-- Pagina 10 -->
 
 No se recomienda modificar estos valores sin validación previa, ya que pueden afectar el
 rendimiento, la recuperación documental, la estabilidad del sistema o la calidad de las
@@ -361,13 +295,6 @@ parent-child: chunks hijos para busqueda y paginas padre completas para expansio
 python scripts/ingest_documents.py
 ```
 
-Si se requiere conservar el comportamiento incremental anterior y omitir Markdown sin cambios,
-puede usarse:
-
-```powershell
-python scripts/ingest_documents.py --incremental
-```
-
 Antes de ejecutar una reingesta, se recomienda confirmar:
 - que el corpus documental activo sea el correcto;
 - que no existan documentos duplicados, de prueba o no validados;
@@ -378,8 +305,6 @@ Antes de ejecutar una reingesta, se recomienda confirmar:
 Luego de una reingesta, se debe validar desde la interfaz técnica la sección “Manuales
 cargados”, verificando cantidad de documentos activos, errores, documentos omitidos y
 cantidad de chunks generados.
-
-<!-- Pagina 11 -->
 
 No se debe solicitar a los usuarios finales que reconstruyan ChromaDB ni que ejecuten
 procesos de ingesta documental.
@@ -396,14 +321,10 @@ El flujo general de puesta en marcha es el siguiente:
 
 5. Instalar las dependencias desde requirements.txt, si aún no fueron instaladas.
 
-6. Verificar que Ollama esté instalado y que los modelos locales requeridos estén
-
-disponibles.
+6. Verificar que Ollama esté instalado y que los modelos locales requeridos estén disponibles.
 7. Revisar la configuración inicial del entorno y, si corresponde, el archivo .env.
 
-8. Confirmar la disponibilidad de la base documental procesada y de la base vectorial
-
-ChromaDB.
+8. Confirmar la disponibilidad de la base documental procesada y de la base vectorial ChromaDB.
 9. Evitar reconstruir ChromaDB salvo indicación técnica o necesidad justificada.
 
 10. Ejecutar la aplicación Flask.
@@ -418,8 +339,6 @@ ChromaDB.
 
 15. Verificar Manuales cargados, QR y funcionamiento general de la interfaz.
 
-<!-- Pagina 12 -->
-
 ## 12. Ejecución de la aplicación
 
 Desde la carpeta raíz del proyecto, con el entorno virtual activo, ejecutar:
@@ -433,15 +352,9 @@ el sistema.
 La dirección con IP local permite acceder desde otros dispositivos conectados a la misma
 red. La IP puede variar según la red utilizada.
 Ejemplo de acceso local por red: http://192.168.1.14:5000
-Figura 3. Ejecución correcta de la aplicación Flask desde terminal.
+ 
 Nota técnica
-El mensaje de advertencia mostrado por Flask indica que el servidor integrado corresponde a un entorno de
-desarrollo. Para pruebas locales, validación funcional o uso controlado en red interna puede utilizarse de
-acuerdo con la configuración definida por el equipo técnico. Si la institución decide implementar el sistema en un
-entorno productivo permanente, se recomienda evaluar una configuración de despliegue más robusta, con
-servidor WSGI, control de acceso, políticas de red y medidas de seguridad institucionales.
-
-<!-- Pagina 13 -->
+El mensaje de advertencia mostrado por Flask indica que el servidor integrado corresponde a un entorno de desarrollo. Para pruebas locales, validación funcional o uso controlado en red interna puede utilizarse de acuerdo con la configuración definida por el equipo técnico. Si la institución decide implementar el sistema en un entorno productivo permanente, se recomienda evaluar una configuración de despliegue más robusta, con servidor WSGI, control de acceso, políticas de red y medidas de seguridad institucionales.
 
 ## 13. Acceso desde red local
 
@@ -452,71 +365,27 @@ El dispositivo móvil debe estar conectado a la misma red local que la computado
 donde se ejecuta el asistente.
 No debe utilizarse 127.0.0.1 desde el celular, ya que esa dirección apunta al propio
 dispositivo móvil y no a la computadora que ejecuta el sistema.
-Figura 4. Acceso correcto al sistema desde navegador web.
 
-<!-- Pagina 14 -->
-
-## 14. Validaciones mínimas posteriores al
-
-inicio
+## 14. Validaciones mínimas posteriores al inicio
 Una vez iniciado el sistema, se recomienda realizar las siguientes verificaciones mínimas:
-Verificación
-Resultado esperado
-Estado
-Abrir la pantalla principal
-La pantalla inicial carga correctamente desde el navegador.
-Pendiente / OK /
-Error
-Acceder como Técnico
-El sistema permite iniciar sesión con perfil técnico autorizado.
-Pendiente / OK /
-Error
-Acceder como Operador
-El sistema permite iniciar sesión con perfil operador autorizado.
-Pendiente / OK /
-Error
-Visualizar selector de equipos
-Se muestra el listado de equipos disponibles.
-Pendiente / OK /
-Error
-Abrir chat de un equipo
-El sistema abre el chat correspondiente al equipo seleccionado.
-Pendiente / OK /
-Error
-Realizar consulta técnica de
-prueba
-El asistente responde y, si corresponde, muestra fuentes
-documentales.
-Pendiente / OK /
-Error
-Realizar consulta como
-operador
-El asistente responde de forma breve y segura, sin instrucciones
-técnicas internas.
-Pendiente / OK /
-Error
-Verificar Manuales cargados Se visualizan documentos activos, errores, omitidos y cantidad de
-chunks.
-Pendiente / OK /
-Error
-Verificar Centro de Monitoreo
-El panel carga correctamente desde el perfil técnico.
-Pendiente / OK /
-Error
-Probar acceso desde celular o
-tablet
-El dispositivo accede usando la IP local o dirección institucional
-correcta.
-Pendiente / OK /
-Error
-Probar código QR
-El QR dirige al flujo de acceso y luego al chat del equipo
-correspondiente.
-Pendiente / OK /
-Error
+| Verificación                         | Resultado esperado                                                                  | Estado                 |
+| ------------------------------------ | ----------------------------------------------------------------------------------- | ---------------------- |
+| Abrir la pantalla principal          | La pantalla inicial carga correctamente desde el navegador.                         | Pendiente / OK / Error |
+| Acceder como Técnico                 | El sistema permite iniciar sesión con perfil técnico autorizado.                    | Pendiente / OK / Error |
+| Acceder como Operador                | El sistema permite iniciar sesión con perfil operador autorizado.                   | Pendiente / OK / Error |
+| Visualizar selector de equipos       | Se muestra el listado de equipos disponibles.                                       | Pendiente / OK / Error |
+| Abrir chat de un equipo              | El sistema abre el chat correspondiente al equipo seleccionado.                     | Pendiente / OK / Error |
+| Realizar consulta técnica de prueba  | El asistente responde y, si corresponde, muestra fuentes documentales.              | Pendiente / OK / Error |
+| Realizar consulta como operador      | El asistente responde de forma breve y segura, sin instrucciones técnicas internas. | Pendiente / OK / Error |
+| Verificar Manuales cargados          | Se visualizan documentos activos, errores, omitidos y cantidad de chunks.           | Pendiente / OK / Error |
+| Verificar Centro de Monitoreo        | El panel carga correctamente desde el perfil técnico.                               | Pendiente / OK / Error |
+| Probar acceso desde celular o tablet | El dispositivo accede usando la IP local o dirección institucional correcta.        | Pendiente / OK / Error |
+| Probar código QR                     | El QR dirige al flujo de acceso y luego al chat del equipo correspondiente.         | Pendiente / OK / Error |
+
 Estas validaciones permiten confirmar que la aplicación, la interfaz, los perfiles, la base
 documental y el acceso por red se encuentran operativos.
-Registro final de puesta en marcha
+#### Registro final de puesta en marcha
+
 Una vez completadas las validaciones mínimas, se recomienda dejar registro de la instalación
 realizada.
 Fecha de puesta en marcha: __________________________
@@ -525,8 +394,6 @@ Dirección local o institucional de acceso: _________________
 Repositorio / commit instalado: _________________________
 Responsable técnico de la instalación: ___________________
 Observaciones: _____________________________________
-
-<!-- Pagina 15 -->
 
 ## 15. Verificación de manuales cargados
 
@@ -541,6 +408,7 @@ Esta pantalla permite verificar:
 - páginas asociadas;
 - imágenes detectadas;
 - fecha de procesamiento.
+
 Esta validación permite confirmar que la base documental está disponible para el asistente.
 En la versión final validada del sistema, la pantalla “Manuales cargados” debe mostrar como
 referencia:
@@ -548,13 +416,11 @@ referencia:
 - documentos omitidos: 0;
 - errores de procesamiento: 0;
 - estado de los documentos: Indexado.
+
 La cantidad total de chunks puede variar si se reconstruye la base vectorial, si se modifica el
 corpus documental o si se ajustan parámetros de ingesta. Por ese motivo, ante una diferencia
 en la cantidad de chunks, se recomienda verificar que la base haya sido generada desde el
 corpus correcto y que no existan errores u omisiones.
-Figura 5. Verificación de documentos activos e indexados desde la interfaz técnica.
-
-<!-- Pagina 16 -->
 
 ## 16. Códigos QR
 
@@ -565,14 +431,10 @@ Si los QR fueron generados con 127.0.0.1, solo funcionarán desde la computadora
 Para celulares o tablets, deben generarse o configurarse con la IP local o dirección
 institucional correspondiente.
 Al validar un QR, se debe comprobar que el flujo sea:
-## 1. Escanear el QR del equipo.
-
+1. Escanear el QR del equipo.
 2. Acceder a la pantalla principal.
-
-## 3. Iniciar sesión con el perfil autorizado.
-
+3. Iniciar sesión con el perfil autorizado.
 4. Abrir automáticamente el chat del equipo asociado al QR.
-
 5. Realizar una consulta de prueba.
 
 Para la instalación final, los códigos QR deberán generarse o validarse con la dirección de
@@ -583,118 +445,21 @@ institucional, los QR deberán apuntar a la dirección definida por el área té
 Antes de imprimir o distribuir los QR, se recomienda realizar una prueba desde un teléfono
 celular conectado a la red correspondiente, verificando que el flujo complete correctamente:
 QR, inicio de sesión y apertura del chat del equipo asociado.
-Figura 6. Código QR asociado a un equipo del sistema.
-
-<!-- Pagina 17 -->
 
 ## 17. Problemas frecuentes y acciones
 
-sugeridas
-Problema
-Posible causa
-Acción sugerida
-No carga la pantalla
-principal
-La aplicación no está ejecutándose o el
-puerto no está disponible.
-Verificar terminal, reiniciar aplicación y
-confirmar puerto 5000.
-El celular no accede al
-sistema
-Se usó 127.0.0.1, IP incorrecta o red
-distinta.
-Usar la IP local del equipo y conectar
-ambos dispositivos a la misma red.
-El asistente no responde
-Ollama no está activo, modelo no
-disponible o error de backend.
-Verificar servicio de Ollama y revisar
-salida de terminal.
-No aparecen documentos
-cargados
-ChromaDB no está disponible o la
-ingesta no fue ejecutada
-correctamente.
-Verificar carpeta de ChromaDB y
-proceso de ingesta.
-Las respuestas no tienen
-fuentes
-Puede tratarse del perfil operador o de
-evidencia no verificable.
-Probar desde perfil técnico y revisar
-trazabilidad documental.
-El QR no abre el equipo
-esperado
-QR generado con IP incorrecta o ruta
-desactualizada.
-Regenerar QR con la IP local correcta y
-validar enlace.
-El sistema responde
-información insuficiente
-No hay evidencia documental suficiente
-para la consulta.
-Revisar documentación cargada o
-reformular la consulta.
-La terminal no reconoce
-Python
-Python no está instalado, no está
-agregado al PATH o se está usando
-una terminal incorrecta.
-Verificar instalación de Python, reiniciar
-la terminal y confirmar con python --
-version.
-No aparece el prefijo (venv)
-El entorno virtual no fue activado.
-Ejecutar .\venv\Scripts\activate desde la
-carpeta raíz del proyecto.
-Falla la instalación de
-dependencias
-El entorno virtual no está activo, falta
-conexión a internet o existe
-incompatibilidad de paquetes.
-Confirmar (venv), revisar conexión y
-ejecutar nuevamente pip install -r
-requirements.txt.
-Aparece error de módulo no
-encontrado
-Falta una dependencia del proyecto.
-Verificar que se haya ejecutado
-correctamente pip install -r
-requirements.txt.
-Ollama no responde
-Ollama no está instalado, no está
-ejecutándose o no está disponible
-localmente.
-Verificar con ollama --version y ollama
-list.
-No aparecen los modelos
-requeridos
-Los modelos locales no fueron
-descargados.
-Ejecutar ollama pull llama3.2:3b y ollama
-pull nomic-embed-text.
-El puerto 5000 está
-ocupado
-Otra aplicación o instancia previa de
-Flask está usando el mismo puerto.
-Cerrar procesos previos o reiniciar la
-terminal antes de ejecutar nuevamente
-`python .\run.py.`
-La configuración no coincide
-con el entorno
-El archivo .env no existe, está
-incompleto o contiene valores
-incorrectos.
-Revisar .env.example, crear o corregir
-.env y validar las rutas configuradas.
+| Problema                                     | Posible causa                                                                                | Acción sugerida                                                           |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| No carga la pantalla principal               | La aplicación no está ejecutándose o el puerto no está disponible.                           | Verificar terminal, reiniciar aplicación y confirmar puerto 5000.         |
+| El celular no accede al sistema              | Se usó 127.0.0.1, IP incorrecta o red distinta.                                              | Usar la IP local del equipo y conectar ambos dispositivos a la misma red. |
+| El asistente no responde                     | Ollama no está activo, modelo no disponible o error de backend.                              | Verificar servicio de Ollama y revisar salida de terminal.                |
+| No aparecen documentos cargados              | ChromaDB no está disponible o la ingesta no fue ejecutada correctamente.                     | Verificar carpeta de ChromaDB y proceso de ingesta.                       |
+| Las respuestas no tienen fuentes             | Puede tratarse del perfil operador o de evidencia no verificable.                            | Probar desde perfil técnico y revisar trazabilidad documental.            |
+| El QR no abre el equipo esperado             | QR generado con IP incorrecta o ruta desactualizada.                                         | Regenerar QR con la IP local correcta y validar enlace.                   |
+| El sistema responde información insuficiente | No hay evidencia documental suficiente para la consulta.                                     | Revisar documentación cargada o reformular la consulta.                   |
+| La terminal no reconoce Python               | Python no está instalado, no está agregado al PATH o se está usando una terminal incorrecta. | Verificar instalación de                                                  |
 
-<!-- Pagina 18 -->
-
-18.
-Consideraciones
-de
-seguridad
-operativa
+## 18. Consideraciones de seguridad operativa
 El sistema debe ejecutarse dentro del entorno autorizado por la institución.
 Se recomienda:
 - no exponer la aplicación públicamente sin configuración de seguridad adicional;
@@ -704,6 +469,7 @@ Se recomienda:
 - proteger el acceso a los documentos técnicos;
 - validar el funcionamiento antes de su uso operativo;
 - registrar cambios relevantes del sistema.
+
 Las credenciales de acceso al sistema no deben incluirse en esta guía ni en documentos
 públicos o compartidos sin control de acceso. Los usuarios, contraseñas iniciales o
 mecanismos de administración de cuentas deberán ser entregados por el área responsable

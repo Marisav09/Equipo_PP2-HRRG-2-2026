@@ -1,30 +1,26 @@
 # Documento de Escalamiento Asistente_IA_HRRG
 
-<!-- Pagina 1 -->
+- Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial  
+- Práctica Profesionalizante II
+- Documento de continuidad, escalamiento y hoja de ruta de mejoras futuras
+- Asistente IA para Ingeniería Clínica – HRRG
+- Equipo N.º 1:
+  - Ana María Ramos Orcko
+  - Darío Agustín García Barquet
+  - Marisa Mercedes Velásquez
+  - Nancy Julieta Cassano  
 
-Tecnicatura Superior en Ciencia de Datos e Inteligencia
-Artificial
-Práctica Profesionalizante II
-Documento de continuidad, escalamiento y hoja de ruta de
-mejoras futuras
-Asistente IA para Ingeniería Clínica – HRRG
-Equipo N.º 1:
-Ana María Ramos Orcko
-Darío Agustín García Barquet
-Marisa Mercedes Velásquez
-Nancy Julieta Cassano
-Junio 2026
+**Junio 2026**
+**Tierra del Fuego, Antártida e Islas del Atlántico Sur**
 
-<!-- Pagina 2 -->
-
-Documento de continuidad, escalamiento y hoja de ruta de mejoras futuras
-Asistente IA para Ingeniería Clínica – HRRG
-Proyecto: Asistente IA para Ingeniería Clínica – HRRG
-Institución destinataria: Hospital Regional Río Grande – Ingeniería Clínica
-Entrega: Sprint final – Junio 2026
-Tipo de documento: Documento académico de transferencia, continuidad y
+### Documento de continuidad, escalamiento y hoja de ruta de mejoras futuras
+**Asistente IA para Ingeniería Clínica – HRRG**
+**Proyecto:** Asistente IA para Ingeniería Clínica – HRRG
+**Institución destinataria:** Hospital Regional Río Grande – Ingeniería Clínica
+**Entrega:** Sprint final – Junio 2026
+**Tipo de documento:** Documento académico de transferencia, continuidad y
 escalamiento del proyecto
-Alcance: Documentación de oportunidades de evolución, correcciones técnicas,
+**Alcance:** Documentación de oportunidades de evolución, correcciones técnicas,
 criterios de continuidad y funcionalidades candidatas para futuras cohortes de Práctica
 Profesionalizante II
 ## 1. Objetivo del documento
@@ -53,9 +49,6 @@ una combinación de factores:
 - correcta asociación entre equipo, modelo y manual;
 - curaduría de documentos principales y secundarios;
 - segmentación adecuada de los textos;
-
-<!-- Pagina 3 -->
-
 - confiabilidad de la recuperación;
 - control de respuestas sin evidencia suficiente;
 - seguridad del perfil Operador;
@@ -92,72 +85,21 @@ incorporación acelerada de nuevas funciones. En este tipo de sistema, una mejor
 pequeña pero segura, validada y documentada, tiene más valor que una funcionalidad
 llamativa que no pueda sostenerse técnicamente.
 
-<!-- Pagina 4 -->
 
 ## 4. Prioridades recomendadas para próximas versiones
-
-Prioridad
-Línea de trabajo
-Motivo
-Alta
-Curaduría continua del
-corpus documental
-La calidad del RAG depende directamente de
-los documentos procesados, sus metadatos,
-páginas, estructura y estado de curaduría.
-Alta
-Revisión y
-reprocesamiento de
-manuales críticos
-Algunos manuales extensos o complejos
-pueden requerir revisión de OCR, Markdown,
-chunks, imágenes o estructura para mejorar la
-recuperación.
-Alta
-Mejora de recuperación
-por equipo/modelo
-específico
-Evita mezcla de fuentes entre equipos de una
-misma familia, versiones similares o
-documentos complementarios.
-Alta
-Validacion del control semantico de riesgo
-El perfil Operador ya incorpora clasificacion de riesgo (`low`, `medium`, `high`, `unknown`) y estrategias de respuesta. Proximas versiones deberian ampliar pruebas reales, metricas y revision humana sobre estos casos.
-Media
-Ranking, reranking y
-expansión semántica de
-consultas
-Mejora consultas cortas o coloquiales como “no
-prende”, “alarma”, “no calibra”, “no ventila”, “no
-corta” o “no pasa test”.
-Media
-Modo extractivo para
-códigos técnicos y tests
-Permite responder consultas sobre códigos,
-errores o pruebas sin que el modelo interprete
-de más o invente significados.
-Media
-Glosario técnico inglés-
-español
-Mejora la traducción de términos técnicos y
-evita interpretaciones poco naturales en
-manuales en inglés.
-Media
-Exportación formal de
-consultas e incidentes
-Facilita reportes técnicos para Ingeniería
-Clínica y seguimiento institucional.
-Baja
-Analítica histórica
-avanzada
-Permite detectar tendencias, equipos más
-consultados, fallas recurrentes y necesidades
-de capacitación.
-Baja
-Modo capacitación
-Puede servir para entrenamiento interno
-mediante preguntas frecuentes, tarjetas de
-aprendizaje o simulaciones guiadas.
+| Prioridad | Línea de trabajo                                      | Motivo                                                                                                                                       |
+| --------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Alta      | Curaduría continua del corpus documental              | La calidad del RAG depende directamente de los documentos procesados, sus metadatos, páginas, estructura y estado de curaduría.              |
+| Alta      | Revisión y reprocesamiento de manuales críticos       | Algunos manuales extensos o complejos pueden requerir revisión de OCR, Markdown, chunks, imágenes o estructura para mejorar la recuperación. |
+| Alta      | Mejora de recuperación por equipo/modelo específico   | Evita mezcla de fuentes entre equipos de una misma familia, versiones similares o documentos complementarios.                                |
+| Alta      | Fortalecimiento de guardrails de seguridad            | El perfil Operador debe recibir respuestas breves, seguras y sin instrucciones técnicas internas o riesgosas.                                |
+| Media     | Ranking, reranking y expansión semántica de consultas | Mejora consultas cortas o coloquiales como “no prende”, “alarma”, “no calibra”, “no ventila”, “no corta” o “no pasa test”.                   |
+| Media     | Modo extractivo para códigos técnicos y tests         | Permite responder consultas sobre códigos, errores o pruebas sin que el modelo interprete de más o invente significados.                     |
+| Media     | Glosario técnico inglés-español                       | Mejora la traducción de términos técnicos y evita interpretaciones poco naturales en manuales en inglés.                                     |
+| Media     | Exportación formal de consultas e incidentes          | Facilita reportes técnicos para Ingeniería Clínica y seguimiento institucional.                                                              |
+| Baja      | Analítica histórica avanzada                          | Permite detectar tendencias, equipos más consultados, fallas recurrentes y necesidades de capacitación.                                      |
+| Baja      | Modo capacitación                                     | Puede servir para entrenamiento interno mediante preguntas frecuentes, tarjetas de aprendizaje o simulaciones guiadas.                       |
+ 
 ## 5. Líneas de mejora documental
 
 ### 5.1 Curaduría continua del corpus
@@ -171,9 +113,6 @@ Se recomienda conservar un registro de:
 - fabricante;
 - modelo;
 - tipo de manual;
-
-<!-- Pagina 5 -->
-
 - idioma;
 - estado de procesamiento;
 - estado de OCR;
@@ -195,6 +134,7 @@ relevancia clínica. En próximas versiones se recomienda revisar manuales con:
 - páginas mal asociadas;
 - mezcla de documentos principales y complementarios;
 - fuentes laterales que dominan consultas generales.
+
 Esta línea es especialmente importante en equipos críticos como ventiladores,
 máquinas de diálisis, desfibriladores, esterilizadores e incubadoras.
 ### 5.3 Mejor trazabilidad entre PDF, Markdown y página visible
@@ -303,9 +243,6 @@ Incorporar una interfaz administrativa para gestionar:
 - servicios hospitalarios;
 - ubicaciones físicas;
 - documentación asociada;
-
-<!-- Pagina 8 -->
-
 - estado activo o inactivo del equipo.
 Esto permitiría mantener actualizado el catálogo sin depender exclusivamente de
 cambios en código.
@@ -414,16 +351,7 @@ Este modo debería diferenciarse claramente del modo de asistencia operativa, pa
 confundir formación con indicaciones de intervención real.
 ## 8. Correcciones técnicas recomendadas
 
-Para
-próximas
-iteraciones
-se
-recomiendan
-las
-siguientes
-correcciones
-y
-fortalecimientos técnicos:
+Para próximas iteraciones se recomiendan las siguientes correcciones y fortalecimientos técnicos:
 - robustecer OCR selectivo para PDFs con bajo texto extraíble;
 - revisar manuales críticos con chunks vacíos, pobres o mal segmentados;
 - mejorar detección de páginas oficiales cuando existan mapeos dudosos;
@@ -444,61 +372,44 @@ fortalecimientos técnicos:
 
 Para decidir qué mejoras abordar primero, se recomienda utilizar los siguientes criterios:
 
-<!-- Pagina 11 -->
+| Criterio                             | Pregunta orientadora                                                               |
+| ------------------------------------ | ---------------------------------------------------------------------------------- |
+| Seguridad del usuario y del paciente | ¿La mejora reduce riesgo operativo, clínico o técnico?                             |
+| Impacto funcional                    | ¿Afecta a muchos equipos o a consultas frecuentes?                                 |
+| Riesgo de mezcla documental          | ¿Puede evitar respuestas basadas en manuales incorrectos?                          |
+| Calidad de evidencia                 | ¿Mejora la trazabilidad o el respaldo documental?                                  |
+| Esfuerzo técnico                     | ¿Puede implementarse sin romper funcionalidades ya validadas?                      |
+| Valor para Ingeniería Clínica        | ¿Aporta utilidad concreta al equipo usuario?                                       |
+| Madurez del prototipo                | ¿Fortalece el sistema como producto real y no solo como demostración?              |
+| Mantenibilidad                       | ¿Facilita futuras actualizaciones del corpus o del código?                         |
+| Continuidad académica                | ¿Ayuda a que futuras cohortes puedan continuar el proyecto sin empezar desde cero? |
 
-Criterio
-Pregunta orientadora
-Seguridad del usuario y del
-paciente
-¿La mejora reduce riesgo operativo, clínico o técnico?
-Impacto funcional
-¿Afecta a muchos equipos o a consultas frecuentes?
-Riesgo de mezcla
-documental
-¿Puede evitar respuestas basadas en manuales
-incorrectos?
-Calidad de evidencia
-¿Mejora la trazabilidad o el respaldo documental?
-Esfuerzo técnico
-¿Puede implementarse sin romper funcionalidades ya
-validadas?
-Valor para Ingeniería
-Clínica
-¿Aporta utilidad concreta al equipo usuario?
-Madurez del prototipo
-¿Fortalece el sistema como producto real y no solo como
-demostración?
-Mantenibilidad
-¿Facilita futuras actualizaciones del corpus o del código?
-Continuidad académica
-¿Ayuda a que futuras cohortes puedan continuar el
-proyecto sin empezar desde cero?
 ## 10. Recomendación de orden de implementación
 
 Como hoja de ruta preliminar, se propone el siguiente orden para próximas versiones:
-1. Revisar el estado actual del repositorio, rama final y documentación entregada.
+#### 1. Revisar el estado actual del repositorio, rama final y documentación entregada.
 
-## 2. Comprender la arquitectura existente antes de modificar código.
+#### 2. Comprender la arquitectura existente antes de modificar código.
 
-## 3. Consolidar curaduría documental continua y versionado del corpus.
+#### 3. Consolidar curaduría documental continua y versionado del corpus.
 
-## 4. Mejorar recuperación por equipo, modelo y tipo de fuente.
+#### 4. Mejorar recuperación por equipo, modelo y tipo de fuente.
 
-## 5. Profundizar modo extractivo para códigos, tests y alarmas.
+#### 5. Profundizar modo extractivo para códigos, tests y alarmas.
 
-## 6. Reforzar trazabilidad entre PDF original, Markdown, página y chunk.
+#### 6. Reforzar trazabilidad entre PDF original, Markdown, página y chunk.
 
-## 7. Ampliar pruebas automáticas de calidad por equipo.
+#### 7. Ampliar pruebas automáticas de calidad por equipo.
 
-## 8. Mejorar manejo de imágenes, tablas y diagramas técnicos.
+#### 8. Mejorar manejo de imágenes, tablas y diagramas técnicos.
 
-## 9. Incorporar glosario técnico inglés-español.
+#### 9. Incorporar glosario técnico inglés-español.
 
-## 10. Desarrollar carga asistida de manuales desde interfaz técnica.
+#### 10. Desarrollar carga asistida de manuales desde interfaz técnica.
 
-## 11. Fortalecer Centro de Monitoreo y exportación de consultas.
+#### 11. Fortalecer Centro de Monitoreo y exportación de consultas.
 
-## 12. Evaluar integración con inventario, tickets o sistemas institucionales.
+#### 12. Evaluar integración con inventario, tickets o sistemas institucionales.
 
 Este orden prioriza primero comprensión, confiabilidad, seguridad y trazabilidad, y deja
 para etapas posteriores las funcionalidades de integración, analítica avanzada o
@@ -509,33 +420,20 @@ Para quienes continúen el proyecto, se recomienda comenzar con una etapa de lec
 y diagnóstico antes de implementar cambios.
 Los primeros pasos sugeridos son:
 
-<!-- Pagina 12 -->
+#### 1. Revisar el Manual de Usuario, la Guía Técnica de Instalación, el Informe de Dificultades Encontradas, el Informe de Validación RAG y este Documento de Continuidad.
+#### 2. Identificar cuál es la rama final entregada y cuál es el estado estable del repositorio.
+#### 3. Levantar el sistema localmente siguiendo la guía técnica.
 
-1. Revisar el Manual de Usuario, la Guía Técnica de Instalación, el Informe de
+#### 4. Verificar que los modelos locales, ChromaDB y la base documental estén disponibles.
+#### 5. Probar el sistema sin modificar código, utilizando preguntas reales por equipo.
 
-Dificultades Encontradas, el Informe de Validación RAG y este Documento de
-Continuidad.
-## 2. Identificar cuál es la rama final entregada y cuál es el estado estable del
+#### 6. Revisar la matriz de validación existente y detectar qué respuestas siguen siendo mejorables.
+#### 7. Definir un objetivo pequeño y verificable para el primer sprint de continuidad.
 
-repositorio.
-## 3. Levantar el sistema localmente siguiendo la guía técnica.
+#### 8. Evitar modificaciones simultáneas sobre frontend, backend, corpus y documentación.
+#### 9. Registrar cada cambio en una bitácora técnica.
 
-4. Verificar que los modelos locales, ChromaDB y la base documental estén
-
-disponibles.
-5. Probar el sistema sin modificar código, utilizando preguntas reales por equipo.
-
-6. Revisar la matriz de validación existente y detectar qué respuestas siguen siendo
-
-mejorables.
-## 7. Definir un objetivo pequeño y verificable para el primer sprint de continuidad.
-
-8. Evitar modificaciones simultáneas sobre frontend, backend, corpus y
-
-documentación.
-9. Registrar cada cambio en una bitácora técnica.
-
-10. Validar cada mejora antes de considerarla integrada.
+#### 10. Validar cada mejora antes de considerarla integrada.
 
 También se recomienda mantener una organización clara de roles:
 - una persona o subequipo para backend/RAG;
@@ -562,8 +460,6 @@ estabilidad del sistema:
 El objetivo de la continuidad no debería ser “hacer más cosas” rápidamente, sino
 fortalecer lo que ya funciona y ampliar el sistema de manera gradual, segura y trazable.
 
-<!-- Pagina 13 -->
-
 ## 13. Conclusión
 
 El Asistente IA para Ingeniería Clínica – HRRG alcanzó una base funcional que permite
@@ -583,4 +479,5 @@ y quienes puedan continuarlo en próximos ciclos académicos. La intención es q
 futuras cohortes no partan desde cero, sino desde una base técnica documentada, con
 decisiones justificadas, problemas identificados y una hoja de ruta orientada a mejorar
 el sistema de manera segura, progresiva y trazable.
-Sprint final – Junio 2026
+
+## Sprint final – Junio 2026
