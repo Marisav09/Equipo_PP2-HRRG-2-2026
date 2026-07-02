@@ -1,6 +1,22 @@
 # Asistente IA para Ingenieria Clinica HRRG
 
+![Pantalla principal del Asistente IA para Ingenieria Clinica HRRG](static/img/pantalla%20principal.png)
+
 Sistema web local basado en arquitectura RAG para asistir al area de Ingenieria Clinica del Hospital Regional Rio Grande. El prototipo consulta manuales oficiales de equipamiento medico con trazabilidad de fuentes, aislamiento estricto por equipo y fallback documental cuando el modelo local no responde.
+
+## Indice
+
+- [Stack principal](#stack-principal)
+- [Arquitectura](#arquitectura)
+- [Guardrails](#guardrails)
+- [Ingesta](#ingesta)
+- [Flujo RAG](#flujo-rag)
+- [Reconstruccion parent-child](#reconstruccion-parent-child)
+- [Endpoints](#endpoints)
+- [Pruebas de preguntas RAG](#pruebas-de-preguntas-rag)
+- [Requisitos minimos de la computadora servidor](#requisitos-minimos-de-la-computadora-servidor)
+- [Puesta en marcha](#puesta-en-marcha)
+- [Estado actual](#estado-actual)
 
 ## Stack principal
 
@@ -190,6 +206,40 @@ Por defecto cada pregunta usa una sesion independiente. `--conversation` conserv
 la memoria entre preguntas. El CSV incluye respuestas completas, modo de respuesta,
 duracion, fuentes, paginas y errores. El script usa directamente el flujo RAG, por
 lo que no requiere iniciar Flask; Ollama y los modelos locales si deben estar disponibles.
+
+## Requisitos minimos de la computadora servidor
+
+Estos requisitos corresponden a la computadora donde se instalaran y ejecutaran
+Flask, ChromaDB, Ollama, el modelo `llama3.2:3b`, el modelo de embeddings y el
+reranker local.
+
+| Componente | Minimo operativo | Recomendado |
+|---|---:|---:|
+| Procesador | CPU de 64 bits, 4 nucleos | 6 a 8 nucleos modernos |
+| Memoria RAM | 16 GB | 32 GB |
+| Almacenamiento libre | 20 GB en SSD | 40 GB o mas en SSD/NVMe |
+| Placa de video | GPU NVIDIA compatible con CUDA y 6 GB de VRAM | GPU NVIDIA compatible con CUDA y 8 GB o mas de VRAM |
+| Sistema operativo | Windows 10/11 de 64 bits o Linux de 64 bits compatible con Ollama | Version estable y actualizada |
+| Red | Conexion a la red local del hospital | Ethernet Gigabit |
+| Internet | Necesaria durante la instalacion para descargar dependencias y modelos | No es necesaria para el uso local una vez instalado todo |
+
+Tambien se requiere Python 3.10 o superior, Ollama y un navegador web actualizado.
+La instalacion en un disco mecanico es posible, pero aumenta considerablemente los
+tiempos de carga e indexacion, por lo que se considera necesario utilizar un SSD.
+
+Una computadora con 8 GB de RAM puede no disponer de memoria suficiente para cargar
+al mismo tiempo el modelo de lenguaje, el reranker y los servicios de la aplicacion.
+Por ese motivo, 16 GB se establece como minimo para una operacion estable.
+
+Para que el asistente sea funcional y mantenga tiempos de respuesta adecuados, se
+requiere una GPU NVIDIA compatible con CUDA. Aunque tecnicamente los modelos pueden
+ejecutarse mediante el procesador, el uso exclusivo de CPU provoca respuestas e
+indexaciones considerablemente mas lentas y solo se considera apropiado para pruebas
+o contingencias, no para la operacion habitual del sistema.
+
+Las computadoras que accedan al asistente como clientes no necesitan ejecutar los
+modelos. Solo requieren un navegador actualizado y acceso por red a la direccion del
+servidor.
 
 ## Puesta en marcha
 
